@@ -52,4 +52,53 @@
   .ucard:hover .title {
     color: var(--primaryColor);
   }
+
+  .ucard {
+  display: block;
+  text-decoration: none;
+  color: var(--baseTextColor);
+  font-family: var(--fontBase);
+
+  background: var(--shadowColor);
+  padding: 10px;
+  border-radius: 10px;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ucard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px var(--shadowColor);
+  border: 2px solid var(--borderColor);
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: var(--borderColor);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.meta {
+  margin-top: 8px;
+}
+
+.title {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  color: var(--headingColor);
+}
+
+.ucard:hover .title {
+  color: var(--primaryColor);
+}
+
 </style>
