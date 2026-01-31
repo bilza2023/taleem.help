@@ -1,0 +1,94 @@
+/* === Theme: Royal Blue === */
+.theme-royalBlue {
+    --backgroundColor: #001f3f;
+    --baseTextColor: #dfe6e9;
+    --headingColor: #74b9ff;
+    --bulletColor: #81ecec;
+    --primaryColor: #00cec9;
+    --secondaryColor: #0984e3;
+    --borderColor: #003366;
+    --shadowColor: rgba(0, 0, 50, 0.3);
+    --fontHeading: "Palatino Linotype", serif;
+    --fontBase: "Helvetica", sans-serif;
+  }
+  
+  /* === Theme: Neon Dark === */
+  .theme-neonDark {
+    --backgroundColor: #0a0a0a;
+    --baseTextColor: #39ff14;
+    --headingColor: #f81ce5;
+    --bulletColor: #00ffff;
+    --primaryColor: #ff0090;
+    --secondaryColor: #00ffcc;
+    --borderColor: #222222;
+    --shadowColor: rgba(255, 255, 255, 0.1);
+    --fontHeading: "Courier New", monospace;
+    --fontBase: "Lucida Console", monospace;
+  }
+  
+  /* === Theme: Dark === */
+  .theme-darkTheme {
+    --backgroundColor: #121212;
+    --baseTextColor: #e0e0e0;
+    --headingColor: #ffffff;
+    --bulletColor: #bbbbbb;
+    --primaryColor: #00bcd4;
+    --secondaryColor: #ff9800;
+    --borderColor: #333333;
+    --shadowColor: rgba(255, 255, 255, 0.05);
+    --fontHeading: "Segoe UI", sans-serif;
+    --fontBase: "Arial", sans-serif;
+  }
+  
+  /* === Theme: High Contrast === */
+  .theme-highContrast {
+    --backgroundColor: #000000;
+    --baseTextColor: #ffffff;
+    --headingColor: #ffff00;
+    --bulletColor: #ff00ff;
+    --primaryColor: #00ffff;
+    --secondaryColor: #ff0000;
+    --borderColor: #ffffff;
+    --shadowColor: rgba(255, 255, 255, 0.2);
+    --fontHeading: "Impact", sans-serif;
+    --fontBase: "Tahoma", sans-serif;
+  }
+  
+  /* === Theme: Pastel === */
+  .theme-pastel {
+    --backgroundColor: #fef6f0;
+    --baseTextColor: #6c5b7b;
+    --headingColor: #355c7d;
+    --bulletColor: #f67280;
+    --primaryColor: #c06c84;
+    --secondaryColor: #f8b195;
+    --borderColor: #999999;
+    --shadowColor: rgba(0, 0, 0, 0.05);
+    --fontHeading: "Georgia", serif;
+    --fontBase: "Verdana", sans-serif;
+  }
+  
+  /* === Utility Token Classes === */
+  .text-primary {
+    color: var(--baseTextColor);
+    font-family: var(--fontBase);
+  }
+  
+  .heading {
+    color: var(--headingColor);
+    font-family: var(--fontHeading);
+  }
+  
+  .bullet {
+    color: var(--bulletColor);
+    font-family: var(--fontBase);
+  }
+  
+  .border-accent {
+    border-color: var(--borderColor);
+  }
+  
+  .bg-primary {
+    background-color: var(--backgroundColor);
+  }
+  

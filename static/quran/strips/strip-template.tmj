@@ -1,0 +1,16 @@
+{
+  "compressionlevel": -1,
+  "height": 20,
+  "infinite": false,
+  "layers": [],
+  "nextlayerid": 1,
+  "nextobjectid": 1,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "tiledversion": "1.11.1",
+  "tileheight": 64,
+  "tilewidth": 64,
+  "type": "map",
+  "version": "1.10",
+  "width": 240
+}

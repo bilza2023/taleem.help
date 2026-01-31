@@ -1,0 +1,857 @@
+{
+  "name": "theorem_11_1_3",
+  "description": "Slide for Theorem 11.1.1",
+  "tags": [
+    "theorem",
+    "geometry",
+    "class9"
+  ],
+  "status": "draft",
+  "version": "deck-v1",
+  "background": {
+    "backgroundColor": "#F5F5F5",
+    "backgroundImage": "/images/taleem.webp",
+    "backgroundImageOpacity": 0.1
+  },
+  "deck": [
+    {
+      "start": 0,
+      "end": 82.81,
+      "type": "imageLeftBulletsRight",
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/theorems9old_11.1.3.svg",
+          "showAt": 0
+        },
+        {
+          "name": "bullet",
+          "content": "Step 1 – Congruent Triangles",
+          "showAt": 0
+        },
+        {
+          "name": "bullet",
+          "content": "Step 2 – NB ∥ AM and NB = MC",
+          "showAt": 0
+        },
+        {
+          "name": "bullet",
+          "content": "Step 3 – Parallelogram NBMC",
+          "showAt": 0
+        },
+        {
+          "name": "bullet",
+          "content": "Step 3b – Prove LM 1/2 of BC",
+          "showAt": 0
+        }
+      ]
+    },
+    {
+      "start": 82.81,
+      "end": 430.5,
+      "type": "eq",
+      "data": [
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Theorem 11.1.3",
+          "showAt": 82.81,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Mid-segment of a triangle is parallel to the 3rd side and half its length",
+          "showAt": 134.5,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Step 1 – Congruent Triangles",
+          "showAt": 147.3,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Use SAS",
+          "showAt": 156,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "∠2 = ∠1",
+          "showAt": 163.2,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "AL = LB",
+          "showAt": 164.7,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "LN = ML",
+          "showAt": 187.7,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Will feed into Step 2",
+          "showAt": 196.1,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Step 2 – NB ∥ AM and NB = MC",
+          "showAt": 203.5,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "∠3 = ∠A",
+          "showAt": 210.1,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "NB ∥ AM",
+          "showAt": 220.9,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "⇒ NB ∥ MC",
+          "showAt": 235.7,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "NB = AM and AM = MC ⇒ NB = MC",
+          "showAt": 273,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Step 3 – Parallelogram NBMC",
+          "showAt": 326.3,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "NBMC is a parallelogram",
+          "showAt": 331.6,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "BC ∥ LM",
+          "showAt": 347.1,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "BC = NM",
+          "showAt": 357.8,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "LM = ½ NM",
+          "showAt": 361.9,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "⇒ LM = ½ BC",
+          "showAt": 380.7,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Proved",
+          "showAt": 395.3,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.3.svg"
+            },
+            {
+              "type": "spHeading",
+              "content": "Given"
+            },
+            {
+              "type": "spText",
+              "content": "Point L and M are mid-points of AB and AC"
+            },
+            {
+              "type": "spHeading",
+              "content": "To Prove"
+            },
+            {
+              "type": "spText",
+              "content": "LM ∥ BC"
+            },
+            {
+              "type": "spText",
+              "content": "LM = ½ BC"
+            },
+            {
+              "type": "spHeading",
+              "content": "Construction"
+            },
+            {
+              "type": "spText",
+              "content": "Draw LN so that ML = LN"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

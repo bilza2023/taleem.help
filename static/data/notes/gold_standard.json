@@ -1,0 +1,20 @@
+{
+    "filename": "triangle_medians_note",
+    "name": "Medians of a Triangle Are Concurrent",
+    "tags": ["geometry","triangle","median"],
+    "status": "ready",
+    "createdAt": "2025-08-03T12:00:00Z",
+    "editedAt": "2025-08-03T12:00:00Z",
+    "blocks": [
+      { "type": "title",   "content": "Medians of a Triangle Are Concurrent" },
+      { "type": "p",       "content": "Every triangle’s medians intersect at the <strong>centroid</strong>." },  
+      { "type": "image",   "src": "/images/theorems9old_11.1.4.svg", "alt": "Triangle with medians" },  
+      { "type": "p",       "content": "The centroid divides each median in a 2 : 1 ratio (vertex → centroid : centroid → midpoint)." },
+      { "type": "code",    "lang": "latex", "content": "AG = 2 \\times GD" },
+      { "type": "table",   "header": ["Term","Definition"], "rows": [
+          ["Concurrent","Lines intersecting at one point"],
+          ["Centroid","Intersection of median lines"]
+        ]
+      }
+    ]
+  }

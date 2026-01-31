@@ -1,0 +1,254 @@
+{
+  "name": "goldstandard_mixed_slide",
+  "description": "Mixed deck: normal slides, extended EQ slide, and farewell slide",
+  "tags": [
+    "mixed",
+    "eq",
+    "gold-standard"
+  ],
+  "status": "draft",
+  "createdAt": "2025-07-10T00:00:00Z",
+  "editedAt": "2025-07-10T00:00:00Z",
+  "version": "deck-v1",
+  "background": {
+    "backgroundColor": "#F3E5AB",
+    "backgroundImage": "/images/taleem.webp",
+    "backgroundImageOpacity": 0.07
+  },
+  "deck": [
+    {
+      "type": "titleSlide",
+      "start": 0,
+      "end": 10,
+      "data": [
+        {
+          "name": "title",
+          "content": "GoldStandard Mixed Demo",
+          "showAt": 0
+        }
+      ]
+    },
+    {
+      "type": "imageWithCaption",
+      "start": 10,
+      "end": 20,
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/box.webp",
+          "showAt": 0
+        },
+        {
+          "name": "caption",
+          "content": "A normal image slide",
+          "showAt": 1
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 20,
+      "end": 40,
+      "data": [
+        {
+          "name": "line",
+          "type": "math",
+          "content": "E = mc^2",
+          "showAt": 20
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Implications?",
+          "showAt": 25,
+          "spItems": [
+            {
+              "type": "spHeading",
+              "content": "Einstein's Law"
+            },
+            {
+              "type": "spText",
+              "content": "Energy–mass equivalence"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/relativity.png"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "F = ma",
+          "showAt": 30,
+          "spItems": [
+            {
+              "type": "spHeading",
+              "content": "Einstein's Law"
+            },
+            {
+              "type": "spText",
+              "content": "Energy–mass equivalence"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/relativity.png"
+            },
+            {
+              "type": "spText",
+              "content": "Mass and energy are interchangeable"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "a = F / m",
+          "showAt": 32,
+          "spItems": [
+            {
+              "type": "spHeading",
+              "content": "Einstein's Law"
+            },
+            {
+              "type": "spText",
+              "content": "Energy–mass equivalence"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/relativity.png"
+            },
+            {
+              "type": "spText",
+              "content": "Mass and energy are interchangeable"
+            },
+            {
+              "type": "spText",
+              "content": "Newton's Second Law"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Unit Analysis",
+          "showAt": 34,
+          "spItems": [
+            {
+              "type": "spHeading",
+              "content": "Einstein's Law"
+            },
+            {
+              "type": "spText",
+              "content": "Energy–mass equivalence"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/relativity.png"
+            },
+            {
+              "type": "spText",
+              "content": "Mass and energy are interchangeable"
+            },
+            {
+              "type": "spText",
+              "content": "Newton's Second Law"
+            },
+            {
+              "type": "spText",
+              "content": "Acceleration formula"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "p = m v",
+          "showAt": 36,
+          "spItems": [
+            {
+              "type": "spHeading",
+              "content": "Einstein's Law"
+            },
+            {
+              "type": "spText",
+              "content": "Energy–mass equivalence"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/relativity.png"
+            },
+            {
+              "type": "spText",
+              "content": "Mass and energy are interchangeable"
+            },
+            {
+              "type": "spText",
+              "content": "Newton's Second Law"
+            },
+            {
+              "type": "spText",
+              "content": "Acceleration formula"
+            },
+            {
+              "type": "spText",
+              "content": "N = kg·m/s²"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Wrap-up",
+          "showAt": 38,
+          "spItems": [
+            {
+              "type": "spHeading",
+              "content": "Einstein's Law"
+            },
+            {
+              "type": "spText",
+              "content": "Energy–mass equivalence"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/relativity.png"
+            },
+            {
+              "type": "spText",
+              "content": "Mass and energy are interchangeable"
+            },
+            {
+              "type": "spText",
+              "content": "Newton's Second Law"
+            },
+            {
+              "type": "spText",
+              "content": "Acceleration formula"
+            },
+            {
+              "type": "spText",
+              "content": "N = kg·m/s²"
+            },
+            {
+              "type": "spText",
+              "content": "Momentum definition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "titleSlide",
+      "start": 40,
+      "end": 50,
+      "data": [
+        {
+          "name": "title",
+          "content": "Thank You!",
+          "showAt": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "/home/bilal-tariq/tiles/base.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "/home/bilal-tariq/tiles/base_out_atlas.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/bilal-tariq/tiles/cave.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "/home/bilal-tariq/tiles/icons.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/bilal-tariq/tiles/icons2.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/bilal-tariq/tiles/quran-icons-64x64-tilesheet.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/bilal-tariq/tiles/tile-sheet-export.tsx": {
+            "scaleInDock": 1
+        },
+        "68": {
+            "scale": 0.66796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 961.1228070175438,
+                "y": 443.1345029239767
+            }
+        },
+        "untitled.tmx": {
+            "scale": 1.3359375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 479.0643274853801,
+                "y": 424.4210526315789
+            }
+        }
+    },
+    "last.externalTilesetPath": "/home/bilal-tariq/tiles",
+    "last.imagePath": "/home/bilal-tariq/tiles",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 64,
+    "map.tileWidth": 64,
+    "openFiles": [
+    ],
+    "project": "68.tiled-project",
+    "recentFiles": [
+        "/home/bilal-tariq/tiles/base.tsx",
+        "/home/bilal-tariq/tiles/cave.tsx",
+        "68",
+        "untitled.tmx"
+    ],
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx"
+}

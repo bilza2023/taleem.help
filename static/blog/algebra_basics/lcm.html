@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lowest Common Multiple (LCM)</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ]
+    });"></script>
+</head>
+<body>
+  <h1 style="width: 100%; border: 2px solid #facc15; border-radius: 0.375rem; text-align: center; font-size: 1.875rem; padding:6px; margin:2px; background-color: #0f4502">
+    💡 Taleem.Help
+  </h1>
+<h1>Lowest Common Multiple (LCM)</h1>
+
+<section>
+  <h2>What is LCM?</h2>
+  <p>The <strong>Lowest Common Multiple (LCM)</strong> of two or more numbers is the smallest number that is a multiple of all of them.</p>
+  <p>LCM is useful when we want to find a common time or unit — for example, when two events happen on different schedules and we want to know when they will happen together.</p>
+</section>
+
+<section>
+  <h2>Methods to Find LCM</h2>
+
+  <h3>Method 1: Listing Multiples</h3>
+  <p>Write down multiples of each number until you find the first one they have in common.</p>
+  <p><strong>Example:</strong></p>
+  <ul>
+    <li>Multiples of 4: 4, 8, 12, 16, 20, ...</li>
+    <li>Multiples of 6: 6, 12, 18, 24, ...</li>
+    <li><strong>LCM = 12</strong></li>
+  </ul>
+
+  <h3>Method 2: Prime Factorization</h3>
+  <p>Break each number into prime factors. Take the <em>highest powers</em> of all primes involved.</p>
+  <p><strong>Example:</strong></p>
+  <ul>
+    <li>\( 12 = 2^2 \times 3 \)</li>
+    <li>\( 15 = 3 \times 5 \)</li>
+    <li>\( \text{LCM} = 2^2 \times 3 \times 5 = 60 \)</li>
+  </ul>
+
+  <h3>Method 3: Division Ladder (Short Division)</h3>
+  <p>Divide numbers together by common primes, then multiply all the divisors.</p>
+  <table>
+    <caption>Division Ladder for LCM of 12 and 15</caption>
+    <thead>
+      <tr>
+        <th>Divisor</th>
+        <th>12</th>
+        <th>15</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>5</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3"><strong>LCM = 3 × 2 × 2 × 5 = 60</strong></td>
+      </tr>
+    </tfoot>
+  </table>
+  
+</section>
+
+<section>
+  <h2>Examples</h2>
+  <ul>
+    <li>LCM of 4 and 6 is \( 12 \)</li>
+    <li>LCM of 10 and 12 is \( 60 \)</li>
+    <li>LCM of 5, 6, and 8 is \( 120 \)</li>
+    <li>LCM of 3, 4, 9: \( 3 = 3,\ 4 = 2^2,\ 9 = 3^2 \Rightarrow \text{LCM} = 2^2 \times 3^2 = 36 \)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Applications of LCM</h2>
+  <ul>
+    <li><strong>Common Denominators:</strong> In fractions, LCM helps align denominators.</li>
+    <li><strong>Time Scheduling:</strong> Two lights blink every 5 and 6 seconds. When together? → LCM = 30 sec</li>
+    <li><strong>Math Word Problems:</strong> Least quantity to buy, minimum time intervals, etc.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>LCM vs HCF</h2>
+  <p>LCM deals with <strong>multiples</strong> — goes upward.</p>
+  <p>HCF (Highest Common Factor) deals with <strong>factors</strong> — goes downward.</p>
+  <p>Important relationship:</p>
+  <p>
+    \[
+    \text{LCM} \times \text{HCF} = a \times b
+    \]
+  </p>
+</section>
+
+<footer>
+  <p><a href="/index.html">&larr; Back to Index</a></p>
+</footer>
+
+</body>
+</html>

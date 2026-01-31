@@ -1,0 +1,164 @@
+{
+  "name": "work_desk_demo",
+  "description": "Sample deck for work_desk preview — no images",
+  "tags": [
+    "demo",
+    "geometry"
+  ],
+  "status": "draft",
+  "version": "deck-v1",
+  "background": {
+    "backgroundColor": "#FAF3E0",
+    "backgroundImage": "/images/taleem.webp",
+    "backgroundImageOpacity": 0.08
+  },
+  "deck": [
+    {
+      "start": 0,
+      "end": 18.48,
+      "type": "titleSlide",
+      "data": [
+        {
+          "name": "title",
+          "content": "Understanding Parallelograms",
+          "showAt": 0
+        }
+      ]
+    },
+    {
+      "start": 18.48,
+      "end": 158.08,
+      "type": "eq",
+      "data": [
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Properties Of Parallelogram",
+          "showAt": 0,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/parallelogram_properties_labeled.png"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.2.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "1. Opposite sides are parallel and equal",
+          "showAt": 35.5,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/parallelogram_properties_labeled.png"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.2.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "2. Opposite angles are equal",
+          "showAt": 61.2,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/parallelogram_properties_labeled.png"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.2.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "3. Adjacent angles add up to 180°",
+          "showAt": 78.8,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/parallelogram_properties_labeled.png"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.2.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "4. Diagonals bisect each other",
+          "showAt": 106.6,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/parallelogram_properties_labeled.png"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.2.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Additional Properties",
+          "showAt": 130.3,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/parallelogram_properties_labeled.png"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.2.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "5. One right angle → all are right angles",
+          "showAt": 135.1,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/parallelogram_properties_labeled.png"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.2.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "6. Diagonal forms 2 congruent triangles",
+          "showAt": 143.5,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/parallelogram_properties_labeled.png"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.2.svg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

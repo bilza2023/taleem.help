@@ -1,0 +1,54 @@
+{
+    "diagram": "theorems9old_11.1.5.svg",
+    "elements": [
+      {
+        "id": "A",
+        "label": "Point A",
+        "role": "vertex",
+        "explain": "Upper vertex of triangle"
+      },
+      {
+        "id": "B",
+        "label": "Point B",
+        "role": "vertex",
+        "explain": "Left base vertex of triangle"
+      },
+      {
+        "id": "C",
+        "label": "Point C",
+        "role": "vertex",
+        "explain": "Right base vertex of triangle"
+      },
+      {
+        "id": "DE",
+        "label": "Line DE",
+        "role": "parallel_segment",
+        "explain": "Segment DE is parallel to BC"
+      },
+      {
+        "id": "BC",
+        "label": "Base BC",
+        "role": "base_segment",
+        "explain": "Base of triangle ABC"
+      },
+      {
+        "id": "AD",
+        "label": "Segment AD",
+        "role": "transversal",
+        "explain": "Line from vertex A to DE"
+      },
+      {
+        "id": "AE",
+        "label": "Segment AE",
+        "role": "transversal",
+        "explain": "Line from vertex A to E"
+      },
+      {
+        "id": "Triangle_ABC",
+        "label": "Triangle ABC",
+        "role": "figure",
+        "explain": "Main triangle in the theorem"
+      }
+    ]
+  }
+  

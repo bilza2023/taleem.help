@@ -1,0 +1,50 @@
+[
+    {
+        "title": "What Is Algebra",
+        "filename": "what_is_algebra.html",
+        "path": "./what_is_algebra.html"
+      },
+    {
+      "title": "Algebra Introduction",
+      "filename": "algebraIntroduction.html",
+      "path": "./algebraIntroduction.html"
+    },
+    {
+        "title": "Rational Numbers",
+        "filename": "rational_numbers.html",
+        "path": "./rational_numbers.html"
+      },
+      
+    {
+      "title": "Polynomials And Their Types",
+      "filename": "polynomials_and_their_types.html",
+      "path": "./polynomials_and_their_types.html"
+    },
+    {
+      "title": "Prime Factorization",
+      "filename": "prime_factorization.html",
+      "path": "./prime_factorization.html"
+    },
+    {
+      "title": "Properties Of Rational Numbers",
+      "filename": "properties_of_rational_numbers.html",
+      "path": "./properties_of_rational_numbers.html"
+    },
+
+    {
+        "title": "Lcm",
+        "filename": "lcm.html",
+        "path": "./lcm.html"
+      },
+    {
+      "title": "Hcf",
+      "filename": "hcf.html",
+      "path": "./hcf.html"
+    },
+    {
+      "title": "Hcf Vs Lcm",
+      "filename": "hcf_vs_lcm.html",
+      "path": "./hcf_vs_lcm.html"
+    }
+  ]
+  

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Theorem 11.1.4 – Medians of a Triangle Are Concurrent</title>
+<link rel="stylesheet" href="./blog.css">
+</head>
+<body>
+
+<h1>Theorem 11.1.4 – Medians of a Triangle Are Concurrent</h1>
+
+<img src="/images/theorems9old_11.1.4.svg" alt="Triangle with all three medians meeting at G" style="max-width:50%;">
+
+<h2>Book Statement</h2>
+<p>The medians of a triangle are concurrent and their point of concurrency is the point of trisection of each median.</p>
+
+<h2>Key Vocabulary</h2>
+<ul>
+  <li><strong>Median:</strong> A line segment from a vertex to the midpoint of the opposite side.</li>
+  <li><strong>Concurrent:</strong> Lines are concurrent if they all meet at a single point (not to be confused with congruent).</li>
+  <li><strong>Trisection:</strong> A segment divided into three equal parts; here, the centroid divides each median in a 2&nbsp;:&nbsp;1 ratio (vertex&nbsp;→ centroid : centroid&nbsp;→ midpoint).</li>
+</ul>
+
+<p>The centroid is the point of concurrency of the three medians and lies 2 parts from the vertex and 1 part from the midpoint.</p>
+
+<h2>What We Will Prove</h2>
+<ol>
+  <li>All three medians of a triangle meet at one point (concurrency).</li>
+  <li>That point divides each median in a 2&nbsp;:&nbsp;1 ratio.</li>
+</ol>
+
+<h2>Proof Road‑Map (Top‑Level Steps)</h2>
+<table>
+  <thead>
+    <tr><th>Step</th><th>Core idea</th><th>Tool / Theorem used</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Build a parallelogram inside the triangle</td><td>Mid‑point theorem</td></tr>
+    <tr><td>2</td><td>Parallelogram forces the third median to pass through the same point</td><td>Diagonals of a parallelogram bisect one another</td></tr>
+    <tr><td>3</td><td>Pre‑marked equal segments give the 2&nbsp;:&nbsp;1 split</td><td>Simple segment counting</td></tr>
+  </tbody>
+</table>
+
+<img src="/images/theorems9old_11.1.4_01.svg" alt="Parallelogram HBCG emphasized to show Step 1 visually" style="max-width:50%;">
+
+<h2>Detailed Proof</h2>
+
+<h3>Step&nbsp;1 – Build the Parallelogram</h3>
+<p>Take triangle <em>ABC</em> and choose two medians: <em>BE</em> and <em>CF</em>. They intersect at point <em>G</em>, our candidate centroid.
+Mark a point <em>H</em> on the extension of <em>AG</em> such that <em>AG = GH</em>.  
+In triangle <em>ACH</em>, <em>G</em> and <em>E</em> are mid‑points, so by the Mid‑point Theorem <em>GE&nbsp;∥&nbsp;HC</em>.  
+In triangle <em>ABH</em>, <em>G</em> and <em>F</em> are mid‑points, so <em>GF&nbsp;∥&nbsp;HB</em>.  
+These two pairs of parallels form parallelogram <em>HBCG</em>.</p>
+
+<h3>Step&nbsp;2 – The Third Median Must Pass Through G</h3>
+<p>We already formed a parallelogram <em>HBCG</em> inside the triangle. A fundamental property of parallelograms is that their diagonals <strong>bisect each other</strong> — meaning they cut each other exactly in half.</p>
+<p>In this case, the diagonals <em>BH</em> and <em>CH</em> intersect at point <em>D</em>, which must be the <strong>midpoint of BC</strong> due to this bisection rule.</p>
+<p>Now observe line <em>AD</em>: it connects vertex <em>A</em> to the midpoint <em>D</em> of <em>BC</em>, making it the <strong>third median</strong>.</p>
+<p>Crucially, this line also passes through point <em>G</em> — the same point where medians <em>BE</em> and <em>CF</em> intersected.</p>
+<p>Hence, <strong>all three medians intersect at the same point G</strong>, proving that the medians of a triangle are <strong>concurrent</strong>.</p>
+
+
+
+<h3>Step&nbsp;3 – Proving the 2&nbsp;:&nbsp;1 Ratio</h3>
+<p>By construction <em>AG = GH</em>. Because <em>GD = GH</em> (opposite sides in a parallelogram are equal), the whole median <em>AD</em> consists of three equal parts: <em>AG</em>, <em>GD</em>, <em>GH</em>.  
+Thus <em>AG</em> is twice <em>GD</em>:</p>
+
+<pre><code class="language-latex">AG = 2 \times GD</code></pre>
+
+<p>The centroid <em>G</em> therefore divides every median in the ratio 2&nbsp;:&nbsp;1 (vertex&nbsp;→ centroid&nbsp;:&nbsp;centroid&nbsp;→ midpoint).</p>
+
+<hr>
+<small>Generated 2025-08-03.</small>
+
+</body>
+</html>

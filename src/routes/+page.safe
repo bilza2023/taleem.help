@@ -1,0 +1,44 @@
+<script>
+    import PageCategoryNav from '$lib/components/PageCategoryNav.svelte';
+    import UCard from '$lib/components/UCard.svelte';
+  
+    export let data;
+  
+    const { pageNav, questions } = data;
+  
+    let activeTop = 'videos';
+  
+    function setCat(newCat) {
+      activeTop = newCat.id;
+    }
+  
+    $: filtered = questions.filter(q => q.category === activeTop);
+  </script>
+  
+  <div class="page">
+    <div class="PageCategoryNavWrapper">
+      <PageCategoryNav
+        items={pageNav}
+        evt={setCat}
+        size={40}
+        active={activeTop}
+      />
+    </div>
+  
+    <section class="wrap">
+      <h2 class="h">
+        {activeTop.charAt(0).toUpperCase() + activeTop.slice(1)}
+      </h2>
+  
+      <div class="cards">
+        {#each filtered as row (row.category + '-' + row.id)}
+          <UCard
+            title={row.title}
+            thumbnail={row.thumbnail}
+            href={row.href}
+          />
+        {/each}
+      </div>
+    </section>
+  </div>
+  

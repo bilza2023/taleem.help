@@ -1,0 +1,382 @@
+{
+  "name": "theorem_11_1_1",
+  "description": "Slide for Theorem 11.1.1",
+  "tags": [
+    "theorem",
+    "geometry",
+    "class9"
+  ],
+  "status": "draft",
+  "version": "deck-v1",
+  "background": {
+    "backgroundColor": "#F5F5F5",
+    "backgroundImage": "/images/taleem.webp",
+    "backgroundImageOpacity": 0.1
+  },
+  "deck": [
+    {
+      "start": 0,
+      "end": 6,
+      "type": "imageWithTitle",
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/theorems9old_11.1.1.svg",
+          "showAt": 0
+        },
+        {
+          "name": "title",
+          "content": "Theorem 11.1.1",
+          "showAt": 0
+        }
+      ]
+    },
+    {
+      "start": 5.9,
+      "end": 350.78,
+      "type": "eq",
+      "data": [
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Given: ABCD is a parallelogram",
+          "showAt": 6,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "To Prove: AB = DC and AD = BC",
+          "showAt": 55.1,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "It means prove opposite sides are equal",
+          "showAt": 75.7,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "To Prove: ∠ADC = ∠ABC and ∠BAD = ∠BCD",
+          "showAt": 80.4,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "It means prove opposite angles are congruent",
+          "showAt": 86.3,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "To Prove: OA = OC and OB = OD",
+          "showAt": 91.6,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "It means prove diagonals bisect each other",
+          "showAt": 100.2,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Major Steps",
+          "showAt": 113.7,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Step 1: Prove Δ in Image B are congruent",
+          "showAt": 122.7,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Use A·S·A (Angle–Side–Angle)",
+          "showAt": 151.4,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Proves AB = DC and AD = BC",
+          "showAt": 187.5,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Proves ∠A = ∠C (opposite angles)",
+          "showAt": 208.3,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Step 2: Prove ∠B = ∠D",
+          "showAt": 226.9,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Use angles 1, 2, 3, 4",
+          "showAt": 255.5,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Step 3: ΔDOA ≅ ΔBOC",
+          "showAt": 285.9,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Use A·A·S (Angle–Angle–Side)",
+          "showAt": 311,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "\\boxed{\\text{Hence, proved.}}",
+          "showAt": 338.9,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_b.svg"
+            },
+            {
+              "type": "spImage",
+              "content": "/images/theorems9old_11.1.1_c.svg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

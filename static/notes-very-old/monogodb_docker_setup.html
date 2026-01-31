@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running MongoDB in Docker</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        code {
+            background-color: #1e1e1e;
+            color: #c5c8c6;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        pre {
+            background-color: #1e1e1e;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        h1, h2 {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Running MongoDB in Docker</h1>
+    <p>MongoDB is a powerful NoSQL database that can be easily deployed using Docker. In this guide, we'll explore how to run MongoDB containers with and without authentication, create an admin user, and establish connections.</p>
+    
+    <h2>1. Running MongoDB Without Authentication</h2>
+    <p>To start a MongoDB container without authentication:</p>
+    <pre><code>sudo docker run -d \
+  --name mongo-no-auth \
+  -p 27017:27017 \
+  mongo:latest</code></pre>
+    <p>Connection String:</p>
+    <pre><code>mongodb://localhost:27017/</code></pre>
+    <p>Accessing the container:</p>
+    <pre><code>sudo docker exec -it mongo-no-auth mongosh</code></pre>
+    
+    <h2>2. Running MongoDB With Authentication</h2>
+    <p>To enforce authentication, use environment variables:</p>
+    <pre><code>sudo docker run -d \
+  --name mongo-auth \
+  -p 27017:27017 \
+  -e MONGO_INITDB_ROOT_USERNAME=admin \
+  -e MONGO_INITDB_ROOT_PASSWORD=securepassword \
+  mongo:latest --auth</code></pre>
+    <p>Connection String:</p>
+    <pre><code>mongodb://admin:securepassword@127.0.0.1:27017/admin</code></pre>
+    <p>Accessing the container:</p>
+    <pre><code>sudo docker exec -it mongo-auth mongosh -u admin -p securepassword --authenticationDatabase admin</code></pre>
+    
+    <h2>3. Creating an Admin User Manually</h2>
+    <p>If you didn't specify an admin user initially, you can create one manually:</p>
+    <pre><code>use admin;
+db.createUser({
+  user: "admin",
+  pwd: "securepassword",
+  roles: [ { role: "root", db: "admin" } ]
+});</code></pre>
+    <p>Restart MongoDB with authentication enabled:</p>
+    <pre><code>sudo docker stop mongo-no-auth
+sudo docker rm mongo-no-auth
+sudo docker run -d \
+  --name mongo-secure \
+  -p 27017:27017 \
+  mongo:latest --auth</code></pre>
+    <p>Now connect with:</p>
+    <pre><code>mongodb://admin:securepassword@127.0.0.1:27017/admin</code></pre>
+    
+    <h2>4. Checking Logs for Authentication Issues</h2>
+    <p>If authentication fails, check logs:</p>
+    <pre><code>sudo docker logs mongo-auth | grep "Access control"</code></pre>
+    
+    <h2>5. Connecting to MongoDB from Another Container</h2>
+    <p>If another container needs to connect, use:</p>
+    <pre><code>mongodb://admin:securepassword@mongo-auth:27017/admin</code></pre>
+    
+    <h2>6. Connecting from a Local Application</h2>
+    <p>For local applications, the connection string might be:</p>
+    <pre><code>mongodb://admin:securepassword@localhost:27017/admin</code></pre>
+    <p>If this fails, try:</p>
+    <pre><code>mongodb://admin:securepassword@127.0.0.1:27017/admin</code></pre>
+    
+    <h2>Conclusion</h2>
+    <p>Using Docker, you can quickly deploy MongoDB instances with or without authentication. Always check logs if authentication issues arise and ensure the correct connection string format.</p>
+</body>
+</html>

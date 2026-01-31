@@ -1,0 +1,90 @@
+{
+  "filename": "test",
+  "name": "Taleem.Help Markdown Styling Demo",
+  "description": "",
+  "tags": [
+    "notes"
+  ],
+  "status": "draft",
+  "createdAt": "2025-08-02T16:15:24.366Z",
+  "editedAt": "2025-08-02T16:15:24.366Z",
+  "blocks": [
+    {
+      "type": "title",
+      "content": "Taleem.Help Markdown Styling Demo"
+    },
+    {
+      "type": "p",
+      "content": "<em>Testing every element in one place</em>"
+    },
+    {
+      "type": "image",
+      "src": "/images/box.webp",
+      "alt": "Box Diagram"
+    },
+    {
+      "type": "p",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim, nulla sit amet malesuada laoreet, magna mi egestas erat, non molestie lectus libero sed nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer <strong>pharetra</strong> eros vitae libero ultricies, at venenatis elit iaculis. Donec ultricies gravida orci, vitae facilisis nisl viverra eget. Quisque pellentesque nunc quis neque vestibulum, sed ultrices nulla tempor."
+    },
+    {
+      "type": "p",
+      "content": "This section demonstrates blockquotes and nested headings. Below, you’ll also see an <em>inline <mark>highlight</mark></em> (using <code>==mark==</code> syntax supported by many Markdown processors)."
+    },
+    {
+      "type": "p",
+      "content": "Here is an example sentence with an <mark>inline highlight</mark> to draw attention to something important."
+    },
+    {
+      "type": "p",
+      "content": "A short note under an H5 just to be thorough."
+    },
+    {
+      "type": "table",
+      "header": [
+        "Slide Type",
+        "Purpose",
+        "Example Visual / Note"
+      ],
+      "rows": [
+        [
+          "titleSlide",
+          "Introduce the topic",
+          "Usually big bold text"
+        ],
+        [
+          "eq",
+          "Step-by-step math derivation",
+          "$E = mc^2$ line-by-line"
+        ],
+        [
+          "imageLeftBulletsRight",
+          "Visual left, bullets right",
+          "Works great for concept slides"
+        ],
+        [
+          "quoteSlide",
+          "Highlight a key quotation",
+          "Pull-quotes from textbooks"
+        ]
+      ]
+    },
+    {
+      "type": "code",
+      "lang": "javascript",
+      "content": "\n// Simple Fibonacci – keep it readable for testing\nfunction fib(n) {\n  if (n <= 1) return n;\n  return fib(n - 1) + fib(n - 2);\n}\n\nconsole.log(fib(10)); // → 55\n"
+    },
+    {
+      "type": "image",
+      "src": "/images/taleem.webp",
+      "alt": "Taleem Background"
+    },
+    {
+      "type": "p",
+      "content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; <strong>Proin</strong> rhoncus urna at odio hendrerit, quis viverra leo elementum. Curabitur bibendum, augue sed vulputate tempus, nulla quam fringilla justo, quis facilisis enim mi ac sapien. Integer sit amet diam id felis tempor fermentum."
+    },
+    {
+      "type": "p",
+      "content": "<strong>End of file — Happy testing!</strong>"
+    }
+  ]
+}

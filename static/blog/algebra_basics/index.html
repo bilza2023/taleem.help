@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Algabra Basics</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+  <style>
+    body {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    h1 {
+      text-align: center;
+    }
+    .lesson-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+    }
+    .lesson-list li {
+      margin: 0.75rem 0;
+      padding: 1rem;
+      border: 1px solid #555;
+      border-radius: 0.5rem;
+      background-color: #1f1f1f;
+    }
+    .lesson-list a {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+    .lesson-list a:hover {
+      text-decoration: underline;
+    }
+    .subtitle {
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-top: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+    <h1 style="width: 100%; border: 2px solid #facc15; border-radius: 0.375rem; text-align: center; font-size: 1.875rem; padding:6px; margin:2px; background-color: #0f4502">
+        💡 Taleem.Help
+      </h1>
+
+  <h1>📚 Algebra Basics</h1>
+  
+  <p>This is a list of Basic Algebra Concepts that every class 9th and 10th student must know. We will keep adding in this list.</p>
+
+  <ul id="lesson-list" class="lesson-list">
+    <!-- Lessons will be populated here -->
+  </ul>
+
+  <hr>
+  <p><small>This list will be updated from time to time.</small></p>
+
+  <script>
+    fetch('./list.json')
+      .then(res => res.json())
+      .then(list => {
+        // list.sort((a, b) => a.title.localeCompare(b.title));
+        const ul = document.getElementById('lesson-list');
+        list.forEach(item => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = item.path;
+          a.target = "_blank";
+          a.textContent = item.title;
+          const subtitle = document.createElement('div');
+          subtitle.className = 'subtitle';
+          subtitle.textContent = item.path.replace('/research/', '');
+          li.appendChild(a);
+          li.appendChild(subtitle);
+          ul.appendChild(li);
+        });
+      })
+      .catch(err => {
+        console.error('Failed to load list.json:', err);
+      });
+  </script>
+</body>
+</html>

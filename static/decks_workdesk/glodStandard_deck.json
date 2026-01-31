@@ -1,0 +1,403 @@
+{
+  "name": "goldstart_deck",
+  "description": "A comprehensive test deck for mobile layout audit",
+  "tags": [
+    "mobile",
+    "audit",
+    "gold-standard"
+  ],
+  "status": "draft",
+  "createdAt": "2025-07-09T00:00:00Z",
+  "editedAt": "2025-07-09T00:00:00Z",
+  "version": "deck-v1",
+  "background": {
+    "backgroundColor": "#F3E5AB",
+    "backgroundImage": "/images/taleem.webp",
+    "backgroundImageOpacity": 0.07
+  },
+  "deck": [
+    {
+      "type": "titleSlide",
+      "start": 0,
+      "end": 10,
+      "data": [
+        {
+          "name": "title",
+          "content": "GoldStart Deck",
+          "showAt": 0
+        }
+      ]
+    },
+    {
+      "type": "titleAndSubtitle",
+      "start": 10,
+      "end": 20,
+      "data": [
+        {
+          "name": "title",
+          "content": "Welcome to Physics",
+          "showAt": 0
+        },
+        {
+          "name": "subtitle",
+          "content": "Mobile Audit Preview",
+          "showAt": 1
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "start": 20,
+      "end": 30,
+      "data": [
+        {
+          "name": "bullet",
+          "content": "Point One",
+          "showAt": 21
+        },
+        {
+          "name": "bullet",
+          "content": "Point Two",
+          "showAt": 22
+        },
+        {
+          "name": "bullet",
+          "content": "Point Three",
+          "showAt": 23
+        }
+      ]
+    },
+    {
+      "type": "twoColumnText",
+      "start": 30,
+      "end": 40,
+      "data": [
+        {
+          "name": "title",
+          "content": "Branches",
+          "showAt": 0
+        },
+        {
+          "name": "left",
+          "content": "Mechanics\nOptics",
+          "showAt": 1
+        },
+        {
+          "name": "right",
+          "content": "Thermodynamics\nQuantum",
+          "showAt": 2
+        }
+      ]
+    },
+    {
+      "type": "imageSlide",
+      "start": 40,
+      "end": 50,
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/box.webp",
+          "showAt": 0
+        }
+      ]
+    },
+    {
+      "type": "imageWithTitle",
+      "start": 50,
+      "end": 60,
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/box.webp",
+          "showAt": 50
+        },
+        {
+          "name": "title",
+          "content": "Sample Image Title",
+          "showAt": 52
+        }
+      ]
+    },
+    {
+      "type": "imageWithCaption",
+      "start": 60,
+      "end": 70,
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/box.webp",
+          "showAt": 0
+        },
+        {
+          "name": "caption",
+          "content": "This is a caption",
+          "showAt": 1
+        }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 70,
+      "end": 80,
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/box.webp",
+          "showAt": 71
+        },
+        {
+          "name": "bullet",
+          "content": "Left bullet one",
+          "showAt": 74
+        },
+        {
+          "name": "bullet",
+          "content": "Left bullet two",
+          "showAt": 78
+        }
+      ]
+    },
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 80,
+      "end": 90,
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/box.webp",
+          "showAt": 81
+        },
+        {
+          "name": "bullet",
+          "content": "Right bullet one",
+          "showAt": 84
+        },
+        {
+          "name": "bullet",
+          "content": "Right bullet two",
+          "showAt": 86
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "start": 90,
+      "end": 100,
+      "data": [
+        {
+          "name": "headers",
+          "content": [
+            "A",
+            "B",
+            "C"
+          ],
+          "showAt": 0
+        },
+        {
+          "name": "rows",
+          "content": [
+            [
+              "1",
+              "2",
+              "3"
+            ],
+            [
+              "4",
+              "5",
+              "6"
+            ]
+          ],
+          "showAt": 1
+        }
+      ]
+    },
+    {
+      "type": "statistic",
+      "start": 100,
+      "end": 110,
+      "data": [
+        {
+          "name": "number",
+          "content": "42",
+          "showAt": 0
+        },
+        {
+          "name": "label",
+          "content": "Answer",
+          "showAt": 1
+        }
+      ]
+    },
+    {
+      "type": "donutChart",
+      "start": 110,
+      "end": 120,
+      "data": [
+        {
+          "name": "percent",
+          "content": "60",
+          "showAt": 0
+        },
+        {
+          "name": "label",
+          "content": "Alpha",
+          "showAt": 0
+        },
+        {
+          "name": "color",
+          "content": "#4CAF50",
+          "showAt": 0
+        },
+        {
+          "name": "percent",
+          "content": "40",
+          "showAt": 1
+        },
+        {
+          "name": "label",
+          "content": "Beta",
+          "showAt": 1
+        },
+        {
+          "name": "color",
+          "content": "#FF9800",
+          "showAt": 1
+        }
+      ]
+    },
+    {
+      "type": "bigNumber",
+      "start": 120,
+      "end": 130,
+      "data": [
+        {
+          "name": "number",
+          "content": "100%",
+          "showAt": 0
+        },
+        {
+          "name": "label",
+          "content": "Completion",
+          "showAt": 1
+        }
+      ]
+    },
+    {
+      "type": "barChart",
+      "start": 130,
+      "end": 140,
+      "data": [
+        {
+          "name": "bar",
+          "label": "Math",
+          "value": 80,
+          "showAt": 0
+        },
+        {
+          "name": "bar",
+          "label": "Physics",
+          "value": 70,
+          "showAt": 1
+        },
+        {
+          "name": "bar",
+          "label": "Chemistry",
+          "value": 90,
+          "showAt": 2
+        }
+      ]
+    },
+    {
+      "type": "quoteSlide",
+      "start": 140,
+      "end": 150,
+      "data": [
+        {
+          "name": "quoteLine",
+          "content": "Physics is the poetry of nature.",
+          "showAt": 0
+        },
+        {
+          "name": "author",
+          "content": "— Taleem.Help",
+          "showAt": 1
+        }
+      ]
+    },
+    {
+      "type": "quoteWithImage",
+      "start": 150,
+      "end": 160,
+      "data": [
+        {
+          "name": "quoteLine",
+          "content": "Science is understanding.",
+          "showAt": 0
+        },
+        {
+          "name": "author",
+          "content": "Taleem.help",
+          "showAt": 1
+        },
+        {
+          "name": "image",
+          "content": "/images/activity1.jpg",
+          "showAt": 2
+        }
+      ]
+    },
+    {
+      "type": "cornerWordsSlide",
+      "start": 160,
+      "end": 170,
+      "data": [
+        {
+          "name": "card",
+          "icon": "🔭",
+          "label": "Observe",
+          "showAt": 160
+        },
+        {
+          "name": "card",
+          "icon": "⚗️",
+          "label": "Experiment",
+          "showAt": 163
+        },
+        {
+          "name": "card",
+          "icon": "🔬",
+          "label": "Analyze",
+          "showAt": 165
+        },
+        {
+          "name": "card",
+          "icon": "💡",
+          "label": "Innovate",
+          "showAt": 168
+        }
+      ]
+    },
+    {
+      "type": "contactSlide",
+      "start": 170,
+      "end": 180,
+      "data": [
+        {
+          "name": "headline",
+          "content": "Need Help?",
+          "showAt": 0
+        },
+        {
+          "name": "email",
+          "content": "support@taleem.help",
+          "showAt": 1
+        },
+        {
+          "name": "phone",
+          "content": "+92 300 0000000",
+          "showAt": 2
+        }
+      ]
+    }
+  ]
+}

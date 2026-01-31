@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Quran Icons 64×64 Tilesheet</title>
+<style>
+  body { font-family: system-ui, Arial, sans-serif; padding:18px; }
+  canvas { image-rendering: pixelated; border:1px solid #ccc; display:block; margin-bottom:12px; }
+  button { padding:8px 12px; font-size:14px; }
+  label { display:block; margin:8px 0 4px; }
+</style>
+</head>
+<body>
+  <h3>Quran Icons — 64×64 tilesheet (10×10)</h3>
+  <canvas id="sheet"></canvas>
+  <div>
+    <button id="download">Download PNG</button>
+  </div>
+
+<script>
+// 1) Tile & Grid config
+const TILE = 64;
+const COLS = 10;               // 10 columns -> 640px width
+const ROWS = 10;               // 10 rows -> 640px height
+const CANVAS_W = TILE * COLS;
+const CANVAS_H = TILE * ROWS;
+
+// 2) Mapping: name -> emoji (from your class)
+const ICONS = [
+  ['ADL','📏'],['AJAL','⌛'],['AKHIRA','🌈'],['ALLAH','اللّٰه'],['AMAL','🛠️'],
+  ['ARD','🪨'],['ARSH','💺'],['AYAH','🔖'],['AZAB','⚡'],['BAHR','🌊'],
+  ['BARAKAH','✨'],['BATIL','🗑️'],['DALAL','🧭'],['DEEN','⚖️'],['DHIKR','🔔'],
+  ['DUA','📿'],['DUNYA','🌍'],['FALAH','🏆'],['FASAD','☣️'],['FITNAH','💥'],
+  ['GHAYB','🌀'],['HAJJ','🧳'],['HALAL','🟢'],['HARAM','⛔'],['HAYAT','🌿'],
+  ['HIJRAH','🚶'],['HIKMAH','🧠'],['HISAB','📊'],['HUDA','🔦'],['IBADAH','🙇'],
+  ['ILAAH','🛐'],['ILM','📚'],['IHSAN','⭐'],['IMAN','🕯️'],['INSAN','🧍'],
+  ['ISLAM','☪️'],['JABAL','⛰️'],['JAHANNAM','♨️'],['JANNAH','🌴'],['JAZAA','🎁'],
+  ['JIHAD','⚔️'],['KADHIB','💣'],['KAFIR','🚫'],['KHALQ','⚛️'],['KITAB','📘'],
+  ['KUFR','❌'],['LAYL','🌙'],['MAGHFIRA','🧽'],['MAL','💵'],['MALAK','👼'],
+  ['MAUT','💀'],['MUMIN','🙏'],['MUNAFIQ','🎭'],['MUSHRIK','🗿'],['MUSLIM','🕌'],
+  ['NAAR','🔥'],['NAAS','🧑‍🤝‍🧑'],['NABI','🧔'],['NAFS','🫀'],['NIAMAH','🎉'],
+  ['NOOR','💡'],['QADR','🧾'],['QALB','❤️'],['QIRAAH','🎙️'],['QIYAMAH','📅'],
+  ['QURAN','📜'],['RABB','👑'],['RAHIM','💞'],['RAHMA','🤲'],['RAHMAN','🕊️'],
+  ['RASOOL','📩'],['RIZQ','🍞'],['SA3AH','⏰'],['SABIR','⏳'],['SABIL','🛣️'],
+  ['SALAH','🕋'],['SALAM','☮️'],['SALIH','🌱'],['SAMAA','☁️'],['SHAYTAN','😈'],
+  ['SHUKR','🙌'],['SIDQ','✅'],['SIYAAM','🥛'],['TAQWA','🛡️'],['TAUBA','🔄'],
+  ['TAWAKKUL','🪢'],['TAWHEED','1️⃣'],['UMMAH','👥'],['WALI','🤝'],['YAQEEN','🔒'],
+  ['YAWM','☀️'],['ZAKAH','💰'],['ZULM','🚷'],['ZULUMAT','🌑']
+];
+
+// 3) Create canvas and context
+const canvas = document.getElementById('sheet');
+canvas.width = CANVAS_W;
+canvas.height = CANVAS_H;
+const ctx = canvas.getContext('2d');
+
+// 4) draw background grid
+ctx.fillStyle = '#ffffff';
+ctx.fillRect(0,0,CANVAS_W,CANVAS_H);
+ctx.strokeStyle = '#e6e6e6';
+for(let x=0;x<=COLS;x++){
+  const px = x * TILE;
+  ctx.beginPath(); ctx.moveTo(px,0); ctx.lineTo(px,CANVAS_H); ctx.stroke();
+}
+for(let y=0;y<=ROWS;y++){
+  const py = y * TILE;
+  ctx.beginPath(); ctx.moveTo(0,py); ctx.lineTo(CANVAS_W,py); ctx.stroke();
+}
+
+// 5) Draw each icon centered in its cell
+// Use a large emoji-capable font. Browser must have an emoji font for color emojis.
+const EMOJI_FONT_SIZE = 44; // tweak if glyphs appear too big/small
+ctx.textAlign = 'center';
+ctx.textBaseline = 'middle';
+ctx.font = `${EMOJI_FONT_SIZE}px "Segoe UI Emoji", "Noto Color Emoji", "Apple Color Emoji", sans-serif`;
+
+for (let i = 0; i < ICONS.length; i++) {
+  const row = Math.floor(i / COLS);
+  const col = i % COLS;
+  const cx = col * TILE + TILE/2;
+  const cy = row * TILE + TILE/2;
+  const glyph = ICONS[i][1];
+  // Optional: small background circle to improve contrast
+  // ctx.fillStyle = '#ffffffaa'; ctx.beginPath(); ctx.arc(cx, cy, TILE*0.42, 0, Math.PI*2); ctx.fill();
+  ctx.fillStyle = '#000000'; // fallback color for monochrome fonts; color emoji will ignore fill
+  ctx.fillText(glyph, cx, cy + 2); // slight vertical tweak
+  // optional label below icon (uncomment to enable)
+  // ctx.font = '10px sans-serif'; ctx.fillStyle='#222'; ctx.fillText(ICONS[i][0], cx, row*TILE + TILE - 8);
+}
+
+// 6) Download button
+document.getElementById('download').addEventListener('click', () => {
+  const data = canvas.toDataURL('image/png');
+  const a = document.createElement('a');
+  a.href = data;
+  a.download = 'quran-icons-64x64-tilesheet.png';
+  a.click();
+});
+</script>
+</body>
+</html>

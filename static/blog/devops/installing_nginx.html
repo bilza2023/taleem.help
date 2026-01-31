@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Installing Nginx on Ubuntu Server for Node.js Apps</title>
+  <link rel="stylesheet" href="/blog/main.css" />
+  
+</head>
+<body>
+
+<h1>Installing Nginx on Ubuntu Server for Node.js Apps</h1>
+<p><em>Proxying a Node.js app and enabling HTTPS with Let's Encrypt</em></p>
+
+<blockquote>
+<p>Target: Ubuntu 20.04–24.04 LTS<br>
+Use case: Running Node.js app on port <code>3000</code> via PM2<br>
+Domain: <code>taleem.help</code> (must already point to your droplet's IP via A-record)</p>
+</blockquote>
+
+<hr>
+
+<h2>Step 1 – Update Your Server</h2>
+<p>Keep your system up to date:</p>
+<pre><code>sudo apt update &amp;&amp; sudo apt upgrade -y
+</code></pre>
+
+<hr>
+
+<h2>Step 2 – Set Up the Firewall (UFW)</h2>
+<p>Enable UFW to secure your server, allowing only essential ports.</p>
+
+<h3>1. Install UFW (if not already installed)</h3>
+<pre><code>sudo apt install -y ufw
+</code></pre>
+
+<h3>2. Set Default Rules</h3>
+<pre><code>sudo ufw default deny incoming
+sudo ufw default allow outgoing
+</code></pre>
+
+<h3>3. Allow Specific Ports</h3>
+<pre><code>sudo ufw allow OpenSSH
+sudo ufw allow http
+sudo ufw allow https
+</code></pre>
+
+<p><strong>Optional (Advanced)</strong>: Lock SSH to your IP only</p>
+<pre><code>sudo ufw allow from YOUR.IP.ADDR.HERE/32 to any port 22 proto tcp
+</code></pre>
+
+<h3>4. Enable UFW</h3>
+<pre><code>sudo ufw enable
+sudo ufw status verbose
+</code></pre>
+
+<hr>
+
+<h2>Step 3 – Install and Start Nginx</h2>
+<pre><code>sudo apt install -y nginx
+sudo systemctl enable --now nginx
+</code></pre>
+
+<p>Test by visiting:</p>
+<pre><code>http://YOUR_SERVER_IP
+</code></pre>
+
+<p>You should see the <strong>Nginx welcome page</strong>.</p>
+
+<hr>
+
+<h2>Step 4 – Create Nginx Server Block</h2>
+<p>We'll proxy <code>http://taleem.help</code> → <code>http://localhost:3000</code></p>
+
+<h3>1. Create the config file</h3>
+<pre><code>sudo nano /etc/nginx/sites-available/taleem.help
+</code></pre>
+
+<h3>2. Paste this configuration</h3>
+<pre><code>server {
+    listen 80;
+    server_name taleem.help www.taleem.help;
+
+    location / {
+        proxy_pass         http://127.0.0.1:3000;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection 'upgrade';
+        proxy_set_header   Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+</code></pre>
+
+<h3>3. Enable the site and reload Nginx</h3>
+<pre><code>sudo ln -s /etc/nginx/sites-available/taleem.help /etc/nginx/sites-enabled/
+sudo nginx -t &amp;&amp; sudo systemctl reload nginx
+</code></pre>
+
+<p>Now, <code>http://taleem.help</code> (without port 3000) should open your app.</p>
+
+<hr>
+
+<h2>Step 5 – Install SSL (HTTPS) Using Certbot (Let's Encrypt)</h2>
+
+<h3>1. Install Certbot</h3>
+<pre><code>sudo snap install core &amp;&amp; sudo snap refresh core
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+</code></pre>
+
+<h3>2. Get SSL Certificates and Configure Nginx</h3>
+<pre><code>sudo certbot --nginx -d taleem.help -d www.taleem.help
+</code></pre>
+
+<p>Certbot will:</p>
+<ul>
+  <li>Get the SSL certificates</li>
+  <li>Edit your Nginx config</li>
+  <li>Redirect HTTP → HTTPS</li>
+  <li>Set up auto-renewal</li>
+</ul>
+
+<h3>3. Test Auto-Renewal</h3>
+<pre><code>sudo certbot renew --dry-run
+</code></pre>
+
+<hr>
+
+<h2>Step 6 – Final Check</h2>
+
+<p>Visit:</p>
+<ul>
+  <li><code>http://taleem.help</code> → should redirect to <code>https://taleem.help</code></li>
+  <li><code>https://taleem.help</code> → should show your Node.js app with a secure lock icon</li>
+</ul>
+
+<hr>
+
+<h2>Summary</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>What you did</th>
+      <th>Tool Used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Secured ports</td>
+      <td>UFW</td>
+    </tr>
+    <tr>
+      <td>Installed reverse proxy</td>
+      <td>Nginx</td>
+    </tr>
+    <tr>
+      <td>Set up HTTPS</td>
+      <td>Certbot (Let's Encrypt)</td>
+    </tr>
+    <tr>
+      <td>Reverse proxied Node app</td>
+      <td><code>http://localhost:3000</code> → <code>https://taleem.help</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Everything is now production-ready:</p>
+<ul>
+  <li>No exposed ports like <code>:3000</code></li>
+  <li>SSL secured</li>
+  <li>Auto-renewing certificates</li>
+  <li>Nginx in front of PM2 Node apps</li>
+</ul>
+
+<hr>
+
+</body>
+</html>

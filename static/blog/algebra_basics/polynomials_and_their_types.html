@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Polynomials and Their Types</title>
+
+  <!-- Dark Theme (Water.css) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css" />
+
+  <!-- KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+
+  <!-- KaTeX JS + Auto-render -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+          onload="renderMathInElement(document.body);"></script>
+
+  <!-- Custom Style -->
+  <style>
+    img.inline-image {
+      max-height: 220px;
+      display: block;
+      margin: 1rem auto;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="width: 100%; border: 2px solid #facc15; border-radius: 0.375rem; text-align: center; font-size: 1.875rem; padding:6px; margin:2px; background-color: #0f4502">
+    💡 Taleem.Help
+  </h1>
+
+  <h1>Polynomials and Their Types</h1>
+
+  <section>
+    <h2>What Is a Polynomial?</h2>
+    <p>A <strong>polynomial</strong> is an algebraic expression made up of terms. Each term is formed by multiplying a constant (called the <em>coefficient</em>) by a variable raised to a whole-number exponent.</p>
+    <p><strong>General form:</strong></p>
+    <p>\[ a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \]</p>
+    <p>Where \( a_0, a_1, \ldots, a_n \) are real numbers and \( n \) is the <strong>degree</strong>.</p>
+
+    <p><strong>Examples of valid polynomials:</strong></p>
+    <ul>
+      <li>\( 3x^2 + 2x + 1 \)</li>
+      <li>\( x^3 - 5x^2 + 4 \)</li>
+      <li>\( 7 \) (a constant is degree 0)</li>
+    </ul>
+
+    <p><strong>Not polynomials:</strong></p>
+    <ul>
+      <li>\( \frac{1}{x} \) → negative exponent (\( x^{-1} \))</li>
+      <li>\( \sqrt{x} \) → fractional exponent (\( x^{1/2} \))</li>
+      <li>\( x^{-3} + 4 \) → negative power</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Types by Number of Terms</h2>
+    <ul>
+      <li><strong>Monomial:</strong> \( 5x^3 \)</li>
+      <li><strong>Binomial:</strong> \( x^2 + 3x \)</li>
+      <li><strong>Trinomial:</strong> \( x^2 + 3x + 2 \)</li>
+      <li><strong>Polynomial:</strong> \( x^4 + x^3 - 2x + 7 \)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Types by Degree</h2>
+    <p>The <strong>degree</strong> is the highest exponent of the variable. It tells us about the shape and complexity of the expression.</p>
+    <table>
+      <thead>
+        <tr><th>Degree</th><th>Name</th><th>Example</th><th>Description</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>0</td><td>Constant</td><td>\( 7 \)</td><td>No variable</td></tr>
+        <tr><td>1</td><td>Linear</td><td>\( 2x + 3 \)</td><td>Straight line</td></tr>
+        <tr><td>2</td><td>Quadratic</td><td>\( x^2 - 5x + 6 \)</td><td>Parabola</td></tr>
+        <tr><td>3</td><td>Cubic</td><td>\( x^3 + x^2 - x + 1 \)</td><td>Curve with twist</td></tr>
+        <tr><td>4</td><td>Quartic</td><td>\( x^4 - x^2 + 4 \)</td><td>Up to 4 roots</td></tr>
+        <tr><td>5</td><td>Quintic</td><td>\( x^5 - 3x^2 + 2 \)</td><td>More complex curve</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Note:</strong> After degree 5, we say “degree 6”, “degree 7”, etc.</p>
+  </section>
+
+  <footer>
+    <p><a href="/index.html">← Back to Index</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+:root {
+    --color-bg: #1E1E1E;            /* Page background */
+    --color-surface: #594112;       /* Card/panel background */
+    --color-text: #E8D7BD;          /* Main text */
+    --color-text-muted: #B5A58B;    /* Secondary text */
+    --color-primary: #C4A77F;       /* Accent: buttons, links */
+    --color-primary-text: #1E1E1E;  /* Text on primary */
+  }
+  
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+  

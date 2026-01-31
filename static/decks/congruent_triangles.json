@@ -1,0 +1,169 @@
+{
+  "name": "congruent_triangles",
+  "description": "Class 9 Geometry — Congruent Triangles Summary",
+  "tags": [
+    "math",
+    "geometry",
+    "triangles"
+  ],
+  "status": "draft",
+  "createdAt": "2025-07-21T00:00:00Z",
+  "editedAt": "2025-07-21T00:00:00Z",
+  "version": "deck-v1",
+  "background": {
+    "backgroundColor": "#F3E5AB",
+    "backgroundImage": "/images/taleem.webp",
+    "backgroundImageOpacity": 0.07
+  },
+  "deck": [
+    {
+      "start": 0,
+      "end": 10,
+      "type": "imageWithTitle",
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/congruent_triangle.webp",
+          "showAt": 0
+        },
+        {
+          "name": "title",
+          "content": "Congruent Triangles",
+          "showAt": 2
+        }
+      ]
+    },
+    {
+      "start": 10,
+      "end": 30,
+      "type": "imageLeftBulletsRight",
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/congruent_triangle2.webp",
+          "showAt": 10
+        },
+        {
+          "name": "bullet",
+          "content": "Same shape and same size",
+          "showAt": 13
+        },
+        {
+          "name": "bullet",
+          "content": "All sides and angles are equal",
+          "showAt": 16
+        },
+        {
+          "name": "bullet",
+          "content": "Can fit exactly on top of each other",
+          "showAt": 19
+        }
+      ]
+    },
+    {
+      "start": 30,
+      "end": 35,
+      "type": "titleAndSubtitle",
+      "data": [
+        {
+          "name": "title",
+          "content": "4 Rules to Prove Congruence",
+          "showAt": 30
+        },
+        {
+          "name": "subtitle",
+          "content": "SAS, ASA, SSS, RHS",
+          "showAt": 32
+        }
+      ]
+    },
+    {
+      "start": 35,
+      "end": 50,
+      "type": "bulletList",
+      "data": [
+        {
+          "name": "bullet",
+          "content": "SAS: Side–Angle–Side",
+          "showAt": 36
+        },
+        {
+          "name": "bullet",
+          "content": "ASA: Angle–Side–Angle",
+          "showAt": 38
+        },
+        {
+          "name": "bullet",
+          "content": "SSS: Side–Side–Side",
+          "showAt": 41
+        },
+        {
+          "name": "bullet",
+          "content": "RHS: Right-angle–Hypotenuse–Side",
+          "showAt": 44
+        }
+      ]
+    },
+    {
+      "start": 50,
+      "end": 55,
+      "type": "titleAndSubtitle",
+      "data": [
+        {
+          "name": "title",
+          "content": "Similar vs Congruent",
+          "showAt": 50
+        },
+        {
+          "name": "subtitle",
+          "content": "Not all triangles that look alike are congruent",
+          "showAt": 52
+        }
+      ]
+    },
+    {
+      "start": 55,
+      "end": 75,
+      "type": "imageLeftBulletsRight",
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/congruent_triangle2.webp",
+          "showAt": 55
+        },
+        {
+          "name": "bullet",
+          "content": "Congruent: exact match in size and shape",
+          "showAt": 58
+        },
+        {
+          "name": "bullet",
+          "content": "Similar: same shape, different size",
+          "showAt": 61
+        },
+        {
+          "name": "bullet",
+          "content": "Similar ≠ Congruent (they don’t “fit”)",
+          "showAt": 64
+        }
+      ]
+    },
+    {
+      "start": 75,
+      "end": 85,
+      "type": "quoteSlide",
+      "data": [
+        {
+          "name": "quoteLine",
+          "content": "Congruent triangles are the building blocks of geometric proof.",
+          "showAt": 75
+        },
+        {
+          "name": "author",
+          "content": "— Taleem.Help",
+          "showAt": 78
+        }
+      ]
+    }
+  ]
+}

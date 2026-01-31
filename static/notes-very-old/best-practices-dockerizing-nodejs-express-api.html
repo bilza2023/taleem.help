@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Practices: Dockerizing a Node.js Express API</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #ff9800;
+        }
+        code {
+            background-color: #1e1e1e;
+            padding: 5px;
+            border-radius: 4px;
+            display: inline-block;
+            color: #ffeb3b;
+        }
+        pre {
+            background-color: #1e1e1e;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Best Practices: Dockerizing a Node.js Express API</h1>
+    
+    <h2>✅ DO: Use Environment Variables in <code>docker-compose.yml</code></h2>
+    <p>Hardcode essential environment variables inside <code>docker-compose.yml</code> instead of relying on a separate <code>.env</code> file to simplify deployment.</p>
+    <pre>
+    environment:
+      - MONGO_URI=mongodb://admin:password@local_mongo:27017/localDb?authSource=admin
+      - JWT_SECRET=your-secure-jwt-secret
+    </pre>
+
+    <h2>❌ DON'T: Use Localhost for Services Inside Docker</h2>
+    <p>Inside Docker, <code>localhost</code> does not refer to your host machine but to the container itself. Use the service name instead:</p>
+    <pre>
+    # Wrong:
+    MONGO_URI=mongodb://admin:password@localhost:27017/localDb
+
+    # Correct:
+    MONGO_URI=mongodb://admin:password@local_mongo:27017/localDb
+    </pre>
+
+    <h2>✅ DO: Use <code>depends_on</code> to Manage Service Order</h2>
+    <p>Ensure MongoDB starts before the API by using <code>depends_on</code>:</p>
+    <pre>
+    depends_on:
+      - local_mongo
+    </pre>
+
+    <h2>❌ DON'T: Forget to Expose Ports</h2>
+    <p>Make sure the API and database services expose necessary ports for communication:</p>
+    <pre>
+    ports:
+      - "5000:5000"  # Exposes API
+      - "27017:27017" # Exposes MongoDB
+    </pre>
+
+    <h2>✅ DO: Debug Inside the Container</h2>
+    <p>Check if environment variables are correctly set inside the container:</p>
+    <pre>
+    docker exec -it &lt;api-container-id&gt; sh
+    echo $JWT_SECRET
+    echo $MONGO_URI
+    </pre>
+
+    <h2>❌ DON'T: Hardcode Secrets in Code</h2>
+    <p>Never hardcode secrets like JWT keys inside your code. Instead, reference them from environment variables:</p>
+    <pre>
+    const JWT_SECRET = process.env.JWT_SECRET;
+    </pre>
+    
+    <h2>✅ DO: Use <code>restart: unless-stopped</code></h2>
+    <p>This ensures containers restart on failure but not during manual shutdown:</p>
+    <pre>
+    restart: unless-stopped
+    </pre>
+
+    <h2>Conclusion</h2>
+    <p>Following these best practices ensures a smoother deployment and avoids common pitfalls when packaging a Node.js API with Docker Compose.</p>
+</body>
+</html>

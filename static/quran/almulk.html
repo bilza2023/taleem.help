@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Taleem.Help — Map Player (Smooth Transitions, Zigzag)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root{
+      --ui-bg: rgba(255,255,255,0.92);
+      --accent: #ffc84c;
+      --muted: rgba(0,0,0,0.6);
+      --toolbar-h: 58px;
+    }
+    html,body { height:100%; margin:0; font-family: Inter, system-ui, sans-serif; background:#111; color:#fff; }
+    #viewer { height:100%; width:100%; background:#111; position:relative; }
+
+    /* Bottom toolbar */
+    .bottom-toolbar {
+      position:fixed;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:14px;
+      height:var(--toolbar-h);
+      background:var(--ui-bg);
+      border-radius:10px;
+      box-shadow:0 6px 22px rgba(0,0,0,0.45);
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:8px 12px;
+      z-index:2500;
+      min-width:420px;
+      max-width:calc(100% - 24px);
+      color:#111;
+    }
+    .btn { background:transparent; border:0; padding:8px 10px; font-weight:600; border-radius:8px; cursor:pointer; color:#111; }
+    .btn.play { background: linear-gradient(90deg,#ffb84c,#ffc84c); color:#222; }
+    .btn.stop { background: #f2f2f2; color:#b03030; }
+    .btn.reset { background: #fff; color:#222; }
+
+    /* scrub is now flexible and full width between controls */
+    .scrub {
+      -webkit-appearance:none; appearance:none;
+      flex:1;
+      height:8px;
+      background:linear-gradient(90deg,#eee 0%,#ddd 100%);
+      border-radius:8px;
+      outline:none;
+      margin:0 6px;
+    }
+    .scrub::-webkit-slider-thumb{
+      -webkit-appearance:none; appearance:none;
+      width:18px; height:18px; border-radius:50%;
+      background:var(--accent); box-shadow:0 2px 6px rgba(0,0,0,0.25);
+      border:2px solid #fff; margin-top:-5px; cursor:pointer;
+    }
+
+    .speed { width:120px; }
+    .room-badge { position:fixed; left:12px; bottom:88px; z-index:2500; background:rgba(0,0,0,0.6); color:#fff; padding:8px 12px; border-radius:8px; font-weight:600; }
+    .small-muted { color:#444; font-weight:600; font-size:12px; margin-left:6px; }
+
+    /* Hide any leftover built-in OSD controls just in case */
+    .openseadragon-button, .openseadragon-viewport .navigator, .openseadragon-control {
+      display:none !important;
+    }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+</head>
+<body>
+  <div id="viewer"></div>
+
+  <!-- Room label -->
+  <div id="roomBadge" class="room-badge">Room —</div>
+
+  <!-- Bottom toolbar -->
+  <div class="bottom-toolbar" role="toolbar" aria-label="Map controls">
+    <button id="playBtn" class="btn play">Play</button>
+    <button id="stopBtn" class="btn stop">Stop</button>
+    <button id="resetBtn" class="btn reset">Reset</button>
+
+    <input id="scrub" class="scrub" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek" />
+
+    <div class="small-muted">Speed</div>
+    <input id="speed" class="speed" type="range" min="0.5" max="2.0" value="1.0" step="0.1" />
+  </div>
+
+<script>
+/* ================== CONFIG ================== */
+const mapUrl = '/static/quran/al-mulk.png';
+const totalRooms = 30;
+const roomsPerRow = 6;
+const tilePx = 64;
+
+const holdMsDefault = 1800;
+const betweenDelay = 300;
+const transitionBaseMs = 600;
+const transitionPer1000px = 220;
+const minTransitionMs = 350;
+const maxTransitionMs = 2000;
+
+/* ================== OSD INIT (controls disabled) ================== */
+const viewer = OpenSeadragon({
+  id: "viewer",
+  prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
+  tileSources: { type: 'image', url: mapUrl, buildPyramid: false },
+  gestureSettingsMouse: { clickToZoom: false, dblClickToZoom: false },
+  showNavigator: false,
+  showRotationControl: false,
+  showHomeControl: false,
+  showZoomControl: false,
+  showFullPageControl: false,
+  preserveViewport: true
+});
+
+/* ================ rest of the script (unchanged logic) ================ */
+let imgSize = null;
+let roomWpx = null;
+let roomHpx = null;
+let roomsCountPerRow = roomsPerRow;
+let rowsCount = null;
+let sequence = [], timeline = [], durationMs = 0;
+let playState = { playing:false, currentMs:0, rafId:null, startedAt:0, pausedAt:0 };
+const roomMeta = {};
+
+function easeInOutCubic(t){ return t<0.5 ? 4*t*t*t : 1 - Math.pow(-2*t+2,3)/2; }
+function lerp(a,b,t){ return a + (b-a)*t; }
+function clamp(v,a,b){ return Math.max(a, Math.min(b, v)); }
+
+function roomRectByIndex(idx) {
+  const i = idx - 1;
+  const row = Math.floor(i / roomsCountPerRow);
+  const colIndex = i % roomsCountPerRow;
+  const col = colIndex;
+  const x = col * roomWpx;
+  const y = row * roomHpx;
+  return { x, y, width: roomWpx, height: roomHpx, row, col };
+}
+function roomCenterPx(idx) {
+  const r = roomRectByIndex(idx);
+  return { x: r.x + r.width/2, y: r.y + r.height/2 };
+}
+
+viewer.addHandler('open', function() {
+  const item = viewer.world.getItemAt(0);
+  imgSize = item.getContentSize();
+  roomsCountPerRow = roomsPerRow;
+  rowsCount = Math.ceil(totalRooms / roomsCountPerRow);
+  roomWpx = Math.floor(imgSize.x / roomsCountPerRow);
+  roomHpx = Math.floor(imgSize.y / rowsCount);
+  prepareRoomMeta();
+  buildSequenceAndTimeline();
+  renderRoomOverlays();
+  viewer.viewport.goHome(true);
+});
+
+function prepareRoomMeta() {
+  roomMeta.data = {};
+  const homeBounds = viewer.viewport.getHomeBounds();
+  const homeWidth = homeBounds.width;
+  for (let i=1;i<=totalRooms;i++){
+    const r = roomRectByIndex(i);
+    const topLeftVP = viewer.viewport.imageToViewportCoordinates(new OpenSeadragon.Point(r.x, r.y), true);
+    const bottomRightVP = viewer.viewport.imageToViewportCoordinates(new OpenSeadragon.Point(r.x + r.width, r.y + r.height), true);
+    const vpWidth = bottomRightVP.x - topLeftVP.x;
+    const currentZoom = viewer.viewport.getZoom(true);
+    const approxTargetZoom = (vpWidth > 0) ? (currentZoom * (homeWidth * 0.85) / vpWidth) : currentZoom * 2;
+    roomMeta.data[i] = {
+      centerPx: roomCenterPx(i),
+      toZoom: clamp(approxTargetZoom, viewer.viewport.getMinZoom(), viewer.viewport.getMaxZoom())
+    };
+  }
+}
+
+function buildSequenceAndTimeline() {
+  sequence = [];
+  for (let r=0; r<rowsCount; r++){
+    let rowIndices = [];
+    for (let c=0; c<roomsCountPerRow; c++){
+      const idx = r*roomsCountPerRow + c + 1;
+      if (idx <= totalRooms) rowIndices.push(idx);
+    }
+    if (r % 2 === 1) rowIndices.reverse();
+    sequence.push(...rowIndices);
+  }
+  timeline = [];
+  durationMs = 0;
+  let prevCenter = { x: imgSize.x/2, y: imgSize.y/2 };
+  let prevZoom = viewer.viewport.getZoom(true);
+  for (let i=0;i<sequence.length;i++){
+    const room = sequence[i];
+    const meta = roomMeta.data[room];
+    const center = meta.centerPx;
+    const toZoom = meta.toZoom;
+    const dx = center.x - prevCenter.x, dy = center.y - prevCenter.y;
+    const dist = Math.sqrt(dx*dx + dy*dy);
+    let transitionMs = Math.round(transitionBaseMs + (dist/1000) * transitionPer1000px);
+    transitionMs = clamp(transitionMs, minTransitionMs, maxTransitionMs);
+    timeline.push({
+      start: durationMs,
+      end: durationMs + transitionMs,
+      type: 'transition',
+      room,
+      meta: { fromCenter: prevCenter, fromZoom: prevZoom, toCenter: center, toZoom, duration: transitionMs }
+    });
+    durationMs += transitionMs;
+    timeline.push({ start: durationMs, end: durationMs + holdMsDefault, type: 'hold', room, meta:{duration: holdMsDefault} });
+    durationMs += holdMsDefault;
+    timeline.push({ start: durationMs, end: durationMs + betweenDelay, type: 'gap', room, meta:{} });
+    durationMs += betweenDelay;
+    prevCenter = center;
+    prevZoom = toZoom;
+  }
+  const scrub = document.getElementById('scrub');
+  scrub.max = Math.max(1, durationMs);
+  scrub.value = 0;
+}
+
+function renderRoomOverlays(){
+  viewer.clearOverlays();
+  for (let i=1;i<=totalRooms;i++){
+    const r = roomRectByIndex(i);
+    const el = document.createElement('div');
+    el.style.border = '2px solid rgba(255,200,0,0.95)';
+    el.style.boxSizing = 'border-box';
+    el.style.background = 'rgba(255,200,0,0.06)';
+    el.style.pointerEvents = 'auto';
+    el.title = 'Room ' + i;
+    el.dataset.room = i;
+    el.addEventListener('click', ()=> { seekToRoomImmediate(i); });
+    viewer.addOverlay({ element: el, location: new OpenSeadragon.Rect(r.x, r.y, r.width, r.height) });
+  }
+}
+
+function renderAt(ms) {
+  if (!timeline || timeline.length===0) return;
+  ms = clamp(ms, 0, durationMs);
+  document.getElementById('scrub').value = ms;
+  playState.currentMs = ms;
+  let lo = 0, hi = timeline.length - 1, sIdx = 0;
+  while (lo <= hi) {
+    const mid = Math.floor((lo + hi) / 2);
+    const t = timeline[mid];
+    if (ms < t.start) hi = mid - 1;
+    else if (ms > t.end) lo = mid + 1;
+    else { sIdx = mid; break; }
+  }
+  const step = timeline[sIdx];
+  const progress = (step.end === step.start) ? 1 : ((ms - step.start) / (step.end - step.start));
+  if (step.type === 'transition') {
+    const m = step.meta;
+    const eased = easeInOutCubic(progress);
+    const cx = lerp(m.fromCenter.x, m.toCenter.x, eased);
+    const cy = lerp(m.fromCenter.y, m.toCenter.y, eased);
+    const z = lerp(m.fromZoom, m.toZoom, eased);
+    const vp = viewer.viewport.imageToViewportCoordinates(new OpenSeadragon.Point(cx, cy), true);
+    viewer.viewport.panTo(vp, false);
+    viewer.viewport.zoomTo(z, false);
+    updateRoomBadge(null);
+  } else if (step.type === 'hold') {
+    const room = step.room;
+    const m = roomMeta.data[room];
+    const vp = viewer.viewport.imageToViewportCoordinates(new OpenSeadragon.Point(m.centerPx.x, m.centerPx.y), true);
+    viewer.viewport.panTo(vp, false);
+    viewer.viewport.zoomTo(m.toZoom, false);
+    updateRoomBadge(room);
+  } else if (step.type === 'gap') {
+    const room = step.room;
+    const m = roomMeta.data[room];
+    const vp = viewer.viewport.imageToViewportCoordinates(new OpenSeadragon.Point(m.centerPx.x, m.centerPx.y), true);
+    viewer.viewport.panTo(vp, false);
+    viewer.viewport.zoomTo(m.toZoom, false);
+    updateRoomBadge(null);
+  }
+}
+
+function startPlayback(){
+  if (playState.playing) return;
+  playState.playing = true;
+  playState.startedAt = performance.now() - playState.currentMs;
+  tick();
+  document.getElementById('playBtn').textContent = 'Pause';
+}
+function tick(){
+  if (!playState.playing) return;
+  const speed = Number(document.getElementById('speed').value) || 1.0;
+  const now = performance.now();
+  const ms = (now - playState.startedAt) * speed;
+  if (ms >= durationMs) { renderAt(durationMs); stopPlayback(); return; }
+  renderAt(ms);
+  playState.rafId = requestAnimationFrame(tick);
+}
+function pausePlayback(){
+  if (!playState.playing) return;
+  playState.playing = false;
+  cancelAnimationFrame(playState.rafId);
+  playState.pausedAt = playState.currentMs;
+  document.getElementById('playBtn').textContent = 'Play';
+}
+function resumePlayback(){
+  if (playState.playing) return;
+  playState.playing = true;
+  const speed = Number(document.getElementById('speed').value) || 1.0;
+  playState.startedAt = performance.now() - (playState.currentMs / speed);
+  tick();
+  document.getElementById('playBtn').textContent = 'Pause';
+}
+function stopPlayback(){
+  playState.playing = false;
+  cancelAnimationFrame(playState.rafId);
+  playState.currentMs = 0;
+  document.getElementById('playBtn').textContent = 'Play';
+  document.getElementById('scrub').value = 0;
+  renderAt(0);
+}
+
+function seekToRoomImmediate(idx){
+  stopPlayback();
+  const m = roomMeta.data[idx];
+  const vp = viewer.viewport.imageToViewportCoordinates(new OpenSeadragon.Point(m.centerPx.x, m.centerPx.y), true);
+  viewer.viewport.panTo(vp, true);
+  viewer.viewport.zoomTo(m.toZoom, true);
+  updateRoomBadge(idx);
+}
+
+document.getElementById('playBtn').addEventListener('click', ()=> {
+  if (!playState.playing) {
+    if (playState.currentMs > 0) resumePlayback(); else startPlayback();
+  } else pausePlayback();
+});
+document.getElementById('stopBtn').addEventListener('click', ()=> {
+  stopPlayback();
+  viewer.viewport.goHome(true);
+});
+document.getElementById('resetBtn').addEventListener('click', ()=> {
+  stopPlayback();
+  viewer.viewport.goHome(true);
+  document.getElementById('scrub').value = 0;
+  document.getElementById('roomBadge').textContent = 'Room —';
+});
+
+const scrubEl = document.getElementById('scrub');
+let isScrubbing = false;
+scrubEl.addEventListener('input', (e)=> {
+  const v = Number(e.target.value);
+  if (playState.playing) pausePlayback();
+  isScrubbing = true;
+  renderAt(v);
+});
+scrubEl.addEventListener('change', (e)=> {
+  isScrubbing = false;
+  const v = Number(e.target.value);
+  playState.currentMs = v;
+});
+
+function updateRoomBadge(idx){
+  const el = document.getElementById('roomBadge');
+  if (!idx){ el.textContent = 'Room —'; return; }
+  el.textContent = 'Room ' + idx;
+}
+
+window.addEventListener('keydown', (e)=> {
+  if (e.key === ' ') { e.preventDefault(); document.getElementById('playBtn').click(); }
+  if (e.key === 'Escape') { stopPlayback(); viewer.viewport.goHome(true); }
+});
+</script>
+</body>
+</html>

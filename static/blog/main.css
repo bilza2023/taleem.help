@@ -1,0 +1,35 @@
+
+/* main.css — global blog style */
+@import url('https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css');
+
+/* === Custom overrides must come AFTER the import === */
+
+body {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+code, pre {
+  background-color: #1e1e1e !important;
+  color: #f8f8f2; /* optional: improve contrast */
+  border-radius: 6px;
+}
+
+code {
+  padding: 0.2em 0.4em;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+/* Tables */
+table {
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+}

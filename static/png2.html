@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Icons → Tile-sheet with Padding & Gutter</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<style>
+  body{ margin:18px; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; background:#111; color:#fff; }
+  .controls{ display:flex; gap:12px; align-items:center; margin-bottom:14px; flex-wrap:wrap; }
+  label{ font-size:13px; color:#ddd; }
+  input[type=number]{ width:90px; padding:6px; border-radius:6px; border:1px solid #333; background:#0f0f0f; color:#fff; }
+  button{ background:#ffc84c; color:#111; border:0; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:700; }
+  .note{ color:#bbb; font-size:13px; margin-left:6px; }
+  .preview{ margin-top:16px; border:1px solid #222; padding:10px; background:#0b0b0b; display:block; max-width:100%; overflow:auto; }
+  canvas{ display:block; max-width:100%; }
+</style>
+</head>
+<body>
+  <h2>Icons → Tilesheet (with padding & gutter)</h2>
+
+  <div class="controls">
+    <label>Icon size <input id="iconSize" type="number" value="64" min="16" max="512" /></label>
+    <label>Padding <input id="padding" type="number" value="24" min="0" max="200" /></label>
+    <label>Gutter <input id="gutter" type="number" value="4" min="0" max="50" /></label>
+    <label>Columns <input id="cols" type="number" value="16" min="1" max="200" /></label>
+    <button id="btn">Download Tile-Sheet</button>
+    <div class="note">Set in Tiled: tile width = <em>cell</em>, spacing = gutter.</div>
+  </div>
+
+  <div id="status" style="color:#ccc; margin-bottom:8px">Ready</div>
+
+  <div id="previewWrap" class="preview" style="display:none">
+    <div style="color:#ccc; margin-bottom:8px">Preview (same as downloaded PNG):</div>
+    <canvas id="previewCanvas"></canvas>
+  </div>
+
+<script type="module">
+  // robust loader: import or fetch/parse
+  let IconsModule;
+  try { IconsModule = await import('./Icons.js'); }
+  catch(e) {
+    // fallback to fetch+parse if import fails
+    const res = await fetch('./Icons.js').catch(err => { throw new Error('Could not fetch Icons.js: '+err); });
+    const txt = await res.text();
+    // basic parse: NAME = '🔖' or NAME: '🔖' or "🔖"
+    const regex = /([A-Za-z0-9_]+)\s*(?:=|:)\s*(['"`])(.{1,6}?)\2/gm;
+    const map = new Map();
+    let m;
+    while ((m = regex.exec(txt)) !== null) {
+      map.set(m[1], m[3]);
+    }
+    const fake = {};
+    for (const [k,v] of map) fake[k] = v;
+    IconsModule = fake;
+  }
+
+  const IconsClass = IconsModule.default ?? IconsModule.Icons ?? IconsModule;
+  const names = Object.getOwnPropertyNames(IconsClass).filter(k => typeof IconsClass[k] === 'string' && IconsClass[k].trim().length > 0).sort();
+  const icons = names.map(n => ({ name:n, char: IconsClass[n] }));
+
+  const btn = document.getElementById('btn');
+  const iconSizeEl = document.getElementById('iconSize');
+  const paddingEl = document.getElementById('padding');
+  const gutterEl = document.getElementById('gutter');
+  const colsEl = document.getElementById('cols');
+  const statusEl = document.getElementById('status');
+  const previewWrap = document.getElementById('previewWrap');
+  const previewCanvas = document.getElementById('previewCanvas');
+
+  function buildTilesheetCanvas(iconSize, padding, gutter, cols) {
+    const count = icons.length;
+    const colsNum = Math.max(1, Math.floor(cols));
+    const rows = Math.ceil(count / colsNum);
+    const cellInner = iconSize + padding*2;            // content cell
+    const cell = cellInner;                            // we keep cell size equal to content; gutter will be spacing between cells
+    const width = colsNum * cell + (colsNum - 1) * gutter;
+    const height = rows * cell + (rows - 1) * gutter;
+
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+    const ctx = canvas.getContext('2d');
+
+    // transparent background
+    ctx.clearRect(0,0,width,height);
+
+    // draw each glyph centered in its cell
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    // emoji-capable font stack
+    ctx.fillStyle = '#000';
+    ctx.font = `${iconSize}px "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji", sans-serif`;
+
+    for (let i=0;i<count;i++){
+      const r = Math.floor(i / colsNum);
+      const c = i % colsNum;
+      const x0 = c * (cell + gutter);
+      const y0 = r * (cell + gutter);
+      const cx = x0 + cell/2;
+      const cy = y0 + cell/2;
+
+      // Optional: draw a faint transparent box per tile to avoid bleed detection by tools that sample alpha.
+      // If you'd prefer fully transparent tiles, comment out the next two lines.
+      // ctx.fillStyle = 'rgba(255,255,255,0.0)'; // fully transparent - no visible change
+      // ctx.fillRect(x0, y0, cell, cell);
+
+      // draw glyph
+      ctx.fillStyle = '#000';
+      ctx.fillText(icons[i].char, cx, cy);
+    }
+
+    return { canvas, cell, cellInner, width, height, count, colsNum, rows };
+  }
+
+  btn.addEventListener('click', async ()=>{
+    const iconSize = Number(iconSizeEl.value) || 64;
+    const padding = Number(paddingEl.value) || 24;
+    const gutter = Number(gutterEl.value) || 4;
+    const cols = Number(colsEl.value) || 16;
+
+    if (icons.length === 0) { alert('No icons found in Icons.js'); return; }
+
+    statusEl.textContent = 'Building tilesheet...';
+    await new Promise(r=>setTimeout(r,20));
+    const { canvas, cell, width, height, count, colsNum, rows } = buildTilesheetCanvas(iconSize, padding, gutter, cols);
+
+    // preview & status
+    previewCanvas.width = canvas.width;
+    previewCanvas.height = canvas.height;
+    previewWrap.style.display = 'block';
+    previewCanvas.getContext('2d').drawImage(canvas, 0, 0);
+    statusEl.textContent = `Ready — ${count} icons • ${width}×${height}px • cell=${cell}px gutter=${gutter}px`;
+
+    // download
+    const a = document.createElement('a');
+    a.href = canvas.toDataURL('image/png');
+    a.download = `icons-tilesheet_${count}_${colsNum}x${rows}_cell${cell}_g${gutter}.png`;
+    a.click();
+  });
+
+  // initial status
+  statusEl.textContent = `Found ${icons.length} icons. Set padding/gutter and click Download Tile-Sheet.`;
+</script>
+</body>
+</html>

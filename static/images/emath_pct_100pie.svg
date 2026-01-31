@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="620" viewBox="0 0 620 620">
+  <!-- Palette -->
+  <!-- neutral: #E6E9EF | outline: #34393F | accent: #BD93F9 -->
+
+  <!-- Base pie -->
+  <circle cx="310" cy="310" r="260" fill="#E6E9EF"/>
+
+  <!-- 30% sector (108 degrees), starting at top (-90°) sweeping clockwise -->
+  <!-- Start point (-90°): (310, 50) -->
+  <!-- End point (18°): (~557.275, ~390.344) -->
+  <path d="M310,310 L310,50
+           A260,260 0 0 1 557.275,390.344
+           Z"
+        fill="#BD93F9"/>
+
+  <!-- Thick outline -->
+  <circle cx="310" cy="310" r="260" fill="none" stroke="#34393F" stroke-width="8"/>
+</svg>

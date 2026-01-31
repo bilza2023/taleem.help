@@ -1,0 +1,46 @@
+{
+    "name": "recently_edited_slides_demo",
+    "version": "deck-v1",
+    "status": "draft",
+    "background": {
+      "backgroundColor": "#0b0b1a",
+      "backgroundImage": "/images/box.webp",
+      "backgroundImageOpacity": 0.07
+    },
+    "deck": [
+      {
+        "type": "bulletList",
+        "start": 0,
+        "end": 12,
+        "data": [
+          { "name": "bullet", "content": "All points visible from the start", "showAt": 0 },
+          { "name": "bullet", "content": "ShowAt now highlights (not reveals)",  "showAt": 3 },
+          { "name": "bullet", "content": "Keeps highlighting once active",       "showAt": 6 },
+          { "name": "bullet", "content": "Timings fit within the slide window",  "showAt": 9 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 12,
+        "end": 24,
+        "data": [
+          { "name": "image",  "content": "/images/box.webp", "showAt": 16 },
+          { "name": "bullet", "content": "Image is visible immediately (dim)", "showAt": 16 },
+          { "name": "bullet", "content": "Highlights when its showAt arrives", "showAt": 18 },
+          { "name": "bullet", "content": "Bullets highlight in order",         "showAt": 21 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 24,
+        "end": 36,
+        "data": [
+          { "name": "bullet", "content": "Left column bullets, right image",  "showAt": 24 },
+          { "name": "bullet", "content": "All content visible from the start","showAt": 28 },
+          { "name": "bullet", "content": "Highlight only, no hide/show",      "showAt": 32 },
+          { "name": "image",  "content": "/images/box.webp", "showAt": 28 }
+        ]
+      }
+    ]
+  }
+  

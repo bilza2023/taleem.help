@@ -1,0 +1,85 @@
+{
+    "version": "deck-v1",
+    "name": "theorems_rev_10_13",
+    "description": "Theorem revision deck – Chapters 10, 11, 12, 13",
+    "background": {
+      "backgroundColor": "#F3E5AB",
+      "backgroundImage": "/images/taleem.webp",
+      "backgroundImageOpacity": 0.1
+    },
+    "deck": [
+      {
+        "type": "titleSlide",
+        "data": [
+          { "name": "title", "content": "Theorems Revision", "showAt": 0 },
+          { "name": "subtitle", "content": "Chapters 10 • 11 • 12 • 13", "showAt": 0 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "data": [
+          { "name": "heading", "content": "Chapter 10 – Triangles", "showAt": 0 },
+          { "name": "bullet", "content": "10.1  A-A-S congruence", "showAt": 0 },
+          { "name": "bullet", "content": "10.2  If two angles are equal ⇒ opposite sides equal", "showAt": 0 },
+          { "name": "bullet", "content": "10.3  S-S-S congruence", "showAt": 0 },
+          { "name": "bullet", "content": "10.4  RHS congruence", "showAt": 0 }
+        ]
+      },
+      {
+        "type": "imageSlide",
+        "data": [
+          { "name": "image", "content": "/images/theorem10.1.1.svg", "showAt": 0 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "data": [
+          { "name": "heading", "content": "Chapter 11 – Parallelograms & Medians", "showAt": 0 },
+          { "name": "bullet", "content": "11.1  Opposite sides/angles ≅, diagonals bisect", "showAt": 0 },
+          { "name": "bullet", "content": "11.2  One pair ∥ and ≅ ⇒ parallelogram", "showAt": 0 },
+          { "name": "bullet", "content": "11.3  Mid-segment theorem", "showAt": 0 },
+          { "name": "bullet", "content": "11.4  Medians concurrent (centroid)", "showAt": 0 },
+          { "name": "bullet", "content": "11.5  Equal intercepts on transversals", "showAt": 0 }
+        ]
+      },
+      {
+        "type": "imageSlide",
+        "data": [
+          { "name": "image", "content": "/images/theorem11.1.svg", "showAt": 0 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "data": [
+          { "name": "heading", "content": "Chapter 12 – Bisectors", "showAt": 0 },
+          { "name": "bullet", "content": "12.1  Right-bisector ⇒ equidistant", "showAt": 0 },
+          { "name": "bullet", "content": "12.2  Equidistant ⇒ right-bisector", "showAt": 0 },
+          { "name": "bullet", "content": "12.3  Bisectors of sides concurrent", "showAt": 0 },
+          { "name": "bullet", "content": "12.4-12.6  Angle-bisector properties", "showAt": 0 }
+        ]
+      },
+      {
+        "type": "imageSlide",
+        "data": [
+          { "name": "image", "content": "/images/theorem12.1.svg", "showAt": 0 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "data": [
+          { "name": "heading", "content": "Chapter 13 – Triangle Inequalities", "showAt": 0 },
+          { "name": "bullet", "content": "13.1  Longer side ↔ larger opposite angle", "showAt": 0 },
+          { "name": "bullet", "content": "13.2  Greater angle ↔ longer opposite side", "showAt": 0 },
+          { "name": "bullet", "content": "13.3  Sum of any two sides > third side", "showAt": 0 },
+          { "name": "bullet", "content": "13.4  Shortest distance is perpendicular", "showAt": 0 }
+        ]
+      },
+      {
+        "type": "imageSlide",
+        "data": [
+          { "name": "image", "content": "/images/theorem13.1.svg", "showAt": 0 }
+        ]
+      }
+    ]
+  }
+  

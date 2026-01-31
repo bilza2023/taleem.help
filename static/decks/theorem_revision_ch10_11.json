@@ -1,0 +1,269 @@
+
+{
+
+
+
+"deck" :[
+    {
+        "type": "titleAndPara",
+        "start": 0,
+        "end": 20,
+        "data": [
+            {
+                "name": "title",
+                "content": "Theorem 10.1",
+                "showAt": 0
+            },
+            {
+                "name": "paragraph",
+                "content": "If two angles and non-included side of one triangle are congruent to the corresponding angles and non-included side of another triangle, then two triangles are congruent.",
+                "showAt": 1
+            }
+        ]
+    },
+    {
+        "type": "imageSlide",
+        "start": 20,
+        "end": 40,
+        "data": [
+            {
+                "name": "image",
+                "content": "/images/theorems9old_10.1.1.svg",
+                "showAt": 0
+            }
+        ]
+    },
+    {
+        "type": "titleAndPara",
+        "start": 40,
+        "end": 60,
+        "data": [
+            {
+                "name": "title",
+                "content": "Theorem 10.2",
+                "showAt": 0
+            },
+            {
+                "name": "paragraph",
+                "content": "If two angles of a triangle are congruent, then the sides opposite to them are also congruent.",
+                "showAt": 1
+            }
+        ]
+    },
+    {
+        "type": "imageSlide",
+        "start": 60,
+        "end": 80,
+        "data": [
+            {
+                "name": "image",
+                "content": "/images/theorems9old_10.1.2.svg",
+                "showAt": 0
+            }
+        ]
+    },
+    {
+        "type": "titleAndPara",
+        "start": 80,
+        "end": 100,
+        "data": [
+            {
+                "name": "title",
+                "content": "Theorem 10.3",
+                "showAt": 0
+            },
+            {
+                "name": "paragraph",
+                "content": "In the correspondence of two triangles, if three sides of one triangle are congruent to the corresponding three sides of the other, the two triangles are congruent.",
+                "showAt": 1
+            }
+        ]
+    },
+    {
+        "type": "imageSlide",
+        "start": 100,
+        "end": 120,
+        "data": [
+            {
+                "name": "image",
+                "content": "/images/theorems9old_10.1.3.svg",
+                "showAt": 0
+            }
+        ]
+    },
+    {
+        "type": "titleAndPara",
+        "start": 120,
+        "end": 140,
+        "data": [
+            {
+                "name": "title",
+                "content": "Theorem 10.4",
+                "showAt": 0
+            },
+            {
+                "name": "paragraph",
+                "content": "If in the correspondence of two right-angled triangles, the hypotenuse and one side of one are respectively congruent to the hypotenuse and corresponding side of the other, the triangles are congruent.",
+                "showAt": 1
+            }
+        ]
+    },
+    {
+        "type": "imageSlide",
+        "start": 140,
+        "end": 160,
+        "data": [
+            {
+                "name": "image",
+                "content": "/images/theorems9old_10.1.4.svg",
+                "showAt": 0
+            }
+        ]
+    },
+    {
+        "type": "titleAndPara",
+        "start": 160,
+        "end": 180,
+        "data": [
+            {
+                "name": "title",
+                "content": "Theorem 11.1",
+                "showAt": 0
+            },
+            {
+                "name": "paragraph",
+                "content": "In a parallelogram: (i) Opposite sides are congruent; (ii) Opposite angles are congruent; (iii) Diagonals bisect each other.",
+                "showAt": 1
+            }
+        ]
+    },
+    {
+        "type": "imageSlide",
+        "start": 180,
+        "end": 200,
+        "data": [
+            {
+                "name": "image",
+                "content": "/images/theorems9old_11.1.1.svg",
+                "showAt": 0
+            }
+        ]
+    },
+    {
+        "type": "titleAndPara",
+        "start": 200,
+        "end": 220,
+        "data": [
+            {
+                "name": "title",
+                "content": "Theorem 11.2",
+                "showAt": 0
+            },
+            {
+                "name": "paragraph",
+                "content": "If two sides of a quadrilateral are congruent and parallel, it is a parallelogram.",
+                "showAt": 1
+            }
+        ]
+    },
+    {
+        "type": "imageSlide",
+        "start": 220,
+        "end": 240,
+        "data": [
+            {
+                "name": "image",
+                "content": "/images/theorems9old_11.1.2.svg",
+                "showAt": 0
+            }
+        ]
+    },
+    {
+        "type": "titleAndPara",
+        "start": 240,
+        "end": 260,
+        "data": [
+            {
+                "name": "title",
+                "content": "Theorem 11.3",
+                "showAt": 0
+            },
+            {
+                "name": "paragraph",
+                "content": "The line segment joining the midpoints of two sides of a triangle is parallel to the third side and equal to one half of its length.",
+                "showAt": 1
+            }
+        ]
+    },
+    {
+        "type": "imageSlide",
+        "start": 260,
+        "end": 280,
+        "data": [
+            {
+                "name": "image",
+                "content": "/images/theorems9old_11.1.3.svg",
+                "showAt": 0
+            }
+        ]
+    },
+    {
+        "type": "titleAndPara",
+        "start": 280,
+        "end": 300,
+        "data": [
+            {
+                "name": "title",
+                "content": "Theorem 11.4",
+                "showAt": 0
+            },
+            {
+                "name": "paragraph",
+                "content": "The medians of a triangle are concurrent and their point of concurrency is the point of trisection of each median.",
+                "showAt": 1
+            }
+        ]
+    },
+    {
+        "type": "imageSlide",
+        "start": 300,
+        "end": 320,
+        "data": [
+            {
+                "name": "image",
+                "content": "/images/theorems9old_11.1.4.svg",
+                "showAt": 0
+            }
+        ]
+    },
+    {
+        "type": "titleAndPara",
+        "start": 320,
+        "end": 340,
+        "data": [
+            {
+                "name": "title",
+                "content": "Theorem 11.5",
+                "showAt": 0
+            },
+            {
+                "name": "paragraph",
+                "content": "If three or more parallel lines make congruent intercepts on a transversal, the lines are parallel to each other.",
+                "showAt": 1
+            }
+        ]
+    },
+    {
+        "type": "imageSlide",
+        "start": 340,
+        "end": 360,
+        "data": [
+            {
+                "name": "image",
+                "content": "/images/theorems9old_11.1.5.svg",
+                "showAt": 0
+            }
+        ]
+    }
+]
+}
