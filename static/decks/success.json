@@ -4,7 +4,7 @@
 
   "background": {
     "backgroundColor": "#111111",
-    "backgroundImage": "/images/physics_bg.webp",
+    "backgroundImage": "/physics_bg.webp",
     "backgroundImageOpacity": 0.25
   },
 
@@ -44,7 +44,7 @@
       "start": 12,
       "end": 20,
       "data": [
-        { "name": "image", "content": "/images/takeoff.webp", "showAt": 12 },
+        { "name": "image", "content": "takeoff.webp", "showAt": 12 },
         { "name": "bullet", "content": "Clear separation between Player and Workshop", "showAt": 13 },
         { "name": "bullet", "content": "A stable runtime that asks no questions", "showAt": 14 },
         { "name": "bullet", "content": "A system that renders, not interprets", "showAt": 15 }
@@ -76,7 +76,7 @@
       "data": [
         {
           "name": "image",
-          "content": "/images/success.webp",
+          "content": "success.webp",
           "showAt": 25
         }
       ]
