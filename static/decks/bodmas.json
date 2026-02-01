@@ -1,0 +1,136 @@
+{
+  "version": "deck-v1",
+  "name": "BODMAS Rule – Order of Operations",
+
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": "/images/physics_bg.webp",
+    "backgroundImageOpacity": 0.25
+  },
+
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 5,
+      "data": [
+        {
+          "name": "title",
+          "content": "BODMAS Rule",
+          "showAt": 0
+        },
+        {
+          "name": "subtitle",
+          "content": "Order of Operations",
+          "showAt": 1
+        }
+      ]
+    },
+
+    {
+      "type": "titleAndPara",
+      "start": 5,
+      "end": 12,
+      "data": [
+        {
+          "name": "title",
+          "content": "What is BODMAS?",
+          "showAt": 5
+        },
+        {
+          "name": "para",
+          "content": "BODMAS tells us the correct order to solve a math expression.",
+          "showAt": 6
+        }
+      ]
+    },
+
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 12,
+      "end": 20,
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/bodmas.jpeg",
+          "showAt": 12
+        },
+        { "name": "bullet", "content": "B – Brackets", "showAt": 13 },
+        { "name": "bullet", "content": "O – Orders (powers)", "showAt": 14 },
+        { "name": "bullet", "content": "D – Division", "showAt": 15 },
+        { "name": "bullet", "content": "M – Multiplication", "showAt": 16 },
+        { "name": "bullet", "content": "A – Addition", "showAt": 17 },
+        { "name": "bullet", "content": "S – Subtraction", "showAt": 18 }
+      ]
+    },
+
+    {
+      "type": "bulletList",
+      "start": 20,
+      "end": 28,
+      "data": [
+        {
+          "name": "bullet",
+          "content": "Always solve brackets first",
+          "showAt": 20
+        },
+        {
+          "name": "bullet",
+          "content": "Then solve powers, division, and multiplication",
+          "showAt": 22
+        },
+        {
+          "name": "bullet",
+          "content": "Add and subtract at the end",
+          "showAt": 24
+        }
+      ]
+    },
+
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 28,
+      "end": 36,
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/bodmas2.jpeg",
+          "showAt": 28
+        },
+        {
+          "name": "bullet",
+          "content": "Solve inside brackets first",
+          "showAt": 29
+        },
+        {
+          "name": "bullet",
+          "content": "Then follow the BODMAS order",
+          "showAt": 31
+        },
+        {
+          "name": "bullet",
+          "content": "This avoids wrong answers",
+          "showAt": 33
+        }
+      ]
+    },
+
+    {
+      "type": "quoteSlide",
+      "start": 36,
+      "end": 42,
+      "data": [
+        {
+          "name": "quote",
+          "content": "Correct order gives correct answers.",
+          "showAt": 36
+        },
+        {
+          "name": "author",
+          "content": "— Math Rule",
+          "showAt": 38
+        }
+      ]
+    }
+  ]
+}

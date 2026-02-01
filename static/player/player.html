@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Taleem Player</title>
+  <link rel="stylesheet"
+  href="https://unpkg.com/taleem-player@latest/dist/css/taleem.css" />
+
+<link rel="stylesheet"
+  href="https://unpkg.com/taleem-player@latest/dist/css/themes/dark.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "taleem-pam": "https://unpkg.com/taleem-pam@latest/dist/taleem-pam.esm.js"
+      }
+    }
+    </script>
+    
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+    }
+
+    #app {
+      height: 100vh;
+      padding-bottom: 90px;
+      box-sizing: border-box;
+    }
+
+    /* bottom bar */
+    .nav-test {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 90px;
+      background: rgba(187, 187, 188, 0.85);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0 1rem;
+      z-index: 999999;
+    }
+
+    .nav-test span {
+      font-weight: 700;
+      min-width: 80px;
+    }
+
+    /* THIS is the missing piece */
+    .scrub-wrap {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    #scrub {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="app"></div>
+
+  <div class="nav-test">
+    <button id="play-btn">▶</button>
+    <button id="pause-btn">⏸</button>
+    <button id="stop-btn">⏹</button>
+
+    <span id="time">0.0s</span>
+
+    <!-- flex-grow container -->
+    <div class="scrub-wrap">
+      <input
+        id="scrub"
+        type="range"
+        min="0"
+        max="1"
+        step="0.1"
+      />
+    </div>
+  </div>
+
+  <script type="module" src="./play.js"></script>
+
+</body>
+</html>

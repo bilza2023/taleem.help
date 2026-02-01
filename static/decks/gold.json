@@ -1,0 +1,222 @@
+
+{
+    "version": "deck-v1",
+    "name": "Golden Deck V1 – Full Schema Coverage",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": null,
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Taleem Project - Golden Deck", "showAt": 0 },
+          { "name": "subtitle", "content": "A simple, calm way to present ideas", "showAt": 1 }
+        ]
+      },
+  
+      {
+        "type": "bulletList",
+        "start": 5,
+        "end": 10,
+        "data": [
+          { "name": "bullet", "content": "Each slide is carefully prepared information", "showAt": 5 },
+          { "name": "bullet", "content": "The system only shows what is written", "showAt": 6 },
+          { "name": "bullet", "content": "Nothing changes behind the scenes", "showAt": 7 },
+          { "name": "bullet", "content": "The author controls when ideas appear", "showAt": 8 },
+          { "name": "bullet", "content": "The same lesson looks the same everywhere", "showAt": 9 }
+        ]
+      },
+  
+      {
+        "type": "twoColumnText",
+        "start": 10,
+        "end": 15,
+        "data": [
+          {
+            "name": "left",
+            "content": "taleem-browser shows one complete slide at a time. Each slide appears fully, clear, and ready to read.",
+            "showAt": 10
+          },
+          {
+            "name": "right",
+            "content": "taleem-player shows content gradually, like a video. Ideas appear step by step as the lesson moves forward.",
+            "showAt": 12
+          }
+        ]
+      },
+  
+      {
+        "type": "imageSlide",
+        "start": 15,
+        "end": 20,
+        "data": [
+          { "name": "image", "content": "image.png", "showAt": 15 }
+        ]
+      },
+  
+      {
+        "type": "imageWithTitle",
+        "start": 20,
+        "end": 25,
+        "data": [
+          { "name": "title", "content": "Learning with Visual Support", "showAt": 20 },
+          { "name": "image", "content": "image.png", "showAt": 21 }
+        ]
+      },
+  
+      {
+        "type": "imageWithCaption",
+        "start": 25,
+        "end": 30,
+        "data": [
+          { "name": "image", "content": "image.png", "showAt": 25 },
+          { "name": "caption", "content": "Caption as data", "showAt": 26 }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 30,
+        "end": 35,
+        "data": [
+          { "name": "image", "content": "image.png", "showAt": 30 },
+          { "name": "bullet", "content": "Each slide has a clear visual focus", "showAt": 31 },
+          { "name": "bullet", "content": "Points are shown in a planned order", "showAt": 32 },
+          { "name": "bullet", "content": "Nothing appears randomly", "showAt": 33 },
+          { "name": "bullet", "content": "This helps students follow step by step", "showAt": 34 }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 35,
+        "end": 40,
+        "data": [
+          { "name": "image", "content": "image.png", "showAt": 35 },
+          { "name": "bullet", "content": "Slides do not change on their own", "showAt": 36 },
+          { "name": "bullet", "content": "The teacher decides when to move forward", "showAt": 37 },
+          { "name": "bullet", "content": "Students are never rushed", "showAt": 38 },
+          { "name": "bullet", "content": "This keeps learning calm and focused", "showAt": 39 }
+        ]
+      },
+  
+      {
+        "type": "table",
+        "start": 40,
+        "end": 45,
+        "data": [
+          ["Layer", "Role"],
+          ["taleem-core", "Schema for JSON"],
+          ["taleem-slides", "Render – JSON to HTML"],
+          ["taleem-browser", "Index-based presentations"],
+          ["taleem-player", "Time-based presentations"]
+        ]
+      },
+  
+      {
+        "type": "barChart",
+        "start": 45,
+        "end": 50,
+        "data": [
+          { "name": "bar", "label": "Excellent", "value": 4, "showAt": 45 },
+          { "name": "bar", "label": "Good", "value": 6, "showAt": 46 },
+          { "name": "bar", "label": "Average", "value": 5, "showAt": 47 },
+          { "name": "bar", "label": "Needs improvement", "value": 2, "showAt": 48 }
+        ]
+      },
+  
+      {
+        "type": "progressbar",
+        "start": 50,
+        "end": 55,
+        "data": [
+          { "name": "bar", "label": "Lesson Coverage", "value": 60, "showAt": 50 }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 55,
+        "end": 60,
+        "data": [
+          { "name": "quote", "content": "Clarity makes learning easier for everyone.", "showAt": 55 },
+          { "name": "author", "content": "— Taleem", "showAt": 56 }
+        ]
+      },
+  
+      {
+        "type": "keyIdeasSlide",
+        "start": 60,
+        "end": 65,
+        "data": [
+          { "name": "card", "icon": "🧠", "label": "Focus", "showAt": 60 },
+          { "name": "card", "icon": "📘", "label": "Clarity", "showAt": 61 },
+          { "name": "card", "icon": "⏱️", "label": "Pace", "showAt": 62 },
+          { "name": "card", "icon": "🎯", "label": "Understanding", "showAt": 63 }
+        
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 65,
+        "end": 75,
+        "data": [
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Eq Slide - under construction",
+            "showAt": 65
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(a + b)(a + b)$",
+            "showAt": 66,
+            "spItems": [
+              { "type": "spText", "content": "The square means the bracket is multiplied by itself." },
+              { "type": "spImage", "content": "box.webp" }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(a + b)^2$",
+            "showAt": 67,
+            "spItems": [
+              { "type": "spText", "content": "The square means the bracket is multiplied by itself." },
+              { "type": "spImage", "content": "image.webp" }
+            ]
+          }
+        ]
+      },
+  
+      {
+        "type": "fillImage",
+        "start": 75,
+        "end": 80,
+        "data": [
+          { "name": "image", "content": "image.png", "showAt": 75 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 80,
+        "end": 85,
+        "data": [
+          { "name": "title", "content": "Final Slide and Message", "showAt": 80 },
+          {
+            "name": "para",
+            "content": "All slide types in the system have now been rendered. This final slide uses a simple title and paragraph layout, which represents one of the most important formats in real teaching. While often overlooked in presentations, clear paragraph-based text forms the backbone of explanation and reflection. It is in these quiet moments of reading and thinking that ideas settle, connections form, and learning becomes lasting. This slide stands as a reminder that clarity and thoughtful pacing matter more than visual complexity.",
+            "showAt": 81
+          }
+        ]
+      }
+    ]
+  }
+  

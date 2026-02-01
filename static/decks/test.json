@@ -1,0 +1,43 @@
+
+{
+  "version": "deck-v1",
+  "name": "Test Deck – Basics",
+  "background": {
+    "backgroundColor": "#d3f4d0",
+    "backgroundImage": null,
+    "backgroundImageOpacity": 0.2
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 5,
+      "data": [
+        { "name": "title", "content": "Welcome to Taleem", "showAt": 0 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 5,
+      "end": 12,
+      "data": [
+        { "name": "title", "content": "What is this?", "showAt": 5 },
+        {
+          "name": "para",
+          "content": "This is a simple test lesson running from a static HTML page.",
+          "showAt": 6
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "start": 12,
+      "end": 20,
+      "data": [
+        { "name": "bullet", "content": "No build step", "showAt": 12 },
+        { "name": "bullet", "content": "Pure HTML + JS", "showAt": 14 },
+        { "name": "bullet", "content": "CDN-powered", "showAt": 16 }
+      ]
+    }
+  ]
+}

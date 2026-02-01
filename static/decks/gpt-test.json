@@ -1,0 +1,93 @@
+{
+  "version": "deck-v1",
+  "name": "How to Brush Your Teeth",
+
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": null,
+    "backgroundImageOpacity": 0.3
+  },
+
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 5,
+      "data": [
+        { "name": "title", "content": "How to Brush Your Teeth", "showAt": 0 },
+        { "name": "subtitle", "content": "A simple daily habit for kids", "showAt": 1 }
+      ]
+    },
+
+    {
+      "type": "titleAndSubtitle",
+      "start": 5,
+      "end": 10,
+      "data": [
+        { "name": "title", "content": "Clean Teeth, Happy Smile", "showAt": 5 },
+        { "name": "subtitle", "content": "A simple daily habit for kids", "showAt": 6 }
+      ]
+    },
+
+    {
+      "type": "bulletList",
+      "start": 10,
+      "end": 15,
+      "data": [
+        { "name": "bullet", "content": "Brush your teeth two times a day", "showAt": 10 },
+        { "name": "bullet", "content": "Use a small amount of toothpaste", "showAt": 11 },
+        { "name": "bullet", "content": "Brush for two minutes", "showAt": 12 },
+        { "name": "bullet", "content": "Clean all sides of your teeth", "showAt": 13 }
+      ]
+    },
+
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 15,
+      "end": 20,
+      "data": [
+        { "name": "image", "content": "/images/toothbrush.png", "showAt": 15 },
+        { "name": "bullet", "content": "Hold the toothbrush gently", "showAt": 16 },
+        { "name": "bullet", "content": "Move it in small circles", "showAt": 17 },
+        { "name": "bullet", "content": "Brush the front and back teeth", "showAt": 18 },
+        { "name": "bullet", "content": "Do not brush too hard", "showAt": 19 }
+      ]
+    },
+
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 20,
+      "end": 25,
+      "data": [
+        { "name": "image", "content": "/images/rinse-mouth.png", "showAt": 20 },
+        { "name": "bullet", "content": "Spit out the toothpaste", "showAt": 21 },
+        { "name": "bullet", "content": "Rinse your mouth with water", "showAt": 22 },
+        { "name": "bullet", "content": "Clean your toothbrush", "showAt": 23 }
+      ]
+    },
+
+    {
+      "type": "quoteSlide",
+      "start": 25,
+      "end": 30,
+      "data": [
+        { "name": "quote", "content": "Healthy teeth help you eat and smile better.", "showAt": 25 },
+        { "name": "author", "content": "— Teacher", "showAt": 27 }
+      ]
+    },
+
+    {
+      "type": "titleAndPara",
+      "start": 30,
+      "end": 35,
+      "data": [
+        { "name": "title", "content": "Good Job!", "showAt": 30 },
+        {
+          "name": "para",
+          "content": "Brush every morning and night to keep your teeth strong.",
+          "showAt": 31
+        }
+      ]
+    }
+  ]
+}

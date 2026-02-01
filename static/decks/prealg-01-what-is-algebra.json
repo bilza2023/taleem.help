@@ -1,0 +1,145 @@
+{
+  "version": "deck-v1",
+  "name": "EQ Correct Structure Demo",
+  "deck": [
+    {
+      "type": "eq",
+      "start": 0,
+      "end": 20,
+      "data": [
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Arithmetic thinking",
+          "showAt": 0,
+          "spItems": [
+            { "type": "spImage", "content": "banner.webp" },
+            { "type": "spText", "content": "Arithmetic focuses on calculating with known numbers." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Known values",
+          "showAt": 3,
+          "spItems": [
+            { "type": "spText", "content": "All numbers are given in advance." },
+            { "type": "spText", "content": "Nothing is hidden or unknown." },
+            { "type": "spText", "content": "You can start solving immediately." },
+            { "type": "spText", "content": "Symbols are rarely needed." },
+            { "type": "spText", "content": "The goal is a final answer." },
+            { "type": "spText", "content": "Each step follows a fixed rule." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Direct calculation",
+          "showAt": 6,
+          "spItems": [
+            { "type": "spText", "content": "You apply operations step by step." },
+            { "type": "spText", "content": "Every step uses known values." },
+            { "type": "spText", "content": "There is little room for interpretation." },
+            { "type": "spText", "content": "Mistakes are usually mechanical." },
+            { "type": "spText", "content": "The process ends with a number." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Limits of arithmetic",
+          "showAt": 9,
+          "spItems": [
+            { "type": "spText", "content": "Arithmetic fails when a value is missing." },
+            { "type": "spText", "content": "Unknowns cannot be described clearly." },
+            { "type": "spText", "content": "Guessing often replaces reasoning." },
+            { "type": "spText", "content": "Patterns are hard to express." },
+            { "type": "spText", "content": "Thinking stops too early." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Need for a new idea",
+          "showAt": 12,
+          "spItems": [
+            { "type": "spText", "content": "Real problems often hide information." },
+            { "type": "spText", "content": "We still want to reason logically." },
+            { "type": "spText", "content": "We need symbols for missing values." },
+            { "type": "spText", "content": "Arithmetic alone is not enough." },
+            { "type": "spText", "content": "This leads naturally to algebra." }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 20,
+      "end": 40,
+      "data": [
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Algebraic thinking",
+          "showAt": 20,
+          "spItems": [
+            { "type": "spImage", "content": "success.webp" },
+            { "type": "spText", "content": "Algebra allows reasoning even when values are unknown." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Use of variables",
+          "showAt": 23,
+          "spItems": [
+            { "type": "spText", "content": "Letters represent unknown numbers." },
+            { "type": "spText", "content": "They can stand for many values." },
+            { "type": "spText", "content": "The letter itself has no fixed meaning." },
+            { "type": "spText", "content": "Context gives the symbol purpose." },
+            { "type": "spText", "content": "Variables make general thinking possible." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "General rules",
+          "showAt": 26,
+          "spItems": [
+            { "type": "spText", "content": "One rule can describe many situations." },
+            { "type": "spText", "content": "Patterns are written symbolically." },
+            { "type": "spText", "content": "Repetition is reduced." },
+            { "type": "spText", "content": "Reasoning becomes efficient." },
+            { "type": "spText", "content": "Understanding goes deeper." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Reasoning first",
+          "showAt": 29,
+          "spItems": [
+            { "type": "spText", "content": "You can think before calculating." },
+            { "type": "spText", "content": "Logic guides each step." },
+            { "type": "spText", "content": "Numbers can come later." },
+            { "type": "spText", "content": "Steps are justified symbolically." },
+            { "type": "spText", "content": "Meaning matters more than speed." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "The real shift",
+          "showAt": 32,
+          "spItems": [
+            { "type": "spText", "content": "Operations stay the same." },
+            { "type": "spText", "content": "Thinking becomes more flexible." },
+            { "type": "spText", "content": "Problems become more general." },
+            { "type": "spText", "content": "Structure matters more than answers." },
+            { "type": "spText", "content": "This is the heart of algebra." }
+          ]
+        }
+      ]
+    }
+  ]
+}
