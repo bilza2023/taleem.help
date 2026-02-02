@@ -24,6 +24,13 @@ export const questions = [
         thumbnail: '/images/success.webp',
         href: 'player.html?deck=success'
       },
+      {
+        id: 203,
+        category: 'videos',
+        title: 'Variable Test',
+        thumbnail: '/images/box.webp',
+        href: 'player.html?deck=variable'
+      },
   
       // Blog
       {

@@ -1,174 +1,164 @@
 
 {
   "version": "deck-v1",
-  "name": "Fun Demo EQ Deck",
+  "name": "Taleem Slide Types Overview",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": null,
+    "backgroundImageOpacity": 0.3
+  },
   "deck": [
     {
-      "type": "eq",
+      "type": "titleAndSubtitle",
       "start": 0,
-      "end": 15,
+      "end": 4,
       "data": [
-        {
-          "name": "line",
-          "type": "heading",
-          "content": "Math can be fun",
-          "showAt": 0,
-          "spItems": [
-            { "type": "spImage", "content": "banner.webp" },
-            { "type": "spText", "content": "Math is not just numbers, it is thinking and play." }
-          ]
-        },
-        {
-          "name": "line",
-          "type": "text",
-          "content": "Think like a game",
-          "showAt": 3,
-          "spItems": [
-            { "type": "spText", "content": "Problems are like puzzles." },
-            { "type": "spText", "content": "Each clue helps you move forward." },
-            { "type": "spText", "content": "You test ideas as you go." },
-            { "type": "spText", "content": "Wrong moves teach you something." },
-            { "type": "spText", "content": "Winning means understanding." }
-          ]
-        },
-        {
-          "name": "line",
-          "type": "text",
-          "content": "No fear allowed",
-          "showAt": 6,
-          "spItems": [
-            { "type": "spText", "content": "Mistakes are part of learning." },
-            { "type": "spText", "content": "Trying matters more than speed." },
-            { "type": "spText", "content": "Questions are always welcome." },
-            { "type": "spText", "content": "Curiosity leads the way." },
-            { "type": "spText", "content": "Math grows confidence." }
-          ]
-        },
-        {
-          "name": "line",
-          "type": "text",
-          "content": "Ready to explore",
-          "showAt": 9,
-          "spItems": [
-            { "type": "spText", "content": "Every topic starts simple." },
-            { "type": "spText", "content": "Ideas build step by step." },
-            { "type": "spText", "content": "You are in control." },
-            { "type": "spText", "content": "Learning feels lighter." },
-            { "type": "spText", "content": "Let’s begin the journey." }
-          ]
-        }
+        { "name": "title", "content": "Taleem Slide Types", "showAt": 0 },
+        { "name": "subtitle", "content": "Conceptual purpose of each deck-v1 slide", "showAt": 1 }
       ]
     },
     {
-      "type": "eq",
-      "start": 15,
-      "end": 30,
+      "type": "titleAndPara",
+      "start": 4,
+      "end": 8,
       "data": [
-        {
-          "name": "line",
-          "type": "heading",
-          "content": "Patterns everywhere",
-          "showAt": 15,
-          "spItems": [
-            { "type": "spImage", "content": "image.webp" },
-            { "type": "spText", "content": "Math helps us spot patterns in the world." }
-          ]
-        },
-        {
-          "name": "line",
-          "type": "text",
-          "content": "Look closely",
-          "showAt": 18,
-          "spItems": [
-            { "type": "spText", "content": "Numbers repeat in special ways." },
-            { "type": "spText", "content": "Shapes follow rules." },
-            { "type": "spText", "content": "Changes are not random." },
-            { "type": "spText", "content": "Details start to matter." },
-            { "type": "spText", "content": "Patterns tell stories." }
-          ]
-        },
-        {
-          "name": "line",
-          "type": "text",
-          "content": "Why patterns help",
-          "showAt": 21,
-          "spItems": [
-            { "type": "spText", "content": "They help predict what comes next." },
-            { "type": "spText", "content": "They reduce guessing." },
-            { "type": "spText", "content": "They make problems easier." },
-            { "type": "spText", "content": "They build strong reasoning." },
-            { "type": "spText", "content": "They save time." }
-          ]
-        },
-        {
-          "name": "line",
-          "type": "text",
-          "content": "Your brain at work",
-          "showAt": 24,
-          "spItems": [
-            { "type": "spText", "content": "You already use patterns daily." },
-            { "type": "spText", "content": "Math just makes it clearer." },
-            { "type": "spText", "content": "Thinking becomes sharper." },
-            { "type": "spText", "content": "Confidence slowly grows." },
-            { "type": "spText", "content": "You start to enjoy it." }
-          ]
-        }
+        { "name": "title", "content": "titleAndSubtitle", "showAt": 4 },
+        { "name": "para", "content": "Introduces a lesson or section using a main idea supported by a secondary line for framing.", "showAt": 5 }
       ]
     },
     {
-      "type": "eq",
-      "start": 30,
-      "end": 45,
+      "type": "titleAndPara",
+      "start": 8,
+      "end": 12,
       "data": [
-        {
-          "name": "line",
-          "type": "heading",
-          "content": "You can do this",
-          "showAt": 30,
-          "spItems": [
-            { "type": "spImage", "content": "success.webp" },
-            { "type": "spText", "content": "Learning math is a skill anyone can build." }
-          ]
-        },
-        {
-          "name": "line",
-          "type": "text",
-          "content": "Step by step",
-          "showAt": 33,
-          "spItems": [
-            { "type": "spText", "content": "Big ideas start small." },
-            { "type": "spText", "content": "Practice creates comfort." },
-            { "type": "spText", "content": "Understanding beats memorizing." },
-            { "type": "spText", "content": "Progress is personal." },
-            { "type": "spText", "content": "Effort always counts." }
-          ]
-        },
-        {
-          "name": "line",
-          "type": "text",
-          "content": "Stay curious",
-          "showAt": 36,
-          "spItems": [
-            { "type": "spText", "content": "Ask why things work." },
-            { "type": "spText", "content": "Explore different ideas." },
-            { "type": "spText", "content": "Connect concepts together." },
-            { "type": "spText", "content": "Enjoy small wins." },
-            { "type": "spText", "content": "Keep moving forward." }
-          ]
-        },
-        {
-          "name": "line",
-          "type": "text",
-          "content": "Let’s go",
-          "showAt": 39,
-          "spItems": [
-            { "type": "spText", "content": "You are ready to learn." },
-            { "type": "spText", "content": "Math is on your side." },
-            { "type": "spText", "content": "Confidence is building." },
-            { "type": "spText", "content": "The journey continues." },
-            { "type": "spText", "content": "Have fun with it." }
-          ]
-        }
+        { "name": "title", "content": "titleAndPara", "showAt": 8 },
+        { "name": "para", "content": "Explains a single idea in prose, combining a conceptual heading with a clear paragraph.", "showAt": 9 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 12,
+      "end": 16,
+      "data": [
+        { "name": "title", "content": "bulletList", "showAt": 12 },
+        { "name": "para", "content": "Presents multiple related ideas as distinct conceptual bullets that may appear over time.", "showAt": 13 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 16,
+      "end": 20,
+      "data": [
+        { "name": "title", "content": "twoColumnText", "showAt": 16 },
+        { "name": "para", "content": "Displays two independent text blocks for comparison, contrast, or parallel explanation.", "showAt": 17 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 20,
+      "end": 24,
+      "data": [
+        { "name": "title", "content": "imageSlide", "showAt": 20 },
+        { "name": "para", "content": "Shows a single instructional image as the sole focus of the slide.", "showAt": 21 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 24,
+      "end": 28,
+      "data": [
+        { "name": "title", "content": "imageWithTitle", "showAt": 24 },
+        { "name": "para", "content": "Pairs a visual with a clear conceptual title to anchor interpretation.", "showAt": 25 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 28,
+      "end": 32,
+      "data": [
+        { "name": "title", "content": "imageWithCaption", "showAt": 28 },
+        { "name": "para", "content": "Supports an image with a short explanatory caption as data.", "showAt": 29 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 32,
+      "end": 36,
+      "data": [
+        { "name": "title", "content": "imageLeftBulletsRight", "showAt": 32 },
+        { "name": "para", "content": "Combines a visual on the left with structured bullet ideas on the right.", "showAt": 33 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 36,
+      "end": 40,
+      "data": [
+        { "name": "title", "content": "imageRightBulletsLeft", "showAt": 36 },
+        { "name": "para", "content": "Mirrors the previous layout with bullets on the left and image on the right.", "showAt": 37 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 40,
+      "end": 44,
+      "data": [
+        { "name": "title", "content": "table", "showAt": 40 },
+        { "name": "para", "content": "Represents structured data in rows and columns for comparison or reference.", "showAt": 41 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 44,
+      "end": 48,
+      "data": [
+        { "name": "title", "content": "barChart", "showAt": 44 },
+        { "name": "para", "content": "Visualizes quantitative values as bars to compare magnitudes.", "showAt": 45 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 48,
+      "end": 52,
+      "data": [
+        { "name": "title", "content": "progressbar", "showAt": 48 },
+        { "name": "para", "content": "Shows a single measure of completion or proportion as progress.", "showAt": 49 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 52,
+      "end": 56,
+      "data": [
+        { "name": "title", "content": "quoteSlide", "showAt": 52 },
+        { "name": "para", "content": "Highlights a quotation and its author as a focused idea.", "showAt": 53 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 56,
+      "end": 60,
+      "data": [
+        { "name": "title", "content": "keyIdeasSlide", "showAt": 56 },
+        { "name": "para", "content": "Summarizes core concepts as a fixed set of idea cards.", "showAt": 57 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 60,
+      "end": 66,
+      "data": [
+        { "name": "title", "content": "eq", "showAt": 60 },
+        { "name": "para", "content": "Presents equations or structured reasoning with optional side explanations.", "showAt": 61 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 66,
+      "end": 70,
+      "data": [
+        { "name": "title", "content": "fillImage", "showAt": 66 },
+        { "name": "para", "content": "Uses a full-bleed image to immerse attention on a single visual.", "showAt": 67 }
       ]
     }
   ]
