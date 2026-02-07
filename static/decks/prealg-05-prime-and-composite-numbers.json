@@ -1,0 +1,95 @@
+{
+    "version": "deck-v1",
+    "name": "Prime and Composite Numbers",
+    "deck": [
+      {
+        "type": "core",
+        "start": 0,
+        "end": 60,
+        "data": [
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Prime and Composite Numbers",
+            "showAt": 0,
+            "spItems": [
+              { "type": "spImage", "content": "prime-and-composite-numbers.png" },
+              {
+                "type": "spText",
+                "content": "We will understand numbers by looking at how many factors they have."
+              }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "text",
+            "content": "Prime numbers",
+            "showAt": 10,
+            "spItems": [
+              { "type": "spText", "content": "Look at the left side of the image." },
+              { "type": "spText", "content": "The numbers 2, 3, and 5 are shown." },
+              { "type": "spText", "content": "Each of these numbers has exactly two factors." },
+              { "type": "spText", "content": "The factors are 1 and the number itself." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "text",
+            "content": "Why they are prime",
+            "showAt": 20,
+            "spItems": [
+              { "type": "spText", "content": "2 has factors 1 and 2." },
+              { "type": "spText", "content": "3 has factors 1 and 3." },
+              { "type": "spText", "content": "5 has factors 1 and 5." },
+              {
+                "type": "spText",
+                "content": "A number with exactly two factors is called a prime number."
+              }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "text",
+            "content": "The number 1",
+            "showAt": 30,
+            "spItems": [
+              { "type": "spText", "content": "Now look at the middle of the image." },
+              { "type": "spText", "content": "The number 1 is shown alone." },
+              { "type": "spText", "content": "It has only one factor, which is 1." },
+              {
+                "type": "spText",
+                "content": "So 1 is neither prime nor composite."
+              }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "text",
+            "content": "Composite numbers",
+            "showAt": 40,
+            "spItems": [
+              { "type": "spText", "content": "Now look at the right side of the image." },
+              { "type": "spText", "content": "The numbers 4, 6, and 12 are shown." },
+              { "type": "spText", "content": "Each of these numbers has more than two factors." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "text",
+            "content": "Why they are composite",
+            "showAt": 50,
+            "spItems": [
+              { "type": "spText", "content": "4 has factors 1, 2, and 4." },
+              { "type": "spText", "content": "6 has factors 1, 2, 3, and 6." },
+              { "type": "spText", "content": "12 has many factors." },
+              {
+                "type": "spText",
+                "content": "A number with more than two factors is called a composite number."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
