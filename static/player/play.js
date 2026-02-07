@@ -71,10 +71,11 @@ scrubEl.max = duration
 // draw function (THE core bridge)
 // ----------------------------------
 function draw(state) {
-  const t = state.currentTime
-  player.renderAt(t)
-  timeEl.textContent = `${t.toFixed(1)}s`
-  scrubEl.value = t
+  const t = state.currentTime;
+  player.renderAt(t);
+  useMath(document.querySelector("#app"));
+  timeEl.textContent = `${t.toFixed(1)}s`;
+  scrubEl.value = t;
 }
 
 renderLoop.setDraw(draw)
