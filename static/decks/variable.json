@@ -1,164 +1,153 @@
 
 {
   "version": "deck-v1",
-  "name": "Taleem Slide Types Overview",
+  "name": "Factors and Multiples",
   "background": {
     "backgroundColor": "#111111",
-    "backgroundImage": null,
-    "backgroundImageOpacity": 0.3
+    "backgroundImage": "/physics_bg.webp",
+    "backgroundImageOpacity": 0.25
   },
   "deck": [
     {
       "type": "titleAndSubtitle",
       "start": 0,
-      "end": 4,
+      "end": 5,
       "data": [
-        { "name": "title", "content": "Taleem Slide Types", "showAt": 0 },
-        { "name": "subtitle", "content": "Conceptual purpose of each deck-v1 slide", "showAt": 1 }
+        { "name": "title", "content": "Factors and Multiples", "showAt": 0 },
+        { "name": "subtitle", "content": "Understanding numbers from two sides", "showAt": 1 }
       ]
     },
     {
       "type": "titleAndPara",
-      "start": 4,
-      "end": 8,
-      "data": [
-        { "name": "title", "content": "titleAndSubtitle", "showAt": 4 },
-        { "name": "para", "content": "Introduces a lesson or section using a main idea supported by a secondary line for framing.", "showAt": 5 }
-      ]
-    },
-    {
-      "type": "titleAndPara",
-      "start": 8,
+      "start": 5,
       "end": 12,
       "data": [
-        { "name": "title", "content": "titleAndPara", "showAt": 8 },
-        { "name": "para", "content": "Explains a single idea in prose, combining a conceptual heading with a clear paragraph.", "showAt": 9 }
+        {
+          "name": "title",
+          "content": "What are Factors?",
+          "showAt": 5
+        },
+        {
+          "name": "para",
+          "content": "A factor is a number that divides another number completely, leaving no remainder.",
+          "showAt": 6
+        }
       ]
     },
     {
-      "type": "titleAndPara",
+      "type": "bulletList",
       "start": 12,
-      "end": 16,
-      "data": [
-        { "name": "title", "content": "bulletList", "showAt": 12 },
-        { "name": "para", "content": "Presents multiple related ideas as distinct conceptual bullets that may appear over time.", "showAt": 13 }
-      ]
-    },
-    {
-      "type": "titleAndPara",
-      "start": 16,
       "end": 20,
       "data": [
-        { "name": "title", "content": "twoColumnText", "showAt": 16 },
-        { "name": "para", "content": "Displays two independent text blocks for comparison, contrast, or parallel explanation.", "showAt": 17 }
+        { "name": "bullet", "content": "Factors divide a number exactly", "showAt": 12 },
+        { "name": "bullet", "content": "They are always finite in number", "showAt": 14 },
+        { "name": "bullet", "content": "Every number has at least two factors", "showAt": 16 }
       ]
     },
     {
       "type": "titleAndPara",
       "start": 20,
-      "end": 24,
-      "data": [
-        { "name": "title", "content": "imageSlide", "showAt": 20 },
-        { "name": "para", "content": "Shows a single instructional image as the sole focus of the slide.", "showAt": 21 }
-      ]
-    },
-    {
-      "type": "titleAndPara",
-      "start": 24,
       "end": 28,
       "data": [
-        { "name": "title", "content": "imageWithTitle", "showAt": 24 },
-        { "name": "para", "content": "Pairs a visual with a clear conceptual title to anchor interpretation.", "showAt": 25 }
+        {
+          "name": "title",
+          "content": "Example: Factors of 12",
+          "showAt": 20
+        },
+        {
+          "name": "para",
+          "content": "The factors of 12 are 1, 2, 3, 4, 6, and 12 because each divides 12 exactly.",
+          "showAt": 21
+        }
       ]
     },
     {
       "type": "titleAndPara",
       "start": 28,
-      "end": 32,
-      "data": [
-        { "name": "title", "content": "imageWithCaption", "showAt": 28 },
-        { "name": "para", "content": "Supports an image with a short explanatory caption as data.", "showAt": 29 }
-      ]
-    },
-    {
-      "type": "titleAndPara",
-      "start": 32,
       "end": 36,
       "data": [
-        { "name": "title", "content": "imageLeftBulletsRight", "showAt": 32 },
-        { "name": "para", "content": "Combines a visual on the left with structured bullet ideas on the right.", "showAt": 33 }
+        {
+          "name": "title",
+          "content": "What are Multiples?",
+          "showAt": 28
+        },
+        {
+          "name": "para",
+          "content": "A multiple is obtained by multiplying a number by whole numbers.",
+          "showAt": 29
+        }
       ]
     },
     {
-      "type": "titleAndPara",
+      "type": "bulletList",
       "start": 36,
-      "end": 40,
-      "data": [
-        { "name": "title", "content": "imageRightBulletsLeft", "showAt": 36 },
-        { "name": "para", "content": "Mirrors the previous layout with bullets on the left and image on the right.", "showAt": 37 }
-      ]
-    },
-    {
-      "type": "titleAndPara",
-      "start": 40,
       "end": 44,
       "data": [
-        { "name": "title", "content": "table", "showAt": 40 },
-        { "name": "para", "content": "Represents structured data in rows and columns for comparison or reference.", "showAt": 41 }
+        { "name": "bullet", "content": "Multiples are formed by repeated multiplication", "showAt": 36 },
+        { "name": "bullet", "content": "They increase as we move forward", "showAt": 38 },
+        { "name": "bullet", "content": "They do not end", "showAt": 40 }
       ]
     },
     {
       "type": "titleAndPara",
       "start": 44,
-      "end": 48,
-      "data": [
-        { "name": "title", "content": "barChart", "showAt": 44 },
-        { "name": "para", "content": "Visualizes quantitative values as bars to compare magnitudes.", "showAt": 45 }
-      ]
-    },
-    {
-      "type": "titleAndPara",
-      "start": 48,
       "end": 52,
       "data": [
-        { "name": "title", "content": "progressbar", "showAt": 48 },
-        { "name": "para", "content": "Shows a single measure of completion or proportion as progress.", "showAt": 49 }
+        {
+          "name": "title",
+          "content": "Example: Multiples of 12",
+          "showAt": 44
+        },
+        {
+          "name": "para",
+          "content": "Some multiples of 12 are 12, 24, 36, 48, and so on.",
+          "showAt": 45
+        }
       ]
     },
     {
-      "type": "titleAndPara",
+      "type": "twoColumnText",
       "start": 52,
-      "end": 56,
+      "end": 62,
       "data": [
-        { "name": "title", "content": "quoteSlide", "showAt": 52 },
-        { "name": "para", "content": "Highlights a quotation and its author as a focused idea.", "showAt": 53 }
+        {
+          "name": "left",
+          "content": "Factors\nDivide the number\nFinite in count\nFound by division",
+          "showAt": 52
+        },
+        {
+          "name": "right",
+          "content": "Multiples\nMultiply the number\nInfinite\nFound by multiplication",
+          "showAt": 56
+        }
+      ]
+    },
+    {
+      "type": "keyIdeasSlide",
+      "start": 62,
+      "end": 72,
+      "data": [
+        { "name": "card", "icon": "🧠", "label": "Understanding Numbers", "showAt": 62 },
+        { "name": "card", "icon": "🧩", "label": "Division and Multiplication", "showAt": 64 },
+        { "name": "card", "icon": "📘", "label": "Foundation Concepts", "showAt": 66 },
+        { "name": "card", "icon": "🎯", "label": "Clear Comparison", "showAt": 68 }
       ]
     },
     {
       "type": "titleAndPara",
-      "start": 56,
-      "end": 60,
+      "start": 72,
+      "end": 80,
       "data": [
-        { "name": "title", "content": "keyIdeasSlide", "showAt": 56 },
-        { "name": "para", "content": "Summarizes core concepts as a fixed set of idea cards.", "showAt": 57 }
-      ]
-    },
-    {
-      "type": "titleAndPara",
-      "start": 60,
-      "end": 66,
-      "data": [
-        { "name": "title", "content": "eq", "showAt": 60 },
-        { "name": "para", "content": "Presents equations or structured reasoning with optional side explanations.", "showAt": 61 }
-      ]
-    },
-    {
-      "type": "titleAndPara",
-      "start": 66,
-      "end": 70,
-      "data": [
-        { "name": "title", "content": "fillImage", "showAt": 66 },
-        { "name": "para", "content": "Uses a full-bleed image to immerse attention on a single visual.", "showAt": 67 }
+        {
+          "name": "title",
+          "content": "Why Factors and Multiples Matter",
+          "showAt": 72
+        },
+        {
+          "name": "para",
+          "content": "These ideas help us understand prime numbers, HCF, and LCM in later chapters.",
+          "showAt": 73
+        }
       ]
     }
   ]

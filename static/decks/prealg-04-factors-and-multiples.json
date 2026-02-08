@@ -1,11 +1,13 @@
 {
     "version": "deck-v1",
     "name": "Factors and Multiples",
+
     "background": {
       "backgroundColor": "#111111",
-      "backgroundImage": null,
-      "backgroundImageOpacity": 0.3
+      "backgroundImage": "/physics_bg.webp",
+      "backgroundImageOpacity": 0.25
     },
+  
     "deck": [
       {
         "type": "titleAndSubtitle",

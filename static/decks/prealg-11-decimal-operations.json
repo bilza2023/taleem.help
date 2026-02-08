@@ -1,0 +1,109 @@
+{
+    "version": "deck-v1",
+    "name": "Operations on Decimals — Overview",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "/physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Operations on Decimals", "showAt": 0 },
+          { "name": "subtitle", "content": "Understanding the meaning", "showAt": 1 }
+        ]
+      },
+  
+      {
+        "type": "fillImage",
+        "start": 6,
+        "end": 18,
+        "data": [
+          { "name": "image", "content": "decimal-operations.png", "showAt": 6 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 18,
+        "end": 32,
+        "data": [
+          {
+            "name": "title",
+            "content": "Four operations on decimals",
+            "showAt": 18
+          },
+          {
+            "name": "para",
+            "content": "Decimals can be added, subtracted, multiplied, and divided. Each operation changes the quantity in a different way, but the idea of place value always remains important.",
+            "showAt": 19
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 32,
+        "end": 48,
+        "data": [
+          { "name": "image", "content": "decimal-operations.png", "showAt": 32 },
+          { "name": "bullet", "content": "Addition joins decimal quantities", "showAt": 33 },
+          { "name": "bullet", "content": "Subtraction removes part of a quantity", "showAt": 34 },
+          { "name": "bullet", "content": "Multiplication reduces the quantity further", "showAt": 35 },
+          { "name": "bullet", "content": "Division shares a quantity equally", "showAt": 36 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 48,
+        "end": 62,
+        "data": [
+          {
+            "name": "title",
+            "content": "Focus on quantity",
+            "showAt": 48
+          },
+          {
+            "name": "para",
+            "content": "When working with decimals, focus on how the quantity changes. The position of digits matters because it represents the size of each part.",
+            "showAt": 49
+          }
+        ]
+      },
+  
+      {
+        "type": "keyIdeasSlide",
+        "start": 62,
+        "end": 72,
+        "data": [
+          { "name": "card", "icon": "➕", "label": "Join", "showAt": 62 },
+          { "name": "card", "icon": "➖", "label": "Remove", "showAt": 63 },
+          { "name": "card", "icon": "✖️", "label": "Scale", "showAt": 64 },
+          { "name": "card", "icon": "➗", "label": "Share", "showAt": 65 }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 72,
+        "end": 80,
+        "data": [
+          {
+            "name": "quote",
+            "content": "Decimal operations are about how quantities change, not just moving digits.",
+            "showAt": 72
+          },
+          {
+            "name": "author",
+            "content": "— Taleem Concept Note",
+            "showAt": 73
+          }
+        ]
+      }
+    ]
+  }
+  

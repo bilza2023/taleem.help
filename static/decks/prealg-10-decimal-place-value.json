@@ -1,0 +1,123 @@
+
+{
+    "version": "deck-v1",
+    "name": "Decimals — Place Value and Meaning",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "/physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Decimals", "showAt": 0 },
+          { "name": "subtitle", "content": "Place value and meaning", "showAt": 1 }
+        ]
+      },
+  
+      {
+        "type": "fillImage",
+        "start": 6,
+        "end": 18,
+        "data": [
+          { "name": "image", "content": "decimal-place-value.png", "showAt": 6 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 18,
+        "end": 32,
+        "data": [
+          {
+            "name": "title",
+            "content": "From whole to parts",
+            "showAt": 18
+          },
+          {
+            "name": "para",
+            "content": "Decimals represent parts of a whole. When a whole is divided into equal parts, each smaller part can be shown using decimals.",
+            "showAt": 19
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 32,
+        "end": 48,
+        "data": [
+          { "name": "image", "content": "decimal-place-value.png", "showAt": 32 },
+          { "name": "bullet", "content": "One whole represents a complete unit", "showAt": 33 },
+          { "name": "bullet", "content": "Tenths are equal parts of a whole", "showAt": 34 },
+          { "name": "bullet", "content": "Hundredths are even smaller parts", "showAt": 35 },
+          { "name": "bullet", "content": "Place value shows the size of each part", "showAt": 36 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 48,
+        "end": 62,
+        "data": [
+          {
+            "name": "title",
+            "content": "Visual meaning of decimals",
+            "showAt": 48
+          },
+          {
+            "name": "para",
+            "content": "Decimals are not just symbols. They visually show how much of a whole is taken, based on equal divisions.",
+            "showAt": 49
+          }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 62,
+        "end": 76,
+        "data": [
+          { "name": "image", "content": "decimal-place-value.png", "showAt": 62 },
+          { "name": "bullet", "content": "Each step right makes parts smaller", "showAt": 63 },
+          { "name": "bullet", "content": "Place value controls the size of a digit", "showAt": 64 },
+          { "name": "bullet", "content": "Same digit can mean different amounts", "showAt": 65 },
+          { "name": "bullet", "content": "Understanding place value prevents mistakes", "showAt": 66 }
+        ]
+      },
+  
+      {
+        "type": "keyIdeasSlide",
+        "start": 76,
+        "end": 86,
+        "data": [
+          { "name": "card", "icon": "🔢", "label": "Place Value", "showAt": 76 },
+          { "name": "card", "icon": "📏", "label": "Size of Parts", "showAt": 77 },
+          { "name": "card", "icon": "➗", "label": "Equal Division", "showAt": 78 },
+          { "name": "card", "icon": "👁️", "label": "Visual Meaning", "showAt": 79 }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 86,
+        "end": 94,
+        "data": [
+          {
+            "name": "quote",
+            "content": "Decimals show how much of a whole we have, not just where a dot is placed.",
+            "showAt": 86
+          },
+          {
+            "name": "author",
+            "content": "— Taleem Concept Note",
+            "showAt": 87
+          }
+        ]
+      }
+    ]
+  }
+  

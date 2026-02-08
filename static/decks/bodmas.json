@@ -4,7 +4,7 @@
 
   "background": {
     "backgroundColor": "#111111",
-    "backgroundImage": "/images/physics_bg.webp",
+    "backgroundImage": "/physics_bg.webp",
     "backgroundImageOpacity": 0.25
   },
 
@@ -52,7 +52,7 @@
       "data": [
         {
           "name": "image",
-          "content": "/images/bodmas.jpeg",
+          "content": "/bodmas.jpeg",
           "showAt": 12
         },
         { "name": "bullet", "content": "B – Brackets", "showAt": 13 },
@@ -94,7 +94,7 @@
       "data": [
         {
           "name": "image",
-          "content": "/images/bodmas2.jpeg",
+          "content": "/bodmas2.jpeg",
           "showAt": 28
         },
         {

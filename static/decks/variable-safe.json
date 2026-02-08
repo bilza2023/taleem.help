@@ -1,185 +1,25 @@
-
 {
   "version": "deck-v1",
-  "name": "Golden Deck V2 – Simple Demo",
+  "name": "Celebration – Success",
+
   "background": {
     "backgroundColor": "#111111",
-    "backgroundImage": null,
-    "backgroundImageOpacity": 0.3
+    "backgroundImage": "/physics_bg.webp",
+    "backgroundImageOpacity": 0.25
   },
+
   "deck": [
     {
       "type": "titleAndSubtitle",
       "start": 0,
       "end": 5,
       "data": [
-        { "name": "title", "content": "Learning Made Simple", "showAt": 0 },
-        { "name": "subtitle", "content": "A calm structure for clear thinking", "showAt": 1 }
-      ]
-    },
-
-    {
-      "type": "quoteSlide",
-      "start": 5,
-      "end": 10,
-      "data": [
-        { "name": "quote", "content": "Simple ideas travel further.", "showAt": 5 },
-        { "name": "author", "content": "— Learning Note", "showAt": 6 }
-      ]
-    },
-
-    {
-      "type": "bulletList",
-      "start": 10,
-      "end": 15,
-      "data": [
-        { "name": "bullet", "content": "Lessons work best when they are predictable", "showAt": 10 },
-        { "name": "bullet", "content": "Students focus better with steady pacing", "showAt": 11 },
-        { "name": "bullet", "content": "Clear structure reduces confusion", "showAt": 12 },
-        { "name": "bullet", "content": "Each idea deserves its own moment", "showAt": 13 }
-      ]
-    },
-
-    {
-      "type": "imageWithTitle",
-      "start": 15,
-      "end": 20,
-      "data": [
-        { "name": "title", "content": "Visuals Support Understanding", "showAt": 15 },
-        { "name": "image", "content": "image.png", "showAt": 16 }
-      ]
-    },
-
-    {
-      "type": "twoColumnText",
-      "start": 20,
-      "end": 25,
-      "data": [
-        {
-          "name": "left",
-          "content": "When content appears all at once, learners scan and move on quickly.",
-          "showAt": 20
-        },
-        {
-          "name": "right",
-          "content": "When content appears gradually, learners stay engaged and think step by step.",
-          "showAt": 22
-        }
-      ]
-    },
-
-    {
-      "type": "imageLeftBulletsRight",
-      "start": 25,
-      "end": 30,
-      "data": [
-        { "name": "image", "content": "image.png", "showAt": 25 },
-        { "name": "bullet", "content": "Images guide attention", "showAt": 26 },
-        { "name": "bullet", "content": "Text explains the idea", "showAt": 27 },
-        { "name": "bullet", "content": "Together they reduce effort", "showAt": 28 }
-      ]
-    },
-
-    {
-      "type": "table",
-      "start": 30,
-      "end": 35,
-      "data": [
-        ["Component", "Purpose"],
-        ["Structure", "Keeps lessons organized"],
-        ["Timing", "Controls idea flow"],
-        ["Visuals", "Support memory"],
-        ["Text", "Delivers meaning"]
-      ]
-    },
-
-    {
-      "type": "barChart",
-      "start": 35,
-      "end": 40,
-      "data": [
-        { "name": "bar", "label": "Clarity", "value": 7, "showAt": 35 },
-        { "name": "bar", "label": "Pace", "value": 6, "showAt": 36 },
-        { "name": "bar", "label": "Engagement", "value": 5, "showAt": 37 }
-      ]
-    },
-
-    {
-      "type": "progressbar",
-      "start": 40,
-      "end": 45,
-      "data": [
-        { "name": "bar", "label": "Lesson Progress", "value": 45, "showAt": 40 }
-      ]
-    },
-
-    {
-      "type": "keyIdeasSlide",
-      "start": 45,
-      "end": 50,
-      "data": [
-        { "name": "card", "icon": "🧩", "label": "Structure", "showAt": 45 },
-        { "name": "card", "icon": "🌱", "label": "Growth", "showAt": 46 },
-        { "name": "card", "icon": "🕰️", "label": "Timing", "showAt": 47 },
-        { "name": "card", "icon": "🌱", "label": "Growth", "showAt": 47 }
-      ]
-    },
-
-    {
-      "type": "eq",
-      "start": 50,
-      "end": 60,
-      "data": [
-        {
-          "name": "line",
-          "type": "heading",
-          "content": "Pause and Notice",
-          "showAt": 50
-        },
-        {
-          "name": "line",
-          "type": "math",
-          "content": "$(x + 1)^2$",
-          "showAt": 51,
-          "spItems": [
-            { "type": "spText", "content": "Think of the expression repeating itself." },
-            { "type": "spImage", "content": "image.png" }
-          ]
-        },
-        {
-          "name": "line",
-          "type": "math",
-          "content": "$(x + 1)(x + 1)$",
-          "showAt": 52,
-          "spItems": [
-            { "type": "spText", "content": "The same idea, written more clearly." },
-            { "type": "spImage", "content": "image.png" }
-          ]
-        }
-      ]
-    },
-
-    {
-      "type": "fillImage",
-      "start": 60,
-      "end": 65,
-      "data": [
-        { "name": "image", "content": "image.png", "showAt": 60 }
-      ]
-    },
-
-    {
-      "type": "titleAndPara",
-      "start": 65,
-      "end": 75,
-      "data": [
-        { "name": "title", "content": "Closing Thought", "showAt": 65 },
-        {
-          "name": "para",
-          "content": "Good teaching is not about adding more. It is about removing noise until only what matters remains. When structure, timing, and clarity work together, learning feels calm, focused, and human.",
-          "showAt": 66
-        }
+        { "showAt":0, "name": "title", "content": "Factors and Multiples" },
+        { "showAt":0, "name": "subtitle", "content": "Introduction" }
       ]
     }
+    
+
+
   ]
 }
