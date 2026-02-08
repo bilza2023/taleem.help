@@ -13,6 +13,7 @@ Here’s a **reasonable, tight 20-video structure**. First video sets context, t
 10. Decimals: Place Value and Meaning
 11. Operations on Decimals
 12. Percentages: Meaning and Conversion
+
 13. Ratio and Proportion
 14. Powers and Exponents (Basics)
 15. Square Roots (Conceptual)

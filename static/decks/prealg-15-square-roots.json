@@ -1,0 +1,133 @@
+{
+    "version": "deck-v1",
+    "name": "Square Roots",
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Square Roots", "showAt": 0 },
+          { "name": "subtitle", "content": "From area to side length", "showAt": 1 }
+        ]
+      },
+  
+      {
+        "type": "fillImage",
+        "start": 6,
+        "end": 16,
+        "data": [
+          { "name": "image", "content": "square-roots.png", "showAt": 6 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 16,
+        "end": 30,
+        "data": [
+          {
+            "name": "title",
+            "content": "Perfect square",
+            "showAt": 16
+          },
+          {
+            "name": "para",
+            "content": "A perfect square is a shape where all parts are arranged evenly to form a complete square.",
+            "showAt": 17
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 30,
+        "end": 46,
+        "data": [
+          { "name": "image", "content": "square-roots.png", "showAt": 30 },
+          { "name": "bullet", "content": "All sides are equal", "showAt": 31 },
+          { "name": "bullet", "content": "Units form a complete square", "showAt": 32 },
+          { "name": "bullet", "content": "This represents total area", "showAt": 33 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 46,
+        "end": 60,
+        "data": [
+          {
+            "name": "title",
+            "content": "Side length idea",
+            "showAt": 46
+          },
+          {
+            "name": "para",
+            "content": "Instead of looking at the whole area, we now focus on just one side of the square.",
+            "showAt": 47
+          }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 60,
+        "end": 76,
+        "data": [
+          { "name": "image", "content": "square-roots.png", "showAt": 60 },
+          { "name": "bullet", "content": "One side determines the whole square", "showAt": 61 },
+          { "name": "bullet", "content": "Side length creates the area", "showAt": 62 },
+          { "name": "bullet", "content": "We move from area to side", "showAt": 63 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 76,
+        "end": 90,
+        "data": [
+          {
+            "name": "title",
+            "content": "Meaning of square root",
+            "showAt": 76
+          },
+          {
+            "name": "para",
+            "content": "A square root finds the length of one side when the total area of a square is known.",
+            "showAt": 77
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 90,
+        "end": 104,
+        "data": [
+          { "name": "image", "content": "square-roots.png", "showAt": 90 },
+          { "name": "bullet", "content": "Start from the full area", "showAt": 91 },
+          { "name": "bullet", "content": "Move toward one side", "showAt": 92 },
+          { "name": "bullet", "content": "This process is square root", "showAt": 93 }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 104,
+        "end": 114,
+        "data": [
+          {
+            "name": "quote",
+            "content": "A square root takes us from area back to side length.",
+            "showAt": 104
+          },
+          {
+            "name": "author",
+            "content": "— Taleem Concept Note",
+            "showAt": 105
+          }
+        ]
+      }
+    ]
+  }
+  
