@@ -10,7 +10,14 @@
 		active = item.id;
 	}
 
-	$: filtered = data.questions.filter(q => q.category === active);
+	// Choose list based on active tab
+	$: {
+		if (active === 'videos') filtered = data.videos;
+		else if (active === 'blog') filtered = data.blog;
+		else if (active === 'courses') filtered = data.courses;
+	}
+
+	let filtered = data.videos;
 </script>
 
 <div class="page">
