@@ -4,7 +4,7 @@ export const courses = [
       tcode: 'intro-algebra',
       title: 'Intro to Algebra',
       thumbnail: '/images/box.webp',
-      href: '/syllabus?tcode=intro-algebra'
+      href: '/syllabus/pre-algebra'
     }
   ];
   
