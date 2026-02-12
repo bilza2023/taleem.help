@@ -1,70 +1,81 @@
 <script>
 	import { onMount } from 'svelte';
-	import { page } from '$app/stores';
 	import UCard from '$lib/components/UCard.svelte';
 
-	let courseSlug = '';
-	let courseData = null;
 	let lessons = [];
-	let error = null;
+	let title = '';
+	let error = '';
+	let loading = true;
 
-	const IMAGE_BASE = '/images';
+	async function loadCourse() {
+		const params = new URLSearchParams(window.location.search);
+		const course = params.get('course');
 
-	async function loadCourse(slug) {
+		if (!course) {
+			error = 'No course specified.';
+			loading = false;
+			return;
+		}
+
 		try {
-			const res = await fetch(`/data/courses/${slug}.json`);
+			const res = await fetch(`/data/courses/${course}.json`);
 
 			if (!res.ok) {
 				throw new Error('Course not found');
 			}
 
-			courseData = await res.json();
-			lessons = courseData.lessons || [];
+			const data = await res.json();
+
+			title = data.title || '';
+			lessons = data.lessons || [];
 		} catch (err) {
 			error = err.message;
+		} finally {
+			loading = false;
 		}
 	}
 
-	onMount(() => {
-		const params = new URLSearchParams(window.location.search);
-		courseSlug = params.get('course');
-
-		if (courseSlug) {
-			loadCourse(courseSlug);
-		} else {
-			error = 'No course specified';
-		}
-	});
+	onMount(loadCourse);
 </script>
 
-{#if error}
-	<p style="padding:2rem;">{error}</p>
-{:else if !courseData}
-	<p style="padding:2rem;">Loading course...</p>
-{:else}
-
-	<section style="padding:2rem;">
-		<h1>{courseData.title}</h1>
-		<p>{courseData.description}</p>
+<div class="page">
+	{#if loading}
+		<h1 class="title">Loading...</h1>
+	{:else if error}
+		<h1 class="title">{error}</h1>
+	{:else}
+		<h1 class="title">{title}</h1>
 
 		<div class="cards">
 			{#each lessons as lesson}
 				<UCard
 					title={lesson.title}
-					thumbnail={`${IMAGE_BASE}/${lesson.thumbnail}`}
+					thumbnail={`/images/${lesson.thumbnail}`}
 					href={`/player.html?deck=${lesson.deck}`}
 				/>
 			{/each}
 		</div>
-	</section>
-
-{/if}
+	{/if}
+</div>
 
 <style>
+	.page {
+		min-height: 100vh;
+		background: var(--backgroundColor);
+		color: var(--baseTextColor);
+		padding: 20px;
+		font-family: var(--fontBase);
+	}
+
+	.title {
+		margin-bottom: 20px;
+		font-size: 28px;
+		font-weight: 600;
+	}
+
 	.cards {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-		gap: 1.5rem;
-		margin-top: 2rem;
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+		gap: 16px;
 	}
 </style>
