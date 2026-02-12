@@ -1,6 +1,6 @@
 // static/config.js
 
 window.__TALEEM_CONFIG__ = {
-    CONTENT_BASE: "/content"
+    CONTENT_BASE: ""
   };
   

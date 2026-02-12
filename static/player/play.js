@@ -9,6 +9,11 @@ import {
   "https://unpkg.com/taleem-player@latest/dist/taleem-player.esm.js";
 
 import { getDeckEndTime } from "./getDeckEndTime.js";
+// ----------------------------------
+// content origin (injected from static/config.js)
+// ----------------------------------
+const CONTENT_BASE =
+  window.__TALEEM_CONFIG__?.CONTENT_BASE ?? "";
 
 // ----------------------------------
 // read deck from URL
@@ -24,16 +29,25 @@ if (!deckName) {
 // ----------------------------------
 // load deck
 // ----------------------------------
-const res = await fetch(`/decks/${deckName}.json`);
+const res = await fetch(
+  `${CONTENT_BASE}/decks/${deckName}.json`
+);
+
 if (!res.ok) {
   document.body.innerHTML = "<h2>Deck not found</h2>";
   throw new Error("Deck not found");
 }
 
 const deck = await res.json();
+resolveAssetPaths(
+  deck,
+  `${CONTENT_BASE}/images/`
+);
 
-resolveAssetPaths(deck, "/images/");
-resolveBackground(deck, "/images/");
+resolveBackground(
+  deck,
+  `${CONTENT_BASE}/images/`
+);
 
 // ----------------------------------
 // create player
