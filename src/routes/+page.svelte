@@ -9,7 +9,7 @@ const { CONTENT_BASE, pageNav, videos, blog, courses } = data;
 const IMAGE_BASE = `${CONTENT_BASE}/images`;
 
 
-	console.log("pageNav" , pageNav);
+	// console.log("pageNav" , pageNav);
 
 	let active = 'videos';
 
@@ -42,11 +42,14 @@ $: {
 	thumbnail={`${IMAGE_BASE}/${q.thumbnail}`}
 	href={
 		q.deck
-			? `/player.html?deck=${q.deck}`
+		  ? `/player.html?deck=${q.deck}`
+		  : q.slug?.startsWith('courses/')
+			? `/courses?course=${q.slug.split('/')[1]}`
 			: q.slug
-				? `/${q.slug}`
-				: '#'
-	}
+			  ? `/${q.slug}`
+			  : '#'
+	  }
+	  
 />
 
 	{/each}

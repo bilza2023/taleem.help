@@ -1,17 +1,15 @@
 [
     {
       "id": 101,
-      "tcode": "intro-algebra",
+      "slug": "courses/preAlgebra",
       "title": "Pre Algebra",
-      "thumbnail": "nestedTriangles.webp",
-      "slug": "courses/pre-algebra"
+      "thumbnail": "takeoff.webp"
     },
     {
       "id": 102,
-      "tcode": "intro-algebra",
+      "slug": "courses/prePhysics",
       "title": "Pre Physics",
-      "thumbnail": "fbise9physicsChapter1Thumbnail.webp",
-      "slug": "courses/pre-physics"
+      "thumbnail": "fbise9physicsChapter1Thumbnail.webp"
     }
   ]
   

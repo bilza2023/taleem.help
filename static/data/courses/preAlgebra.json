@@ -1,0 +1,28 @@
+
+{
+    "title": "Pre-Algebra Course",
+    "slug": "preAlgebra",
+    "lessons": [
+      { "title": "Why Pre Algebra Course", "thumbnail": "banner_brand.png", "deck": "prealg-01-why-pre-algebra" },
+      { "title": "Number Families", "thumbnail": "number-families.jpeg", "deck": "prealg-02-number-families" },
+      { "title": "Number Line", "thumbnail": "number-line-example.jpeg", "deck": "prealg-03-number-line" },
+      { "title": "Factors and Multiples", "thumbnail": "factors-and-mutiples.jpeg", "deck": "prealg-04-factors-and-multiples" },
+      { "title": "Prime and Composite Numbers", "thumbnail": "prime-and-composite-numbers.png", "deck": "prealg-05-prime-and-composite-numbers" },
+      { "title": "HCF vs LCM", "thumbnail": "hcf_vs_lcm.png", "deck": "prealg-06-hcf_vs_lcm" },
+      { "title": "Fractions Meaning and Types", "thumbnail": "fractions-meaning-and-types.png", "deck": "prealg-07-fractions-meaning-and-types" },
+      { "title": "Equivalent Fractions and Simplification", "thumbnail": "equivalent-fractions.png", "deck": "prealg-08-equivalent-fractions" },
+      { "title": "Operations on Fractions", "thumbnail": "fraction-operations.png", "deck": "prealg-09-fraction-operations" },
+      { "title": "Decimals: Place Value", "thumbnail": "decimal-place-value.png", "deck": "prealg-10-decimal-place-value" },
+      { "title": "Operations on Decimals", "thumbnail": "decimal-operations.png", "deck": "prealg-11-decimal-operations" },
+      { "title": "Percentages", "thumbnail": "percentages.png", "deck": "prealg-12-percentages" },
+      { "title": "Ratio and Proportion", "thumbnail": "ratio-proportion.png", "deck": "prealg-13-ratio-proportion" },
+      { "title": "Powers and Exponents", "thumbnail": "exponents.png", "deck": "prealg-14-exponents" },
+      { "title": "Square Roots", "thumbnail": "square-roots.png", "deck": "prealg-15-square-roots" },
+      { "title": "Algebraic Notation", "thumbnail": "algebraic-notation.png", "deck": "prealg-16-algebraic-notation" },
+      { "title": "Simple Expressions", "thumbnail": "simple-expressions.png", "deck": "prealg-17-simple-expressions" },
+      { "title": "Substitution in Expressions", "thumbnail": "substitution.png", "deck": "prealg-18-substitution" },
+      { "title": "Word Problems", "thumbnail": "word-problems.png", "deck": "prealg-19-word-problems" },
+      { "title": "Bridge to Algebra", "thumbnail": "bridge-to-algebra.png", "deck": "prealg-20-bridge-to-algebra" }
+    ]
+  }
+  
