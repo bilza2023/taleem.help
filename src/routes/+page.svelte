@@ -2,13 +2,14 @@
 	import PageCategoryNav from '$lib/components/PageCategoryNav.svelte';
 	import UCard from '$lib/components/UCard.svelte';
 	
-	export let CONTENT_BASE;
-	export let pageNav;
-	export let videos;
-	export let blog;
-	export let courses;
+	export let data;
 
-	const IMAGE_BASE = `${CONTENT_BASE}/images`;
+const { CONTENT_BASE, pageNav, videos, blog, courses } = data;
+
+const IMAGE_BASE = `${CONTENT_BASE}/images`;
+
+
+	console.log("pageNav" , pageNav);
 
 	let active = 'videos';
 
