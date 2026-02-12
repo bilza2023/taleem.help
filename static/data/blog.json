@@ -1,0 +1,17 @@
+[
+    {
+      "id": 301,
+      "title": "Getting Started",
+      "thumbnail": "class.webp",
+      "slug": "getting-started",
+      "type": "internal"
+    },
+    {
+      "id": 302,
+      "title": "Eq Demo",
+      "thumbnail": "exp.jpeg",
+      "deck": "eq-test",
+      "type": "deck"
+    }
+  ]
+  

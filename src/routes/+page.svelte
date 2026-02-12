@@ -1,8 +1,14 @@
 <script>
 	import PageCategoryNav from '$lib/components/PageCategoryNav.svelte';
 	import UCard from '$lib/components/UCard.svelte';
+	
+	export let CONTENT_BASE;
+	export let pageNav;
+	export let videos;
+	export let blog;
+	export let courses;
 
-	export let data;
+	const IMAGE_BASE = `${CONTENT_BASE}/images`;
 
 	let active = 'videos';
 
@@ -10,33 +16,41 @@
 		active = item.id;
 	}
 
-	// Choose list based on active tab
-	$: {
-		if (active === 'videos') filtered = data.videos;
-		else if (active === 'blog') filtered = data.blog;
-		else if (active === 'courses') filtered = data.courses;
-	}
+	let filtered = videos;
 
-	let filtered = data.videos;
+$: {
+	if (active === 'videos') filtered = videos;
+	else if (active === 'blog') filtered = blog;
+	else if (active === 'courses') filtered = courses;
+}
+
 </script>
 
 <div class="page">
-
 	<PageCategoryNav
-		items={data.pageNav}
-		active={active}
-		evt={setCat}
-	/>
+	items={pageNav}
+	active={active}
+	evt={setCat}
+/>
 
-	<div class="cards">
-		{#each filtered as q}
-			<UCard
-				title={q.title}
-				thumbnail={q.thumbnail}
-				href={q.href}
-			/>
-		{/each}
-	</div>
+
+<div class="cards">
+	{#each filtered as q}
+	<UCard
+	title={q.title}
+	thumbnail={`${IMAGE_BASE}/${q.thumbnail}`}
+	href={
+		q.deck
+			? `/player.html?deck=${q.deck}`
+			: q.slug
+				? `/${q.slug}`
+				: '#'
+	}
+/>
+
+	{/each}
+</div>
+
 </div>
 
 <style>
