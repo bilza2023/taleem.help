@@ -1,11 +1,10 @@
-
 {
   "version": "deck-v1",
-  "name": "Test Deck – Basics",
+  "name": "Algebra Formula Deep Dive – EQ Only",
   "background": {
-    "backgroundColor": "#d3f4d0",
+    "backgroundColor": "#111111",
     "backgroundImage": null,
-    "backgroundImageOpacity": 0.2
+    "backgroundImageOpacity": 0.3
   },
   "deck": [
     {
@@ -13,30 +12,144 @@
       "start": 0,
       "end": 5,
       "data": [
-        { "name": "title", "content": "Welcome to Taleem", "showAt": 0 }
+        { "name": "title", "content": "Core Algebra Formulas", "showAt": 0 },
+        { "name": "subtitle", "content": "Structured Equation Explanation", "showAt": 2 }
       ]
     },
+
     {
-      "type": "titleAndPara",
+      "type": "eq",
       "start": 5,
-      "end": 12,
+      "end": 55,
       "data": [
-        { "name": "title", "content": "What is this?", "showAt": 5 },
         {
-          "name": "para",
-          "content": "This is a simple test lesson running from a static HTML page.",
-          "showAt": 6
+          "name": "line",
+          "type": "math",
+          "content": "$a^2 - b^2 = (a - b)(a + b)$",
+          "showAt": 5,
+          "spItems": [
+            { "type": "spText", "content": "Difference of squares formula." },
+            { "type": "spText", "content": "Transforms subtraction into two brackets." },
+            { "type": "spText", "content": "Example: $x^2 - 16 = (x - 4)(x + 4)$." },
+            { "type": "spImage", "content": "image.webp" }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$(a + b)^2 = a^2 + 2ab + b^2$",
+          "showAt": 15,
+          "spItems": [
+            { "type": "spText", "content": "Square of a binomial." },
+            { "type": "spText", "content": "Middle term is always positive 2ab." },
+            { "type": "spText", "content": "Frequently used in expansions." },
+            { "type": "spImage", "content": "box.webp" }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$(a - b)^2 = a^2 - 2ab + b^2$",
+          "showAt": 25,
+          "spItems": [
+            { "type": "spText", "content": "Square of a difference." },
+            { "type": "spText", "content": "The middle term becomes negative." },
+            { "type": "spText", "content": "Common exam-tested identity." },
+            { "type": "spImage", "content": "image.webp" }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$a^3 + b^3 = (a + b)(a^2 - ab + b^2)$",
+          "showAt": 35,
+          "spItems": [
+            { "type": "spText", "content": "Sum of cubes formula." },
+            { "type": "spText", "content": "Notice the negative middle term." },
+            { "type": "spText", "content": "Useful in higher algebra factorization." },
+            { "type": "spImage", "content": "box.webp" }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$a^3 - b^3 = (a - b)(a^2 + ab + b^2)$",
+          "showAt": 45,
+          "spItems": [
+            { "type": "spText", "content": "Difference of cubes formula." },
+            { "type": "spText", "content": "The middle term becomes positive." },
+            { "type": "spText", "content": "Often confused with sum of cubes." },
+            { "type": "spImage", "content": "image.webp" }
+          ]
         }
       ]
     },
+
     {
-      "type": "bulletList",
-      "start": 12,
-      "end": 20,
+      "type": "eq",
+      "start": 55,
+      "end": 105,
       "data": [
-        { "name": "bullet", "content": "No build step", "showAt": 12 },
-        { "name": "bullet", "content": "Pure HTML + JS", "showAt": 14 },
-        { "name": "bullet", "content": "CDN-powered", "showAt": 16 }
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$\\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$",
+          "showAt": 55,
+          "spItems": [
+            { "type": "spText", "content": "Quadratic formula." },
+            { "type": "spText", "content": "Solves $ax^2 + bx + c = 0$." },
+            { "type": "spText", "content": "Discriminant determines nature of roots." },
+            { "type": "spImage", "content": "box.webp" }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$a^m \\times a^n = a^{m+n}$",
+          "showAt": 65,
+          "spItems": [
+            { "type": "spText", "content": "Exponent multiplication rule." },
+            { "type": "spText", "content": "Add powers when bases are same." },
+            { "type": "spText", "content": "Example: $x^2 \\times x^3 = x^5$." },
+            { "type": "spImage", "content": "image.webp" }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$\\frac{a^m}{a^n} = a^{m-n}$",
+          "showAt": 75,
+          "spItems": [
+            { "type": "spText", "content": "Exponent division rule." },
+            { "type": "spText", "content": "Subtract powers when dividing." },
+            { "type": "spText", "content": "Base must remain identical." },
+            { "type": "spImage", "content": "box.webp" }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$\\sqrt{a^2 + b^2} = c$",
+          "showAt": 85,
+          "spItems": [
+            { "type": "spText", "content": "Pythagoras theorem." },
+            { "type": "spText", "content": "Applies to right triangles." },
+            { "type": "spText", "content": "c represents hypotenuse." },
+            { "type": "spImage", "content": "image.webp" }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$A = \\pi r^2$",
+          "showAt": 95,
+          "spItems": [
+            { "type": "spText", "content": "Area of a circle." },
+            { "type": "spText", "content": "r is the radius." },
+            { "type": "spText", "content": "Fundamental geometry formula." },
+            { "type": "spImage", "content": "box.webp" }
+          ]
+        }
       ]
     }
   ]

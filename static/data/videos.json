@@ -1,17 +1,32 @@
 [
-    {
-      "id": 201,
-      "title": "Why Pre Algebra Course",
-      "thumbnail": "banner_brand.png",
-      "deck": "prealg-01-why-pre-algebra",
-      "course": "intro-algebra"
-    },
+   
     {
       "id": 202,
       "title": "Number Families",
       "thumbnail": "number-families.jpeg",
       "deck": "prealg-02-number-families",
       "course": "intro-algebra"
+    },
+    {
+      "id": 203,
+      "title": "English Words Meaning Demo",
+      "thumbnail": "space.webp",
+      "deck": "english-words-meaning-demo",
+      "course": "intro-algebra"
+    },
+    {
+      "id": 204,
+      "title": "Equation Demo",
+      "thumbnail": "al-khwarizmi_book_page.webp",
+      "deck": "equation-demo",
+      "course": "intro-algebra"
+    },
+    {
+      "id": 205,
+      "title": "5 Ways To Earn in Pakistan using IT & AI",
+      "thumbnail": "pakistani-kids-studying.jpg",
+      "deck": "five-ways-to-earn-in-pakistan",
+      "course": ""
     }
   ]
   

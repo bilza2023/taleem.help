@@ -1,0 +1,29 @@
+{
+    "title": "FBISE Grade 9 Physics – Chapter 1",
+    "slug": "fbise9physics-ch1",
+    "lessons": [
+      
+      { "title": "Introduction to Physics", "thumbnail": "everyDayItems.webp", "deck": "fbise9physics-ch1-01-introduction-to-physics" },
+      
+      { "title": "Physical Quantities", "thumbnail": "atom.png", "deck": "fbise9physics-ch1-02-physical-quantities" },
+      
+      { "title": "Base Quantities and SI Units", "thumbnail": "fbise9physicsChapter5Thumbnail.webp", "deck": "fbise9physics-ch1-03-base-quantities-si-units" },
+
+      { "title": "Derived Quantities", "thumbnail": "equation_balance_scale_labeled.webp", "deck": "fbise9physics-ch1-04-derived-quantities" },
+      
+      { "title": "Scientific Notation (Standard Form)", "thumbnail": "equation_balance_scale_labeled.webp", "deck": "fbise9physics-ch1-05-scientific-notation" },
+      
+      { "title": "Significant Figures", "thumbnail": "expression_example_labeled.webp", "deck": "fbise9physics-ch1-06-significant-figures" },
+      
+      { "title": "Measuring Instruments Overview", "thumbnail": "ruler.png", "deck": "fbise9physics-ch1-07-measuring-instruments" },
+      
+      { "title": "Vernier Caliper", "thumbnail": "vernier-caliper.png", "deck": "fbise9physics-ch1-08-vernier-caliper" },
+      
+      { "title": "Micrometer Screw Gauge", "thumbnail": "screw-guage.png", "deck": "fbise9physics-ch1-09-micrometer-screw-gauge" },
+      
+      { "title": "Types of Errors in Measurement", "thumbnail": "exp.jpeg", "deck": "fbise9physics-ch1-10-types-of-errors" },
+
+      { "title": "Accuracy and Precision", "thumbnail": "ruler.png", "deck": "fbise9physics-ch1-11-accuracy-and-precision" }
+    ]
+  }
+  

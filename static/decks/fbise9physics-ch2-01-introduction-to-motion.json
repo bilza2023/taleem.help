@@ -1,0 +1,62 @@
+{
+    "version": "deck-v1",
+    "name": "Introduction to Motion",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Introduction to Motion", "showAt": 0 },
+          { "name": "image", "content": "motion-intro.webp", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 5,
+        "end": 15,
+        "data": [
+          { "name": "title", "content": "What is Motion?", "showAt": 5 },
+          { "name": "para", "content": "A body is said to be in motion if it changes its position with respect to a reference point as time passes.", "showAt": 8 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 15,
+        "end": 30,
+        "data": [
+          { "name": "image", "content": "motion-intro.webp", "showAt": 15 },
+          { "name": "bullet", "content": "Motion requires change in position.", "showAt": 17 },
+          { "name": "bullet", "content": "Motion is measured relative to a reference point.", "showAt": 20 },
+          { "name": "bullet", "content": "Time is essential to describe motion.", "showAt": 23 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 30,
+        "end": 45,
+        "data": [
+          { "name": "image", "content": "motion-intro.webp", "showAt": 30 },
+          { "name": "bullet", "content": "If position changes → object is in motion.", "showAt": 32 },
+          { "name": "bullet", "content": "If position does not change → object is at rest.", "showAt": 35 },
+          { "name": "bullet", "content": "Motion depends on observer’s frame of reference.", "showAt": 38 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 45,
+        "end": 58,
+        "data": [
+          { "name": "bullet", "content": "Motion is change in position.", "showAt": 45 },
+          { "name": "bullet", "content": "Reference point is necessary.", "showAt": 48 },
+          { "name": "bullet", "content": "Motion cannot be described without time.", "showAt": 51 }
+        ]
+      }
+    ]
+  }
+  

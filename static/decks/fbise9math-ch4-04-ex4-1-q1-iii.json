@@ -1,0 +1,75 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Q1 (iii)",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 1 (iii)", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 45,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 - 3x + \\sqrt{2}$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Check exponent of variable x only." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2$",
+            "showAt": 10,
+            "spItems": [
+              { "type": "spText", "content": "Exponent 2 is valid." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$-3x$",
+            "showAt": 15,
+            "spItems": [
+              { "type": "spText", "content": "Exponent 1 is valid." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$\\sqrt{2}$",
+            "showAt": 20,
+            "spItems": [
+              { "type": "spText", "content": "√2 is a real number constant." },
+              { "type": "spText", "content": "Constants are allowed in polynomials." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$\\therefore$ Polynomial",
+            "showAt": 28,
+            "spItems": [
+              { "type": "spText", "content": "All exponents of x are non-negative integers." },
+              { "type": "spText", "content": "Final Answer: Yes." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

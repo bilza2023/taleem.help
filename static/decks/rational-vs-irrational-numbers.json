@@ -1,0 +1,119 @@
+{
+  "version": "deck-v1",
+  "name": "Two Families of Numbers – Rational and Irrational",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.3
+  },
+  "deck": [
+    {
+      "type": "imageWithTitle",
+      "start": 0,
+      "end": 8,
+      "data": [
+        { "name": "title", "content": "Two Families of Numbers", "showAt": 0 },
+        { "name": "image", "content": "rational-vs-irrational-numbers.png", "showAt": 1 }
+      ]
+    },
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 8,
+      "end": 18,
+      "data": [
+        { "name": "image", "content": "rational-vs-irrational-numbers.png", "showAt": 8 },
+        { "name": "bullet", "content": "Fractions like 1/2 and 3/4.", "showAt": 10 },
+        { "name": "bullet", "content": "Decimals like 0.333…", "showAt": 12 },
+        { "name": "bullet", "content": "Can always be written as a ratio of integers.", "showAt": 14 },
+        { "name": "bullet", "content": "That is the definition of rational.", "showAt": 16 }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 18,
+      "end": 28,
+      "data": [
+        { "name": "image", "content": "rational-vs-irrational-numbers.png", "showAt": 18 },
+        { "name": "bullet", "content": "√2, π, and e also sit on the number line.", "showAt": 20 },
+        { "name": "bullet", "content": "They cannot be written as fractions.", "showAt": 22 },
+        { "name": "bullet", "content": "That difference changes everything.", "showAt": 24 }
+      ]
+    },
+    {
+      "type": "imageWithTitle",
+      "start": 28,
+      "end": 36,
+      "data": [
+        { "name": "title", "content": "A Simple Square", "showAt": 28 },
+        { "name": "image", "content": "square-root-of-2.png", "showAt": 29 }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 36,
+      "end": 48,
+      "data": [
+        { "name": "image", "content": "square-root-of-2.png", "showAt": 36 },
+        { "name": "bullet", "content": "Square with side length 1.", "showAt": 38 },
+        { "name": "bullet", "content": "Using Pythagoras: 1² + 1² = 2.", "showAt": 40 },
+        { "name": "bullet", "content": "Diagonal equals √2.", "showAt": 42 },
+        { "name": "bullet", "content": "This is geometry, not theory.", "showAt": 44 }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 48,
+      "end": 60,
+      "data": [
+        { "name": "image", "content": "square-root-of-2.png", "showAt": 48 },
+        { "name": "bullet", "content": "If √2 exists in geometry…", "showAt": 50 },
+        { "name": "bullet", "content": "Can it be written as a fraction a/b?", "showAt": 52 },
+        { "name": "bullet", "content": "Mathematicians tried.", "showAt": 54 },
+        { "name": "bullet", "content": "They proved no fraction squared gives 2.", "showAt": 56 },
+        { "name": "bullet", "content": "Therefore √2 is irrational.", "showAt": 58 }
+      ]
+    },
+    {
+      "type": "imageWithTitle",
+      "start": 60,
+      "end": 70,
+      "data": [
+        { "name": "title", "content": "Decimal Behavior", "showAt": 60 },
+        { "name": "image", "content": "terminating-repeating-nonrepeating.png", "showAt": 61 }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 70,
+      "end": 82,
+      "data": [
+        { "name": "image", "content": "terminating-repeating-nonrepeating.png", "showAt": 70 },
+        { "name": "bullet", "content": "0.5 terminates.", "showAt": 72 },
+        { "name": "bullet", "content": "0.333… repeats.", "showAt": 74 },
+        { "name": "bullet", "content": "Rational numbers terminate or repeat.", "showAt": 76 },
+        { "name": "bullet", "content": "They always settle into a pattern.", "showAt": 78 }
+      ]
+    },
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 82,
+      "end": 94,
+      "data": [
+        { "name": "image", "content": "terminating-repeating-nonrepeating.png", "showAt": 82 },
+        { "name": "bullet", "content": "√2 = 1.41421356…", "showAt": 84 },
+        { "name": "bullet", "content": "Digits never repeat.", "showAt": 86 },
+        { "name": "bullet", "content": "Digits never end.", "showAt": 88 },
+        { "name": "bullet", "content": "That is irrational behavior.", "showAt": 90 }
+      ]
+    },
+    {
+      "type": "imageWithTitle",
+      "start": 94,
+      "end": 104,
+      "data": [
+        { "name": "title", "content": "Final Understanding", "showAt": 94 },
+        { "name": "image", "content": "rational-vs-irrational-numbers.png", "showAt": 95 }
+      ]
+    }
+  ]
+}

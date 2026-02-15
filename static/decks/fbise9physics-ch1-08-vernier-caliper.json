@@ -1,0 +1,59 @@
+{
+    "version": "deck-v1",
+    "name": "Vernier Caliper",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Vernier Caliper", "showAt": 0 },
+          { "name": "image", "content": "vernier-caliper.png", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 5,
+        "end": 15,
+        "data": [
+          { "name": "title", "content": "Purpose", "showAt": 5 },
+          { "name": "para", "content": "A vernier caliper is used to measure internal diameter, external diameter and depth with high accuracy.", "showAt": 8 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 15,
+        "end": 26,
+        "data": [
+          { "name": "bullet", "content": "Main scale gives measurement in centimeters.", "showAt": 15 },
+          { "name": "bullet", "content": "Vernier scale increases precision.", "showAt": 18 },
+          { "name": "bullet", "content": "Typical least count is 0.01 cm.", "showAt": 21 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 26,
+        "end": 38,
+        "data": [
+          { "name": "title", "content": "Accuracy", "showAt": 26 },
+          { "name": "para", "content": "It is more accurate than a meter rule because it measures fractional parts of the smallest main scale division.", "showAt": 29 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 38,
+        "end": 50,
+        "data": [
+          { "name": "bullet", "content": "Used in laboratories.", "showAt": 38 },
+          { "name": "bullet", "content": "Used in mechanical workshops.", "showAt": 41 },
+          { "name": "bullet", "content": "Essential for precise measurements.", "showAt": 44 }
+        ]
+      }
+    ]
+  }
+  

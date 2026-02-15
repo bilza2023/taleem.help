@@ -1,0 +1,24 @@
+{
+    "title": "FBISE Grade 9 Physics – Chapter 2",
+    "slug": "fbise9physics-ch2",
+    "lessons": [
+  
+      { "title": "Introduction to Motion", "thumbnail": "motion-intro.webp", "deck": "fbise9physics-ch2-01-introduction-to-motion" },
+  
+      { "title": "Distance and Displacement", "thumbnail": "distance-vs-displacement.webp", "deck": "fbise9physics-ch2-02-distance-and-displacement" },
+  
+      { "title": "Speed and Velocity", "thumbnail": "speed-vs-velocity.webp", "deck": "fbise9physics-ch2-03-speed-and-velocity" },
+  
+      { "title": "Uniform and Non-Uniform Motion", "thumbnail": "uniform-motion.webp", "deck": "fbise9physics-ch2-04-uniform-and-non-uniform-motion" },
+
+      
+  
+      { "title": "Acceleration", "thumbnail": "acceleration.webp", "deck": "fbise9physics-ch2-05-acceleration" },
+  
+      { "title": "Equations of Motion", "thumbnail": "equations-of-motion.webp", "deck": "fbise9physics-ch2-06-equations-of-motion" },
+  
+      { "title": "Motion Graphs", "thumbnail": "motion-graphs.webp", "deck": "fbise9physics-ch2-07-motion-graphs" }
+  
+    ]
+  }
+  

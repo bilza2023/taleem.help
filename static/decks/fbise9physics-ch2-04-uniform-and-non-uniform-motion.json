@@ -1,0 +1,61 @@
+{
+    "version": "deck-v1",
+    "name": "Uniform and Non-Uniform Motion",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Uniform and Non-Uniform Motion", "showAt": 0 },
+          { "name": "image", "content": "uniform-motion.webp", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 5,
+        "end": 15,
+        "data": [
+          { "name": "title", "content": "Uniform Motion", "showAt": 5 },
+          { "name": "para", "content": "An object is said to be in uniform motion if it covers equal distances in equal intervals of time.", "showAt": 8 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 15,
+        "end": 30,
+        "data": [
+          { "name": "image", "content": "uniform-motion.webp", "showAt": 15 },
+          { "name": "bullet", "content": "Speed remains constant.", "showAt": 17 },
+          { "name": "bullet", "content": "Equal spacing indicates equal distance in equal time.", "showAt": 20 },
+          { "name": "bullet", "content": "There is no change in speed.", "showAt": 23 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 30,
+        "end": 42,
+        "data": [
+          { "name": "title", "content": "Non-Uniform Motion", "showAt": 30 },
+          { "name": "para", "content": "An object is in non-uniform motion if it covers unequal distances in equal intervals of time.", "showAt": 33 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 42,
+        "end": 58,
+        "data": [
+          { "name": "image", "content": "uniform-motion.webp", "showAt": 42 },
+          { "name": "bullet", "content": "Speed changes during motion.", "showAt": 44 },
+          { "name": "bullet", "content": "Unequal spacing shows changing speed.", "showAt": 47 },
+          { "name": "bullet", "content": "Acceleration may be present.", "showAt": 50 }
+        ]
+      }
+    ]
+  }
+  

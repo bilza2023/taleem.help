@@ -1,0 +1,80 @@
+
+
+{
+    "version": "deck-v1",
+    "name": "Base Quantities and SI Units",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Base Quantities and SI Units", "showAt": 0 },
+          { "name": "image", "content": "atom.png", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 5,
+        "end": 14,
+        "data": [
+          { "name": "title", "content": "What Are Base Quantities?", "showAt": 5 },
+          { "name": "para", "content": "Base quantities are fundamental physical quantities that are independent of other quantities. They cannot be expressed in terms of other physical quantities.", "showAt": 7 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 14,
+        "end": 26,
+        "data": [
+          { "name": "bullet", "content": "Length", "showAt": 14 },
+          { "name": "bullet", "content": "Mass", "showAt": 16 },
+          { "name": "bullet", "content": "Time", "showAt": 18 },
+          { "name": "bullet", "content": "Electric current", "showAt": 20 },
+          { "name": "bullet", "content": "Temperature", "showAt": 22 },
+          { "name": "bullet", "content": "Amount of substance", "showAt": 24 },
+          { "name": "bullet", "content": "Luminous intensity", "showAt": 25 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 26,
+        "end": 36,
+        "data": [
+          { "name": "title", "content": "SI Units", "showAt": 26 },
+          { "name": "para", "content": "The International System of Units (SI) provides standard units for measuring base quantities. These units are used worldwide to ensure uniformity in measurements.", "showAt": 29 }
+        ]
+      },
+      {
+        "type": "table",
+        "start": 36,
+        "end": 52,
+        "data": [
+          ["Base Quantity", "SI Unit"],
+          ["Length", "meter (m)"],
+          ["Mass", "kilogram (kg)"],
+          ["Time", "second (s)"],
+          ["Electric current", "ampere (A)"],
+          ["Temperature", "kelvin (K)"],
+          ["Amount of substance", "mole (mol)"],
+          ["Luminous intensity", "candela (cd)"]
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 52,
+        "end": 62,
+        "data": [
+          { "name": "bullet", "content": "Base quantities are fundamental.", "showAt": 52 },
+          { "name": "bullet", "content": "Each base quantity has a standard SI unit.", "showAt": 55 },
+          { "name": "bullet", "content": "Standard units ensure global consistency.", "showAt": 58 }
+        ]
+      }
+    ]
+  }
+  

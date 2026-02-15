@@ -1,0 +1,71 @@
+{
+    "version": "deck-v1",
+    "name": "Derived Quantities",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndPara",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Derived Quantities", "showAt": 0 },
+          { "name": "para", "content": "Derived quantities are physical quantities that are obtained from base quantities using mathematical relationships.", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 6,
+        "end": 14,
+        "data": [
+          { "name": "title", "content": "How Are They Formed?", "showAt": 6 },
+          { "name": "para", "content": "Derived quantities are formed by multiplying or dividing base quantities. Their units are also derived from SI base units.", "showAt": 8 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 14,
+        "end": 24,
+        "data": [
+          { "name": "bullet", "content": "Speed = distance / time", "showAt": 14 },
+          { "name": "bullet", "content": "Area = length × width", "showAt": 17 },
+          { "name": "bullet", "content": "Volume = length × width × height", "showAt": 20 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 24,
+        "end": 34,
+        "data": [
+          { "name": "title", "content": "Example: Speed", "showAt": 24 },
+          { "name": "para", "content": "Speed is derived from length and time. Since length is measured in meters and time in seconds, the unit of speed becomes meter per second (m/s).", "showAt": 27 }
+        ]
+      },
+      {
+        "type": "table",
+        "start": 34,
+        "end": 48,
+        "data": [
+          ["Derived Quantity", "Unit"],
+          ["Speed", "m/s"],
+          ["Area", "m²"],
+          ["Volume", "m³"],
+          ["Density", "kg/m³"]
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 48,
+        "end": 58,
+        "data": [
+          { "name": "bullet", "content": "Derived quantities depend on base quantities.", "showAt": 48 },
+          { "name": "bullet", "content": "Their units are combinations of SI base units.", "showAt": 51 },
+          { "name": "bullet", "content": "Most physical formulas produce derived quantities.", "showAt": 54 }
+        ]
+      }
+    ]
+  }
+  

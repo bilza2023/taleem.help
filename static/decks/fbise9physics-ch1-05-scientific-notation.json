@@ -1,0 +1,68 @@
+{
+    "version": "deck-v1",
+    "name": "Scientific Notation (Standard Form)",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndPara",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Scientific Notation", "showAt": 0 },
+          { "name": "para", "content": "Scientific notation is a way of writing very large or very small numbers in a compact and simple form.", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 6,
+        "end": 14,
+        "data": [
+          { "name": "title", "content": "Standard Form", "showAt": 6 },
+          { "name": "para", "content": "In standard form, a number is written as: a × 10^n, where 1 ≤ a < 10 and n is an integer.", "showAt": 9 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 14,
+        "end": 24,
+        "data": [
+          { "name": "bullet", "content": "Move decimal point to make a number between 1 and 10.", "showAt": 14 },
+          { "name": "bullet", "content": "Count how many places the decimal moves.", "showAt": 17 },
+          { "name": "bullet", "content": "Write that count as power of 10.", "showAt": 20 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 24,
+        "end": 34,
+        "data": [
+          { "name": "title", "content": "Example 1 (Large Number)", "showAt": 24 },
+          { "name": "para", "content": "3000000 = 3 × 10^6. The decimal moves 6 places to the left, so the power of 10 is +6.", "showAt": 27 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 34,
+        "end": 44,
+        "data": [
+          { "name": "title", "content": "Example 2 (Small Number)", "showAt": 34 },
+          { "name": "para", "content": "0.00045 = 4.5 × 10^-4. The decimal moves 4 places to the right, so the power of 10 is −4.", "showAt": 37 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 44,
+        "end": 56,
+        "data": [
+          { "name": "bullet", "content": "Large numbers have positive powers of 10.", "showAt": 44 },
+          { "name": "bullet", "content": "Small numbers have negative powers of 10.", "showAt": 48 },
+          { "name": "bullet", "content": "Scientific notation makes calculations easier.", "showAt": 52 }
+        ]
+      }
+    ]
+  }
+  

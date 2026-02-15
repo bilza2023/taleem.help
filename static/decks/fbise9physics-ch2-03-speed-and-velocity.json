@@ -1,0 +1,61 @@
+{
+    "version": "deck-v1",
+    "name": "Speed and Velocity",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Speed and Velocity", "showAt": 0 },
+          { "name": "image", "content": "speed-vs-velocity.webp", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 5,
+        "end": 15,
+        "data": [
+          { "name": "title", "content": "What is Speed?", "showAt": 5 },
+          { "name": "para", "content": "Speed is the distance traveled per unit time. It tells us how fast an object is moving.", "showAt": 8 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 15,
+        "end": 30,
+        "data": [
+          { "name": "image", "content": "speed-vs-velocity.webp", "showAt": 15 },
+          { "name": "bullet", "content": "Speed is a scalar quantity.", "showAt": 17 },
+          { "name": "bullet", "content": "It has magnitude only.", "showAt": 20 },
+          { "name": "bullet", "content": "Average Speed = Total Distance / Total Time.", "showAt": 23 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 30,
+        "end": 42,
+        "data": [
+          { "name": "title", "content": "What is Velocity?", "showAt": 30 },
+          { "name": "para", "content": "Velocity is the displacement per unit time. It tells us how fast and in which direction an object is moving.", "showAt": 33 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 42,
+        "end": 57,
+        "data": [
+          { "name": "image", "content": "speed-vs-velocity.webp", "showAt": 42 },
+          { "name": "bullet", "content": "Velocity is a vector quantity.", "showAt": 44 },
+          { "name": "bullet", "content": "It includes direction.", "showAt": 47 },
+          { "name": "bullet", "content": "Same speed but different direction means different velocity.", "showAt": 50 }
+        ]
+      }
+    ]
+  }
+  

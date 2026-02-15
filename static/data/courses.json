@@ -7,9 +7,22 @@
     },
     {
       "id": 102,
-      "slug": "courses/prePhysics",
-      "title": "Pre Physics",
+      "slug": "courses/fbise9physics-ch1",
+      "title": "FBISE 9 Physics – Chapter 1",
       "thumbnail": "fbise9physicsChapter1Thumbnail.webp"
+    },
+    {
+      "id": 103,
+      "slug": "courses/fbise9physics-ch2",
+      "title": "FBISE 9 Physics – Chapter 2",
+      "thumbnail": "motion.png"
+    },
+    {
+      "id": 104,
+      "slug": "courses/fbise9math-ch4",
+      "title": "FBISE 9 Math – Chapter 4",
+      "thumbnail": "al-khwarizmi_book_page.webp"
     }
+    
   ]
   
