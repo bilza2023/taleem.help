@@ -1,0 +1,85 @@
+{
+    "version": "deck-v1",
+    "name": "Newton’s First Law and Inertia",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "newtons-first-law.webp",
+      "backgroundImageOpacity": 0.05
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 8,
+        "data": [
+          { "name": "title", "content": "Newton’s First Law", "showAt": 0 },
+          { "name": "subtitle", "content": "The Law of Inertia", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "fillImage",
+        "start": 8,
+        "end": 16,
+        "data": [
+          { "name": "image", "content": "newtons-first-law.webp", "showAt": 8 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 16,
+        "end": 30,
+        "data": [
+          { "name": "title", "content": "The Statement of the Law", "showAt": 16 },
+          { "name": "para", "content": "An object will remain at rest or continue moving with constant velocity unless acted upon by an unbalanced force.", "showAt": 18 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 30,
+        "end": 44,
+        "data": [
+          { "name": "image", "content": "newtons-first-law.webp", "showAt": 30 },
+          { "name": "bullet", "content": "At rest → stays at rest", "showAt": 32 },
+          { "name": "bullet", "content": "In motion → continues in motion", "showAt": 34 },
+          { "name": "bullet", "content": "Unless a net force acts", "showAt": 36 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 44,
+        "end": 58,
+        "data": [
+          { "name": "title", "content": "Understanding “Constant Velocity”", "showAt": 44 },
+          { "name": "para", "content": "Constant velocity means constant speed in a straight line. If no unbalanced force acts, the motion does not change.", "showAt": 46 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 58,
+        "end": 72,
+        "data": [
+          { "name": "title", "content": "What is Inertia?", "showAt": 58 },
+          { "name": "para", "content": "Inertia is the tendency of an object to resist changes in its state of motion. Greater mass means greater inertia.", "showAt": 60 }
+        ]
+      },
+      {
+        "type": "imageWithTitle",
+        "start": 72,
+        "end": 84,
+        "data": [
+          { "name": "title", "content": "Inertia in Action", "showAt": 72 },
+          { "name": "image", "content": "newtons-first-law.webp", "showAt": 74 }
+        ]
+      },
+      {
+        "type": "titleAndSubtitle",
+        "start": 84,
+        "end": 96,
+        "data": [
+          { "name": "title", "content": "Key Idea", "showAt": 84 },
+          { "name": "subtitle", "content": "Objects resist changes in motion. Only an unbalanced force can change their state of rest or uniform motion.", "showAt": 86 }
+        ]
+      }
+    ]
+  }
+  

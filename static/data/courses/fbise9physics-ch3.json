@@ -1,0 +1,48 @@
+{
+    "title": "FBISE Grade 9 Physics – Chapter 3",
+    "slug": "fbise9physics-ch3",
+    "lessons": [
+  
+      { "title": "Introduction to Force", 
+        "thumbnail": "force-intro.webp", 
+        "deck": "fbise9physics-ch3-01-introduction-to-force" },
+  
+      { "title": "Effects of Force", 
+        "thumbnail": "effects-of-force.webp", 
+        "deck": "fbise9physics-ch3-02-effects-of-force" },
+  
+      { "title": "Newton’s First Law and Inertia", 
+        "thumbnail": "newtons-first-law.webp", 
+        "deck": "fbise9physics-ch3-03-newtons-first-law" },
+  
+      { "title": "Mass and Inertia", 
+        "thumbnail": "mass-and-inertia.webp", 
+        "deck": "fbise9physics-ch3-04-mass-and-inertia" },
+  
+      { "title": "Newton’s Second Law of Motion", 
+        "thumbnail": "newtons-second-law.webp", 
+        "deck": "fbise9physics-ch3-05-newtons-second-law" },
+  
+      { "title": "Newton’s Third Law of Motion", 
+        "thumbnail": "newtons-third-law.webp", 
+        "deck": "fbise9physics-ch3-06-newtons-third-law" },
+  
+      { "title": "Momentum", 
+        "thumbnail": "momentum.webp", 
+        "deck": "fbise9physics-ch3-07-momentum" },
+  
+      { "title": "Law of Conservation of Momentum", 
+        "thumbnail": "conservation-of-momentum.webp", 
+        "deck": "fbise9physics-ch3-08-conservation-of-momentum" },
+  
+      { "title": "Friction", 
+        "thumbnail": "friction.webp", 
+        "deck": "fbise9physics-ch3-09-friction" },
+  
+      { "title": "Advantages and Disadvantages of Friction", 
+        "thumbnail": "advantages-of-friction.webp", 
+        "deck": "fbise9physics-ch3-10-advantages-of-friction" }
+  
+    ]
+  }
+  

@@ -1,0 +1,83 @@
+{
+    "version": "deck-v1",
+    "name": "What is Force?",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": null,
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 8,
+        "data": [
+          { "name": "title", "content": "What is Force?", "showAt": 0 },
+          { "name": "image", "content": "whatisforce.webp", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 8,
+        "end": 20,
+        "data": [
+          { "name": "image", "content": "whatisforce.webp", "showAt": 8 },
+          { "name": "bullet", "content": "A force is a push or a pull", "showAt": 10 },
+          { "name": "bullet", "content": "It acts on an object", "showAt": 12 },
+          { "name": "bullet", "content": "It can change motion", "showAt": 14 },
+          { "name": "bullet", "content": "It can change shape", "showAt": 16 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 20,
+        "end": 34,
+        "data": [
+          { "name": "title", "content": "What Can a Force Do?", "showAt": 20 },
+          { "name": "para", "content": "A force can make an object start moving. It can stop a moving object. It can change direction. It can also deform an object.", "showAt": 22 }
+        ]
+      },
+      {
+        "type": "fillImage",
+        "start": 34,
+        "end": 42,
+        "data": [
+          { "name": "image", "content": "force-intro.webp", "showAt": 35 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 42,
+        "end": 56,
+        "data": [
+          { "name": "image", "content": "force-intro.webp", "showAt": 42 },
+          { "name": "bullet", "content": "Symbol: F", "showAt": 44 },
+          { "name": "bullet", "content": "Unit: Newton (N)", "showAt": 46 },
+          { "name": "bullet", "content": "1 N = 1 kg·m/s²", "showAt": 48 },
+          { "name": "bullet", "content": "F = ma", "showAt": 50 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 56,
+        "end": 70,
+        "data": [
+          { "name": "image", "content": "force-intro.webp", "showAt": 56 },
+          { "name": "bullet", "content": "Force is a vector quantity", "showAt": 58 },
+          { "name": "bullet", "content": "It has magnitude", "showAt": 60 },
+          { "name": "bullet", "content": "It has direction", "showAt": 62 },
+          { "name": "bullet", "content": "Arrows represent direction", "showAt": 64 }
+        ]
+      },
+      {
+        "type": "titleAndSubtitle",
+        "start": 70,
+        "end": 82,
+        "data": [
+          { "name": "title", "content": "Key Idea", "showAt": 70 },
+          { "name": "subtitle", "content": "Force is a push or pull that can change motion or shape. It is measured in Newtons and has both magnitude and direction.", "showAt": 72 }
+        ]
+      }
+    ]
+  }
+  

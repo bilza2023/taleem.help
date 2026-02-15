@@ -272,24 +272,44 @@
       z-index: 10;
     }
     
-
-    /* -------------------------------
+/* -------------------------------
    Image + Bullets (Side by Side)
    ------------------------------- */
 
-.slide.imageRightBulletsLeft,
-.slide.imageLeftBulletsRight {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 64px;
-  text-align: left;
-}
-
-/* image on right */
-.slide.imageRightBulletsLeft img {
-  order: 2;
-}
+   .slide.imageRightBulletsLeft,
+   .slide.imageLeftBulletsRight {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 64px;
+     text-align: left;
+   }
+   
+   /* Control image size */
+   .slide.imageRightBulletsLeft img,
+   .slide.imageLeftBulletsRight img {
+     flex: 0 0 40%;      /* image takes 40% width */
+     max-width: 40%;
+     height: auto;
+   }
+   
+   /* Bullets take remaining space */
+   .slide.imageRightBulletsLeft ul,
+   .slide.imageLeftBulletsRight ul {
+     flex: 1;
+   }
+   
+   /* Slightly reduce bullet size in side-by-side only */
+   .slide.imageRightBulletsLeft li,
+   .slide.imageLeftBulletsRight li {
+     font-size: 3rem;    /* was 3.6rem globally */
+   }
+   
+   /* image on right */
+   .slide.imageRightBulletsLeft img {
+     order: 2;
+   }
+   
 /* -------------------------------
    Table Slide
    ------------------------------- */
