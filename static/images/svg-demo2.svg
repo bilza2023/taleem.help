@@ -1,0 +1,32 @@
+
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#1e1e24"/>
+
+  <!-- Grid -->
+  <g stroke="#3a3a45" stroke-width="1">
+    <!-- vertical -->
+    <line x1="100" y1="0" x2="100" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/>
+
+    <!-- horizontal -->
+    <line x1="0" y1="100" x2="600" y2="100"/>
+    <line x1="0" y1="200" x2="600" y2="200"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="0" y1="400" x2="600" y2="400"/>
+    <line x1="0" y1="500" x2="600" y2="500"/>
+  </g>
+
+  <!-- Axes -->
+  <line x1="0" y1="300" x2="600" y2="300" stroke="#f2f2f2" stroke-width="3"/>
+  <line x1="300" y1="0" x2="300" y2="600" stroke="#f2f2f2" stroke-width="3"/>
+
+  <!-- Line y = 2x + 1 (approx visual) -->
+  <line x1="100" y1="500" x2="500" y2="100" stroke="#4cc9f0" stroke-width="4"/>
+
+  <text x="320" y="40" fill="#f2f2f2" font-size="22" font-family="Arial">
+    y = 2x + 1
+  </text>
+</svg>

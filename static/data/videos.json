@@ -41,6 +41,13 @@
       "thumbnail": "what-is-llm.png",
       "deck": "three-modes-of-ai",
       "course": ""
+    },
+    {
+      "id": 208,
+      "title": "Svg Demo",
+      "thumbnail": "svg-demo1.svg",
+      "deck": "svg-demo",
+      "course": ""
     }
   ]
   
