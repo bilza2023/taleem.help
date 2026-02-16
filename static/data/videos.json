@@ -27,6 +27,20 @@
       "thumbnail": "pakistani-kids-studying.jpg",
       "deck": "five-ways-to-earn-in-pakistan",
       "course": ""
+    },
+    {
+      "id": 206,
+      "title": "What is LLM",
+      "thumbnail": "what-is-llm.png",
+      "deck": "what-is-llm",
+      "course": ""
+    },
+    {
+      "id": 207,
+      "title": "The 3 Modes of Ai",
+      "thumbnail": "what-is-llm.png",
+      "deck": "three-modes-of-ai",
+      "course": ""
     }
   ]
   

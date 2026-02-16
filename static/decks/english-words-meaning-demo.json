@@ -1,9 +1,10 @@
 {
     "version": "deck-v1",
+    "audio":"music.mp3",
     "name": "Basic English Vocabulary – Demo",
     "background": {
       "backgroundColor": "#111111",
-      "backgroundImage": null,
+      "backgroundImage": "box.webp",
       "backgroundImageOpacity": 0.3
     },
     "deck": [

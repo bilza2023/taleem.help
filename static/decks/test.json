@@ -1,10 +1,11 @@
+
 {
   "version": "deck-v1",
   "name": "Basic English Vocabulary – Demo",
   "background": {
     "backgroundColor": "#111111",
     "backgroundImage": "box.webp",
-    "backgroundImageOpacity": 0.2
+    "backgroundImageOpacity": 0.3
   },
   "deck": [
     {

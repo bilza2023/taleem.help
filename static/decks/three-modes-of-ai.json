@@ -1,0 +1,131 @@
+{
+    "version": "deck-v1",
+    "name": "The 3 Modes of AI",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "what-is-llm.png",
+      "backgroundImageOpacity": 0.2
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "The 3 Modes of AI", "showAt": 0 },
+          { "name": "subtitle", "content": "Chat Mode • GPT Mode • Agentic Mode", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "imageWithTitle",
+        "start": 5,
+        "end": 10,
+        "data": [
+          { "name": "title", "content": "The Foundation — LLM", "showAt": 5 },
+          { "name": "image", "content": "what-is-llm.png", "showAt": 6 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 10,
+        "end": 16,
+        "data": [
+          { "name": "bullet", "content": "LLM is a text engine", "showAt": 10 },
+          { "name": "bullet", "content": "Text In → Text Out", "showAt": 11 },
+          { "name": "bullet", "content": "General-purpose system", "showAt": 12 },
+          { "name": "bullet", "content": "Not domain-specific by default", "showAt": 13 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 16,
+        "end": 22,
+        "data": [
+          { "name": "title", "content": "Mode 1 — Default Chat Mode", "showAt": 16 },
+          { "name": "para", "content": "A general LLM that responds to prompts using available context.", "showAt": 18 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 22,
+        "end": 30,
+        "data": [
+          { "name": "image", "content": "what-is-llm.png", "showAt": 22 },
+          { "name": "bullet", "content": "Users provide documents", "showAt": 23 },
+          { "name": "bullet", "content": "Each prompt reads context", "showAt": 25 },
+          { "name": "bullet", "content": "Model is not retrained", "showAt": 27 },
+          { "name": "bullet", "content": "Responses are context-influenced", "showAt": 28 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 30,
+        "end": 36,
+        "data": [
+          { "name": "title", "content": "Mode 2 — GPT Mode", "showAt": 30 },
+          { "name": "para", "content": "A configured AI system with predefined behavior and hidden instructions.", "showAt": 32 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 36,
+        "end": 44,
+        "data": [
+          { "name": "bullet", "content": "Hidden system instructions", "showAt": 36 },
+          { "name": "bullet", "content": "Fixed tone and format", "showAt": 38 },
+          { "name": "bullet", "content": "Author-defined structure", "showAt": 40 },
+          { "name": "bullet", "content": "User sees only output", "showAt": 42 }
+        ]
+      },
+      {
+        "type": "imageWithTitle",
+        "start": 44,
+        "end": 50,
+        "data": [
+          { "name": "title", "content": "Context Shapes Prediction", "showAt": 44 },
+          { "name": "image", "content": "llm-context.png", "showAt": 45 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 50,
+        "end": 60,
+        "data": [
+          { "name": "image", "content": "llm-context.png", "showAt": 50 },
+          { "name": "bullet", "content": "Chat Mode → limited context", "showAt": 52 },
+          { "name": "bullet", "content": "GPT Mode → predefined context", "showAt": 54 },
+          { "name": "bullet", "content": "Agent Mode → dynamic real-world context", "showAt": 56 },
+          { "name": "bullet", "content": "Prediction becomes more precise", "showAt": 58 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 60,
+        "end": 66,
+        "data": [
+          { "name": "title", "content": "Mode 3 — Agentic Mode", "showAt": 60 },
+          { "name": "para", "content": "GPT + Memory + Tools + External Access", "showAt": 62 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 66,
+        "end": 76,
+        "data": [
+          { "name": "bullet", "content": "Can search the web", "showAt": 66 },
+          { "name": "bullet", "content": "Can call APIs", "showAt": 68 },
+          { "name": "bullet", "content": "Can read and write files", "showAt": 70 },
+          { "name": "bullet", "content": "Can plan multi-step tasks", "showAt": 72 }
+        ]
+      },
+      {
+        "type": "imageSlide",
+        "start": 76,
+        "end": 82,
+        "data": [
+          { "name": "image", "content": "what-is-llm.png", "showAt": 76 }
+        ]
+      }
+    ]
+  }
+  

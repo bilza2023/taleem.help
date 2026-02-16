@@ -40,37 +40,15 @@
       resolveBackground,
       getDeckEndTime,
       createAudioTimer,
-      createSilentTimer,
       startLoop
     } from "./player/taleem-player-app.js";
 
     async function init() {
 
-      // ----------------------------------
-      // 1️⃣ Get deck from URL
-      // ----------------------------------
-      const params = new URLSearchParams(window.location.search);
-      const deckKey = params.get("deck");
+      // 🔵 CHANGE THIS to load your own deck
+      const deckUrl = "./decks/test.json";
 
-      if (!deckKey) {
-        document.body.innerHTML = "<h2>No deck specified</h2>";
-        throw new Error("Missing deck key");
-      }
-
-      // ----------------------------------
-      // 2️⃣ contentBase is fixed empty
-      // ----------------------------------
-      const contentBase = ".";
-
-      const deckUrl = `${contentBase}/decks/${deckKey}.json`;
-      const imageBase = `${contentBase}/images/`;
-      const audioBase = `${contentBase}/audio/`;
-
-      // ----------------------------------
-      // 3️⃣ Fetch deck
-      // ----------------------------------
       const res = await fetch(deckUrl);
-
       if (!res.ok) {
         document.body.innerHTML = "<h2>Deck not found</h2>";
         throw new Error("Deck not found");
@@ -78,26 +56,14 @@
 
       const deck = await res.json();
 
-      // ----------------------------------
-      // 4️⃣ Resolve images
-      // ----------------------------------
-      resolveAssetPaths(deck, imageBase);
-      resolveBackground(deck, imageBase);
+      // Fix image paths
+      resolveAssetPaths(deck, "./images/");
+      resolveBackground(deck, "./images/");
 
-      // ----------------------------------
-      // 5️⃣ Audio from deck.audio
-      // ----------------------------------
-      let timer;
+      // 🔊 Audio file (change if needed)
+      const timer = createAudioTimer("./audio/music.mp3");
 
-      if (deck.audio) {
-        timer = createAudioTimer(`${audioBase}${deck.audio}`);
-      } else {
-        timer = createSilentTimer();
-      }
-
-      // ----------------------------------
-      // 6️⃣ Create player
-      // ----------------------------------
+      // Create player
       const player = createTaleemPlayer({
         mount: "#app",
         deck
@@ -105,9 +71,7 @@
 
       const duration = getDeckEndTime(deck);
 
-      // ----------------------------------
-      // 7️⃣ Start playback loop
-      // ----------------------------------
+      // Start playback
       startLoop({
         player,
         timer,
