@@ -1,0 +1,87 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 22",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 22", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 120,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 + x - 2$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Identify as quadratic with leading coefficient 1." },
+              { "type": "spText", "content": "Find two numbers whose product is -2 and sum is 1." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$-2 → 2 and -1$",
+            "showAt": 25,
+            "spItems": [
+              { "type": "spText", "content": "2 × -1 = -2." },
+              { "type": "spText", "content": "2 + (-1) = 1." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 + 2x - x - 2$",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "Split the middle term." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x(x + 2) - 1(x + 2)$",
+            "showAt": 60,
+            "spItems": [
+              { "type": "spText", "content": "Factor by grouping." },
+              { "type": "spText", "content": "Common binomial (x + 2) appears." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x - 1)(x + 2)$",
+            "showAt": 80,
+            "spItems": [
+              { "type": "spText", "content": "Complete factorization." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: (x - 1)(x + 2)",
+            "showAt": 100,
+            "spItems": [
+              { "type": "spText", "content": "Method Used: Splitting the Middle Term." },
+              { "type": "spText", "content": "When a = 1, directly search product and sum." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

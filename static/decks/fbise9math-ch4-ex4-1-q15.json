@@ -1,0 +1,89 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 15",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 15", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 150,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^8 + x^4 + 1$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Expression is symmetric in powers of x⁴." },
+              { "type": "spText", "content": "Try grouping around x⁴." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^8 + 2x^4 + 1 - x^4$",
+            "showAt": 25,
+            "spItems": [
+              { "type": "spText", "content": "Add and subtract x⁴ to create a perfect square." },
+              { "type": "spText", "content": "This helps in forming a square structure." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x^4 + 1)^2 - x^4$",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "Now the first three terms form a perfect square." },
+              { "type": "spText", "content": "Rewrite as a difference of squares." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x^4 + 1)^2 - (x^2)^2$",
+            "showAt": 65,
+            "spItems": [
+              { "type": "spText", "content": "Write x⁴ as (x²)²." },
+              { "type": "spText", "content": "Apply a² - b² identity." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x^4 + 1 - x^2)(x^4 + 1 + x^2)$",
+            "showAt": 85,
+            "spItems": [
+              { "type": "spText", "content": "Apply difference of squares formula." },
+              { "type": "spText", "content": "Rearrange each bracket properly." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: (x^4 - x^2 + 1)(x^4 + x^2 + 1)",
+            "showAt": 110,
+            "spItems": [
+              { "type": "spText", "content": "Method Used: Completing square + Difference of squares." },
+              { "type": "spText", "content": "Always try to build a perfect square when powers are symmetric." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,89 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 13",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 13", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 130,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$m^4 + m^2 + 1$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Observe that the first and last terms are perfect squares." },
+              { "type": "spText", "content": "m⁴ = (m²)² and 1 = 1²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$m^4 + 2m^2 + 1 - m^2$",
+            "showAt": 25,
+            "spItems": [
+              { "type": "spText", "content": "Add and subtract m² to create a perfect square." },
+              { "type": "spText", "content": "This helps in regrouping." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(m^2 + 1)^2 - m^2$",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "Now the first three terms form a perfect square." },
+              { "type": "spText", "content": "Rewrite expression as a difference of squares." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(m^2 + 1)^2 - (m)^2$",
+            "showAt": 65,
+            "spItems": [
+              { "type": "spText", "content": "Write both parts clearly as squares." },
+              { "type": "spText", "content": "Apply a² - b² identity." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "(m^2 + 1 - m)(m^2 + 1 + m)",
+            "showAt": 85,
+            "spItems": [
+              { "type": "spText", "content": "Apply identity: a² - b² = (a - b)(a + b)." },
+              { "type": "spText", "content": "Simplify each factor." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: (m^2 - m + 1)(m^2 + m + 1)",
+            "showAt": 105,
+            "spItems": [
+              { "type": "spText", "content": "Method Used: Completing square + Difference of squares." },
+              { "type": "spText", "content": "Always try to build perfect squares when structure is close." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

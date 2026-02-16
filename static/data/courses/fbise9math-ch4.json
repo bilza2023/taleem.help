@@ -1,21 +1,38 @@
-
 {
-    "title": "FBISE Grade 9 Math – Chapter 4",
-    "slug": "fbise9math-ch4",
-    "lessons": [
-      
-     
-      { "title": "Ratioanl Vs Irrational Numbers", "thumbnail": "rational-vs-irrational-numbers.png", "deck": "rational-vs-irrational-numbers" },
-  
-     
-      { "title": "Exercise 4.1 – Question 1", "thumbnail": "eq.webp", "deck": "fbise9math-ch4-ex4-1-q1" },
-  
-      { "title": "Exercise 4.1 – Question 1 (ii)", "thumbnail": "eq.webp", "deck": "fbise9math-ch4-ex4-1-q2" },
-  
-      { "title": "Exercise 4.1 – Question 1 (iii)", "thumbnail": "eq.webp", "deck": "fbise9math-ch4-ex4-1-q3" },
-  
-      { "title": "Exercise 4.1 – Question 1 (iv)", "thumbnail": "eq.webp", "deck": "fbise9math-ch4-ex4-1-q4" }
-  
-    ]
-  }
-  
+  "title": "FBISE Grade 9 Math – Chapter 4",
+  "slug": "fbise9math-ch4",
+  "lessons": [
+
+    { "title": "Exercise 4.1 – Question 1", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q1" },
+    { "title": "Exercise 4.1 – Question 2", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q2" },
+    { "title": "Exercise 4.1 – Question 3", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q3" },
+    { "title": "Exercise 4.1 – Question 4", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q4" },
+
+    { "title": "Exercise 4.1 – Question 5", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q5" },
+    { "title": "Exercise 4.1 – Question 6", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q6" },
+    { "title": "Exercise 4.1 – Question 7", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q7" },
+    { "title": "Exercise 4.1 – Question 8", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q8" },
+    { "title": "Exercise 4.1 – Question 9", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q9" },
+    { "title": "Exercise 4.1 – Question 10", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q10" },
+    { "title": "Exercise 4.1 – Question 11", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q11" },
+    { "title": "Exercise 4.1 – Question 12", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q12" },
+    { "title": "Exercise 4.1 – Question 13", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q13" },
+    { "title": "Exercise 4.1 – Question 14", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q14" },
+    { "title": "Exercise 4.1 – Question 15", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q15" },
+    { "title": "Exercise 4.1 – Question 16", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q16" },
+    { "title": "Exercise 4.1 – Question 17", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q17" },
+    { "title": "Exercise 4.1 – Question 18", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q18" },
+    { "title": "Exercise 4.1 – Question 19", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q19" },
+    { "title": "Exercise 4.1 – Question 20", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q20" },
+    { "title": "Exercise 4.1 – Question 21", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q21" },
+    { "title": "Exercise 4.1 – Question 22", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q22" },
+    { "title": "Exercise 4.1 – Question 23", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q23" },
+    { "title": "Exercise 4.1 – Question 24", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q24" },
+    { "title": "Exercise 4.1 – Question 25", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q25" },
+    { "title": "Exercise 4.1 – Question 26", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q26" },
+    { "title": "Exercise 4.1 – Question 27", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q27" },
+    { "title": "Exercise 4.1 – Question 28", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q28" },
+    { "title": "Exercise 4.1 – Question 29", "thumbnail": "taleem.webp", "deck": "fbise9math-ch4-ex4-1-q29" }
+
+  ]
+}

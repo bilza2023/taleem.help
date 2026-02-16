@@ -1,0 +1,88 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 17",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 17", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 120,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$12 - 7x + x^2$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Rewrite in standard form." },
+              { "type": "spText", "content": "Arrange in descending powers of x." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 - 7x + 12$",
+            "showAt": 20,
+            "spItems": [
+              { "type": "spText", "content": "Now factor the quadratic expression." },
+              { "type": "spText", "content": "Find two numbers whose product is 12 and sum is -7." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$12 → -3 and -4$",
+            "showAt": 40,
+            "spItems": [
+              { "type": "spText", "content": "-3 × -4 = 12." },
+              { "type": "spText", "content": "-3 + -4 = -7." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 - 3x - 4x + 12$",
+            "showAt": 55,
+            "spItems": [
+              { "type": "spText", "content": "Split the middle term." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x(x - 3) - 4(x - 3)$",
+            "showAt": 70,
+            "spItems": [
+              { "type": "spText", "content": "Factor by grouping." },
+              { "type": "spText", "content": "Common binomial (x - 3) appears." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: (x - 3)(x - 4)",
+            "showAt": 95,
+            "spItems": [
+              { "type": "spText", "content": "Therefore, 12 - 7x + x² = (x - 3)(x - 4)." },
+              { "type": "spText", "content": "Method Used: Splitting the Middle Term." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

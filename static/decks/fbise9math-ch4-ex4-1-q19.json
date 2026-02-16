@@ -1,0 +1,87 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 19",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 19", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 130,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$10z^2 - 29z + 10$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Multiply first and last coefficients." },
+              { "type": "spText", "content": "10 × 10 = 100." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$100 → -25 and -4$",
+            "showAt": 25,
+            "spItems": [
+              { "type": "spText", "content": "Find two numbers whose product is 100 and sum is -29." },
+              { "type": "spText", "content": "-25 + -4 = -29." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$10z^2 - 25z - 4z + 10$",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "Split the middle term." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$5z(2z - 5) - 2(2z - 5)$",
+            "showAt": 65,
+            "spItems": [
+              { "type": "spText", "content": "Factor each pair separately." },
+              { "type": "spText", "content": "Common binomial (2z - 5) appears." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(5z - 2)(2z - 5)$",
+            "showAt": 85,
+            "spItems": [
+              { "type": "spText", "content": "Complete factorization." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: (5z - 2)(2z - 5)",
+            "showAt": 105,
+            "spItems": [
+              { "type": "spText", "content": "Method Used: Splitting the Middle Term (AC method)." },
+              { "type": "spText", "content": "Always multiply a × c first when coefficient ≠ 1." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

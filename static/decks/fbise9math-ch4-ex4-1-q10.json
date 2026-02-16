@@ -1,0 +1,89 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 10",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 10", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 120,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 + 4y^2 - z^2 + 4xy$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Rearrange terms to group x and y terms together." },
+              { "type": "spText", "content": "Combine x² + 4xy + 4y²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 + 4xy + 4y^2 - z^2$",
+            "showAt": 20,
+            "spItems": [
+              { "type": "spText", "content": "Now focus on the first three terms." },
+              { "type": "spText", "content": "Check if they form a perfect square." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 + 4xy + 4y^2 = (x + 2y)^2$",
+            "showAt": 40,
+            "spItems": [
+              { "type": "spText", "content": "Because x² = (x)² and 4y² = (2y)²." },
+              { "type": "spText", "content": "Middle term 4xy equals 2 × x × 2y." },
+              { "type": "spText", "content": "So it matches a² + 2ab + b²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x + 2y)^2 - z^2$",
+            "showAt": 65,
+            "spItems": [
+              { "type": "spText", "content": "Rewrite the expression using the perfect square." },
+              { "type": "spText", "content": "Now it clearly becomes a difference of squares." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x + 2y)^2 - (z)^2$",
+            "showAt": 80,
+            "spItems": [
+              { "type": "spText", "content": "Write both parts as squares explicitly." },
+              { "type": "spText", "content": "Apply identity a² - b² = (a - b)(a + b)." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Form: (x + 2y - z)(x + 2y + z)",
+            "showAt": 100,
+            "spItems": [
+              { "type": "spText", "content": "Final Answer: (x + 2y - z)(x + 2y + z)." },
+              { "type": "spText", "content": "Method Used: Perfect Square + Difference of Squares." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

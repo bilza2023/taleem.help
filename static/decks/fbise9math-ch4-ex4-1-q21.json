@@ -1,0 +1,87 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 21",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 21", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 130,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 - 21x + 90$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Identify as a quadratic with leading coefficient 1." },
+              { "type": "spText", "content": "Find two numbers whose product is 90 and sum is -21." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$90 → -6 and -15$",
+            "showAt": 25,
+            "spItems": [
+              { "type": "spText", "content": "-6 × -15 = 90." },
+              { "type": "spText", "content": "-6 + -15 = -21." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 - 6x - 15x + 90$",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "Split the middle term using -6x and -15x." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x(x - 6) - 15(x - 6)$",
+            "showAt": 65,
+            "spItems": [
+              { "type": "spText", "content": "Factor by grouping." },
+              { "type": "spText", "content": "Common binomial (x - 6) appears." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x - 6)(x - 15)$",
+            "showAt": 85,
+            "spItems": [
+              { "type": "spText", "content": "Complete factorization." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: (x - 6)(x - 15)",
+            "showAt": 105,
+            "spItems": [
+              { "type": "spText", "content": "Method Used: Splitting the Middle Term." },
+              { "type": "spText", "content": "When leading coefficient is 1, directly search product & sum." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
