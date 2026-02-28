@@ -1,0 +1,42 @@
+[
+    {
+      "chapterId": "ch1",
+      "items": [
+        {
+          "id": "ch1-intro",
+          "title": "Chapter Introduction",
+          "type": "concept",
+          "deckPath": "/decks/math9/ch1/intro.json"
+        },
+        {
+          "id": "ch1-ex1-1-q1",
+          "title": "Exercise 1.1 – Question 1",
+          "type": "exercise",
+          "deckPath": "/decks/math9/ch1/ex1-1-q1.json"
+        },
+        {
+          "id": "ch1-ex1-1-q2",
+          "title": "Exercise 1.1 – Question 2",
+          "type": "exercise",
+          "deckPath": "/decks/math9/ch1/ex1-1-q2.json"
+        }
+      ]
+    },
+    {
+      "chapterId": "ch2",
+      "items": [
+        {
+          "id": "ch2-intro",
+          "title": "Chapter Introduction",
+          "type": "concept",
+          "deckPath": "/decks/math9/ch2/intro.json"
+        },
+        {
+          "id": "ch2-ex2-1-q1",
+          "title": "Exercise 2.1 – Question 1",
+          "type": "exercise",
+          "deckPath": "/decks/math9/ch2/ex2-1-q1.json"
+        }
+      ]
+    }
+  ]

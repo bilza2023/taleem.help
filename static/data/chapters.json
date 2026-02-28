@@ -1,0 +1,17 @@
+[
+    {
+      "bookId": "math-9-fbise",
+      "chapters": [
+        {
+          "id": "ch1",
+          "title": "Matrices and Determinants",
+          "description": "Introduction to matrices, types of matrices, and basic operations."
+        },
+        {
+          "id": "ch2",
+          "title": "Real and Complex Numbers",
+          "description": "Understanding real numbers, complex numbers, and their properties."
+        }
+      ]
+    }
+  ]
