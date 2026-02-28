@@ -1,15 +1,87 @@
+<svelte:head>
+  <link rel="stylesheet" href="/player/themes/default.css" />
+  <link rel="stylesheet" href="/player/taleem.css" />
+</svelte:head>
+
 <script>
+	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 
+	// Routing
 	$: classId = $page.params.classId;
 	$: chapterId = $page.params.chapterId;
-	$: deck = $page.url.searchParams.get('deck');
+	$: deckKey = $page.url.searchParams.get('deck');
 
 	let showSidebar = true;
+
+	// Player refs
+	let appEl;
+	let playBtn;
+	let pauseBtn;
+	let stopBtn;
+	let scrub;
+	let timeEl;
 
 	function scrollToAnswers() {
 		document.getElementById('answers')?.scrollIntoView({ behavior: 'smooth' });
 	}
+
+	onMount(async () => {
+		if (!deckKey) return;
+
+		const {
+			createTaleemPlayer,
+			resolveAssetPaths,
+			resolveBackground,
+			getDeckEndTime,
+			createAudioTimer,
+			createSilentTimer,
+			startLoop
+		} = await import('$lib/player/taleem-player-app.js');
+
+		const contentBase = '/';
+		const deckUrl = `${contentBase}decks/${deckKey}.json`;
+		const imageBase = `${contentBase}images/`;
+		const audioBase = `${contentBase}audio/`;
+
+		const res = await fetch(deckUrl);
+		if (!res.ok) {
+			console.error('Deck not found');
+			return;
+		}
+
+		const deck = await res.json();
+
+		resolveAssetPaths(deck, imageBase);
+		resolveBackground(deck, imageBase);
+
+		let timer;
+		if (deck.audio) {
+			timer = createAudioTimer(`${audioBase}${deck.audio}`);
+		} else {
+			timer = createSilentTimer();
+		}
+
+		const player = createTaleemPlayer({
+			mount: appEl,
+			deck
+		});
+
+		const duration = getDeckEndTime(deck);
+
+		startLoop({
+			player,
+			timer,
+			duration,
+			ui: {
+				playBtn,
+				pauseBtn,
+				stopBtn,
+				scrub,
+				timeEl
+			}
+		});
+	});
 </script>
 
 <style>
@@ -19,7 +91,6 @@
 		min-height: 100vh;
 	}
 
-	/* 1️⃣ Slim Top Bar */
 	.topbar {
 		position: sticky;
 		top: 0;
@@ -38,7 +109,6 @@
 		flex: 1;
 	}
 
-	/* 2️⃣ Player Area */
 	.player-wrapper {
 		flex: 1;
 		display: flex;
@@ -49,21 +119,17 @@
 		min-height: calc(100vh - 40px);
 		background: #f8fafc;
 		display: flex;
-		align-items: center;
-		justify-content: center;
 		flex-direction: column;
-		padding: 40px;
-		text-align: center;
 	}
 
-	.view-answers {
-		margin-top: 20px;
-		font-size: 14px;
-		color: #2563eb;
-		cursor: pointer;
+	.nav-test {
+		background: #e5e7eb;
+		padding: 8px;
+		display: flex;
+		gap: 8px;
+		align-items: center;
 	}
 
-	/* 3️⃣ Sidebar */
 	.sidebar {
 		width: 280px;
 		background: #e2e8f0;
@@ -79,12 +145,6 @@
 		cursor: pointer;
 	}
 
-	.lesson-item.active {
-		background: #bfdbfe;
-		font-weight: bold;
-	}
-
-	/* 4️⃣ Answers Panel */
 	.answers {
 		padding: 40px;
 		background: #ffffff;
@@ -106,7 +166,7 @@
 
 <div class="app">
 
-	<!-- Top Bar -->
+	<!-- Slim Topbar -->
 	<div class="topbar">
 		<div>🏠 Home | Class {classId} › Chapter {chapterId}</div>
 		<button on:click={() => showSidebar = !showSidebar}>
@@ -118,32 +178,40 @@
 
 		<div class="player-wrapper">
 
-			<!-- Full Height Player -->
-			<div class="player-area">
-				<h2>Deck Area</h2>
-				<p><strong>Current Deck:</strong> {deck || "None Selected"}</p>
+			<!-- Player Mount -->
+			<div bind:this={appEl} class="player-area"></div>
 
-				<a href={`/class/${classId}/${chapterId}?deck=intro`}>Load Intro</a>
-				<br />
-				<a href={`/class/${classId}/${chapterId}?deck=exercise1`}>Load Exercise 1</a>
+			<!-- Bottom Player Controls -->
+			<div class="nav-test">
+				<button bind:this={playBtn}>▶</button>
+				<button bind:this={pauseBtn}>⏸</button>
+				<button bind:this={stopBtn}>⏹</button>
 
-				<div class="view-answers" on:click={scrollToAnswers}>
-					12 Questions & Clarifications ↓
+				<span bind:this={timeEl}>0.0s</span>
+
+				<div class="scrub-wrap">
+					<input
+						bind:this={scrub}
+						type="range"
+						min="0"
+						max="1"
+						step="0.1"
+					/>
 				</div>
 			</div>
 
-			<!-- Answers Panel (Below the Fold) -->
+			<!-- Answers Panel -->
 			<div class="answers" id="answers">
-				<h3>Answers & Clarifications (12)</h3>
+				<h3>Answers & Clarifications</h3>
 
 				<div class="answer-block">
 					<p><strong>Q:</strong> Why is determinant zero?</p>
-					<p class="teacher">Teacher: Because both rows are proportional.</p>
+					<p class="teacher">Teacher: Because rows are proportional.</p>
 				</div>
 
 				<div class="answer-block">
 					<p><strong>Q:</strong> How to avoid sign mistakes?</p>
-					<p class="teacher">Teacher: Always expand step-by-step, never mentally.</p>
+					<p class="teacher">Teacher: Expand step-by-step.</p>
 				</div>
 			</div>
 
@@ -152,18 +220,9 @@
 		{#if showSidebar}
 			<div class="sidebar">
 				<h4>Lessons</h4>
-
-				<div class="lesson-item {deck === 'intro' ? 'active' : ''}">
-					Intro
-				</div>
-
-				<div class="lesson-item {deck === 'exercise1' ? 'active' : ''}">
-					Exercise 1
-				</div>
-
-				<div class="lesson-item">
-					Revision
-				</div>
+				<div class="lesson-item">Intro</div>
+				<div class="lesson-item">Exercise 1</div>
+				<div class="lesson-item">Revision</div>
 			</div>
 		{/if}
 
