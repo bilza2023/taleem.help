@@ -1,8 +1,12 @@
+
 <script>
+	import { page } from '$app/stores';
 	import favicon from '$lib/assets/favicon.svg';
 	import Nav from '$lib/appComps/Nav.svelte';
 	import '../app.css';
 	import '$lib/styles/themes.css';
+
+	$: hideNav = $page.url.pathname.startsWith('/class/');
 </script>
 
 <svelte:head>
@@ -10,9 +14,12 @@
 </svelte:head>
 
 <div class="app">
-	<Nav />
+	{#if !hideNav}
+		<Nav />
+	{/if}
+
 	<slot />
-  </div>
+</div>
 
 <style>
 	.app {
