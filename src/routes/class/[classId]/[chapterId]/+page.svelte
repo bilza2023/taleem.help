@@ -1,18 +1,52 @@
+<svelte:head>
+	<link rel="stylesheet" href="/player/themes/default.css" />
+	<link rel="stylesheet" href="/player/taleem.css" />
+</svelte:head>
 <script>
+	import { onMount } from 'svelte';
 	import DeckArea from './DeckArea.svelte';
 	import ChapterSidebar from './ChapterSidebar.svelte';
 	import AnswersPanel from './AnswersPanel.svelte';
+	import { page } from '$app/stores';
+
+	import { resolveAssetPaths,resolveBackground} from '$lib/player/taleem-player-app.js';
 
 	export let params;
 
 	let isSidebarOpen = false;
+	let deck = null;
 
 	function toggleSidebar() {
 		isSidebarOpen = !isSidebarOpen;
 	}
 
-	const deckKey = `${params.classId}-${params.chapterId}`;
+	// ✅ Get deck name directly from URL and attach .json
 	const backHref = `/class/${params.classId}`;
+
+	onMount(async () => {
+		const url = new URL($page.url);
+		const deckKey = url.searchParams.get('deck');
+
+		if (!deckKey) {
+			console.error('No deck specified in URL');
+			return;
+		}
+
+		const deckUrl = `/decks/${deckKey}.json`;
+
+		const res = await fetch(deckUrl);
+		if (!res.ok) {
+			console.error('Deck not found:', deckUrl);
+			return;
+		}
+
+		const data = await res.json();
+
+		resolveAssetPaths(data, '/images/');
+		resolveBackground(data, '/images/');
+
+		deck = data;
+	});
 </script>
 
 <style>
@@ -59,11 +93,13 @@
 	<div class="left">
 
 		<div class="deck-wrapper">
-			<DeckArea
-				{deckKey}
-				{backHref}
-				onToggle={toggleSidebar}
-			/>
+			{#if deck}
+				<DeckArea
+					{deck}
+					{backHref}
+					onToggle={toggleSidebar}
+				/>
+			{/if}
 		</div>
 
 		<div class="answers-wrapper">
