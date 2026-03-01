@@ -7,7 +7,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import DeckArea from './DeckArea.svelte';
-	import ChapterSidebar from './ChapterSidebar.svelte';
+	import SyllabusBar from './SyllabusBar.svelte';
 	import AnswersPanel from './AnswersPanel.svelte';
 	import { page } from '$app/stores';
 	import {browser} from "$app/environment";
@@ -140,7 +140,7 @@ if (!linksRes.ok) {
 	<!-- RIGHT SIDE -->
 	<div class="sidebar" class:closed={!isSidebarOpen}>
 	{#if links}
-		<ChapterSidebar
+		<SyllabusBar
 		{links}
 		 />
 	{/if}
