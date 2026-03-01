@@ -1,15 +1,34 @@
+
 <svelte:head>
 	<link rel="stylesheet" href="/player/themes/default.css" />
 	<link rel="stylesheet" href="/player/taleem.css" />
 </svelte:head>
+
 <script>
 	import { onMount } from 'svelte';
 	import DeckArea from './DeckArea.svelte';
 	import ChapterSidebar from './ChapterSidebar.svelte';
 	import AnswersPanel from './AnswersPanel.svelte';
 	import { page } from '$app/stores';
-
+	import {browser} from "$app/environment";
 	import { resolveAssetPaths,resolveBackground} from '$lib/player/taleem-player-app.js';
+
+$: if (browser) {
+	const deckKey = $page.url.searchParams.get('deck');
+	if (deckKey) loadDeck(deckKey);
+}
+
+async function loadDeck(deckKey) {
+	const deckUrl = `/decks/${deckKey}.json`;
+	const res = await fetch(deckUrl);
+	if (!res.ok) return;
+
+	const data = await res.json();
+
+	resolveAssetPaths(data, '/images/');
+	resolveBackground(data, '/images/');
+	deck = data;
+}
 
 	export let params;
 
@@ -22,6 +41,7 @@
 
 	// ✅ Get deck name directly from URL and attach .json
 	const backHref = `/class/${params.classId}`;
+	let links = [];
 
 	onMount(async () => {
 		const url = new URL($page.url);
@@ -46,6 +66,15 @@
 		resolveBackground(data, '/images/');
 
 		deck = data;
+///////////////////////links
+const linksRes = await fetch('/data/links.json');
+if (!linksRes.ok) {
+	console.error('Links not found');
+} else {
+	
+	const data = await linksRes.json();
+	links = data.links;   // 👈 only the array
+}		
 	});
 </script>
 
@@ -110,7 +139,11 @@
 
 	<!-- RIGHT SIDE -->
 	<div class="sidebar" class:closed={!isSidebarOpen}>
-		<ChapterSidebar />
+	{#if links}
+		<ChapterSidebar
+		{links}
+		 />
+	{/if}
 	</div>
 
 </div>

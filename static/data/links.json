@@ -1,42 +1,65 @@
-[
-  {
-    "chapterId": "ch1",
-    "items": [
-      {
-        "id": "ch1-intro",
-        "title": "Chapter Introduction",
-        "type": "concept",
-        "deckPath": "/player.html?deck=demo"
-      },
-      {
-        "id": "ch1-ex1-1-q1",
-        "title": "Exercise 1.1 – Question 1",
-        "type": "exercise",
-        "deckPath": "/player.html?deck=ch1-ex1-1-q1"
-      },
-      {
-        "id": "ch1-ex1-1-q2",
-        "title": "Exercise 1.1 – Question 2",
-        "type": "exercise",
-        "deckPath": "/player.html?deck=ch1-ex1-1-q2"
-      }
-    ]
-  },
-  {
-    "chapterId": "ch2",
-    "items": [
-      {
-        "id": "ch2-intro",
-        "title": "Chapter Introduction",
-        "type": "concept",
-        "deckPath": "/player.html?deck=ch2-intro"
-      },
-      {
-        "id": "ch2-ex2-1-q1",
-        "title": "Exercise 2.1 – Question 1",
-        "type": "exercise",
-        "deckPath": "/player.html?deck=ch2-ex2-1-q1"
-      }
-    ]
-  }
-]
+
+{
+  "links": [
+    {
+      "title": "Understanding Determinants",
+      "deck": "demo",
+      "tag": "lab",
+      "image": "eq.webp"
+    },
+    {
+      "title": "Practice Set 1 – Basic Operations",
+      "deck": "test",
+      "tag": "questions",
+      "image": "class.webp"
+    },
+    {
+      "title": "Row Operations Explained",
+      "deck": "demo",
+      "tag": "lab",
+      "image": "drops.png"
+    },
+    {
+      "title": "MCQs – Determinant Properties",
+      "deck": "test",
+      "tag": "questions",
+      "image": "box.webp"
+    },
+    {
+      "title": "Why Determinant Becomes Zero",
+      "deck": "demo",
+      "tag": "lab",
+      "image": "eq.webp"
+    },
+    {
+      "title": "Short Questions – Concept Check",
+      "deck": "test",
+      "tag": "questions",
+      "image": "class.webp"
+    },
+    {
+      "title": "Geometric Meaning of Determinant",
+      "deck": "demo",
+      "tag": "lab",
+      "image": "drops.png"
+    },
+    {
+      "title": "Exam Style Questions – Section A",
+      "deck": "test",
+      "tag": "questions",
+      "image": "box.webp"
+    },
+    {
+      "title": "Expansion by Cofactors – Visual Guide",
+      "deck": "demo",
+      "tag": "lab",
+      "image": "eq.webp"
+    },
+    {
+      "title": "Revision Drill – Final Test",
+      "deck": "test",
+      "tag": "questions",
+      "image": "class.webp"
+    }
+  ]
+}
