@@ -1,59 +1,85 @@
 <script>
-	import { page } from '$app/stores';
-	import AppHeader from './AppHeader.svelte';
-	import PlayerContainer from './PlayerContainer.svelte';
-	import AnswersPanel from './AnswersPanel.svelte';
+	import DeckArea from './DeckArea.svelte';
 	import ChapterSidebar from './ChapterSidebar.svelte';
+	import AnswersPanel from './AnswersPanel.svelte';
 
-	$: classId = $page.params.classId;
-	$: chapterId = $page.params.chapterId;
-	$: deckKey = $page.url.searchParams.get('deck');
+	export let params;
 
-	let showSidebar = true;
+	let isSidebarOpen = false;
 
 	function toggleSidebar() {
-		showSidebar = !showSidebar;
+		isSidebarOpen = !isSidebarOpen;
 	}
+
+	const deckKey = `${params.classId}-${params.chapterId}`;
+	const backHref = `/class/${params.classId}`;
 </script>
 
 <style>
-.layout {
+.page {
 	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+	height: 100vh;
+	overflow: hidden;
 }
 
-.content {
-	display: flex;
-	flex: 1;
-}
-
+/* LEFT SIDE */
 .left {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
+	min-width: 0; /* important for flex overflow */
+}
+
+/* Deck wrapper */
+.deck-wrapper {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+}
+
+/* Answers panel below deck */
+.answers-wrapper {
+	border-top: 1px solid #ddd;
+}
+
+/* RIGHT SIDEBAR */
+.sidebar {
+	width: 320px; /* 20% feel */
+	transition: width 0.25s ease;
+	border-left: 1px solid #ddd;
+	overflow: hidden;
+}
+
+/* hidden state */
+.sidebar.closed {
+	width: 0;
+	border-left: none;
 }
 </style>
 
-<div class="layout">
+<div class="page">
 
-	<AppHeader
-		{classId}
-		{chapterId}
-		onToggle={toggleSidebar}
-	/>
+	<!-- LEFT SIDE -->
+	<div class="left">
 
-	<div class="content">
+		<div class="deck-wrapper">
+			<DeckArea
+				{deckKey}
+				{backHref}
+				onToggle={toggleSidebar}
+			/>
+		</div>
 
-		<div class="left">
-			<PlayerContainer {deckKey} />
+		<div class="answers-wrapper">
 			<AnswersPanel />
 		</div>
 
-		{#if showSidebar}
-			<ChapterSidebar />
-		{/if}
+	</div>
 
+	<!-- RIGHT SIDE -->
+	<div class="sidebar" class:closed={!isSidebarOpen}>
+		<ChapterSidebar />
 	</div>
 
 </div>
