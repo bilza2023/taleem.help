@@ -1,7 +1,7 @@
 
 <script>
 	import { onMount } from 'svelte';
-	import BottomNavBar from './BottomNavBar.svelte';
+	import BottomNavBar from '../../routes/class/[classId]/[chapterId]/BottomNavBar.svelte';
 
 	import {
 		createTaleemPlayer,

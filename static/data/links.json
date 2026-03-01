@@ -9,55 +9,55 @@
     },
     {
       "title": "Practice Set 1 – Basic Operations",
-      "deck": "test",
+      "deck": "fbise9math-ch4-ex4-1-q22",
       "tag": "questions",
       "image": "class.webp"
     },
     {
       "title": "Row Operations Explained",
-      "deck": "demo",
+      "deck": "fbise9math-ch4-ex4-1-q23",
       "tag": "lab",
       "image": "drops.png"
     },
     {
       "title": "MCQs – Determinant Properties",
-      "deck": "test",
+      "deck": "fbise9math-ch4-ex4-1-q24",
       "tag": "questions",
       "image": "box.webp"
     },
     {
       "title": "Why Determinant Becomes Zero",
-      "deck": "demo",
+      "deck": "fbise9math-ch4-ex4-1-q25",
       "tag": "lab",
       "image": "eq.webp"
     },
     {
       "title": "Short Questions – Concept Check",
-      "deck": "test",
+      "deck": "fbise9math-ch4-ex4-1-q26",
       "tag": "questions",
       "image": "class.webp"
     },
     {
       "title": "Geometric Meaning of Determinant",
-      "deck": "demo",
+      "deck": "fbise9math-ch4-ex4-1-q27",
       "tag": "lab",
       "image": "drops.png"
     },
     {
       "title": "Exam Style Questions – Section A",
-      "deck": "test",
+      "deck": "bodmas",
       "tag": "questions",
       "image": "box.webp"
     },
     {
       "title": "Expansion by Cofactors – Visual Guide",
-      "deck": "demo",
+      "deck": "eq-test-2",
       "tag": "lab",
       "image": "eq.webp"
     },
     {
       "title": "Revision Drill – Final Test",
-      "deck": "test",
+      "deck": "gold",
       "tag": "questions",
       "image": "class.webp"
     }

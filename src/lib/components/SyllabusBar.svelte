@@ -1,4 +1,5 @@
 <script>
+	import { page } from '$app/stores';
 	export let visible = true;
 	export let links = [];
 
@@ -98,10 +99,11 @@
 	<!-- Video List -->
 	<div class="list">
 		{#each filteredLinks as link}
-			<a
-				class="video-card"
-				href={`?deck=${link.deck}`}
-			>
+		<a
+	class="video-card"
+	href={`/class/${$page.params.classId}/${$page.params.chapterId}/${link.deck}`}
+>
+		
 				<img
 					class="thumb"
 					src={`/images/${link.image}`}
