@@ -18,24 +18,19 @@
 <style>
 .page {
 	display: flex;
-	height: 100vh;
-	overflow: hidden;
+	min-height: 100vh;   /* not fixed height */
 }
 
 /* LEFT SIDE */
 .left {
 	flex: 1;
-	display: flex;
-	flex-direction: column;
-	min-width: 0; /* important for flex overflow */
+	position: relative;
+	min-width: 0;
 }
 
 /* Deck wrapper */
 .deck-wrapper {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	min-height: 0;
+	height: 100vh;
 }
 
 /* Answers panel below deck */

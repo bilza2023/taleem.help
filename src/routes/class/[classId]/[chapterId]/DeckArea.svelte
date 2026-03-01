@@ -44,24 +44,34 @@
 </script>
 
 <style>
-.deck {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	min-height: 0;
-}
-</style>
-
-<div class="deck">
-	<PlayerMount {deckKey} />
-
-	<BottomNavBar
-		{onToggle}
-		{backHref}
-		bind:playBtn
-		bind:pauseBtn
-		bind:stopBtn
-		bind:scrub
-		bind:timeEl
-	/>
-</div>
+    .deck {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .navbar-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.95);
+    }
+    </style>
+    
+    <div class="deck">
+        <PlayerMount {deckKey} />
+    
+        <div class="navbar-overlay">
+            <BottomNavBar
+                {onToggle}
+                {backHref}
+                bind:playBtn
+                bind:pauseBtn
+                bind:stopBtn
+                bind:scrub
+                bind:timeEl
+            />
+        </div>
+    </div>
