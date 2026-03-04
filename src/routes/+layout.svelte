@@ -6,7 +6,7 @@
 	import '../app.css';
 	import '$lib/styles/themes.css';
 
-	$: hideNav = $page.url.pathname.startsWith('/class/');
+	$: hideNav = $page.url.pathname.startsWith('/courses/');
 </script>
 
 <svelte:head>
