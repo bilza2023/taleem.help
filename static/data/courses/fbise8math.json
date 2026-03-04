@@ -1,0 +1,68 @@
+
+{
+    "slug": "fbise8math",
+    "title": "FBISE Grade 8 Mathematics",
+  
+    "chapters": [
+      {
+        "slug": "fbise8math-ch1",
+        "title": "Rational Numbers"
+      },
+      {
+        "slug": "fbise8math-ch2",
+        "title": "Linear Equations in One Variable"
+      },
+      {
+        "slug": "fbise8math-ch3",
+        "title": "Squares and Square Roots"
+      },
+      {
+        "slug": "fbise8math-ch4",
+        "title": "Cube and Cube Roots"
+      },
+      {
+        "slug": "fbise8math-ch5",
+        "title": "Sets"
+      },
+      {
+        "slug": "fbise8math-ch6",
+        "title": "Ratio and Proportion"
+      },
+      {
+        "slug": "fbise8math-ch7",
+        "title": "Percentage"
+      },
+      {
+        "slug": "fbise8math-ch8",
+        "title": "Profit and Loss"
+      },
+      {
+        "slug": "fbise8math-ch9",
+        "title": "Simple Interest"
+      },
+      {
+        "slug": "fbise8math-ch10",
+        "title": "Algebraic Expressions and Identities"
+      },
+      {
+        "slug": "fbise8math-ch11",
+        "title": "Direct and Inverse Variation"
+      },
+      {
+        "slug": "fbise8math-ch12",
+        "title": "Introduction to Graphs"
+      },
+      {
+        "slug": "fbise8math-ch13",
+        "title": "Perimeter and Area"
+      },
+      {
+        "slug": "fbise8math-ch14",
+        "title": "Volume and Surface Area of Solids"
+      },
+      {
+        "slug": "fbise8math-ch15",
+        "title": "Data Handling"
+      }
+    ]
+  }
