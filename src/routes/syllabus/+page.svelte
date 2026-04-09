@@ -4,7 +4,6 @@
   
     const items = syllabus.items;
   
-    // get chapter items
     const chapters = getByTag(items, "type:chapter");
   
     function getChildren(chapterItem) {
@@ -13,78 +12,136 @@
       return getByTag(items, chapterTag)
         .filter(item => !item.tags.includes("type:chapter"));
     }
+  
+    let activeIndex = $state(0);
+  
+    // ✅ Svelte 5 way
+    const activeChapter = $derived(chapters[activeIndex]);
+    const children = $derived(getChildren(activeChapter));
   </script>
   
-   <style>
-  h1 {
-    margin-bottom: 25px;
-    font-size: 28px;
-    font-weight: 600;
-  }
+  <style>
+ .layout {
+  display: flex;
+  height: calc(100vh - 60px);
+  background: #0f172a; /* deep navy */
+}
 
-  .chapter {
-    margin-bottom: 35px;
-    padding: 18px 20px;
-    border: 1px solid #e5e5e5;
-    border-radius: 10px;
-    background: #fafafa;
-  }
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  padding: 18px 14px;
+  background: #111827; /* darker panel */
+  border-right: 1px solid #1f2937;
+}
 
-  .chapter h2 {
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #222;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 6px;
-  }
+.chapter-link {
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #cbd5e1;
+  transition: all 0.15s ease;
+}
 
-  .item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 6px;
-    border-radius: 6px;
-    transition: background 0.15s ease;
-  }
+.chapter-link:hover {
+  background: #1f2937;
+  color: #fff;
+}
 
-  .item:hover {
-    background: #f0f0f0;
-  }
+.chapter-link.active {
+  background: #2563eb; /* blue highlight */
+  color: #fff;
+  font-weight: 600;
+}
 
-  img {
-    width: 38px;
-    height: 38px;
-    object-fit: cover;
-    border-radius: 6px;
-    border: 1px solid #ddd;
-  }
+/* CONTENT */
+.content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  background: #0f172a;
+}
 
-  a {
-    text-decoration: none;
-    color: #333;
-    font-size: 15px;
-    font-weight: 500;
-  }
+h2 {
+  margin-bottom: 20px;
+  color: #e2e8f0;
+  font-size: 22px;
+}
 
-  a:hover {
-    color: #000;
-  }
-</style>
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 12px;
+  background: #1e293b; /* card surface */
+  transition: all 0.2s ease;
+  border: 1px solid #334155;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: #2563eb;
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #0f172a;
+}
+
+/* TEXT */
+.card a {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card a:hover {
+  color: #60a5fa;
+}
+  </style>
   
-  <h1>Syllabus</h1>
   
-  {#each chapters as chapter}
-    <div class="chapter">
-      <h2>{chapter.title}</h2>
+  <div class="layout">
   
-      {#each getChildren(chapter) as item}
-        <div class="item">
-          <a href={`/player?deck=${item.slug}`}>
-            <img src={item.image} alt={item.title} />
-            {item.title}
-          </a>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      {#each chapters as chapter, i}
+        <div
+          class="chapter-link {activeIndex === i ? 'active' : ''}"
+          onclick={() => activeIndex = i}
+        >
+          {chapter.title}
         </div>
       {/each}
     </div>
-  {/each}
+  
+    <!-- CONTENT -->
+    <div class="content">
+      <h2>{activeChapter.title}</h2>
+  
+      <div class="cards">
+        {#each children as item}
+          <div class="card">
+            <a href={`/player?deck=${item.slug}`}>
+              <img src={item.image} alt={item.title} />
+              {item.title}
+            </a>
+          </div>
+        {/each}
+      </div>
+    </div>
+  
+  </div>

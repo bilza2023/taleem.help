@@ -4,7 +4,7 @@
       "slug": "fbise8math-chapter-algebra",
       "title": "Algebra",
       "description": "Introduction to algebra concepts",
-      "image": "/images/algebra.png",
+      "image": "/content/images/box.webp",
       "tags": [
         "course:fbise8math",
         "chapter:algebra",
@@ -15,7 +15,7 @@
       "slug": "fbise8math-what-is-algebra",
       "title": "What is Algebra",
       "description": "Introduction to algebra",
-      "image": "/images/algebra-intro.png",
+      "image": "/content/images/box.webp",
       "tags": [
         "course:fbise8math",
         "chapter:algebra",
@@ -26,7 +26,7 @@
       "slug": "fbise8math-algebra-expressions",
       "title": "Algebraic Expressions",
       "description": "Understanding expressions",
-      "image": "/images/algebra-exp.png",
+     "image": "/content/images/box.webp",
       "tags": [
         "course:fbise8math",
         "chapter:algebra",
@@ -37,7 +37,7 @@
       "slug": "fbise8math-algebra-ex-1-1-q1",
       "title": "Exercise 1.1 Question 1",
       "description": "Basic practice",
-      "image": "/images/ex1.png",
+      "image": "/content/images/box.webp",
       "tags": [
         "course:fbise8math",
         "chapter:algebra",
@@ -49,7 +49,7 @@
       "slug": "fbise8math-algebra-ex-1-1-q2",
       "title": "Exercise 1.1 Question 2",
       "description": "More practice",
-      "image": "/images/ex2.png",
+      "image": "/content/images/box.webp",
       "tags": [
         "course:fbise8math",
         "chapter:algebra",
@@ -62,7 +62,7 @@
       "slug": "fbise8math-chapter-identities",
       "title": "Algebraic Identities",
       "description": "Important algebraic identities",
-      "image": "/images/identities.png",
+      "image": "/content/images/box.webp",
       "tags": [
         "course:fbise8math",
         "chapter:identities",
@@ -73,7 +73,7 @@
       "slug": "fbise8math-identities-intro",
       "title": "Algebraic Identities",
       "description": "Core identities",
-      "image": "/images/identities.png",
+    "image": "/content/images/box.webp",
       "tags": [
         "course:fbise8math",
         "chapter:identities",
@@ -84,7 +84,7 @@
       "slug": "fbise8math-identities-types",
       "title": "Types of Identities",
       "description": "Different identity forms",
-      "image": "/images/identities-types.png",
+    "image": "/content/images/box.webp",
       "tags": [
         "course:fbise8math",
         "chapter:identities",
@@ -95,7 +95,7 @@
       "slug": "fbise8math-identities-ex-1",
       "title": "Identity Practice 1",
       "description": "Basic identity problems",
-      "image": "/images/id-ex1.png",
+      "image": "/content/images/box.webp",
       "tags": [
         "course:fbise8math",
         "chapter:identities",
