@@ -1,12 +1,13 @@
 <script>
-	import { onMount, onDestroy } from "svelte";
 
-	import { getDeckEndTime } from "../../lib/utils/index.js";
+	import { onMount, onDestroy } from "svelte";
 	import { renderTaleemSlide } from "taleem-slides";
 	import { runActions } from "taleem-action-runner";
+	import { Timer } from "taleem-pam";
+
+	import { getDeckEndTime } from "../../lib/utils/index.js";
 	import { getSlideAtTime } from "../../lib/utils/getSlideAtTime.js";
 	import { resolveAssetPaths } from "../../lib/utils/resolveAssetPaths.js";
-	import { Timer } from "taleem-pam";
 
 	import SyllabusBar from "./SyllabusBar.svelte";
 
