@@ -79,7 +79,7 @@ h2 {
 
 .card {
   border-radius: 12px;
-  padding: 12px;
+  padding-top: 25px;
   background: #1e293b; /* card surface */
   transition: all 0.2s ease;
   border: 1px solid #334155;
