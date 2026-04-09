@@ -1,0 +1,30 @@
+.slide.skeleton {
+  width: 100%;
+}
+
+.skeleton-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* overlap */
+.skeleton-body > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* 🔥 controlled by action-runner */
+.skeleton-body > *:not(.hidden) {
+  opacity: 1;
+}

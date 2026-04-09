@@ -1,0 +1,93 @@
+
+
+/* =========================
+   COLORS
+========================= */
+
+.red { color: #ef4444; }
+.blue { color: #3b82f6; }
+.green { color: #22c55e; }
+.yellow { color: #eab308; }
+.orange { color: #f97316; }
+.purple { color: #a855f7; }
+.gray { color: #9ca3af; }
+.white { color: #ffffff; }
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.bg-red { background: #ef4444; }
+.bg-blue { background: #3b82f6; }
+.bg-green { background: #22c55e; }
+.bg-yellow { background: #eab308; }
+.bg-dark { background: #111827; }
+
+/* =========================
+   EMPHASIS
+========================= */
+
+.bold { font-weight: 700; }
+.light { font-weight: 300; }
+.italic { font-style: italic; }
+.upper { text-transform: uppercase; }
+
+/* =========================
+   SIZE
+========================= */
+
+.small { font-size: 0.8em; }
+.large { font-size: 1.3em; }
+.xl { font-size: 1.8em; }
+
+/* =========================
+   STATE (IMPORTANT)
+========================= */
+
+.dim {
+  opacity: 0.4;
+
+}
+
+.active {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+/* =========================
+   SPACING
+========================= */
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+
+/* =========================
+   ALIGNMENT
+========================= */
+
+.center { text-align: center; }
+.left { text-align: left; }
+.right { text-align: right; }
+
+/* =========================
+   BORDERS / HIGHLIGHT
+========================= */
+
+.border {
+  border: 1px solid #374151;
+}
+
+.round {
+  border-radius: 8px;
+}
+
+.highlight {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 6px;
+}

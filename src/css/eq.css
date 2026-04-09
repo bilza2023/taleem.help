@@ -1,0 +1,175 @@
+/* ======================================
+   EQ Slide (Mobile First – Stable Layout)
+====================================== */
+
+.slide.eq {
+    display: flex;
+    color: gray;
+    flex-direction: row;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    overflow: hidden;
+}
+
+
+/* -------------------------------
+   Left: Equation Lines
+---------------------------------- */
+
+.slide.eq .eq-lines {
+    flex: 0 0 45%;
+    min-width: 0;
+    overflow: hidden;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* BASE LINE (clean, readable) */
+.slide.eq .eq-lines li {
+    padding: 6px 10px;
+    font-size: 1.25rem;
+    line-height: 1.4;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    background: transparent;
+
+    color: rgba(255,255,255,0.85);
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+}
+
+
+/* 🔥 REMOVE DIM EFFECT ONLY IN EQ */
+.slide.eq .eq-lines li.dim {
+    opacity: 1;
+    color: rgba(255,255,255,0.7);
+}
+
+
+/* 🔥 STRONG FOCUS */
+.slide.eq .eq-lines li.highlighted {
+    background: rgba(245, 197, 66, 0.18);
+    color: #ffffff;
+    border: 2 px solide green;
+    border-radius: 10px;
+    font-weight: 700;
+
+    border: 2px solid #f5c542;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+
+    transform: scale(1.02);
+}
+
+
+/* -------------------------------
+   Right: Side Panel
+---------------------------------- */
+
+.slide.eq .eq-side-panel {
+    flex: 0 0 55%;
+    min-width: 0;
+    overflow: hidden;
+
+    padding: 6px;
+
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+/* Explanation text */
+
+.slide.eq .eq-explain-item {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: justify;
+
+    background: rgba(255, 255, 255, 0.06);
+    padding: 14px 18px;
+    border-radius: 12px;
+
+    overflow-wrap: break-word;
+}
+
+
+/* Explanation image */
+
+.slide.eq .eq-explain-image img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 12px;
+}
+
+
+/* ======================================
+   Desktop Layout (≥1024px)
+====================================== */
+
+@media (min-width: 1024px) {
+
+    .slide.eq {
+        gap: 1.5rem;
+    }
+
+    .slide.eq .eq-lines li {
+        font-size: 1.5rem;
+    }
+
+    .slide.eq .eq-explain-item {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* ======================================
+   Projector Layout (≥1600px)
+====================================== */
+
+@media (min-width: 1600px) {
+
+    .slide.eq {
+        gap: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .slide.eq .eq-lines {
+        flex: 0 0 50%;
+    }
+
+    .slide.eq .eq-side-panel {
+        flex: 0 0 50%;
+    }
+
+    .slide.eq .eq-lines li {
+        font-size: 2.25rem;
+    }
+
+    .slide.eq .eq-explain-item {
+        font-size: 2.25rem;
+        line-height: 1.5em;
+    }
+}

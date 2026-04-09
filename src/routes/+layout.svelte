@@ -4,6 +4,7 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import TopBar from '$lib/components/TopBar.svelte';
 
+	let { children } = $props();   // ✅ THIS LINE
 	const isPlayer = $derived(page.url.pathname.startsWith('/player'));
 </script>
 
@@ -11,9 +12,8 @@
 	<Navbar />
 	<TopBar />
 {/if}
-
 <main>
-	<slot />
+	{@render children()}
 </main>
 
 <style>

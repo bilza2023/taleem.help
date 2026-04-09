@@ -1,0 +1,57 @@
+/* ----------------------------------
+   Table Slide Container
+---------------------------------- */
+
+.slide.table {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;   /* center vertically */
+  align-items: center;
+
+  padding: 4rem 2rem;
+}
+
+
+/* ----------------------------------
+   Table
+---------------------------------- */
+
+.slide.table table {
+  border-collapse: collapse;
+
+  width: 100%;
+  max-width: 1100px;
+
+  table-layout: fixed;
+}
+
+
+/* ----------------------------------
+   Cells
+---------------------------------- */
+
+.slide.table td {
+  padding: 1rem;
+
+  font-size: 2.4rem;
+
+  border: 2px solid var(--primaryColor);
+
+  word-break: break-word;
+  text-align: center;
+}
+
+
+/* ----------------------------------
+   Portrait Adjustment
+---------------------------------- */
+
+@media (orientation: portrait) {
+
+  .slide.table td {
+    font-size: 1.8rem;
+    padding: 1rem 1.2rem;
+  }
+
+}

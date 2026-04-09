@@ -1,0 +1,53 @@
+.slide.imageWithCaption {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  gap: 2.5rem;
+}
+
+/* IMAGE → NO animation (anchor) */
+.slide.imageWithCaption img {
+  max-width: 85%;
+  max-height: 65%;
+  object-fit: contain;
+  display: block;
+}
+
+/* CAPTION → animated */
+.slide.imageWithCaption figcaption {
+  font-size: 2.4rem;
+  line-height: 1.6;
+
+  max-width: 800px;
+  margin: 0;
+
+  opacity: 0;
+  transform: translateY(8px);
+
+  animation: captionSoftIn 0.45s ease-out forwards;
+  animation-delay: 0.15s;
+}
+
+/* animation */
+@keyframes captionSoftIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* portrait */
+@media (orientation: portrait) {
+  .slide.imageWithCaption img {
+    max-width: 95%;
+    max-height: 60%;
+  }
+
+  .slide.imageWithCaption figcaption {
+    font-size: 2.8rem;
+  }
+}

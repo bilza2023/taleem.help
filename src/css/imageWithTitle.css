@@ -1,0 +1,45 @@
+.slide.imageWithTitle {
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem;
+}
+
+/* TITLE → NO animation (anchor) */
+.slide.imageWithTitle h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* IMAGE → keep soft entry (safe) */
+.slide.imageWithTitle img {
+  max-width: 85%;
+  max-height: 70%;
+  object-fit: contain;
+
+  opacity: 0;
+  transform: scale(0.96);
+
+  animation: imgSoftIn 0.5s ease-out forwards;
+}
+
+/* animation */
+@keyframes imgSoftIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* portrait */
+@media (orientation: portrait) {
+  .slide.imageWithTitle h1 {
+    font-size: 3.2rem;
+  }
+
+  .slide.imageWithTitle img {
+    max-width: 95%;
+    max-height: 65%;
+  }
+}

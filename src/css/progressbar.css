@@ -1,0 +1,66 @@
+
+.slide.progressbar {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  
+  .slide.progressbar .progressbar-item {
+    width: 90%;
+    max-width: 900px;
+  }
+  
+  .slide.progressbar .progressbar-label {
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-bottom: 1.4rem;
+  }
+  
+  /* Baseline track */
+  .slide.progressbar .progressbar-track {
+    position: relative;
+    height: 46px;
+    border-radius: 999px;
+  
+    background: rgba(0,0,0,0.25);
+    box-shadow: inset 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  /* Yellow progress */
+  .slide.progressbar .progressbar-fill {
+    height: 100%;
+    width: 0;
+    border-radius: 999px;
+  
+    background: #f5c542;
+    transition: width 0.6s ease;
+  
+    display: flex;
+    align-items: center;
+    padding-left: 1.8rem;
+  
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  /* Show 60% inside yellow on LEFT */
+  .slide.progressbar .progressbar-fill::before {
+    content: attr(data-value) "%";
+  }
+  
+  /* Show 100% on right of track */
+  .slide.progressbar .progressbar-track::after {
+    content: "100%";
+    position: absolute;
+    right: -75px;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    font-size: 2.2rem;
+    font-weight: 500;
+    opacity: 0.75;
+  }
+  

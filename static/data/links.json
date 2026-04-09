@@ -1,0 +1,24 @@
+
+[
+    {
+      "anchor": "fbise8math-ch1",
+      "title": "Factorization Basics",
+      "deck": "demo",
+      "tag": "concept",
+      "image": "eq.webp"
+    },
+    {
+      "anchor": "fbise8math-ch1",
+      "title": "Understanding Factors",
+      "deck": "bodmas",
+      "tag": "lab",
+      "image": "eq.webp"
+    },
+    {
+      "anchor": "fbise8math-ch2",
+      "title": "Linear Equation Example",
+      "deck": "eq-test",
+      "tag": "example",
+      "image": "eq.webp"
+    }
+  ]

@@ -1,0 +1,43 @@
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+  }
+
+  /* slide area */
+  #app {
+    height: 100vh;
+    /* padding-bottom: 90px; reserve space for fixed nav */
+    box-sizing: border-box;
+  }
+
+  .nav-test {
+position: fixed;
+left: 0;
+right: 0;
+bottom: 0;
+height: 90px;
+transition: opacity 0.5s ease;
+backdrop-filter: blur(0px);           /* optional, modern browsers */
+-webkit-backdrop-filter: blur(0px);
+background: rgba(187, 187, 188, 0.85);
+
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+display: flex;
+align-items: center;
+gap: 1rem;
+padding: 0 1rem;
+
+z-index: 999999;
+}
+
+
+.nav-test span {
+    font-weight: 700;
+    min-width: 80px;
+  }
+
+  input[type="range"] {
+    flex: 1;
+}
