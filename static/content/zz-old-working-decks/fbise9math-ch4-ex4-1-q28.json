@@ -1,0 +1,87 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 28",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 28", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 140,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$u^4 - 13u^2 + 36$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Treat this as a quadratic in u²." },
+              { "type": "spText", "content": "Let v = u²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$v^2 - 13v + 36$",
+            "showAt": 25,
+            "spItems": [
+              { "type": "spText", "content": "Now factor the quadratic expression." },
+              { "type": "spText", "content": "Find two numbers whose product is 36 and sum is -13." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$36 → -9 and -4$",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "-9 × -4 = 36." },
+              { "type": "spText", "content": "-9 + -4 = -13." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(v - 9)(v - 4)$",
+            "showAt": 65,
+            "spItems": [
+              { "type": "spText", "content": "Complete factorization in v." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(u^2 - 9)(u^2 - 4)$",
+            "showAt": 80,
+            "spItems": [
+              { "type": "spText", "content": "Substitute back v = u²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: (u - 3)(u + 3)(u - 2)(u + 2)",
+            "showAt": 100,
+            "spItems": [
+              { "type": "spText", "content": "Factor each difference of squares." },
+              { "type": "spText", "content": "Method Used: Quadratic in u² + Difference of Squares." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

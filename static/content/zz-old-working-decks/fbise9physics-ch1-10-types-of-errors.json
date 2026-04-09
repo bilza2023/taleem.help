@@ -1,0 +1,58 @@
+{
+    "version": "deck-v1",
+    "name": "Types of Errors in Measurement",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Types of Errors in Measurement", "showAt": 0 },
+          { "name": "image", "content": "ruler.png", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 5,
+        "end": 15,
+        "data": [
+          { "name": "title", "content": "What is Measurement Error?", "showAt": 5 },
+          { "name": "para", "content": "Measurement error is the difference between the measured value and the true value of a quantity.", "showAt": 8 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 15,
+        "end": 25,
+        "data": [
+          { "name": "title", "content": "Systematic Error", "showAt": 15 },
+          { "name": "para", "content": "Systematic errors occur due to faulty instruments or improper calibration. These errors are consistent and repeat in the same direction.", "showAt": 18 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 25,
+        "end": 35,
+        "data": [
+          { "name": "title", "content": "Random Error", "showAt": 25 },
+          { "name": "para", "content": "Random errors occur due to unpredictable variations in measurement conditions. These errors vary in size and direction.", "showAt": 28 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 35,
+        "end": 48,
+        "data": [
+          { "name": "bullet", "content": "Systematic errors affect accuracy.", "showAt": 35 },
+          { "name": "bullet", "content": "Random errors affect precision.", "showAt": 38 },
+          { "name": "bullet", "content": "Repeated measurements reduce random error.", "showAt": 41 }
+        ]
+      }
+    ]
+  }
+  

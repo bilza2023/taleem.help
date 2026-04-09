@@ -1,0 +1,89 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 9",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 9", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 110,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$4x^2 + 4x + 1 - y^2$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Examine the first three terms carefully." },
+              { "type": "spText", "content": "Check whether they form a perfect square trinomial." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$4x^2 + 4x + 1 = (2x + 1)^2$",
+            "showAt": 20,
+            "spItems": [
+              { "type": "spText", "content": "Because (2x)² = 4x² and 1² = 1." },
+              { "type": "spText", "content": "The middle term 4x equals 2 × 2x × 1." },
+              { "type": "spText", "content": "So it matches a² + 2ab + b²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(2x + 1)^2 - y^2$",
+            "showAt": 40,
+            "spItems": [
+              { "type": "spText", "content": "Rewrite the expression using the perfect square." },
+              { "type": "spText", "content": "Now it becomes a difference of squares." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(2x + 1)^2 - y^2 = (2x + 1)^2 - (y)^2$",
+            "showAt": 55,
+            "spItems": [
+              { "type": "spText", "content": "Write both parts clearly as squares." },
+              { "type": "spText", "content": "Prepare to apply a² - b² identity." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(2x + 1 - y)(2x + 1 + y)$",
+            "showAt": 75,
+            "spItems": [
+              { "type": "spText", "content": "Apply identity: a² - b² = (a - b)(a + b)." },
+              { "type": "spText", "content": "Here a = (2x + 1) and b = y." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: (2x + 1 - y)(2x + 1 + y)",
+            "showAt": 95,
+            "spItems": [
+              { "type": "spText", "content": "Method Used: Perfect Square + Difference of Squares." },
+              { "type": "spText", "content": "Always check for hidden perfect square trinomials first." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

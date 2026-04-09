@@ -1,0 +1,87 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 29",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 29", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 140,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$y^4 - 12y^2 - 64$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Treat this as quadratic in y²." },
+              { "type": "spText", "content": "Let v = y²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$v^2 - 12v - 64$",
+            "showAt": 25,
+            "spItems": [
+              { "type": "spText", "content": "Now factor the quadratic expression." },
+              { "type": "spText", "content": "Find two numbers whose product is -64 and sum is -12." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$-64 → -16 and 4$",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "-16 × 4 = -64." },
+              { "type": "spText", "content": "-16 + 4 = -12." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(v - 16)(v + 4)$",
+            "showAt": 65,
+            "spItems": [
+              { "type": "spText", "content": "Complete factorization in v." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(y^2 - 16)(y^2 + 4)$",
+            "showAt": 80,
+            "spItems": [
+              { "type": "spText", "content": "Substitute back v = y²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: (y - 4)(y + 4)(y^2 + 4)",
+            "showAt": 100,
+            "spItems": [
+              { "type": "spText", "content": "Factor y² - 16 using difference of squares." },
+              { "type": "spText", "content": "Method Used: Quadratic in y² + Difference of Squares." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

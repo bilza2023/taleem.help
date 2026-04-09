@@ -1,0 +1,50 @@
+[
+    {
+      "id": "rational-numbers",
+      "chapter": 1,
+      "title": "Rational Numbers",
+      "image": "/content/images/box.webp",
+      "lessons": 5,
+      "description": "Understand integers, fractions, and their representation on the number line."
+    },
+    {
+      "id": "linear-equations",
+      "chapter": 2,
+      "title": "Linear Equations in One Variable",
+      "image": "/content/images/box.webp",
+      "lessons": 6,
+      "description": "Learn to form and solve simple equations step by step."
+    },
+    {
+      "id": "squares-roots",
+      "chapter": 3,
+      "title": "Squares and Square Roots",
+      "image": "/content/images/box.webp",
+      "lessons": 4,
+      "description": "Explore squares, square roots, and their properties."
+    },
+    {
+      "id": "cube-roots",
+      "chapter": 4,
+      "title": "Cube and Cube Roots",
+      "image": "/content/images/box.webp",
+      "lessons": 3,
+      "description": "Understand cubes, cube roots, and related calculations."
+    },
+    {
+      "id": "sets",
+      "chapter": 5,
+      "title": "Sets",
+      "image": "/content/images/box.webp",
+      "lessons": 4,
+      "description": "Learn set notation, types of sets, and basic operations."
+    },
+    {
+      "id": "ratio-proportion",
+      "chapter": 6,
+      "title": "Ratio and Proportion",
+      "image": "/content/images/box.webp",
+      "lessons": 5,
+      "description": "Understand ratios, proportions, and their real-life applications."
+    }
+  ]

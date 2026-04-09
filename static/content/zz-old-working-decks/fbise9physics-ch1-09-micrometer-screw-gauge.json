@@ -1,0 +1,59 @@
+{
+    "version": "deck-v1",
+    "name": "Micrometer Screw Gauge",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Micrometer Screw Gauge", "showAt": 0 },
+          { "name": "image", "content": "screw-guage.png", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 5,
+        "end": 16,
+        "data": [
+          { "name": "title", "content": "Purpose", "showAt": 5 },
+          { "name": "para", "content": "A micrometer screw gauge measures very small thickness or diameter with extremely high precision.", "showAt": 8 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 16,
+        "end": 28,
+        "data": [
+          { "name": "bullet", "content": "Used for thin wires.", "showAt": 16 },
+          { "name": "bullet", "content": "Used for metal sheets.", "showAt": 19 },
+          { "name": "bullet", "content": "Used for small mechanical parts.", "showAt": 22 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 28,
+        "end": 40,
+        "data": [
+          { "name": "title", "content": "Precision", "showAt": 28 },
+          { "name": "para", "content": "Its typical least count is 0.01 mm, making it more precise than a vernier caliper.", "showAt": 31 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 40,
+        "end": 52,
+        "data": [
+          { "name": "bullet", "content": "Contains a spindle and thimble.", "showAt": 40 },
+          { "name": "bullet", "content": "Uses screw mechanism for measurement.", "showAt": 43 },
+          { "name": "bullet", "content": "Provides highest accuracy among common lab tools.", "showAt": 46 }
+        ]
+      }
+    ]
+  }
+  

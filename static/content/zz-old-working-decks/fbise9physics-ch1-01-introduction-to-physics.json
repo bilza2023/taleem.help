@@ -1,0 +1,133 @@
+{
+  "version": "deck-v1",
+  "name": "Introduction to Physics",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.3
+  },
+  "deck": [
+    {
+      "type": "imageWithTitle",
+      "start": 0,
+      "end": 6,
+      "data": [
+        { "name": "title", "content": "Introduction to Physics", "showAt": 0 },
+        { "name": "image", "content": "branches-of-physics.webp", "showAt": 1 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 6,
+      "end": 18,
+      "data": [
+        { "name": "title", "content": "What is Physics?", "showAt": 6 },
+        { "name": "para", "content": "Physics is the study of how the universe works. It tries to understand matter, energy, motion, and forces.", "showAt": 9 }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "start": 18,
+      "end": 34,
+      "data": [
+        { "name": "bullet", "content": "Why does a cricket ball slow down?", "showAt": 18 },
+        { "name": "bullet", "content": "Why does a ceiling fan keep rotating after switch off?", "showAt": 21 },
+        { "name": "bullet", "content": "Why does lightning come before thunder?", "showAt": 24 },
+        { "name": "bullet", "content": "How do mobile phones send signals instantly?", "showAt": 27 }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 34,
+      "end": 52,
+      "data": [
+        { "name": "image", "content": "apple.webp", "showAt": 34 },
+        { "name": "bullet", "content": "Matter is the stuff everything is made of", "showAt": 37 },
+        { "name": "bullet", "content": "Energy is the ability to do work", "showAt": 40 },
+        { "name": "bullet", "content": "Motion explains why things move", "showAt": 43 },
+        { "name": "bullet", "content": "Forces explain why things stop or change direction", "showAt": 46 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 52,
+      "end": 66,
+      "data": [
+        { "name": "title", "content": "Physics Around Us", "showAt": 52 },
+        { "name": "para", "content": "When a bus moves, a rickshaw accelerates, a dam generates electricity, or a satellite sends signals — Physics is there.", "showAt": 56 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 66,
+      "end": 80,
+      "data": [
+        { "name": "title", "content": "Physics is a Language", "showAt": 66 },
+        { "name": "para", "content": "Equations are not to scare you. They are simply a language used to describe patterns in nature using numbers and symbols.", "showAt": 70 }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "start": 80,
+      "end": 96,
+      "data": [
+        { "name": "bullet", "content": "Push harder → object moves faster", "showAt": 80 },
+        { "name": "bullet", "content": "Heavier objects are harder to move", "showAt": 83 },
+        { "name": "bullet", "content": "Heat something → it expands", "showAt": 86 },
+        { "name": "bullet", "content": "Physics turns patterns into laws", "showAt": 89 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 96,
+      "end": 110,
+      "data": [
+        { "name": "title", "content": "Power of Universal Laws", "showAt": 96 },
+        { "name": "para", "content": "The same laws that explain how a ball falls on Earth also explain how the Moon moves around the Earth.", "showAt": 100 }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "start": 110,
+      "end": 130,
+      "data": [
+        { "name": "bullet", "content": "Measurement and units", "showAt": 110 },
+        { "name": "bullet", "content": "Motion and force", "showAt": 113 },
+        { "name": "bullet", "content": "Work and energy", "showAt": 116 },
+        { "name": "bullet", "content": "Heat and temperature", "showAt": 119 },
+        { "name": "bullet", "content": "Waves and sound", "showAt": 122 },
+        { "name": "bullet", "content": "Light and optics", "showAt": 125 },
+        { "name": "bullet", "content": "Basic electricity", "showAt": 128 }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "start": 130,
+      "end": 150,
+      "data": [
+        { "name": "bullet", "content": "Observe carefully", "showAt": 130 },
+        { "name": "bullet", "content": "Think logically", "showAt": 133 },
+        { "name": "bullet", "content": "Question assumptions", "showAt": 136 },
+        { "name": "bullet", "content": "Solve problems step by step", "showAt": 139 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 150,
+      "end": 165,
+      "data": [
+        { "name": "title", "content": "How to Study Physics", "showAt": 150 },
+        { "name": "para", "content": "Do not just ask for formulas. Ask why the formula works and what is happening physically.", "showAt": 154 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 165,
+      "end": 180,
+      "data": [
+        { "name": "title", "content": "Final Message", "showAt": 165 },
+        { "name": "para", "content": "Physics is not only for genius students. It is for curious minds. If you ask questions and think deeply, Physics will reward you.", "showAt": 169 }
+      ]
+    }
+  ]
+}

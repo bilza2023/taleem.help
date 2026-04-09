@@ -1,0 +1,113 @@
+{
+  "version": "deck-v1",
+  "name": "HCF and LCM — Concept Only",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": "/physics_bg.webp",
+    "backgroundImageOpacity": 0.3
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 6,
+      "data": [
+        { "name": "title", "content": "HCF and LCM", "showAt": 0 },
+        { "name": "subtitle", "content": "Understanding the idea, not the calculation", "showAt": 1 }
+      ]
+    },
+
+    {
+      "type": "fillImage",
+      "start": 6,
+      "end": 12,
+      "data": [
+        { "name": "image", "content": "hcf_vs_lcm.png", "showAt": 6 }
+      ]
+    },
+
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 12,
+      "end": 24,
+      "data": [
+        { "name": "image", "content": "hcf_vs_lcm.png", "showAt": 12 },
+        { "name": "bullet", "content": "HCF looks inside the numbers", "showAt": 13 },
+        { "name": "bullet", "content": "It is based on common factors", "showAt": 14 },
+        { "name": "bullet", "content": "It tells what parts numbers share internally", "showAt": 15 },
+        { "name": "bullet", "content": "Used in sharing and grouping situations", "showAt": 16 }
+      ]
+    },
+
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 24,
+      "end": 36,
+      "data": [
+        { "name": "image", "content": "hcf_vs_lcm.png", "showAt": 24 },
+        { "name": "bullet", "content": "LCM looks ahead of the numbers", "showAt": 25 },
+        { "name": "bullet", "content": "It is based on multiples", "showAt": 26 },
+        { "name": "bullet", "content": "It finds the first meeting point", "showAt": 27 },
+        { "name": "bullet", "content": "Used in timing and repeating cycles", "showAt": 28 }
+      ]
+    },
+
+    {
+      "type": "titleAndPara",
+      "start": 36,
+      "end": 48,
+      "data": [
+        {
+          "name": "title",
+          "content": "Same image, two different questions",
+          "showAt": 36
+        },
+        {
+          "name": "para",
+          "content": "The same picture explains both ideas. HCF asks what is common inside the numbers, while LCM asks where the numbers will meet again in the future. The direction of thinking is what changes.",
+          "showAt": 37
+        }
+      ]
+    },
+
+    {
+      "type": "imageWithTitle",
+      "start": 48,
+      "end": 58,
+      "data": [
+        { "name": "title", "content": "Inside vs Ahead", "showAt": 48 },
+        { "name": "image", "content": "hcf_vs_lcm.png", "showAt": 49 }
+      ]
+    },
+
+    {
+      "type": "keyIdeasSlide",
+      "start": 58,
+      "end": 68,
+      "data": [
+        { "name": "card", "icon": "🔍", "label": "Look Inside", "showAt": 58 },
+        { "name": "card", "icon": "➡️", "label": "Look Ahead", "showAt": 59 },
+        { "name": "card", "icon": "🧩", "label": "Common Parts", "showAt": 60 },
+        { "name": "card", "icon": "⏱️", "label": "Meeting Point", "showAt": 61 }
+      ]
+    },
+
+    {
+      "type": "quoteSlide",
+      "start": 68,
+      "end": 76,
+      "data": [
+        {
+          "name": "quote",
+          "content": "HCF looks at where numbers come from. LCM looks at where numbers go.",
+          "showAt": 68
+        },
+        {
+          "name": "author",
+          "content": "— Taleem Concept Note",
+          "showAt": 69
+        }
+      ]
+    }
+  ]
+}

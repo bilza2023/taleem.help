@@ -1,0 +1,88 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 25",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 25", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 140,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$8 + 6x - 5x^2$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Rewrite in descending powers of x." },
+              { "type": "spText", "content": "Arrange as quadratic form." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$-5x^2 + 6x + 8$",
+            "showAt": 20,
+            "spItems": [
+              { "type": "spText", "content": "Now factor the quadratic expression." },
+              { "type": "spText", "content": "Multiply -5 × 8 = -40." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$-40 → 10 and -4$",
+            "showAt": 40,
+            "spItems": [
+              { "type": "spText", "content": "Find numbers whose product is -40 and sum is 6." },
+              { "type": "spText", "content": "10 + (-4) = 6." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$-5x^2 + 10x - 4x + 8$",
+            "showAt": 60,
+            "spItems": [
+              { "type": "spText", "content": "Split the middle term." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$-5x(x - 2) - 4(x - 2)$",
+            "showAt": 80,
+            "spItems": [
+              { "type": "spText", "content": "Factor by grouping." },
+              { "type": "spText", "content": "Common binomial (x - 2) appears." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: (-5x - 4)(x - 2)",
+            "showAt": 105,
+            "spItems": [
+              { "type": "spText", "content": "Factor inside gives (-5x - 4)(x - 2)." },
+              { "type": "spText", "content": "Method Used: AC Method with negative leading term." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

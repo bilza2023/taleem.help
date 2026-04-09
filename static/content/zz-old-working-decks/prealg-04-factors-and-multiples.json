@@ -1,0 +1,114 @@
+{
+    "version": "deck-v1",
+    "name": "Factors and Multiples",
+
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "/physics_bg.webp",
+      "backgroundImageOpacity": 0.25
+    },
+  
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Factors and Multiples", "showAt": 0 },
+          { "name": "subtitle", "content": "Understanding one number in two ways", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "fillImage",
+        "start": 6,
+        "end": 16,
+        "data": [
+          { "name": "image", "content": "factor_vs_multiples.png", "showAt": 6 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 16,
+        "end": 30,
+        "data": [
+          { "name": "image", "content": "factor_vs_multiples.png", "showAt": 16 },
+          { "name": "bullet", "content": "The number 12 is shown in the center", "showAt": 17 },
+          { "name": "bullet", "content": "Numbers around it divide 12 exactly", "showAt": 19 },
+          { "name": "bullet", "content": "These numbers are called factors", "showAt": 21 },
+          { "name": "bullet", "content": "Examples: 1, 2, 3, 4, 6, 12", "showAt": 23 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 30,
+        "end": 44,
+        "data": [
+          { "name": "image", "content": "factor_vs_multiples.png", "showAt": 30 },
+          { "name": "bullet", "content": "Factors divide the number completely", "showAt": 31 },
+          { "name": "bullet", "content": "No remainder is left", "showAt": 33 },
+          { "name": "bullet", "content": "They help us break a number apart", "showAt": 35 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 44,
+        "end": 60,
+        "data": [
+          { "name": "image", "content": "factor_vs_multiples.png", "showAt": 44 },
+          { "name": "bullet", "content": "Now look at the straight line on the right", "showAt": 45 },
+          { "name": "bullet", "content": "Numbers increase step by step", "showAt": 47 },
+          { "name": "bullet", "content": "12, 24, 36, 48 are shown", "showAt": 49 },
+          { "name": "bullet", "content": "These numbers are multiples of 12", "showAt": 51 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 60,
+        "end": 74,
+        "data": [
+          { "name": "image", "content": "factor_vs_multiples.png", "showAt": 60 },
+          { "name": "bullet", "content": "Multiples come from repeated addition", "showAt": 61 },
+          { "name": "bullet", "content": "Or repeated multiplication", "showAt": 63 },
+          { "name": "bullet", "content": "The arrow shows they never end", "showAt": 65 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 74,
+        "end": 90,
+        "data": [
+          { "name": "bullet", "content": "Factors are limited in number", "showAt": 74 },
+          { "name": "bullet", "content": "They stop after a point", "showAt": 76 },
+          { "name": "bullet", "content": "Multiples continue forever", "showAt": 78 },
+          { "name": "bullet", "content": "This is the key difference", "showAt": 80 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 90,
+        "end": 108,
+        "data": [
+          { "name": "title", "content": "One Picture, Two Ideas", "showAt": 90 },
+          {
+            "name": "para",
+            "content": "Factors help us understand a number from inside, while multiples show how the number grows forward. This single image keeps both ideas clear and separate.",
+            "showAt": 91
+          }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 108,
+        "end": 124,
+        "data": [
+          { "name": "title", "content": "Why This Matters", "showAt": 108 },
+          {
+            "name": "para",
+            "content": "Prime numbers, HCF, and LCM all depend on a clear understanding of factors and multiples. If this picture is clear, future topics become easier.",
+            "showAt": 109
+          }
+        ]
+      }
+    ]
+  }
+  

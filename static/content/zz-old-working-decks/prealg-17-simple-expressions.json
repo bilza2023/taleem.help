@@ -1,0 +1,151 @@
+{
+    "version": "deck-v1",
+    "name": "Lesson 17 — Simple Expressions (No Solving Yet)",
+   
+    
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Simple Expressions", "showAt": 0 },
+          {
+            "name": "subtitle",
+            "content": "Understanding structure, not solving yet",
+            "showAt": 1
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 6,
+        "end": 20,
+        "data": [
+          { "name": "title", "content": "What is an Expression?", "showAt": 6 },
+          {
+            "name": "para",
+            "content": "An expression is made by writing numbers and letters together. At this stage, we do not solve expressions. We only understand what they are and how they are formed.",
+            "showAt": 7
+          }
+        ]
+      },
+  
+      {
+        "type": "imageWithTitle",
+        "start": 20,
+        "end": 32,
+        "data": [
+          { "name": "title", "content": "Parts Together", "showAt": 20 },
+          {
+            "name": "image",
+            "content": "simple-expressions.png",
+            "showAt": 21
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 32,
+        "end": 46,
+        "data": [
+          { "name": "title", "content": "Parts of an Expression", "showAt": 32 },
+          {
+            "name": "para",
+            "content": "Each box represents a part. Some parts are numbers, and some parts are letters like a. When these parts are placed together, they form an expression.",
+            "showAt": 33
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 46,
+        "end": 60,
+        "data": [
+          {
+            "name": "title",
+            "content": "Expression as a Whole",
+            "showAt": 46
+          },
+          {
+            "name": "para",
+            "content": "When all parts are grouped together inside brackets, we look at them as one complete expression, not as separate pieces.",
+            "showAt": 47
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 60,
+        "end": 74,
+        "data": [
+          { "name": "title", "content": "Meaning of an Expression", "showAt": 60 },
+          {
+            "name": "para",
+            "content": "An expression stands for a value. The letter a does not represent a fixed number. It is a variable that can represent different values.",
+            "showAt": 61
+          }
+        ]
+      },
+  
+      {
+        "type": "bulletList",
+        "start": 74,
+        "end": 88,
+        "data": [
+          {
+            "name": "bullet",
+            "content": "An expression is not a question",
+            "showAt": 74
+          },
+          {
+            "name": "bullet",
+            "content": "An expression does not have an answer yet",
+            "showAt": 75
+          },
+          {
+            "name": "bullet",
+            "content": "An expression shows structure and meaning",
+            "showAt": 76
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 88,
+        "end": 102,
+        "data": [
+          { "name": "title", "content": "What Comes Later", "showAt": 88 },
+          {
+            "name": "para",
+            "content": "Solving expressions comes later. First, we build understanding. Once the structure is clear, solving becomes easier.",
+            "showAt": 89
+          }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 102,
+        "end": 112,
+        "data": [
+          {
+            "name": "quote",
+            "content": "Understanding comes before solving.",
+            "showAt": 102
+          },
+          {
+            "name": "author",
+            "content": "— Pre-Algebra Mindset",
+            "showAt": 103
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,89 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 14",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 14", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 130,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$3x^4 - 3y^4$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Look for a common factor." },
+              { "type": "spText", "content": "Both terms contain 3." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$3(x^4 - y^4)$",
+            "showAt": 20,
+            "spItems": [
+              { "type": "spText", "content": "Factor out 3." },
+              { "type": "spText", "content": "Now focus on x⁴ - y⁴." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^4 - y^4 = (x^2)^2 - (y^2)^2$",
+            "showAt": 40,
+            "spItems": [
+              { "type": "spText", "content": "Rewrite as a difference of squares." },
+              { "type": "spText", "content": "Apply a² - b² identity." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x^2 - y^2)(x^2 + y^2)$",
+            "showAt": 60,
+            "spItems": [
+              { "type": "spText", "content": "First factorization step complete." },
+              { "type": "spText", "content": "Notice x² - y² is again a difference of squares." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x - y)(x + y)(x^2 + y^2)$",
+            "showAt": 80,
+            "spItems": [
+              { "type": "spText", "content": "Factor x² - y² further." },
+              { "type": "spText", "content": "Now all factors are fully simplified." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: 3(x - y)(x + y)(x^2 + y^2)",
+            "showAt": 105,
+            "spItems": [
+              { "type": "spText", "content": "Method Used: Common Factor + Difference of Squares." },
+              { "type": "spText", "content": "Always continue factoring until no further identities apply." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

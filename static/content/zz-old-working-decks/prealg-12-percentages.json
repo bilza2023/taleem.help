@@ -1,0 +1,122 @@
+{
+    "version": "deck-v1",
+    "name": "Percentages — Meaning and Conversion",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "/physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Percentages", "showAt": 0 },
+          { "name": "subtitle", "content": "Meaning and conversion", "showAt": 1 }
+        ]
+      },
+  
+      {
+        "type": "fillImage",
+        "start": 6,
+        "end": 18,
+        "data": [
+          { "name": "image", "content": "percentages.png", "showAt": 6 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 18,
+        "end": 32,
+        "data": [
+          {
+            "name": "title",
+            "content": "Percent means out of 100",
+            "showAt": 18
+          },
+          {
+            "name": "para",
+            "content": "A percentage shows how many parts we have out of 100. It is another way to describe parts of a whole.",
+            "showAt": 19
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 32,
+        "end": 48,
+        "data": [
+          { "name": "image", "content": "percentages.png", "showAt": 32 },
+          { "name": "bullet", "content": "Percent is based on 100 equal parts", "showAt": 33 },
+          { "name": "bullet", "content": "It shows how much of the whole is taken", "showAt": 34 },
+          { "name": "bullet", "content": "Grids help visualize percentages", "showAt": 35 },
+          { "name": "bullet", "content": "Same quantity can be shown in many forms", "showAt": 36 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 48,
+        "end": 62,
+        "data": [
+          {
+            "name": "title",
+            "content": "Connection with fractions and decimals",
+            "showAt": 48
+          },
+          {
+            "name": "para",
+            "content": "Percentages, fractions, and decimals all represent the same quantities. Only the way of writing changes.",
+            "showAt": 49
+          }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 62,
+        "end": 76,
+        "data": [
+          { "name": "image", "content": "percentages.png", "showAt": 62 },
+          { "name": "bullet", "content": "Percent connects easily to fractions", "showAt": 63 },
+          { "name": "bullet", "content": "Decimals show the same value", "showAt": 64 },
+          { "name": "bullet", "content": "Only the representation changes", "showAt": 65 },
+          { "name": "bullet", "content": "Understanding the link avoids confusion", "showAt": 66 }
+        ]
+      },
+  
+      {
+        "type": "keyIdeasSlide",
+        "start": 76,
+        "end": 86,
+        "data": [
+          { "name": "card", "icon": "💯", "label": "Out of 100", "showAt": 76 },
+          { "name": "card", "icon": "➗", "label": "Fraction Link", "showAt": 77 },
+          { "name": "card", "icon": "🔢", "label": "Decimal Link", "showAt": 78 },
+          { "name": "card", "icon": "🔁", "label": "Same Value", "showAt": 79 }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 86,
+        "end": 94,
+        "data": [
+          {
+            "name": "quote",
+            "content": "Percent, fraction, and decimal are different languages for the same idea.",
+            "showAt": 86
+          },
+          {
+            "name": "author",
+            "content": "— Taleem Concept Note",
+            "showAt": 87
+          }
+        ]
+      }
+    ]
+  }
+  

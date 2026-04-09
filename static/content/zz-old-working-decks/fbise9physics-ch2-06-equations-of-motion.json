@@ -1,0 +1,61 @@
+{
+    "version": "deck-v1",
+    "name": "Equations of Motion",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Equations of Motion", "showAt": 0 },
+          { "name": "image", "content": "equations-of-motion.webp", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 6,
+        "end": 16,
+        "data": [
+          { "name": "title", "content": "When Do We Use Them?", "showAt": 6 },
+          { "name": "para", "content": "The equations of motion are used to describe the motion of an object moving with uniform acceleration.", "showAt": 9 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 16,
+        "end": 32,
+        "data": [
+          { "name": "image", "content": "equations-of-motion.webp", "showAt": 16 },
+          { "name": "bullet", "content": "They relate velocity, acceleration, time and displacement.", "showAt": 18 },
+          { "name": "bullet", "content": "They apply only when acceleration is constant.", "showAt": 21 },
+          { "name": "bullet", "content": "They simplify motion calculations.", "showAt": 24 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 32,
+        "end": 44,
+        "data": [
+          { "name": "title", "content": "The Three Equations", "showAt": 32 },
+          { "name": "para", "content": "1) v = u + at   2) s = ut + ½at²   3) v² = u² + 2as", "showAt": 35 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 44,
+        "end": 60,
+        "data": [
+          { "name": "image", "content": "equations-of-motion.webp", "showAt": 44 },
+          { "name": "bullet", "content": "u = initial velocity", "showAt": 46 },
+          { "name": "bullet", "content": "v = final velocity", "showAt": 49 },
+          { "name": "bullet", "content": "a = acceleration, t = time, s = displacement", "showAt": 52 }
+        ]
+      }
+    ]
+  }
+  
