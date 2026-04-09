@@ -46,11 +46,11 @@
 <div class="container">
 
 	<div class="courses">
-		<div class="card" on:click={() => goToSyllabus('/syllabus/math8')}>
+		<div class="card" on:click={() => goToSyllabus('/syllabus?course=fbise8math-syllabus')}>
 			<img src="/content/images/class8.png" alt="Class 8" />
 		</div>
 
-		<div class="card" on:click={() => goToSyllabus('/syllabus/math9')}>
+		<div class="card" on:click={() => goToSyllabus('/syllabus?course=fbise9math-syllabus')}>
 			<img src="/content/images/class9.png" alt="Class 9" />
 		</div>
 	</div>

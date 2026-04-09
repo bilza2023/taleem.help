@@ -5,7 +5,7 @@
 	let syllabus = $state([]);
 
 	onMount(async () => {
-		const res = await fetch('/data/courses/class-8-math-syllabus.json');
+		const res = await fetch('/data/courses/fbise8math-syllabus.json');
 		syllabus = await res.json();
 	});
 </script>

@@ -1,20 +1,18 @@
 <script>
-
 	import { onMount, onDestroy } from "svelte";
 	import { renderTaleemSlide } from "taleem-slides";
 	import { runActions } from "taleem-action-runner";
 	import { Timer } from "taleem-pam";
+	import { page } from '$app/stores';
+	import { get } from 'svelte/store';
 
 	import { getDeckEndTime } from "../../lib/utils/index.js";
 	import { getSlideAtTime } from "../../lib/utils/getSlideAtTime.js";
 	import { resolveAssetPaths } from "../../lib/utils/resolveAssetPaths.js";
 
-	import SyllabusBar from "./SyllabusBar.svelte";
-
 	// --- state ---
 	let deck = $state(null);
 	let timer = $state(null);
-	let links = $state([]);
 
 	let deckEndTime = $state(0);
 	let root = $state(null);
@@ -24,9 +22,8 @@
 
 	let currentTime = $state(0);
 	let currentSlide = $state(null);
-	let showSidebar = $state(true);
 
-	// --- handlers ---
+	// --- controls ---
 	function handlePlayBtn() {
 		timer?.play();
 	}
@@ -42,27 +39,24 @@
 
 	function handleScrub(e) {
 		if (!timer) return;
-		const t = parseFloat(e.target.value) * (timer.duration ?? 1);
+		const t = parseFloat(e.target.value);
 		timer.seek(t);
 	}
 
-	function toggleSidebar() {
-		showSidebar = !showSidebar;
-	}
-
 	// --- load data ---
-	onMount(async () => {
-		timer = new Timer();
+  onMount(async () => {
+	timer = new Timer();
 
-		const res = await fetch("/data/specs/GoldenDeckV2-8Apr2026.json");
-		const json = await res.json();
-		deck = resolveAssetPaths(json, "/content/images/");
+	const params = get(page).url.searchParams;
+	const deckId = params.get('deck');
 
-		const resLinks = await fetch("/data/links.json");
-		links = await resLinks.json();
+	const res = await fetch(`/content/decks/GoldenDeckV2-8Apr2026.json`);
+	const json = await res.json();
+	deck = resolveAssetPaths(json, "/content/images/");
 
-		deckEndTime = getDeckEndTime(deck);
-	});
+	deckEndTime = getDeckEndTime(deck);
+	timer.duration = deckEndTime; // 🔥 critical fix
+});
 
 	// --- main loop ---
 	let interval;
@@ -98,7 +92,7 @@
 		if (interval) clearInterval(interval);
 	});
 
-	// --- initial render (first slide) ---
+	// --- initial render ---
 	$effect(() => {
 		if (!deck) return;
 
@@ -108,190 +102,108 @@
 		groups = result.groups;
 	});
 </script>
+
 <div class="root">
-  <div class="left">
-    <div class="stage" bind:this={root}>
-      {@html html}
-    </div>
+	<div class="stage" bind:this={root}>
+		{@html html}
+	</div>
 
-    <!-- ============= Bottom NavBar ============= -->
-    <div class="navbar">
-      <!-- controls -->
-      <div class="controls">
-        <button on:click={handlePlayBtn}>▶</button>
-        <button on:click={handlePauseBtn}>⏸</button>
-        <button on:click={handleStopBtn}>⏹</button>
-        <span class="time">{currentTime.toFixed(1)}/{deckEndTime}s</span>
-      </div>
+	<!-- Bottom NavBar -->
+	<div class="navbar">
+		<div class="controls">
+			<button on:click={handlePlayBtn}>▶</button>
+			<button on:click={handlePauseBtn}>⏸</button>
+			<button on:click={handleStopBtn}>⏹</button>
+			<span class="time">{currentTime.toFixed(1)}/{deckEndTime}s</span>
+		</div>
 
-      <!-- scrub -->
-      <div class="scrub-wrap">
-        <input
-          type="range"
-          min="0"
-          max={deckEndTime - 1}
-          step="1"
-          value={currentTime || 0}
-          on:input={handleScrub}
-        />
-      </div>
+		<div class="scrub-wrap">
+			<input
+				type="range"
+				min="0"
+				max={deckEndTime}
+				step="1"
+				value={currentTime || 0}
+				on:input={handleScrub}
+			/>
+		</div>
 
-      <!-- right -->
-      <div class="right">
-        <a href="/">←</a>
-        <button on:click={toggleSidebar}>▥</button>
-      </div>
-    </div>
-    <!-- ============= Bottom NavBar ============= -->
-  </div>
-
-  <div class="sidebar" class:hidden={!showSidebar}>
-    <SyllabusBar {links} />
-  </div>
+		<div class="right">
+			<a href="/">←</a>
+		</div>
+	</div>
 </div>
 
 <style>
-  @import "../../css/themes/dark.css";
-  @import "../../css/index.css";
-  @import "../../app.css";
+	@import "../../css/themes/dark.css";
+	@import "../../css/index.css";
+	@import "../../app.css";
 
-  .correct {
-  border: 2px solid #4caf50;
-  padding: 6px;
-  border-radius: 6px;
-}
+	:global(body) {
+		margin: 0;
+		padding: 0;
+		height: 100vh;
+		overflow: hidden;
+		background-color: #081b7a;
+	}
 
-/* wrong answer */
-.wrong {
-  border: 2px solid #f44336;
-  padding: 6px;
-  border-radius: 6px;
-}
+	.root {
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		height: 100vh;
+	}
 
-.remove {
-  display:none
-}
+	.stage {
+		flex: 1;
+		overflow: hidden;
+		position: relative;
+	}
 
-/* dimmed items */
-.dim {
-  opacity: 0.35;
-  transform: scale(0.98);
-}
+	.navbar {
+		height: 40px;
+		display: flex;
+		align-items: center;
+		padding: 0 10px;
+		gap: 8px;
+		border-top: 1px solid #333;
+		color: white;
+	}
 
-/* optional future */
-.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+	.controls {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
 
+	.time {
+		font-size: 13px;
+		white-space: nowrap;
+	}
 
-/* core classes */
-.hidden {
-  opacity: 0;
-  transform: translateY(8px);
-}
-  /* .hidden {
-    display: none;
-  } */
+	.scrub-wrap {
+		flex: 1;
+		display: flex;
+		align-items: center;
+	}
 
-  :global(body) {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #081b7a;
-  }
+	.scrub-wrap input {
+		width: 100%;
+	}
 
-  /* 🔥 GRID FIX (core change) */
-  .root {
-    display: grid;
-    grid-template-columns: 1fr 260px;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(16, 0, 0, 0.788);
-    transition: grid-template-columns 0.28s ease;
-  }
+	.right {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
 
-  /* when sidebar hidden → collapse column */
-  .root:has(.sidebar.hidden) {
-    grid-template-columns: 1fr 0px;
-  }
-
-  .left {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    overflow: hidden;
-  }
-
-  .stage {
-    flex: 1;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .sidebar {
-    overflow: hidden;
-    border-left: 1px solid #333;
-    opacity: 1;
-    transition: opacity 0.2s ease;
-  }
-
-  .sidebar.hidden {
-    opacity: 0;
-    border-left: none;
-  }
-
-  /* nav bar */
-
-  .navbar {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    gap: 8px;
-    border-top: 1px solid #333;
-    color: white;
-  }
-
-  .controls {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-shrink: 0;
-  }
-
-  .time {
-    font-size: 13px;
-    color: white;
-    white-space: nowrap;
-  }
-
-  .scrub-wrap {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    min-width: 0;
-  }
-
-  .scrub-wrap input {
-    width: 100%;
-  }
-
-  .right {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-shrink: 0;
-  }
-
-  button,
-  a {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-  }
+	button,
+	a {
+		background: none;
+		border: none;
+		cursor: pointer;
+		font-size: 16px;
+		text-decoration: none;
+		color: white;
+	}
 </style>
