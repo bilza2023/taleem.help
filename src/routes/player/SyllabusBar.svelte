@@ -29,7 +29,7 @@
 	<div class="list">
 		{#each filteredLinks as link (link)}
 			<a class="card" href={`/play/${link.deck}`}>
-				<img class="thumb" src={`/images/box.webp`} alt={link.title} />
+				<img class="thumb" src={`/content/images/box.webp`} alt={link.title} />
 				<div class="title">{link.title}</div>
 			</a>
 		{/each}
