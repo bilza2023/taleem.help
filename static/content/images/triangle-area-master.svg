@@ -1,0 +1,60 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1a2a"></stop>
+      <stop offset="100%" stop-color="#102a43"></stop>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="coloredBlur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"></rect>
+
+  <!-- Fun floating icons -->
+  <text x="150" y="120" font-size="40" fill="#8be9fd">📐</text>
+  <text x="1100" y="180" font-size="36" fill="#ffcc80">✏️</text>
+  <text x="200" y="650" font-size="36" fill="#a5d6a7">📏</text>
+
+  <!-- Triangle -->
+  <polygon points="300,550 1000,550 650,200" fill="rgba(255,255,255,0.05)" stroke="#ffffff" stroke-width="4"></polygon>
+
+  <!-- Base -->
+  <line x1="300" y1="550" x2="1000" y2="550" stroke="#4fc3f7" stroke-width="8"></line>
+
+  <!-- Height -->
+  <line x1="650" y1="200" x2="650" y2="550" stroke="#ffd54f" stroke-width="8" stroke-dasharray="10,8">
+
+    <!-- animation -->
+    <animate attributeName="stroke-dashoffset" from="0" to="18" dur="1s" repeatCount="indefinite"></animate>
+  </line>
+
+  <!-- Right angle marker -->
+  <rect x="640" y="530" width="20" height="20" fill="#ffd54f"></rect>
+
+  <!-- Labels -->
+  <text x="650" y="610" fill="#4fc3f7" font-size="32" text-anchor="middle">base 📏</text>
+
+  <text x="690" y="380" fill="#ffd54f" font-size="32">height ⟂</text>
+
+  <!-- Big Formula -->
+  <text x="640" y="100" fill="#e6d3a3" font-size="46" text-anchor="middle" filter="url(#glow)">
+    Area = ½ × base × height
+  </text>
+
+  <!-- Fun hint -->
+  <text x="640" y="150" fill="#8be9fd" font-size="22" text-anchor="middle">
+    Same base + same height = same area
+  </text>
+
+  <!-- Branding -->
+  <text x="1150" y="690" font-size="14" fill="#888">taleem.help</text>
+
+</svg>

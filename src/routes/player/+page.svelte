@@ -4,32 +4,45 @@
 	import { get } from "svelte/store";
 
 	import Player from "$lib/player/Player.svelte";
-	import { Timer } from "taleem-pam";
-
 	import { resolveAssetPaths } from "$lib/utils/resolveAssetPaths.js";
-    
+
+	import { getTimer } from "$lib/utils/getTimer.js";
+	import { Howl } from "howler";
+
 	const CONTENT_FOLDER = "/content";
-    // const CONTENT_IMAGES_FOLDER = "/workbench-content/images";
-	
+
 	// --- state ---
 	let deck = $state(null);
 	let timer = $state(null);
 
 	onMount(async () => {
-		timer = new Timer();
-
 		const params = get(page).url.searchParams;
-		let deckSlug = params.get("deck");
+		let deckSlug = params.get("deck") || "GoldenDeckV2-8Apr2026";
 
-		if (!deckSlug) {
-		deckSlug = "GoldenDeckV2-8Apr2026";
-		}
-		// const res = await fetch(`/content/decks/GoldenDeckV2-8Apr2026.json`);
-		
+		// 1. load deck
 		const res = await fetch(`${CONTENT_FOLDER}/decks/${deckSlug}.json`);
 		const json = await res.json();
 
 		deck = resolveAssetPaths(json, `${CONTENT_FOLDER}/images/`);
+
+		// 2. get timer (audio or silent)
+		timer = await getTimer({
+			slug: deckSlug,
+			deck,
+			Howl
+		});
+
+		// 3. start playback
+		const endTime = deck?.end || 0;
+
+			const stopWatcher = setInterval(() => {
+				if (!timer) return;
+
+				if (timer.now() >= endTime) {
+					timer.pause();   // stops audio OR timer
+					clearInterval(stopWatcher);
+				}
+			}, 200);
 	});
 </script>
 

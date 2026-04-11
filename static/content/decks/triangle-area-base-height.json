@@ -1,0 +1,139 @@
+{
+  "version": "taleem-deck-v2",
+  "name": "pythagorean-theorem-intro",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.3
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 5,
+      "data": [
+        {
+          "name": "title",
+          "content": "Pythagorean Theorem",
+          "timings": [
+            {
+              "time": 0,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "subtitle",
+          "content": "The most famous triangle rule",
+          "timings": [
+            {
+              "time": 0,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fillImage",
+      "start": 5,
+      "end": 10,
+      "data": [
+        {
+          "name": "image",
+          "content": "pythagorean-theorem.svg",
+          "timings": [
+            {
+              "time": 0,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 10,
+      "end": 25,
+      "data": [
+        {
+          "name": "image",
+          "content": "pythagorean-theorem.svg",
+          "timings": [
+            {
+              "time": 10,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "A right triangle has one 90° angle 📐",
+          "timings": [
+            {
+              "time": 12,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "The sides are named a, b, and c",
+          "timings": [
+            {
+              "time": 14,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "c is always the longest side (hypotenuse)",
+          "timings": [
+            {
+              "time": 16,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "The rule: a² + b² = c²",
+          "timings": [
+            {
+              "time": 18,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "This connects lengths to AREA idea 🟦",
+          "timings": [
+            {
+              "time": 20,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fillImage",
+      "start": 25,
+      "end": 40,
+      "data": [
+        {
+          "name": "image",
+          "content": "pythagorean-theorem-calculations.svg",
+          "timings": [
+            {
+              "time": 25,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

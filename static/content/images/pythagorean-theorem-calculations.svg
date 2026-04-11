@@ -1,0 +1,65 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#0b132b"></rect>
+
+  <!-- Title -->
+  <text x="640" y="80" text-anchor="middle" fill="#ffffff" font-size="44">
+    Find the Missing Side
+  </text>
+
+  <!-- LEFT: Triangle -->
+  <polygon points="350,520 350,320 650,520" fill="#ffffff" opacity="0.06" stroke="#ffffff" stroke-width="3"></polygon>
+
+  <!-- Right angle -->
+  <rect x="350" y="490" width="30" height="30" fill="#f4d35e"></rect>
+
+  <!-- Labels -->
+  <text x="300" y="420" fill="#3a86ff" font-size="32">a = 3</text>
+  <text x="480" y="560" fill="#ffd60a" font-size="32">b = 4</text>
+  <text x="520" y="420" fill="#ff4d6d" font-size="32">c = ? 🤔</text>
+
+  <!-- Divider -->
+  <line x1="720" y1="140" x2="720" y2="640" stroke="#ffffff" opacity="0.2"></line>
+
+  <!-- RIGHT: Steps -->
+
+  <!-- Step 1 -->
+  <text x="780" y="200" fill="#ffffff" font-size="32">
+    a² + b² = c²
+  </text>
+
+  <!-- Step 2 -->
+  <text x="780" y="260" fill="#ffffff" font-size="32">
+    3² + 4² = c²
+  </text>
+
+  <!-- Step 3 -->
+  <text x="780" y="320" fill="#ffffff" font-size="32">
+    9 + 16 = 25 😮
+  </text>
+
+  <!-- Step 4 -->
+  <text x="780" y="380" fill="#ffffff" font-size="32">
+    c² = 25
+  </text>
+
+  <!-- Step 5 -->
+  <text x="780" y="460" fill="#00e676" font-size="38">
+    c = 5 🎉
+  </text>
+
+  <!-- Highlight box -->
+  <rect x="760" y="430" width="320" height="60" fill="#00e676" opacity="0.1" stroke="#00e676" stroke-width="2"></rect>
+
+  <!-- Icons (from your UTF idea) -->
+  <text x="1050" y="200" font-size="32">🧠</text>
+  <text x="1050" y="320" font-size="32">⚡</text>
+  <text x="1050" y="460" font-size="32">✅</text>
+
+  <!-- Footer -->
+  <text x="1180" y="690" fill="#888" font-size="18" text-anchor="end">
+    taleem.help
+  </text>
+
+</svg>

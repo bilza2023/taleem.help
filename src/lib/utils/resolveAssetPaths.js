@@ -19,17 +19,20 @@ export function resolveAssetPaths(deck, IMG_BASE) {
   // -----------------------------
   deck.deck.forEach(slide => {
     slide.data?.forEach(item => {
-      // normal image slides
+      // -----------------------------
+      // normal image items
+      // -----------------------------
       if (item.name === "image" && typeof item.content === "string") {
         item.content = IMG_BASE + item.content.split("/").pop();
       }
 
       // -----------------------------
-      // EQ side-panel images (spImage)
+      // EQ side-panel items (spItems)
       // -----------------------------
       if (Array.isArray(item.spItems)) {
         item.spItems.forEach(sp => {
-          if (sp.type === "spImage" && typeof sp.content === "string") {
+          // 🔥 FIX: use `name === "image"` instead of `type`
+          if (sp.name === "image" && typeof sp.content === "string") {
             sp.content = IMG_BASE + sp.content.split("/").pop();
           }
         });

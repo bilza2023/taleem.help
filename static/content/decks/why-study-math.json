@@ -1,40 +1,23 @@
 {
   "version": "taleem-deck-v2",
-  "name": "skeleton-test",
+  "name": "why-study-math",
   "background": {
-    "backgroundColor": "#111111",
+    "backgroundColor": "#000000",
     "backgroundImage": null,
-    "backgroundImageOpacity": 0.3
+    "backgroundImageOpacity": 0
   },
   "deck": [
     {
       "type": "fillImage",
       "start": 0,
-      "end": 5,
-      "data": [
-        {
-          "name": "image",
-          "content": "svg-icons.svg",
-          "timings": [
-            {
-              "time": 0,
-              "event": "show"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "fillImage",
-      "start": 5,
       "end": 10,
       "data": [
         {
           "name": "image",
-          "content": "real-numbers.svg",
+          "content": "math-education-01.webp",
           "timings": [
             {
-              "time": 5,
+              "time": 0,
               "event": "show"
             }
           ]
@@ -48,7 +31,7 @@
       "data": [
         {
           "name": "image",
-          "content": "rational-numbers.svg",
+          "content": "math-education-02.webp",
           "timings": [
             {
               "time": 10,
@@ -65,7 +48,7 @@
       "data": [
         {
           "name": "image",
-          "content": "decimal-patterns.svg",
+          "content": "math-education-03.webp",
           "timings": [
             {
               "time": 20,
@@ -82,7 +65,7 @@
       "data": [
         {
           "name": "image",
-          "content": "irrational-numbers.svg",
+          "content": "math-education-04.webp",
           "timings": [
             {
               "time": 30,
@@ -99,7 +82,7 @@
       "data": [
         {
           "name": "image",
-          "content": "number-line-irrational.svg",
+          "content": "math-education-05.webp",
           "timings": [
             {
               "time": 40,

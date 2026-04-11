@@ -9,7 +9,7 @@
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"compile": "node scripts/compile.js",
-		"format": "prettier --write ."
+		"deck": "node cli/create-deck.js"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^2.0.4",
@@ -28,6 +28,7 @@
 		"vite": "^8.0.7"
 	},
 	"dependencies": {
+		"howler": "^2.2.4",
 		"taleem-action-runner": "^0.0.1",
 		"taleem-builder": "^1.2.0",
 		"taleem-pam": "^1.0.1",

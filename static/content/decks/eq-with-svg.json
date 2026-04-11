@@ -1,0 +1,265 @@
+{
+  "version": "taleem-deck-v2",
+  "name": "eq-with-svg",
+  "background": {
+    "backgroundColor": "#000000",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0
+  },
+  "deck": [
+    {
+      "type": "eq",
+      "start": 0,
+      "end": 14,
+      "data": [
+        {
+          "name": "heading",
+          "content": "Understanding Motion",
+          "timings": [
+            {
+              "time": 0,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "building the idea step by step"
+            },
+            {
+              "name": "image",
+              "content": "/eqsvg-distance-formula.svg"
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "content": "Object at rest",
+          "timings": [
+            {
+              "time": 2,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "no movement"
+            },
+            {
+              "name": "image",
+              "content": "/eqsvg-eq-svg.svg"
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "content": "Object starts moving",
+          "timings": [
+            {
+              "time": 4,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "position changes"
+            },
+            {
+              "name": "image",
+              "content": "/eqsvg-eq-svg.svg"
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "content": "Speed = distance / time",
+          "timings": [
+            {
+              "time": 6,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "how fast something moves"
+            },
+            {
+              "name": "image",
+              "content": "/eqsvg-distance-formulat.svg"
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "content": "More speed → more distance",
+          "timings": [
+            {
+              "time": 8,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "in same time"
+            },
+            {
+              "name": "image",
+              "content": "/eqsvg-distance-formulat.svg"
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "content": "Velocity = speed + direction",
+          "timings": [
+            {
+              "time": 10,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "direction matters"
+            },
+            {
+              "name": "image",
+              "content": "/eqsvg-velocity.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 14,
+      "end": 28,
+      "data": [
+        {
+          "name": "heading",
+          "content": "Acceleration Concept",
+          "timings": [
+            {
+              "time": 14,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "motion can change"
+            },
+            {
+              "name": "image",
+              "content": "/eqsvg-accelleration.svg"
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "content": "Same speed, different direction",
+          "timings": [
+            {
+              "time": 16,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "velocity changes"
+            },
+            {
+              "name": "image",
+              "content": "/eqsvg-velocity.svg"
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "content": "Acceleration = change in velocity",
+          "timings": [
+            {
+              "time": 18,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "Δv / t"
+            },
+            {
+              "name": "image",
+              "content": "/eqsvg-accelleration.svg"
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "content": "Speeding up",
+          "timings": [
+            {
+              "time": 20,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "positive acceleration"
+            },
+            {
+              "name": "image",
+              "content": "/eqsvg-accelleration.svg"
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "content": "Slowing down",
+          "timings": [
+            {
+              "time": 22,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "negative acceleration"
+            },
+            {
+              "name": "image",
+              "content": "/eqsvg-decelration.svg"
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "content": "Motion = speed + direction + change",
+          "timings": [
+            {
+              "time": 24,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "complete understanding 🎯"
+            },
+            {
+              "name": "image",
+              "content": "/eqsvg-eq-svg.svg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
