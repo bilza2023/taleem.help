@@ -1,38 +1,59 @@
 <script>
-	import { onMount } from "svelte";
-	import { page } from "$app/stores";
-	import { get } from "svelte/store";
-
-	import Player from "$lib/player/Player.svelte";
-	import { Timer } from "taleem-pam";
-
-	import { resolveAssetPaths } from "$lib/utils/resolveAssetPaths.js";
-    
-	const CONTENT_FOLDER = "/content";
-    // const CONTENT_IMAGES_FOLDER = "/workbench-content/images";
-	
-	// --- state ---
-	let deck = $state(null);
-	let timer = $state(null);
-
-	onMount(async () => {
-		timer = new Timer();
-
-		const params = get(page).url.searchParams;
-		let deckSlug = params.get("deck");
-
-		if (!deckSlug) {
-		deckSlug = "GoldenDeckV2-8Apr2026";
-		}
-		// const res = await fetch(`/content/decks/GoldenDeckV2-8Apr2026.json`);
-		
-		const res = await fetch(`${CONTENT_FOLDER}/decks/${deckSlug}.json`);
-		const json = await res.json();
-
-		deck = resolveAssetPaths(json, `${CONTENT_FOLDER}/images/`);
-	});
+	const { data } = $props();
 </script>
 
-{#if deck && timer}
-	<Player {deck} {timer} />
-{/if}
+<div class="wrapper">
+	<h1>📚 Deck Index</h1>
+
+	<div class="list">
+		{#each data.decks as deck}
+			<a class="item" href={`/player?deck=${deck.slug}`}>
+				{deck.name}
+			</a>
+		{/each}
+	</div>
+</div>
+
+<style>
+	.wrapper {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: #1e1e24; /* not too dark */
+		color: #fff;
+	}
+
+	h1 {
+		font-size: 32px;
+		margin-bottom: 24px;
+		font-weight: 600;
+	}
+
+	.list {
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.item {
+		display: block;
+		text-align: center;
+		padding: 16px;
+		border-radius: 10px;
+		font-size: 18px;
+		text-decoration: none;
+		color: #fff;
+		background: #2a2a33;
+		border: 1px solid #3a3a45;
+		transition: all 0.15s ease;
+	}
+
+	.item:hover {
+		background: #343441;
+		transform: scale(1.02);
+	}
+</style>
