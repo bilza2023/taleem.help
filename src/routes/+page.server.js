@@ -4,26 +4,23 @@ import path from "path";
 const DECKS_DIR = "/home/bilal-tariq/00--TALEEM/taleem-backoffice/static/content/decks";
 
 export function load() {
-  const files = fs.readdirSync(DECKS_DIR);
+	// safety
+	if (!fs.existsSync(DECKS_DIR)) {
+		return { decks: [] };
+	}
 
-  const decks = files
-    .filter((f) => f.endsWith(".json"))
-    .map((file) => {
-      const fullPath = path.join(DECKS_DIR, file);
-      const raw = fs.readFileSync(fullPath, "utf-8");
+	const files = fs.readdirSync(DECKS_DIR);
 
-      try {
-        const json = JSON.parse(raw);
+	const decks = files
+		.filter((f) => f.endsWith(".json"))
+		.map((file) => {
+			const slug = file.replace(".json", "");
 
-        return {
-          name: json.name || file,
-          slug: file.replace(".json", "") // 👈 important
-        };
-      } catch (e) {
-        return null;
-      }
-    })
-    .filter(Boolean);
+			return {
+				name: slug,
+				slug: slug
+			};
+		});
 
-  return { decks };
+	return { decks };
 }
