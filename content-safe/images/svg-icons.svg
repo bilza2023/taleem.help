@@ -1,0 +1,50 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#0f172a"/>
+
+  <!-- Soft gradient glow -->
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g1)"/>
+
+  <!-- Title -->
+  <text x="400" y="60" fill="#e2e8f0" font-size="26" text-anchor="middle" font-weight="600">
+    Learn Smarter
+  </text>
+
+  <!-- BIG ICONS (props) -->
+  <text x="200" y="230" font-size="120" text-anchor="middle">🧠</text>
+  <text x="400" y="230" font-size="120" text-anchor="middle">📚</text>
+  <text x="600" y="230" font-size="120" text-anchor="middle">⏱️</text>
+
+  <!-- Labels -->
+  <text x="200" y="300" fill="#38bdf8" font-size="18" text-anchor="middle">
+    Memory
+  </text>
+
+  <text x="400" y="300" fill="#4ade80" font-size="18" text-anchor="middle">
+    Practice
+  </text>
+
+  <text x="600" y="300" fill="#facc15" font-size="18" text-anchor="middle">
+    Time
+  </text>
+
+  <!-- Arrows (flow) -->
+  <path d="M260 210 C300 170, 340 170, 360 200" stroke="#38bdf8" stroke-width="2" fill="none"/>
+  <polygon points="360,200 350,195 352,205" fill="#38bdf8"/>
+
+  <path d="M460 210 C500 170, 540 170, 560 200" stroke="#facc15" stroke-width="2" fill="none"/>
+  <polygon points="560,200 550,195 552,205" fill="#facc15"/>
+
+  <!-- Bottom message -->
+  <text x="400" y="380" fill="#94a3b8" font-size="16" text-anchor="middle">
+    Use your brain • Practice actively • Give it time
+  </text>
+
+</svg>

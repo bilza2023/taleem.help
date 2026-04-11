@@ -1,0 +1,133 @@
+{
+    "version": "deck-v1",
+    "name": "Ratio and Proportion",
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Ratio and Proportion", "showAt": 0 },
+          { "name": "subtitle", "content": "Understanding relationships between quantities", "showAt": 1 }
+        ]
+      },
+  
+      {
+        "type": "fillImage",
+        "start": 6,
+        "end": 16,
+        "data": [
+          { "name": "image", "content": "ratio-proportion.png", "showAt": 6 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 16,
+        "end": 30,
+        "data": [
+          {
+            "name": "title",
+            "content": "What a ratio means",
+            "showAt": 16
+          },
+          {
+            "name": "para",
+            "content": "A ratio compares two quantities. It tells us how much of one thing there is compared to another.",
+            "showAt": 17
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 30,
+        "end": 44,
+        "data": [
+          { "name": "image", "content": "ratio-proportion.png", "showAt": 30 },
+          { "name": "bullet", "content": "Two groups are being compared", "showAt": 31 },
+          { "name": "bullet", "content": "Comparison focuses on relationship, not size", "showAt": 32 },
+          { "name": "bullet", "content": "Ratio describes relative quantity", "showAt": 33 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 44,
+        "end": 58,
+        "data": [
+          {
+            "name": "title",
+            "content": "Same ratio, larger groups",
+            "showAt": 44
+          },
+          {
+            "name": "para",
+            "content": "The number of items can increase, but if both quantities increase together, the ratio stays the same.",
+            "showAt": 45
+          }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 58,
+        "end": 72,
+        "data": [
+          { "name": "image", "content": "ratio-proportion.png", "showAt": 58 },
+          { "name": "bullet", "content": "Both quantities grow together", "showAt": 59 },
+          { "name": "bullet", "content": "Relationship does not change", "showAt": 60 },
+          { "name": "bullet", "content": "Ratio remains constant", "showAt": 61 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 72,
+        "end": 86,
+        "data": [
+          {
+            "name": "title",
+            "content": "Proportion",
+            "showAt": 72
+          },
+          {
+            "name": "para",
+            "content": "A proportion means that even when quantities change, their relationship remains the same.",
+            "showAt": 73
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 86,
+        "end": 100,
+        "data": [
+          { "name": "image", "content": "ratio-proportion.png", "showAt": 86 },
+          { "name": "bullet", "content": "Same relationship is preserved", "showAt": 87 },
+          { "name": "bullet", "content": "Values may change, ratio does not", "showAt": 88 },
+          { "name": "bullet", "content": "This idea is called proportion", "showAt": 89 }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 100,
+        "end": 110,
+        "data": [
+          {
+            "name": "quote",
+            "content": "Ratio compares quantities. Proportion keeps that comparison the same.",
+            "showAt": 100
+          },
+          {
+            "name": "author",
+            "content": "— Taleem Concept Note",
+            "showAt": 101
+          }
+        ]
+      }
+    ]
+  }
+  

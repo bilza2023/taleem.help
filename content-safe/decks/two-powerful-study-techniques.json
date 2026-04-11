@@ -1,0 +1,293 @@
+{
+  "version": "taleem-deck-v2",
+  "name": "two-powerful-study-techniques",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.3
+  },
+  "deck": [
+    {
+      "type": "imageWithTitle",
+      "start": 10,
+      "end": 20,
+      "data": [
+        {
+          "name": "title",
+          "content": "Two Powerful Study Techniques",
+          "timings": [
+            {
+              "time": 0,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "content": "two-powerful-study-techniques.svg",
+          "timings": [
+            {
+              "time": 0.5,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 20,
+      "end": 30,
+      "data": [
+        {
+          "name": "image",
+          "content": "active-recall.svg",
+          "timings": [
+            {
+              "time": 20,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Test yourself instead of re-reading",
+          "timings": [
+            {
+              "time": 22,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Force your brain to recall answers",
+          "timings": [
+            {
+              "time": 24,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "This strengthens memory",
+          "timings": [
+            {
+              "time": 26,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 30,
+      "end": 40,
+      "data": [
+        {
+          "name": "image",
+          "content": "active-recall.svg",
+          "timings": [
+            {
+              "time": 30,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Read a topic once, then close the book",
+          "timings": [
+            {
+              "time": 32,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Try to recall key points from memory",
+          "timings": [
+            {
+              "time": 34,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Use questions or flashcards to test yourself",
+          "timings": [
+            {
+              "time": 36,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Check answers and repeat",
+          "timings": [
+            {
+              "time": 38,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 40,
+      "end": 50,
+      "data": [
+        {
+          "name": "image",
+          "content": "spaced-repetition.svg",
+          "timings": [
+            {
+              "time": 40,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Review information over time",
+          "timings": [
+            {
+              "time": 42,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Increase gaps between revisions",
+          "timings": [
+            {
+              "time": 44,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "This improves long-term memory",
+          "timings": [
+            {
+              "time": 46,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 50,
+      "end": 60,
+      "data": [
+        {
+          "name": "image",
+          "content": "spaced-repetition.svg",
+          "timings": [
+            {
+              "time": 50,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Review after 1 day, then 3 days",
+          "timings": [
+            {
+              "time": 52,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Then review again after 1 week",
+          "timings": [
+            {
+              "time": 54,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Focus more on difficult topics",
+          "timings": [
+            {
+              "time": 56,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Use apps like flashcards to schedule",
+          "timings": [
+            {
+              "time": 58,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "start": 60,
+      "end": 75,
+      "data": [
+        {
+          "name": "bullet",
+          "content": "Use Active Recall to test your understanding",
+          "timings": [
+            {
+              "time": 60,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Use Spaced Repetition to review over time",
+          "timings": [
+            {
+              "time": 62,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Avoid passive re-reading and cramming",
+          "timings": [
+            {
+              "time": 64,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Combine both techniques for best results",
+          "timings": [
+            {
+              "time": 66,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

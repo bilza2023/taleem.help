@@ -7,7 +7,10 @@
 	import { Timer } from "taleem-pam";
 
 	import { resolveAssetPaths } from "$lib/utils/resolveAssetPaths.js";
-
+    
+	const CONTENT_FOLDER = "/workbench-content";
+    // const CONTENT_IMAGES_FOLDER = "/workbench-content/images";
+	
 	// --- state ---
 	let deck = $state(null);
 	let timer = $state(null);
@@ -23,10 +26,10 @@
 		}
 		// const res = await fetch(`/content/decks/GoldenDeckV2-8Apr2026.json`);
 		
-		const res = await fetch(`/content/decks/${deckSlug}.json`);
+		const res = await fetch(`${CONTENT_FOLDER}/decks/${deckSlug}.json`);
 		const json = await res.json();
 
-		deck = resolveAssetPaths(json, "/content/images/");
+		deck = resolveAssetPaths(json, `${CONTENT_FOLDER}/images/`);
 	});
 </script>
 

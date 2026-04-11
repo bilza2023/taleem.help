@@ -1,0 +1,49 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#111111"/>
+
+  <!-- LEFT: Brain -->
+  <circle cx="220" cy="220" r="75" stroke="#4FC3F7" stroke-width="3" fill="none"/>
+
+  <!-- Brain inner lines -->
+  <path d="M190 210 Q220 180 250 210" stroke="#4FC3F7" stroke-width="2" fill="none"/>
+  <path d="M190 240 Q220 270 250 240" stroke="#4FC3F7" stroke-width="2" fill="none"/>
+
+  <!-- CENTER: Flashcard -->
+  <rect x="350" y="160" width="120" height="90" rx="12" fill="#1E1E1E" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="410" y="205" fill="#FFD54F" font-size="28" text-anchor="middle">?</text>
+
+  <!-- RIGHT: Notes (faded) -->
+  <rect x="550" y="150" width="130" height="110" rx="10" fill="#222" stroke="#888" stroke-width="1"/>
+  <line x1="565" y1="180" x2="665" y2="180" stroke="#888" stroke-width="2"/>
+  <line x1="565" y1="210" x2="640" y2="210" stroke="#888" stroke-width="2"/>
+  <line x1="565" y1="240" x2="655" y2="240" stroke="#888" stroke-width="2"/>
+
+  <!-- Arrows (cycle) -->
+  <!-- Brain → Flashcard -->
+  <path d="M295 200 C320 180, 340 180, 350 190" stroke="#4FC3F7" stroke-width="2" fill="none"/>
+  <polygon points="350,190 340,185 342,195" fill="#4FC3F7"/>
+
+  <!-- Flashcard → Notes -->
+  <path d="M470 200 C500 180, 520 180, 550 190" stroke="#FFD54F" stroke-width="2" fill="none"/>
+  <polygon points="550,190 540,185 542,195" fill="#FFD54F"/>
+
+  <!-- Notes → Brain (faint loop back) -->
+  <path d="M550 240 C480 300, 320 300, 250 260" stroke="#81C784" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="250,260 260,255 255,245" fill="#81C784"/>
+
+  <!-- Glow around brain -->
+  <circle cx="220" cy="220" r="95" stroke="#4FC3F7" stroke-width="1" fill="none" opacity="0.15"/>
+
+  <!-- Labels -->
+  <text x="220" y="340" fill="#4FC3F7" font-size="16" text-anchor="middle">Memory</text>
+  <text x="410" y="300" fill="#FFD54F" font-size="16" text-anchor="middle">Recall</text>
+  <text x="615" y="300" fill="#81C784" font-size="16" text-anchor="middle">Notes</text>
+
+  <!-- Title hint inside SVG -->
+  <text x="400" y="50" fill="#FFFFFF" font-size="20" text-anchor="middle">
+    Learn by Retrieving, Not Re-reading
+  </text>
+
+</svg>

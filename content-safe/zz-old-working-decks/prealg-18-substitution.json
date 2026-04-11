@@ -1,0 +1,176 @@
+{
+    "version": "deck-v1",
+    "name": "Lesson 18 — Substitution in Expressions",
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Substitution in Expressions", "showAt": 0 },
+          {
+            "name": "subtitle",
+            "content": "Replacing variables with given values",
+            "showAt": 1
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 6,
+        "end": 20,
+        "data": [
+          {
+            "name": "title",
+            "content": "What is Substitution?",
+            "showAt": 6
+          },
+          {
+            "name": "para",
+            "content": "Substitution means replacing a variable in an expression with its given value. The structure of the expression stays the same.",
+            "showAt": 7
+          }
+        ]
+      },
+  
+      {
+        "type": "fillImage",
+        "start": 20,
+        "end": 32,
+        "data": [
+          {
+            "name": "image",
+            "content": "substitution.png",
+            "showAt": 20
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 32,
+        "end": 46,
+        "data": [
+          { "name": "image", "content": "substitution.png", "showAt": 32 },
+          {
+            "name": "bullet",
+            "content": "This is the original expression",
+            "showAt": 33
+          },
+          {
+            "name": "bullet",
+            "content": "It contains a variable",
+            "showAt": 34
+          },
+          {
+            "name": "bullet",
+            "content": "No values are replaced yet",
+            "showAt": 35
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 46,
+        "end": 60,
+        "data": [
+          {
+            "name": "title",
+            "content": "Given Value",
+            "showAt": 46
+          },
+          {
+            "name": "para",
+            "content": "A value is provided for the variable, such as a = 3. This tells us what number should replace the variable.",
+            "showAt": 47
+          }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 60,
+        "end": 74,
+        "data": [
+          { "name": "image", "content": "substitution.png", "showAt": 60 },
+          {
+            "name": "bullet",
+            "content": "Replace each variable with its value",
+            "showAt": 61
+          },
+          {
+            "name": "bullet",
+            "content": "Do not change the order",
+            "showAt": 62
+          },
+          {
+            "name": "bullet",
+            "content": "Do not solve yet",
+            "showAt": 63
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 74,
+        "end": 88,
+        "data": [
+          {
+            "name": "title",
+            "content": "New Expression",
+            "showAt": 74
+          },
+          {
+            "name": "para",
+            "content": "After substitution, the expression now contains only numbers. It is still an expression, not an answer.",
+            "showAt": 75
+          }
+        ]
+      },
+  
+      {
+        "type": "bulletList",
+        "start": 88,
+        "end": 102,
+        "data": [
+          {
+            "name": "bullet",
+            "content": "Substitution means replace, not solve",
+            "showAt": 88
+          },
+          {
+            "name": "bullet",
+            "content": "Structure stays the same",
+            "showAt": 89
+          },
+          {
+            "name": "bullet",
+            "content": "Only values change",
+            "showAt": 90
+          }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 102,
+        "end": 112,
+        "data": [
+          {
+            "name": "quote",
+            "content": "Replace first. Solve later.",
+            "showAt": 102
+          },
+          {
+            "name": "author",
+            "content": "— Pre-Algebra Rule",
+            "showAt": 103
+          }
+        ]
+      }
+    ]
+  }
+  

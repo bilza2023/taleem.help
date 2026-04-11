@@ -1,42 +1,238 @@
-# sv
+# Taleem Backoffice
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## 🎯 Mission
 
-## Creating a project
+Taleem Backoffice is a **content factory**.
 
-If you're seeing this, you've probably already done this step. Congrats!
+Its only responsibility is to produce a **clean, correct `/static/content` folder**.
 
-```sh
-# create a new project
-npx sv create my-app
+Nothing more.
+
+> If a deck exists in `/static/content`, it is **published**.
+> Everything else is ignored.
+
+---
+
+## 🧱 Core Principles
+
+### 1. Content is the only truth
+
+* All final decks live in:
+
+  `/static/content/decks/`
+
+* No database
+
+* No API
+
+* No abstraction layer
+
+---
+
+### 2. Deck = atomic unit
+
+* Each deck is independent
+* No hierarchy
+* No syllabus
+* No grouping
+
+---
+
+### 3. Filename ≠ Identity
+
+* File is always:
+
+```bash
+/workbench-content/the-deck.js
 ```
 
-To recreate this project with the same configuration:
+* Identity is:
 
-```sh
-# recreate this project
-npx sv@0.15.0 create --template minimal --no-types --add prettier eslint --install npm taleem.help
+```js
+deck.slug
 ```
 
-## Developing
+---
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### 4. Location defines state
 
-```sh
-npm run dev
+#### Workbench (not published)
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```bash
+/static/workbench-content/
+  the-deck.js
+  images/
+  audio/
 ```
 
-## Building
+* only ONE active deck
+* experimental
+* incomplete allowed
 
-To create a production version of your app:
+---
 
-```sh
-npm run build
+#### Content (published)
+
+```bash
+/static/content/
+  decks/{slug}.json
+  images/{slug}/
 ```
 
-You can preview the production build with `npm run preview`.
+* clean
+* validated
+* production ready
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+---
+
+## 🖼️ Image System
+
+### Workbench images
+
+```bash
+/static/workbench-content/images/
+```
+
+* free creation
+* experimentation allowed
+
+---
+
+### Gen images
+
+```bash
+/static/workbench-content/gen-*
+```
+
+* shared visuals
+* never copied
+* assumed to exist globally
+
+---
+
+### Published images
+
+```bash
+/static/content/images/{slug}/
+```
+
+* only used images
+* no unused files
+
+---
+
+## ⚙️ CLI System
+
+All publishing is done via CLI.
+
+```bash
+node cli/done.js
+```
+
+---
+
+## 🚀 done CLI Responsibilities
+
+### 1. Load deck
+
+```bash
+/workbench-content/the-deck.js
+```
+
+---
+
+### 2. Extract slug
+
+```js
+deck.slug
+```
+
+---
+
+### 3. Handle slug conflicts
+
+If slug exists:
+
+* Overwrite (requires typing `OVERWRITE`)
+* Rename (must be unique)
+* Cancel
+
+---
+
+### 4. Validate deck
+
+* Must match schema
+* Must be playable
+
+---
+
+### 5. Extract image usage
+
+* Scan deck for all images
+
+---
+
+### 6. Handle image conflicts
+
+For each image:
+
+* Overwrite (requires confirmation)
+* Rename
+* Skip
+
+---
+
+### 7. Copy images
+
+From:
+
+```bash
+/workbench-content/images/
+```
+
+To:
+
+```bash
+/static/content/images/{slug}/
+```
+
+* `gen-*` images are ignored
+
+---
+
+### 8. Generate JSON
+
+```bash
+/static/content/decks/{slug}.json
+```
+
+---
+
+## ❌ Explicit Non-Goals
+
+Backoffice does NOT handle:
+
+* syllabus
+* tags
+* hierarchy
+* search
+* API
+* runtime logic
+
+---
+
+## 🧠 Philosophy
+
+Backoffice produces **clean bricks**.
+
+It does not organize or interpret them.
+
+---
+
+## 💥 Final Principle
+
+> One working deck.
+> One publish command.
+> Clean output.
+
+---

@@ -1,0 +1,103 @@
+{
+    "version": "deck-v1",
+    "name": "SVG Demo – Layout Experiment",
+    "background": {
+      "backgroundColor": "#1e1e24",
+      "backgroundImage": "",
+      "backgroundImageOpacity": 0
+    },
+    "deck": [
+  
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 8,
+        "data": [
+          { "name": "title", "content": "Number Line – ImageWithTitle", "showAt": 0 },
+          { "name": "image", "content": "svg-demo1.svg", "showAt": 0 }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 8,
+        "end": 18,
+        "data": [
+          { "name": "image", "content": "svg-demo1.svg", "showAt": 8 },
+          { "name": "bullet", "content": "Vector sharpness", "showAt": 10 },
+          { "name": "bullet", "content": "Reusable template", "showAt": 12 },
+          { "name": "bullet", "content": "Precise positioning", "showAt": 14 }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 18,
+        "end": 28,
+        "data": [
+          { "name": "image", "content": "svg-demo2.svg", "showAt": 18 },
+          { "name": "bullet", "content": "Clean grid lines", "showAt": 20 },
+          { "name": "bullet", "content": "Sharp axes", "showAt": 22 },
+          { "name": "bullet", "content": "Equation rendering", "showAt": 24 }
+        ]
+      },
+  
+      {
+        "type": "imageWithTitle",
+        "start": 28,
+        "end": 36,
+        "data": [
+          { "name": "title", "content": "Linear Graph – Full Frame", "showAt": 28 },
+          { "name": "image", "content": "svg-demo2.svg", "showAt": 28 }
+        ]
+      },
+  
+      {
+        "type": "bulletList",
+        "start": 36,
+        "end": 46,
+        "data": [
+          { "name": "bullet", "content": "SVG is resolution independent.", "showAt": 36 },
+          { "name": "bullet", "content": "Perfect for math diagrams.", "showAt": 38 },
+          { "name": "bullet", "content": "Ideal for AI generation.", "showAt": 40 },
+          { "name": "bullet", "content": "Lightweight and scalable.", "showAt": 42 }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 46,
+        "end": 56,
+        "data": [
+          { "name": "image", "content": "svg-demo3.svg", "showAt": 46 },
+          { "name": "bullet", "content": "Clean triangle edges", "showAt": 48 },
+          { "name": "bullet", "content": "Angle markers sharp", "showAt": 50 },
+          { "name": "bullet", "content": "Consistent dark theme", "showAt": 52 }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 56,
+        "end": 66,
+        "data": [
+          { "name": "image", "content": "svg-demo3.svg", "showAt": 56 },
+          { "name": "bullet", "content": "Reusable geometry base", "showAt": 58 },
+          { "name": "bullet", "content": "Parametric modifications", "showAt": 60 },
+          { "name": "bullet", "content": "Perfect for proofs", "showAt": 62 }
+        ]
+      },
+  
+      {
+        "type": "imageWithTitle",
+        "start": 66,
+        "end": 74,
+        "data": [
+          { "name": "title", "content": "Number Line – Final Test", "showAt": 66 },
+          { "name": "image", "content": "svg-demo1.svg", "showAt": 66 }
+        ]
+      }
+  
+    ]
+  }
+  

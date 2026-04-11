@@ -1,0 +1,76 @@
+{
+    "version": "deck-v1",
+    "name": "Introduction to Physics",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Introduction to Physics", "showAt": 0 },
+          { "name": "image", "content": "everyDayItems.webp", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 5,
+        "end": 12,
+        "data": [
+          { "name": "image", "content": "appleFallingFromTree.webp", "showAt": 5 },
+          { "name": "bullet", "content": "Why does the apple fall down?", "showAt": 6 },
+          { "name": "bullet", "content": "Why does it not go up?", "showAt": 8 },
+          { "name": "bullet", "content": "Physics explains gravity.", "showAt": 10 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 12,
+        "end": 22,
+        "data": [
+          { "name": "image", "content": "everyDayItems.webp", "showAt": 12 },
+          { "name": "bullet", "content": "Fan works using electricity.", "showAt": 14 },
+          { "name": "bullet", "content": "Bulb produces light.", "showAt": 16 },
+          { "name": "bullet", "content": "Mobile phones use waves and energy.", "showAt": 18 },
+          { "name": "bullet", "content": "Physics makes modern life possible.", "showAt": 20 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 22,
+        "end": 32,
+        "data": [
+          { "name": "image", "content": "atom.png", "showAt": 22 },
+          { "name": "bullet", "content": "Everything around us is made of atoms.", "showAt": 24 },
+          { "name": "bullet", "content": "Atoms are extremely small.", "showAt": 26 },
+          { "name": "bullet", "content": "Physics studies how matter behaves.", "showAt": 28 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 32,
+        "end": 42,
+        "data": [
+          { "name": "image", "content": "carbon-atom.png", "showAt": 32 },
+          { "name": "bullet", "content": "Atoms combine to form molecules.", "showAt": 34 },
+          { "name": "bullet", "content": "Molecules form everything we see.", "showAt": 36 },
+          { "name": "bullet", "content": "Physics helps us understand structure of matter.", "showAt": 38 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 42,
+        "end": 52,
+        "data": [
+          { "name": "bullet", "content": "Physics explains motion, force and energy.", "showAt": 42 },
+          { "name": "bullet", "content": "It explains nature and technology.", "showAt": 45 },
+          { "name": "bullet", "content": "In this course, we will explore how the world works.", "showAt": 48 }
+        ]
+      }
+    ]
+  }
+  

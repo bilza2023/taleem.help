@@ -1,0 +1,51 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#0f172a"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.05">
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#fff"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#fff"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#fff"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="60" fill="#e2e8f0" font-size="26" text-anchor="middle" font-weight="600">
+    On the Number Line
+  </text>
+
+  <!-- Number line -->
+  <line x1="120" y1="240" x2="680" y2="240" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Ticks -->
+  <line x1="200" y1="230" x2="200" y2="250" stroke="#e2e8f0"/>
+  <line x1="300" y1="230" x2="300" y2="250" stroke="#e2e8f0"/>
+  <line x1="500" y1="230" x2="500" y2="250" stroke="#e2e8f0"/>
+
+  <!-- Labels -->
+  <text x="200" y="275" fill="#38bdf8" font-size="14" text-anchor="middle">1</text>
+  <text x="300" y="275" fill="#38bdf8" font-size="14" text-anchor="middle">2</text>
+
+  <!-- Irrational points -->
+  <circle cx="260" cy="240" r="5" fill="#facc15"/>
+  <text x="260" y="210" fill="#facc15" font-size="14" text-anchor="middle">√2</text>
+
+  <circle cx="540" cy="240" r="5" fill="#facc15"/>
+  <text x="540" y="210" fill="#facc15" font-size="14" text-anchor="middle">π</text>
+
+  <!-- Dense points hint -->
+  <g opacity="0.3">
+    <circle cx="420" cy="240" r="2" fill="#facc15"/>
+    <circle cx="430" cy="240" r="2" fill="#facc15"/>
+    <circle cx="440" cy="240" r="2" fill="#facc15"/>
+    <circle cx="450" cy="240" r="2" fill="#facc15"/>
+    <circle cx="460" cy="240" r="2" fill="#facc15"/>
+  </g>
+
+  <!-- Bottom hint -->
+  <text x="400" y="390" fill="#64748b" font-size="14" text-anchor="middle">
+    Infinitely many points exist between numbers
+  </text>
+
+</svg>

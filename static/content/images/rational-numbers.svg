@@ -1,0 +1,47 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#0f172a"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.05">
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#fff"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#fff"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#fff"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="60" fill="#38bdf8" font-size="26" text-anchor="middle" font-weight="600">
+    Rational Numbers
+  </text>
+
+  <!-- Main container -->
+  <rect x="120" y="120" width="560" height="220" rx="20" fill="#1e293b" opacity="0.6"/>
+
+  <!-- Examples -->
+  <text x="220" y="190" fill="#e2e8f0" font-size="18" text-anchor="middle">
+    1/2 → 0.5
+  </text>
+
+  <text x="400" y="190" fill="#e2e8f0" font-size="18" text-anchor="middle">
+    3/4 → 0.75
+  </text>
+
+  <text x="580" y="190" fill="#e2e8f0" font-size="18" text-anchor="middle">
+    1/3 → 0.333…
+  </text>
+
+  <!-- Divider -->
+  <line x1="200" y1="220" x2="600" y2="220" stroke="#334155" stroke-width="2"/>
+
+  <!-- Key property -->
+  <text x="400" y="270" fill="#94a3b8" font-size="18" text-anchor="middle">
+    Can be written as fractions
+  </text>
+
+  <!-- Bottom hint -->
+  <text x="400" y="390" fill="#64748b" font-size="14" text-anchor="middle">
+    Fractions → Decimals
+  </text>
+
+</svg>

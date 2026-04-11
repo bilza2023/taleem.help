@@ -1,0 +1,153 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 11",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 11 (a) and (b)", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 110,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$2y^2 - 3y - 27$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Part (a): Find the missing factor." },
+              { "type": "spText", "content": "Multiply first and last coefficients: 2 × (-27) = -54." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$-54 → -9 and 6$",
+            "showAt": 20,
+            "spItems": [
+              { "type": "spText", "content": "Find two numbers whose product is -54 and sum is -3." },
+              { "type": "spText", "content": "-9 + 6 = -3." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$2y^2 - 9y + 6y - 27$",
+            "showAt": 35,
+            "spItems": [
+              { "type": "spText", "content": "Split the middle term." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$y(2y - 9) + 3(2y - 9)$",
+            "showAt": 50,
+            "spItems": [
+              { "type": "spText", "content": "Factor by grouping." },
+              { "type": "spText", "content": "Common binomial appears." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(y + 3)(2y - 9)$",
+            "showAt": 70,
+            "spItems": [
+              { "type": "spText", "content": "Complete factorization." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Missing Factor (a): (2y - 9)",
+            "showAt": 90,
+            "spItems": [
+              { "type": "spText", "content": "Therefore, the required factor is (2y - 9)." },
+              { "type": "spText", "content": "Method Used: Splitting the Middle Term." }
+            ]
+          }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 110,
+        "end": 220,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$5x^2 + 12x - 9$",
+            "showAt": 110,
+            "spItems": [
+              { "type": "spText", "content": "Part (b): Find the missing factor." },
+              { "type": "spText", "content": "Multiply first and last coefficients: 5 × (-9) = -45." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$-45 → 15 and -3$",
+            "showAt": 125,
+            "spItems": [
+              { "type": "spText", "content": "Find numbers whose product is -45 and sum is 12." },
+              { "type": "spText", "content": "15 + (-3) = 12." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$5x^2 + 15x - 3x - 9$",
+            "showAt": 140,
+            "spItems": [
+              { "type": "spText", "content": "Split the middle term." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$5x(x + 3) - 3(x + 3)$",
+            "showAt": 155,
+            "spItems": [
+              { "type": "spText", "content": "Factor by grouping." },
+              { "type": "spText", "content": "Common binomial (x + 3) appears." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(5x - 3)(x + 3)$",
+            "showAt": 175,
+            "spItems": [
+              { "type": "spText", "content": "Complete factorization." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Missing Factor (b): (5x - 3)",
+            "showAt": 195,
+            "spItems": [
+              { "type": "spText", "content": "Therefore, the required factor is (5x - 3)." },
+              { "type": "spText", "content": "Method Used: Splitting the Middle Term." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

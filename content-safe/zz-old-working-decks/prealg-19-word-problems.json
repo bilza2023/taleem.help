@@ -1,0 +1,188 @@
+{
+    "version": "deck-v1",
+    "name": "Lesson 19 — Simple Word Problems (Pre-Algebra Style)",
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          {
+            "name": "title",
+            "content": "Simple Word Problems",
+            "showAt": 0
+          },
+          {
+            "name": "subtitle",
+            "content": "From real stories to math expressions",
+            "showAt": 1
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 6,
+        "end": 20,
+        "data": [
+          {
+            "name": "title",
+            "content": "A Different Way to Look at Word Problems",
+            "showAt": 6
+          },
+          {
+            "name": "para",
+            "content": "In pre-algebra, we do not rush to solve word problems. First, we understand the story and translate it into math language.",
+            "showAt": 7
+          }
+        ]
+      },
+  
+      {
+        "type": "fillImage",
+        "start": 20,
+        "end": 32,
+        "data": [
+          {
+            "name": "image",
+            "content": "word-problems.png",
+            "showAt": 20
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 32,
+        "end": 46,
+        "data": [
+          {
+            "name": "image",
+            "content": "word-problems.png",
+            "showAt": 32
+          },
+          {
+            "name": "bullet",
+            "content": "Real objects appear in the story",
+            "showAt": 33
+          },
+          {
+            "name": "bullet",
+            "content": "These objects represent quantities",
+            "showAt": 34
+          },
+          {
+            "name": "bullet",
+            "content": "We do not calculate yet",
+            "showAt": 35
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 46,
+        "end": 60,
+        "data": [
+          {
+            "name": "title",
+            "content": "Abstract Model",
+            "showAt": 46
+          },
+          {
+            "name": "para",
+            "content": "Instead of real objects, we use simple blocks and symbols. This step is called abstraction.",
+            "showAt": 47
+          }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 60,
+        "end": 74,
+        "data": [
+          {
+            "name": "image",
+            "content": "word-problems.png",
+            "showAt": 60
+          },
+          {
+            "name": "bullet",
+            "content": "Known quantities are shown as blocks",
+            "showAt": 61
+          },
+          {
+            "name": "bullet",
+            "content": "Unknown quantities are shown as X and Y",
+            "showAt": 62
+          },
+          {
+            "name": "bullet",
+            "content": "Both sides represent equal totals",
+            "showAt": 63
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 74,
+        "end": 88,
+        "data": [
+          {
+            "name": "title",
+            "content": "Math Expression",
+            "showAt": 74
+          },
+          {
+            "name": "para",
+            "content": "The abstract model is written as a math expression, such as 3 + X = 4 + Y. This represents the story in math form.",
+            "showAt": 75
+          }
+        ]
+      },
+  
+      {
+        "type": "bulletList",
+        "start": 88,
+        "end": 102,
+        "data": [
+          {
+            "name": "bullet",
+            "content": "Word problem is not solved yet",
+            "showAt": 88
+          },
+          {
+            "name": "bullet",
+            "content": "The goal is translation, not calculation",
+            "showAt": 89
+          },
+          {
+            "name": "bullet",
+            "content": "This is the heart of pre-algebra thinking",
+            "showAt": 90
+          }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 102,
+        "end": 112,
+        "data": [
+          {
+            "name": "quote",
+            "content": "First translate the story. Solving comes later.",
+            "showAt": 102
+          },
+          {
+            "name": "author",
+            "content": "— Pre-Algebra Mindset",
+            "showAt": 103
+          }
+        ]
+      }
+    ]
+  }
+  

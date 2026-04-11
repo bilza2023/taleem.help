@@ -1,0 +1,181 @@
+
+{
+  "version": "deck-v1",
+  "name": "Prime and Composite Numbers",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": "/physics_bg.webp",
+    "backgroundImageOpacity": 0.3
+  },
+
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 5,
+      "data": [
+        { "name": "title", "content": "Prime and Composite Numbers", "showAt": 0 },
+        { "name": "subtitle", "content": "Understanding numbers through factors", "showAt": 1 }
+      ]
+    },
+
+    {
+      "type": "titleAndPara",
+      "start": 5,
+      "end": 12,
+      "data": [
+        {
+          "name": "title",
+          "content": "How We Will Understand Numbers",
+          "showAt": 5
+        },
+        {
+          "name": "para",
+          "content": "We will not memorize rules. We will observe how many factors each number has.",
+          "showAt": 6
+        }
+      ]
+    },
+
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 12,
+      "end": 22,
+      "data": [
+        { "name": "image", "content": "prime_numbers.png", "showAt": 12 },
+        { "name": "bullet", "content": "2 has factors: 1 and 2", "showAt": 13 },
+        { "name": "bullet", "content": "3 has factors: 1 and 3", "showAt": 15 },
+        { "name": "bullet", "content": "5 has factors: 1 and 5", "showAt": 17 }
+      ]
+    },
+
+    {
+      "type": "titleAndPara",
+      "start": 22,
+      "end": 30,
+      "data": [
+        {
+          "name": "title",
+          "content": "Prime Numbers",
+          "showAt": 22
+        },
+        {
+          "name": "para",
+          "content": "A number that has exactly two factors — 1 and itself — is called a prime number.",
+          "showAt": 23
+        }
+      ]
+    },
+
+    {
+      "type": "imageSlide",
+      "start": 30,
+      "end": 38,
+      "data": [
+        { "name": "image", "content": "number_one.png", "showAt": 30 }
+      ]
+    },
+
+    {
+      "type": "titleAndPara",
+      "start": 38,
+      "end": 46,
+      "data": [
+        {
+          "name": "title",
+          "content": "Why 1 Is Special",
+          "showAt": 38
+        },
+        {
+          "name": "para",
+          "content": "The number 1 has only one factor. So it is neither prime nor composite.",
+          "showAt": 39
+        }
+      ]
+    },
+
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 46,
+      "end": 60,
+      "data": [
+        { "name": "image", "content": "composite_numbers.png", "showAt": 46 },
+        { "name": "bullet", "content": "4 has factors: 1, 2, 4", "showAt": 47 },
+        { "name": "bullet", "content": "6 has factors: 1, 2, 3, 6", "showAt": 50 },
+        { "name": "bullet", "content": "12 has factors: 1, 2, 3, 4, 6, 12", "showAt": 53 }
+      ]
+    },
+
+    {
+      "type": "titleAndPara",
+      "start": 60,
+      "end": 70,
+      "data": [
+        {
+          "name": "title",
+          "content": "Composite Numbers",
+          "showAt": 60
+        },
+        {
+          "name": "para",
+          "content": "Numbers that have more than two factors are called composite numbers.",
+          "showAt": 61
+        }
+      ]
+    },
+
+    {
+      "type": "twoColumnText",
+      "start": 70,
+      "end": 82,
+      "data": [
+        {
+          "name": "left",
+          "content": "Prime Numbers\nExactly two factors\nBasic building blocks",
+          "showAt": 70
+        },
+        {
+          "name": "right",
+          "content": "Composite Numbers\nMore than two factors\nMade from primes",
+          "showAt": 74
+        }
+      ]
+    },
+
+    {
+      "type": "titleAndPara",
+      "start": 82,
+      "end": 92,
+      "data": [
+        {
+          "name": "title",
+          "content": "Why This Idea Matters",
+          "showAt": 82
+        },
+        {
+          "name": "para",
+          "content": "Factorization, HCF, and LCM are all based on the idea of prime and composite numbers.",
+          "showAt": 83
+        }
+      ]
+    },
+
+    {
+      "type": "quoteSlide",
+      "start": 92,
+      "end": 100,
+      "data": [
+        {
+          "name": "quote",
+          "content": "If you understand factors, prime and composite numbers will never confuse you.",
+          "showAt": 92
+        },
+        {
+          "name": "author",
+          "content": "— Taleem",
+          "showAt": 94
+        }
+      ]
+    }
+  ]
+}

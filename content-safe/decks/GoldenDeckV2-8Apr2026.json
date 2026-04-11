@@ -1,0 +1,952 @@
+{
+  "version": "taleem-deck-v2",
+  "name": "Golden Deck V2 – Full Schema Coverage",
+  "background": {
+    "backgroundColor": "#000000",
+    "backgroundImage": null,
+    "backgroundImageOpacity": 0.3
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 10,
+      "data": [
+        {
+          "name": "title",
+          "content": "Taleem Slides",
+          "timings": [
+            {
+              "time": 0,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "subtitle",
+          "content": "A calm, structured way to present ideas",
+          "timings": [
+            {
+              "time": 3,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 10,
+      "end": 20,
+      "data": [
+        {
+          "name": "title",
+          "content": "What is Taleem Slides?",
+          "timings": [
+            {
+              "time": 10,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "para",
+          "content": "Taleem Slides is a simple system that turns structured data into clear visual slides. Each slide is predictable, controlled, and designed to help students understand ideas step by step.",
+          "timings": [
+            {
+              "time": 13,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "start": 20,
+      "end": 30,
+      "data": [
+        {
+          "name": "bullet",
+          "content": "Slides are generated from clean data",
+          "timings": [
+            {
+              "time": 20,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Nothing changes behind the scenes.However some lines do wrap.",
+          "timings": [
+            {
+              "time": 22,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "The author controls what appears",
+          "timings": [
+            {
+              "time": 24,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "The same lesson looks the same everywhere",
+          "timings": [
+            {
+              "time": 26,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "twoColumnText",
+      "start": 30,
+      "end": 40,
+      "data": [
+        {
+          "name": "leftText",
+          "content": "taleem-browser shows one complete slide at a time. Each slide appears fully and clearly.",
+          "timings": [
+            {
+              "time": 30,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "rightText",
+          "content": "taleem-player shows ideas gradually. Content appears step by step as the lesson progresses.",
+          "timings": [
+            {
+              "time": 34,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageSlide",
+      "start": 40,
+      "end": 50,
+      "data": [
+        {
+          "name": "image",
+          "content": "image.png",
+          "timings": [
+            {
+              "time": 40,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageWithTitle",
+      "start": 50,
+      "end": 60,
+      "data": [
+        {
+          "name": "title",
+          "content": "Visual Support Matters",
+          "timings": [
+            {
+              "time": 50,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "content": "image.png",
+          "timings": [
+            {
+              "time": 53,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageWithCaption",
+      "start": 60,
+      "end": 70,
+      "data": [
+        {
+          "name": "image",
+          "content": "image.png",
+          "timings": [
+            {
+              "time": 60,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "caption",
+          "content": "Images help anchor understanding",
+          "timings": [
+            {
+              "time": 63,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 70,
+      "end": 80,
+      "data": [
+        {
+          "name": "image",
+          "content": "image.png",
+          "timings": [
+            {
+              "time": 70,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Each slide focuses on one idea",
+          "timings": [
+            {
+              "time": 72,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Points are revealed in order",
+          "timings": [
+            {
+              "time": 74,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "No random or sudden changes",
+          "timings": [
+            {
+              "time": 76,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Students follow step by step",
+          "timings": [
+            {
+              "time": 78,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 80,
+      "end": 90,
+      "data": [
+        {
+          "name": "image",
+          "content": "image.png",
+          "timings": [
+            {
+              "time": 80,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Slides remain stable and predictable",
+          "timings": [
+            {
+              "time": 82,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "The teacher controls the pace",
+          "timings": [
+            {
+              "time": 84,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Students are never rushed",
+          "timings": [
+            {
+              "time": 86,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Learning stays calm and focused",
+          "timings": [
+            {
+              "time": 88,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "start": 90,
+      "end": 100,
+      "data": [
+        {
+          "name": "row",
+          "content": "Layer , Role",
+          "timings": [
+            {
+              "time": 90,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "row",
+          "content": "taleem-core , Defines the schema",
+          "timings": [
+            {
+              "time": 92,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "row",
+          "content": "taleem-slides , Renders slides",
+          "timings": [
+            {
+              "time": 94,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "row",
+          "content": "taleem-browser , Index-based viewing",
+          "timings": [
+            {
+              "time": 96,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "row",
+          "content": "taleem-player , Time-based playback",
+          "timings": [
+            {
+              "time": 98,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "barChart",
+      "start": 100,
+      "end": 110,
+      "data": [
+        {
+          "name": "bar",
+          "content": "Clarity",
+          "timings": [
+            {
+              "time": 100,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "value",
+              "content": 6
+            }
+          ]
+        },
+        {
+          "name": "bar",
+          "content": "Structure",
+          "timings": [
+            {
+              "time": 102,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "value",
+              "content": 5
+            }
+          ]
+        },
+        {
+          "name": "bar",
+          "content": "Visual Support",
+          "timings": [
+            {
+              "time": 104,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "value",
+              "content": 4
+            }
+          ]
+        },
+        {
+          "name": "bar",
+          "content": "Consistency",
+          "timings": [
+            {
+              "time": 106,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "value",
+              "content": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "progressbar",
+      "start": 110,
+      "end": 120,
+      "data": [
+        {
+          "name": "progress",
+          "content": "Lesson Progress",
+          "timings": [
+            {
+              "time": 110,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "value",
+              "content": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "quoteSlide",
+      "start": 120,
+      "end": 130,
+      "data": [
+        {
+          "name": "quote",
+          "content": "Clarity makes learning easier for everyone.",
+          "timings": [
+            {
+              "time": 120,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "author",
+          "content": "— Taleem",
+          "timings": [
+            {
+              "time": 123,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "keyIdeasSlide",
+      "start": 130,
+      "end": 140,
+      "data": [
+        {
+          "name": "card",
+          "content": "Focus",
+          "timings": [
+            {
+              "time": 130,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "icon",
+              "content": "🧠"
+            }
+          ]
+        },
+        {
+          "name": "card",
+          "content": "Clarity",
+          "timings": [
+            {
+              "time": 132,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "icon",
+              "content": "📘"
+            }
+          ]
+        },
+        {
+          "name": "card",
+          "content": "Pace",
+          "timings": [
+            {
+              "time": 134,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "icon",
+              "content": "⏱️"
+            }
+          ]
+        },
+        {
+          "name": "card",
+          "content": "Understanding",
+          "timings": [
+            {
+              "time": 136,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "icon",
+              "content": "🎯"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 140,
+      "end": 150,
+      "data": [
+        {
+          "name": "heading",
+          "content": "Structured Explanation",
+          "timings": [
+            {
+              "time": 140,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "This is the first like "
+            },
+            {
+              "name": "image",
+              "content": "/public/images/image.png"
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "content": "$(a + b)^2 = (a + b)(a + b)$",
+          "timings": [
+            {
+              "time": 143,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "2nd line side panel content"
+            },
+            {
+              "name": "image",
+              "content": "/public/images/box.webp"
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "content": "$= a^2 + 2ab + b^2$",
+          "timings": [
+            {
+              "time": 146,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
+              "name": "text",
+              "content": "This is spItem of the third line."
+            },
+            {
+              "name": "image",
+              "content": "/public/images/image.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fillImage",
+      "start": 150,
+      "end": 160,
+      "data": [
+        {
+          "name": "image",
+          "content": "image.png",
+          "timings": [
+            {
+              "time": 150,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "focusList",
+      "start": 160,
+      "end": 170,
+      "data": [
+        {
+          "name": "heading",
+          "content": "Step-by-step focus",
+          "timings": [
+            {
+              "time": 160,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Understand the idea",
+          "timings": [
+            {
+              "time": 162,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Break it into parts",
+          "timings": [
+            {
+              "time": 164,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Apply the method",
+          "timings": [
+            {
+              "time": 166,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "bullet",
+          "content": "Verify the result",
+          "timings": [
+            {
+              "time": 168,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 170,
+      "end": 180,
+      "data": [
+        {
+          "name": "image",
+          "content": "box.webp",
+          "timings": [
+            {
+              "time": 170,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "content": "image.png",
+          "timings": [
+            {
+              "time": 172,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "content": "box.webp",
+          "timings": [
+            {
+              "time": 174,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "content": "box.webp",
+          "timings": [
+            {
+              "time": 176,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "content": "whatisforce.webp",
+          "timings": [
+            {
+              "time": 177,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "content": "image.png",
+          "timings": [
+            {
+              "time": 178,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "imageGrid",
+      "start": 180,
+      "end": 190,
+      "data": [
+        {
+          "name": "image",
+          "content": "box.webp",
+          "timings": [
+            {
+              "time": 180,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "content": "whatisforce.webp",
+          "timings": [
+            {
+              "time": 182,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "content": "image.png",
+          "timings": [
+            {
+              "time": 183,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "content": "box.webp",
+          "timings": [
+            {
+              "time": 184,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "content": "whatisforce.webp",
+          "timings": [
+            {
+              "time": 185,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "content": "image.png",
+          "timings": [
+            {
+              "time": 186,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "skeleton",
+      "start": 190,
+      "end": 200,
+      "data": [
+        {
+          "name": "title",
+          "content": "Understanding Force",
+          "timings": [
+            {
+              "time": 190,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "content": "whatisforce.webp",
+          "timings": [
+            {
+              "time": 192,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "para",
+          "content": "Force is a push or pull that can change motion.",
+          "timings": [
+            {
+              "time": 194,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "textGrid",
+      "start": 200,
+      "end": 210,
+      "data": [
+        {
+          "name": "text",
+          "content": "Clear structure improves understanding",
+          "timings": [
+            {
+              "time": 200,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "text",
+          "content": "Each idea should be isolated",
+          "timings": [
+            {
+              "time": 202,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "text",
+          "content": "Visual layout reduces confusion",
+          "timings": [
+            {
+              "time": 204,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "text",
+          "content": "Clear structure improves understanding",
+          "timings": [
+            {
+              "time": 205,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "text",
+          "content": "Each idea should be isolated",
+          "timings": [
+            {
+              "time": 206,
+              "event": "show"
+            }
+          ]
+        },
+        {
+          "name": "text",
+          "content": "Visual layout reduces confusion",
+          "timings": [
+            {
+              "time": 207,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

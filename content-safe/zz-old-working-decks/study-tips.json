@@ -1,0 +1,145 @@
+{
+  "version": "deck-v1",
+  "name": "How to Revise Before Exams",
+
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": "/images/physics_bg.webp",
+    "backgroundImageOpacity": 0.25
+  },
+
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 5,
+      "data": [
+        {
+          "name": "title",
+          "content": "How to Revise Before Exams",
+          "showAt": 0
+        },
+        {
+          "name": "subtitle",
+          "content": "Simple habits for better results",
+          "showAt": 1
+        }
+      ]
+    },
+
+    {
+      "type": "titleAndPara",
+      "start": 5,
+      "end": 12,
+      "data": [
+        {
+          "name": "title",
+          "content": "Start Early and Plan",
+          "showAt": 5
+        },
+        {
+          "name": "para",
+          "content": "Do not wait for the last day. Make a simple plan and study a little every day.",
+          "showAt": 6
+        }
+      ]
+    },
+
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 12,
+      "end": 20,
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/calander.jpeg",
+          "showAt": 12
+        },
+        {
+          "name": "bullet",
+          "content": "Study in short sessions",
+          "showAt": 13
+        },
+        {
+          "name": "bullet",
+          "content": "Take small breaks",
+          "showAt": 14
+        },
+        {
+          "name": "bullet",
+          "content": "Revise the same topic again after a gap",
+          "showAt": 15
+        }
+      ]
+    },
+
+    {
+      "type": "bulletList",
+      "start": 20,
+      "end": 28,
+      "data": [
+        {
+          "name": "bullet",
+          "content": "Repeat important words and formulas",
+          "showAt": 20
+        },
+        {
+          "name": "bullet",
+          "content": "Revise after 1 day, then after a few days",
+          "showAt": 22
+        },
+        {
+          "name": "bullet",
+          "content": "This method is called spaced repetition",
+          "showAt": 24
+        }
+      ]
+    },
+
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 28,
+      "end": 36,
+      "data": [
+        {
+          "name": "image",
+          "content": "/images/study.jpeg",
+          "showAt": 28
+        },
+        {
+          "name": "bullet",
+          "content": "Practice questions instead of only reading",
+          "showAt": 29
+        },
+        {
+          "name": "bullet",
+          "content": "Test yourself regularly",
+          "showAt": 31
+        },
+        {
+          "name": "bullet",
+          "content": "Writing answers helps memory",
+          "showAt": 33
+        }
+      ]
+    },
+
+    {
+      "type": "quoteSlide",
+      "start": 36,
+      "end": 42,
+      "data": [
+        {
+          "name": "quote",
+          "content": "A calm and planned mind remembers better.",
+          "showAt": 36
+        },
+        {
+          "name": "author",
+          "content": "— Study Tip",
+          "showAt": 38
+        }
+      ]
+    }
+  ]
+}

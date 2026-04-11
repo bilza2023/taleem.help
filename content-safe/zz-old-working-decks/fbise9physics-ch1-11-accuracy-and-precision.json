@@ -1,0 +1,59 @@
+
+{
+    "version": "deck-v1",
+    "name": "Accuracy and Precision",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Accuracy and Precision", "showAt": 0 },
+          { "name": "image", "content": "vernier-caliper.png", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 5,
+        "end": 15,
+        "data": [
+          { "name": "title", "content": "What is Accuracy?", "showAt": 5 },
+          { "name": "para", "content": "Accuracy refers to how close a measured value is to the true or actual value.", "showAt": 8 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 15,
+        "end": 25,
+        "data": [
+          { "name": "title", "content": "What is Precision?", "showAt": 15 },
+          { "name": "para", "content": "Precision refers to how close repeated measurements are to each other, regardless of their closeness to the true value.", "showAt": 18 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 25,
+        "end": 38,
+        "data": [
+          { "name": "bullet", "content": "High accuracy means correct measurement.", "showAt": 25 },
+          { "name": "bullet", "content": "High precision means consistent measurement.", "showAt": 28 },
+          { "name": "bullet", "content": "A measurement can be precise but not accurate.", "showAt": 31 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 38,
+        "end": 50,
+        "data": [
+          { "name": "title", "content": "Improving Measurements", "showAt": 38 },
+          { "name": "para", "content": "Calibrating instruments improves accuracy, while taking repeated readings improves precision.", "showAt": 41 }
+        ]
+      }
+    ]
+  }
+  

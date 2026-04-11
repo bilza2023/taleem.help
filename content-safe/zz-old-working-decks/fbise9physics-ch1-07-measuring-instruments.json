@@ -1,0 +1,63 @@
+{
+    "version": "deck-v1",
+    "name": "Measuring Instruments Overview",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Measuring Instruments", "showAt": 0 },
+          { "name": "image", "content": "ruler.png", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 5,
+        "end": 14,
+        "data": [
+          { "name": "title", "content": "Why Do We Need Instruments?", "showAt": 5 },
+          { "name": "para", "content": "Different physical quantities require different measuring instruments depending on the level of accuracy needed.", "showAt": 7 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 14,
+        "end": 26,
+        "data": [
+          { "name": "image", "content": "ruler.png", "showAt": 14 },
+          { "name": "bullet", "content": "Meter rule measures up to 30 cm.", "showAt": 16 },
+          { "name": "bullet", "content": "Smallest division is 1 mm.", "showAt": 19 },
+          { "name": "bullet", "content": "Used for ordinary measurements.", "showAt": 22 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 26,
+        "end": 40,
+        "data": [
+          { "name": "image", "content": "vernier-caliper.png", "showAt": 26 },
+          { "name": "bullet", "content": "Measures internal and external dimensions.", "showAt": 28 },
+          { "name": "bullet", "content": "Measures depth of objects.", "showAt": 31 },
+          { "name": "bullet", "content": "More precise than meter rule.", "showAt": 34 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 40,
+        "end": 55,
+        "data": [
+          { "name": "image", "content": "screw-guage.png", "showAt": 40 },
+          { "name": "bullet", "content": "Measures very small thickness.", "showAt": 42 },
+          { "name": "bullet", "content": "Used for wire diameter.", "showAt": 45 },
+          { "name": "bullet", "content": "Highest precision among the three.", "showAt": 48 }
+        ]
+      }
+    ]
+  }
+  

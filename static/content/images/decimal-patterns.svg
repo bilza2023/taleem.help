@@ -1,0 +1,63 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#0f172a"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.05">
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#fff"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#fff"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#fff"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="60" fill="#e2e8f0" font-size="26" text-anchor="middle" font-weight="600">
+    Decimal Patterns
+  </text>
+
+  <!-- Three columns container -->
+  <rect x="100" y="110" width="600" height="240" rx="20" fill="#1e293b" opacity="0.6"/>
+
+  <!-- Column dividers -->
+  <line x1="300" y1="110" x2="300" y2="350" stroke="#334155"/>
+  <line x1="500" y1="110" x2="500" y2="350" stroke="#334155"/>
+
+  <!-- Terminating -->
+  <text x="200" y="160" fill="#38bdf8" font-size="18" text-anchor="middle" font-weight="600">
+    Terminating
+  </text>
+  <text x="200" y="220" fill="#e2e8f0" font-size="18" text-anchor="middle">
+    0.5
+  </text>
+  <text x="200" y="250" fill="#94a3b8" font-size="16" text-anchor="middle">
+    Ends
+  </text>
+
+  <!-- Repeating -->
+  <text x="400" y="160" fill="#38bdf8" font-size="18" text-anchor="middle" font-weight="600">
+    Repeating
+  </text>
+  <text x="400" y="220" fill="#e2e8f0" font-size="18" text-anchor="middle">
+    0.333…
+  </text>
+  <text x="400" y="250" fill="#94a3b8" font-size="16" text-anchor="middle">
+    Pattern repeats
+  </text>
+
+  <!-- Non-repeating -->
+  <text x="600" y="160" fill="#facc15" font-size="18" text-anchor="middle" font-weight="600">
+    ?
+  </text>
+  <text x="600" y="220" fill="#facc15" font-size="18" text-anchor="middle">
+    1.414213…
+  </text>
+  <text x="600" y="250" fill="#94a3b8" font-size="16" text-anchor="middle">
+    No pattern
+  </text>
+
+  <!-- Bottom hint -->
+  <text x="400" y="390" fill="#64748b" font-size="14" text-anchor="middle">
+    Some decimals behave differently
+  </text>
+
+</svg>

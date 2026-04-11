@@ -1,0 +1,73 @@
+{
+  "name": "Number Families — Big Picture",
+  "version": "deck-v1",
+  "background": {
+    "backgroundColor": "#0f172a",
+    "backgroundImage": "rational-vs-irrational-numbers.png",
+    "backgroundImageOpacity": 0.07
+  },
+  "deck": [
+    {
+      "start": 0,
+      "end": 5,
+      "type": "titleAndSubtitle",
+      "data": [
+        {
+          "name": "title",
+          "content": "Rational vs Irrational Numbers",
+          "showAt": 0
+        },
+        {
+          "name": "subtitle",
+          "content": "Numbers with pattern vs numbers without pattern",
+          "showAt": 1
+        }
+      ]
+    },
+    {
+      "start": 5,
+      "end": 10,
+      "type": "imageWithTitle",
+      "data": [
+        {
+          "name": "title",
+          "content": "Some Numbers Follow Patterns, Some Do Not",
+          "showAt": 5
+        },
+        {
+          "name": "image",
+          "content": "rational-vs-irrational-numbers.png",
+          "showAt": 6
+        }
+      ]
+    },
+    {
+      "start": 10,
+      "end": 20,
+      "type": "eq",
+      "data": [
+        {
+          "name": "line",
+          "type": "math",
+          "content": "Rational Number = p / q",
+          "showAt": 10,
+          "spItems": []
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "Decimal Form",
+          "showAt": 13,
+          "spItems": []
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "Key Idea",
+          "showAt": 16,
+          "spItems": []
+        }
+      ]
+    }
+  ]
+}

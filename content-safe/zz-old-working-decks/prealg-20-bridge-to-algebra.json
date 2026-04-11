@@ -1,0 +1,188 @@
+{
+    "version": "deck-v1",
+    "name": "Lesson 20 — Bridge to Algebra",
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          {
+            "name": "title",
+            "content": "Bridge to Algebra",
+            "showAt": 0
+          },
+          {
+            "name": "subtitle",
+            "content": "What comes next after arithmetic",
+            "showAt": 1
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 6,
+        "end": 20,
+        "data": [
+          {
+            "name": "title",
+            "content": "Two Worlds",
+            "showAt": 6
+          },
+          {
+            "name": "para",
+            "content": "Arithmetic and algebra may look different, but they are closely connected. One grows naturally into the other.",
+            "showAt": 7
+          }
+        ]
+      },
+  
+      {
+        "type": "fillImage",
+        "start": 20,
+        "end": 32,
+        "data": [
+          {
+            "name": "image",
+            "content": "bridge-to-algebra.png",
+            "showAt": 20
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 32,
+        "end": 46,
+        "data": [
+          {
+            "name": "image",
+            "content": "bridge-to-algebra.png",
+            "showAt": 32
+          },
+          {
+            "name": "bullet",
+            "content": "Arithmetic works with fixed numbers",
+            "showAt": 33
+          },
+          {
+            "name": "bullet",
+            "content": "Counting and operations are clear",
+            "showAt": 34
+          },
+          {
+            "name": "bullet",
+            "content": "Every value is known",
+            "showAt": 35
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 46,
+        "end": 60,
+        "data": [
+          {
+            "name": "title",
+            "content": "Crossing the Bridge",
+            "showAt": 46
+          },
+          {
+            "name": "para",
+            "content": "As we move forward, numbers begin to mix with letters. The rules stay the same, but the values become unknown.",
+            "showAt": 47
+          }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 60,
+        "end": 74,
+        "data": [
+          {
+            "name": "image",
+            "content": "bridge-to-algebra.png",
+            "showAt": 60
+          },
+          {
+            "name": "bullet",
+            "content": "Letters represent unknown values",
+            "showAt": 61
+          },
+          {
+            "name": "bullet",
+            "content": "Expressions replace simple numbers",
+            "showAt": 62
+          },
+          {
+            "name": "bullet",
+            "content": "The logic stays familiar",
+            "showAt": 63
+          }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 74,
+        "end": 88,
+        "data": [
+          {
+            "name": "title",
+            "content": "Algebra World",
+            "showAt": 74
+          },
+          {
+            "name": "para",
+            "content": "In algebra, we work with expressions like x + 2y and 3a − 5. These come directly from arithmetic thinking.",
+            "showAt": 75
+          }
+        ]
+      },
+  
+      {
+        "type": "bulletList",
+        "start": 88,
+        "end": 102,
+        "data": [
+          {
+            "name": "bullet",
+            "content": "Algebra is not a new subject",
+            "showAt": 88
+          },
+          {
+            "name": "bullet",
+            "content": "It is the next step of arithmetic",
+            "showAt": 89
+          },
+          {
+            "name": "bullet",
+            "content": "You are already on the bridge",
+            "showAt": 90
+          }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 102,
+        "end": 112,
+        "data": [
+          {
+            "name": "quote",
+            "content": "You don’t jump into algebra. You walk into it.",
+            "showAt": 102
+          },
+          {
+            "name": "author",
+            "content": "— Pre-Algebra Insight",
+            "showAt": 103
+          }
+        ]
+      }
+    ]
+  }
+  

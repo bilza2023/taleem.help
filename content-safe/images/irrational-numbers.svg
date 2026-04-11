@@ -1,0 +1,54 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#0f172a"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.05">
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#fff"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#fff"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#fff"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="60" fill="#facc15" font-size="26" text-anchor="middle" font-weight="600">
+    Irrational Numbers
+  </text>
+
+  <!-- Main container -->
+  <rect x="120" y="110" width="560" height="240" rx="20" fill="#1e293b" opacity="0.6"/>
+
+  <!-- Examples (centered focus) -->
+  <text x="400" y="180" fill="#e2e8f0" font-size="20" text-anchor="middle">
+    √2
+  </text>
+
+  <text x="400" y="215" fill="#e2e8f0" font-size="20" text-anchor="middle">
+    π
+  </text>
+
+  <text x="400" y="250" fill="#facc15" font-size="20" text-anchor="middle">
+    1.41421356…
+  </text>
+
+  <!-- Divider -->
+  <line x1="200" y1="280" x2="600" y2="280" stroke="#334155" stroke-width="2"/>
+
+  <!-- Key properties -->
+  <text x="400" y="310" fill="#94a3b8" font-size="18" text-anchor="middle">
+    Non-terminating
+  </text>
+
+  <text x="400" y="335" fill="#94a3b8" font-size="18" text-anchor="middle">
+    Non-repeating
+  </text>
+
+  <!-- Subtle highlight glow -->
+  <circle cx="400" cy="215" r="90" stroke="#facc15" stroke-width="1" fill="none" opacity="0.15"/>
+
+  <!-- Bottom hint -->
+  <text x="400" y="390" fill="#64748b" font-size="14" text-anchor="middle">
+    Cannot be written as fractions
+  </text>
+
+</svg>

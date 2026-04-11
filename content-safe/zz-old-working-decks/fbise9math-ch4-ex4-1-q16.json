@@ -1,0 +1,89 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 16",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 16", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 150,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$4x^4 + 256y^4$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Take out the common factor." },
+              { "type": "spText", "content": "Both terms are divisible by 4." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$4(x^4 + 64y^4)$",
+            "showAt": 25,
+            "spItems": [
+              { "type": "spText", "content": "Factor out 4." },
+              { "type": "spText", "content": "Now focus on x⁴ + 64y⁴." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$64y^4 = 4(4y^2)^2$",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "Rewrite 64y⁴ as 4(4y²)²." },
+              { "type": "spText", "content": "Now expression matches a⁴ + 4b⁴." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^4 + 4(4y^2)^2$",
+            "showAt": 65,
+            "spItems": [
+              { "type": "spText", "content": "Let a = x and b = 4y²." },
+              { "type": "spText", "content": "Apply identity for a⁴ + 4b⁴." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x^2 - 4xy^2 + 8y^2)(x^2 + 4xy^2 + 8y^2)$",
+            "showAt": 85,
+            "spItems": [
+              { "type": "spText", "content": "Use identity: a⁴ + 4b⁴ = (a² - 2ab + 2b²)(a² + 2ab + 2b²)." },
+              { "type": "spText", "content": "Substitute carefully." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: 4(x^2 - 4xy^2 + 8y^2)(x^2 + 4xy^2 + 8y^2)",
+            "showAt": 110,
+            "spItems": [
+              { "type": "spText", "content": "Method Used: Common Factor + a⁴ + 4b⁴ Identity." },
+              { "type": "spText", "content": "Always reduce first before applying special identities." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

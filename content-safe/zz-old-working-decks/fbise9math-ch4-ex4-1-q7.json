@@ -1,0 +1,89 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 7",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 7", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 95,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 - 6ax + 9a^2 - 16b^2$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Group the first three terms together." },
+              { "type": "spText", "content": "Check if x² - 6ax + 9a² forms a perfect square." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 - 6ax + 9a^2 = (x - 3a)^2$",
+            "showAt": 20,
+            "spItems": [
+              { "type": "spText", "content": "Because (x)² = x² and (3a)² = 9a²." },
+              { "type": "spText", "content": "The middle term -6ax equals -2×x×3a." },
+              { "type": "spText", "content": "So it matches a² - 2ab + b²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x - 3a)^2 - 16b^2$",
+            "showAt": 40,
+            "spItems": [
+              { "type": "spText", "content": "Now rewrite the expression using the perfect square." },
+              { "type": "spText", "content": "Notice 16b² = (4b)²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x - 3a)^2 - (4b)^2$",
+            "showAt": 55,
+            "spItems": [
+              { "type": "spText", "content": "This is now a difference of two squares." },
+              { "type": "spText", "content": "Apply identity: a² - b² = (a - b)(a + b)." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x - 3a - 4b)(x - 3a + 4b)$",
+            "showAt": 70,
+            "spItems": [
+              { "type": "spText", "content": "Here a = (x - 3a) and b = 4b." },
+              { "type": "spText", "content": "Final Answer: (x - 3a - 4b)(x - 3a + 4b)." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Method Used: Perfect Square + Difference of Squares",
+            "showAt": 85,
+            "spItems": [
+              { "type": "spText", "content": "Always check for perfect square trinomials first." },
+              { "type": "spText", "content": "Then see if the remaining expression forms a difference of squares." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

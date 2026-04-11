@@ -1,0 +1,50 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#111111"/>
+
+  <!-- Divider -->
+  <line x1="400" y1="60" x2="400" y2="390" stroke="#333" stroke-width="2"/>
+
+  <!-- LEFT: Active Recall -->
+  <!-- Brain circle -->
+  <circle cx="200" cy="200" r="70" stroke="#4FC3F7" stroke-width="3" fill="none"/>
+
+  <!-- Arrows (recall) -->
+  <line x1="200" y1="200" x2="260" y2="140" stroke="#4FC3F7" stroke-width="2"/>
+  <polygon points="260,140 250,145 255,155" fill="#4FC3F7"/>
+
+  <line x1="200" y1="200" x2="270" y2="200" stroke="#4FC3F7" stroke-width="2"/>
+  <polygon points="270,200 260,195 260,205" fill="#4FC3F7"/>
+
+  <line x1="200" y1="200" x2="260" y2="260" stroke="#4FC3F7" stroke-width="2"/>
+  <polygon points="260,260 250,255 255,245" fill="#4FC3F7"/>
+
+  <!-- Label -->
+  <text x="200" y="320" fill="#FFFFFF" font-size="18" text-anchor="middle">
+    Active Recall
+  </text>
+
+  <!-- RIGHT: Spaced Repetition -->
+  <!-- Timeline -->
+  <line x1="500" y1="200" x2="700" y2="200" stroke="#81C784" stroke-width="3"/>
+
+  <!-- Dots (increasing spacing) -->
+  <circle cx="510" cy="200" r="5" fill="#81C784"/>
+  <circle cx="550" cy="200" r="5" fill="#81C784"/>
+  <circle cx="610" cy="200" r="5" fill="#81C784"/>
+  <circle cx="690" cy="200" r="5" fill="#81C784"/>
+
+  <!-- Label -->
+  <text x="600" y="320" fill="#FFFFFF" font-size="18" text-anchor="middle">
+    Spaced Repetition
+  </text>
+
+  <!-- CENTER: Result -->
+  <circle cx="400" cy="200" r="40" stroke="#FFD54F" stroke-width="3" fill="none"/>
+
+  <text x="400" y="205" fill="#FFD54F" font-size="14" text-anchor="middle">
+    Memory ↑
+  </text>
+
+</svg>

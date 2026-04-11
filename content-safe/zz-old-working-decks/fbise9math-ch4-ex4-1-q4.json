@@ -1,0 +1,87 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 4",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 4", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 75,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(k + 2)^2 - 8(k + 2) + 16$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Notice the repeated expression (k + 2)." },
+              { "type": "spText", "content": "Let us substitute (k + 2) = t to simplify." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$t^2 - 8t + 16$",
+            "showAt": 15,
+            "spItems": [
+              { "type": "spText", "content": "Now we have a quadratic expression in t." },
+              { "type": "spText", "content": "Check if it forms a perfect square." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$t^2 - 8t + 16 = (t - 4)^2$",
+            "showAt": 30,
+            "spItems": [
+              { "type": "spText", "content": "Since 16 = 4² and -8t = -2×4×t." },
+              { "type": "spText", "content": "It matches the identity a² - 2ab + b²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(k + 2 - 4)^2$",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "Substitute back t = (k + 2)." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(k - 2)^2$",
+            "showAt": 55,
+            "spItems": [
+              { "type": "spText", "content": "Simplify inside the bracket." },
+              { "type": "spText", "content": "Final Answer: (k - 2)²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Method Used: Substitution + Perfect Square Identity",
+            "showAt": 65,
+            "spItems": [
+              { "type": "spText", "content": "Whenever a bracketed expression repeats, use substitution." },
+              { "type": "spText", "content": "This converts complex forms into simple quadratics." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

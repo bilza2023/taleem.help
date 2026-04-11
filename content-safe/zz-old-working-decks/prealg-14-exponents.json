@@ -1,0 +1,133 @@
+{
+    "version": "deck-v1",
+    "name": "Powers and Exponents",
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Powers and Exponents", "showAt": 0 },
+          { "name": "subtitle", "content": "Basics of repeated multiplication", "showAt": 1 }
+        ]
+      },
+  
+      {
+        "type": "fillImage",
+        "start": 6,
+        "end": 16,
+        "data": [
+          { "name": "image", "content": "exponents.png", "showAt": 6 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 16,
+        "end": 30,
+        "data": [
+          {
+            "name": "title",
+            "content": "Repeated multiplication",
+            "showAt": 16
+          },
+          {
+            "name": "para",
+            "content": "When the same number is multiplied by itself again and again, we call it repeated multiplication.",
+            "showAt": 17
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 30,
+        "end": 46,
+        "data": [
+          { "name": "image", "content": "exponents.png", "showAt": 30 },
+          { "name": "bullet", "content": "The same quantity is used again and again", "showAt": 31 },
+          { "name": "bullet", "content": "Multiplication repeats the same factor", "showAt": 32 },
+          { "name": "bullet", "content": "This repetition creates growth", "showAt": 33 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 46,
+        "end": 60,
+        "data": [
+          {
+            "name": "title",
+            "content": "Growing quantity",
+            "showAt": 46
+          },
+          {
+            "name": "para",
+            "content": "As multiplication repeats, the result becomes larger. This shows how powers represent growth.",
+            "showAt": 47
+          }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 60,
+        "end": 76,
+        "data": [
+          { "name": "image", "content": "exponents.png", "showAt": 60 },
+          { "name": "bullet", "content": "Repeated use of the same number", "showAt": 61 },
+          { "name": "bullet", "content": "Result increases step by step", "showAt": 62 },
+          { "name": "bullet", "content": "Power shows how many times multiplication happens", "showAt": 63 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 76,
+        "end": 90,
+        "data": [
+          {
+            "name": "title",
+            "content": "What a power means",
+            "showAt": 76
+          },
+          {
+            "name": "para",
+            "content": "A power is a short way to write repeated multiplication of the same number.",
+            "showAt": 77
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 90,
+        "end": 104,
+        "data": [
+          { "name": "image", "content": "exponents.png", "showAt": 90 },
+          { "name": "bullet", "content": "Not a new operation", "showAt": 91 },
+          { "name": "bullet", "content": "Just repeated multiplication", "showAt": 92 },
+          { "name": "bullet", "content": "Makes writing easier and clearer", "showAt": 93 }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 104,
+        "end": 114,
+        "data": [
+          {
+            "name": "quote",
+            "content": "A power is not a new idea. It is repeated multiplication written simply.",
+            "showAt": 104
+          },
+          {
+            "name": "author",
+            "content": "— Taleem Concept Note",
+            "showAt": 105
+          }
+        ]
+      }
+    ]
+  }
+  
