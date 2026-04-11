@@ -4,6 +4,7 @@
 
 <div class="wrapper">
 	<h1>📚 Deck Index</h1>
+<h1><a href="/create">create</a></h1>
 
 	<div class="list">
 		{#each data.decks as deck}
