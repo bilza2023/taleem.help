@@ -2,30 +2,49 @@
 
 ## 🎯 Mission
 
-Taleem Backoffice is a **content factory**.
+Taleem Backoffice is a **content compiler**.
 
-Its only responsibility is to produce a **clean, correct `/static/content` folder**.
+Its only responsibility is to take **author-written deck source files** and produce a **clean, correct `/static/content` output**.
 
 Nothing more.
 
-> If a deck exists in `/static/content`, it is **published**.
-> Everything else is ignored.
+> If a deck exists in `/static/content/decks`, it is **published output**.
+> If a deck exists in `/static/content/build-decks`, it is **source**.
+
+---
+
+## 🧠 System Snapshot (Current State)
+
+We operate a **compiler-style architecture**:
+
+```
+Source (.js)  →  Compile  →  Output (.json)
+```
+
+There is:
+
+* ❌ no workspace
+* ❌ no draft system
+* ❌ no file movement
+* ❌ no syncing
+
+Everything is **direct, file-based, and deterministic**.
 
 ---
 
 ## 🧱 Core Principles
 
-### 1. Content is the only truth
+### 1. Source vs Output Separation
 
-* All final decks live in:
+```bash
+/static/content/
+  build-decks/   ← SOURCE (editable)
+  decks/         ← OUTPUT (compiled JSON)
+```
 
-  `/static/content/decks/`
-
-* No database
-
-* No API
-
-* No abstraction layer
+* `.js` files are the **only place where editing happens**
+* `.json` files are **generated artifacts**
+* Output is disposable and reproducible
 
 ---
 
@@ -36,175 +55,182 @@ Nothing more.
 * No syllabus
 * No grouping
 
+Backoffice does not care how decks are consumed.
+
 ---
 
-### 3. Filename ≠ Identity
-
-* File is always:
-
-```bash
-/workbench-content/the-deck.js
-```
-
-* Identity is:
+### 3. Slug = Identity
 
 ```js
 deck.slug
 ```
 
----
+* Must be unique across all decks
+* Used for:
 
-### 4. Location defines state
-
-#### Workbench (not published)
-
-```bash
-/static/workbench-content/
-  the-deck.js
-  images/
-  audio/
-```
-
-* only ONE active deck
-* experimental
-* incomplete allowed
+  * JSON filename
+  * audio filename
 
 ---
 
-#### Content (published)
+### 4. Images are global
 
 ```bash
-/static/content/
-  decks/{slug}.json
-  images/{slug}/
+/static/content/images/
 ```
 
-* clean
-* validated
-* production ready
+* shared across all decks
+* no ownership
+* no copying
+* no movement
+
+> Images are treated as a **global asset pool**
+
+---
+
+### 5. Audio is slug-bound
+
+```bash
+/static/content/audio/{slug}.mp3 | .opus
+```
+
+* each deck may have **one audio file**
+* tied strictly to slug
 
 ---
 
 ## 🖼️ Image System
 
-### Workbench images
+### Global images
 
 ```bash
-/static/workbench-content/images/
+/static/content/images/
 ```
 
-* free creation
-* experimentation allowed
-
----
-
-### Gen images
-
-```bash
-/static/workbench-content/gen-*
-```
-
-* shared visuals
-* never copied
-* assumed to exist globally
-
----
-
-### Published images
-
-```bash
-/static/content/images/{slug}/
-```
-
-* only used images
-* no unused files
-
----
-
-## ⚙️ CLI System
-
-All publishing is done via CLI.
-
-```bash
-node cli/done.js
-```
-
----
-
-## 🚀 done CLI Responsibilities
-
-### 1. Load deck
-
-```bash
-/workbench-content/the-deck.js
-```
-
----
-
-### 2. Extract slug
+* any deck can use any image
+* deck only references:
 
 ```js
-deck.slug
+"/images/example.webp"
 ```
 
 ---
 
-### 3. Handle slug conflicts
+### Important Rule
 
-If slug exists:
+> Images are **not edited in place**
 
-* Overwrite (requires typing `OVERWRITE`)
-* Rename (must be unique)
-* Cancel
+If a change is needed:
 
----
-
-### 4. Validate deck
-
-* Must match schema
-* Must be playable
+```
+img1.webp → img1_v2.webp
+```
 
 ---
 
-### 5. Extract image usage
+### Cleanup Strategy
 
-* Scan deck for all images
+Unused images are expected.
 
----
-
-### 6. Handle image conflicts
-
-For each image:
-
-* Overwrite (requires confirmation)
-* Rename
-* Skip
+They are cleaned via a **separate garbage collection script** (see future tools).
 
 ---
 
-### 7. Copy images
+## ⚙️ Authoring Model
 
-From:
+### Deck source files
 
 ```bash
-/workbench-content/images/
+/static/content/build-decks/*.js
 ```
 
-To:
+Each file:
 
-```bash
-/static/content/images/{slug}/
+* uses `taleem-builder`
+* exports a builder or JSON
+* defines `deck.slug`
+
+Example:
+
+```js
+import Builder from "taleem-builder";
+
+export default () => {
+  const b = new Builder();
+
+  b.meta({ name: "Demo" });
+
+  b.at(0).titleAndSubtitle()
+    .title("Hello", 0);
+
+  b.end(10);
+
+  return b.build();
+};
 ```
-
-* `gen-*` images are ignored
 
 ---
 
-### 8. Generate JSON
+## 🚀 Compile System
+
+### Command
+
+```bash
+node cli/compile.js
+```
+
+---
+
+### Responsibilities
+
+1. Read all `.js` files from:
+
+```bash
+/static/content/build-decks/
+```
+
+---
+
+2. Build each deck using TaleemBuilder 
+
+---
+
+3. Validate:
+
+* slug exists
+* slug is unique
+* builder does not throw
+* all referenced images exist
+
+---
+
+4. Generate output:
 
 ```bash
 /static/content/decks/{slug}.json
 ```
+
+---
+
+### Behavior
+
+* ❌ No overwrite logic
+* ❌ No rename prompts
+* ❌ No partial success
+
+> If ANY error occurs → compilation stops
+
+---
+
+## 🧪 Validation Philosophy
+
+All validation happens at **compile time**:
+
+* missing images → error
+* duplicate slug → error
+* invalid builder → error
+
+> Output is always safe and consistent
 
 ---
 
@@ -213,26 +239,79 @@ To:
 Backoffice does NOT handle:
 
 * syllabus
-* tags
+* tagging
 * hierarchy
 * search
-* API
+* APIs
 * runtime logic
+* versioning system
 
 ---
 
 ## 🧠 Philosophy
 
-Backoffice produces **clean bricks**.
+Backoffice produces **clean, deterministic artifacts**.
 
-It does not organize or interpret them.
+It does not manage state.
+It does not manage workflows.
+
+> It compiles source into truth.
+
+---
+
+## 🔮 Planned / Future Scripts
+
+### 1. `compile.js` (core)
+
+* compile all decks
+* validate everything
+* generate JSON
+
+---
+
+### 2. `clean-images.js`
+
+* scan all decks
+* collect used images
+* move/delete unused images
+
+---
+
+### 3. `create-deck.js`
+
+* create new `.js` file in `build-decks/`
+* enforce naming + template
+
+---
+
+### 4. `health.js`
+
+* scan `/content/decks`
+* detect:
+
+  * missing images
+  * broken references
+  * invalid structures
+
+---
+
+### 5. (Optional) `watch.js`
+
+* auto-compile on file change
+* dev convenience only
 
 ---
 
 ## 💥 Final Principle
 
-> One working deck.
-> One publish command.
-> Clean output.
+> Source is editable.
+> Output is disposable.
+> Assets are global.
+
+---
+
+## 🧠 One-liner
+
+> Taleem Backoffice = **deck compiler + asset pool**
 
 ---

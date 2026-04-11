@@ -8,7 +8,7 @@
 
 	import { resolveAssetPaths } from "$lib/utils/resolveAssetPaths.js";
     
-	const CONTENT_FOLDER = "/workbench-content";
+	const CONTENT_FOLDER = "/content";
     // const CONTENT_IMAGES_FOLDER = "/workbench-content/images";
 	
 	// --- state ---

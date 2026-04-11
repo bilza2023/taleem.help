@@ -8,196 +8,101 @@
   },
   "deck": [
     {
-      "type": "skeleton",
+      "type": "fillImage",
       "start": 0,
-      "end": 100,
+      "end": 5,
       "data": [
         {
-          "name": "title",
-          "content": "Irrational Numbers",
+          "name": "image",
+          "content": "svg-icons.svg",
           "timings": [
             {
               "time": 0,
               "event": "show"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "type": "fillImage",
+      "start": 5,
+      "end": 10,
+      "data": [
         {
           "name": "image",
-          "content": "reall-numbers-venn-diagram.png",
+          "content": "real-numbers.svg",
+          "timings": [
+            {
+              "time": 5,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fillImage",
+      "start": 10,
+      "end": 20,
+      "data": [
+        {
+          "name": "image",
+          "content": "rational-numbers.svg",
           "timings": [
             {
               "time": 10,
               "event": "show"
             }
           ]
-        },
-        {
-          "name": "para",
-          "content": "All numbers we use are called real numbers.",
-          "timings": [
-            {
-              "time": 12,
-              "event": "show"
-            }
-          ]
-        },
-        {
-          "name": "para",
-          "content": "They are divided into two types.",
-          "timings": [
-            {
-              "time": 18,
-              "event": "show"
-            }
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "type": "fillImage",
+      "start": 20,
+      "end": 30,
+      "data": [
         {
           "name": "image",
-          "content": "reall-numbers-venn-diagram.png",
+          "content": "decimal-patterns.svg",
           "timings": [
             {
-              "time": 25,
+              "time": 20,
               "event": "show"
             }
           ]
-        },
-        {
-          "name": "para",
-          "content": "Rational numbers can be written as fractions.",
-          "timings": [
-            {
-              "time": 27,
-              "event": "show"
-            }
-          ]
-        },
-        {
-          "name": "para",
-          "content": "Irrational numbers cannot be written as fractions.",
-          "timings": [
-            {
-              "time": 32,
-              "event": "show"
-            }
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "type": "fillImage",
+      "start": 30,
+      "end": 40,
+      "data": [
         {
           "name": "image",
-          "content": "terminating-repeating-nonrepeating.png",
+          "content": "irrational-numbers.svg",
+          "timings": [
+            {
+              "time": 30,
+              "event": "show"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fillImage",
+      "start": 40,
+      "end": 50,
+      "data": [
+        {
+          "name": "image",
+          "content": "number-line-irrational.svg",
           "timings": [
             {
               "time": 40,
-              "event": "show"
-            }
-          ]
-        },
-        {
-          "name": "para",
-          "content": "Let’s look at decimals.",
-          "timings": [
-            {
-              "time": 42,
-              "event": "show"
-            }
-          ]
-        },
-        {
-          "name": "para",
-          "content": "Some decimals end. Some repeat.",
-          "timings": [
-            {
-              "time": 48,
-              "event": "show"
-            }
-          ]
-        },
-        {
-          "name": "image",
-          "content": "terminating-repeating-nonrepeating.png",
-          "timings": [
-            {
-              "time": 55,
-              "event": "show"
-            }
-          ]
-        },
-        {
-          "name": "para",
-          "content": "But some decimals never end…",
-          "timings": [
-            {
-              "time": 57,
-              "event": "show"
-            }
-          ]
-        },
-        {
-          "name": "para",
-          "content": "And never repeat.",
-          "timings": [
-            {
-              "time": 62,
-              "event": "show"
-            }
-          ]
-        },
-        {
-          "name": "image",
-          "content": "number-line-rtional-irrational-numbers-compare.png",
-          "timings": [
-            {
-              "time": 70,
-              "event": "show"
-            }
-          ]
-        },
-        {
-          "name": "para",
-          "content": "These numbers exist on the number line.",
-          "timings": [
-            {
-              "time": 72,
-              "event": "show"
-            }
-          ]
-        },
-        {
-          "name": "para",
-          "content": "But cannot be written exactly.",
-          "timings": [
-            {
-              "time": 78,
-              "event": "show"
-            }
-          ]
-        },
-        {
-          "name": "image",
-          "content": "number-line-rtional-irrational-numbers-compare.png",
-          "timings": [
-            {
-              "time": 85,
-              "event": "show"
-            }
-          ]
-        },
-        {
-          "name": "para",
-          "content": "Examples: √2, π, e",
-          "timings": [
-            {
-              "time": 87,
-              "event": "show"
-            }
-          ]
-        },
-        {
-          "name": "para",
-          "content": "They go on forever without any pattern.",
-          "timings": [
-            {
-              "time": 92,
               "event": "show"
             }
           ]
