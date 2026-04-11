@@ -1,6 +1,6 @@
 {
   "version": "taleem-deck-v2",
-  "name": "eq-with-svg",
+  "name": "math-visual-qa",
   "background": {
     "backgroundColor": "#000000",
     "backgroundImage": "bg.webp",
@@ -10,11 +10,11 @@
     {
       "type": "eq",
       "start": 0,
-      "end": 22,
+      "end": 24,
       "data": [
         {
           "name": "heading",
-          "content": "Understanding Motion",
+          "content": "Visual Math Concepts",
           "timings": [
             {
               "time": 0,
@@ -24,21 +24,21 @@
           "spItems": [
             {
               "name": "image",
-              "content": "/svg-icons.svg"
+              "content": "triangle-types.svg"
             },
             {
               "name": "text",
-              "content": "We build motion step by step."
+              "content": "Some math ideas are easier to see."
             },
             {
               "name": "text",
-              "content": "From rest to movement."
+              "content": "We answer using visuals."
             }
           ]
         },
         {
           "name": "math",
-          "content": "Object at rest",
+          "content": "How are triangles classified?",
           "timings": [
             {
               "time": 2,
@@ -47,22 +47,22 @@
           ],
           "spItems": [
             {
-              "name": "image",
-              "content": "/eqsvg-eq-svg.svg"
+              "name": "text",
+              "content": "Triangles are grouped by sides and angles."
             },
             {
               "name": "text",
-              "content": "No change in position."
+              "content": "Different shapes show different properties."
             },
             {
               "name": "text",
-              "content": "Velocity is zero."
+              "content": "We can compare shapes to understand categories."
             }
           ]
         },
         {
           "name": "math",
-          "content": "Object starts moving",
+          "content": "Equilateral • Isosceles • Scalene",
           "timings": [
             {
               "time": 4,
@@ -72,21 +72,21 @@
           "spItems": [
             {
               "name": "image",
-              "content": "/eqsvg-distance-formula.svg"
+              "content": "triangle-types.svg"
             },
             {
               "name": "text",
-              "content": "Position begins to change."
+              "content": "Each type has unique side lengths."
             },
             {
               "name": "text",
-              "content": "Motion starts here."
+              "content": "Visual shape helps identify quickly."
             }
           ]
         },
         {
           "name": "math",
-          "content": "Speed = distance / time",
+          "content": "Why do triangle angles sum to 180°?",
           "timings": [
             {
               "time": 6,
@@ -95,22 +95,22 @@
           ],
           "spItems": [
             {
-              "name": "image",
-              "content": "/eqsvg-distance-formula.svg"
+              "name": "text",
+              "content": "A triangle has three interior angles."
             },
             {
               "name": "text",
-              "content": "Speed tells how fast."
+              "content": "They always combine to a straight line."
             },
             {
               "name": "text",
-              "content": "Distance covered per time."
+              "content": "No matter the shape, the total remains constant."
             }
           ]
         },
         {
           "name": "math",
-          "content": "More speed → more distance",
+          "content": "∠A + ∠B + ∠C = 180°",
           "timings": [
             {
               "time": 8,
@@ -120,21 +120,21 @@
           "spItems": [
             {
               "name": "image",
-              "content": "/eqsvg-distance-formula.svg"
+              "content": "triangle-angles-180.svg"
             },
             {
               "name": "text",
-              "content": "Faster means more distance."
+              "content": "All angles form a straight line."
             },
             {
               "name": "text",
-              "content": "In same time interval."
+              "content": "Straight angle equals 180°."
             }
           ]
         },
         {
           "name": "math",
-          "content": "Velocity = speed + direction",
+          "content": "Why follow BODMAS order?",
           "timings": [
             {
               "time": 10,
@@ -143,22 +143,22 @@
           ],
           "spItems": [
             {
-              "name": "image",
-              "content": "/eqsvg-velocity.svg"
+              "name": "text",
+              "content": "Expressions have multiple operations."
             },
             {
               "name": "text",
-              "content": "Direction makes it velocity."
+              "content": "Order ensures correct calculation."
             },
             {
               "name": "text",
-              "content": "Now movement has direction."
+              "content": "Without order, answers can become incorrect."
             }
           ]
         },
         {
           "name": "math",
-          "content": "Same speed, different direction",
+          "content": "B → O → D → M → A → S",
           "timings": [
             {
               "time": 12,
@@ -168,21 +168,21 @@
           "spItems": [
             {
               "name": "image",
-              "content": "/eqsvg-velocity.svg"
+              "content": "bodmas-order.svg"
             },
             {
               "name": "text",
-              "content": "Direction change matters."
+              "content": "Solve brackets first."
             },
             {
               "name": "text",
-              "content": "Velocity changes even if speed same."
+              "content": "Then follow operation priority."
             }
           ]
         },
         {
           "name": "math",
-          "content": "Acceleration = change in velocity",
+          "content": "Why are alternate angles equal?",
           "timings": [
             {
               "time": 14,
@@ -191,22 +191,22 @@
           ],
           "spItems": [
             {
-              "name": "image",
-              "content": "/eqsvg-accelleration.svg"
+              "name": "text",
+              "content": "A transversal crosses parallel lines."
             },
             {
               "name": "text",
-              "content": "Acceleration measures change."
+              "content": "Certain angles match in position."
             },
             {
               "name": "text",
-              "content": "Δv over time."
+              "content": "These positions define equal angle pairs."
             }
           ]
         },
         {
           "name": "math",
-          "content": "Speeding up",
+          "content": "Alternate angles are equal",
           "timings": [
             {
               "time": 16,
@@ -216,21 +216,21 @@
           "spItems": [
             {
               "name": "image",
-              "content": "/eqsvg-accelleration.svg"
+              "content": "alternate-angles.svg"
             },
             {
               "name": "text",
-              "content": "Velocity increases."
+              "content": "Parallel lines create equal angles."
             },
             {
               "name": "text",
-              "content": "Positive acceleration."
+              "content": "Positions determine equality."
             }
           ]
         },
         {
           "name": "math",
-          "content": "Slowing down",
+          "content": "Why is triangle area = ½ × b × h?",
           "timings": [
             {
               "time": 18,
@@ -239,16 +239,40 @@
           ],
           "spItems": [
             {
+              "name": "text",
+              "content": "A triangle fits inside a rectangle."
+            },
+            {
+              "name": "text",
+              "content": "It occupies exactly half the area."
+            },
+            {
+              "name": "text",
+              "content": "This relationship helps derive the formula."
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "content": "Area = ½ × base × height",
+          "timings": [
+            {
+              "time": 20,
+              "event": "show"
+            }
+          ],
+          "spItems": [
+            {
               "name": "image",
-              "content": "/eqsvg-decelration.svg"
+              "content": "triangle-area.svg"
             },
             {
               "name": "text",
-              "content": "Velocity decreases."
+              "content": "Triangle is half of rectangle."
             },
             {
               "name": "text",
-              "content": "Negative acceleration."
+              "content": "Base and height define area."
             }
           ]
         }

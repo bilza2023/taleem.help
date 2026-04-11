@@ -1,0 +1,49 @@
+<svg viewBox="0 0 640 360" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="640" height="360" fill="#0b132b"/>
+
+  <!-- Title -->
+  <text x="320" y="40" fill="#ffffff" font-size="32" text-anchor="middle">
+    Area of Triangle
+  </text>
+
+  <!-- Rectangle (full area) -->
+  <rect x="160" y="100" width="320" height="180"
+        fill="#4cc9f0" opacity="0.15"
+        stroke="#4cc9f0" stroke-width="3"/>
+
+  <!-- Diagonal split -->
+  <line x1="160" y1="280" x2="480" y2="100"
+        stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Triangle highlight -->
+  <polygon points="160,280 480,280 480,100"
+           fill="#ffd60a" opacity="0.4"
+           stroke="#ffd60a" stroke-width="3"/>
+
+  <!-- Base -->
+  <line x1="160" y1="280" x2="480" y2="280"
+        stroke="#ffffff" stroke-width="2"/>
+  <text x="320" y="305" fill="#ffffff" font-size="16" text-anchor="middle">
+    base (b)
+  </text>
+
+  <!-- Height -->
+  <line x1="480" y1="280" x2="480" y2="100"
+        stroke="#ffffff" stroke-width="2"/>
+  <text x="500" y="200" fill="#ffffff" font-size="16">
+    height (h)
+  </text>
+
+  <!-- Equation -->
+  <text x="320" y="85" fill="#ffd60a" font-size="26" text-anchor="middle">
+    Area = ½ × b × h
+  </text>
+
+  <!-- Insight -->
+  <text x="320" y="330" fill="#aaa" font-size="16" text-anchor="middle">
+    triangle is half of a rectangle
+  </text>
+
+</svg>

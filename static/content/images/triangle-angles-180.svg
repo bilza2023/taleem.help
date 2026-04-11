@@ -1,0 +1,40 @@
+<svg viewBox="0 0 640 360" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="640" height="360" fill="#0b132b"/>
+
+  <!-- Title -->
+  <text x="320" y="40" fill="#ffffff" font-size="32" text-anchor="middle">
+    Triangle Angles = 180°
+  </text>
+
+  <!-- Triangle -->
+  <polygon points="200,260 320,120 440,260"
+           fill="#4cc9f0" opacity="0.25"
+           stroke="#4cc9f0" stroke-width="3"/>
+
+  <!-- Angle labels -->
+  <text x="210" y="255" fill="#ffffff" font-size="16">A</text>
+  <text x="320" y="115" fill="#ffffff" font-size="16" text-anchor="middle">B</text>
+  <text x="430" y="255" fill="#ffffff" font-size="16">C</text>
+
+  <!-- Base line extended -->
+  <line x1="120" y1="260" x2="520" y2="260"
+        stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Straight angle (180°) -->
+  <text x="320" y="300" fill="#ffd60a" font-size="22" text-anchor="middle">
+    180°
+  </text>
+
+  <!-- Equation -->
+  <text x="320" y="80" fill="#ffd60a" font-size="26" text-anchor="middle">
+    ∠A + ∠B + ∠C = 180°
+  </text>
+
+  <!-- Insight -->
+  <text x="320" y="330" fill="#aaa" font-size="16" text-anchor="middle">
+    triangle angles form a straight line
+  </text>
+
+</svg>

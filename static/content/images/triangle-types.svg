@@ -1,0 +1,63 @@
+<svg viewBox="0 0 640 360" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="640" height="360" fill="#0b132b"/>
+
+  <!-- Title -->
+  <text x="320" y="36" fill="#ffffff" font-size="34" text-anchor="middle">
+    Triangle Types
+  </text>
+
+  <!-- Column titles -->
+  <text x="140" y="70" fill="#4cc9f0" font-size="18" text-anchor="middle">Equilateral</text>
+  <text x="320" y="70" fill="#ffd60a" font-size="18" text-anchor="middle">Isosceles</text>
+  <text x="500" y="70" fill="#ff4d6d" font-size="18" text-anchor="middle">Scalene</text>
+
+  <!-- ================= TRIANGLES (clean + balanced) ================= -->
+
+  <!-- Equilateral (balanced) -->
+  <polygon points="100,230 140,140 180,230"
+           fill="#4cc9f0" opacity="0.35"
+           stroke="#4cc9f0" stroke-width="3"/>
+
+  <!-- Isosceles (taller, symmetric) -->
+  <polygon points="280,230 320,130 360,230"
+           fill="#ffd60a" opacity="0.35"
+           stroke="#ffd60a" stroke-width="3"/>
+
+  <!-- Scalene (clearly uneven) -->
+  <polygon points="460,230 505,120 580,230"
+           fill="#ff4d6d" opacity="0.35"
+           stroke="#ff4d6d" stroke-width="3"/>
+
+  <!-- ================= TABLE (aligned grid style) ================= -->
+
+  <!-- Row labels -->
+  <text x="70" y="275" fill="#888" font-size="14">Sides</text>
+  <text x="70" y="310" fill="#888" font-size="14">Angles</text>
+
+  <!-- Equilateral column -->
+  <text x="140" y="275" fill="#ffffff" font-size="14" text-anchor="middle">
+    all equal
+  </text>
+  <text x="140" y="310" fill="#ffffff" font-size="14" text-anchor="middle">
+    60°, 60°, 60°
+  </text>
+
+  <!-- Isosceles column -->
+  <text x="320" y="275" fill="#ffffff" font-size="14" text-anchor="middle">
+    two equal
+  </text>
+  <text x="320" y="310" fill="#ffffff" font-size="14" text-anchor="middle">
+    base angles equal
+  </text>
+
+  <!-- Scalene column -->
+  <text x="500" y="275" fill="#ffffff" font-size="14" text-anchor="middle">
+    all different
+  </text>
+  <text x="500" y="310" fill="#ffffff" font-size="14" text-anchor="middle">
+    all different
+  </text>
+
+</svg>

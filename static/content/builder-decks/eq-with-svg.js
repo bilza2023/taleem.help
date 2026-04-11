@@ -10,69 +10,63 @@ export default function build() {
     .image("bg.webp")
     .opacity(0);
 
-    
 ////////////////////////////////////////////////////
-/* ---------------- SLIDE 1 ---------------- */
+/* ---------------- SINGLE SLIDE ---------------- */
 
 b.at(0)
   .eq()
   .eqHeading("Understanding Motion", 0)
-    .eqSpText("building the idea step by step")
-    .eqSpImage("/eqsvg-distance-formulat.svg")
+  .eqSpImage("/svg-icons.svg")
+  .eqSpText("We build motion step by step.")
+  .eqSpText("From rest to movement.")
 
   .eqMath("Object at rest", 2)
-    .eqSpText("no movement")
-    .eqSpImage("/eqsvg-eq-svg.svg")
+  .eqSpImage("/eqsvg-eq-svg.svg")
+  .eqSpText("No change in position.")
+  .eqSpText("Velocity is zero.")
 
   .eqMath("Object starts moving", 4)
-    .eqSpText("position changes")
-    .eqSpImage("/eqsvg-eq-svg.svg")
+  .eqSpImage("/eqsvg-distance-formula.svg")
+  .eqSpText("Position begins to change.")
+  .eqSpText("Motion starts here.")
 
   .eqMath("Speed = distance / time", 6)
-    .eqSpText("how fast something moves")
-    .eqSpImage("/eqsvg-distance-formulat.svg")
+  .eqSpImage("/eqsvg-distance-formula.svg")
+  .eqSpText("Speed tells how fast.")
+  .eqSpText("Distance covered per time.")
 
   .eqMath("More speed → more distance", 8)
-    .eqSpText("in same time")
-    .eqSpImage("/eqsvg-distance-formulat.svg")
+  .eqSpImage("/eqsvg-distance-formula.svg")
+  .eqSpText("Faster means more distance.")
+  .eqSpText("In same time interval.")
 
   .eqMath("Velocity = speed + direction", 10)
-    .eqSpText("direction matters")
-    .eqSpImage("/eqsvg-velocity.svg");
+  .eqSpImage("/eqsvg-velocity.svg")
+  .eqSpText("Direction makes it velocity.")
+  .eqSpText("Now movement has direction.")
 
-/* ---------------- SLIDE 2 ---------------- */
+  .eqMath("Same speed, different direction", 12)
+  .eqSpImage("/eqsvg-velocity.svg")
+  .eqSpText("Direction change matters.")
+  .eqSpText("Velocity changes even if speed same.")
 
-b.at(14)
-  .eq()
-  .eqHeading("Acceleration Concept", 14)
-    .eqSpText("motion can change")
-    .eqSpImage("/eqsvg-accelleration.svg")
+  .eqMath("Acceleration = change in velocity", 14)
+  .eqSpImage("/eqsvg-accelleration.svg")
+  .eqSpText("Acceleration measures change.")
+  .eqSpText("Δv over time.")
 
-  .eqMath("Same speed, different direction", 16)
-    .eqSpText("velocity changes")
-    .eqSpImage("/eqsvg-velocity.svg")
+  .eqMath("Speeding up", 16)
+  .eqSpImage("/eqsvg-accelleration.svg")
+  .eqSpText("Velocity increases.")
+  .eqSpText("Positive acceleration.")
 
-  .eqMath("Acceleration = change in velocity", 18)
-    .eqSpText("Δv / t")
-    .eqSpImage("/eqsvg-accelleration.svg")
-
-  .eqMath("Speeding up", 20)
-    .eqSpText("positive acceleration")
-    .eqSpImage("/eqsvg-accelleration.svg")
-
-  .eqMath("Slowing down", 22)
-    .eqSpText("negative acceleration")
-    .eqSpImage("/eqsvg-decelration.svg")
-
-  .eqMath("Motion = speed + direction + change", 24)
-    .eqSpText("complete understanding 🎯")
-    .eqSpImage("/eqsvg-eq-svg.svg");
+  .eqMath("Slowing down", 18)
+  .eqSpImage("/eqsvg-decelration.svg")
+  .eqSpText("Velocity decreases.")
+  .eqSpText("Negative acceleration.");
 
 ////////////////////////////////////////////////////
-    b.end(28);
+  b.end(22);
 
   return b.build();
 }
-
-
-

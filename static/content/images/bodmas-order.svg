@@ -1,0 +1,46 @@
+<svg viewBox="0 0 640 360" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="640" height="360" fill="#0b132b"/>
+
+  <!-- Title -->
+  <text x="320" y="40" fill="#ffffff" font-size="32" text-anchor="middle">
+    Order of Operations (BODMAS)
+  </text>
+
+  <!-- Expression -->
+  <text x="320" y="100" fill="#ffffff" font-size="28" text-anchor="middle">
+    3 + 6 × (5 + 4) ÷ 3
+  </text>
+
+  <!-- Highlight Brackets -->
+  <rect x="310" y="115" width="100" height="40"
+        fill="#4cc9f0" opacity="0.25" rx="6"/>
+  <text x="360" y="145" fill="#4cc9f0" font-size="18" text-anchor="middle">
+    Brackets
+  </text>
+
+  <!-- Arrow down -->
+  <text x="360" y="175" fill="#aaa" font-size="20" text-anchor="middle">↓</text>
+
+  <!-- Highlight Orders -->
+  <text x="320" y="210" fill="#ffd60a" font-size="20" text-anchor="middle">
+    Orders → Division → Multiplication → Addition
+  </text>
+
+  <!-- Step result -->
+  <text x="320" y="250" fill="#ffffff" font-size="26" text-anchor="middle">
+    3 + 6 × 9 ÷ 3
+  </text>
+
+  <!-- Final -->
+  <text x="320" y="300" fill="#00ff88" font-size="28" text-anchor="middle">
+    = 21
+  </text>
+
+  <!-- Bottom hint -->
+  <text x="320" y="330" fill="#aaa" font-size="16" text-anchor="middle">
+    always solve inside brackets first
+  </text>
+
+</svg>

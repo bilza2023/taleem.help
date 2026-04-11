@@ -1,0 +1,45 @@
+<svg viewBox="0 0 640 360" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="640" height="360" fill="#0b132b"/>
+
+  <!-- Title -->
+  <text x="320" y="40" fill="#ffffff" font-size="32" text-anchor="middle">
+    Parallel Lines & Angles
+  </text>
+
+  <!-- Parallel lines -->
+  <line x1="120" y1="120" x2="520" y2="120"
+        stroke="#4cc9f0" stroke-width="4"/>
+  <line x1="120" y1="260" x2="520" y2="260"
+        stroke="#4cc9f0" stroke-width="4"/>
+
+  <!-- Transversal -->
+  <line x1="200" y1="60" x2="420" y2="320"
+        stroke="#ffffff" stroke-width="3"/>
+
+  <!-- Highlight alternate angles -->
+  <circle cx="240" cy="140" r="22"
+          fill="#ffd60a" opacity="0.35"/>
+  <circle cx="360" cy="240" r="22"
+          fill="#ffd60a" opacity="0.35"/>
+
+  <!-- Angle labels -->
+  <text x="240" y="145" fill="#ffffff" font-size="16" text-anchor="middle">
+    A
+  </text>
+  <text x="360" y="245" fill="#ffffff" font-size="16" text-anchor="middle">
+    A
+  </text>
+
+  <!-- Equation -->
+  <text x="320" y="80" fill="#ffd60a" font-size="26" text-anchor="middle">
+    Alternate Angles are Equal
+  </text>
+
+  <!-- Hint -->
+  <text x="320" y="330" fill="#aaa" font-size="16" text-anchor="middle">
+    when lines are parallel
+  </text>
+
+</svg>
