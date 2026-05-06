@@ -163,6 +163,8 @@ runActions(
 	@import "./css/index.css";
 	@import "./css/app/app.css";
 	@import "./css/bulletList.css";
+	@import "./css/skeleton.css";
+	
 	:global(body) {
 		margin: 0;
 		padding: 0;

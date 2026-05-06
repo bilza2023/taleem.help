@@ -10,55 +10,105 @@
       "type": "bulletList",
       "start": 0,
       "end": 20,
-      "html": "\n    <section class=\"slide bulletList\">\n      <ul>\n        \n              <li\n                id=\"imotygpyv1\"\n                class=\"hidden\"\n              >\n                Point 1\n              </li>\n            \n              <li\n                id=\"imotygpyv2\"\n                class=\"hidden\"\n              >\n                Point 2\n              </li>\n            \n      </ul>\n    </section>\n  ",
+      "html": "\n    <section class=\"slide bulletList\">\n      <ul>\n        \n              <li\n                id=\"imou2u2tl1\"\n                class=\"hidden\"\n              >\n                Point 1\n              </li>\n            \n              <li\n                id=\"imou2u2tl2\"\n                class=\"hidden\"\n              >\n                Point 2\n              </li>\n            \n      </ul>\n    </section>\n  ",
       "groups": {
         "hidden": [
           "hidden"
         ]
       },
-"actions": [
-  {
-    "time": 0,
-    "state": {
-      "hidden": [
-        "imotygpyv2"
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "imou2u2tl2"
+            ]
+          }
+        },
+        {
+          "time": 10,
+          "state": {
+            "hidden": []
+          }
+        }
       ]
-    }
-  },
-  {
-    "time": 12,
-    "state": {
-      "hidden": []
-    }
-  }
-]
     },
     {
       "type": "bulletList",
       "start": 20,
       "end": 40,
-      "html": "\n    <section class=\"slide bulletList\">\n      <ul>\n        \n              <li\n                id=\"imotygpyw3\"\n                class=\"hidden\"\n              >\n                Another slide\n              </li>\n            \n              <li\n                id=\"imotygpyw4\"\n                class=\"hidden\"\n              >\n                Yey Another point\n              </li>\n            \n      </ul>\n    </section>\n  ",
+      "html": "\n    <section class=\"slide bulletList\">\n      <ul>\n        \n              <li\n                id=\"imou2u2tl3\"\n                class=\"hidden\"\n              >\n                Another slide\n              </li>\n            \n              <li\n                id=\"imou2u2tl4\"\n                class=\"hidden\"\n              >\n                Yey Another point\n              </li>\n            \n      </ul>\n    </section>\n  ",
       "groups": {
         "hidden": [
           "hidden"
         ]
       },
-"actions": [
-  {
-    "time": 20,
-    "state": {
-      "hidden": [
-        "imotygpyw4"
+      "actions": [
+        {
+          "time": 21,
+          "state": {
+            "hidden": [
+              "imou2u2tl4"
+            ]
+          }
+        },
+        {
+          "time": 25,
+          "state": {
+            "hidden": []
+          }
+        }
       ]
-    }
-  },
-  {
-    "time": 25,
-    "state": {
-      "hidden": []
-    }
-  }
-]
+    },
+    {
+      "type": "skeletonSlide",
+      "start": 40,
+      "end": 60,
+      "html": "\n    <section class=\"slide skeleton\">\n\n      <div class=\"skeleton-body\">\n        \n        <h1\n          id=\"imou2u2tl5\"\n          class=\"hidden \"\n        >\n          What is Algebra?\n        </h1>\n      \n        <p\n          id=\"imou2u2tl6\"\n          class=\"hidden \"\n        >\n          Algebra uses symbols to represent numbers.\n        </p>\n      \n        <div\n          id=\"imou2u2tl7\"\n          class=\"skeleton-image hidden \"\n        >\n          <img src=\"content/images/box.webp\" />\n        </div>\n      \n      </div>\n\n    </section>\n  ",
+      "groups": {
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 40,
+          "state": {
+            "visible": [
+              "imou2u2tl5"
+            ],
+            "hidden": [
+              "imou2u2tl6",
+              "imou2u2tl7"
+            ]
+          }
+        },
+        {
+          "time": 45,
+          "state": {
+            "visible": [
+              "imou2u2tl6"
+            ],
+            "hidden": [
+              "imou2u2tl5",
+              "imou2u2tl7"
+            ]
+          }
+        },
+        {
+          "time": 50,
+          "state": {
+            "visible": [
+              "imou2u2tl7"
+            ],
+            "hidden": [
+              "imou2u2tl5",
+              "imou2u2tl6"
+            ]
+          }
+        }
+      ]
     }
   ]
 }
