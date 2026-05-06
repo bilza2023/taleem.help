@@ -1,0 +1,64 @@
+{
+  "name": "Untitled Deck",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": null,
+    "backgroundImageOpacity": 0.3
+  },
+  "deck": [
+    {
+      "type": "bulletList",
+      "start": 0,
+      "end": 20,
+      "html": "\n    <section class=\"slide bulletList\">\n      <ul>\n        \n              <li\n                id=\"imotygpyv1\"\n                class=\"hidden\"\n              >\n                Point 1\n              </li>\n            \n              <li\n                id=\"imotygpyv2\"\n                class=\"hidden\"\n              >\n                Point 2\n              </li>\n            \n      </ul>\n    </section>\n  ",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+"actions": [
+  {
+    "time": 0,
+    "state": {
+      "hidden": [
+        "imotygpyv2"
+      ]
+    }
+  },
+  {
+    "time": 12,
+    "state": {
+      "hidden": []
+    }
+  }
+]
+    },
+    {
+      "type": "bulletList",
+      "start": 20,
+      "end": 40,
+      "html": "\n    <section class=\"slide bulletList\">\n      <ul>\n        \n              <li\n                id=\"imotygpyw3\"\n                class=\"hidden\"\n              >\n                Another slide\n              </li>\n            \n              <li\n                id=\"imotygpyw4\"\n                class=\"hidden\"\n              >\n                Yey Another point\n              </li>\n            \n      </ul>\n    </section>\n  ",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+"actions": [
+  {
+    "time": 20,
+    "state": {
+      "hidden": [
+        "imotygpyw4"
+      ]
+    }
+  },
+  {
+    "time": 25,
+    "state": {
+      "hidden": []
+    }
+  }
+]
+    }
+  ]
+}

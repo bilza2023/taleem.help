@@ -1,35 +1,60 @@
+<!-- /src/routes/player/+page.svelte -->
+
 <script>
 	import { onMount } from "svelte";
 	import { page } from "$app/stores";
 	import { get } from "svelte/store";
 
 	import Player from "$lib/player/Player.svelte";
-	import { Timer } from "taleem-pam";
 
-	import { resolveAssetPaths } from "$lib/utils/resolveAssetPaths.js";
+	import { getTimer } from "./utils/getTimer.js";
+
+	import { Howl } from "howler";
+
+	const CONTENT_FOLDER = "/content";
 
 	// --- state ---
-	let deck = $state(null);
+	let presentation = $state(null);
 	let timer = $state(null);
 
 	onMount(async () => {
-		timer = new Timer();
-
 		const params = get(page).url.searchParams;
-		let deckSlug = params.get("deck");
 
-		if (!deckSlug) {
-		deckSlug = "GoldenDeckV2-8Apr2026";
-		}
-		// const res = await fetch(`/content/decks/GoldenDeckV2-8Apr2026.json`);
-		
-		const res = await fetch(`/content/decks/${deckSlug}.json`);
-		const json = await res.json();
+		let deckSlug =
+			params.get("deck") || "main";
 
-		deck = resolveAssetPaths(json, "/content/images/");
+		// --- load compiled presentation ---
+		const res = await fetch(
+			`${CONTENT_FOLDER}/decks/${deckSlug}.json`
+		);
+
+		presentation = await res.json();
+
+		// --- timer ---
+		timer = await getTimer({
+			slug: deckSlug,
+			deck: presentation,
+			Howl
+		});
+
+		// --- auto stop ---
+		const endTime =
+			presentation?.deck?.[
+				presentation.deck.length - 1
+			]?.end || 0;
+
+		const stopWatcher = setInterval(() => {
+			if (!timer) return;
+
+			if (timer.now() >= endTime) {
+				timer.pause();
+
+				clearInterval(stopWatcher);
+			}
+		}, 200);
 	});
 </script>
 
-{#if deck && timer}
-	<Player {deck} {timer} />
+{#if presentation && timer}
+	<Player {presentation} {timer} />
 {/if}

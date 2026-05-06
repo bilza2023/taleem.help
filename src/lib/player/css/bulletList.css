@@ -1,36 +1,28 @@
-
 .slide.bulletList {
   align-items: center;
   text-align: left;
 }
-/* 
+
+/* remove browser bullets */
 .slide.bulletList ul {
-  list-style: disc;
-  padding-left: 2rem;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
 
-  max-width: 900px;
+  max-width: 1000px;
 }
 
+/* animated bullets */
 .slide.bulletList li {
-  font-size: 2.2rem;
-  font-weight: 500;
-  line-height: 2;
+  font-size: 4rem;
+  line-height: 1.8;
   margin-bottom: 1rem;
 
   opacity: 0;
-  transform: translateY(8px);
+  transform: translateY(10px);
 
   animation: bulletSoftIn 0.35s ease-out forwards;
-} */
-
-/* stagger */
-.slide.bulletList li:nth-child(1) { animation-delay: 0.15s; }
-.slide.bulletList li:nth-child(2) { animation-delay: 0.3s; }
-.slide.bulletList li:nth-child(3) { animation-delay: 0.45s; }
-.slide.bulletList li:nth-child(4) { animation-delay: 0.6s; }
-.slide.bulletList li:nth-child(5) { animation-delay: 0.75s; }
-.slide.bulletList li:nth-child(6) { animation-delay: 0.9s; }
+}
 
 /* animation */
 @keyframes bulletSoftIn {
@@ -39,37 +31,3 @@
     transform: translateY(0);
   }
 }
-
-/* Portrait tweak */
-/* @media (orientation: portrait) {
-  .slide.bulletList li {
-      line-height: 3;
-  }
-} */
-
-/* laptop */
-/* @media (min-width: 1024px) and (max-width: 1440px) {
-
-  .slide.bulletList ul {
-      max-width: 750px;
-  }
-
-  .slide.bulletList li {
-      font-size: 3rem;
-      line-height: 1.8;
-      margin-bottom: 0.8rem;
-  }
-} */
-
-/* large */
-/* @media (min-width: 1600px) {
-
-  .slide.bulletList ul {
-      max-width: 1100px;
-  }
-
-  .slide.bulletList li {
-      font-size: 3rem;
-      line-height: 2.2;
-  }
-} */

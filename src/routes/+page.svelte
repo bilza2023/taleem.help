@@ -1,3 +1,4 @@
+/* eslint-disable svelte/no-navigation-without-resolve */
 <script>
 
 	function goToSyllabus(path) {
@@ -54,4 +55,8 @@
 			<img src="/content/images/class9.png" alt="Class 9" />
 		</div>
 	</div>
+
+<br/>
+<a href="/player?deck=GoldenDeckV2-5May-2026">Golden Dck</a>
+
 </div>
