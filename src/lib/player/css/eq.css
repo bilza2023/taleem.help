@@ -2,20 +2,24 @@
    EQ Slide (Mobile First – Stable Layout)
 ====================================== */
 
+annotation {
+	display: none !important;
+}
+
 .slide.eq {
-    display: flex;
-    color: gray;
-    flex-direction: row;
+	display: flex;
+	color: gray;
+	flex-direction: row;
 
-    align-items: flex-start;
-    justify-content: space-between;
+	align-items: flex-start;
+	justify-content: space-between;
 
-    gap: 1rem;
+	gap: 1rem;
 
-    padding-left: 3rem;
-    padding-right: 3rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
 
-    overflow: hidden;
+	overflow: hidden;
 }
 
 
@@ -24,57 +28,101 @@
 ---------------------------------- */
 
 .slide.eq .eq-lines {
-    flex: 0 0 45%;
-    min-width: 0;
-    overflow: hidden;
+	flex: 0 0 45%;
+	min-width: 0;
+	overflow: hidden;
 
-    list-style: none;
-    padding: 0;
-    margin: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 
-/* BASE LINE (clean, readable) */
+/* BASE LINE */
+
 .slide.eq .eq-lines li {
-    padding: 6px 10px;
-    font-size: 1.25rem;
-    line-height: 1.4;
+	padding: 10px 14px;
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    background: transparent;
+	font-size: 1.25rem;
+	line-height: 1.4;
 
-    color: rgba(255,255,255,0.85);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
-    overflow-x: auto;
-    overflow-y: hidden;
-    max-width: 100%;
+	background: transparent;
+
+	color: rgba(255,255,255,0.88);
+
+	overflow-x: auto;
+	overflow-y: hidden;
+
+	max-width: 100%;
+
+	transition:
+		background 0.25s ease,
+		border 0.25s ease,
+		transform 0.25s ease,
+		opacity 0.25s ease;
 }
 
 
-/* 🔥 REMOVE DIM EFFECT ONLY IN EQ */
+/* DIMMED */
+
 .slide.eq .eq-lines li.dim {
-    opacity: 1;
-    color: rgba(255,255,255,0.7);
+	opacity: 0.32;
 }
 
 
-/* 🔥 STRONG FOCUS */
+/* ACTIVE / HIGHLIGHTED */
+
 .slide.eq .eq-lines li.highlighted {
-    background: rgba(245, 197, 66, 0.18);
-    color: #ffffff;
-    border: 2 px solide green;
-    border-radius: 10px;
-    font-weight: 700;
+	background: rgba(255, 215, 0, 0.18);
 
-    border: 2px solid #f5c542;
-    border-radius: 10px;
+	color: #ffffff;
 
-    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+	border: 2px solid #ffd54a;
 
-    transform: scale(1.02);
+	border-radius: 12px;
+
+	font-weight: 700;
+
+	box-shadow:
+		0 0 0 1px rgba(255,255,255,0.06),
+		0 8px 24px rgba(0,0,0,0.45);
+
+	transform: scale(1.015);
+
+	position: relative;
+
+	z-index: 2;
+
+	opacity: 1;
+}
+
+
+/* TITLE */
+
+.slide.eq .eq-title {
+	font-size: 2rem;
+	font-weight: 700;
+
+	color: #ffffff;
+}
+
+
+/* MATH */
+
+.slide.eq .eq-math {
+	font-size: 1.6rem;
+}
+
+
+/* TEXT */
+
+.slide.eq .eq-line {
+	font-size: 1.25rem;
 }
 
 
@@ -83,44 +131,53 @@
 ---------------------------------- */
 
 .slide.eq .eq-side-panel {
-    flex: 0 0 55%;
-    min-width: 0;
-    overflow: hidden;
+	flex: 0 0 55%;
+	min-width: 0;
+	overflow: hidden;
 
-    padding: 6px;
+	padding: 6px;
 
-    background: rgba(0, 0, 0, 0.35);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 16px;
+	background: rgba(0, 0, 0, 0.35);
 
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+
+	border-radius: 16px;
+
+	display: flex;
+	flex-direction: column;
+
+	gap: 4px;
 }
 
 
 /* Explanation text */
 
 .slide.eq .eq-explain-item {
-    font-size: 1.25rem;
-    line-height: 1.5;
-    text-align: justify;
+	font-size: 1.25rem;
+	line-height: 1.5;
 
-    background: rgba(255, 255, 255, 0.06);
-    padding: 14px 18px;
-    border-radius: 12px;
+	text-align: justify;
 
-    overflow-wrap: break-word;
+	background: rgba(255, 255, 255, 0.06);
+
+	padding: 14px 18px;
+
+	border-radius: 12px;
+
+	overflow-wrap: break-word;
 }
 
 
 /* Explanation image */
 
-.slide.eq .eq-explain-image img {
-    width: 70%;
-    margin: 0 auto;
-    display: block;
-    border-radius: 12px;
+.slide.eq .eq-explain-item img {
+	width: 70%;
+
+	margin: 0 auto;
+
+	display: block;
+
+	border-radius: 12px;
 }
 
 
@@ -130,17 +187,17 @@
 
 @media (min-width: 1024px) {
 
-    .slide.eq {
-        gap: 1.5rem;
-    }
+	.slide.eq {
+		gap: 1.5rem;
+	}
 
-    .slide.eq .eq-lines li {
-        font-size: 1.5rem;
-    }
+	.slide.eq .eq-lines li {
+		font-size: 1.5rem;
+	}
 
-    .slide.eq .eq-explain-item {
-        font-size: 1.2rem;
-    }
+	.slide.eq .eq-explain-item {
+		font-size: 1.2rem;
+	}
 }
 
 
@@ -150,26 +207,28 @@
 
 @media (min-width: 1600px) {
 
-    .slide.eq {
-        gap: 2rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
+	.slide.eq {
+		gap: 2rem;
 
-    .slide.eq .eq-lines {
-        flex: 0 0 50%;
-    }
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
 
-    .slide.eq .eq-side-panel {
-        flex: 0 0 50%;
-    }
+	.slide.eq .eq-lines {
+		flex: 0 0 50%;
+	}
 
-    .slide.eq .eq-lines li {
-        font-size: 2.25rem;
-    }
+	.slide.eq .eq-side-panel {
+		flex: 0 0 50%;
+	}
 
-    .slide.eq .eq-explain-item {
-        font-size: 2.25rem;
-        line-height: 1.5em;
-    }
+	.slide.eq .eq-lines li {
+		font-size: 2.25rem;
+	}
+
+	.slide.eq .eq-explain-item {
+		font-size: 2.25rem;
+
+		line-height: 1.5em;
+	}
 }

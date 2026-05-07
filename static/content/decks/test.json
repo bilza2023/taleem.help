@@ -1,6 +1,5 @@
 {
-  "version": "taleem-deck-v2",
-  "name": "test-deck",
+  "name": "General Test",
   "background": {
     "backgroundColor": "#111111",
     "backgroundImage": null,
@@ -8,19 +7,65 @@
   },
   "deck": [
     {
-      "type": "fillImage",
+      "type": "titleAndSubtitle",
       "start": 0,
-      "end": 10,
-      "data": [
+      "end": 6,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imovyh6jm1u\" class=\" hidden taleem-heading-lg \" > Hello Taleem </h1><h2 id=\"imovyh6jm1v\" class=\" hidden taleem-heading-md \" > Library pipeline is working </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
         {
-          "name": "image",
-          "content": "content/images/spaced-repetition-study-method.svg",
-          "timings": [
-            {
-              "time": 0,
-              "event": "show"
-            }
-          ]
+          "time": 0,
+          "state": {
+            "hidden": [
+              "imovyh6jm1v"
+            ]
+          }
+        },
+        {
+          "time": 2,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "start": 6,
+      "end": 15,
+      "html": "<section class=\"slide bulletList\"><ul><li id=\"imovyh6jm1w\" class=\"hidden\" > Deterministic slides </li><li id=\"imovyh6jm1x\" class=\"hidden\" > Reusable educational content </li><li id=\"imovyh6jm1y\" class=\"hidden\" > Compiled JSON output </li></ul></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 6,
+          "state": {
+            "hidden": [
+              "imovyh6jm1x",
+              "imovyh6jm1y"
+            ]
+          }
+        },
+        {
+          "time": 8,
+          "state": {
+            "hidden": [
+              "imovyh6jm1y"
+            ]
+          }
+        },
+        {
+          "time": 10,
+          "state": {
+            "hidden": []
+          }
         }
       ]
     }

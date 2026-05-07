@@ -10,13 +10,19 @@
   margin: 0;
 
   max-width: 1000px;
+  width: 100%;
 }
 
 /* animated bullets */
 .slide.bulletList li {
-  font-size: 4rem;
+  font-size: 3.4rem;
   line-height: 1.8;
+
   margin-bottom: 1rem;
+  padding: 0.8rem 1.4rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
 
   opacity: 0;
   transform: translateY(10px);
@@ -30,4 +36,14 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
+  .slide.bulletList li {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
 }

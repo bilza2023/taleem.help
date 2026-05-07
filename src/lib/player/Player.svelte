@@ -7,6 +7,7 @@
 
 	import { getDeckEndTime } from "./utils/getDeckEndTime.js";
 	import { getSlideAtTime } from "./utils/getSlideAtTime.js";
+	import { useMath } from "./utils/useMath.js";
 
 	// --- props ---
 	let { presentation, timer } = $props();
@@ -58,19 +59,24 @@
 
 		timer.duration = deckEndTime;
 	});
-
-	// --- mount slide ---
+// --- mount slide ---
 	function mountSlide(slide) {
-		if (!slide) return;
+	if (!slide) return;
 
-		html = slide.html;
+	html = slide.html;
 
-		actions = slide.actions ?? [];
+	actions = slide.actions ?? [];
 
-		groups = slide.groups ?? {};
+	groups = slide.groups ?? {};
 
-		mountedSlide = slide;
-	}
+	mountedSlide = slide;
+
+	queueMicrotask(() => {
+		if (root) {
+			useMath(root);
+		}
+	});
+}
 
 	// --- loop ---
 	let interval;
@@ -164,6 +170,7 @@ runActions(
 	@import "./css/app/app.css";
 	@import "./css/bulletList.css";
 	@import "./css/skeleton.css";
+	@import "./css/eq.css";
 	
 	:global(body) {
 		margin: 0;

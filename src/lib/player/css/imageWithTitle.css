@@ -1,6 +1,7 @@
 .slide.imageWithTitle {
   align-items: center;
   text-align: center;
+
   gap: 2.5rem;
 }
 
@@ -9,14 +10,25 @@
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.2;
+
   margin: 0;
+  padding: 1rem 1.5rem;
+
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
 }
 
 /* IMAGE → keep soft entry (safe) */
 .slide.imageWithTitle img {
   max-width: 85%;
   max-height: 70%;
+
   object-fit: contain;
+
+  padding: 0.4rem;
+
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
 
   opacity: 0;
   transform: scale(0.96);
@@ -34,8 +46,26 @@
 
 /* portrait */
 @media (orientation: portrait) {
+
   .slide.imageWithTitle h1 {
-    font-size: 3.2rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .slide.imageWithTitle img {
+    max-width: 95%;
+    max-height: 65%;
+  }
+}
+
+/* small screens */
+@media (max-width: 768px) {
+
+  .slide.imageWithTitle h1 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+
+    padding: 0.8rem 1rem;
   }
 
   .slide.imageWithTitle img {

@@ -1,9 +1,12 @@
 .slide.imageWithCaption {
   margin: 0;
+
   display: flex;
   flex-direction: column;
+
   justify-content: center;
   align-items: center;
+
   text-align: center;
 
   gap: 2.5rem;
@@ -13,8 +16,14 @@
 .slide.imageWithCaption img {
   max-width: 85%;
   max-height: 65%;
+
   object-fit: contain;
   display: block;
+
+  padding: 0.4rem;
+
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
 }
 
 /* CAPTION → animated */
@@ -23,7 +32,12 @@
   line-height: 1.6;
 
   max-width: 800px;
+
   margin: 0;
+  padding: 1rem 1.4rem;
+
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
 
   opacity: 0;
   transform: translateY(8px);
@@ -42,12 +56,30 @@
 
 /* portrait */
 @media (orientation: portrait) {
+
   .slide.imageWithCaption img {
     max-width: 95%;
     max-height: 60%;
   }
 
   .slide.imageWithCaption figcaption {
-    font-size: 2.8rem;
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+
+/* small screens */
+@media (max-width: 768px) {
+
+  .slide.imageWithCaption img {
+    max-width: 95%;
+    max-height: 60%;
+  }
+
+  .slide.imageWithCaption figcaption {
+    font-size: 1.3rem;
+    line-height: 1.4;
+
+    padding: 0.8rem 1rem;
   }
 }
