@@ -71,13 +71,17 @@
 /* ----------------------------------
    Portrait Adjustment
 ---------------------------------- */
+/* mobile */
+@media (max-width: 768px) {
 
-@media (orientation: portrait) {
+  .slide.table {
+    padding: 2rem 1rem;
+  }
 
   .slide.table td {
-    font-size: 1.3rem;
+    font-size: 1rem;
 
-    padding: 0.8rem 1rem;
+    padding: 0.6rem;
   }
 
 }

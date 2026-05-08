@@ -88,3 +88,29 @@
     font-size: 1.2rem;
   }
 }
+
+/* mobile */
+@media (max-width: 768px) {
+
+  .slide.quoteSlide {
+    padding: 1.5rem;
+  }
+
+  .slide.quoteSlide p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+    padding: 1.2rem 1rem;
+
+    border-radius: 16px;
+  }
+
+  .slide.quoteSlide footer {
+    margin-top: 1rem;
+
+    font-size: 0.95rem;
+
+    padding: 0.5rem 1rem;
+  }
+
+}

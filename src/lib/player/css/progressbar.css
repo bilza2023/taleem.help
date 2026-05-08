@@ -64,3 +64,32 @@
     opacity: 0.75;
   }
   
+  /* mobile */
+@media (max-width: 768px) {
+
+  .slide.progressbar {
+    gap: 1.8rem;
+  }
+
+  .slide.progressbar .progressbar-label {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .slide.progressbar .progressbar-track {
+    height: 24px;
+  }
+
+  .slide.progressbar .progressbar-fill {
+    padding-left: 0.8rem;
+
+    font-size: 1rem;
+  }
+
+  .slide.progressbar .progressbar-track::after {
+    right: -45px;
+
+    font-size: 1rem;
+  }
+
+}
