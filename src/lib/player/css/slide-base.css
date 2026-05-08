@@ -14,7 +14,8 @@
   align-items: center;
 
   /* Theme controlled */
-  background: var(--backgroundColor, #ffffff);
+  /* background: var(--backgroundColor, #ffffff); */
+  background: var(--slideBackground, transparent);
   color: var(--primaryColor, #111111);
 }
 

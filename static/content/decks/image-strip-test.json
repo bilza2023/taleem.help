@@ -1,0 +1,289 @@
+{
+  "name": "Image Strip Test",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": null,
+    "backgroundImageOpacity": 0.3
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 8,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imowv0abp6f\" class=\" hidden taleem-heading-lg \" > Image Strip Testing </h1><h2 id=\"imowv0abp6g\" class=\" hidden taleem-heading-md \" > Sequences • comparison • visual rhythm </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "imowv0abp6g"
+            ]
+          }
+        },
+        {
+          "time": 3,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 8,
+      "end": 20,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"imowv0abp6h\" class=\" hidden \" src=\"/content/images/box.webp\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abp6i\" class=\" hidden \" src=\"/content/images/eq.webp\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abp6j\" class=\" hidden \" src=\"/content/images/image.png\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 8,
+          "state": {
+            "hidden": [
+              "imowv0abp6i",
+              "imowv0abp6j"
+            ]
+          }
+        },
+        {
+          "time": 10,
+          "state": {
+            "hidden": [
+              "imowv0abp6j"
+            ]
+          }
+        },
+        {
+          "time": 12,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 20,
+      "end": 32,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"imowv0abp6k\" class=\" hidden \" src=\"/content/images/force-intro.webp\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abp6l\" class=\" hidden \" src=\"/content/images/eq.webp\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abp6m\" class=\" hidden \" src=\"/content/images/box.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 20,
+          "state": {
+            "hidden": [
+              "imowv0abp6l",
+              "imowv0abp6m"
+            ]
+          }
+        },
+        {
+          "time": 22,
+          "state": {
+            "hidden": [
+              "imowv0abp6m"
+            ]
+          }
+        },
+        {
+          "time": 24,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 32,
+      "end": 44,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"imowv0abp6n\" class=\" hidden \" src=\"/content/images/image.png\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abp6o\" class=\" hidden \" src=\"/content/images/image.png\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abp6p\" class=\" hidden \" src=\"/content/images/image.png\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 32,
+          "state": {
+            "hidden": [
+              "imowv0abp6o",
+              "imowv0abp6p"
+            ]
+          }
+        },
+        {
+          "time": 34,
+          "state": {
+            "hidden": [
+              "imowv0abp6p"
+            ]
+          }
+        },
+        {
+          "time": 36,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 44,
+      "end": 56,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"imowv0abp6q\" class=\" hidden \" src=\"/content/images/force-intro.webp\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abp6r\" class=\" hidden \" src=\"/content/images/force-intro.webp\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abp6s\" class=\" hidden \" src=\"/content/images/box.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 44,
+          "state": {
+            "hidden": [
+              "imowv0abp6r",
+              "imowv0abp6s"
+            ]
+          }
+        },
+        {
+          "time": 46,
+          "state": {
+            "hidden": [
+              "imowv0abp6s"
+            ]
+          }
+        },
+        {
+          "time": 48,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 56,
+      "end": 68,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"imowv0abq6t\" class=\" hidden \" src=\"/content/images/eq.webp\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abq6u\" class=\" hidden \" src=\"/content/images/box.webp\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abq6v\" class=\" hidden \" src=\"/content/images/force-intro.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 56,
+          "state": {
+            "hidden": [
+              "imowv0abq6u",
+              "imowv0abq6v"
+            ]
+          }
+        },
+        {
+          "time": 58,
+          "state": {
+            "hidden": [
+              "imowv0abq6v"
+            ]
+          }
+        },
+        {
+          "time": 60,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 68,
+      "end": 80,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"imowv0abq6w\" class=\" hidden \" src=\"/content/images/box.webp\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abq6x\" class=\" hidden \" src=\"/content/images/box.webp\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abq6y\" class=\" hidden \" src=\"/content/images/box.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 68,
+          "state": {
+            "hidden": [
+              "imowv0abq6x",
+              "imowv0abq6y"
+            ]
+          }
+        },
+        {
+          "time": 70,
+          "state": {
+            "hidden": [
+              "imowv0abq6y"
+            ]
+          }
+        },
+        {
+          "time": 72,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 80,
+      "end": 92,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"imowv0abq6z\" class=\" hidden \" src=\"/content/images/image.png\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abq70\" class=\" hidden \" src=\"/content/images/eq.webp\" /></div><div class=\"image-strip-item\"><img id=\"imowv0abq71\" class=\" hidden \" src=\"/content/images/force-intro.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 80,
+          "state": {
+            "hidden": [
+              "imowv0abq70",
+              "imowv0abq71"
+            ]
+          }
+        },
+        {
+          "time": 82,
+          "state": {
+            "hidden": [
+              "imowv0abq71"
+            ]
+          }
+        },
+        {
+          "time": 84,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    }
+  ]
+}

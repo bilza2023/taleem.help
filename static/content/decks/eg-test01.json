@@ -1,0 +1,576 @@
+{
+  "name": "EQ Test 01",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": null,
+    "backgroundImageOpacity": 0.3
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 8,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imowv0abe1\" class=\" hidden taleem-heading-lg \" > Expanding (a+b)^2 </h1><h2 id=\"imowv0abe2\" class=\" hidden taleem-heading-md \" > Testing EQ slide pacing and reasoning flow </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "imowv0abe2"
+            ]
+          }
+        },
+        {
+          "time": 3,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 8,
+      "end": 30,
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imowv0abe3\" class=\" eq-item eq-title \" > Understanding the Square </li><li id=\"imowv0abe4\" class=\" eq-item eq-math \" > $$ (a+b)^2 $$ </li><li id=\"imowv0abe5\" class=\" eq-item eq-math \" > $$ = (a+b)(a+b) $$ </li><li id=\"imowv0abe6\" class=\" eq-item eq-line \" > Now every term must multiply. </li><li id=\"imowv0abe7\" class=\" eq-item eq-math \" > $$ = a(a+b) + b(a+b) $$ </li><li id=\"imowv0abe8\" class=\" eq-item eq-math \" > $$ = a^2 + ab + ab + b^2 $$ </li><li id=\"imowv0abe9\" class=\" eq-item eq-line \" > The two middle terms are identical. </li><li id=\"imowv0abea\" class=\" eq-item eq-math \" > $$ = a^2 + 2ab + b^2 $$ </li></ul><div class=\"eq-side-panel\"><div id=\"imowv0abe3-sp-1\" class=\"eq-explain-item hidden\" > The exponent applies to the whole bracket. </div><div id=\"imowv0abe3-sp-2\" class=\"eq-explain-item hidden\" > The bracket multiplies itself. </div><div id=\"imowv0abe4-sp-1\" class=\"eq-explain-item hidden\" > This is not a^2 + b^2. </div><div id=\"imowv0abe5-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"/content/images/box.webp\" /></div><div id=\"imowv0abe5-sp-2\" class=\"eq-explain-item hidden\" > Rewrite the square as repeated multiplication. </div><div id=\"imowv0abe6-sp-1\" class=\"eq-explain-item hidden\" > Each term interacts with every term. </div><div id=\"imowv0abe7-sp-1\" class=\"eq-explain-item hidden\" > Distribute carefully. </div><div id=\"imowv0abe8-sp-1\" class=\"eq-explain-item hidden\" > All products are now visible. </div><div id=\"imowv0abe9-sp-1\" class=\"eq-explain-item hidden\" > Both terms contain ab. </div><div id=\"imowv0abea-sp-1\" class=\"eq-explain-item hidden\" > Combine like terms. </div></div></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ],
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 8,
+          "state": {
+            "focus": [
+              "imowv0abe3"
+            ],
+            "dim": [
+              "imowv0abe4",
+              "imowv0abe5",
+              "imowv0abe6",
+              "imowv0abe7",
+              "imowv0abe8",
+              "imowv0abe9",
+              "imowv0abea"
+            ],
+            "visible": [
+              "imowv0abe3-sp-1",
+              "imowv0abe3-sp-2"
+            ],
+            "hidden": [
+              "imowv0abe4-sp-1",
+              "imowv0abe5-sp-1",
+              "imowv0abe5-sp-2",
+              "imowv0abe6-sp-1",
+              "imowv0abe7-sp-1",
+              "imowv0abe8-sp-1",
+              "imowv0abe9-sp-1",
+              "imowv0abea-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 10,
+          "state": {
+            "focus": [
+              "imowv0abe4"
+            ],
+            "dim": [
+              "imowv0abe3",
+              "imowv0abe5",
+              "imowv0abe6",
+              "imowv0abe7",
+              "imowv0abe8",
+              "imowv0abe9",
+              "imowv0abea"
+            ],
+            "visible": [
+              "imowv0abe4-sp-1"
+            ],
+            "hidden": [
+              "imowv0abe3-sp-1",
+              "imowv0abe3-sp-2",
+              "imowv0abe5-sp-1",
+              "imowv0abe5-sp-2",
+              "imowv0abe6-sp-1",
+              "imowv0abe7-sp-1",
+              "imowv0abe8-sp-1",
+              "imowv0abe9-sp-1",
+              "imowv0abea-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 12,
+          "state": {
+            "focus": [
+              "imowv0abe5"
+            ],
+            "dim": [
+              "imowv0abe3",
+              "imowv0abe4",
+              "imowv0abe6",
+              "imowv0abe7",
+              "imowv0abe8",
+              "imowv0abe9",
+              "imowv0abea"
+            ],
+            "visible": [
+              "imowv0abe5-sp-1",
+              "imowv0abe5-sp-2"
+            ],
+            "hidden": [
+              "imowv0abe3-sp-1",
+              "imowv0abe3-sp-2",
+              "imowv0abe4-sp-1",
+              "imowv0abe6-sp-1",
+              "imowv0abe7-sp-1",
+              "imowv0abe8-sp-1",
+              "imowv0abe9-sp-1",
+              "imowv0abea-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 14,
+          "state": {
+            "focus": [
+              "imowv0abe6"
+            ],
+            "dim": [
+              "imowv0abe3",
+              "imowv0abe4",
+              "imowv0abe5",
+              "imowv0abe7",
+              "imowv0abe8",
+              "imowv0abe9",
+              "imowv0abea"
+            ],
+            "visible": [
+              "imowv0abe6-sp-1"
+            ],
+            "hidden": [
+              "imowv0abe3-sp-1",
+              "imowv0abe3-sp-2",
+              "imowv0abe4-sp-1",
+              "imowv0abe5-sp-1",
+              "imowv0abe5-sp-2",
+              "imowv0abe7-sp-1",
+              "imowv0abe8-sp-1",
+              "imowv0abe9-sp-1",
+              "imowv0abea-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 16,
+          "state": {
+            "focus": [
+              "imowv0abe7"
+            ],
+            "dim": [
+              "imowv0abe3",
+              "imowv0abe4",
+              "imowv0abe5",
+              "imowv0abe6",
+              "imowv0abe8",
+              "imowv0abe9",
+              "imowv0abea"
+            ],
+            "visible": [
+              "imowv0abe7-sp-1"
+            ],
+            "hidden": [
+              "imowv0abe3-sp-1",
+              "imowv0abe3-sp-2",
+              "imowv0abe4-sp-1",
+              "imowv0abe5-sp-1",
+              "imowv0abe5-sp-2",
+              "imowv0abe6-sp-1",
+              "imowv0abe8-sp-1",
+              "imowv0abe9-sp-1",
+              "imowv0abea-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 18,
+          "state": {
+            "focus": [
+              "imowv0abe8"
+            ],
+            "dim": [
+              "imowv0abe3",
+              "imowv0abe4",
+              "imowv0abe5",
+              "imowv0abe6",
+              "imowv0abe7",
+              "imowv0abe9",
+              "imowv0abea"
+            ],
+            "visible": [
+              "imowv0abe8-sp-1"
+            ],
+            "hidden": [
+              "imowv0abe3-sp-1",
+              "imowv0abe3-sp-2",
+              "imowv0abe4-sp-1",
+              "imowv0abe5-sp-1",
+              "imowv0abe5-sp-2",
+              "imowv0abe6-sp-1",
+              "imowv0abe7-sp-1",
+              "imowv0abe9-sp-1",
+              "imowv0abea-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 20,
+          "state": {
+            "focus": [
+              "imowv0abe9"
+            ],
+            "dim": [
+              "imowv0abe3",
+              "imowv0abe4",
+              "imowv0abe5",
+              "imowv0abe6",
+              "imowv0abe7",
+              "imowv0abe8",
+              "imowv0abea"
+            ],
+            "visible": [
+              "imowv0abe9-sp-1"
+            ],
+            "hidden": [
+              "imowv0abe3-sp-1",
+              "imowv0abe3-sp-2",
+              "imowv0abe4-sp-1",
+              "imowv0abe5-sp-1",
+              "imowv0abe5-sp-2",
+              "imowv0abe6-sp-1",
+              "imowv0abe7-sp-1",
+              "imowv0abe8-sp-1",
+              "imowv0abea-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 22,
+          "state": {
+            "focus": [
+              "imowv0abea"
+            ],
+            "dim": [
+              "imowv0abe3",
+              "imowv0abe4",
+              "imowv0abe5",
+              "imowv0abe6",
+              "imowv0abe7",
+              "imowv0abe8",
+              "imowv0abe9"
+            ],
+            "visible": [
+              "imowv0abea-sp-1"
+            ],
+            "hidden": [
+              "imowv0abe3-sp-1",
+              "imowv0abe3-sp-2",
+              "imowv0abe4-sp-1",
+              "imowv0abe5-sp-1",
+              "imowv0abe5-sp-2",
+              "imowv0abe6-sp-1",
+              "imowv0abe7-sp-1",
+              "imowv0abe8-sp-1",
+              "imowv0abe9-sp-1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 30,
+      "end": 50,
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imowv0abfb\" class=\" eq-item eq-title \" > Testing with Variables </li><li id=\"imowv0abfc\" class=\" eq-item eq-math \" > $$ (x+y)^2 $$ </li><li id=\"imowv0abfd\" class=\" eq-item eq-math \" > $$ = (x+y)(x+y) $$ </li><li id=\"imowv0abfe\" class=\" eq-item eq-math \" > $$ = x^2 + xy + xy + y^2 $$ </li><li id=\"imowv0abff\" class=\" eq-item eq-math \" > $$ = x^2 + 2xy + y^2 $$ </li><li id=\"imowv0abfg\" class=\" eq-item eq-line \" > This pattern appears throughout algebra. </li><li id=\"imowv0abfh\" class=\" eq-item eq-line \" > Careless expansion causes most mistakes. </li></ul><div class=\"eq-side-panel\"><div id=\"imowv0abfb-sp-1\" class=\"eq-explain-item hidden\" > The identity works for all variables. </div><div id=\"imowv0abfc-sp-1\" class=\"eq-explain-item hidden\" > Replace a and b with x and y. </div><div id=\"imowv0abfd-sp-1\" class=\"eq-explain-item hidden\" > Again the bracket multiplies itself. </div><div id=\"imowv0abfe-sp-1\" class=\"eq-explain-item hidden\" > Write every multiplication step. </div><div id=\"imowv0abff-sp-1\" class=\"eq-explain-item hidden\" > Combine the two xy terms. </div><div id=\"imowv0abfg-sp-1\" class=\"eq-explain-item hidden\" > Used in identities and factorization. </div><div id=\"imowv0abfh-sp-1\" class=\"eq-explain-item hidden\" > Always verify each multiplication. </div></div></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ],
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 30,
+          "state": {
+            "focus": [
+              "imowv0abfb"
+            ],
+            "dim": [
+              "imowv0abfc",
+              "imowv0abfd",
+              "imowv0abfe",
+              "imowv0abff",
+              "imowv0abfg",
+              "imowv0abfh"
+            ],
+            "visible": [
+              "imowv0abfb-sp-1"
+            ],
+            "hidden": [
+              "imowv0abfc-sp-1",
+              "imowv0abfd-sp-1",
+              "imowv0abfe-sp-1",
+              "imowv0abff-sp-1",
+              "imowv0abfg-sp-1",
+              "imowv0abfh-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 32,
+          "state": {
+            "focus": [
+              "imowv0abfc"
+            ],
+            "dim": [
+              "imowv0abfb",
+              "imowv0abfd",
+              "imowv0abfe",
+              "imowv0abff",
+              "imowv0abfg",
+              "imowv0abfh"
+            ],
+            "visible": [
+              "imowv0abfc-sp-1"
+            ],
+            "hidden": [
+              "imowv0abfb-sp-1",
+              "imowv0abfd-sp-1",
+              "imowv0abfe-sp-1",
+              "imowv0abff-sp-1",
+              "imowv0abfg-sp-1",
+              "imowv0abfh-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 34,
+          "state": {
+            "focus": [
+              "imowv0abfd"
+            ],
+            "dim": [
+              "imowv0abfb",
+              "imowv0abfc",
+              "imowv0abfe",
+              "imowv0abff",
+              "imowv0abfg",
+              "imowv0abfh"
+            ],
+            "visible": [
+              "imowv0abfd-sp-1"
+            ],
+            "hidden": [
+              "imowv0abfb-sp-1",
+              "imowv0abfc-sp-1",
+              "imowv0abfe-sp-1",
+              "imowv0abff-sp-1",
+              "imowv0abfg-sp-1",
+              "imowv0abfh-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 36,
+          "state": {
+            "focus": [
+              "imowv0abfe"
+            ],
+            "dim": [
+              "imowv0abfb",
+              "imowv0abfc",
+              "imowv0abfd",
+              "imowv0abff",
+              "imowv0abfg",
+              "imowv0abfh"
+            ],
+            "visible": [
+              "imowv0abfe-sp-1"
+            ],
+            "hidden": [
+              "imowv0abfb-sp-1",
+              "imowv0abfc-sp-1",
+              "imowv0abfd-sp-1",
+              "imowv0abff-sp-1",
+              "imowv0abfg-sp-1",
+              "imowv0abfh-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 38,
+          "state": {
+            "focus": [
+              "imowv0abff"
+            ],
+            "dim": [
+              "imowv0abfb",
+              "imowv0abfc",
+              "imowv0abfd",
+              "imowv0abfe",
+              "imowv0abfg",
+              "imowv0abfh"
+            ],
+            "visible": [
+              "imowv0abff-sp-1"
+            ],
+            "hidden": [
+              "imowv0abfb-sp-1",
+              "imowv0abfc-sp-1",
+              "imowv0abfd-sp-1",
+              "imowv0abfe-sp-1",
+              "imowv0abfg-sp-1",
+              "imowv0abfh-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 40,
+          "state": {
+            "focus": [
+              "imowv0abfg"
+            ],
+            "dim": [
+              "imowv0abfb",
+              "imowv0abfc",
+              "imowv0abfd",
+              "imowv0abfe",
+              "imowv0abff",
+              "imowv0abfh"
+            ],
+            "visible": [
+              "imowv0abfg-sp-1"
+            ],
+            "hidden": [
+              "imowv0abfb-sp-1",
+              "imowv0abfc-sp-1",
+              "imowv0abfd-sp-1",
+              "imowv0abfe-sp-1",
+              "imowv0abff-sp-1",
+              "imowv0abfh-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 42,
+          "state": {
+            "focus": [
+              "imowv0abfh"
+            ],
+            "dim": [
+              "imowv0abfb",
+              "imowv0abfc",
+              "imowv0abfd",
+              "imowv0abfe",
+              "imowv0abff",
+              "imowv0abfg"
+            ],
+            "visible": [
+              "imowv0abfh-sp-1"
+            ],
+            "hidden": [
+              "imowv0abfb-sp-1",
+              "imowv0abfc-sp-1",
+              "imowv0abfd-sp-1",
+              "imowv0abfe-sp-1",
+              "imowv0abff-sp-1",
+              "imowv0abfg-sp-1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "skeleton",
+      "start": 50,
+      "end": 65,
+      "html": "<section class=\"slide skeleton\"><div class=\"skeleton-body\"><h1 id=\"imowv0abfi\" class=\"hidden \" > One Idea </h1><h1 id=\"imowv0abfj\" class=\"hidden \" > One Step </h1><h1 id=\"imowv0abfk\" class=\"hidden \" > One Focus </h1><h1 id=\"imowv0abfl\" class=\"hidden \" > Clear Reasoning </h1></div></section>",
+      "groups": {
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 50,
+          "state": {
+            "visible": [
+              "imowv0abfi"
+            ],
+            "hidden": [
+              "imowv0abfj",
+              "imowv0abfk",
+              "imowv0abfl"
+            ]
+          }
+        },
+        {
+          "time": 53,
+          "state": {
+            "visible": [
+              "imowv0abfj"
+            ],
+            "hidden": [
+              "imowv0abfi",
+              "imowv0abfk",
+              "imowv0abfl"
+            ]
+          }
+        },
+        {
+          "time": 56,
+          "state": {
+            "visible": [
+              "imowv0abfk"
+            ],
+            "hidden": [
+              "imowv0abfi",
+              "imowv0abfj",
+              "imowv0abfl"
+            ]
+          }
+        },
+        {
+          "time": 59,
+          "state": {
+            "visible": [
+              "imowv0abfl"
+            ],
+            "hidden": [
+              "imowv0abfi",
+              "imowv0abfj",
+              "imowv0abfk"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

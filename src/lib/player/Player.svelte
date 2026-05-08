@@ -9,6 +9,9 @@
 	import { getSlideAtTime } from "./utils/getSlideAtTime.js";
 	import { useMath } from "./utils/useMath.js";
 
+	// 🔥 fix utility route yourself
+	import { applyBackground } from "./utils/applyBackground.js";
+
 	// --- props ---
 	let { presentation, timer } = $props();
 
@@ -37,147 +40,267 @@
 	}
 
 	function handleStopBtn() {
+
 		timer?.pause();
 
 		timer?.seek(0);
 	}
 
 	function handleScrub(e) {
+
 		if (!timer) return;
 
-		const t = parseFloat(e.target.value);
+		const t =
+			parseFloat(e.target.value);
 
 		timer.seek(t);
 	}
 
 	// --- duration ---
 	$effect(() => {
-		if (!presentation || !timer) return;
+
+		if (
+			!presentation ||
+			!timer
+		) return;
 
 		deckEndTime =
-			getDeckEndTime(presentation);
+			getDeckEndTime(
+				presentation
+			);
 
-		timer.duration = deckEndTime;
+		timer.duration =
+			deckEndTime;
 	});
-// --- mount slide ---
+
+	// -----------------------------------
+	// mount slide
+	// -----------------------------------
+
 	function mountSlide(slide) {
-	if (!slide) return;
 
-	html = slide.html;
+		if (!slide) return;
 
-	actions = slide.actions ?? [];
+		html = slide.html;
 
-	groups = slide.groups ?? {};
+		actions =
+			slide.actions ?? [];
 
-	mountedSlide = slide;
+		groups =
+			slide.groups ?? {};
 
-	queueMicrotask(() => {
-		if (root) {
-			useMath(root);
+		// 🔥 APPLY DECK BACKGROUND
+		if (
+			root &&
+			presentation?.background
+		) {
+
+			applyBackground(
+				root,
+				presentation.background
+			);
 		}
-	});
-}
 
-	// --- loop ---
+		mountedSlide = slide;
+
+		queueMicrotask(() => {
+
+			if (root) {
+				useMath(root);
+			}
+		});
+	}
+
+	// -----------------------------------
+	// loop
+	// -----------------------------------
+
 	let interval;
 
 	onMount(() => {
+
 		interval = setInterval(() => {
-			if (!timer || !presentation) return;
 
-			currentTime = timer.now();
+			if (
+				!timer ||
+				!presentation
+			) return;
 
-			if (deckEndTime < currentTime) {
-				clearInterval(interval);
+			currentTime =
+				timer.now();
+
+			if (
+				deckEndTime <
+				currentTime
+			) {
+
+				clearInterval(
+					interval
+				);
 			}
 
-			const slide = getSlideAtTime(
-				presentation,
-				currentTime
-			);
+			const slide =
+				getSlideAtTime(
+					presentation,
+					currentTime
+				);
 
-			if (slide !== currentSlide) {
-				currentSlide = slide;
+			if (
+				slide !==
+				currentSlide
+			) {
+
+				currentSlide =
+					slide;
 
 				if (
 					currentSlide &&
-					currentSlide !== mountedSlide
+					currentSlide !==
+					mountedSlide
 				) {
-					mountSlide(currentSlide);
+
+					mountSlide(
+						currentSlide
+					);
 				}
 			}
 
 			const slideRoot =
-	root?.querySelector(".slide");
+				root?.querySelector(
+					".slide"
+				);
 
-runActions(
-	actions,
-	groups,
-	currentTime,
-	slideRoot
-);
+			runActions(
+				actions,
+				groups,
+				currentTime,
+				slideRoot
+			);
+
 		}, 100);
 	});
 
 	onDestroy(() => {
-		if (interval) clearInterval(interval);
+
+		if (interval) {
+			clearInterval(
+				interval
+			);
+		}
 	});
 
-	// --- initial render ---
+	// -----------------------------------
+	// initial render
+	// -----------------------------------
+
 	$effect(() => {
-		if (!presentation?.deck?.length) return;
+
+		if (
+			!presentation?.deck
+				?.length
+		) return;
 
 		if (!mountedSlide) {
-			mountSlide(presentation.deck[0]);
+
+			mountSlide(
+				presentation.deck[0]
+			);
 		}
 	});
 </script>
 
+<!-- ================================= -->
+
 <div class="root">
-	<div class="stage" bind:this={root}>
+
+	<div
+		class="stage"
+		bind:this={root}
+	>
 		{@html html}
 	</div>
 
 	<div class="navbar">
+
 		<div class="controls">
-			<button onclick={handlePlayBtn}>▶</button>
 
-			<button onclick={handlePauseBtn}>⏸</button>
+			<button
+				onclick={
+					handlePlayBtn
+				}
+			>
+				▶
+			</button>
 
-			<button onclick={handleStopBtn}>⏹</button>
+			<button
+				onclick={
+					handlePauseBtn
+				}
+			>
+				⏸
+			</button>
+
+			<button
+				onclick={
+					handleStopBtn
+				}
+			>
+				⏹
+			</button>
 
 			<span class="time">
-				{currentTime.toFixed(1)}/{deckEndTime}s
+
+				{currentTime.toFixed(1)}
+				/
+				{deckEndTime}s
+
 			</span>
+
 		</div>
 
 		<div class="scrub-wrap">
+
 			<input
 				type="range"
 				min="0"
 				max={deckEndTime}
 				step="0.1"
-				value={currentTime || 0}
-				oninput={handleScrub}
+				value={
+					currentTime || 0
+				}
+				oninput={
+					handleScrub
+				}
 			/>
+
 		</div>
+
 	</div>
+
 </div>
 
+<!-- ================================= -->
+
 <style>
+
 	@import "./css/themes/dark.css";
 	@import "./css/index.css";
 	@import "./css/app/app.css";
 	@import "./css/bulletList.css";
 	@import "./css/skeleton.css";
 	@import "./css/eq.css";
-	
+
 	:global(body) {
+
 		margin: 0;
 		padding: 0;
+
 		height: 100vh;
+
 		overflow: hidden;
-		background-color: #081b7a;
+
+		background-color:
+			#081b7a;
 	}
 
 	:global(.hidden) {
@@ -189,41 +312,59 @@ runActions(
 	}
 
 	.root {
+
 		display: flex;
 		flex-direction: column;
+
 		width: 100vw;
 		height: 100vh;
 	}
 
 	.stage {
+
 		flex: 1;
+
 		overflow: hidden;
+
 		position: relative;
 	}
 
 	.navbar {
+
 		height: 40px;
+
 		display: flex;
 		align-items: center;
+
 		padding: 0 10px;
+
 		gap: 8px;
-		border-top: 1px solid #333;
+
+		border-top:
+			1px solid #333;
+
 		color: white;
 	}
 
 	.controls {
+
 		display: flex;
 		align-items: center;
+
 		gap: 8px;
 	}
 
 	.time {
+
 		font-size: 13px;
+
 		white-space: nowrap;
 	}
 
 	.scrub-wrap {
+
 		flex: 1;
+
 		display: flex;
 		align-items: center;
 	}
@@ -233,10 +374,16 @@ runActions(
 	}
 
 	button {
+
 		background: none;
+
 		border: none;
+
 		cursor: pointer;
+
 		font-size: 16px;
+
 		color: white;
 	}
+
 </style>

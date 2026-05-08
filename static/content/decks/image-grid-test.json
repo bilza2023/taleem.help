@@ -1,0 +1,359 @@
+{
+  "name": "Image Grid Test",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": null,
+    "backgroundImageOpacity": 0.3
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 8,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imowv0abo5l\" class=\" hidden taleem-heading-lg \" > Image Grid Testing </h1><h2 id=\"imowv0abo5m\" class=\" hidden taleem-heading-md \" > Grouping • repetition • visual organization </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "imowv0abo5m"
+            ]
+          }
+        },
+        {
+          "time": 3,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageGrid",
+      "start": 8,
+      "end": 22,
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imowv0abo5n\" class=\" hidden \" src=\"/content/images/box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abo5o\" class=\" hidden \" src=\"/content/images/eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abo5p\" class=\" hidden \" src=\"/content/images/image.png\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abo5q\" class=\" hidden \" src=\"/content/images/force-intro.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 8,
+          "state": {
+            "hidden": [
+              "imowv0abo5o",
+              "imowv0abo5p",
+              "imowv0abo5q"
+            ]
+          }
+        },
+        {
+          "time": 10,
+          "state": {
+            "hidden": [
+              "imowv0abo5p",
+              "imowv0abo5q"
+            ]
+          }
+        },
+        {
+          "time": 12,
+          "state": {
+            "hidden": [
+              "imowv0abo5q"
+            ]
+          }
+        },
+        {
+          "time": 14,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageGrid",
+      "start": 22,
+      "end": 36,
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imowv0abo5r\" class=\" hidden \" src=\"/content/images/box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abo5s\" class=\" hidden \" src=\"/content/images/box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abo5t\" class=\" hidden \" src=\"/content/images/box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abo5u\" class=\" hidden \" src=\"/content/images/box.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 22,
+          "state": {
+            "hidden": [
+              "imowv0abo5s",
+              "imowv0abo5t",
+              "imowv0abo5u"
+            ]
+          }
+        },
+        {
+          "time": 24,
+          "state": {
+            "hidden": [
+              "imowv0abo5t",
+              "imowv0abo5u"
+            ]
+          }
+        },
+        {
+          "time": 26,
+          "state": {
+            "hidden": [
+              "imowv0abo5u"
+            ]
+          }
+        },
+        {
+          "time": 28,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageGrid",
+      "start": 36,
+      "end": 50,
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imowv0abo5v\" class=\" hidden \" src=\"/content/images/eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abo5w\" class=\" hidden \" src=\"/content/images/eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abo5x\" class=\" hidden \" src=\"/content/images/image.png\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abo5y\" class=\" hidden \" src=\"/content/images/image.png\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 36,
+          "state": {
+            "hidden": [
+              "imowv0abo5w",
+              "imowv0abo5x",
+              "imowv0abo5y"
+            ]
+          }
+        },
+        {
+          "time": 38,
+          "state": {
+            "hidden": [
+              "imowv0abo5x",
+              "imowv0abo5y"
+            ]
+          }
+        },
+        {
+          "time": 40,
+          "state": {
+            "hidden": [
+              "imowv0abo5y"
+            ]
+          }
+        },
+        {
+          "time": 42,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageGrid",
+      "start": 50,
+      "end": 64,
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imowv0abp5z\" class=\" hidden \" src=\"/content/images/force-intro.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abp60\" class=\" hidden \" src=\"/content/images/image.png\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abp61\" class=\" hidden \" src=\"/content/images/eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abp62\" class=\" hidden \" src=\"/content/images/box.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 50,
+          "state": {
+            "hidden": [
+              "imowv0abp60",
+              "imowv0abp61",
+              "imowv0abp62"
+            ]
+          }
+        },
+        {
+          "time": 52,
+          "state": {
+            "hidden": [
+              "imowv0abp61",
+              "imowv0abp62"
+            ]
+          }
+        },
+        {
+          "time": 54,
+          "state": {
+            "hidden": [
+              "imowv0abp62"
+            ]
+          }
+        },
+        {
+          "time": 56,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageGrid",
+      "start": 64,
+      "end": 78,
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imowv0abp63\" class=\" hidden \" src=\"/content/images/force-intro.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abp64\" class=\" hidden \" src=\"/content/images/force-intro.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abp65\" class=\" hidden \" src=\"/content/images/eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abp66\" class=\" hidden \" src=\"/content/images/eq.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 64,
+          "state": {
+            "hidden": [
+              "imowv0abp64",
+              "imowv0abp65",
+              "imowv0abp66"
+            ]
+          }
+        },
+        {
+          "time": 66,
+          "state": {
+            "hidden": [
+              "imowv0abp65",
+              "imowv0abp66"
+            ]
+          }
+        },
+        {
+          "time": 68,
+          "state": {
+            "hidden": [
+              "imowv0abp66"
+            ]
+          }
+        },
+        {
+          "time": 70,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageGrid",
+      "start": 78,
+      "end": 92,
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imowv0abp67\" class=\" hidden \" src=\"/content/images/image.png\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abp68\" class=\" hidden \" src=\"/content/images/box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abp69\" class=\" hidden \" src=\"/content/images/image.png\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abp6a\" class=\" hidden \" src=\"/content/images/box.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 78,
+          "state": {
+            "hidden": [
+              "imowv0abp68",
+              "imowv0abp69",
+              "imowv0abp6a"
+            ]
+          }
+        },
+        {
+          "time": 80,
+          "state": {
+            "hidden": [
+              "imowv0abp69",
+              "imowv0abp6a"
+            ]
+          }
+        },
+        {
+          "time": 82,
+          "state": {
+            "hidden": [
+              "imowv0abp6a"
+            ]
+          }
+        },
+        {
+          "time": 84,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageGrid",
+      "start": 92,
+      "end": 106,
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imowv0abp6b\" class=\" hidden \" src=\"/content/images/eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abp6c\" class=\" hidden \" src=\"/content/images/force-intro.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abp6d\" class=\" hidden \" src=\"/content/images/box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imowv0abp6e\" class=\" hidden \" src=\"/content/images/image.png\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 92,
+          "state": {
+            "hidden": [
+              "imowv0abp6c",
+              "imowv0abp6d",
+              "imowv0abp6e"
+            ]
+          }
+        },
+        {
+          "time": 94,
+          "state": {
+            "hidden": [
+              "imowv0abp6d",
+              "imowv0abp6e"
+            ]
+          }
+        },
+        {
+          "time": 96,
+          "state": {
+            "hidden": [
+              "imowv0abp6e"
+            ]
+          }
+        },
+        {
+          "time": 98,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    }
+  ]
+}
