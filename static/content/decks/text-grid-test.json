@@ -1,16 +1,16 @@
 {
   "name": "Text Grid Test",
   "background": {
-    "backgroundColor": "#111111",
-    "backgroundImage": null,
-    "backgroundImageOpacity": 0.3
+    "backgroundColor": "#05070c",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.22
   },
   "deck": [
     {
       "type": "titleAndSubtitle",
       "start": 0,
       "end": 8,
-      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imowv0abx8i\" class=\" hidden taleem-heading-lg \" > Text Grid Testing </h1><h2 id=\"imowv0abx8j\" class=\" hidden taleem-heading-md \" > Chunking • clustering • visual scanning </h2></section>",
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imox7golf8d\" class=\" hidden taleem-heading-lg \" > Text Grid Testing </h1><h2 id=\"imox7golf8e\" class=\" hidden taleem-heading-md \" > Chunking • clustering • visual scanning </h2></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -21,7 +21,7 @@
           "time": 0,
           "state": {
             "hidden": [
-              "imowv0abx8j"
+              "imox7golf8e"
             ]
           }
         },
@@ -37,7 +37,7 @@
       "type": "textGrid",
       "start": 8,
       "end": 26,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imowv0abx8k\" class=\" text-grid-item hidden \" > Addition </div><div id=\"imowv0abx8l\" class=\" text-grid-item hidden \" > Subtraction </div><div id=\"imowv0abx8m\" class=\" text-grid-item hidden \" > Multiplication </div><div id=\"imowv0abx8n\" class=\" text-grid-item hidden \" > Division </div><div id=\"imowv0abx8o\" class=\" text-grid-item hidden \" > Fractions </div><div id=\"imowv0abx8p\" class=\" text-grid-item hidden \" > Percentages </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imox7golf8f\" class=\" text-grid-item hidden \" > Addition </div><div id=\"imox7golf8g\" class=\" text-grid-item hidden \" > Subtraction </div><div id=\"imox7golf8h\" class=\" text-grid-item hidden \" > Multiplication </div><div id=\"imox7golf8i\" class=\" text-grid-item hidden \" > Division </div><div id=\"imox7golf8j\" class=\" text-grid-item hidden \" > Fractions </div><div id=\"imox7golf8k\" class=\" text-grid-item hidden \" > Percentages </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -48,11 +48,11 @@
           "time": 8,
           "state": {
             "hidden": [
-              "imowv0abx8l",
-              "imowv0abx8m",
-              "imowv0abx8n",
-              "imowv0abx8o",
-              "imowv0abx8p"
+              "imox7golf8g",
+              "imox7golf8h",
+              "imox7golf8i",
+              "imox7golf8j",
+              "imox7golf8k"
             ]
           }
         },
@@ -60,10 +60,10 @@
           "time": 10,
           "state": {
             "hidden": [
-              "imowv0abx8m",
-              "imowv0abx8n",
-              "imowv0abx8o",
-              "imowv0abx8p"
+              "imox7golf8h",
+              "imox7golf8i",
+              "imox7golf8j",
+              "imox7golf8k"
             ]
           }
         },
@@ -71,9 +71,9 @@
           "time": 12,
           "state": {
             "hidden": [
-              "imowv0abx8n",
-              "imowv0abx8o",
-              "imowv0abx8p"
+              "imox7golf8i",
+              "imox7golf8j",
+              "imox7golf8k"
             ]
           }
         },
@@ -81,8 +81,8 @@
           "time": 14,
           "state": {
             "hidden": [
-              "imowv0abx8o",
-              "imowv0abx8p"
+              "imox7golf8j",
+              "imox7golf8k"
             ]
           }
         },
@@ -90,7 +90,7 @@
           "time": 16,
           "state": {
             "hidden": [
-              "imowv0abx8p"
+              "imox7golf8k"
             ]
           }
         },
@@ -106,7 +106,7 @@
       "type": "textGrid",
       "start": 26,
       "end": 44,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imowv0abx8q\" class=\" text-grid-item hidden \" > Photosynthesis </div><div id=\"imowv0abx8r\" class=\" text-grid-item hidden \" > Respiration </div><div id=\"imowv0abx8s\" class=\" text-grid-item hidden \" > Digestion </div><div id=\"imowv0abx8t\" class=\" text-grid-item hidden \" > Circulation </div><div id=\"imowv0abx8u\" class=\" text-grid-item hidden \" > Excretion </div><div id=\"imowv0abx8v\" class=\" text-grid-item hidden \" > Reproduction </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imox7golf8l\" class=\" text-grid-item hidden \" > Photosynthesis </div><div id=\"imox7golf8m\" class=\" text-grid-item hidden \" > Respiration </div><div id=\"imox7golf8n\" class=\" text-grid-item hidden \" > Digestion </div><div id=\"imox7golf8o\" class=\" text-grid-item hidden \" > Circulation </div><div id=\"imox7golf8p\" class=\" text-grid-item hidden \" > Excretion </div><div id=\"imox7golf8q\" class=\" text-grid-item hidden \" > Reproduction </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -117,11 +117,11 @@
           "time": 26,
           "state": {
             "hidden": [
-              "imowv0abx8r",
-              "imowv0abx8s",
-              "imowv0abx8t",
-              "imowv0abx8u",
-              "imowv0abx8v"
+              "imox7golf8m",
+              "imox7golf8n",
+              "imox7golf8o",
+              "imox7golf8p",
+              "imox7golf8q"
             ]
           }
         },
@@ -129,10 +129,10 @@
           "time": 28,
           "state": {
             "hidden": [
-              "imowv0abx8s",
-              "imowv0abx8t",
-              "imowv0abx8u",
-              "imowv0abx8v"
+              "imox7golf8n",
+              "imox7golf8o",
+              "imox7golf8p",
+              "imox7golf8q"
             ]
           }
         },
@@ -140,9 +140,9 @@
           "time": 30,
           "state": {
             "hidden": [
-              "imowv0abx8t",
-              "imowv0abx8u",
-              "imowv0abx8v"
+              "imox7golf8o",
+              "imox7golf8p",
+              "imox7golf8q"
             ]
           }
         },
@@ -150,8 +150,8 @@
           "time": 32,
           "state": {
             "hidden": [
-              "imowv0abx8u",
-              "imowv0abx8v"
+              "imox7golf8p",
+              "imox7golf8q"
             ]
           }
         },
@@ -159,7 +159,7 @@
           "time": 34,
           "state": {
             "hidden": [
-              "imowv0abx8v"
+              "imox7golf8q"
             ]
           }
         },
@@ -175,7 +175,7 @@
       "type": "textGrid",
       "start": 44,
       "end": 62,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imowv0abx8w\" class=\" text-grid-item hidden \" > Velocity </div><div id=\"imowv0abx8x\" class=\" text-grid-item hidden \" > Acceleration </div><div id=\"imowv0abx8y\" class=\" text-grid-item hidden \" > Momentum </div><div id=\"imowv0abx8z\" class=\" text-grid-item hidden \" > Gravity </div><div id=\"imowv0abx90\" class=\" text-grid-item hidden \" > Force </div><div id=\"imowv0abx91\" class=\" text-grid-item hidden \" > Energy </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imox7golf8r\" class=\" text-grid-item hidden \" > Velocity </div><div id=\"imox7golf8s\" class=\" text-grid-item hidden \" > Acceleration </div><div id=\"imox7golf8t\" class=\" text-grid-item hidden \" > Momentum </div><div id=\"imox7golf8u\" class=\" text-grid-item hidden \" > Gravity </div><div id=\"imox7golf8v\" class=\" text-grid-item hidden \" > Force </div><div id=\"imox7golf8w\" class=\" text-grid-item hidden \" > Energy </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -186,11 +186,11 @@
           "time": 44,
           "state": {
             "hidden": [
-              "imowv0abx8x",
-              "imowv0abx8y",
-              "imowv0abx8z",
-              "imowv0abx90",
-              "imowv0abx91"
+              "imox7golf8s",
+              "imox7golf8t",
+              "imox7golf8u",
+              "imox7golf8v",
+              "imox7golf8w"
             ]
           }
         },
@@ -198,10 +198,10 @@
           "time": 46,
           "state": {
             "hidden": [
-              "imowv0abx8y",
-              "imowv0abx8z",
-              "imowv0abx90",
-              "imowv0abx91"
+              "imox7golf8t",
+              "imox7golf8u",
+              "imox7golf8v",
+              "imox7golf8w"
             ]
           }
         },
@@ -209,9 +209,9 @@
           "time": 48,
           "state": {
             "hidden": [
-              "imowv0abx8z",
-              "imowv0abx90",
-              "imowv0abx91"
+              "imox7golf8u",
+              "imox7golf8v",
+              "imox7golf8w"
             ]
           }
         },
@@ -219,8 +219,8 @@
           "time": 50,
           "state": {
             "hidden": [
-              "imowv0abx90",
-              "imowv0abx91"
+              "imox7golf8v",
+              "imox7golf8w"
             ]
           }
         },
@@ -228,7 +228,7 @@
           "time": 52,
           "state": {
             "hidden": [
-              "imowv0abx91"
+              "imox7golf8w"
             ]
           }
         },
@@ -244,7 +244,7 @@
       "type": "textGrid",
       "start": 62,
       "end": 80,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imowv0abx92\" class=\" text-grid-item hidden \" > Variables </div><div id=\"imowv0abx93\" class=\" text-grid-item hidden \" > Functions </div><div id=\"imowv0abx94\" class=\" text-grid-item hidden \" > Arrays </div><div id=\"imowv0abx95\" class=\" text-grid-item hidden \" > Objects </div><div id=\"imowv0abx96\" class=\" text-grid-item hidden \" > Loops </div><div id=\"imowv0abx97\" class=\" text-grid-item hidden \" > Conditions </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imox7golf8x\" class=\" text-grid-item hidden \" > Variables </div><div id=\"imox7golf8y\" class=\" text-grid-item hidden \" > Functions </div><div id=\"imox7golf8z\" class=\" text-grid-item hidden \" > Arrays </div><div id=\"imox7golf90\" class=\" text-grid-item hidden \" > Objects </div><div id=\"imox7golf91\" class=\" text-grid-item hidden \" > Loops </div><div id=\"imox7golf92\" class=\" text-grid-item hidden \" > Conditions </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -255,11 +255,11 @@
           "time": 62,
           "state": {
             "hidden": [
-              "imowv0abx93",
-              "imowv0abx94",
-              "imowv0abx95",
-              "imowv0abx96",
-              "imowv0abx97"
+              "imox7golf8y",
+              "imox7golf8z",
+              "imox7golf90",
+              "imox7golf91",
+              "imox7golf92"
             ]
           }
         },
@@ -267,10 +267,10 @@
           "time": 64,
           "state": {
             "hidden": [
-              "imowv0abx94",
-              "imowv0abx95",
-              "imowv0abx96",
-              "imowv0abx97"
+              "imox7golf8z",
+              "imox7golf90",
+              "imox7golf91",
+              "imox7golf92"
             ]
           }
         },
@@ -278,9 +278,9 @@
           "time": 66,
           "state": {
             "hidden": [
-              "imowv0abx95",
-              "imowv0abx96",
-              "imowv0abx97"
+              "imox7golf90",
+              "imox7golf91",
+              "imox7golf92"
             ]
           }
         },
@@ -288,8 +288,8 @@
           "time": 68,
           "state": {
             "hidden": [
-              "imowv0abx96",
-              "imowv0abx97"
+              "imox7golf91",
+              "imox7golf92"
             ]
           }
         },
@@ -297,7 +297,7 @@
           "time": 70,
           "state": {
             "hidden": [
-              "imowv0abx97"
+              "imox7golf92"
             ]
           }
         },
@@ -313,7 +313,7 @@
       "type": "textGrid",
       "start": 80,
       "end": 98,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imowv0abx98\" class=\" text-grid-item hidden \" > Observation </div><div id=\"imowv0abx99\" class=\" text-grid-item hidden \" > Hypothesis </div><div id=\"imowv0abx9a\" class=\" text-grid-item hidden \" > Experiment </div><div id=\"imowv0abx9b\" class=\" text-grid-item hidden \" > Analysis </div><div id=\"imowv0abx9c\" class=\" text-grid-item hidden \" > Conclusion </div><div id=\"imowv0abx9d\" class=\" text-grid-item hidden \" > Verification </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imox7golg93\" class=\" text-grid-item hidden \" > Observation </div><div id=\"imox7golg94\" class=\" text-grid-item hidden \" > Hypothesis </div><div id=\"imox7golg95\" class=\" text-grid-item hidden \" > Experiment </div><div id=\"imox7golg96\" class=\" text-grid-item hidden \" > Analysis </div><div id=\"imox7golg97\" class=\" text-grid-item hidden \" > Conclusion </div><div id=\"imox7golg98\" class=\" text-grid-item hidden \" > Verification </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -324,11 +324,11 @@
           "time": 80,
           "state": {
             "hidden": [
-              "imowv0abx99",
-              "imowv0abx9a",
-              "imowv0abx9b",
-              "imowv0abx9c",
-              "imowv0abx9d"
+              "imox7golg94",
+              "imox7golg95",
+              "imox7golg96",
+              "imox7golg97",
+              "imox7golg98"
             ]
           }
         },
@@ -336,10 +336,10 @@
           "time": 82,
           "state": {
             "hidden": [
-              "imowv0abx9a",
-              "imowv0abx9b",
-              "imowv0abx9c",
-              "imowv0abx9d"
+              "imox7golg95",
+              "imox7golg96",
+              "imox7golg97",
+              "imox7golg98"
             ]
           }
         },
@@ -347,9 +347,9 @@
           "time": 84,
           "state": {
             "hidden": [
-              "imowv0abx9b",
-              "imowv0abx9c",
-              "imowv0abx9d"
+              "imox7golg96",
+              "imox7golg97",
+              "imox7golg98"
             ]
           }
         },
@@ -357,8 +357,8 @@
           "time": 86,
           "state": {
             "hidden": [
-              "imowv0abx9c",
-              "imowv0abx9d"
+              "imox7golg97",
+              "imox7golg98"
             ]
           }
         },
@@ -366,7 +366,7 @@
           "time": 88,
           "state": {
             "hidden": [
-              "imowv0abx9d"
+              "imox7golg98"
             ]
           }
         },
@@ -382,7 +382,7 @@
       "type": "textGrid",
       "start": 98,
       "end": 116,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imowv0abx9e\" class=\" text-grid-item hidden \" > Focus </div><div id=\"imowv0abx9f\" class=\" text-grid-item hidden \" > Clarity </div><div id=\"imowv0abx9g\" class=\" text-grid-item hidden \" > Discipline </div><div id=\"imowv0abx9h\" class=\" text-grid-item hidden \" > Patience </div><div id=\"imowv0abx9i\" class=\" text-grid-item hidden \" > Reasoning </div><div id=\"imowv0abx9j\" class=\" text-grid-item hidden \" > Consistency </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imox7golg99\" class=\" text-grid-item hidden \" > Focus </div><div id=\"imox7golg9a\" class=\" text-grid-item hidden \" > Clarity </div><div id=\"imox7golg9b\" class=\" text-grid-item hidden \" > Discipline </div><div id=\"imox7golg9c\" class=\" text-grid-item hidden \" > Patience </div><div id=\"imox7golg9d\" class=\" text-grid-item hidden \" > Reasoning </div><div id=\"imox7golg9e\" class=\" text-grid-item hidden \" > Consistency </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -393,11 +393,11 @@
           "time": 98,
           "state": {
             "hidden": [
-              "imowv0abx9f",
-              "imowv0abx9g",
-              "imowv0abx9h",
-              "imowv0abx9i",
-              "imowv0abx9j"
+              "imox7golg9a",
+              "imox7golg9b",
+              "imox7golg9c",
+              "imox7golg9d",
+              "imox7golg9e"
             ]
           }
         },
@@ -405,10 +405,10 @@
           "time": 100,
           "state": {
             "hidden": [
-              "imowv0abx9g",
-              "imowv0abx9h",
-              "imowv0abx9i",
-              "imowv0abx9j"
+              "imox7golg9b",
+              "imox7golg9c",
+              "imox7golg9d",
+              "imox7golg9e"
             ]
           }
         },
@@ -416,9 +416,9 @@
           "time": 102,
           "state": {
             "hidden": [
-              "imowv0abx9h",
-              "imowv0abx9i",
-              "imowv0abx9j"
+              "imox7golg9c",
+              "imox7golg9d",
+              "imox7golg9e"
             ]
           }
         },
@@ -426,8 +426,8 @@
           "time": 104,
           "state": {
             "hidden": [
-              "imowv0abx9i",
-              "imowv0abx9j"
+              "imox7golg9d",
+              "imox7golg9e"
             ]
           }
         },
@@ -435,7 +435,7 @@
           "time": 106,
           "state": {
             "hidden": [
-              "imowv0abx9j"
+              "imox7golg9e"
             ]
           }
         },

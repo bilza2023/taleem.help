@@ -2,28 +2,33 @@
 
 <script>
 	import { onMount } from "svelte";
-
+	import { resolveAssetPaths }
+	from "./utils/resolveAssetPaths.js";
 	import { page } from "$app/stores";
 	import { get } from "svelte/store";
 
 	import Player from "$lib/player/Player.svelte";
 
-	import { getTimer } from "./utils/getTimer.js";
+	import { getTimer }
+		from "./utils/getTimer.js";
 
-	import { resolveBackground }
-		from "$lib/player/utils/resolveBackground.js";
-
-	import { Howl } from "howler";
+	import { Howl }
+		from "howler";
 
 	const CONTENT_FOLDER =
 		"/content";
 
-	// --- state ---
+	// --------------------------------------------------
+	// state
+	// --------------------------------------------------
+
 	let presentation =
 		$state(null);
 
 	let timer =
 		$state(null);
+
+	// --------------------------------------------------
 
 	onMount(async () => {
 
@@ -36,9 +41,9 @@
 			params.get("deck")
 			|| "main";
 
-		// -------------------------
-		// load compiled presentation
-		// -------------------------
+		// --------------------------------------------------
+		// load presentation
+		// --------------------------------------------------
 
 		const res =
 			await fetch(
@@ -48,26 +53,31 @@
 		presentation =
 			await res.json();
 
-		// 🔥 RESOLVE BACKGROUND
-		resolveBackground(
+		// 🔥 IMPORTANT
+		resolveAssetPaths(
 			presentation,
 			"/content/images/"
 		);
 
-		// -------------------------
+		// --------------------------------------------------
 		// timer
-		// -------------------------
+		// --------------------------------------------------
 
 		timer =
 			await getTimer({
-				slug: deckSlug,
-				deck: presentation,
+
+				slug:
+					deckSlug,
+
+				deck:
+					presentation,
+
 				Howl
 			});
 
-		// -------------------------
+		// --------------------------------------------------
 		// auto stop
-		// -------------------------
+		// --------------------------------------------------
 
 		const endTime =
 			presentation?.deck?.[
@@ -94,8 +104,8 @@
 
 			}, 200);
 
-	});
-</script>
+		});
+	</script>
 
 {#if presentation && timer}
 

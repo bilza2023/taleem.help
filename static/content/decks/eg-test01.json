@@ -1,16 +1,16 @@
 {
   "name": "EQ Test 01",
   "background": {
-    "backgroundColor": "#111111",
-    "backgroundImage": null,
-    "backgroundImageOpacity": 0.3
+    "backgroundColor": "#05070c",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.22
   },
   "deck": [
     {
       "type": "titleAndSubtitle",
       "start": 0,
       "end": 8,
-      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imowv0abe1\" class=\" hidden taleem-heading-lg \" > Expanding (a+b)^2 </h1><h2 id=\"imowv0abe2\" class=\" hidden taleem-heading-md \" > Testing EQ slide pacing and reasoning flow </h2></section>",
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imox7gol01\" class=\" hidden taleem-heading-lg \" > Expanding (a+b)^2 </h1><h2 id=\"imox7gol02\" class=\" hidden taleem-heading-md \" > Testing EQ slide pacing and reasoning flow </h2></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -21,7 +21,7 @@
           "time": 0,
           "state": {
             "hidden": [
-              "imowv0abe2"
+              "imox7gol02"
             ]
           }
         },
@@ -37,7 +37,7 @@
       "type": "eq",
       "start": 8,
       "end": 30,
-      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imowv0abe3\" class=\" eq-item eq-title \" > Understanding the Square </li><li id=\"imowv0abe4\" class=\" eq-item eq-math \" > $$ (a+b)^2 $$ </li><li id=\"imowv0abe5\" class=\" eq-item eq-math \" > $$ = (a+b)(a+b) $$ </li><li id=\"imowv0abe6\" class=\" eq-item eq-line \" > Now every term must multiply. </li><li id=\"imowv0abe7\" class=\" eq-item eq-math \" > $$ = a(a+b) + b(a+b) $$ </li><li id=\"imowv0abe8\" class=\" eq-item eq-math \" > $$ = a^2 + ab + ab + b^2 $$ </li><li id=\"imowv0abe9\" class=\" eq-item eq-line \" > The two middle terms are identical. </li><li id=\"imowv0abea\" class=\" eq-item eq-math \" > $$ = a^2 + 2ab + b^2 $$ </li></ul><div class=\"eq-side-panel\"><div id=\"imowv0abe3-sp-1\" class=\"eq-explain-item hidden\" > The exponent applies to the whole bracket. </div><div id=\"imowv0abe3-sp-2\" class=\"eq-explain-item hidden\" > The bracket multiplies itself. </div><div id=\"imowv0abe4-sp-1\" class=\"eq-explain-item hidden\" > This is not a^2 + b^2. </div><div id=\"imowv0abe5-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"/content/images/box.webp\" /></div><div id=\"imowv0abe5-sp-2\" class=\"eq-explain-item hidden\" > Rewrite the square as repeated multiplication. </div><div id=\"imowv0abe6-sp-1\" class=\"eq-explain-item hidden\" > Each term interacts with every term. </div><div id=\"imowv0abe7-sp-1\" class=\"eq-explain-item hidden\" > Distribute carefully. </div><div id=\"imowv0abe8-sp-1\" class=\"eq-explain-item hidden\" > All products are now visible. </div><div id=\"imowv0abe9-sp-1\" class=\"eq-explain-item hidden\" > Both terms contain ab. </div><div id=\"imowv0abea-sp-1\" class=\"eq-explain-item hidden\" > Combine like terms. </div></div></section>",
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imox7gol03\" class=\" eq-item eq-title \" > Understanding the Square </li><li id=\"imox7gol04\" class=\" eq-item eq-math \" > $$ (a+b)^2 $$ </li><li id=\"imox7gol05\" class=\" eq-item eq-math \" > $$ = (a+b)(a+b) $$ </li><li id=\"imox7gol06\" class=\" eq-item eq-line \" > Now every term must multiply. </li><li id=\"imox7gol07\" class=\" eq-item eq-math \" > $$ = a(a+b) + b(a+b) $$ </li><li id=\"imox7gol08\" class=\" eq-item eq-math \" > $$ = a^2 + ab + ab + b^2 $$ </li><li id=\"imox7gol09\" class=\" eq-item eq-line \" > The two middle terms are identical. </li><li id=\"imox7gol0a\" class=\" eq-item eq-math \" > $$ = a^2 + 2ab + b^2 $$ </li></ul><div class=\"eq-side-panel\"><div id=\"imox7gol03-sp-1\" class=\"eq-explain-item hidden\" > The exponent applies to the whole bracket. </div><div id=\"imox7gol03-sp-2\" class=\"eq-explain-item hidden\" > The bracket multiplies itself. </div><div id=\"imox7gol04-sp-1\" class=\"eq-explain-item hidden\" > This is not a^2 + b^2. </div><div id=\"imox7gol05-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"imox7gol05-sp-2\" class=\"eq-explain-item hidden\" > Rewrite the square as repeated multiplication. </div><div id=\"imox7gol06-sp-1\" class=\"eq-explain-item hidden\" > Each term interacts with every term. </div><div id=\"imox7gol07-sp-1\" class=\"eq-explain-item hidden\" > Distribute carefully. </div><div id=\"imox7gol08-sp-1\" class=\"eq-explain-item hidden\" > All products are now visible. </div><div id=\"imox7gol09-sp-1\" class=\"eq-explain-item hidden\" > Both terms contain ab. </div><div id=\"imox7gol0a-sp-1\" class=\"eq-explain-item hidden\" > Combine like terms. </div></div></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -53,30 +53,30 @@
           "time": 8,
           "state": {
             "focus": [
-              "imowv0abe3"
+              "imox7gol03"
             ],
             "dim": [
-              "imowv0abe4",
-              "imowv0abe5",
-              "imowv0abe6",
-              "imowv0abe7",
-              "imowv0abe8",
-              "imowv0abe9",
-              "imowv0abea"
+              "imox7gol04",
+              "imox7gol05",
+              "imox7gol06",
+              "imox7gol07",
+              "imox7gol08",
+              "imox7gol09",
+              "imox7gol0a"
             ],
             "visible": [
-              "imowv0abe3-sp-1",
-              "imowv0abe3-sp-2"
+              "imox7gol03-sp-1",
+              "imox7gol03-sp-2"
             ],
             "hidden": [
-              "imowv0abe4-sp-1",
-              "imowv0abe5-sp-1",
-              "imowv0abe5-sp-2",
-              "imowv0abe6-sp-1",
-              "imowv0abe7-sp-1",
-              "imowv0abe8-sp-1",
-              "imowv0abe9-sp-1",
-              "imowv0abea-sp-1"
+              "imox7gol04-sp-1",
+              "imox7gol05-sp-1",
+              "imox7gol05-sp-2",
+              "imox7gol06-sp-1",
+              "imox7gol07-sp-1",
+              "imox7gol08-sp-1",
+              "imox7gol09-sp-1",
+              "imox7gol0a-sp-1"
             ]
           }
         },
@@ -84,30 +84,30 @@
           "time": 10,
           "state": {
             "focus": [
-              "imowv0abe4"
+              "imox7gol04"
             ],
             "dim": [
-              "imowv0abe3",
-              "imowv0abe5",
-              "imowv0abe6",
-              "imowv0abe7",
-              "imowv0abe8",
-              "imowv0abe9",
-              "imowv0abea"
+              "imox7gol03",
+              "imox7gol05",
+              "imox7gol06",
+              "imox7gol07",
+              "imox7gol08",
+              "imox7gol09",
+              "imox7gol0a"
             ],
             "visible": [
-              "imowv0abe4-sp-1"
+              "imox7gol04-sp-1"
             ],
             "hidden": [
-              "imowv0abe3-sp-1",
-              "imowv0abe3-sp-2",
-              "imowv0abe5-sp-1",
-              "imowv0abe5-sp-2",
-              "imowv0abe6-sp-1",
-              "imowv0abe7-sp-1",
-              "imowv0abe8-sp-1",
-              "imowv0abe9-sp-1",
-              "imowv0abea-sp-1"
+              "imox7gol03-sp-1",
+              "imox7gol03-sp-2",
+              "imox7gol05-sp-1",
+              "imox7gol05-sp-2",
+              "imox7gol06-sp-1",
+              "imox7gol07-sp-1",
+              "imox7gol08-sp-1",
+              "imox7gol09-sp-1",
+              "imox7gol0a-sp-1"
             ]
           }
         },
@@ -115,30 +115,30 @@
           "time": 12,
           "state": {
             "focus": [
-              "imowv0abe5"
+              "imox7gol05"
             ],
             "dim": [
-              "imowv0abe3",
-              "imowv0abe4",
-              "imowv0abe6",
-              "imowv0abe7",
-              "imowv0abe8",
-              "imowv0abe9",
-              "imowv0abea"
+              "imox7gol03",
+              "imox7gol04",
+              "imox7gol06",
+              "imox7gol07",
+              "imox7gol08",
+              "imox7gol09",
+              "imox7gol0a"
             ],
             "visible": [
-              "imowv0abe5-sp-1",
-              "imowv0abe5-sp-2"
+              "imox7gol05-sp-1",
+              "imox7gol05-sp-2"
             ],
             "hidden": [
-              "imowv0abe3-sp-1",
-              "imowv0abe3-sp-2",
-              "imowv0abe4-sp-1",
-              "imowv0abe6-sp-1",
-              "imowv0abe7-sp-1",
-              "imowv0abe8-sp-1",
-              "imowv0abe9-sp-1",
-              "imowv0abea-sp-1"
+              "imox7gol03-sp-1",
+              "imox7gol03-sp-2",
+              "imox7gol04-sp-1",
+              "imox7gol06-sp-1",
+              "imox7gol07-sp-1",
+              "imox7gol08-sp-1",
+              "imox7gol09-sp-1",
+              "imox7gol0a-sp-1"
             ]
           }
         },
@@ -146,30 +146,30 @@
           "time": 14,
           "state": {
             "focus": [
-              "imowv0abe6"
+              "imox7gol06"
             ],
             "dim": [
-              "imowv0abe3",
-              "imowv0abe4",
-              "imowv0abe5",
-              "imowv0abe7",
-              "imowv0abe8",
-              "imowv0abe9",
-              "imowv0abea"
+              "imox7gol03",
+              "imox7gol04",
+              "imox7gol05",
+              "imox7gol07",
+              "imox7gol08",
+              "imox7gol09",
+              "imox7gol0a"
             ],
             "visible": [
-              "imowv0abe6-sp-1"
+              "imox7gol06-sp-1"
             ],
             "hidden": [
-              "imowv0abe3-sp-1",
-              "imowv0abe3-sp-2",
-              "imowv0abe4-sp-1",
-              "imowv0abe5-sp-1",
-              "imowv0abe5-sp-2",
-              "imowv0abe7-sp-1",
-              "imowv0abe8-sp-1",
-              "imowv0abe9-sp-1",
-              "imowv0abea-sp-1"
+              "imox7gol03-sp-1",
+              "imox7gol03-sp-2",
+              "imox7gol04-sp-1",
+              "imox7gol05-sp-1",
+              "imox7gol05-sp-2",
+              "imox7gol07-sp-1",
+              "imox7gol08-sp-1",
+              "imox7gol09-sp-1",
+              "imox7gol0a-sp-1"
             ]
           }
         },
@@ -177,30 +177,30 @@
           "time": 16,
           "state": {
             "focus": [
-              "imowv0abe7"
+              "imox7gol07"
             ],
             "dim": [
-              "imowv0abe3",
-              "imowv0abe4",
-              "imowv0abe5",
-              "imowv0abe6",
-              "imowv0abe8",
-              "imowv0abe9",
-              "imowv0abea"
+              "imox7gol03",
+              "imox7gol04",
+              "imox7gol05",
+              "imox7gol06",
+              "imox7gol08",
+              "imox7gol09",
+              "imox7gol0a"
             ],
             "visible": [
-              "imowv0abe7-sp-1"
+              "imox7gol07-sp-1"
             ],
             "hidden": [
-              "imowv0abe3-sp-1",
-              "imowv0abe3-sp-2",
-              "imowv0abe4-sp-1",
-              "imowv0abe5-sp-1",
-              "imowv0abe5-sp-2",
-              "imowv0abe6-sp-1",
-              "imowv0abe8-sp-1",
-              "imowv0abe9-sp-1",
-              "imowv0abea-sp-1"
+              "imox7gol03-sp-1",
+              "imox7gol03-sp-2",
+              "imox7gol04-sp-1",
+              "imox7gol05-sp-1",
+              "imox7gol05-sp-2",
+              "imox7gol06-sp-1",
+              "imox7gol08-sp-1",
+              "imox7gol09-sp-1",
+              "imox7gol0a-sp-1"
             ]
           }
         },
@@ -208,30 +208,30 @@
           "time": 18,
           "state": {
             "focus": [
-              "imowv0abe8"
+              "imox7gol08"
             ],
             "dim": [
-              "imowv0abe3",
-              "imowv0abe4",
-              "imowv0abe5",
-              "imowv0abe6",
-              "imowv0abe7",
-              "imowv0abe9",
-              "imowv0abea"
+              "imox7gol03",
+              "imox7gol04",
+              "imox7gol05",
+              "imox7gol06",
+              "imox7gol07",
+              "imox7gol09",
+              "imox7gol0a"
             ],
             "visible": [
-              "imowv0abe8-sp-1"
+              "imox7gol08-sp-1"
             ],
             "hidden": [
-              "imowv0abe3-sp-1",
-              "imowv0abe3-sp-2",
-              "imowv0abe4-sp-1",
-              "imowv0abe5-sp-1",
-              "imowv0abe5-sp-2",
-              "imowv0abe6-sp-1",
-              "imowv0abe7-sp-1",
-              "imowv0abe9-sp-1",
-              "imowv0abea-sp-1"
+              "imox7gol03-sp-1",
+              "imox7gol03-sp-2",
+              "imox7gol04-sp-1",
+              "imox7gol05-sp-1",
+              "imox7gol05-sp-2",
+              "imox7gol06-sp-1",
+              "imox7gol07-sp-1",
+              "imox7gol09-sp-1",
+              "imox7gol0a-sp-1"
             ]
           }
         },
@@ -239,30 +239,30 @@
           "time": 20,
           "state": {
             "focus": [
-              "imowv0abe9"
+              "imox7gol09"
             ],
             "dim": [
-              "imowv0abe3",
-              "imowv0abe4",
-              "imowv0abe5",
-              "imowv0abe6",
-              "imowv0abe7",
-              "imowv0abe8",
-              "imowv0abea"
+              "imox7gol03",
+              "imox7gol04",
+              "imox7gol05",
+              "imox7gol06",
+              "imox7gol07",
+              "imox7gol08",
+              "imox7gol0a"
             ],
             "visible": [
-              "imowv0abe9-sp-1"
+              "imox7gol09-sp-1"
             ],
             "hidden": [
-              "imowv0abe3-sp-1",
-              "imowv0abe3-sp-2",
-              "imowv0abe4-sp-1",
-              "imowv0abe5-sp-1",
-              "imowv0abe5-sp-2",
-              "imowv0abe6-sp-1",
-              "imowv0abe7-sp-1",
-              "imowv0abe8-sp-1",
-              "imowv0abea-sp-1"
+              "imox7gol03-sp-1",
+              "imox7gol03-sp-2",
+              "imox7gol04-sp-1",
+              "imox7gol05-sp-1",
+              "imox7gol05-sp-2",
+              "imox7gol06-sp-1",
+              "imox7gol07-sp-1",
+              "imox7gol08-sp-1",
+              "imox7gol0a-sp-1"
             ]
           }
         },
@@ -270,30 +270,30 @@
           "time": 22,
           "state": {
             "focus": [
-              "imowv0abea"
+              "imox7gol0a"
             ],
             "dim": [
-              "imowv0abe3",
-              "imowv0abe4",
-              "imowv0abe5",
-              "imowv0abe6",
-              "imowv0abe7",
-              "imowv0abe8",
-              "imowv0abe9"
+              "imox7gol03",
+              "imox7gol04",
+              "imox7gol05",
+              "imox7gol06",
+              "imox7gol07",
+              "imox7gol08",
+              "imox7gol09"
             ],
             "visible": [
-              "imowv0abea-sp-1"
+              "imox7gol0a-sp-1"
             ],
             "hidden": [
-              "imowv0abe3-sp-1",
-              "imowv0abe3-sp-2",
-              "imowv0abe4-sp-1",
-              "imowv0abe5-sp-1",
-              "imowv0abe5-sp-2",
-              "imowv0abe6-sp-1",
-              "imowv0abe7-sp-1",
-              "imowv0abe8-sp-1",
-              "imowv0abe9-sp-1"
+              "imox7gol03-sp-1",
+              "imox7gol03-sp-2",
+              "imox7gol04-sp-1",
+              "imox7gol05-sp-1",
+              "imox7gol05-sp-2",
+              "imox7gol06-sp-1",
+              "imox7gol07-sp-1",
+              "imox7gol08-sp-1",
+              "imox7gol09-sp-1"
             ]
           }
         }
@@ -303,7 +303,7 @@
       "type": "eq",
       "start": 30,
       "end": 50,
-      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imowv0abfb\" class=\" eq-item eq-title \" > Testing with Variables </li><li id=\"imowv0abfc\" class=\" eq-item eq-math \" > $$ (x+y)^2 $$ </li><li id=\"imowv0abfd\" class=\" eq-item eq-math \" > $$ = (x+y)(x+y) $$ </li><li id=\"imowv0abfe\" class=\" eq-item eq-math \" > $$ = x^2 + xy + xy + y^2 $$ </li><li id=\"imowv0abff\" class=\" eq-item eq-math \" > $$ = x^2 + 2xy + y^2 $$ </li><li id=\"imowv0abfg\" class=\" eq-item eq-line \" > This pattern appears throughout algebra. </li><li id=\"imowv0abfh\" class=\" eq-item eq-line \" > Careless expansion causes most mistakes. </li></ul><div class=\"eq-side-panel\"><div id=\"imowv0abfb-sp-1\" class=\"eq-explain-item hidden\" > The identity works for all variables. </div><div id=\"imowv0abfc-sp-1\" class=\"eq-explain-item hidden\" > Replace a and b with x and y. </div><div id=\"imowv0abfd-sp-1\" class=\"eq-explain-item hidden\" > Again the bracket multiplies itself. </div><div id=\"imowv0abfe-sp-1\" class=\"eq-explain-item hidden\" > Write every multiplication step. </div><div id=\"imowv0abff-sp-1\" class=\"eq-explain-item hidden\" > Combine the two xy terms. </div><div id=\"imowv0abfg-sp-1\" class=\"eq-explain-item hidden\" > Used in identities and factorization. </div><div id=\"imowv0abfh-sp-1\" class=\"eq-explain-item hidden\" > Always verify each multiplication. </div></div></section>",
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imox7gol1b\" class=\" eq-item eq-title \" > Testing with Variables </li><li id=\"imox7gol1c\" class=\" eq-item eq-math \" > $$ (x+y)^2 $$ </li><li id=\"imox7gol1d\" class=\" eq-item eq-math \" > $$ = (x+y)(x+y) $$ </li><li id=\"imox7gol1e\" class=\" eq-item eq-math \" > $$ = x^2 + xy + xy + y^2 $$ </li><li id=\"imox7gol1f\" class=\" eq-item eq-math \" > $$ = x^2 + 2xy + y^2 $$ </li><li id=\"imox7gol1g\" class=\" eq-item eq-line \" > This pattern appears throughout algebra. </li><li id=\"imox7gol1h\" class=\" eq-item eq-line \" > Careless expansion causes most mistakes. </li></ul><div class=\"eq-side-panel\"><div id=\"imox7gol1b-sp-1\" class=\"eq-explain-item hidden\" > The identity works for all variables. </div><div id=\"imox7gol1c-sp-1\" class=\"eq-explain-item hidden\" > Replace a and b with x and y. </div><div id=\"imox7gol1d-sp-1\" class=\"eq-explain-item hidden\" > Again the bracket multiplies itself. </div><div id=\"imox7gol1e-sp-1\" class=\"eq-explain-item hidden\" > Write every multiplication step. </div><div id=\"imox7gol1f-sp-1\" class=\"eq-explain-item hidden\" > Combine the two xy terms. </div><div id=\"imox7gol1g-sp-1\" class=\"eq-explain-item hidden\" > Used in identities and factorization. </div><div id=\"imox7gol1h-sp-1\" class=\"eq-explain-item hidden\" > Always verify each multiplication. </div></div></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -319,26 +319,26 @@
           "time": 30,
           "state": {
             "focus": [
-              "imowv0abfb"
+              "imox7gol1b"
             ],
             "dim": [
-              "imowv0abfc",
-              "imowv0abfd",
-              "imowv0abfe",
-              "imowv0abff",
-              "imowv0abfg",
-              "imowv0abfh"
+              "imox7gol1c",
+              "imox7gol1d",
+              "imox7gol1e",
+              "imox7gol1f",
+              "imox7gol1g",
+              "imox7gol1h"
             ],
             "visible": [
-              "imowv0abfb-sp-1"
+              "imox7gol1b-sp-1"
             ],
             "hidden": [
-              "imowv0abfc-sp-1",
-              "imowv0abfd-sp-1",
-              "imowv0abfe-sp-1",
-              "imowv0abff-sp-1",
-              "imowv0abfg-sp-1",
-              "imowv0abfh-sp-1"
+              "imox7gol1c-sp-1",
+              "imox7gol1d-sp-1",
+              "imox7gol1e-sp-1",
+              "imox7gol1f-sp-1",
+              "imox7gol1g-sp-1",
+              "imox7gol1h-sp-1"
             ]
           }
         },
@@ -346,26 +346,26 @@
           "time": 32,
           "state": {
             "focus": [
-              "imowv0abfc"
+              "imox7gol1c"
             ],
             "dim": [
-              "imowv0abfb",
-              "imowv0abfd",
-              "imowv0abfe",
-              "imowv0abff",
-              "imowv0abfg",
-              "imowv0abfh"
+              "imox7gol1b",
+              "imox7gol1d",
+              "imox7gol1e",
+              "imox7gol1f",
+              "imox7gol1g",
+              "imox7gol1h"
             ],
             "visible": [
-              "imowv0abfc-sp-1"
+              "imox7gol1c-sp-1"
             ],
             "hidden": [
-              "imowv0abfb-sp-1",
-              "imowv0abfd-sp-1",
-              "imowv0abfe-sp-1",
-              "imowv0abff-sp-1",
-              "imowv0abfg-sp-1",
-              "imowv0abfh-sp-1"
+              "imox7gol1b-sp-1",
+              "imox7gol1d-sp-1",
+              "imox7gol1e-sp-1",
+              "imox7gol1f-sp-1",
+              "imox7gol1g-sp-1",
+              "imox7gol1h-sp-1"
             ]
           }
         },
@@ -373,26 +373,26 @@
           "time": 34,
           "state": {
             "focus": [
-              "imowv0abfd"
+              "imox7gol1d"
             ],
             "dim": [
-              "imowv0abfb",
-              "imowv0abfc",
-              "imowv0abfe",
-              "imowv0abff",
-              "imowv0abfg",
-              "imowv0abfh"
+              "imox7gol1b",
+              "imox7gol1c",
+              "imox7gol1e",
+              "imox7gol1f",
+              "imox7gol1g",
+              "imox7gol1h"
             ],
             "visible": [
-              "imowv0abfd-sp-1"
+              "imox7gol1d-sp-1"
             ],
             "hidden": [
-              "imowv0abfb-sp-1",
-              "imowv0abfc-sp-1",
-              "imowv0abfe-sp-1",
-              "imowv0abff-sp-1",
-              "imowv0abfg-sp-1",
-              "imowv0abfh-sp-1"
+              "imox7gol1b-sp-1",
+              "imox7gol1c-sp-1",
+              "imox7gol1e-sp-1",
+              "imox7gol1f-sp-1",
+              "imox7gol1g-sp-1",
+              "imox7gol1h-sp-1"
             ]
           }
         },
@@ -400,26 +400,26 @@
           "time": 36,
           "state": {
             "focus": [
-              "imowv0abfe"
+              "imox7gol1e"
             ],
             "dim": [
-              "imowv0abfb",
-              "imowv0abfc",
-              "imowv0abfd",
-              "imowv0abff",
-              "imowv0abfg",
-              "imowv0abfh"
+              "imox7gol1b",
+              "imox7gol1c",
+              "imox7gol1d",
+              "imox7gol1f",
+              "imox7gol1g",
+              "imox7gol1h"
             ],
             "visible": [
-              "imowv0abfe-sp-1"
+              "imox7gol1e-sp-1"
             ],
             "hidden": [
-              "imowv0abfb-sp-1",
-              "imowv0abfc-sp-1",
-              "imowv0abfd-sp-1",
-              "imowv0abff-sp-1",
-              "imowv0abfg-sp-1",
-              "imowv0abfh-sp-1"
+              "imox7gol1b-sp-1",
+              "imox7gol1c-sp-1",
+              "imox7gol1d-sp-1",
+              "imox7gol1f-sp-1",
+              "imox7gol1g-sp-1",
+              "imox7gol1h-sp-1"
             ]
           }
         },
@@ -427,26 +427,26 @@
           "time": 38,
           "state": {
             "focus": [
-              "imowv0abff"
+              "imox7gol1f"
             ],
             "dim": [
-              "imowv0abfb",
-              "imowv0abfc",
-              "imowv0abfd",
-              "imowv0abfe",
-              "imowv0abfg",
-              "imowv0abfh"
+              "imox7gol1b",
+              "imox7gol1c",
+              "imox7gol1d",
+              "imox7gol1e",
+              "imox7gol1g",
+              "imox7gol1h"
             ],
             "visible": [
-              "imowv0abff-sp-1"
+              "imox7gol1f-sp-1"
             ],
             "hidden": [
-              "imowv0abfb-sp-1",
-              "imowv0abfc-sp-1",
-              "imowv0abfd-sp-1",
-              "imowv0abfe-sp-1",
-              "imowv0abfg-sp-1",
-              "imowv0abfh-sp-1"
+              "imox7gol1b-sp-1",
+              "imox7gol1c-sp-1",
+              "imox7gol1d-sp-1",
+              "imox7gol1e-sp-1",
+              "imox7gol1g-sp-1",
+              "imox7gol1h-sp-1"
             ]
           }
         },
@@ -454,26 +454,26 @@
           "time": 40,
           "state": {
             "focus": [
-              "imowv0abfg"
+              "imox7gol1g"
             ],
             "dim": [
-              "imowv0abfb",
-              "imowv0abfc",
-              "imowv0abfd",
-              "imowv0abfe",
-              "imowv0abff",
-              "imowv0abfh"
+              "imox7gol1b",
+              "imox7gol1c",
+              "imox7gol1d",
+              "imox7gol1e",
+              "imox7gol1f",
+              "imox7gol1h"
             ],
             "visible": [
-              "imowv0abfg-sp-1"
+              "imox7gol1g-sp-1"
             ],
             "hidden": [
-              "imowv0abfb-sp-1",
-              "imowv0abfc-sp-1",
-              "imowv0abfd-sp-1",
-              "imowv0abfe-sp-1",
-              "imowv0abff-sp-1",
-              "imowv0abfh-sp-1"
+              "imox7gol1b-sp-1",
+              "imox7gol1c-sp-1",
+              "imox7gol1d-sp-1",
+              "imox7gol1e-sp-1",
+              "imox7gol1f-sp-1",
+              "imox7gol1h-sp-1"
             ]
           }
         },
@@ -481,26 +481,26 @@
           "time": 42,
           "state": {
             "focus": [
-              "imowv0abfh"
+              "imox7gol1h"
             ],
             "dim": [
-              "imowv0abfb",
-              "imowv0abfc",
-              "imowv0abfd",
-              "imowv0abfe",
-              "imowv0abff",
-              "imowv0abfg"
+              "imox7gol1b",
+              "imox7gol1c",
+              "imox7gol1d",
+              "imox7gol1e",
+              "imox7gol1f",
+              "imox7gol1g"
             ],
             "visible": [
-              "imowv0abfh-sp-1"
+              "imox7gol1h-sp-1"
             ],
             "hidden": [
-              "imowv0abfb-sp-1",
-              "imowv0abfc-sp-1",
-              "imowv0abfd-sp-1",
-              "imowv0abfe-sp-1",
-              "imowv0abff-sp-1",
-              "imowv0abfg-sp-1"
+              "imox7gol1b-sp-1",
+              "imox7gol1c-sp-1",
+              "imox7gol1d-sp-1",
+              "imox7gol1e-sp-1",
+              "imox7gol1f-sp-1",
+              "imox7gol1g-sp-1"
             ]
           }
         }
@@ -510,7 +510,7 @@
       "type": "skeleton",
       "start": 50,
       "end": 65,
-      "html": "<section class=\"slide skeleton\"><div class=\"skeleton-body\"><h1 id=\"imowv0abfi\" class=\"hidden \" > One Idea </h1><h1 id=\"imowv0abfj\" class=\"hidden \" > One Step </h1><h1 id=\"imowv0abfk\" class=\"hidden \" > One Focus </h1><h1 id=\"imowv0abfl\" class=\"hidden \" > Clear Reasoning </h1></div></section>",
+      "html": "<section class=\"slide skeleton\"><div class=\"skeleton-body\"><h1 id=\"imox7gol1i\" class=\"hidden \" > One Idea </h1><h1 id=\"imox7gol1j\" class=\"hidden \" > One Step </h1><h1 id=\"imox7gol1k\" class=\"hidden \" > One Focus </h1><h1 id=\"imox7gol1l\" class=\"hidden \" > Clear Reasoning </h1></div></section>",
       "groups": {
         "visible": [],
         "hidden": [
@@ -522,12 +522,12 @@
           "time": 50,
           "state": {
             "visible": [
-              "imowv0abfi"
+              "imox7gol1i"
             ],
             "hidden": [
-              "imowv0abfj",
-              "imowv0abfk",
-              "imowv0abfl"
+              "imox7gol1j",
+              "imox7gol1k",
+              "imox7gol1l"
             ]
           }
         },
@@ -535,12 +535,12 @@
           "time": 53,
           "state": {
             "visible": [
-              "imowv0abfj"
+              "imox7gol1j"
             ],
             "hidden": [
-              "imowv0abfi",
-              "imowv0abfk",
-              "imowv0abfl"
+              "imox7gol1i",
+              "imox7gol1k",
+              "imox7gol1l"
             ]
           }
         },
@@ -548,12 +548,12 @@
           "time": 56,
           "state": {
             "visible": [
-              "imowv0abfk"
+              "imox7gol1k"
             ],
             "hidden": [
-              "imowv0abfi",
-              "imowv0abfj",
-              "imowv0abfl"
+              "imox7gol1i",
+              "imox7gol1j",
+              "imox7gol1l"
             ]
           }
         },
@@ -561,12 +561,12 @@
           "time": 59,
           "state": {
             "visible": [
-              "imowv0abfl"
+              "imox7gol1l"
             ],
             "hidden": [
-              "imowv0abfi",
-              "imowv0abfj",
-              "imowv0abfk"
+              "imox7gol1i",
+              "imox7gol1j",
+              "imox7gol1k"
             ]
           }
         }

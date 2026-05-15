@@ -1,16 +1,16 @@
 {
   "name": "EQ Test 03",
   "background": {
-    "backgroundColor": "#111111",
-    "backgroundImage": null,
-    "backgroundImageOpacity": 0.3
+    "backgroundColor": "#05070c",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.9
   },
   "deck": [
     {
       "type": "titleAndSubtitle",
       "start": 0,
       "end": 8,
-      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imowv0abi14\" class=\" hidden taleem-heading-lg \" > Solving Linear Equations </h1><h2 id=\"imowv0abi15\" class=\" hidden taleem-heading-md \" > Authoring-rule focused EQ testing </h2></section>",
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imox7gol514\" class=\" hidden taleem-heading-lg \" > Solving Linear Equations </h1><h2 id=\"imox7gol515\" class=\" hidden taleem-heading-md \" > Authoring-rule focused EQ testing </h2></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -21,7 +21,7 @@
           "time": 0,
           "state": {
             "hidden": [
-              "imowv0abi15"
+              "imox7gol515"
             ]
           }
         },
@@ -37,7 +37,7 @@
       "type": "eq",
       "start": 8,
       "end": 28,
-      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imowv0abi16\" class=\" eq-item eq-title \" > Start with the equation </li><li id=\"imowv0abi17\" class=\" eq-item eq-math \" > $$ 2x + 3 = 11 $$ </li><li id=\"imowv0abi18\" class=\" eq-item eq-math \" > $$ 2x = 8 $$ </li><li id=\"imowv0abi19\" class=\" eq-item eq-math \" > $$ \\frac{2x}{2}=\\frac{8}{2} $$ </li><li id=\"imowv0abi1a\" class=\" eq-item eq-math \" > $$ x = 4 $$ </li><li id=\"imowv0abi1b\" class=\" eq-item eq-line \" > The equation is solved. </li></ul><div class=\"eq-side-panel\"><div id=\"imowv0abi16-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"/content/images/eq.webp\" /></div><div id=\"imowv0abi16-sp-2\" class=\"eq-explain-item hidden\" > Keep variables on one side. </div><div id=\"imowv0abi17-sp-1\" class=\"eq-explain-item hidden\" > We want to isolate x. </div><div id=\"imowv0abi17-sp-2\" class=\"eq-explain-item hidden\" > Remove constants first. </div><div id=\"imowv0abi17-sp-3\" class=\"eq-explain-item hidden\" > 11-3 </div><div id=\"imowv0abi17-sp-4\" class=\"eq-explain-item hidden\" > Subtract from both sides. </div><div id=\"imowv0abi17-sp-5\" class=\"eq-explain-item hidden\" > Balance must remain equal. </div><div id=\"imowv0abi17-sp-6\" class=\"eq-explain-item hidden\" > Every operation affects both sides. </div><div id=\"imowv0abi18-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"/content/images/box.webp\" /></div><div id=\"imowv0abi18-sp-2\" class=\"eq-explain-item hidden\" > The constant has been removed. </div><div id=\"imowv0abi19-sp-1\" class=\"eq-explain-item hidden\" > Now divide both sides by 2. </div><div id=\"imowv0abi19-sp-2\" class=\"eq-explain-item hidden\" > The coefficient disappears. </div><div id=\"imowv0abi19-sp-3\" class=\"eq-explain-item hidden\" > 2x÷2=x </div><div id=\"imowv0abi19-sp-4\" class=\"eq-explain-item hidden\" > Only x remains. </div><div id=\"imowv0abi19-sp-5\" class=\"eq-explain-item hidden\" > The equation becomes simpler. </div><div id=\"imowv0abi19-sp-6\" class=\"eq-explain-item hidden\" > Always divide both sides equally. </div><div id=\"imowv0abi1a-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"/content/images/image.png\" /></div><div id=\"imowv0abi1a-sp-2\" class=\"eq-explain-item hidden\" > The variable is isolated. </div><div id=\"imowv0abi1b-sp-1\" class=\"eq-explain-item hidden\" > Check the answer mentally. </div><div id=\"imowv0abi1b-sp-2\" class=\"eq-explain-item hidden\" > Substitute back if needed. </div><div id=\"imowv0abi1b-sp-3\" class=\"eq-explain-item hidden\" > Verification builds confidence. </div><div id=\"imowv0abi1b-sp-4\" class=\"eq-explain-item hidden\" > Correct structure prevents mistakes. </div><div id=\"imowv0abi1b-sp-5\" class=\"eq-explain-item hidden\" > Each step stayed balanced. </div><div id=\"imowv0abi1b-sp-6\" class=\"eq-explain-item hidden\" > The logic remained visible. </div></div></section>",
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imox7gol516\" class=\" eq-item eq-title \" > Start with the equation </li><li id=\"imox7gol517\" class=\" eq-item eq-math \" > $$ 2x + 3 = 11 $$ </li><li id=\"imox7gol518\" class=\" eq-item eq-math \" > $$ 2x = 8 $$ </li><li id=\"imox7gol519\" class=\" eq-item eq-math \" > $$ \\frac{2x}{2}=\\frac{8}{2} $$ </li><li id=\"imox7gol51a\" class=\" eq-item eq-math \" > $$ x = 4 $$ </li><li id=\"imox7gol51b\" class=\" eq-item eq-line \" > The equation is solved. </li></ul><div class=\"eq-side-panel\"><div id=\"imox7gol516-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"imox7gol516-sp-2\" class=\"eq-explain-item hidden\" > Keep variables on one side. </div><div id=\"imox7gol517-sp-1\" class=\"eq-explain-item hidden\" > We want to isolate x. </div><div id=\"imox7gol517-sp-2\" class=\"eq-explain-item hidden\" > Remove constants first. </div><div id=\"imox7gol517-sp-3\" class=\"eq-explain-item hidden\" > 11-3 </div><div id=\"imox7gol517-sp-4\" class=\"eq-explain-item hidden\" > Subtract from both sides. </div><div id=\"imox7gol517-sp-5\" class=\"eq-explain-item hidden\" > Balance must remain equal. </div><div id=\"imox7gol517-sp-6\" class=\"eq-explain-item hidden\" > Every operation affects both sides. </div><div id=\"imox7gol518-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"imox7gol518-sp-2\" class=\"eq-explain-item hidden\" > The constant has been removed. </div><div id=\"imox7gol519-sp-1\" class=\"eq-explain-item hidden\" > Now divide both sides by 2. </div><div id=\"imox7gol519-sp-2\" class=\"eq-explain-item hidden\" > The coefficient disappears. </div><div id=\"imox7gol519-sp-3\" class=\"eq-explain-item hidden\" > 2x÷2=x </div><div id=\"imox7gol519-sp-4\" class=\"eq-explain-item hidden\" > Only x remains. </div><div id=\"imox7gol519-sp-5\" class=\"eq-explain-item hidden\" > The equation becomes simpler. </div><div id=\"imox7gol519-sp-6\" class=\"eq-explain-item hidden\" > Always divide both sides equally. </div><div id=\"imox7gol51a-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"image.png\" /></div><div id=\"imox7gol51a-sp-2\" class=\"eq-explain-item hidden\" > The variable is isolated. </div><div id=\"imox7gol51b-sp-1\" class=\"eq-explain-item hidden\" > Check the answer mentally. </div><div id=\"imox7gol51b-sp-2\" class=\"eq-explain-item hidden\" > Substitute back if needed. </div><div id=\"imox7gol51b-sp-3\" class=\"eq-explain-item hidden\" > Verification builds confidence. </div><div id=\"imox7gol51b-sp-4\" class=\"eq-explain-item hidden\" > Correct structure prevents mistakes. </div><div id=\"imox7gol51b-sp-5\" class=\"eq-explain-item hidden\" > Each step stayed balanced. </div><div id=\"imox7gol51b-sp-6\" class=\"eq-explain-item hidden\" > The logic remained visible. </div></div></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -53,42 +53,42 @@
           "time": 8,
           "state": {
             "focus": [
-              "imowv0abi16"
+              "imox7gol516"
             ],
             "dim": [
-              "imowv0abi17",
-              "imowv0abi18",
-              "imowv0abi19",
-              "imowv0abi1a",
-              "imowv0abi1b"
+              "imox7gol517",
+              "imox7gol518",
+              "imox7gol519",
+              "imox7gol51a",
+              "imox7gol51b"
             ],
             "visible": [
-              "imowv0abi16-sp-1",
-              "imowv0abi16-sp-2"
+              "imox7gol516-sp-1",
+              "imox7gol516-sp-2"
             ],
             "hidden": [
-              "imowv0abi17-sp-1",
-              "imowv0abi17-sp-2",
-              "imowv0abi17-sp-3",
-              "imowv0abi17-sp-4",
-              "imowv0abi17-sp-5",
-              "imowv0abi17-sp-6",
-              "imowv0abi18-sp-1",
-              "imowv0abi18-sp-2",
-              "imowv0abi19-sp-1",
-              "imowv0abi19-sp-2",
-              "imowv0abi19-sp-3",
-              "imowv0abi19-sp-4",
-              "imowv0abi19-sp-5",
-              "imowv0abi19-sp-6",
-              "imowv0abi1a-sp-1",
-              "imowv0abi1a-sp-2",
-              "imowv0abi1b-sp-1",
-              "imowv0abi1b-sp-2",
-              "imowv0abi1b-sp-3",
-              "imowv0abi1b-sp-4",
-              "imowv0abi1b-sp-5",
-              "imowv0abi1b-sp-6"
+              "imox7gol517-sp-1",
+              "imox7gol517-sp-2",
+              "imox7gol517-sp-3",
+              "imox7gol517-sp-4",
+              "imox7gol517-sp-5",
+              "imox7gol517-sp-6",
+              "imox7gol518-sp-1",
+              "imox7gol518-sp-2",
+              "imox7gol519-sp-1",
+              "imox7gol519-sp-2",
+              "imox7gol519-sp-3",
+              "imox7gol519-sp-4",
+              "imox7gol519-sp-5",
+              "imox7gol519-sp-6",
+              "imox7gol51a-sp-1",
+              "imox7gol51a-sp-2",
+              "imox7gol51b-sp-1",
+              "imox7gol51b-sp-2",
+              "imox7gol51b-sp-3",
+              "imox7gol51b-sp-4",
+              "imox7gol51b-sp-5",
+              "imox7gol51b-sp-6"
             ]
           }
         },
@@ -96,42 +96,42 @@
           "time": 10,
           "state": {
             "focus": [
-              "imowv0abi17"
+              "imox7gol517"
             ],
             "dim": [
-              "imowv0abi16",
-              "imowv0abi18",
-              "imowv0abi19",
-              "imowv0abi1a",
-              "imowv0abi1b"
+              "imox7gol516",
+              "imox7gol518",
+              "imox7gol519",
+              "imox7gol51a",
+              "imox7gol51b"
             ],
             "visible": [
-              "imowv0abi17-sp-1",
-              "imowv0abi17-sp-2",
-              "imowv0abi17-sp-3",
-              "imowv0abi17-sp-4",
-              "imowv0abi17-sp-5",
-              "imowv0abi17-sp-6"
+              "imox7gol517-sp-1",
+              "imox7gol517-sp-2",
+              "imox7gol517-sp-3",
+              "imox7gol517-sp-4",
+              "imox7gol517-sp-5",
+              "imox7gol517-sp-6"
             ],
             "hidden": [
-              "imowv0abi16-sp-1",
-              "imowv0abi16-sp-2",
-              "imowv0abi18-sp-1",
-              "imowv0abi18-sp-2",
-              "imowv0abi19-sp-1",
-              "imowv0abi19-sp-2",
-              "imowv0abi19-sp-3",
-              "imowv0abi19-sp-4",
-              "imowv0abi19-sp-5",
-              "imowv0abi19-sp-6",
-              "imowv0abi1a-sp-1",
-              "imowv0abi1a-sp-2",
-              "imowv0abi1b-sp-1",
-              "imowv0abi1b-sp-2",
-              "imowv0abi1b-sp-3",
-              "imowv0abi1b-sp-4",
-              "imowv0abi1b-sp-5",
-              "imowv0abi1b-sp-6"
+              "imox7gol516-sp-1",
+              "imox7gol516-sp-2",
+              "imox7gol518-sp-1",
+              "imox7gol518-sp-2",
+              "imox7gol519-sp-1",
+              "imox7gol519-sp-2",
+              "imox7gol519-sp-3",
+              "imox7gol519-sp-4",
+              "imox7gol519-sp-5",
+              "imox7gol519-sp-6",
+              "imox7gol51a-sp-1",
+              "imox7gol51a-sp-2",
+              "imox7gol51b-sp-1",
+              "imox7gol51b-sp-2",
+              "imox7gol51b-sp-3",
+              "imox7gol51b-sp-4",
+              "imox7gol51b-sp-5",
+              "imox7gol51b-sp-6"
             ]
           }
         },
@@ -139,42 +139,42 @@
           "time": 12,
           "state": {
             "focus": [
-              "imowv0abi18"
+              "imox7gol518"
             ],
             "dim": [
-              "imowv0abi16",
-              "imowv0abi17",
-              "imowv0abi19",
-              "imowv0abi1a",
-              "imowv0abi1b"
+              "imox7gol516",
+              "imox7gol517",
+              "imox7gol519",
+              "imox7gol51a",
+              "imox7gol51b"
             ],
             "visible": [
-              "imowv0abi18-sp-1",
-              "imowv0abi18-sp-2"
+              "imox7gol518-sp-1",
+              "imox7gol518-sp-2"
             ],
             "hidden": [
-              "imowv0abi16-sp-1",
-              "imowv0abi16-sp-2",
-              "imowv0abi17-sp-1",
-              "imowv0abi17-sp-2",
-              "imowv0abi17-sp-3",
-              "imowv0abi17-sp-4",
-              "imowv0abi17-sp-5",
-              "imowv0abi17-sp-6",
-              "imowv0abi19-sp-1",
-              "imowv0abi19-sp-2",
-              "imowv0abi19-sp-3",
-              "imowv0abi19-sp-4",
-              "imowv0abi19-sp-5",
-              "imowv0abi19-sp-6",
-              "imowv0abi1a-sp-1",
-              "imowv0abi1a-sp-2",
-              "imowv0abi1b-sp-1",
-              "imowv0abi1b-sp-2",
-              "imowv0abi1b-sp-3",
-              "imowv0abi1b-sp-4",
-              "imowv0abi1b-sp-5",
-              "imowv0abi1b-sp-6"
+              "imox7gol516-sp-1",
+              "imox7gol516-sp-2",
+              "imox7gol517-sp-1",
+              "imox7gol517-sp-2",
+              "imox7gol517-sp-3",
+              "imox7gol517-sp-4",
+              "imox7gol517-sp-5",
+              "imox7gol517-sp-6",
+              "imox7gol519-sp-1",
+              "imox7gol519-sp-2",
+              "imox7gol519-sp-3",
+              "imox7gol519-sp-4",
+              "imox7gol519-sp-5",
+              "imox7gol519-sp-6",
+              "imox7gol51a-sp-1",
+              "imox7gol51a-sp-2",
+              "imox7gol51b-sp-1",
+              "imox7gol51b-sp-2",
+              "imox7gol51b-sp-3",
+              "imox7gol51b-sp-4",
+              "imox7gol51b-sp-5",
+              "imox7gol51b-sp-6"
             ]
           }
         },
@@ -182,42 +182,42 @@
           "time": 14,
           "state": {
             "focus": [
-              "imowv0abi19"
+              "imox7gol519"
             ],
             "dim": [
-              "imowv0abi16",
-              "imowv0abi17",
-              "imowv0abi18",
-              "imowv0abi1a",
-              "imowv0abi1b"
+              "imox7gol516",
+              "imox7gol517",
+              "imox7gol518",
+              "imox7gol51a",
+              "imox7gol51b"
             ],
             "visible": [
-              "imowv0abi19-sp-1",
-              "imowv0abi19-sp-2",
-              "imowv0abi19-sp-3",
-              "imowv0abi19-sp-4",
-              "imowv0abi19-sp-5",
-              "imowv0abi19-sp-6"
+              "imox7gol519-sp-1",
+              "imox7gol519-sp-2",
+              "imox7gol519-sp-3",
+              "imox7gol519-sp-4",
+              "imox7gol519-sp-5",
+              "imox7gol519-sp-6"
             ],
             "hidden": [
-              "imowv0abi16-sp-1",
-              "imowv0abi16-sp-2",
-              "imowv0abi17-sp-1",
-              "imowv0abi17-sp-2",
-              "imowv0abi17-sp-3",
-              "imowv0abi17-sp-4",
-              "imowv0abi17-sp-5",
-              "imowv0abi17-sp-6",
-              "imowv0abi18-sp-1",
-              "imowv0abi18-sp-2",
-              "imowv0abi1a-sp-1",
-              "imowv0abi1a-sp-2",
-              "imowv0abi1b-sp-1",
-              "imowv0abi1b-sp-2",
-              "imowv0abi1b-sp-3",
-              "imowv0abi1b-sp-4",
-              "imowv0abi1b-sp-5",
-              "imowv0abi1b-sp-6"
+              "imox7gol516-sp-1",
+              "imox7gol516-sp-2",
+              "imox7gol517-sp-1",
+              "imox7gol517-sp-2",
+              "imox7gol517-sp-3",
+              "imox7gol517-sp-4",
+              "imox7gol517-sp-5",
+              "imox7gol517-sp-6",
+              "imox7gol518-sp-1",
+              "imox7gol518-sp-2",
+              "imox7gol51a-sp-1",
+              "imox7gol51a-sp-2",
+              "imox7gol51b-sp-1",
+              "imox7gol51b-sp-2",
+              "imox7gol51b-sp-3",
+              "imox7gol51b-sp-4",
+              "imox7gol51b-sp-5",
+              "imox7gol51b-sp-6"
             ]
           }
         },
@@ -225,42 +225,42 @@
           "time": 16,
           "state": {
             "focus": [
-              "imowv0abi1a"
+              "imox7gol51a"
             ],
             "dim": [
-              "imowv0abi16",
-              "imowv0abi17",
-              "imowv0abi18",
-              "imowv0abi19",
-              "imowv0abi1b"
+              "imox7gol516",
+              "imox7gol517",
+              "imox7gol518",
+              "imox7gol519",
+              "imox7gol51b"
             ],
             "visible": [
-              "imowv0abi1a-sp-1",
-              "imowv0abi1a-sp-2"
+              "imox7gol51a-sp-1",
+              "imox7gol51a-sp-2"
             ],
             "hidden": [
-              "imowv0abi16-sp-1",
-              "imowv0abi16-sp-2",
-              "imowv0abi17-sp-1",
-              "imowv0abi17-sp-2",
-              "imowv0abi17-sp-3",
-              "imowv0abi17-sp-4",
-              "imowv0abi17-sp-5",
-              "imowv0abi17-sp-6",
-              "imowv0abi18-sp-1",
-              "imowv0abi18-sp-2",
-              "imowv0abi19-sp-1",
-              "imowv0abi19-sp-2",
-              "imowv0abi19-sp-3",
-              "imowv0abi19-sp-4",
-              "imowv0abi19-sp-5",
-              "imowv0abi19-sp-6",
-              "imowv0abi1b-sp-1",
-              "imowv0abi1b-sp-2",
-              "imowv0abi1b-sp-3",
-              "imowv0abi1b-sp-4",
-              "imowv0abi1b-sp-5",
-              "imowv0abi1b-sp-6"
+              "imox7gol516-sp-1",
+              "imox7gol516-sp-2",
+              "imox7gol517-sp-1",
+              "imox7gol517-sp-2",
+              "imox7gol517-sp-3",
+              "imox7gol517-sp-4",
+              "imox7gol517-sp-5",
+              "imox7gol517-sp-6",
+              "imox7gol518-sp-1",
+              "imox7gol518-sp-2",
+              "imox7gol519-sp-1",
+              "imox7gol519-sp-2",
+              "imox7gol519-sp-3",
+              "imox7gol519-sp-4",
+              "imox7gol519-sp-5",
+              "imox7gol519-sp-6",
+              "imox7gol51b-sp-1",
+              "imox7gol51b-sp-2",
+              "imox7gol51b-sp-3",
+              "imox7gol51b-sp-4",
+              "imox7gol51b-sp-5",
+              "imox7gol51b-sp-6"
             ]
           }
         },
@@ -268,42 +268,42 @@
           "time": 18,
           "state": {
             "focus": [
-              "imowv0abi1b"
+              "imox7gol51b"
             ],
             "dim": [
-              "imowv0abi16",
-              "imowv0abi17",
-              "imowv0abi18",
-              "imowv0abi19",
-              "imowv0abi1a"
+              "imox7gol516",
+              "imox7gol517",
+              "imox7gol518",
+              "imox7gol519",
+              "imox7gol51a"
             ],
             "visible": [
-              "imowv0abi1b-sp-1",
-              "imowv0abi1b-sp-2",
-              "imowv0abi1b-sp-3",
-              "imowv0abi1b-sp-4",
-              "imowv0abi1b-sp-5",
-              "imowv0abi1b-sp-6"
+              "imox7gol51b-sp-1",
+              "imox7gol51b-sp-2",
+              "imox7gol51b-sp-3",
+              "imox7gol51b-sp-4",
+              "imox7gol51b-sp-5",
+              "imox7gol51b-sp-6"
             ],
             "hidden": [
-              "imowv0abi16-sp-1",
-              "imowv0abi16-sp-2",
-              "imowv0abi17-sp-1",
-              "imowv0abi17-sp-2",
-              "imowv0abi17-sp-3",
-              "imowv0abi17-sp-4",
-              "imowv0abi17-sp-5",
-              "imowv0abi17-sp-6",
-              "imowv0abi18-sp-1",
-              "imowv0abi18-sp-2",
-              "imowv0abi19-sp-1",
-              "imowv0abi19-sp-2",
-              "imowv0abi19-sp-3",
-              "imowv0abi19-sp-4",
-              "imowv0abi19-sp-5",
-              "imowv0abi19-sp-6",
-              "imowv0abi1a-sp-1",
-              "imowv0abi1a-sp-2"
+              "imox7gol516-sp-1",
+              "imox7gol516-sp-2",
+              "imox7gol517-sp-1",
+              "imox7gol517-sp-2",
+              "imox7gol517-sp-3",
+              "imox7gol517-sp-4",
+              "imox7gol517-sp-5",
+              "imox7gol517-sp-6",
+              "imox7gol518-sp-1",
+              "imox7gol518-sp-2",
+              "imox7gol519-sp-1",
+              "imox7gol519-sp-2",
+              "imox7gol519-sp-3",
+              "imox7gol519-sp-4",
+              "imox7gol519-sp-5",
+              "imox7gol519-sp-6",
+              "imox7gol51a-sp-1",
+              "imox7gol51a-sp-2"
             ]
           }
         }
@@ -313,7 +313,7 @@
       "type": "eq",
       "start": 28,
       "end": 48,
-      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imowv0abi1c\" class=\" eq-item eq-title \" > Combining Like Terms </li><li id=\"imowv0abi1d\" class=\" eq-item eq-math \" > $$ 3x + 2x - 4 = 11 $$ </li><li id=\"imowv0abi1e\" class=\" eq-item eq-math \" > $$ 5x - 4 = 11 $$ </li><li id=\"imowv0abi1f\" class=\" eq-item eq-math \" > $$ 5x = 15 $$ </li><li id=\"imowv0abi1g\" class=\" eq-item eq-math \" > $$ x = 3 $$ </li><li id=\"imowv0abi1h\" class=\" eq-item eq-line \" > Each operation reduces complexity. </li></ul><div class=\"eq-side-panel\"><div id=\"imowv0abi1c-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"/content/images/force-intro.webp\" /></div><div id=\"imowv0abi1c-sp-2\" class=\"eq-explain-item hidden\" > Like terms share the same variable. </div><div id=\"imowv0abi1d-sp-1\" class=\"eq-explain-item hidden\" > 3x and 2x are compatible. </div><div id=\"imowv0abi1d-sp-2\" class=\"eq-explain-item hidden\" > 3x+2x=5x </div><div id=\"imowv0abi1d-sp-3\" class=\"eq-explain-item hidden\" > Combine variable terms first. </div><div id=\"imowv0abi1d-sp-4\" class=\"eq-explain-item hidden\" > Constants remain separate. </div><div id=\"imowv0abi1d-sp-5\" class=\"eq-explain-item hidden\" > Simplification improves clarity. </div><div id=\"imowv0abi1d-sp-6\" class=\"eq-explain-item hidden\" > Avoid skipping visible steps. </div><div id=\"imowv0abi1e-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"/content/images/eq.webp\" /></div><div id=\"imowv0abi1e-sp-2\" class=\"eq-explain-item hidden\" > Now isolate the variable term. </div><div id=\"imowv0abi1f-sp-1\" class=\"eq-explain-item hidden\" > Add 4 to both sides. </div><div id=\"imowv0abi1f-sp-2\" class=\"eq-explain-item hidden\" > 11+4=15 </div><div id=\"imowv0abi1f-sp-3\" class=\"eq-explain-item hidden\" > The negative constant disappears. </div><div id=\"imowv0abi1f-sp-4\" class=\"eq-explain-item hidden\" > Balance remains preserved. </div><div id=\"imowv0abi1f-sp-5\" class=\"eq-explain-item hidden\" > The equation becomes cleaner. </div><div id=\"imowv0abi1f-sp-6\" class=\"eq-explain-item hidden\" > Only multiplication remains. </div><div id=\"imowv0abi1g-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"/content/images/box.webp\" /></div><div id=\"imowv0abi1g-sp-2\" class=\"eq-explain-item hidden\" > Divide both sides by 5. </div><div id=\"imowv0abi1h-sp-1\" class=\"eq-explain-item hidden\" > Equations become simpler stepwise. </div><div id=\"imowv0abi1h-sp-2\" class=\"eq-explain-item hidden\" > Visible reasoning improves understanding. </div><div id=\"imowv0abi1h-sp-3\" class=\"eq-explain-item hidden\" > Students can track transformations. </div><div id=\"imowv0abi1h-sp-4\" class=\"eq-explain-item hidden\" > Logical pacing reduces confusion. </div><div id=\"imowv0abi1h-sp-5\" class=\"eq-explain-item hidden\" > The structure stays calm and readable. </div><div id=\"imowv0abi1h-sp-6\" class=\"eq-explain-item hidden\" > Every step has a clear purpose. </div></div></section>",
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imox7gol51c\" class=\" eq-item eq-title \" > Combining Like Terms </li><li id=\"imox7gol51d\" class=\" eq-item eq-math \" > $$ 3x + 2x - 4 = 11 $$ </li><li id=\"imox7gol51e\" class=\" eq-item eq-math \" > $$ 5x - 4 = 11 $$ </li><li id=\"imox7gol51f\" class=\" eq-item eq-math \" > $$ 5x = 15 $$ </li><li id=\"imox7gol51g\" class=\" eq-item eq-math \" > $$ x = 3 $$ </li><li id=\"imox7gol51h\" class=\" eq-item eq-line \" > Each operation reduces complexity. </li></ul><div class=\"eq-side-panel\"><div id=\"imox7gol51c-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"force-intro.webp\" /></div><div id=\"imox7gol51c-sp-2\" class=\"eq-explain-item hidden\" > Like terms share the same variable. </div><div id=\"imox7gol51d-sp-1\" class=\"eq-explain-item hidden\" > 3x and 2x are compatible. </div><div id=\"imox7gol51d-sp-2\" class=\"eq-explain-item hidden\" > 3x+2x=5x </div><div id=\"imox7gol51d-sp-3\" class=\"eq-explain-item hidden\" > Combine variable terms first. </div><div id=\"imox7gol51d-sp-4\" class=\"eq-explain-item hidden\" > Constants remain separate. </div><div id=\"imox7gol51d-sp-5\" class=\"eq-explain-item hidden\" > Simplification improves clarity. </div><div id=\"imox7gol51d-sp-6\" class=\"eq-explain-item hidden\" > Avoid skipping visible steps. </div><div id=\"imox7gol51e-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"imox7gol51e-sp-2\" class=\"eq-explain-item hidden\" > Now isolate the variable term. </div><div id=\"imox7gol51f-sp-1\" class=\"eq-explain-item hidden\" > Add 4 to both sides. </div><div id=\"imox7gol51f-sp-2\" class=\"eq-explain-item hidden\" > 11+4=15 </div><div id=\"imox7gol51f-sp-3\" class=\"eq-explain-item hidden\" > The negative constant disappears. </div><div id=\"imox7gol51f-sp-4\" class=\"eq-explain-item hidden\" > Balance remains preserved. </div><div id=\"imox7gol51f-sp-5\" class=\"eq-explain-item hidden\" > The equation becomes cleaner. </div><div id=\"imox7gol51f-sp-6\" class=\"eq-explain-item hidden\" > Only multiplication remains. </div><div id=\"imox7gol51g-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"imox7gol51g-sp-2\" class=\"eq-explain-item hidden\" > Divide both sides by 5. </div><div id=\"imox7gol51h-sp-1\" class=\"eq-explain-item hidden\" > Equations become simpler stepwise. </div><div id=\"imox7gol51h-sp-2\" class=\"eq-explain-item hidden\" > Visible reasoning improves understanding. </div><div id=\"imox7gol51h-sp-3\" class=\"eq-explain-item hidden\" > Students can track transformations. </div><div id=\"imox7gol51h-sp-4\" class=\"eq-explain-item hidden\" > Logical pacing reduces confusion. </div><div id=\"imox7gol51h-sp-5\" class=\"eq-explain-item hidden\" > The structure stays calm and readable. </div><div id=\"imox7gol51h-sp-6\" class=\"eq-explain-item hidden\" > Every step has a clear purpose. </div></div></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -329,42 +329,42 @@
           "time": 28,
           "state": {
             "focus": [
-              "imowv0abi1c"
+              "imox7gol51c"
             ],
             "dim": [
-              "imowv0abi1d",
-              "imowv0abi1e",
-              "imowv0abi1f",
-              "imowv0abi1g",
-              "imowv0abi1h"
+              "imox7gol51d",
+              "imox7gol51e",
+              "imox7gol51f",
+              "imox7gol51g",
+              "imox7gol51h"
             ],
             "visible": [
-              "imowv0abi1c-sp-1",
-              "imowv0abi1c-sp-2"
+              "imox7gol51c-sp-1",
+              "imox7gol51c-sp-2"
             ],
             "hidden": [
-              "imowv0abi1d-sp-1",
-              "imowv0abi1d-sp-2",
-              "imowv0abi1d-sp-3",
-              "imowv0abi1d-sp-4",
-              "imowv0abi1d-sp-5",
-              "imowv0abi1d-sp-6",
-              "imowv0abi1e-sp-1",
-              "imowv0abi1e-sp-2",
-              "imowv0abi1f-sp-1",
-              "imowv0abi1f-sp-2",
-              "imowv0abi1f-sp-3",
-              "imowv0abi1f-sp-4",
-              "imowv0abi1f-sp-5",
-              "imowv0abi1f-sp-6",
-              "imowv0abi1g-sp-1",
-              "imowv0abi1g-sp-2",
-              "imowv0abi1h-sp-1",
-              "imowv0abi1h-sp-2",
-              "imowv0abi1h-sp-3",
-              "imowv0abi1h-sp-4",
-              "imowv0abi1h-sp-5",
-              "imowv0abi1h-sp-6"
+              "imox7gol51d-sp-1",
+              "imox7gol51d-sp-2",
+              "imox7gol51d-sp-3",
+              "imox7gol51d-sp-4",
+              "imox7gol51d-sp-5",
+              "imox7gol51d-sp-6",
+              "imox7gol51e-sp-1",
+              "imox7gol51e-sp-2",
+              "imox7gol51f-sp-1",
+              "imox7gol51f-sp-2",
+              "imox7gol51f-sp-3",
+              "imox7gol51f-sp-4",
+              "imox7gol51f-sp-5",
+              "imox7gol51f-sp-6",
+              "imox7gol51g-sp-1",
+              "imox7gol51g-sp-2",
+              "imox7gol51h-sp-1",
+              "imox7gol51h-sp-2",
+              "imox7gol51h-sp-3",
+              "imox7gol51h-sp-4",
+              "imox7gol51h-sp-5",
+              "imox7gol51h-sp-6"
             ]
           }
         },
@@ -372,42 +372,42 @@
           "time": 30,
           "state": {
             "focus": [
-              "imowv0abi1d"
+              "imox7gol51d"
             ],
             "dim": [
-              "imowv0abi1c",
-              "imowv0abi1e",
-              "imowv0abi1f",
-              "imowv0abi1g",
-              "imowv0abi1h"
+              "imox7gol51c",
+              "imox7gol51e",
+              "imox7gol51f",
+              "imox7gol51g",
+              "imox7gol51h"
             ],
             "visible": [
-              "imowv0abi1d-sp-1",
-              "imowv0abi1d-sp-2",
-              "imowv0abi1d-sp-3",
-              "imowv0abi1d-sp-4",
-              "imowv0abi1d-sp-5",
-              "imowv0abi1d-sp-6"
+              "imox7gol51d-sp-1",
+              "imox7gol51d-sp-2",
+              "imox7gol51d-sp-3",
+              "imox7gol51d-sp-4",
+              "imox7gol51d-sp-5",
+              "imox7gol51d-sp-6"
             ],
             "hidden": [
-              "imowv0abi1c-sp-1",
-              "imowv0abi1c-sp-2",
-              "imowv0abi1e-sp-1",
-              "imowv0abi1e-sp-2",
-              "imowv0abi1f-sp-1",
-              "imowv0abi1f-sp-2",
-              "imowv0abi1f-sp-3",
-              "imowv0abi1f-sp-4",
-              "imowv0abi1f-sp-5",
-              "imowv0abi1f-sp-6",
-              "imowv0abi1g-sp-1",
-              "imowv0abi1g-sp-2",
-              "imowv0abi1h-sp-1",
-              "imowv0abi1h-sp-2",
-              "imowv0abi1h-sp-3",
-              "imowv0abi1h-sp-4",
-              "imowv0abi1h-sp-5",
-              "imowv0abi1h-sp-6"
+              "imox7gol51c-sp-1",
+              "imox7gol51c-sp-2",
+              "imox7gol51e-sp-1",
+              "imox7gol51e-sp-2",
+              "imox7gol51f-sp-1",
+              "imox7gol51f-sp-2",
+              "imox7gol51f-sp-3",
+              "imox7gol51f-sp-4",
+              "imox7gol51f-sp-5",
+              "imox7gol51f-sp-6",
+              "imox7gol51g-sp-1",
+              "imox7gol51g-sp-2",
+              "imox7gol51h-sp-1",
+              "imox7gol51h-sp-2",
+              "imox7gol51h-sp-3",
+              "imox7gol51h-sp-4",
+              "imox7gol51h-sp-5",
+              "imox7gol51h-sp-6"
             ]
           }
         },
@@ -415,42 +415,42 @@
           "time": 32,
           "state": {
             "focus": [
-              "imowv0abi1e"
+              "imox7gol51e"
             ],
             "dim": [
-              "imowv0abi1c",
-              "imowv0abi1d",
-              "imowv0abi1f",
-              "imowv0abi1g",
-              "imowv0abi1h"
+              "imox7gol51c",
+              "imox7gol51d",
+              "imox7gol51f",
+              "imox7gol51g",
+              "imox7gol51h"
             ],
             "visible": [
-              "imowv0abi1e-sp-1",
-              "imowv0abi1e-sp-2"
+              "imox7gol51e-sp-1",
+              "imox7gol51e-sp-2"
             ],
             "hidden": [
-              "imowv0abi1c-sp-1",
-              "imowv0abi1c-sp-2",
-              "imowv0abi1d-sp-1",
-              "imowv0abi1d-sp-2",
-              "imowv0abi1d-sp-3",
-              "imowv0abi1d-sp-4",
-              "imowv0abi1d-sp-5",
-              "imowv0abi1d-sp-6",
-              "imowv0abi1f-sp-1",
-              "imowv0abi1f-sp-2",
-              "imowv0abi1f-sp-3",
-              "imowv0abi1f-sp-4",
-              "imowv0abi1f-sp-5",
-              "imowv0abi1f-sp-6",
-              "imowv0abi1g-sp-1",
-              "imowv0abi1g-sp-2",
-              "imowv0abi1h-sp-1",
-              "imowv0abi1h-sp-2",
-              "imowv0abi1h-sp-3",
-              "imowv0abi1h-sp-4",
-              "imowv0abi1h-sp-5",
-              "imowv0abi1h-sp-6"
+              "imox7gol51c-sp-1",
+              "imox7gol51c-sp-2",
+              "imox7gol51d-sp-1",
+              "imox7gol51d-sp-2",
+              "imox7gol51d-sp-3",
+              "imox7gol51d-sp-4",
+              "imox7gol51d-sp-5",
+              "imox7gol51d-sp-6",
+              "imox7gol51f-sp-1",
+              "imox7gol51f-sp-2",
+              "imox7gol51f-sp-3",
+              "imox7gol51f-sp-4",
+              "imox7gol51f-sp-5",
+              "imox7gol51f-sp-6",
+              "imox7gol51g-sp-1",
+              "imox7gol51g-sp-2",
+              "imox7gol51h-sp-1",
+              "imox7gol51h-sp-2",
+              "imox7gol51h-sp-3",
+              "imox7gol51h-sp-4",
+              "imox7gol51h-sp-5",
+              "imox7gol51h-sp-6"
             ]
           }
         },
@@ -458,42 +458,42 @@
           "time": 34,
           "state": {
             "focus": [
-              "imowv0abi1f"
+              "imox7gol51f"
             ],
             "dim": [
-              "imowv0abi1c",
-              "imowv0abi1d",
-              "imowv0abi1e",
-              "imowv0abi1g",
-              "imowv0abi1h"
+              "imox7gol51c",
+              "imox7gol51d",
+              "imox7gol51e",
+              "imox7gol51g",
+              "imox7gol51h"
             ],
             "visible": [
-              "imowv0abi1f-sp-1",
-              "imowv0abi1f-sp-2",
-              "imowv0abi1f-sp-3",
-              "imowv0abi1f-sp-4",
-              "imowv0abi1f-sp-5",
-              "imowv0abi1f-sp-6"
+              "imox7gol51f-sp-1",
+              "imox7gol51f-sp-2",
+              "imox7gol51f-sp-3",
+              "imox7gol51f-sp-4",
+              "imox7gol51f-sp-5",
+              "imox7gol51f-sp-6"
             ],
             "hidden": [
-              "imowv0abi1c-sp-1",
-              "imowv0abi1c-sp-2",
-              "imowv0abi1d-sp-1",
-              "imowv0abi1d-sp-2",
-              "imowv0abi1d-sp-3",
-              "imowv0abi1d-sp-4",
-              "imowv0abi1d-sp-5",
-              "imowv0abi1d-sp-6",
-              "imowv0abi1e-sp-1",
-              "imowv0abi1e-sp-2",
-              "imowv0abi1g-sp-1",
-              "imowv0abi1g-sp-2",
-              "imowv0abi1h-sp-1",
-              "imowv0abi1h-sp-2",
-              "imowv0abi1h-sp-3",
-              "imowv0abi1h-sp-4",
-              "imowv0abi1h-sp-5",
-              "imowv0abi1h-sp-6"
+              "imox7gol51c-sp-1",
+              "imox7gol51c-sp-2",
+              "imox7gol51d-sp-1",
+              "imox7gol51d-sp-2",
+              "imox7gol51d-sp-3",
+              "imox7gol51d-sp-4",
+              "imox7gol51d-sp-5",
+              "imox7gol51d-sp-6",
+              "imox7gol51e-sp-1",
+              "imox7gol51e-sp-2",
+              "imox7gol51g-sp-1",
+              "imox7gol51g-sp-2",
+              "imox7gol51h-sp-1",
+              "imox7gol51h-sp-2",
+              "imox7gol51h-sp-3",
+              "imox7gol51h-sp-4",
+              "imox7gol51h-sp-5",
+              "imox7gol51h-sp-6"
             ]
           }
         },
@@ -501,42 +501,42 @@
           "time": 36,
           "state": {
             "focus": [
-              "imowv0abi1g"
+              "imox7gol51g"
             ],
             "dim": [
-              "imowv0abi1c",
-              "imowv0abi1d",
-              "imowv0abi1e",
-              "imowv0abi1f",
-              "imowv0abi1h"
+              "imox7gol51c",
+              "imox7gol51d",
+              "imox7gol51e",
+              "imox7gol51f",
+              "imox7gol51h"
             ],
             "visible": [
-              "imowv0abi1g-sp-1",
-              "imowv0abi1g-sp-2"
+              "imox7gol51g-sp-1",
+              "imox7gol51g-sp-2"
             ],
             "hidden": [
-              "imowv0abi1c-sp-1",
-              "imowv0abi1c-sp-2",
-              "imowv0abi1d-sp-1",
-              "imowv0abi1d-sp-2",
-              "imowv0abi1d-sp-3",
-              "imowv0abi1d-sp-4",
-              "imowv0abi1d-sp-5",
-              "imowv0abi1d-sp-6",
-              "imowv0abi1e-sp-1",
-              "imowv0abi1e-sp-2",
-              "imowv0abi1f-sp-1",
-              "imowv0abi1f-sp-2",
-              "imowv0abi1f-sp-3",
-              "imowv0abi1f-sp-4",
-              "imowv0abi1f-sp-5",
-              "imowv0abi1f-sp-6",
-              "imowv0abi1h-sp-1",
-              "imowv0abi1h-sp-2",
-              "imowv0abi1h-sp-3",
-              "imowv0abi1h-sp-4",
-              "imowv0abi1h-sp-5",
-              "imowv0abi1h-sp-6"
+              "imox7gol51c-sp-1",
+              "imox7gol51c-sp-2",
+              "imox7gol51d-sp-1",
+              "imox7gol51d-sp-2",
+              "imox7gol51d-sp-3",
+              "imox7gol51d-sp-4",
+              "imox7gol51d-sp-5",
+              "imox7gol51d-sp-6",
+              "imox7gol51e-sp-1",
+              "imox7gol51e-sp-2",
+              "imox7gol51f-sp-1",
+              "imox7gol51f-sp-2",
+              "imox7gol51f-sp-3",
+              "imox7gol51f-sp-4",
+              "imox7gol51f-sp-5",
+              "imox7gol51f-sp-6",
+              "imox7gol51h-sp-1",
+              "imox7gol51h-sp-2",
+              "imox7gol51h-sp-3",
+              "imox7gol51h-sp-4",
+              "imox7gol51h-sp-5",
+              "imox7gol51h-sp-6"
             ]
           }
         },
@@ -544,42 +544,42 @@
           "time": 38,
           "state": {
             "focus": [
-              "imowv0abi1h"
+              "imox7gol51h"
             ],
             "dim": [
-              "imowv0abi1c",
-              "imowv0abi1d",
-              "imowv0abi1e",
-              "imowv0abi1f",
-              "imowv0abi1g"
+              "imox7gol51c",
+              "imox7gol51d",
+              "imox7gol51e",
+              "imox7gol51f",
+              "imox7gol51g"
             ],
             "visible": [
-              "imowv0abi1h-sp-1",
-              "imowv0abi1h-sp-2",
-              "imowv0abi1h-sp-3",
-              "imowv0abi1h-sp-4",
-              "imowv0abi1h-sp-5",
-              "imowv0abi1h-sp-6"
+              "imox7gol51h-sp-1",
+              "imox7gol51h-sp-2",
+              "imox7gol51h-sp-3",
+              "imox7gol51h-sp-4",
+              "imox7gol51h-sp-5",
+              "imox7gol51h-sp-6"
             ],
             "hidden": [
-              "imowv0abi1c-sp-1",
-              "imowv0abi1c-sp-2",
-              "imowv0abi1d-sp-1",
-              "imowv0abi1d-sp-2",
-              "imowv0abi1d-sp-3",
-              "imowv0abi1d-sp-4",
-              "imowv0abi1d-sp-5",
-              "imowv0abi1d-sp-6",
-              "imowv0abi1e-sp-1",
-              "imowv0abi1e-sp-2",
-              "imowv0abi1f-sp-1",
-              "imowv0abi1f-sp-2",
-              "imowv0abi1f-sp-3",
-              "imowv0abi1f-sp-4",
-              "imowv0abi1f-sp-5",
-              "imowv0abi1f-sp-6",
-              "imowv0abi1g-sp-1",
-              "imowv0abi1g-sp-2"
+              "imox7gol51c-sp-1",
+              "imox7gol51c-sp-2",
+              "imox7gol51d-sp-1",
+              "imox7gol51d-sp-2",
+              "imox7gol51d-sp-3",
+              "imox7gol51d-sp-4",
+              "imox7gol51d-sp-5",
+              "imox7gol51d-sp-6",
+              "imox7gol51e-sp-1",
+              "imox7gol51e-sp-2",
+              "imox7gol51f-sp-1",
+              "imox7gol51f-sp-2",
+              "imox7gol51f-sp-3",
+              "imox7gol51f-sp-4",
+              "imox7gol51f-sp-5",
+              "imox7gol51f-sp-6",
+              "imox7gol51g-sp-1",
+              "imox7gol51g-sp-2"
             ]
           }
         }
@@ -589,7 +589,7 @@
       "type": "eq",
       "start": 48,
       "end": 66,
-      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imowv0abj1i\" class=\" eq-item eq-title \" > Checking the Answer </li><li id=\"imowv0abj1j\" class=\" eq-item eq-math \" > $$ x = 4 $$ </li><li id=\"imowv0abj1k\" class=\" eq-item eq-math \" > $$ 2(4)+3=11 $$ </li><li id=\"imowv0abj1l\" class=\" eq-item eq-math \" > $$ 8+3=11 $$ </li><li id=\"imowv0abj1m\" class=\" eq-item eq-math \" > $$ 11=11 $$ </li><li id=\"imowv0abj1n\" class=\" eq-item eq-line \" > Verification completes the reasoning. </li></ul><div class=\"eq-side-panel\"><div id=\"imowv0abj1i-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"/content/images/image.png\" /></div><div id=\"imowv0abj1i-sp-2\" class=\"eq-explain-item hidden\" > Verification is part of solving. </div><div id=\"imowv0abj1j-sp-1\" class=\"eq-explain-item hidden\" > Substitute into the original equation. </div><div id=\"imowv0abj1j-sp-2\" class=\"eq-explain-item hidden\" > Use the discovered value carefully. </div><div id=\"imowv0abj1j-sp-3\" class=\"eq-explain-item hidden\" > 2x+3=11 </div><div id=\"imowv0abj1j-sp-4\" class=\"eq-explain-item hidden\" > Replace x with 4. </div><div id=\"imowv0abj1j-sp-5\" class=\"eq-explain-item hidden\" > Now evaluate step by step. </div><div id=\"imowv0abj1j-sp-6\" class=\"eq-explain-item hidden\" > Verification catches hidden mistakes. </div><div id=\"imowv0abj1k-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"/content/images/eq.webp\" /></div><div id=\"imowv0abj1k-sp-2\" class=\"eq-explain-item hidden\" > Multiply before adding. </div><div id=\"imowv0abj1l-sp-1\" class=\"eq-explain-item hidden\" > The arithmetic is now simple. </div><div id=\"imowv0abj1l-sp-2\" class=\"eq-explain-item hidden\" > 8+3 </div><div id=\"imowv0abj1l-sp-3\" class=\"eq-explain-item hidden\" > Both sides match correctly. </div><div id=\"imowv0abj1l-sp-4\" class=\"eq-explain-item hidden\" > The equality remains true. </div><div id=\"imowv0abj1l-sp-5\" class=\"eq-explain-item hidden\" > The solution is confirmed. </div><div id=\"imowv0abj1l-sp-6\" class=\"eq-explain-item hidden\" > No contradiction appears. </div><div id=\"imowv0abj1m-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"/content/images/box.webp\" /></div><div id=\"imowv0abj1m-sp-2\" class=\"eq-explain-item hidden\" > Both sides are identical. </div><div id=\"imowv0abj1n-sp-1\" class=\"eq-explain-item hidden\" > Correct answers should survive checking. </div><div id=\"imowv0abj1n-sp-2\" class=\"eq-explain-item hidden\" > This strengthens mathematical confidence. </div><div id=\"imowv0abj1n-sp-3\" class=\"eq-explain-item hidden\" > Students learn disciplined solving. </div><div id=\"imowv0abj1n-sp-4\" class=\"eq-explain-item hidden\" > Every equation deserves verification. </div><div id=\"imowv0abj1n-sp-5\" class=\"eq-explain-item hidden\" > Careful checking prevents careless mistakes. </div><div id=\"imowv0abj1n-sp-6\" class=\"eq-explain-item hidden\" > Reasoning becomes trustworthy. </div></div></section>",
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imox7gol51i\" class=\" eq-item eq-title \" > Checking the Answer </li><li id=\"imox7gol51j\" class=\" eq-item eq-math \" > $$ x = 4 $$ </li><li id=\"imox7gol51k\" class=\" eq-item eq-math \" > $$ 2(4)+3=11 $$ </li><li id=\"imox7gol51l\" class=\" eq-item eq-math \" > $$ 8+3=11 $$ </li><li id=\"imox7gol51m\" class=\" eq-item eq-math \" > $$ 11=11 $$ </li><li id=\"imox7gol51n\" class=\" eq-item eq-line \" > Verification completes the reasoning. </li></ul><div class=\"eq-side-panel\"><div id=\"imox7gol51i-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"image.png\" /></div><div id=\"imox7gol51i-sp-2\" class=\"eq-explain-item hidden\" > Verification is part of solving. </div><div id=\"imox7gol51j-sp-1\" class=\"eq-explain-item hidden\" > Substitute into the original equation. </div><div id=\"imox7gol51j-sp-2\" class=\"eq-explain-item hidden\" > Use the discovered value carefully. </div><div id=\"imox7gol51j-sp-3\" class=\"eq-explain-item hidden\" > 2x+3=11 </div><div id=\"imox7gol51j-sp-4\" class=\"eq-explain-item hidden\" > Replace x with 4. </div><div id=\"imox7gol51j-sp-5\" class=\"eq-explain-item hidden\" > Now evaluate step by step. </div><div id=\"imox7gol51j-sp-6\" class=\"eq-explain-item hidden\" > Verification catches hidden mistakes. </div><div id=\"imox7gol51k-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"imox7gol51k-sp-2\" class=\"eq-explain-item hidden\" > Multiply before adding. </div><div id=\"imox7gol51l-sp-1\" class=\"eq-explain-item hidden\" > The arithmetic is now simple. </div><div id=\"imox7gol51l-sp-2\" class=\"eq-explain-item hidden\" > 8+3 </div><div id=\"imox7gol51l-sp-3\" class=\"eq-explain-item hidden\" > Both sides match correctly. </div><div id=\"imox7gol51l-sp-4\" class=\"eq-explain-item hidden\" > The equality remains true. </div><div id=\"imox7gol51l-sp-5\" class=\"eq-explain-item hidden\" > The solution is confirmed. </div><div id=\"imox7gol51l-sp-6\" class=\"eq-explain-item hidden\" > No contradiction appears. </div><div id=\"imox7gol51m-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"imox7gol51m-sp-2\" class=\"eq-explain-item hidden\" > Both sides are identical. </div><div id=\"imox7gol51n-sp-1\" class=\"eq-explain-item hidden\" > Correct answers should survive checking. </div><div id=\"imox7gol51n-sp-2\" class=\"eq-explain-item hidden\" > This strengthens mathematical confidence. </div><div id=\"imox7gol51n-sp-3\" class=\"eq-explain-item hidden\" > Students learn disciplined solving. </div><div id=\"imox7gol51n-sp-4\" class=\"eq-explain-item hidden\" > Every equation deserves verification. </div><div id=\"imox7gol51n-sp-5\" class=\"eq-explain-item hidden\" > Careful checking prevents careless mistakes. </div><div id=\"imox7gol51n-sp-6\" class=\"eq-explain-item hidden\" > Reasoning becomes trustworthy. </div></div></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -605,42 +605,42 @@
           "time": 48,
           "state": {
             "focus": [
-              "imowv0abj1i"
+              "imox7gol51i"
             ],
             "dim": [
-              "imowv0abj1j",
-              "imowv0abj1k",
-              "imowv0abj1l",
-              "imowv0abj1m",
-              "imowv0abj1n"
+              "imox7gol51j",
+              "imox7gol51k",
+              "imox7gol51l",
+              "imox7gol51m",
+              "imox7gol51n"
             ],
             "visible": [
-              "imowv0abj1i-sp-1",
-              "imowv0abj1i-sp-2"
+              "imox7gol51i-sp-1",
+              "imox7gol51i-sp-2"
             ],
             "hidden": [
-              "imowv0abj1j-sp-1",
-              "imowv0abj1j-sp-2",
-              "imowv0abj1j-sp-3",
-              "imowv0abj1j-sp-4",
-              "imowv0abj1j-sp-5",
-              "imowv0abj1j-sp-6",
-              "imowv0abj1k-sp-1",
-              "imowv0abj1k-sp-2",
-              "imowv0abj1l-sp-1",
-              "imowv0abj1l-sp-2",
-              "imowv0abj1l-sp-3",
-              "imowv0abj1l-sp-4",
-              "imowv0abj1l-sp-5",
-              "imowv0abj1l-sp-6",
-              "imowv0abj1m-sp-1",
-              "imowv0abj1m-sp-2",
-              "imowv0abj1n-sp-1",
-              "imowv0abj1n-sp-2",
-              "imowv0abj1n-sp-3",
-              "imowv0abj1n-sp-4",
-              "imowv0abj1n-sp-5",
-              "imowv0abj1n-sp-6"
+              "imox7gol51j-sp-1",
+              "imox7gol51j-sp-2",
+              "imox7gol51j-sp-3",
+              "imox7gol51j-sp-4",
+              "imox7gol51j-sp-5",
+              "imox7gol51j-sp-6",
+              "imox7gol51k-sp-1",
+              "imox7gol51k-sp-2",
+              "imox7gol51l-sp-1",
+              "imox7gol51l-sp-2",
+              "imox7gol51l-sp-3",
+              "imox7gol51l-sp-4",
+              "imox7gol51l-sp-5",
+              "imox7gol51l-sp-6",
+              "imox7gol51m-sp-1",
+              "imox7gol51m-sp-2",
+              "imox7gol51n-sp-1",
+              "imox7gol51n-sp-2",
+              "imox7gol51n-sp-3",
+              "imox7gol51n-sp-4",
+              "imox7gol51n-sp-5",
+              "imox7gol51n-sp-6"
             ]
           }
         },
@@ -648,42 +648,42 @@
           "time": 50,
           "state": {
             "focus": [
-              "imowv0abj1j"
+              "imox7gol51j"
             ],
             "dim": [
-              "imowv0abj1i",
-              "imowv0abj1k",
-              "imowv0abj1l",
-              "imowv0abj1m",
-              "imowv0abj1n"
+              "imox7gol51i",
+              "imox7gol51k",
+              "imox7gol51l",
+              "imox7gol51m",
+              "imox7gol51n"
             ],
             "visible": [
-              "imowv0abj1j-sp-1",
-              "imowv0abj1j-sp-2",
-              "imowv0abj1j-sp-3",
-              "imowv0abj1j-sp-4",
-              "imowv0abj1j-sp-5",
-              "imowv0abj1j-sp-6"
+              "imox7gol51j-sp-1",
+              "imox7gol51j-sp-2",
+              "imox7gol51j-sp-3",
+              "imox7gol51j-sp-4",
+              "imox7gol51j-sp-5",
+              "imox7gol51j-sp-6"
             ],
             "hidden": [
-              "imowv0abj1i-sp-1",
-              "imowv0abj1i-sp-2",
-              "imowv0abj1k-sp-1",
-              "imowv0abj1k-sp-2",
-              "imowv0abj1l-sp-1",
-              "imowv0abj1l-sp-2",
-              "imowv0abj1l-sp-3",
-              "imowv0abj1l-sp-4",
-              "imowv0abj1l-sp-5",
-              "imowv0abj1l-sp-6",
-              "imowv0abj1m-sp-1",
-              "imowv0abj1m-sp-2",
-              "imowv0abj1n-sp-1",
-              "imowv0abj1n-sp-2",
-              "imowv0abj1n-sp-3",
-              "imowv0abj1n-sp-4",
-              "imowv0abj1n-sp-5",
-              "imowv0abj1n-sp-6"
+              "imox7gol51i-sp-1",
+              "imox7gol51i-sp-2",
+              "imox7gol51k-sp-1",
+              "imox7gol51k-sp-2",
+              "imox7gol51l-sp-1",
+              "imox7gol51l-sp-2",
+              "imox7gol51l-sp-3",
+              "imox7gol51l-sp-4",
+              "imox7gol51l-sp-5",
+              "imox7gol51l-sp-6",
+              "imox7gol51m-sp-1",
+              "imox7gol51m-sp-2",
+              "imox7gol51n-sp-1",
+              "imox7gol51n-sp-2",
+              "imox7gol51n-sp-3",
+              "imox7gol51n-sp-4",
+              "imox7gol51n-sp-5",
+              "imox7gol51n-sp-6"
             ]
           }
         },
@@ -691,42 +691,42 @@
           "time": 52,
           "state": {
             "focus": [
-              "imowv0abj1k"
+              "imox7gol51k"
             ],
             "dim": [
-              "imowv0abj1i",
-              "imowv0abj1j",
-              "imowv0abj1l",
-              "imowv0abj1m",
-              "imowv0abj1n"
+              "imox7gol51i",
+              "imox7gol51j",
+              "imox7gol51l",
+              "imox7gol51m",
+              "imox7gol51n"
             ],
             "visible": [
-              "imowv0abj1k-sp-1",
-              "imowv0abj1k-sp-2"
+              "imox7gol51k-sp-1",
+              "imox7gol51k-sp-2"
             ],
             "hidden": [
-              "imowv0abj1i-sp-1",
-              "imowv0abj1i-sp-2",
-              "imowv0abj1j-sp-1",
-              "imowv0abj1j-sp-2",
-              "imowv0abj1j-sp-3",
-              "imowv0abj1j-sp-4",
-              "imowv0abj1j-sp-5",
-              "imowv0abj1j-sp-6",
-              "imowv0abj1l-sp-1",
-              "imowv0abj1l-sp-2",
-              "imowv0abj1l-sp-3",
-              "imowv0abj1l-sp-4",
-              "imowv0abj1l-sp-5",
-              "imowv0abj1l-sp-6",
-              "imowv0abj1m-sp-1",
-              "imowv0abj1m-sp-2",
-              "imowv0abj1n-sp-1",
-              "imowv0abj1n-sp-2",
-              "imowv0abj1n-sp-3",
-              "imowv0abj1n-sp-4",
-              "imowv0abj1n-sp-5",
-              "imowv0abj1n-sp-6"
+              "imox7gol51i-sp-1",
+              "imox7gol51i-sp-2",
+              "imox7gol51j-sp-1",
+              "imox7gol51j-sp-2",
+              "imox7gol51j-sp-3",
+              "imox7gol51j-sp-4",
+              "imox7gol51j-sp-5",
+              "imox7gol51j-sp-6",
+              "imox7gol51l-sp-1",
+              "imox7gol51l-sp-2",
+              "imox7gol51l-sp-3",
+              "imox7gol51l-sp-4",
+              "imox7gol51l-sp-5",
+              "imox7gol51l-sp-6",
+              "imox7gol51m-sp-1",
+              "imox7gol51m-sp-2",
+              "imox7gol51n-sp-1",
+              "imox7gol51n-sp-2",
+              "imox7gol51n-sp-3",
+              "imox7gol51n-sp-4",
+              "imox7gol51n-sp-5",
+              "imox7gol51n-sp-6"
             ]
           }
         },
@@ -734,42 +734,42 @@
           "time": 54,
           "state": {
             "focus": [
-              "imowv0abj1l"
+              "imox7gol51l"
             ],
             "dim": [
-              "imowv0abj1i",
-              "imowv0abj1j",
-              "imowv0abj1k",
-              "imowv0abj1m",
-              "imowv0abj1n"
+              "imox7gol51i",
+              "imox7gol51j",
+              "imox7gol51k",
+              "imox7gol51m",
+              "imox7gol51n"
             ],
             "visible": [
-              "imowv0abj1l-sp-1",
-              "imowv0abj1l-sp-2",
-              "imowv0abj1l-sp-3",
-              "imowv0abj1l-sp-4",
-              "imowv0abj1l-sp-5",
-              "imowv0abj1l-sp-6"
+              "imox7gol51l-sp-1",
+              "imox7gol51l-sp-2",
+              "imox7gol51l-sp-3",
+              "imox7gol51l-sp-4",
+              "imox7gol51l-sp-5",
+              "imox7gol51l-sp-6"
             ],
             "hidden": [
-              "imowv0abj1i-sp-1",
-              "imowv0abj1i-sp-2",
-              "imowv0abj1j-sp-1",
-              "imowv0abj1j-sp-2",
-              "imowv0abj1j-sp-3",
-              "imowv0abj1j-sp-4",
-              "imowv0abj1j-sp-5",
-              "imowv0abj1j-sp-6",
-              "imowv0abj1k-sp-1",
-              "imowv0abj1k-sp-2",
-              "imowv0abj1m-sp-1",
-              "imowv0abj1m-sp-2",
-              "imowv0abj1n-sp-1",
-              "imowv0abj1n-sp-2",
-              "imowv0abj1n-sp-3",
-              "imowv0abj1n-sp-4",
-              "imowv0abj1n-sp-5",
-              "imowv0abj1n-sp-6"
+              "imox7gol51i-sp-1",
+              "imox7gol51i-sp-2",
+              "imox7gol51j-sp-1",
+              "imox7gol51j-sp-2",
+              "imox7gol51j-sp-3",
+              "imox7gol51j-sp-4",
+              "imox7gol51j-sp-5",
+              "imox7gol51j-sp-6",
+              "imox7gol51k-sp-1",
+              "imox7gol51k-sp-2",
+              "imox7gol51m-sp-1",
+              "imox7gol51m-sp-2",
+              "imox7gol51n-sp-1",
+              "imox7gol51n-sp-2",
+              "imox7gol51n-sp-3",
+              "imox7gol51n-sp-4",
+              "imox7gol51n-sp-5",
+              "imox7gol51n-sp-6"
             ]
           }
         },
@@ -777,42 +777,42 @@
           "time": 56,
           "state": {
             "focus": [
-              "imowv0abj1m"
+              "imox7gol51m"
             ],
             "dim": [
-              "imowv0abj1i",
-              "imowv0abj1j",
-              "imowv0abj1k",
-              "imowv0abj1l",
-              "imowv0abj1n"
+              "imox7gol51i",
+              "imox7gol51j",
+              "imox7gol51k",
+              "imox7gol51l",
+              "imox7gol51n"
             ],
             "visible": [
-              "imowv0abj1m-sp-1",
-              "imowv0abj1m-sp-2"
+              "imox7gol51m-sp-1",
+              "imox7gol51m-sp-2"
             ],
             "hidden": [
-              "imowv0abj1i-sp-1",
-              "imowv0abj1i-sp-2",
-              "imowv0abj1j-sp-1",
-              "imowv0abj1j-sp-2",
-              "imowv0abj1j-sp-3",
-              "imowv0abj1j-sp-4",
-              "imowv0abj1j-sp-5",
-              "imowv0abj1j-sp-6",
-              "imowv0abj1k-sp-1",
-              "imowv0abj1k-sp-2",
-              "imowv0abj1l-sp-1",
-              "imowv0abj1l-sp-2",
-              "imowv0abj1l-sp-3",
-              "imowv0abj1l-sp-4",
-              "imowv0abj1l-sp-5",
-              "imowv0abj1l-sp-6",
-              "imowv0abj1n-sp-1",
-              "imowv0abj1n-sp-2",
-              "imowv0abj1n-sp-3",
-              "imowv0abj1n-sp-4",
-              "imowv0abj1n-sp-5",
-              "imowv0abj1n-sp-6"
+              "imox7gol51i-sp-1",
+              "imox7gol51i-sp-2",
+              "imox7gol51j-sp-1",
+              "imox7gol51j-sp-2",
+              "imox7gol51j-sp-3",
+              "imox7gol51j-sp-4",
+              "imox7gol51j-sp-5",
+              "imox7gol51j-sp-6",
+              "imox7gol51k-sp-1",
+              "imox7gol51k-sp-2",
+              "imox7gol51l-sp-1",
+              "imox7gol51l-sp-2",
+              "imox7gol51l-sp-3",
+              "imox7gol51l-sp-4",
+              "imox7gol51l-sp-5",
+              "imox7gol51l-sp-6",
+              "imox7gol51n-sp-1",
+              "imox7gol51n-sp-2",
+              "imox7gol51n-sp-3",
+              "imox7gol51n-sp-4",
+              "imox7gol51n-sp-5",
+              "imox7gol51n-sp-6"
             ]
           }
         },
@@ -820,42 +820,42 @@
           "time": 58,
           "state": {
             "focus": [
-              "imowv0abj1n"
+              "imox7gol51n"
             ],
             "dim": [
-              "imowv0abj1i",
-              "imowv0abj1j",
-              "imowv0abj1k",
-              "imowv0abj1l",
-              "imowv0abj1m"
+              "imox7gol51i",
+              "imox7gol51j",
+              "imox7gol51k",
+              "imox7gol51l",
+              "imox7gol51m"
             ],
             "visible": [
-              "imowv0abj1n-sp-1",
-              "imowv0abj1n-sp-2",
-              "imowv0abj1n-sp-3",
-              "imowv0abj1n-sp-4",
-              "imowv0abj1n-sp-5",
-              "imowv0abj1n-sp-6"
+              "imox7gol51n-sp-1",
+              "imox7gol51n-sp-2",
+              "imox7gol51n-sp-3",
+              "imox7gol51n-sp-4",
+              "imox7gol51n-sp-5",
+              "imox7gol51n-sp-6"
             ],
             "hidden": [
-              "imowv0abj1i-sp-1",
-              "imowv0abj1i-sp-2",
-              "imowv0abj1j-sp-1",
-              "imowv0abj1j-sp-2",
-              "imowv0abj1j-sp-3",
-              "imowv0abj1j-sp-4",
-              "imowv0abj1j-sp-5",
-              "imowv0abj1j-sp-6",
-              "imowv0abj1k-sp-1",
-              "imowv0abj1k-sp-2",
-              "imowv0abj1l-sp-1",
-              "imowv0abj1l-sp-2",
-              "imowv0abj1l-sp-3",
-              "imowv0abj1l-sp-4",
-              "imowv0abj1l-sp-5",
-              "imowv0abj1l-sp-6",
-              "imowv0abj1m-sp-1",
-              "imowv0abj1m-sp-2"
+              "imox7gol51i-sp-1",
+              "imox7gol51i-sp-2",
+              "imox7gol51j-sp-1",
+              "imox7gol51j-sp-2",
+              "imox7gol51j-sp-3",
+              "imox7gol51j-sp-4",
+              "imox7gol51j-sp-5",
+              "imox7gol51j-sp-6",
+              "imox7gol51k-sp-1",
+              "imox7gol51k-sp-2",
+              "imox7gol51l-sp-1",
+              "imox7gol51l-sp-2",
+              "imox7gol51l-sp-3",
+              "imox7gol51l-sp-4",
+              "imox7gol51l-sp-5",
+              "imox7gol51l-sp-6",
+              "imox7gol51m-sp-1",
+              "imox7gol51m-sp-2"
             ]
           }
         }

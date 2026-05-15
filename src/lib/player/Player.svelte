@@ -89,23 +89,17 @@
 		groups =
 			slide.groups ?? {};
 
-		// 🔥 APPLY DECK BACKGROUND
-		if (
-			root &&
-			presentation?.background
-		) {
-
-			applyBackground(
-				root,
-				presentation.background
-			);
-		}
-
 		mountedSlide = slide;
 
 		queueMicrotask(() => {
 
 			if (root) {
+
+				applyBackground(
+					root,
+					presentation?.background
+				);
+
 				useMath(root);
 			}
 		});

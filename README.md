@@ -40,3 +40,7 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+## Footer
+
+This project is part of the Taleem Help workspace. The goal is to build a clean, useful learning experience where syllabus content, lessons, and practice resources can be organized in one place.
