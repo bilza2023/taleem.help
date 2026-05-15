@@ -3,14 +3,14 @@
   "background": {
     "backgroundColor": "#05070c",
     "backgroundImage": "bg.webp",
-    "backgroundImageOpacity": 0.8 
+    "backgroundImageOpacity": 0.6
   },
   "deck": [
     {
       "type": "titleAndSubtitle",
       "start": 0,
-      "end": 10,
-      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imox7golg9f\" class=\" hidden taleem-heading-lg \" > What is Taleem.help? </h1><h2 id=\"imox7golg9g\" class=\" hidden taleem-heading-md \" > Focused educational videos for Pakistani students </h2></section>",
+      "end": 4,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imp7hrq5l9f\" class=\" hidden taleem-heading-lg \" > What is Taleem.help? </h1><h2 id=\"imp7hrq5l9g\" class=\" hidden taleem-heading-md \" > Focused educational videos for Pakistani students </h2></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -21,12 +21,12 @@
           "time": 0,
           "state": {
             "hidden": [
-              "imox7golg9g"
+              "imp7hrq5l9g"
             ]
           }
         },
         {
-          "time": 3,
+          "time": 1,
           "state": {
             "hidden": []
           }
@@ -35,9 +35,9 @@
     },
     {
       "type": "titleAndPara",
-      "start": 10,
-      "end": 22,
-      "html": "<section class=\"slide titleAndPara\"><h1 id=\"imox7golg9h\" class=\" hidden taleem-heading-md \" > An educational platform built around clarity </h1><p id=\"imox7golg9i\" class=\" hidden taleem-para \" > Taleem.help contains a large collection of narrated educational videos and presentations designed for focused learning. </p></section>",
+      "start": 4,
+      "end": 8,
+      "html": "<section class=\"slide titleAndPara\"><h1 id=\"imp7hrq5l9h\" class=\" hidden taleem-heading-md \" > An educational platform built around clarity </h1><p id=\"imp7hrq5l9i\" class=\" hidden taleem-para \" > Taleem.help contains a large collection of narrated educational videos and presentations designed for focused learning. </p></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -45,15 +45,15 @@
       },
       "actions": [
         {
-          "time": 10,
+          "time": 4,
           "state": {
             "hidden": [
-              "imox7golg9i"
+              "imp7hrq5l9i"
             ]
           }
         },
         {
-          "time": 13,
+          "time": 5,
           "state": {
             "hidden": []
           }
@@ -62,9 +62,9 @@
     },
     {
       "type": "bulletList",
-      "start": 22,
-      "end": 36,
-      "html": "<section class=\"slide bulletList\"><ul><li id=\"imox7golh9j\" class=\"hidden\" > Focused educational videos </li><li id=\"imox7golh9k\" class=\"hidden\" > Narration with visual explanations </li><li id=\"imox7golh9l\" class=\"hidden\" > Physics, mathematics, biology and more </li><li id=\"imox7golh9m\" class=\"hidden\" > Built for Pakistani students </li></ul></section>",
+      "start": 8,
+      "end": 15,
+      "html": "<section class=\"slide bulletList\"><ul><li id=\"imp7hrq5l9j\" class=\"hidden\" > Focused educational videos </li><li id=\"imp7hrq5l9k\" class=\"hidden\" > Narration with visual explanations </li><li id=\"imp7hrq5l9l\" class=\"hidden\" > Physics, mathematics, biology and more </li><li id=\"imp7hrq5l9m\" class=\"hidden\" > Built for Pakistani students </li></ul></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -72,21 +72,151 @@
       },
       "actions": [
         {
-          "time": 22,
+          "time": 8,
           "state": {
             "hidden": [
-              "imox7golh9k",
-              "imox7golh9l",
-              "imox7golh9m"
+              "imp7hrq5l9k",
+              "imp7hrq5l9l",
+              "imp7hrq5l9m"
             ]
           }
         },
         {
-          "time": 24,
+          "time": 9,
           "state": {
             "hidden": [
-              "imox7golh9l",
-              "imox7golh9m"
+              "imp7hrq5l9l",
+              "imp7hrq5l9m"
+            ]
+          }
+        },
+        {
+          "time": 10,
+          "state": {
+            "hidden": [
+              "imp7hrq5l9m"
+            ]
+          }
+        },
+        {
+          "time": 11,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageWithTitle",
+      "start": 15,
+      "end": 20,
+      "html": "<section class=\"slide imageWithTitle\"><h1 id=\"imp7hrq5l9n\" class=\" hidden \" > Visual learning and guided explanation </h1><img id=\"imp7hrq5l9o\" class=\" hidden \" src=\"typesOfForce.webp\" /></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 15,
+          "state": {
+            "hidden": [
+              "imp7hrq5l9o"
+            ]
+          }
+        },
+        {
+          "time": 17,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "focusList",
+      "start": 20,
+      "end": 25,
+      "html": "<section class=\"slide focusList\"><h1 id=\"imp7hrq5l9p\" class=\"\" > Why are there so many videos? </h1><ul><li id=\"imp7hrq5l9q\" class=\"\" > Different students struggle at different points </li><li id=\"imp7hrq5l9r\" class=\"\" > Important questions may receive separate videos </li><li id=\"imp7hrq5l9s\" class=\"\" > Short focused lessons are easier to revise later </li></ul></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ]
+      },
+      "actions": [
+        {
+          "time": 20,
+          "state": {
+            "focus": [
+              "imp7hrq5l9p"
+            ],
+            "dim": [
+              "imp7hrq5l9q",
+              "imp7hrq5l9r",
+              "imp7hrq5l9s"
+            ]
+          }
+        },
+        {
+          "time": 21,
+          "state": {
+            "focus": [
+              "imp7hrq5l9q"
+            ],
+            "dim": [
+              "imp7hrq5l9p",
+              "imp7hrq5l9r",
+              "imp7hrq5l9s"
+            ]
+          }
+        },
+        {
+          "time": 22,
+          "state": {
+            "focus": [
+              "imp7hrq5l9r"
+            ],
+            "dim": [
+              "imp7hrq5l9p",
+              "imp7hrq5l9q",
+              "imp7hrq5l9s"
+            ]
+          }
+        },
+        {
+          "time": 23,
+          "state": {
+            "focus": [
+              "imp7hrq5l9s"
+            ],
+            "dim": [
+              "imp7hrq5l9p",
+              "imp7hrq5l9q",
+              "imp7hrq5l9r"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 25,
+      "end": 30,
+      "html": "<section class=\"slide imageLeftBulletsRight\"><img id=\"imp7hrq5l9t\" class=\" hidden \" src=\"banner.webp\" /><ul><li id=\"imp7hrq5l9u\" class=\" hidden \" > Topics are divided into smaller lessons </li><li id=\"imp7hrq5l9v\" class=\" hidden \" > Students can revisit specific ideas quickly </li><li id=\"imp7hrq5l9w\" class=\" hidden \" > Lessons are designed for calm step-by-step learning </li></ul></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 25,
+          "state": {
+            "hidden": [
+              "imp7hrq5l9u",
+              "imp7hrq5l9v",
+              "imp7hrq5l9w"
             ]
           }
         },
@@ -94,7 +224,16 @@
           "time": 26,
           "state": {
             "hidden": [
-              "imox7golh9m"
+              "imp7hrq5l9v",
+              "imp7hrq5l9w"
+            ]
+          }
+        },
+        {
+          "time": 27,
+          "state": {
+            "hidden": [
+              "imp7hrq5l9w"
             ]
           }
         },
@@ -107,149 +246,10 @@
       ]
     },
     {
-      "type": "imageWithTitle",
-      "start": 36,
-      "end": 48,
-      "html": "<section class=\"slide imageWithTitle\"><h1 id=\"imox7golh9n\" class=\" hidden \" > Visual learning and guided explanation </h1><img id=\"imox7golh9o\" class=\" hidden \" src=\"typesOfForce.webp\" /></section>",
-      "groups": {
-        "hidden": [
-          "hidden"
-        ]
-      },
-      "actions": [
-        {
-          "time": 36,
-          "state": {
-            "hidden": [
-              "imox7golh9o"
-            ]
-          }
-        },
-        {
-          "time": 40,
-          "state": {
-            "hidden": []
-          }
-        }
-      ]
-    },
-    {
-      "type": "focusList",
-      "start": 48,
-      "end": 62,
-      "html": "<section class=\"slide focusList\"><h1 id=\"imox7golh9p\" class=\"\" > Why are there so many videos? </h1><ul><li id=\"imox7golh9q\" class=\"\" > Different students struggle at different points </li><li id=\"imox7golh9r\" class=\"\" > Important questions may receive separate videos </li><li id=\"imox7golh9s\" class=\"\" > Short focused lessons are easier to revise later </li></ul></section>",
-      "groups": {
-        "focus": [],
-        "dim": [
-          "dim"
-        ]
-      },
-      "actions": [
-        {
-          "time": 48,
-          "state": {
-            "focus": [
-              "imox7golh9p"
-            ],
-            "dim": [
-              "imox7golh9q",
-              "imox7golh9r",
-              "imox7golh9s"
-            ]
-          }
-        },
-        {
-          "time": 50,
-          "state": {
-            "focus": [
-              "imox7golh9q"
-            ],
-            "dim": [
-              "imox7golh9p",
-              "imox7golh9r",
-              "imox7golh9s"
-            ]
-          }
-        },
-        {
-          "time": 52,
-          "state": {
-            "focus": [
-              "imox7golh9r"
-            ],
-            "dim": [
-              "imox7golh9p",
-              "imox7golh9q",
-              "imox7golh9s"
-            ]
-          }
-        },
-        {
-          "time": 54,
-          "state": {
-            "focus": [
-              "imox7golh9s"
-            ],
-            "dim": [
-              "imox7golh9p",
-              "imox7golh9q",
-              "imox7golh9r"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "type": "imageLeftBulletsRight",
-      "start": 62,
-      "end": 76,
-      "html": "<section class=\"slide imageLeftBulletsRight\"><img id=\"imox7golh9t\" class=\" hidden \" src=\"banner.webp\" /><ul><li id=\"imox7golh9u\" class=\" hidden \" > Topics are divided into smaller lessons </li><li id=\"imox7golh9v\" class=\" hidden \" > Students can revisit specific ideas quickly </li><li id=\"imox7golh9w\" class=\" hidden \" > Lessons are designed for calm step-by-step learning </li></ul></section>",
-      "groups": {
-        "hidden": [
-          "hidden"
-        ]
-      },
-      "actions": [
-        {
-          "time": 62,
-          "state": {
-            "hidden": [
-              "imox7golh9u",
-              "imox7golh9v",
-              "imox7golh9w"
-            ]
-          }
-        },
-        {
-          "time": 64,
-          "state": {
-            "hidden": [
-              "imox7golh9v",
-              "imox7golh9w"
-            ]
-          }
-        },
-        {
-          "time": 66,
-          "state": {
-            "hidden": [
-              "imox7golh9w"
-            ]
-          }
-        },
-        {
-          "time": 68,
-          "state": {
-            "hidden": []
-          }
-        }
-      ]
-    },
-    {
       "type": "eq",
-      "start": 76,
-      "end": 92,
-      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imox7golh9x\" class=\" eq-item eq-title \" > Step-by-step reasoning </li><li id=\"imox7golh9y\" class=\" eq-item eq-math \" > $$ F = ma $$ </li><li id=\"imox7golh9z\" class=\" eq-item eq-line \" > Students should understand why formulas work. </li><li id=\"imox7golha0\" class=\" eq-item eq-math \" > $$ a = \\frac{F}{m} $$ </li><li id=\"imox7golha1\" class=\" eq-item eq-line \" > The goal is understanding, not rushed learning. </li></ul><div class=\"eq-side-panel\"><div id=\"imox7golh9x-sp-1\" class=\"eq-explain-item hidden\" > Complex ideas are explained carefully. </div><div id=\"imox7golh9y-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"imox7golh9y-sp-2\" class=\"eq-explain-item hidden\" > Force depends on mass and acceleration. </div><div id=\"imox7golh9z-sp-1\" class=\"eq-explain-item hidden\" > Reasoning is more important than memorization. </div><div id=\"imox7golha0-sp-1\" class=\"eq-explain-item hidden\" > Ideas are explained through small logical steps. </div><div id=\"imox7golha1-sp-1\" class=\"eq-explain-item hidden\" > Lessons are continuously refined and improved. </div></div></section>",
+      "start": 30,
+      "end": 36,
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imp7hrq5l9x\" class=\" eq-item eq-title \" > Step-by-step reasoning </li><li id=\"imp7hrq5l9y\" class=\" eq-item eq-math \" > $$ F = ma $$ </li><li id=\"imp7hrq5l9z\" class=\" eq-item eq-line \" > Students should understand why formulas work. </li><li id=\"imp7hrq5la0\" class=\" eq-item eq-math \" > $$ a = \\frac{F}{m} $$ </li><li id=\"imp7hrq5la1\" class=\" eq-item eq-line \" > The goal is understanding, not rushed learning. </li></ul><div class=\"eq-side-panel\"><div id=\"imp7hrq5l9x-sp-1\" class=\"eq-explain-item hidden\" > Complex ideas are explained carefully. </div><div id=\"imp7hrq5l9y-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"imp7hrq5l9y-sp-2\" class=\"eq-explain-item hidden\" > Force depends on mass and acceleration. </div><div id=\"imp7hrq5l9z-sp-1\" class=\"eq-explain-item hidden\" > Reasoning is more important than memorization. </div><div id=\"imp7hrq5la0-sp-1\" class=\"eq-explain-item hidden\" > Ideas are explained through small logical steps. </div><div id=\"imp7hrq5la1-sp-1\" class=\"eq-explain-item hidden\" > Lessons are continuously refined and improved. </div></div></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -262,122 +262,122 @@
       },
       "actions": [
         {
-          "time": 76,
+          "time": 30,
           "state": {
             "focus": [
-              "imox7golh9x"
+              "imp7hrq5l9x"
             ],
             "dim": [
-              "imox7golh9y",
-              "imox7golh9z",
-              "imox7golha0",
-              "imox7golha1"
+              "imp7hrq5l9y",
+              "imp7hrq5l9z",
+              "imp7hrq5la0",
+              "imp7hrq5la1"
             ],
             "visible": [
-              "imox7golh9x-sp-1"
+              "imp7hrq5l9x-sp-1"
             ],
             "hidden": [
-              "imox7golh9y-sp-1",
-              "imox7golh9y-sp-2",
-              "imox7golh9z-sp-1",
-              "imox7golha0-sp-1",
-              "imox7golha1-sp-1"
+              "imp7hrq5l9y-sp-1",
+              "imp7hrq5l9y-sp-2",
+              "imp7hrq5l9z-sp-1",
+              "imp7hrq5la0-sp-1",
+              "imp7hrq5la1-sp-1"
             ]
           }
         },
         {
-          "time": 78,
+          "time": 32,
           "state": {
             "focus": [
-              "imox7golh9y"
+              "imp7hrq5l9y"
             ],
             "dim": [
-              "imox7golh9x",
-              "imox7golh9z",
-              "imox7golha0",
-              "imox7golha1"
+              "imp7hrq5l9x",
+              "imp7hrq5l9z",
+              "imp7hrq5la0",
+              "imp7hrq5la1"
             ],
             "visible": [
-              "imox7golh9y-sp-1",
-              "imox7golh9y-sp-2"
+              "imp7hrq5l9y-sp-1",
+              "imp7hrq5l9y-sp-2"
             ],
             "hidden": [
-              "imox7golh9x-sp-1",
-              "imox7golh9z-sp-1",
-              "imox7golha0-sp-1",
-              "imox7golha1-sp-1"
+              "imp7hrq5l9x-sp-1",
+              "imp7hrq5l9z-sp-1",
+              "imp7hrq5la0-sp-1",
+              "imp7hrq5la1-sp-1"
             ]
           }
         },
         {
-          "time": 80,
+          "time": 33,
           "state": {
             "focus": [
-              "imox7golh9z"
+              "imp7hrq5l9z"
             ],
             "dim": [
-              "imox7golh9x",
-              "imox7golh9y",
-              "imox7golha0",
-              "imox7golha1"
+              "imp7hrq5l9x",
+              "imp7hrq5l9y",
+              "imp7hrq5la0",
+              "imp7hrq5la1"
             ],
             "visible": [
-              "imox7golh9z-sp-1"
+              "imp7hrq5l9z-sp-1"
             ],
             "hidden": [
-              "imox7golh9x-sp-1",
-              "imox7golh9y-sp-1",
-              "imox7golh9y-sp-2",
-              "imox7golha0-sp-1",
-              "imox7golha1-sp-1"
+              "imp7hrq5l9x-sp-1",
+              "imp7hrq5l9y-sp-1",
+              "imp7hrq5l9y-sp-2",
+              "imp7hrq5la0-sp-1",
+              "imp7hrq5la1-sp-1"
             ]
           }
         },
         {
-          "time": 82,
+          "time": 34,
           "state": {
             "focus": [
-              "imox7golha0"
+              "imp7hrq5la0"
             ],
             "dim": [
-              "imox7golh9x",
-              "imox7golh9y",
-              "imox7golh9z",
-              "imox7golha1"
+              "imp7hrq5l9x",
+              "imp7hrq5l9y",
+              "imp7hrq5l9z",
+              "imp7hrq5la1"
             ],
             "visible": [
-              "imox7golha0-sp-1"
+              "imp7hrq5la0-sp-1"
             ],
             "hidden": [
-              "imox7golh9x-sp-1",
-              "imox7golh9y-sp-1",
-              "imox7golh9y-sp-2",
-              "imox7golh9z-sp-1",
-              "imox7golha1-sp-1"
+              "imp7hrq5l9x-sp-1",
+              "imp7hrq5l9y-sp-1",
+              "imp7hrq5l9y-sp-2",
+              "imp7hrq5l9z-sp-1",
+              "imp7hrq5la1-sp-1"
             ]
           }
         },
         {
-          "time": 84,
+          "time": 35,
           "state": {
             "focus": [
-              "imox7golha1"
+              "imp7hrq5la1"
             ],
             "dim": [
-              "imox7golh9x",
-              "imox7golh9y",
-              "imox7golh9z",
-              "imox7golha0"
+              "imp7hrq5l9x",
+              "imp7hrq5l9y",
+              "imp7hrq5l9z",
+              "imp7hrq5la0"
             ],
             "visible": [
-              "imox7golha1-sp-1"
+              "imp7hrq5la1-sp-1"
             ],
             "hidden": [
-              "imox7golh9x-sp-1",
-              "imox7golh9y-sp-1",
-              "imox7golh9y-sp-2",
-              "imox7golh9z-sp-1",
-              "imox7golha0-sp-1"
+              "imp7hrq5l9x-sp-1",
+              "imp7hrq5l9y-sp-1",
+              "imp7hrq5l9y-sp-2",
+              "imp7hrq5l9z-sp-1",
+              "imp7hrq5la0-sp-1"
             ]
           }
         }
@@ -385,9 +385,9 @@
     },
     {
       "type": "imageWithCaption",
-      "start": 92,
-      "end": 104,
-      "html": "<figure class=\"slide imageWithCaption\"><img id=\"imox7golha2\" class=\" hidden \" src=\"parallelogram_properties_labeled.png\" /><figcaption id=\"imox7golha3\" class=\" hidden \" > Diagrams and geometry explained visually and carefully. </figcaption></figure>",
+      "start": 36,
+      "end": 38,
+      "html": "<figure class=\"slide imageWithCaption\"><img id=\"imp7hrq5la2\" class=\" hidden \" src=\"parallelogram_properties_labeled.png\" /><figcaption id=\"imp7hrq5la3\" class=\" hidden \" > Diagrams and geometry explained visually and carefully. </figcaption></figure>",
       "groups": {
         "hidden": [
           "hidden"
@@ -395,15 +395,15 @@
       },
       "actions": [
         {
-          "time": 92,
+          "time": 36,
           "state": {
             "hidden": [
-              "imox7golha3"
+              "imp7hrq5la3"
             ]
           }
         },
         {
-          "time": 95,
+          "time": 38,
           "state": {
             "hidden": []
           }
@@ -412,9 +412,9 @@
     },
     {
       "type": "bulletList",
-      "start": 104,
-      "end": 118,
-      "html": "<section class=\"slide bulletList\"><ul><li id=\"imox7golha4\" class=\"hidden\" > Videos continue improving over time </li><li id=\"imox7golha5\" class=\"hidden\" > Errors and narration can be updated </li><li id=\"imox7golha6\" class=\"hidden\" > Slides can be refined continuously </li><li id=\"imox7golha7\" class=\"hidden\" > Educational content should evolve and improve </li></ul></section>",
+      "start": 38,
+      "end": 43,
+      "html": "<section class=\"slide bulletList\"><ul><li id=\"imp7hrq5ma4\" class=\"hidden\" > Videos continue improving over time </li><li id=\"imp7hrq5ma5\" class=\"hidden\" > Errors and narration can be updated </li><li id=\"imp7hrq5ma6\" class=\"hidden\" > Slides can be refined continuously </li><li id=\"imp7hrq5ma7\" class=\"hidden\" > Educational content should evolve and improve </li></ul></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -422,34 +422,34 @@
       },
       "actions": [
         {
-          "time": 104,
+          "time": 38,
           "state": {
             "hidden": [
-              "imox7golha5",
-              "imox7golha6",
-              "imox7golha7"
+              "imp7hrq5ma5",
+              "imp7hrq5ma6",
+              "imp7hrq5ma7"
             ]
           }
         },
         {
-          "time": 106,
+          "time": 39,
           "state": {
             "hidden": [
-              "imox7golha6",
-              "imox7golha7"
+              "imp7hrq5ma6",
+              "imp7hrq5ma7"
             ]
           }
         },
         {
-          "time": 108,
+          "time": 40,
           "state": {
             "hidden": [
-              "imox7golha7"
+              "imp7hrq5ma7"
             ]
           }
         },
         {
-          "time": 110,
+          "time": 41,
           "state": {
             "hidden": []
           }
@@ -458,9 +458,9 @@
     },
     {
       "type": "quoteSlide",
-      "start": 118,
-      "end": 130,
-      "html": "<blockquote class=\"slide quoteSlide\"><p id=\"imox7golha8\" class=\" hidden \" > Focused learning becomes easier when explanations are calm, visual and structured. </p><footer id=\"imox7golha9\" class=\" hidden \" > — taleem.help </footer></blockquote>",
+      "start": 43,
+      "end": 45,
+      "html": "<blockquote class=\"slide quoteSlide\"><p id=\"imp7hrq5ma8\" class=\" hidden \" > Focused learning becomes easier when explanations are calm, visual and structured. </p><footer id=\"imp7hrq5ma9\" class=\" hidden \" > — taleem.help </footer></blockquote>",
       "groups": {
         "hidden": [
           "hidden"
@@ -468,15 +468,15 @@
       },
       "actions": [
         {
-          "time": 118,
+          "time": 43,
           "state": {
             "hidden": [
-              "imox7golha9"
+              "imp7hrq5ma9"
             ]
           }
         },
         {
-          "time": 122,
+          "time": 44,
           "state": {
             "hidden": []
           }
@@ -485,9 +485,9 @@
     },
     {
       "type": "twoColumnText",
-      "start": 130,
-      "end": 142,
-      "html": "<section class=\"slide twoColumnText\"><div class=\"col left\"><div id=\"imox7golhaa\" class=\" hidden \" > Students can ask questions and request deeper explanations. </div></div><div class=\"col right\"><div id=\"imox7golhab\" class=\" hidden \" > The platform grows from real student confusion and feedback. </div></div></section>",
+      "start": 45,
+      "end": 50,
+      "html": "<section class=\"slide twoColumnText\"><div class=\"col left\"><div id=\"imp7hrq5maa\" class=\" hidden \" > Students can ask questions and request deeper explanations. </div></div><div class=\"col right\"><div id=\"imp7hrq5mab\" class=\" hidden \" > The platform grows from real student confusion and feedback. </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -495,15 +495,15 @@
       },
       "actions": [
         {
-          "time": 130,
+          "time": 45,
           "state": {
             "hidden": [
-              "imox7golhab"
+              "imp7hrq5mab"
             ]
           }
         },
         {
-          "time": 134,
+          "time": 48,
           "state": {
             "hidden": []
           }
@@ -512,9 +512,9 @@
     },
     {
       "type": "imageGrid",
-      "start": 142,
-      "end": 156,
-      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imox7golhac\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imox7golhad\" class=\" hidden \" src=\"typesOfForce.webp\" /></div><div class=\"image-grid-item\"><img id=\"imox7golhae\" class=\" hidden \" src=\"banner.webp\" /></div><div class=\"image-grid-item\"><img id=\"imox7golhaf\" class=\" hidden \" src=\"banner_brand.png\" /></div></div></section>",
+      "start": 50,
+      "end": 60,
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imp7hrq5mac\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp7hrq5mad\" class=\" hidden \" src=\"typesOfForce.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp7hrq5mae\" class=\" hidden \" src=\"banner.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp7hrq5maf\" class=\" hidden \" src=\"banner_brand.png\" /></div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -522,34 +522,34 @@
       },
       "actions": [
         {
-          "time": 142,
+          "time": 51,
           "state": {
             "hidden": [
-              "imox7golhad",
-              "imox7golhae",
-              "imox7golhaf"
+              "imp7hrq5mad",
+              "imp7hrq5mae",
+              "imp7hrq5maf"
             ]
           }
         },
         {
-          "time": 144,
+          "time": 53,
           "state": {
             "hidden": [
-              "imox7golhae",
-              "imox7golhaf"
+              "imp7hrq5mae",
+              "imp7hrq5maf"
             ]
           }
         },
         {
-          "time": 146,
+          "time": 55,
           "state": {
             "hidden": [
-              "imox7golhaf"
+              "imp7hrq5maf"
             ]
           }
         },
         {
-          "time": 148,
+          "time": 58,
           "state": {
             "hidden": []
           }
@@ -558,9 +558,9 @@
     },
     {
       "type": "titleAndPara",
-      "start": 156,
-      "end": 170,
-      "html": "<section class=\"slide titleAndPara\"><h1 id=\"imox7golhag\" class=\" hidden taleem-heading-md \" > taleem.help </h1><p id=\"imox7golhah\" class=\" hidden taleem-para \" > Educational videos and narrated lessons designed for focused learning and continuous improvement. </p></section>",
+      "start": 60,
+      "end": 70,
+      "html": "<section class=\"slide titleAndPara\"><h1 id=\"imp7hrq5mag\" class=\" hidden taleem-heading-md \" > taleem.help </h1><p id=\"imp7hrq5mah\" class=\" hidden taleem-para \" > Educational videos and narrated lessons designed for focused learning and continuous improvement. </p></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -568,15 +568,15 @@
       },
       "actions": [
         {
-          "time": 156,
+          "time": 61,
           "state": {
             "hidden": [
-              "imox7golhah"
+              "imp7hrq5mah"
             ]
           }
         },
         {
-          "time": 160,
+          "time": 62,
           "state": {
             "hidden": []
           }

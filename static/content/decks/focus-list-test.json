@@ -10,7 +10,7 @@
       "type": "titleAndSubtitle",
       "start": 0,
       "end": 8,
-      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imox7gol71o\" class=\" hidden taleem-heading-lg \" > Focus List Testing </h1><h2 id=\"imox7gol71p\" class=\" hidden taleem-heading-md \" > Procedures • sequences • guided thinking </h2></section>",
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imp7hrq581o\" class=\" hidden taleem-heading-lg \" > Focus List Testing </h1><h2 id=\"imp7hrq581p\" class=\" hidden taleem-heading-md \" > Procedures • sequences • guided thinking </h2></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -21,7 +21,7 @@
           "time": 0,
           "state": {
             "hidden": [
-              "imox7gol71p"
+              "imp7hrq581p"
             ]
           }
         },
@@ -37,7 +37,7 @@
       "type": "focusList",
       "start": 8,
       "end": 26,
-      "html": "<section class=\"slide focusList\"><h1 id=\"imox7gol71q\" class=\"\" > How to Solve an Equation </h1><ul><li id=\"imox7gol71r\" class=\"\" > Simplify both sides first </li><li id=\"imox7gol71s\" class=\"\" > Move variables carefully </li><li id=\"imox7gol71t\" class=\"\" > Keep the equation balanced </li><li id=\"imox7gol71u\" class=\"\" > Isolate the unknown </li><li id=\"imox7gol71v\" class=\"\" > Verify the final answer </li></ul></section>",
+      "html": "<section class=\"slide focusList\"><h1 id=\"imp7hrq581q\" class=\"\" > How to Solve an Equation </h1><ul><li id=\"imp7hrq581r\" class=\"\" > Simplify both sides first </li><li id=\"imp7hrq581s\" class=\"\" > Move variables carefully </li><li id=\"imp7hrq581t\" class=\"\" > Keep the equation balanced </li><li id=\"imp7hrq581u\" class=\"\" > Isolate the unknown </li><li id=\"imp7hrq581v\" class=\"\" > Verify the final answer </li></ul></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -49,14 +49,14 @@
           "time": 8,
           "state": {
             "focus": [
-              "imox7gol71q"
+              "imp7hrq581q"
             ],
             "dim": [
-              "imox7gol71r",
-              "imox7gol71s",
-              "imox7gol71t",
-              "imox7gol71u",
-              "imox7gol71v"
+              "imp7hrq581r",
+              "imp7hrq581s",
+              "imp7hrq581t",
+              "imp7hrq581u",
+              "imp7hrq581v"
             ]
           }
         },
@@ -64,14 +64,14 @@
           "time": 10,
           "state": {
             "focus": [
-              "imox7gol71r"
+              "imp7hrq581r"
             ],
             "dim": [
-              "imox7gol71q",
-              "imox7gol71s",
-              "imox7gol71t",
-              "imox7gol71u",
-              "imox7gol71v"
+              "imp7hrq581q",
+              "imp7hrq581s",
+              "imp7hrq581t",
+              "imp7hrq581u",
+              "imp7hrq581v"
             ]
           }
         },
@@ -79,14 +79,14 @@
           "time": 12,
           "state": {
             "focus": [
-              "imox7gol71s"
+              "imp7hrq581s"
             ],
             "dim": [
-              "imox7gol71q",
-              "imox7gol71r",
-              "imox7gol71t",
-              "imox7gol71u",
-              "imox7gol71v"
+              "imp7hrq581q",
+              "imp7hrq581r",
+              "imp7hrq581t",
+              "imp7hrq581u",
+              "imp7hrq581v"
             ]
           }
         },
@@ -94,14 +94,14 @@
           "time": 14,
           "state": {
             "focus": [
-              "imox7gol71t"
+              "imp7hrq581t"
             ],
             "dim": [
-              "imox7gol71q",
-              "imox7gol71r",
-              "imox7gol71s",
-              "imox7gol71u",
-              "imox7gol71v"
+              "imp7hrq581q",
+              "imp7hrq581r",
+              "imp7hrq581s",
+              "imp7hrq581u",
+              "imp7hrq581v"
             ]
           }
         },
@@ -109,14 +109,14 @@
           "time": 16,
           "state": {
             "focus": [
-              "imox7gol71u"
+              "imp7hrq581u"
             ],
             "dim": [
-              "imox7gol71q",
-              "imox7gol71r",
-              "imox7gol71s",
-              "imox7gol71t",
-              "imox7gol71v"
+              "imp7hrq581q",
+              "imp7hrq581r",
+              "imp7hrq581s",
+              "imp7hrq581t",
+              "imp7hrq581v"
             ]
           }
         },
@@ -124,14 +124,14 @@
           "time": 18,
           "state": {
             "focus": [
-              "imox7gol71v"
+              "imp7hrq581v"
             ],
             "dim": [
-              "imox7gol71q",
-              "imox7gol71r",
-              "imox7gol71s",
-              "imox7gol71t",
-              "imox7gol71u"
+              "imp7hrq581q",
+              "imp7hrq581r",
+              "imp7hrq581s",
+              "imp7hrq581t",
+              "imp7hrq581u"
             ]
           }
         }
@@ -141,7 +141,7 @@
       "type": "focusList",
       "start": 26,
       "end": 46,
-      "html": "<section class=\"slide focusList\"><h1 id=\"imox7gol71w\" class=\"\" > Scientific Method </h1><ul><li id=\"imox7gol71x\" class=\"\" > Observe the phenomenon </li><li id=\"imox7gol71y\" class=\"\" > Ask a precise question </li><li id=\"imox7gol71z\" class=\"\" > Form a testable hypothesis </li><li id=\"imox7gol720\" class=\"\" > Perform controlled experiments </li><li id=\"imox7gol721\" class=\"\" > Analyze the collected data </li><li id=\"imox7gol722\" class=\"\" > Reach a logical conclusion </li></ul></section>",
+      "html": "<section class=\"slide focusList\"><h1 id=\"imp7hrq581w\" class=\"\" > Scientific Method </h1><ul><li id=\"imp7hrq581x\" class=\"\" > Observe the phenomenon </li><li id=\"imp7hrq581y\" class=\"\" > Ask a precise question </li><li id=\"imp7hrq581z\" class=\"\" > Form a testable hypothesis </li><li id=\"imp7hrq5820\" class=\"\" > Perform controlled experiments </li><li id=\"imp7hrq5821\" class=\"\" > Analyze the collected data </li><li id=\"imp7hrq5822\" class=\"\" > Reach a logical conclusion </li></ul></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -153,15 +153,15 @@
           "time": 26,
           "state": {
             "focus": [
-              "imox7gol71w"
+              "imp7hrq581w"
             ],
             "dim": [
-              "imox7gol71x",
-              "imox7gol71y",
-              "imox7gol71z",
-              "imox7gol720",
-              "imox7gol721",
-              "imox7gol722"
+              "imp7hrq581x",
+              "imp7hrq581y",
+              "imp7hrq581z",
+              "imp7hrq5820",
+              "imp7hrq5821",
+              "imp7hrq5822"
             ]
           }
         },
@@ -169,15 +169,15 @@
           "time": 28,
           "state": {
             "focus": [
-              "imox7gol71x"
+              "imp7hrq581x"
             ],
             "dim": [
-              "imox7gol71w",
-              "imox7gol71y",
-              "imox7gol71z",
-              "imox7gol720",
-              "imox7gol721",
-              "imox7gol722"
+              "imp7hrq581w",
+              "imp7hrq581y",
+              "imp7hrq581z",
+              "imp7hrq5820",
+              "imp7hrq5821",
+              "imp7hrq5822"
             ]
           }
         },
@@ -185,15 +185,15 @@
           "time": 30,
           "state": {
             "focus": [
-              "imox7gol71y"
+              "imp7hrq581y"
             ],
             "dim": [
-              "imox7gol71w",
-              "imox7gol71x",
-              "imox7gol71z",
-              "imox7gol720",
-              "imox7gol721",
-              "imox7gol722"
+              "imp7hrq581w",
+              "imp7hrq581x",
+              "imp7hrq581z",
+              "imp7hrq5820",
+              "imp7hrq5821",
+              "imp7hrq5822"
             ]
           }
         },
@@ -201,15 +201,15 @@
           "time": 32,
           "state": {
             "focus": [
-              "imox7gol71z"
+              "imp7hrq581z"
             ],
             "dim": [
-              "imox7gol71w",
-              "imox7gol71x",
-              "imox7gol71y",
-              "imox7gol720",
-              "imox7gol721",
-              "imox7gol722"
+              "imp7hrq581w",
+              "imp7hrq581x",
+              "imp7hrq581y",
+              "imp7hrq5820",
+              "imp7hrq5821",
+              "imp7hrq5822"
             ]
           }
         },
@@ -217,15 +217,15 @@
           "time": 34,
           "state": {
             "focus": [
-              "imox7gol720"
+              "imp7hrq5820"
             ],
             "dim": [
-              "imox7gol71w",
-              "imox7gol71x",
-              "imox7gol71y",
-              "imox7gol71z",
-              "imox7gol721",
-              "imox7gol722"
+              "imp7hrq581w",
+              "imp7hrq581x",
+              "imp7hrq581y",
+              "imp7hrq581z",
+              "imp7hrq5821",
+              "imp7hrq5822"
             ]
           }
         },
@@ -233,15 +233,15 @@
           "time": 36,
           "state": {
             "focus": [
-              "imox7gol721"
+              "imp7hrq5821"
             ],
             "dim": [
-              "imox7gol71w",
-              "imox7gol71x",
-              "imox7gol71y",
-              "imox7gol71z",
-              "imox7gol720",
-              "imox7gol722"
+              "imp7hrq581w",
+              "imp7hrq581x",
+              "imp7hrq581y",
+              "imp7hrq581z",
+              "imp7hrq5820",
+              "imp7hrq5822"
             ]
           }
         },
@@ -249,15 +249,15 @@
           "time": 38,
           "state": {
             "focus": [
-              "imox7gol722"
+              "imp7hrq5822"
             ],
             "dim": [
-              "imox7gol71w",
-              "imox7gol71x",
-              "imox7gol71y",
-              "imox7gol71z",
-              "imox7gol720",
-              "imox7gol721"
+              "imp7hrq581w",
+              "imp7hrq581x",
+              "imp7hrq581y",
+              "imp7hrq581z",
+              "imp7hrq5820",
+              "imp7hrq5821"
             ]
           }
         }
@@ -267,7 +267,7 @@
       "type": "focusList",
       "start": 46,
       "end": 64,
-      "html": "<section class=\"slide focusList\"><h1 id=\"imox7gol823\" class=\"\" > Writing an Essay </h1><ul><li id=\"imox7gol824\" class=\"\" > Start with a clear thesis </li><li id=\"imox7gol825\" class=\"\" > Develop one idea per paragraph </li><li id=\"imox7gol826\" class=\"\" > Use evidence carefully </li><li id=\"imox7gol827\" class=\"\" > Maintain logical flow </li><li id=\"imox7gol828\" class=\"\" > Conclude with clarity </li></ul></section>",
+      "html": "<section class=\"slide focusList\"><h1 id=\"imp7hrq5923\" class=\"\" > Writing an Essay </h1><ul><li id=\"imp7hrq5924\" class=\"\" > Start with a clear thesis </li><li id=\"imp7hrq5925\" class=\"\" > Develop one idea per paragraph </li><li id=\"imp7hrq5926\" class=\"\" > Use evidence carefully </li><li id=\"imp7hrq5927\" class=\"\" > Maintain logical flow </li><li id=\"imp7hrq5928\" class=\"\" > Conclude with clarity </li></ul></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -279,14 +279,14 @@
           "time": 46,
           "state": {
             "focus": [
-              "imox7gol823"
+              "imp7hrq5923"
             ],
             "dim": [
-              "imox7gol824",
-              "imox7gol825",
-              "imox7gol826",
-              "imox7gol827",
-              "imox7gol828"
+              "imp7hrq5924",
+              "imp7hrq5925",
+              "imp7hrq5926",
+              "imp7hrq5927",
+              "imp7hrq5928"
             ]
           }
         },
@@ -294,14 +294,14 @@
           "time": 48,
           "state": {
             "focus": [
-              "imox7gol824"
+              "imp7hrq5924"
             ],
             "dim": [
-              "imox7gol823",
-              "imox7gol825",
-              "imox7gol826",
-              "imox7gol827",
-              "imox7gol828"
+              "imp7hrq5923",
+              "imp7hrq5925",
+              "imp7hrq5926",
+              "imp7hrq5927",
+              "imp7hrq5928"
             ]
           }
         },
@@ -309,14 +309,14 @@
           "time": 50,
           "state": {
             "focus": [
-              "imox7gol825"
+              "imp7hrq5925"
             ],
             "dim": [
-              "imox7gol823",
-              "imox7gol824",
-              "imox7gol826",
-              "imox7gol827",
-              "imox7gol828"
+              "imp7hrq5923",
+              "imp7hrq5924",
+              "imp7hrq5926",
+              "imp7hrq5927",
+              "imp7hrq5928"
             ]
           }
         },
@@ -324,14 +324,14 @@
           "time": 52,
           "state": {
             "focus": [
-              "imox7gol826"
+              "imp7hrq5926"
             ],
             "dim": [
-              "imox7gol823",
-              "imox7gol824",
-              "imox7gol825",
-              "imox7gol827",
-              "imox7gol828"
+              "imp7hrq5923",
+              "imp7hrq5924",
+              "imp7hrq5925",
+              "imp7hrq5927",
+              "imp7hrq5928"
             ]
           }
         },
@@ -339,14 +339,14 @@
           "time": 54,
           "state": {
             "focus": [
-              "imox7gol827"
+              "imp7hrq5927"
             ],
             "dim": [
-              "imox7gol823",
-              "imox7gol824",
-              "imox7gol825",
-              "imox7gol826",
-              "imox7gol828"
+              "imp7hrq5923",
+              "imp7hrq5924",
+              "imp7hrq5925",
+              "imp7hrq5926",
+              "imp7hrq5928"
             ]
           }
         },
@@ -354,14 +354,14 @@
           "time": 56,
           "state": {
             "focus": [
-              "imox7gol828"
+              "imp7hrq5928"
             ],
             "dim": [
-              "imox7gol823",
-              "imox7gol824",
-              "imox7gol825",
-              "imox7gol826",
-              "imox7gol827"
+              "imp7hrq5923",
+              "imp7hrq5924",
+              "imp7hrq5925",
+              "imp7hrq5926",
+              "imp7hrq5927"
             ]
           }
         }
@@ -371,7 +371,7 @@
       "type": "focusList",
       "start": 64,
       "end": 84,
-      "html": "<section class=\"slide focusList\"><h1 id=\"imox7gol829\" class=\"\" > Exam Preparation Strategy </h1><ul><li id=\"imox7gol82a\" class=\"\" > Study difficult topics early </li><li id=\"imox7gol82b\" class=\"\" > Revise actively not passively </li><li id=\"imox7gol82c\" class=\"\" > Solve problems repeatedly </li><li id=\"imox7gol82d\" class=\"\" > Take timed practice tests </li><li id=\"imox7gol82e\" class=\"\" > Review mistakes honestly </li><li id=\"imox7gol82f\" class=\"\" > Sleep before the exam </li></ul></section>",
+      "html": "<section class=\"slide focusList\"><h1 id=\"imp7hrq5929\" class=\"\" > Exam Preparation Strategy </h1><ul><li id=\"imp7hrq592a\" class=\"\" > Study difficult topics early </li><li id=\"imp7hrq592b\" class=\"\" > Revise actively not passively </li><li id=\"imp7hrq592c\" class=\"\" > Solve problems repeatedly </li><li id=\"imp7hrq592d\" class=\"\" > Take timed practice tests </li><li id=\"imp7hrq592e\" class=\"\" > Review mistakes honestly </li><li id=\"imp7hrq592f\" class=\"\" > Sleep before the exam </li></ul></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -383,15 +383,15 @@
           "time": 64,
           "state": {
             "focus": [
-              "imox7gol829"
+              "imp7hrq5929"
             ],
             "dim": [
-              "imox7gol82a",
-              "imox7gol82b",
-              "imox7gol82c",
-              "imox7gol82d",
-              "imox7gol82e",
-              "imox7gol82f"
+              "imp7hrq592a",
+              "imp7hrq592b",
+              "imp7hrq592c",
+              "imp7hrq592d",
+              "imp7hrq592e",
+              "imp7hrq592f"
             ]
           }
         },
@@ -399,15 +399,15 @@
           "time": 66,
           "state": {
             "focus": [
-              "imox7gol82a"
+              "imp7hrq592a"
             ],
             "dim": [
-              "imox7gol829",
-              "imox7gol82b",
-              "imox7gol82c",
-              "imox7gol82d",
-              "imox7gol82e",
-              "imox7gol82f"
+              "imp7hrq5929",
+              "imp7hrq592b",
+              "imp7hrq592c",
+              "imp7hrq592d",
+              "imp7hrq592e",
+              "imp7hrq592f"
             ]
           }
         },
@@ -415,15 +415,15 @@
           "time": 68,
           "state": {
             "focus": [
-              "imox7gol82b"
+              "imp7hrq592b"
             ],
             "dim": [
-              "imox7gol829",
-              "imox7gol82a",
-              "imox7gol82c",
-              "imox7gol82d",
-              "imox7gol82e",
-              "imox7gol82f"
+              "imp7hrq5929",
+              "imp7hrq592a",
+              "imp7hrq592c",
+              "imp7hrq592d",
+              "imp7hrq592e",
+              "imp7hrq592f"
             ]
           }
         },
@@ -431,15 +431,15 @@
           "time": 70,
           "state": {
             "focus": [
-              "imox7gol82c"
+              "imp7hrq592c"
             ],
             "dim": [
-              "imox7gol829",
-              "imox7gol82a",
-              "imox7gol82b",
-              "imox7gol82d",
-              "imox7gol82e",
-              "imox7gol82f"
+              "imp7hrq5929",
+              "imp7hrq592a",
+              "imp7hrq592b",
+              "imp7hrq592d",
+              "imp7hrq592e",
+              "imp7hrq592f"
             ]
           }
         },
@@ -447,15 +447,15 @@
           "time": 72,
           "state": {
             "focus": [
-              "imox7gol82d"
+              "imp7hrq592d"
             ],
             "dim": [
-              "imox7gol829",
-              "imox7gol82a",
-              "imox7gol82b",
-              "imox7gol82c",
-              "imox7gol82e",
-              "imox7gol82f"
+              "imp7hrq5929",
+              "imp7hrq592a",
+              "imp7hrq592b",
+              "imp7hrq592c",
+              "imp7hrq592e",
+              "imp7hrq592f"
             ]
           }
         },
@@ -463,15 +463,15 @@
           "time": 74,
           "state": {
             "focus": [
-              "imox7gol82e"
+              "imp7hrq592e"
             ],
             "dim": [
-              "imox7gol829",
-              "imox7gol82a",
-              "imox7gol82b",
-              "imox7gol82c",
-              "imox7gol82d",
-              "imox7gol82f"
+              "imp7hrq5929",
+              "imp7hrq592a",
+              "imp7hrq592b",
+              "imp7hrq592c",
+              "imp7hrq592d",
+              "imp7hrq592f"
             ]
           }
         },
@@ -479,15 +479,15 @@
           "time": 76,
           "state": {
             "focus": [
-              "imox7gol82f"
+              "imp7hrq592f"
             ],
             "dim": [
-              "imox7gol829",
-              "imox7gol82a",
-              "imox7gol82b",
-              "imox7gol82c",
-              "imox7gol82d",
-              "imox7gol82e"
+              "imp7hrq5929",
+              "imp7hrq592a",
+              "imp7hrq592b",
+              "imp7hrq592c",
+              "imp7hrq592d",
+              "imp7hrq592e"
             ]
           }
         }
@@ -497,7 +497,7 @@
       "type": "focusList",
       "start": 84,
       "end": 102,
-      "html": "<section class=\"slide focusList\"><h1 id=\"imox7gol82g\" class=\"\" > Programming Workflow </h1><ul><li id=\"imox7gol82h\" class=\"\" > Understand the problem first </li><li id=\"imox7gol82i\" class=\"\" > Break logic into steps </li><li id=\"imox7gol82j\" class=\"\" > Write small testable code </li><li id=\"imox7gol82k\" class=\"\" > Debug systematically </li><li id=\"imox7gol82l\" class=\"\" > Refactor after correctness </li></ul></section>",
+      "html": "<section class=\"slide focusList\"><h1 id=\"imp7hrq592g\" class=\"\" > Programming Workflow </h1><ul><li id=\"imp7hrq592h\" class=\"\" > Understand the problem first </li><li id=\"imp7hrq592i\" class=\"\" > Break logic into steps </li><li id=\"imp7hrq592j\" class=\"\" > Write small testable code </li><li id=\"imp7hrq592k\" class=\"\" > Debug systematically </li><li id=\"imp7hrq592l\" class=\"\" > Refactor after correctness </li></ul></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -509,14 +509,14 @@
           "time": 84,
           "state": {
             "focus": [
-              "imox7gol82g"
+              "imp7hrq592g"
             ],
             "dim": [
-              "imox7gol82h",
-              "imox7gol82i",
-              "imox7gol82j",
-              "imox7gol82k",
-              "imox7gol82l"
+              "imp7hrq592h",
+              "imp7hrq592i",
+              "imp7hrq592j",
+              "imp7hrq592k",
+              "imp7hrq592l"
             ]
           }
         },
@@ -524,14 +524,14 @@
           "time": 86,
           "state": {
             "focus": [
-              "imox7gol82h"
+              "imp7hrq592h"
             ],
             "dim": [
-              "imox7gol82g",
-              "imox7gol82i",
-              "imox7gol82j",
-              "imox7gol82k",
-              "imox7gol82l"
+              "imp7hrq592g",
+              "imp7hrq592i",
+              "imp7hrq592j",
+              "imp7hrq592k",
+              "imp7hrq592l"
             ]
           }
         },
@@ -539,14 +539,14 @@
           "time": 88,
           "state": {
             "focus": [
-              "imox7gol82i"
+              "imp7hrq592i"
             ],
             "dim": [
-              "imox7gol82g",
-              "imox7gol82h",
-              "imox7gol82j",
-              "imox7gol82k",
-              "imox7gol82l"
+              "imp7hrq592g",
+              "imp7hrq592h",
+              "imp7hrq592j",
+              "imp7hrq592k",
+              "imp7hrq592l"
             ]
           }
         },
@@ -554,14 +554,14 @@
           "time": 90,
           "state": {
             "focus": [
-              "imox7gol82j"
+              "imp7hrq592j"
             ],
             "dim": [
-              "imox7gol82g",
-              "imox7gol82h",
-              "imox7gol82i",
-              "imox7gol82k",
-              "imox7gol82l"
+              "imp7hrq592g",
+              "imp7hrq592h",
+              "imp7hrq592i",
+              "imp7hrq592k",
+              "imp7hrq592l"
             ]
           }
         },
@@ -569,14 +569,14 @@
           "time": 92,
           "state": {
             "focus": [
-              "imox7gol82k"
+              "imp7hrq592k"
             ],
             "dim": [
-              "imox7gol82g",
-              "imox7gol82h",
-              "imox7gol82i",
-              "imox7gol82j",
-              "imox7gol82l"
+              "imp7hrq592g",
+              "imp7hrq592h",
+              "imp7hrq592i",
+              "imp7hrq592j",
+              "imp7hrq592l"
             ]
           }
         },
@@ -584,14 +584,14 @@
           "time": 94,
           "state": {
             "focus": [
-              "imox7gol82l"
+              "imp7hrq592l"
             ],
             "dim": [
-              "imox7gol82g",
-              "imox7gol82h",
-              "imox7gol82i",
-              "imox7gol82j",
-              "imox7gol82k"
+              "imp7hrq592g",
+              "imp7hrq592h",
+              "imp7hrq592i",
+              "imp7hrq592j",
+              "imp7hrq592k"
             ]
           }
         }
