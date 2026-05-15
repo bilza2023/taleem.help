@@ -3,7 +3,7 @@
   "background": {
     "backgroundColor": "#05070c",
     "backgroundImage": "bg.webp",
-    "backgroundImageOpacity": 0.22
+    "backgroundImageOpacity": 0.8 
   },
   "deck": [
     {
