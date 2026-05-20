@@ -10,7 +10,7 @@
       "type": "titleAndSubtitle",
       "start": 0,
       "end": 8,
-      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imp7hrq5b2m\" class=\" hidden taleem-heading-lg \" > Understanding Force </h1><h2 id=\"imp7hrq5b2n\" class=\" hidden taleem-heading-md \" > A complete lesson flow experiment </h2></section>",
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imp89sfou2q\" class=\" hidden taleem-heading-lg \" > Understanding Force </h1><h2 id=\"imp89sfou2r\" class=\" hidden taleem-heading-md \" > A complete lesson flow experiment </h2></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -21,7 +21,7 @@
           "time": 0,
           "state": {
             "hidden": [
-              "imp7hrq5b2n"
+              "imp89sfou2r"
             ]
           }
         },
@@ -37,7 +37,7 @@
       "type": "imageWithTitle",
       "start": 8,
       "end": 18,
-      "html": "<section class=\"slide imageWithTitle\"><h1 id=\"imp7hrq5b2o\" class=\" hidden \" > Force changes motion </h1><img id=\"imp7hrq5b2p\" class=\" hidden \" src=\"force-intro.webp\" /></section>",
+      "html": "<section class=\"slide imageWithTitle\"><h1 id=\"imp89sfou2s\" class=\" hidden \" > Force changes motion </h1><img id=\"imp89sfou2t\" class=\" hidden \" src=\"force-intro.webp\" /></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -48,7 +48,7 @@
           "time": 8,
           "state": {
             "hidden": [
-              "imp7hrq5b2p"
+              "imp89sfou2t"
             ]
           }
         },
@@ -64,7 +64,7 @@
       "type": "focusList",
       "start": 18,
       "end": 34,
-      "html": "<section class=\"slide focusList\"><h1 id=\"imp7hrq5b2q\" class=\"\" > What We Will Learn </h1><ul><li id=\"imp7hrq5b2r\" class=\"\" > What force means </li><li id=\"imp7hrq5b2s\" class=\"\" > How force affects motion </li><li id=\"imp7hrq5b2t\" class=\"\" > Balanced and unbalanced forces </li><li id=\"imp7hrq5b2u\" class=\"\" > Force in everyday life </li></ul></section>",
+      "html": "<section class=\"slide focusList\"><h1 id=\"imp89sfou2u\" class=\"\" > What We Will Learn </h1><ul><li id=\"imp89sfou2v\" class=\"\" > What force means </li><li id=\"imp89sfou2w\" class=\"\" > How force affects motion </li><li id=\"imp89sfou2x\" class=\"\" > Balanced and unbalanced forces </li><li id=\"imp89sfou2y\" class=\"\" > Force in everyday life </li></ul></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -76,13 +76,13 @@
           "time": 18,
           "state": {
             "focus": [
-              "imp7hrq5b2q"
+              "imp89sfou2u"
             ],
             "dim": [
-              "imp7hrq5b2r",
-              "imp7hrq5b2s",
-              "imp7hrq5b2t",
-              "imp7hrq5b2u"
+              "imp89sfou2v",
+              "imp89sfou2w",
+              "imp89sfou2x",
+              "imp89sfou2y"
             ]
           }
         },
@@ -90,13 +90,13 @@
           "time": 20,
           "state": {
             "focus": [
-              "imp7hrq5b2r"
+              "imp89sfou2v"
             ],
             "dim": [
-              "imp7hrq5b2q",
-              "imp7hrq5b2s",
-              "imp7hrq5b2t",
-              "imp7hrq5b2u"
+              "imp89sfou2u",
+              "imp89sfou2w",
+              "imp89sfou2x",
+              "imp89sfou2y"
             ]
           }
         },
@@ -104,13 +104,13 @@
           "time": 22,
           "state": {
             "focus": [
-              "imp7hrq5b2s"
+              "imp89sfou2w"
             ],
             "dim": [
-              "imp7hrq5b2q",
-              "imp7hrq5b2r",
-              "imp7hrq5b2t",
-              "imp7hrq5b2u"
+              "imp89sfou2u",
+              "imp89sfou2v",
+              "imp89sfou2x",
+              "imp89sfou2y"
             ]
           }
         },
@@ -118,13 +118,13 @@
           "time": 24,
           "state": {
             "focus": [
-              "imp7hrq5b2t"
+              "imp89sfou2x"
             ],
             "dim": [
-              "imp7hrq5b2q",
-              "imp7hrq5b2r",
-              "imp7hrq5b2s",
-              "imp7hrq5b2u"
+              "imp89sfou2u",
+              "imp89sfou2v",
+              "imp89sfou2w",
+              "imp89sfou2y"
             ]
           }
         },
@@ -132,13 +132,13 @@
           "time": 26,
           "state": {
             "focus": [
-              "imp7hrq5b2u"
+              "imp89sfou2y"
             ],
             "dim": [
-              "imp7hrq5b2q",
-              "imp7hrq5b2r",
-              "imp7hrq5b2s",
-              "imp7hrq5b2t"
+              "imp89sfou2u",
+              "imp89sfou2v",
+              "imp89sfou2w",
+              "imp89sfou2x"
             ]
           }
         }
@@ -148,7 +148,7 @@
       "type": "titleAndPara",
       "start": 34,
       "end": 46,
-      "html": "<section class=\"slide titleAndPara\"><h1 id=\"imp7hrq5b2v\" class=\" hidden taleem-heading-md \" > What is Force? </h1><p id=\"imp7hrq5b2w\" class=\" hidden taleem-para \" > Force is a push or pull that can change the motion, direction, or shape of an object. </p></section>",
+      "html": "<section class=\"slide titleAndPara\"><h1 id=\"imp89sfou2z\" class=\" hidden taleem-heading-md \" > What is Force? </h1><p id=\"imp89sfou30\" class=\" hidden taleem-para \" > Force is a push or pull that can change the motion, direction, or shape of an object. </p></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -159,7 +159,7 @@
           "time": 34,
           "state": {
             "hidden": [
-              "imp7hrq5b2w"
+              "imp89sfou30"
             ]
           }
         },
@@ -175,7 +175,7 @@
       "type": "imageLeftBulletsRight",
       "start": 46,
       "end": 62,
-      "html": "<section class=\"slide imageLeftBulletsRight\"><img id=\"imp7hrq5b2x\" class=\" hidden \" src=\"force-intro.webp\" /><ul><li id=\"imp7hrq5b2y\" class=\" hidden \" > Pushes move objects away </li><li id=\"imp7hrq5b2z\" class=\" hidden \" > Pulls bring objects closer </li><li id=\"imp7hrq5b30\" class=\" hidden \" > Forces can change speed </li><li id=\"imp7hrq5b31\" class=\" hidden \" > Forces can change direction </li></ul></section>",
+      "html": "<section class=\"slide imageLeftBulletsRight\"><img id=\"imp89sfou31\" class=\" hidden \" src=\"force-intro.webp\" /><ul><li id=\"imp89sfou32\" class=\" hidden \" > Pushes move objects away </li><li id=\"imp89sfou33\" class=\" hidden \" > Pulls bring objects closer </li><li id=\"imp89sfou34\" class=\" hidden \" > Forces can change speed </li><li id=\"imp89sfou35\" class=\" hidden \" > Forces can change direction </li></ul></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -186,10 +186,10 @@
           "time": 46,
           "state": {
             "hidden": [
-              "imp7hrq5b2y",
-              "imp7hrq5b2z",
-              "imp7hrq5b30",
-              "imp7hrq5b31"
+              "imp89sfou32",
+              "imp89sfou33",
+              "imp89sfou34",
+              "imp89sfou35"
             ]
           }
         },
@@ -197,9 +197,9 @@
           "time": 48,
           "state": {
             "hidden": [
-              "imp7hrq5b2z",
-              "imp7hrq5b30",
-              "imp7hrq5b31"
+              "imp89sfou33",
+              "imp89sfou34",
+              "imp89sfou35"
             ]
           }
         },
@@ -207,8 +207,8 @@
           "time": 50,
           "state": {
             "hidden": [
-              "imp7hrq5b30",
-              "imp7hrq5b31"
+              "imp89sfou34",
+              "imp89sfou35"
             ]
           }
         },
@@ -216,7 +216,7 @@
           "time": 52,
           "state": {
             "hidden": [
-              "imp7hrq5b31"
+              "imp89sfou35"
             ]
           }
         },
@@ -232,7 +232,7 @@
       "type": "eq",
       "start": 62,
       "end": 78,
-      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imp7hrq5b32\" class=\" eq-item eq-title \" > Newton's Second Law </li><li id=\"imp7hrq5b33\" class=\" eq-item eq-math \" > $$ F = ma $$ </li><li id=\"imp7hrq5b34\" class=\" eq-item eq-math \" > $$ F = 2 \\times 3 $$ </li><li id=\"imp7hrq5b35\" class=\" eq-item eq-math \" > $$ F = 6 $$ </li></ul><div class=\"eq-side-panel\"><div id=\"imp7hrq5b32-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"imp7hrq5b32-sp-2\" class=\"eq-explain-item hidden\" > Force depends on mass and acceleration. </div><div id=\"imp7hrq5b33-sp-1\" class=\"eq-explain-item hidden\" > F means force. </div><div id=\"imp7hrq5b33-sp-2\" class=\"eq-explain-item hidden\" > m means mass. </div><div id=\"imp7hrq5b33-sp-3\" class=\"eq-explain-item hidden\" > a means acceleration. </div><div id=\"imp7hrq5b33-sp-4\" class=\"eq-explain-item hidden\" > This is one of the most important physics equations. </div><div id=\"imp7hrq5b33-sp-5\" class=\"eq-explain-item hidden\" > Greater acceleration requires greater force. </div><div id=\"imp7hrq5b33-sp-6\" class=\"eq-explain-item hidden\" > Heavy objects resist motion changes. </div><div id=\"imp7hrq5b34-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"imp7hrq5b34-sp-2\" class=\"eq-explain-item hidden\" > Substitute values into the formula. </div><div id=\"imp7hrq5b35-sp-1\" class=\"eq-explain-item hidden\" > The resulting force equals 6 newtons. </div><div id=\"imp7hrq5b35-sp-2\" class=\"eq-explain-item hidden\" > Units matter in physics. </div><div id=\"imp7hrq5b35-sp-3\" class=\"eq-explain-item hidden\" > Always include measurement units. </div><div id=\"imp7hrq5b35-sp-4\" class=\"eq-explain-item hidden\" > Physics combines math with reality. </div><div id=\"imp7hrq5b35-sp-5\" class=\"eq-explain-item hidden\" > Equations describe natural behavior. </div><div id=\"imp7hrq5b35-sp-6\" class=\"eq-explain-item hidden\" > Reasoning matters more than memorization. </div></div></section>",
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imp89sfou36\" class=\" eq-item eq-title \" > Newton's Second Law </li><li id=\"imp89sfou37\" class=\" eq-item eq-math \" > $$ F = ma $$ </li><li id=\"imp89sfou38\" class=\" eq-item eq-math \" > $$ F = 2 \\times 3 $$ </li><li id=\"imp89sfou39\" class=\" eq-item eq-math \" > $$ F = 6 $$ </li></ul><div class=\"eq-side-panel\"><div id=\"imp89sfou36-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"imp89sfou36-sp-2\" class=\"eq-explain-item hidden\" > Force depends on mass and acceleration. </div><div id=\"imp89sfou37-sp-1\" class=\"eq-explain-item hidden\" > F means force. </div><div id=\"imp89sfou37-sp-2\" class=\"eq-explain-item hidden\" > m means mass. </div><div id=\"imp89sfou37-sp-3\" class=\"eq-explain-item hidden\" > a means acceleration. </div><div id=\"imp89sfou37-sp-4\" class=\"eq-explain-item hidden\" > This is one of the most important physics equations. </div><div id=\"imp89sfou37-sp-5\" class=\"eq-explain-item hidden\" > Greater acceleration requires greater force. </div><div id=\"imp89sfou37-sp-6\" class=\"eq-explain-item hidden\" > Heavy objects resist motion changes. </div><div id=\"imp89sfou38-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"imp89sfou38-sp-2\" class=\"eq-explain-item hidden\" > Substitute values into the formula. </div><div id=\"imp89sfou39-sp-1\" class=\"eq-explain-item hidden\" > The resulting force equals 6 newtons. </div><div id=\"imp89sfou39-sp-2\" class=\"eq-explain-item hidden\" > Units matter in physics. </div><div id=\"imp89sfou39-sp-3\" class=\"eq-explain-item hidden\" > Always include measurement units. </div><div id=\"imp89sfou39-sp-4\" class=\"eq-explain-item hidden\" > Physics combines math with reality. </div><div id=\"imp89sfou39-sp-5\" class=\"eq-explain-item hidden\" > Equations describe natural behavior. </div><div id=\"imp89sfou39-sp-6\" class=\"eq-explain-item hidden\" > Reasoning matters more than memorization. </div></div></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -248,32 +248,32 @@
           "time": 62,
           "state": {
             "focus": [
-              "imp7hrq5b32"
+              "imp89sfou36"
             ],
             "dim": [
-              "imp7hrq5b33",
-              "imp7hrq5b34",
-              "imp7hrq5b35"
+              "imp89sfou37",
+              "imp89sfou38",
+              "imp89sfou39"
             ],
             "visible": [
-              "imp7hrq5b32-sp-1",
-              "imp7hrq5b32-sp-2"
+              "imp89sfou36-sp-1",
+              "imp89sfou36-sp-2"
             ],
             "hidden": [
-              "imp7hrq5b33-sp-1",
-              "imp7hrq5b33-sp-2",
-              "imp7hrq5b33-sp-3",
-              "imp7hrq5b33-sp-4",
-              "imp7hrq5b33-sp-5",
-              "imp7hrq5b33-sp-6",
-              "imp7hrq5b34-sp-1",
-              "imp7hrq5b34-sp-2",
-              "imp7hrq5b35-sp-1",
-              "imp7hrq5b35-sp-2",
-              "imp7hrq5b35-sp-3",
-              "imp7hrq5b35-sp-4",
-              "imp7hrq5b35-sp-5",
-              "imp7hrq5b35-sp-6"
+              "imp89sfou37-sp-1",
+              "imp89sfou37-sp-2",
+              "imp89sfou37-sp-3",
+              "imp89sfou37-sp-4",
+              "imp89sfou37-sp-5",
+              "imp89sfou37-sp-6",
+              "imp89sfou38-sp-1",
+              "imp89sfou38-sp-2",
+              "imp89sfou39-sp-1",
+              "imp89sfou39-sp-2",
+              "imp89sfou39-sp-3",
+              "imp89sfou39-sp-4",
+              "imp89sfou39-sp-5",
+              "imp89sfou39-sp-6"
             ]
           }
         },
@@ -281,32 +281,32 @@
           "time": 64,
           "state": {
             "focus": [
-              "imp7hrq5b33"
+              "imp89sfou37"
             ],
             "dim": [
-              "imp7hrq5b32",
-              "imp7hrq5b34",
-              "imp7hrq5b35"
+              "imp89sfou36",
+              "imp89sfou38",
+              "imp89sfou39"
             ],
             "visible": [
-              "imp7hrq5b33-sp-1",
-              "imp7hrq5b33-sp-2",
-              "imp7hrq5b33-sp-3",
-              "imp7hrq5b33-sp-4",
-              "imp7hrq5b33-sp-5",
-              "imp7hrq5b33-sp-6"
+              "imp89sfou37-sp-1",
+              "imp89sfou37-sp-2",
+              "imp89sfou37-sp-3",
+              "imp89sfou37-sp-4",
+              "imp89sfou37-sp-5",
+              "imp89sfou37-sp-6"
             ],
             "hidden": [
-              "imp7hrq5b32-sp-1",
-              "imp7hrq5b32-sp-2",
-              "imp7hrq5b34-sp-1",
-              "imp7hrq5b34-sp-2",
-              "imp7hrq5b35-sp-1",
-              "imp7hrq5b35-sp-2",
-              "imp7hrq5b35-sp-3",
-              "imp7hrq5b35-sp-4",
-              "imp7hrq5b35-sp-5",
-              "imp7hrq5b35-sp-6"
+              "imp89sfou36-sp-1",
+              "imp89sfou36-sp-2",
+              "imp89sfou38-sp-1",
+              "imp89sfou38-sp-2",
+              "imp89sfou39-sp-1",
+              "imp89sfou39-sp-2",
+              "imp89sfou39-sp-3",
+              "imp89sfou39-sp-4",
+              "imp89sfou39-sp-5",
+              "imp89sfou39-sp-6"
             ]
           }
         },
@@ -314,32 +314,32 @@
           "time": 66,
           "state": {
             "focus": [
-              "imp7hrq5b34"
+              "imp89sfou38"
             ],
             "dim": [
-              "imp7hrq5b32",
-              "imp7hrq5b33",
-              "imp7hrq5b35"
+              "imp89sfou36",
+              "imp89sfou37",
+              "imp89sfou39"
             ],
             "visible": [
-              "imp7hrq5b34-sp-1",
-              "imp7hrq5b34-sp-2"
+              "imp89sfou38-sp-1",
+              "imp89sfou38-sp-2"
             ],
             "hidden": [
-              "imp7hrq5b32-sp-1",
-              "imp7hrq5b32-sp-2",
-              "imp7hrq5b33-sp-1",
-              "imp7hrq5b33-sp-2",
-              "imp7hrq5b33-sp-3",
-              "imp7hrq5b33-sp-4",
-              "imp7hrq5b33-sp-5",
-              "imp7hrq5b33-sp-6",
-              "imp7hrq5b35-sp-1",
-              "imp7hrq5b35-sp-2",
-              "imp7hrq5b35-sp-3",
-              "imp7hrq5b35-sp-4",
-              "imp7hrq5b35-sp-5",
-              "imp7hrq5b35-sp-6"
+              "imp89sfou36-sp-1",
+              "imp89sfou36-sp-2",
+              "imp89sfou37-sp-1",
+              "imp89sfou37-sp-2",
+              "imp89sfou37-sp-3",
+              "imp89sfou37-sp-4",
+              "imp89sfou37-sp-5",
+              "imp89sfou37-sp-6",
+              "imp89sfou39-sp-1",
+              "imp89sfou39-sp-2",
+              "imp89sfou39-sp-3",
+              "imp89sfou39-sp-4",
+              "imp89sfou39-sp-5",
+              "imp89sfou39-sp-6"
             ]
           }
         },
@@ -347,32 +347,32 @@
           "time": 68,
           "state": {
             "focus": [
-              "imp7hrq5b35"
+              "imp89sfou39"
             ],
             "dim": [
-              "imp7hrq5b32",
-              "imp7hrq5b33",
-              "imp7hrq5b34"
+              "imp89sfou36",
+              "imp89sfou37",
+              "imp89sfou38"
             ],
             "visible": [
-              "imp7hrq5b35-sp-1",
-              "imp7hrq5b35-sp-2",
-              "imp7hrq5b35-sp-3",
-              "imp7hrq5b35-sp-4",
-              "imp7hrq5b35-sp-5",
-              "imp7hrq5b35-sp-6"
+              "imp89sfou39-sp-1",
+              "imp89sfou39-sp-2",
+              "imp89sfou39-sp-3",
+              "imp89sfou39-sp-4",
+              "imp89sfou39-sp-5",
+              "imp89sfou39-sp-6"
             ],
             "hidden": [
-              "imp7hrq5b32-sp-1",
-              "imp7hrq5b32-sp-2",
-              "imp7hrq5b33-sp-1",
-              "imp7hrq5b33-sp-2",
-              "imp7hrq5b33-sp-3",
-              "imp7hrq5b33-sp-4",
-              "imp7hrq5b33-sp-5",
-              "imp7hrq5b33-sp-6",
-              "imp7hrq5b34-sp-1",
-              "imp7hrq5b34-sp-2"
+              "imp89sfou36-sp-1",
+              "imp89sfou36-sp-2",
+              "imp89sfou37-sp-1",
+              "imp89sfou37-sp-2",
+              "imp89sfou37-sp-3",
+              "imp89sfou37-sp-4",
+              "imp89sfou37-sp-5",
+              "imp89sfou37-sp-6",
+              "imp89sfou38-sp-1",
+              "imp89sfou38-sp-2"
             ]
           }
         }
@@ -382,7 +382,7 @@
       "type": "textGrid",
       "start": 78,
       "end": 96,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imp7hrq5b36\" class=\" text-grid-item hidden \" > Push </div><div id=\"imp7hrq5b37\" class=\" text-grid-item hidden \" > Pull </div><div id=\"imp7hrq5b38\" class=\" text-grid-item hidden \" > Motion </div><div id=\"imp7hrq5b39\" class=\" text-grid-item hidden \" > Mass </div><div id=\"imp7hrq5b3a\" class=\" text-grid-item hidden \" > Speed </div><div id=\"imp7hrq5b3b\" class=\" text-grid-item hidden \" > Acceleration </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imp89sfou3a\" class=\" text-grid-item hidden \" > Push </div><div id=\"imp89sfou3b\" class=\" text-grid-item hidden \" > Pull </div><div id=\"imp89sfou3c\" class=\" text-grid-item hidden \" > Motion </div><div id=\"imp89sfou3d\" class=\" text-grid-item hidden \" > Mass </div><div id=\"imp89sfou3e\" class=\" text-grid-item hidden \" > Speed </div><div id=\"imp89sfou3f\" class=\" text-grid-item hidden \" > Acceleration </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -393,11 +393,11 @@
           "time": 78,
           "state": {
             "hidden": [
-              "imp7hrq5b37",
-              "imp7hrq5b38",
-              "imp7hrq5b39",
-              "imp7hrq5b3a",
-              "imp7hrq5b3b"
+              "imp89sfou3b",
+              "imp89sfou3c",
+              "imp89sfou3d",
+              "imp89sfou3e",
+              "imp89sfou3f"
             ]
           }
         },
@@ -405,10 +405,10 @@
           "time": 80,
           "state": {
             "hidden": [
-              "imp7hrq5b38",
-              "imp7hrq5b39",
-              "imp7hrq5b3a",
-              "imp7hrq5b3b"
+              "imp89sfou3c",
+              "imp89sfou3d",
+              "imp89sfou3e",
+              "imp89sfou3f"
             ]
           }
         },
@@ -416,9 +416,9 @@
           "time": 82,
           "state": {
             "hidden": [
-              "imp7hrq5b39",
-              "imp7hrq5b3a",
-              "imp7hrq5b3b"
+              "imp89sfou3d",
+              "imp89sfou3e",
+              "imp89sfou3f"
             ]
           }
         },
@@ -426,8 +426,8 @@
           "time": 84,
           "state": {
             "hidden": [
-              "imp7hrq5b3a",
-              "imp7hrq5b3b"
+              "imp89sfou3e",
+              "imp89sfou3f"
             ]
           }
         },
@@ -435,7 +435,7 @@
           "time": 86,
           "state": {
             "hidden": [
-              "imp7hrq5b3b"
+              "imp89sfou3f"
             ]
           }
         },
@@ -451,7 +451,7 @@
       "type": "imageStrip",
       "start": 96,
       "end": 108,
-      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"imp7hrq5b3c\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-strip-item\"><img id=\"imp7hrq5b3d\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-strip-item\"><img id=\"imp7hrq5b3e\" class=\" hidden \" src=\"eq.webp\" /></div></div></section>",
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"imp89sfou3g\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-strip-item\"><img id=\"imp89sfou3h\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-strip-item\"><img id=\"imp89sfou3i\" class=\" hidden \" src=\"eq.webp\" /></div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -462,8 +462,8 @@
           "time": 96,
           "state": {
             "hidden": [
-              "imp7hrq5b3d",
-              "imp7hrq5b3e"
+              "imp89sfou3h",
+              "imp89sfou3i"
             ]
           }
         },
@@ -471,7 +471,7 @@
           "time": 98,
           "state": {
             "hidden": [
-              "imp7hrq5b3e"
+              "imp89sfou3i"
             ]
           }
         },
@@ -487,7 +487,7 @@
       "type": "skeleton",
       "start": 108,
       "end": 136,
-      "html": "<section class=\"slide skeleton\"><div class=\"skeleton-body\"><h1 id=\"imp7hrq5b3f\" class=\"hidden \" > Every Motion Has a Cause </h1><div id=\"imp7hrq5b3g\" class=\"skeleton-image hidden \" ><img src=\"force-intro.webp\" /></div><p id=\"imp7hrq5b3h\" class=\"hidden \" > Physics searches for invisible rules. </p><h1 id=\"imp7hrq5b3i\" class=\"hidden \" > Force Explains Change </h1><div id=\"imp7hrq5b3j\" class=\"skeleton-image hidden \" ><img src=\"eq.webp\" /></div><p id=\"imp7hrq5b3k\" class=\"hidden \" > Equations compress understanding. </p></div></section>",
+      "html": "<section class=\"slide skeleton\"><div class=\"skeleton-body\"><h1 id=\"imp89sfou3j\" class=\"hidden \" > Every Motion Has a Cause </h1><div id=\"imp89sfou3k\" class=\"skeleton-image hidden \" ><img src=\"force-intro.webp\" /></div><p id=\"imp89sfou3l\" class=\"hidden \" > Physics searches for invisible rules. </p><h1 id=\"imp89sfou3m\" class=\"hidden \" > Force Explains Change </h1><div id=\"imp89sfou3n\" class=\"skeleton-image hidden \" ><img src=\"eq.webp\" /></div><p id=\"imp89sfou3o\" class=\"hidden \" > Equations compress understanding. </p></div></section>",
       "groups": {
         "visible": [],
         "hidden": [
@@ -499,14 +499,14 @@
           "time": 108,
           "state": {
             "visible": [
-              "imp7hrq5b3f"
+              "imp89sfou3j"
             ],
             "hidden": [
-              "imp7hrq5b3g",
-              "imp7hrq5b3h",
-              "imp7hrq5b3i",
-              "imp7hrq5b3j",
-              "imp7hrq5b3k"
+              "imp89sfou3k",
+              "imp89sfou3l",
+              "imp89sfou3m",
+              "imp89sfou3n",
+              "imp89sfou3o"
             ]
           }
         },
@@ -514,14 +514,14 @@
           "time": 112,
           "state": {
             "visible": [
-              "imp7hrq5b3g"
+              "imp89sfou3k"
             ],
             "hidden": [
-              "imp7hrq5b3f",
-              "imp7hrq5b3h",
-              "imp7hrq5b3i",
-              "imp7hrq5b3j",
-              "imp7hrq5b3k"
+              "imp89sfou3j",
+              "imp89sfou3l",
+              "imp89sfou3m",
+              "imp89sfou3n",
+              "imp89sfou3o"
             ]
           }
         },
@@ -529,14 +529,14 @@
           "time": 116,
           "state": {
             "visible": [
-              "imp7hrq5b3h"
+              "imp89sfou3l"
             ],
             "hidden": [
-              "imp7hrq5b3f",
-              "imp7hrq5b3g",
-              "imp7hrq5b3i",
-              "imp7hrq5b3j",
-              "imp7hrq5b3k"
+              "imp89sfou3j",
+              "imp89sfou3k",
+              "imp89sfou3m",
+              "imp89sfou3n",
+              "imp89sfou3o"
             ]
           }
         },
@@ -544,14 +544,14 @@
           "time": 120,
           "state": {
             "visible": [
-              "imp7hrq5b3i"
+              "imp89sfou3m"
             ],
             "hidden": [
-              "imp7hrq5b3f",
-              "imp7hrq5b3g",
-              "imp7hrq5b3h",
-              "imp7hrq5b3j",
-              "imp7hrq5b3k"
+              "imp89sfou3j",
+              "imp89sfou3k",
+              "imp89sfou3l",
+              "imp89sfou3n",
+              "imp89sfou3o"
             ]
           }
         },
@@ -559,14 +559,14 @@
           "time": 124,
           "state": {
             "visible": [
-              "imp7hrq5b3j"
+              "imp89sfou3n"
             ],
             "hidden": [
-              "imp7hrq5b3f",
-              "imp7hrq5b3g",
-              "imp7hrq5b3h",
-              "imp7hrq5b3i",
-              "imp7hrq5b3k"
+              "imp89sfou3j",
+              "imp89sfou3k",
+              "imp89sfou3l",
+              "imp89sfou3m",
+              "imp89sfou3o"
             ]
           }
         },
@@ -574,14 +574,14 @@
           "time": 128,
           "state": {
             "visible": [
-              "imp7hrq5b3k"
+              "imp89sfou3o"
             ],
             "hidden": [
-              "imp7hrq5b3f",
-              "imp7hrq5b3g",
-              "imp7hrq5b3h",
-              "imp7hrq5b3i",
-              "imp7hrq5b3j"
+              "imp89sfou3j",
+              "imp89sfou3k",
+              "imp89sfou3l",
+              "imp89sfou3m",
+              "imp89sfou3n"
             ]
           }
         }
@@ -591,7 +591,7 @@
       "type": "quoteSlide",
       "start": 136,
       "end": 146,
-      "html": "<blockquote class=\"slide quoteSlide\"><p id=\"imp7hrq5b3l\" class=\" hidden \" > The important thing is not to stop questioning. </p><footer id=\"imp7hrq5b3m\" class=\" hidden \" > — Albert Einstein </footer></blockquote>",
+      "html": "<blockquote class=\"slide quoteSlide\"><p id=\"imp89sfov3p\" class=\" hidden \" > The important thing is not to stop questioning. </p><footer id=\"imp89sfov3q\" class=\" hidden \" > — Albert Einstein </footer></blockquote>",
       "groups": {
         "hidden": [
           "hidden"
@@ -602,7 +602,7 @@
           "time": 136,
           "state": {
             "hidden": [
-              "imp7hrq5b3m"
+              "imp89sfov3q"
             ]
           }
         },
@@ -618,7 +618,7 @@
       "type": "focusList",
       "start": 146,
       "end": 162,
-      "html": "<section class=\"slide focusList\"><h1 id=\"imp7hrq5b3n\" class=\"\" > Lesson Recap </h1><ul><li id=\"imp7hrq5b3o\" class=\"\" > Force changes motion </li><li id=\"imp7hrq5b3p\" class=\"\" > Force depends on mass </li><li id=\"imp7hrq5b3q\" class=\"\" > Equations describe physics </li><li id=\"imp7hrq5b3r\" class=\"\" > Reasoning builds understanding </li></ul></section>",
+      "html": "<section class=\"slide focusList\"><h1 id=\"imp89sfov3r\" class=\"\" > Lesson Recap </h1><ul><li id=\"imp89sfov3s\" class=\"\" > Force changes motion </li><li id=\"imp89sfov3t\" class=\"\" > Force depends on mass </li><li id=\"imp89sfov3u\" class=\"\" > Equations describe physics </li><li id=\"imp89sfov3v\" class=\"\" > Reasoning builds understanding </li></ul></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -630,13 +630,13 @@
           "time": 146,
           "state": {
             "focus": [
-              "imp7hrq5b3n"
+              "imp89sfov3r"
             ],
             "dim": [
-              "imp7hrq5b3o",
-              "imp7hrq5b3p",
-              "imp7hrq5b3q",
-              "imp7hrq5b3r"
+              "imp89sfov3s",
+              "imp89sfov3t",
+              "imp89sfov3u",
+              "imp89sfov3v"
             ]
           }
         },
@@ -644,13 +644,13 @@
           "time": 148,
           "state": {
             "focus": [
-              "imp7hrq5b3o"
+              "imp89sfov3s"
             ],
             "dim": [
-              "imp7hrq5b3n",
-              "imp7hrq5b3p",
-              "imp7hrq5b3q",
-              "imp7hrq5b3r"
+              "imp89sfov3r",
+              "imp89sfov3t",
+              "imp89sfov3u",
+              "imp89sfov3v"
             ]
           }
         },
@@ -658,13 +658,13 @@
           "time": 150,
           "state": {
             "focus": [
-              "imp7hrq5b3p"
+              "imp89sfov3t"
             ],
             "dim": [
-              "imp7hrq5b3n",
-              "imp7hrq5b3o",
-              "imp7hrq5b3q",
-              "imp7hrq5b3r"
+              "imp89sfov3r",
+              "imp89sfov3s",
+              "imp89sfov3u",
+              "imp89sfov3v"
             ]
           }
         },
@@ -672,13 +672,13 @@
           "time": 152,
           "state": {
             "focus": [
-              "imp7hrq5b3q"
+              "imp89sfov3u"
             ],
             "dim": [
-              "imp7hrq5b3n",
-              "imp7hrq5b3o",
-              "imp7hrq5b3p",
-              "imp7hrq5b3r"
+              "imp89sfov3r",
+              "imp89sfov3s",
+              "imp89sfov3t",
+              "imp89sfov3v"
             ]
           }
         },
@@ -686,13 +686,13 @@
           "time": 154,
           "state": {
             "focus": [
-              "imp7hrq5b3r"
+              "imp89sfov3v"
             ],
             "dim": [
-              "imp7hrq5b3n",
-              "imp7hrq5b3o",
-              "imp7hrq5b3p",
-              "imp7hrq5b3q"
+              "imp89sfov3r",
+              "imp89sfov3s",
+              "imp89sfov3t",
+              "imp89sfov3u"
             ]
           }
         }

@@ -1,62 +1,128 @@
-/* eslint-disable svelte/no-navigation-without-resolve */
 <script>
 
+	import { onMount } from "svelte";
+import Footer from "../lib/components/Footer.svelte";
+	import HomeLinks
+		from "$lib/components/HomeLinks.svelte";
+
+	let homeLinks = $state([]);
+
+	onMount(async () => {
+
+		const res =
+			await fetch("/home-links.json");
+
+		homeLinks =
+			await res.json();
+	});
+
 	function goToSyllabus(path) {
+
 		window.location.href = path;
 	}
+
 </script>
 
 <style>
+
 	.container {
+
 		padding: 40px;
 		text-align: center;
 	}
 
-	.title {
-		font-size: 32px;
-		font-weight: bold;
-		margin-bottom: 40px;
-	}
-
 	.courses {
+
 		display: flex;
 		justify-content: center;
 		gap: 30px;
 		flex-wrap: wrap;
+
+		margin-bottom: 40px;
 	}
 
-	.card {
+	.course-card {
+
 		width: 420px;
 		cursor: pointer;
-		border-radius: 10px;
+
+		border-radius: 14px;
+
 		overflow: hidden;
-		box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-		transition: transform 0.2s;
+
+		box-shadow:
+			0 4px 12px rgba(0,0,0,0.08);
+
+		transition:
+			transform 0.2s ease;
 	}
 
-	.card:hover {
-		transform: scale(1.02);
-	}
 
-	img {
+
+	.course-card img {
+
 		width: 100%;
 		display: block;
 	}
+.line {
+
+	width: 100%;
+
+	max-width: 900px;
+
+	height: 1px;
+
+	margin: 40px auto;
+
+	background:
+		linear-gradient(
+			to right,
+			transparent,
+			rgba(255,255,255,0.15),
+			transparent
+		);
+}
 </style>
 
 <div class="container">
 
 	<div class="courses">
-		<div class="card" on:click={() => goToSyllabus('/syllabus?course=fbise8math-syllabus')}>
-			<img src="/content/images/class8.png" alt="Class 8" />
+
+		<div
+			class="course-card"
+
+			onclick={() =>
+				goToSyllabus(
+					"/syllabus?course=fbise8math-syllabus"
+				)}
+		>
+			<img
+				src="/content/images/class8.png"
+				alt="Class 8"
+			/>
 		</div>
 
-		<div class="card" on:click={() => goToSyllabus('/syllabus?course=fbise9math-syllabus')}>
-			<img src="/content/images/class9.png" alt="Class 9" />
+		<div
+			class="course-card"
+
+			onclick={() =>
+				goToSyllabus(
+					"/syllabus?course=fbise9math-syllabus"
+				)}
+		>
+			<img
+				src="/content/images/class9.png"
+				alt="Class 9"
+			/>
 		</div>
+
 	</div>
 
-<br/>
-<a href="/player?deck=GoldenDeckV2-5May-2026">Golden Dck</a>
+	<div class="line"></div>
+
+	<HomeLinks
+		{homeLinks}
+	/>
 
 </div>
+<Footer/>

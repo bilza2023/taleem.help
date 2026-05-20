@@ -10,7 +10,7 @@
       "type": "titleAndSubtitle",
       "start": 0,
       "end": 10,
-      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imp7hrq5d3s\" class=\" hidden taleem-heading-lg \" > taleem Slides </h1><h2 id=\"imp7hrq5d3t\" class=\" hidden taleem-heading-md \" > A calm, structured way to present ideas </h2></section>",
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imp89sfox3w\" class=\" hidden taleem-heading-lg \" > taleem Slides </h1><h2 id=\"imp89sfox3x\" class=\" hidden taleem-heading-md \" > A calm, structured way to present ideas </h2></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -21,7 +21,7 @@
           "time": 0,
           "state": {
             "hidden": [
-              "imp7hrq5d3t"
+              "imp89sfox3x"
             ]
           }
         },
@@ -37,7 +37,7 @@
       "type": "titleAndPara",
       "start": 10,
       "end": 20,
-      "html": "<section class=\"slide titleAndPara\"><h1 id=\"imp7hrq5d3u\" class=\" hidden taleem-heading-md \" > What is taleem Slides? </h1><p id=\"imp7hrq5d3v\" class=\" hidden taleem-para \" > taleem Slides is a simple system that turns structured data into clear visual slides. </p></section>",
+      "html": "<section class=\"slide titleAndPara\"><h1 id=\"imp89sfox3y\" class=\" hidden taleem-heading-md \" > What is taleem Slides? </h1><p id=\"imp89sfox3z\" class=\" hidden taleem-para \" > taleem Slides is a simple system that turns structured data into clear visual slides. </p></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -48,7 +48,7 @@
           "time": 10,
           "state": {
             "hidden": [
-              "imp7hrq5d3v"
+              "imp89sfox3z"
             ]
           }
         },
@@ -64,7 +64,7 @@
       "type": "bulletList",
       "start": 20,
       "end": 30,
-      "html": "<section class=\"slide bulletList\"><ul><li id=\"imp7hrq5d3w\" class=\"hidden\" > Slides are generated from clean data </li><li id=\"imp7hrq5d3x\" class=\"hidden\" > Nothing changes behind the scenes </li><li id=\"imp7hrq5d3y\" class=\"hidden\" > The author controls what appears </li><li id=\"imp7hrq5d3z\" class=\"hidden\" > The same lesson looks the same everywhere </li></ul></section>",
+      "html": "<section class=\"slide bulletList\"><ul><li id=\"imp89sfox40\" class=\"hidden\" > Slides are generated from clean data </li><li id=\"imp89sfox41\" class=\"hidden\" > Nothing changes behind the scenes </li><li id=\"imp89sfox42\" class=\"hidden\" > The author controls what appears </li><li id=\"imp89sfox43\" class=\"hidden\" > The same lesson looks the same everywhere </li></ul></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -75,9 +75,9 @@
           "time": 20,
           "state": {
             "hidden": [
-              "imp7hrq5d3x",
-              "imp7hrq5d3y",
-              "imp7hrq5d3z"
+              "imp89sfox41",
+              "imp89sfox42",
+              "imp89sfox43"
             ]
           }
         },
@@ -85,8 +85,8 @@
           "time": 22,
           "state": {
             "hidden": [
-              "imp7hrq5d3y",
-              "imp7hrq5d3z"
+              "imp89sfox42",
+              "imp89sfox43"
             ]
           }
         },
@@ -94,7 +94,7 @@
           "time": 24,
           "state": {
             "hidden": [
-              "imp7hrq5d3z"
+              "imp89sfox43"
             ]
           }
         },
@@ -110,7 +110,7 @@
       "type": "twoColumnText",
       "start": 30,
       "end": 40,
-      "html": "<section class=\"slide twoColumnText\"><div class=\"col left\"><div id=\"imp7hrq5d40\" class=\" hidden \" > taleem-browser shows complete slides. </div></div><div class=\"col right\"><div id=\"imp7hrq5d41\" class=\" hidden \" > taleem-player reveals ideas progressively. </div></div></section>",
+      "html": "<section class=\"slide twoColumnText\"><div class=\"col left\"><div id=\"imp89sfox44\" class=\" hidden \" > taleem-browser shows complete slides. </div></div><div class=\"col right\"><div id=\"imp89sfox45\" class=\" hidden \" > taleem-player reveals ideas progressively. </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -121,7 +121,7 @@
           "time": 30,
           "state": {
             "hidden": [
-              "imp7hrq5d41"
+              "imp89sfox45"
             ]
           }
         },
@@ -137,7 +137,7 @@
       "type": "imageSlide",
       "start": 40,
       "end": 50,
-      "html": "<section class=\"slide imageSlide\"><img id=\"imp7hrq5d42\" class=\" hidden \" src=\"image.png\" alt=\"\" /></section>",
+      "html": "<section class=\"slide imageSlide\"><img id=\"imp89sfox46\" class=\" hidden \" src=\"image.png\" alt=\"\" /></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -156,7 +156,7 @@
       "type": "imageWithTitle",
       "start": 50,
       "end": 60,
-      "html": "<section class=\"slide imageWithTitle\"><h1 id=\"imp7hrq5d43\" class=\" hidden \" > Visual Support Matters </h1><img id=\"imp7hrq5d44\" class=\" hidden \" src=\"image.png\" /></section>",
+      "html": "<section class=\"slide imageWithTitle\"><h1 id=\"imp89sfox47\" class=\" hidden \" > Visual Support Matters </h1><img id=\"imp89sfox48\" class=\" hidden \" src=\"image.png\" /></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -167,7 +167,7 @@
           "time": 50,
           "state": {
             "hidden": [
-              "imp7hrq5d44"
+              "imp89sfox48"
             ]
           }
         },
@@ -183,7 +183,7 @@
       "type": "imageWithCaption",
       "start": 60,
       "end": 70,
-      "html": "<figure class=\"slide imageWithCaption\"><img id=\"imp7hrq5d45\" class=\" hidden \" src=\"image.png\" /><figcaption id=\"imp7hrq5d46\" class=\" hidden \" > Images help anchor understanding </figcaption></figure>",
+      "html": "<figure class=\"slide imageWithCaption\"><img id=\"imp89sfox49\" class=\" hidden \" src=\"image.png\" /><figcaption id=\"imp89sfox4a\" class=\" hidden \" > Images help anchor understanding </figcaption></figure>",
       "groups": {
         "hidden": [
           "hidden"
@@ -194,7 +194,7 @@
           "time": 60,
           "state": {
             "hidden": [
-              "imp7hrq5d46"
+              "imp89sfox4a"
             ]
           }
         },
@@ -210,7 +210,7 @@
       "type": "imageLeftBulletsRight",
       "start": 70,
       "end": 80,
-      "html": "<section class=\"slide imageLeftBulletsRight\"><img id=\"imp7hrq5d47\" class=\" hidden \" src=\"image.png\" /><ul><li id=\"imp7hrq5d48\" class=\" hidden \" > Each slide focuses on one idea </li><li id=\"imp7hrq5d49\" class=\" hidden \" > Points are revealed in order </li><li id=\"imp7hrq5d4a\" class=\" hidden \" > Students follow step by step </li></ul></section>",
+      "html": "<section class=\"slide imageLeftBulletsRight\"><img id=\"imp89sfox4b\" class=\" hidden \" src=\"image.png\" /><ul><li id=\"imp89sfox4c\" class=\" hidden \" > Each slide focuses on one idea </li><li id=\"imp89sfox4d\" class=\" hidden \" > Points are revealed in order </li><li id=\"imp89sfox4e\" class=\" hidden \" > Students follow step by step </li></ul></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -221,9 +221,9 @@
           "time": 70,
           "state": {
             "hidden": [
-              "imp7hrq5d48",
-              "imp7hrq5d49",
-              "imp7hrq5d4a"
+              "imp89sfox4c",
+              "imp89sfox4d",
+              "imp89sfox4e"
             ]
           }
         },
@@ -231,8 +231,8 @@
           "time": 72,
           "state": {
             "hidden": [
-              "imp7hrq5d49",
-              "imp7hrq5d4a"
+              "imp89sfox4d",
+              "imp89sfox4e"
             ]
           }
         },
@@ -240,7 +240,7 @@
           "time": 74,
           "state": {
             "hidden": [
-              "imp7hrq5d4a"
+              "imp89sfox4e"
             ]
           }
         },
@@ -256,7 +256,7 @@
       "type": "imageRightBulletsLeft",
       "start": 80,
       "end": 90,
-      "html": "<section class=\"slide imageRightBulletsLeft\"><ul><li id=\"imp7hrq5d4c\" class=\" hidden \" > Slides remain stable and predictable </li><li id=\"imp7hrq5d4d\" class=\" hidden \" > The teacher controls the pace </li><li id=\"imp7hrq5d4e\" class=\" hidden \" > Learning stays calm and focused </li></ul><img id=\"imp7hrq5d4b\" class=\" hidden \" src=\"image.png\" /></section>",
+      "html": "<section class=\"slide imageRightBulletsLeft\"><ul><li id=\"imp89sfox4g\" class=\" hidden \" > Slides remain stable and predictable </li><li id=\"imp89sfox4h\" class=\" hidden \" > The teacher controls the pace </li><li id=\"imp89sfox4i\" class=\" hidden \" > Learning stays calm and focused </li></ul><img id=\"imp89sfox4f\" class=\" hidden \" src=\"image.png\" /></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -267,9 +267,9 @@
           "time": 80,
           "state": {
             "hidden": [
-              "imp7hrq5d4c",
-              "imp7hrq5d4d",
-              "imp7hrq5d4e"
+              "imp89sfox4g",
+              "imp89sfox4h",
+              "imp89sfox4i"
             ]
           }
         },
@@ -277,8 +277,8 @@
           "time": 82,
           "state": {
             "hidden": [
-              "imp7hrq5d4d",
-              "imp7hrq5d4e"
+              "imp89sfox4h",
+              "imp89sfox4i"
             ]
           }
         },
@@ -286,7 +286,7 @@
           "time": 84,
           "state": {
             "hidden": [
-              "imp7hrq5d4e"
+              "imp89sfox4i"
             ]
           }
         },
@@ -302,7 +302,7 @@
       "type": "table",
       "start": 90,
       "end": 100,
-      "html": "<section class=\"slide table\"><table><tbody><tr id=\"imp7hrq5d4f\" class=\"hidden \" ><td>Layer</td><td>Role</td></tr><tr id=\"imp7hrq5d4g\" class=\"hidden \" ><td>taleem-core</td><td>Defines schema</td></tr><tr id=\"imp7hrq5d4h\" class=\"hidden \" ><td>taleem-player</td><td>Playback</td></tr></tbody></table></section>",
+      "html": "<section class=\"slide table\"><table><tbody><tr id=\"imp89sfox4j\" class=\"hidden \" ><td>Layer</td><td>Role</td></tr><tr id=\"imp89sfox4k\" class=\"hidden \" ><td>taleem-core</td><td>Defines schema</td></tr><tr id=\"imp89sfox4l\" class=\"hidden \" ><td>taleem-player</td><td>Playback</td></tr></tbody></table></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -313,8 +313,8 @@
           "time": 90,
           "state": {
             "hidden": [
-              "imp7hrq5d4g",
-              "imp7hrq5d4h"
+              "imp89sfox4k",
+              "imp89sfox4l"
             ]
           }
         },
@@ -322,7 +322,7 @@
           "time": 92,
           "state": {
             "hidden": [
-              "imp7hrq5d4h"
+              "imp89sfox4l"
             ]
           }
         },
@@ -338,7 +338,7 @@
       "type": "barChart",
       "start": 100,
       "end": 110,
-      "html": "<section class=\"slide barChart\"><div class=\"bar-chart\"><div id=\"imp7hrq5d4i\" class=\"bar-row hidden \" ><div class=\"bar-label\"> Clarity </div><div class=\"bar-track\"><div class=\"bar-fill\" style=\"width:100%\" ></div></div><div class=\"bar-value\"> 6 </div></div><div id=\"imp7hrq5d4j\" class=\"bar-row hidden \" ><div class=\"bar-label\"> Structure </div><div class=\"bar-track\"><div class=\"bar-fill\" style=\"width:83.33333333333334%\" ></div></div><div class=\"bar-value\"> 5 </div></div><div id=\"imp7hrq5d4k\" class=\"bar-row hidden \" ><div class=\"bar-label\"> Consistency </div><div class=\"bar-track\"><div class=\"bar-fill\" style=\"width:100%\" ></div></div><div class=\"bar-value\"> 6 </div></div></div></section>",
+      "html": "<section class=\"slide barChart\"><div class=\"bar-chart\"><div id=\"imp89sfox4m\" class=\"bar-row hidden \" ><div class=\"bar-label\"> Clarity </div><div class=\"bar-track\"><div class=\"bar-fill\" style=\"width:100%\" ></div></div><div class=\"bar-value\"> 6 </div></div><div id=\"imp89sfox4n\" class=\"bar-row hidden \" ><div class=\"bar-label\"> Structure </div><div class=\"bar-track\"><div class=\"bar-fill\" style=\"width:83.33333333333334%\" ></div></div><div class=\"bar-value\"> 5 </div></div><div id=\"imp89sfox4o\" class=\"bar-row hidden \" ><div class=\"bar-label\"> Consistency </div><div class=\"bar-track\"><div class=\"bar-fill\" style=\"width:100%\" ></div></div><div class=\"bar-value\"> 6 </div></div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -349,8 +349,8 @@
           "time": 100,
           "state": {
             "hidden": [
-              "imp7hrq5d4j",
-              "imp7hrq5d4k"
+              "imp89sfox4n",
+              "imp89sfox4o"
             ]
           }
         },
@@ -358,7 +358,7 @@
           "time": 102,
           "state": {
             "hidden": [
-              "imp7hrq5d4k"
+              "imp89sfox4o"
             ]
           }
         },
@@ -374,7 +374,7 @@
       "type": "progressbar",
       "start": 110,
       "end": 120,
-      "html": "<section class=\"slide progressbar\"><div id=\"imp7hrq5d4l\" class=\" progressbar-item hidden \" ><div class=\"progressbar-label\"> Lesson Progress </div><div class=\"progressbar-track\"><div class=\"progressbar-fill\" style=\"width:60%\" ></div></div></div></section>",
+      "html": "<section class=\"slide progressbar\"><div id=\"imp89sfox4p\" class=\" progressbar-item hidden \" ><div class=\"progressbar-label\"> Lesson Progress </div><div class=\"progressbar-track\"><div class=\"progressbar-fill\" style=\"width:60%\" ></div></div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -393,7 +393,7 @@
       "type": "quoteSlide",
       "start": 120,
       "end": 130,
-      "html": "<blockquote class=\"slide quoteSlide\"><p id=\"imp7hrq5d4m\" class=\" hidden \" > Clarity makes learning easier. </p><footer id=\"imp7hrq5d4n\" class=\" hidden \" > — taleem </footer></blockquote>",
+      "html": "<blockquote class=\"slide quoteSlide\"><p id=\"imp89sfox4q\" class=\" hidden \" > Clarity makes learning easier. </p><footer id=\"imp89sfox4r\" class=\" hidden \" > — taleem </footer></blockquote>",
       "groups": {
         "hidden": [
           "hidden"
@@ -404,7 +404,7 @@
           "time": 120,
           "state": {
             "hidden": [
-              "imp7hrq5d4n"
+              "imp89sfox4r"
             ]
           }
         },
@@ -420,7 +420,7 @@
       "type": "keyIdeasSlide",
       "start": 130,
       "end": 140,
-      "html": "<section class=\"slide keyIdeasSlide\"><div id=\"imp7hrq5d4o\" class=\" key-idea hidden \" ><div class=\"icon\"> 🧠 </div><div class=\"label\"> Focus </div></div><div id=\"imp7hrq5d4p\" class=\" key-idea hidden \" ><div class=\"icon\"> 📘 </div><div class=\"label\"> Clarity </div></div><div id=\"imp7hrq5d4q\" class=\" key-idea hidden \" ><div class=\"icon\"> 🎯 </div><div class=\"label\"> Understanding </div></div><div id=\"imp7hrq5d4r\" class=\" key-idea hidden \" ><div class=\"icon\"> 🧠 </div><div class=\"label\"> Deliberation </div></div></section>",
+      "html": "<section class=\"slide keyIdeasSlide\"><div id=\"imp89sfoy4s\" class=\" key-idea hidden \" ><div class=\"icon\"> 🧠 </div><div class=\"label\"> Focus </div></div><div id=\"imp89sfoy4t\" class=\" key-idea hidden \" ><div class=\"icon\"> 📘 </div><div class=\"label\"> Clarity </div></div><div id=\"imp89sfoy4u\" class=\" key-idea hidden \" ><div class=\"icon\"> 🎯 </div><div class=\"label\"> Understanding </div></div><div id=\"imp89sfoy4v\" class=\" key-idea hidden \" ><div class=\"icon\"> 🧠 </div><div class=\"label\"> Deliberation </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -431,9 +431,9 @@
           "time": 130,
           "state": {
             "hidden": [
-              "imp7hrq5d4p",
-              "imp7hrq5d4q",
-              "imp7hrq5d4r"
+              "imp89sfoy4t",
+              "imp89sfoy4u",
+              "imp89sfoy4v"
             ]
           }
         },
@@ -441,8 +441,8 @@
           "time": 132,
           "state": {
             "hidden": [
-              "imp7hrq5d4q",
-              "imp7hrq5d4r"
+              "imp89sfoy4u",
+              "imp89sfoy4v"
             ]
           }
         },
@@ -450,7 +450,7 @@
           "time": 134,
           "state": {
             "hidden": [
-              "imp7hrq5d4r"
+              "imp89sfoy4v"
             ]
           }
         },
@@ -466,7 +466,7 @@
       "type": "eq",
       "start": 140,
       "end": 155,
-      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imp7hrq5d4s\" class=\" eq-item eq-title \" > Expansion of a Binomial </li><li id=\"imp7hrq5d4t\" class=\" eq-item eq-math \" > $$ (a+b)^2 $$ </li><li id=\"imp7hrq5d4u\" class=\" eq-item eq-math \" > $$ = (a+b)(a+b) $$ </li><li id=\"imp7hrq5d4v\" class=\" eq-item eq-math \" > $$ = a(a+b) + b(a+b) $$ </li><li id=\"imp7hrq5d4w\" class=\" eq-item eq-math \" > $$ = a^2 + ab + ab + b^2 $$ </li><li id=\"imp7hrq5d4x\" class=\" eq-item eq-line \" > Two middle terms are identical. </li><li id=\"imp7hrq5d4y\" class=\" eq-item eq-math \" > $$ = a^2 + 2ab + b^2 $$ </li><li id=\"imp7hrq5d4z\" class=\" eq-item eq-line \" > This identity appears frequently in algebra. </li><li id=\"imp7hrq5d50\" class=\" eq-item eq-math \" > $$ (x+y)^2 = x^2 + 2xy + y^2 $$ </li><li id=\"imp7hrq5d51\" class=\" eq-item eq-line \" > Always verify expansions carefully. </li></ul><div class=\"eq-side-panel\"><div id=\"imp7hrq5d4s-sp-1\" class=\"eq-explain-item hidden\" > Expand the square step by step. </div><div id=\"imp7hrq5d4s-sp-2\" class=\"eq-explain-item hidden\" > Then combine like terms. </div><div id=\"imp7hrq5d4t-sp-1\" class=\"eq-explain-item hidden\" > The bracket multiplies itself. </div><div id=\"imp7hrq5d4u-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"imp7hrq5d4u-sp-2\" class=\"eq-explain-item hidden\" > Area model of multiplication. </div><div id=\"imp7hrq5d4v-sp-1\" class=\"eq-explain-item hidden\" > Distribute both terms carefully. </div><div id=\"imp7hrq5d4w-sp-1\" class=\"eq-explain-item hidden\" > Every product is now visible. </div><div id=\"imp7hrq5d4x-sp-1\" class=\"eq-explain-item hidden\" > Both contain ab. </div><div id=\"imp7hrq5d4y-sp-1\" class=\"eq-explain-item hidden\" > Combine like terms. </div><div id=\"imp7hrq5d4z-sp-1\" class=\"eq-explain-item hidden\" > Used in simplification and factorization. </div><div id=\"imp7hrq5d50-sp-1\" class=\"eq-explain-item hidden\" > The same pattern works for all variables. </div><div id=\"imp7hrq5d51-sp-1\" class=\"eq-explain-item hidden\" > Most algebra mistakes happen during expansion. </div></div></section>",
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"imp89sfoy4w\" class=\" eq-item eq-title \" > Expansion of a Binomial </li><li id=\"imp89sfoy4x\" class=\" eq-item eq-math \" > $$ (a+b)^2 $$ </li><li id=\"imp89sfoy4y\" class=\" eq-item eq-math \" > $$ = (a+b)(a+b) $$ </li><li id=\"imp89sfoy4z\" class=\" eq-item eq-math \" > $$ = a(a+b) + b(a+b) $$ </li><li id=\"imp89sfoy50\" class=\" eq-item eq-math \" > $$ = a^2 + ab + ab + b^2 $$ </li><li id=\"imp89sfoy51\" class=\" eq-item eq-line \" > Two middle terms are identical. </li><li id=\"imp89sfoy52\" class=\" eq-item eq-math \" > $$ = a^2 + 2ab + b^2 $$ </li><li id=\"imp89sfoy53\" class=\" eq-item eq-line \" > This identity appears frequently in algebra. </li><li id=\"imp89sfoy54\" class=\" eq-item eq-math \" > $$ (x+y)^2 = x^2 + 2xy + y^2 $$ </li><li id=\"imp89sfoy55\" class=\" eq-item eq-line \" > Always verify expansions carefully. </li></ul><div class=\"eq-side-panel\"><div id=\"imp89sfoy4w-sp-1\" class=\"eq-explain-item hidden\" > Expand the square step by step. </div><div id=\"imp89sfoy4w-sp-2\" class=\"eq-explain-item hidden\" > Then combine like terms. </div><div id=\"imp89sfoy4x-sp-1\" class=\"eq-explain-item hidden\" > The bracket multiplies itself. </div><div id=\"imp89sfoy4y-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"imp89sfoy4y-sp-2\" class=\"eq-explain-item hidden\" > Area model of multiplication. </div><div id=\"imp89sfoy4z-sp-1\" class=\"eq-explain-item hidden\" > Distribute both terms carefully. </div><div id=\"imp89sfoy50-sp-1\" class=\"eq-explain-item hidden\" > Every product is now visible. </div><div id=\"imp89sfoy51-sp-1\" class=\"eq-explain-item hidden\" > Both contain ab. </div><div id=\"imp89sfoy52-sp-1\" class=\"eq-explain-item hidden\" > Combine like terms. </div><div id=\"imp89sfoy53-sp-1\" class=\"eq-explain-item hidden\" > Used in simplification and factorization. </div><div id=\"imp89sfoy54-sp-1\" class=\"eq-explain-item hidden\" > The same pattern works for all variables. </div><div id=\"imp89sfoy55-sp-1\" class=\"eq-explain-item hidden\" > Most algebra mistakes happen during expansion. </div></div></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -482,34 +482,34 @@
           "time": 140,
           "state": {
             "focus": [
-              "imp7hrq5d4s"
+              "imp89sfoy4w"
             ],
             "dim": [
-              "imp7hrq5d4t",
-              "imp7hrq5d4u",
-              "imp7hrq5d4v",
-              "imp7hrq5d4w",
-              "imp7hrq5d4x",
-              "imp7hrq5d4y",
-              "imp7hrq5d4z",
-              "imp7hrq5d50",
-              "imp7hrq5d51"
+              "imp89sfoy4x",
+              "imp89sfoy4y",
+              "imp89sfoy4z",
+              "imp89sfoy50",
+              "imp89sfoy51",
+              "imp89sfoy52",
+              "imp89sfoy53",
+              "imp89sfoy54",
+              "imp89sfoy55"
             ],
             "visible": [
-              "imp7hrq5d4s-sp-1",
-              "imp7hrq5d4s-sp-2"
+              "imp89sfoy4w-sp-1",
+              "imp89sfoy4w-sp-2"
             ],
             "hidden": [
-              "imp7hrq5d4t-sp-1",
-              "imp7hrq5d4u-sp-1",
-              "imp7hrq5d4u-sp-2",
-              "imp7hrq5d4v-sp-1",
-              "imp7hrq5d4w-sp-1",
-              "imp7hrq5d4x-sp-1",
-              "imp7hrq5d4y-sp-1",
-              "imp7hrq5d4z-sp-1",
-              "imp7hrq5d50-sp-1",
-              "imp7hrq5d51-sp-1"
+              "imp89sfoy4x-sp-1",
+              "imp89sfoy4y-sp-1",
+              "imp89sfoy4y-sp-2",
+              "imp89sfoy4z-sp-1",
+              "imp89sfoy50-sp-1",
+              "imp89sfoy51-sp-1",
+              "imp89sfoy52-sp-1",
+              "imp89sfoy53-sp-1",
+              "imp89sfoy54-sp-1",
+              "imp89sfoy55-sp-1"
             ]
           }
         },
@@ -517,34 +517,34 @@
           "time": 141,
           "state": {
             "focus": [
-              "imp7hrq5d4t"
+              "imp89sfoy4x"
             ],
             "dim": [
-              "imp7hrq5d4s",
-              "imp7hrq5d4u",
-              "imp7hrq5d4v",
-              "imp7hrq5d4w",
-              "imp7hrq5d4x",
-              "imp7hrq5d4y",
-              "imp7hrq5d4z",
-              "imp7hrq5d50",
-              "imp7hrq5d51"
+              "imp89sfoy4w",
+              "imp89sfoy4y",
+              "imp89sfoy4z",
+              "imp89sfoy50",
+              "imp89sfoy51",
+              "imp89sfoy52",
+              "imp89sfoy53",
+              "imp89sfoy54",
+              "imp89sfoy55"
             ],
             "visible": [
-              "imp7hrq5d4t-sp-1"
+              "imp89sfoy4x-sp-1"
             ],
             "hidden": [
-              "imp7hrq5d4s-sp-1",
-              "imp7hrq5d4s-sp-2",
-              "imp7hrq5d4u-sp-1",
-              "imp7hrq5d4u-sp-2",
-              "imp7hrq5d4v-sp-1",
-              "imp7hrq5d4w-sp-1",
-              "imp7hrq5d4x-sp-1",
-              "imp7hrq5d4y-sp-1",
-              "imp7hrq5d4z-sp-1",
-              "imp7hrq5d50-sp-1",
-              "imp7hrq5d51-sp-1"
+              "imp89sfoy4w-sp-1",
+              "imp89sfoy4w-sp-2",
+              "imp89sfoy4y-sp-1",
+              "imp89sfoy4y-sp-2",
+              "imp89sfoy4z-sp-1",
+              "imp89sfoy50-sp-1",
+              "imp89sfoy51-sp-1",
+              "imp89sfoy52-sp-1",
+              "imp89sfoy53-sp-1",
+              "imp89sfoy54-sp-1",
+              "imp89sfoy55-sp-1"
             ]
           }
         },
@@ -552,34 +552,34 @@
           "time": 142,
           "state": {
             "focus": [
-              "imp7hrq5d4u"
+              "imp89sfoy4y"
             ],
             "dim": [
-              "imp7hrq5d4s",
-              "imp7hrq5d4t",
-              "imp7hrq5d4v",
-              "imp7hrq5d4w",
-              "imp7hrq5d4x",
-              "imp7hrq5d4y",
-              "imp7hrq5d4z",
-              "imp7hrq5d50",
-              "imp7hrq5d51"
+              "imp89sfoy4w",
+              "imp89sfoy4x",
+              "imp89sfoy4z",
+              "imp89sfoy50",
+              "imp89sfoy51",
+              "imp89sfoy52",
+              "imp89sfoy53",
+              "imp89sfoy54",
+              "imp89sfoy55"
             ],
             "visible": [
-              "imp7hrq5d4u-sp-1",
-              "imp7hrq5d4u-sp-2"
+              "imp89sfoy4y-sp-1",
+              "imp89sfoy4y-sp-2"
             ],
             "hidden": [
-              "imp7hrq5d4s-sp-1",
-              "imp7hrq5d4s-sp-2",
-              "imp7hrq5d4t-sp-1",
-              "imp7hrq5d4v-sp-1",
-              "imp7hrq5d4w-sp-1",
-              "imp7hrq5d4x-sp-1",
-              "imp7hrq5d4y-sp-1",
-              "imp7hrq5d4z-sp-1",
-              "imp7hrq5d50-sp-1",
-              "imp7hrq5d51-sp-1"
+              "imp89sfoy4w-sp-1",
+              "imp89sfoy4w-sp-2",
+              "imp89sfoy4x-sp-1",
+              "imp89sfoy4z-sp-1",
+              "imp89sfoy50-sp-1",
+              "imp89sfoy51-sp-1",
+              "imp89sfoy52-sp-1",
+              "imp89sfoy53-sp-1",
+              "imp89sfoy54-sp-1",
+              "imp89sfoy55-sp-1"
             ]
           }
         },
@@ -587,34 +587,34 @@
           "time": 143,
           "state": {
             "focus": [
-              "imp7hrq5d4v"
+              "imp89sfoy4z"
             ],
             "dim": [
-              "imp7hrq5d4s",
-              "imp7hrq5d4t",
-              "imp7hrq5d4u",
-              "imp7hrq5d4w",
-              "imp7hrq5d4x",
-              "imp7hrq5d4y",
-              "imp7hrq5d4z",
-              "imp7hrq5d50",
-              "imp7hrq5d51"
+              "imp89sfoy4w",
+              "imp89sfoy4x",
+              "imp89sfoy4y",
+              "imp89sfoy50",
+              "imp89sfoy51",
+              "imp89sfoy52",
+              "imp89sfoy53",
+              "imp89sfoy54",
+              "imp89sfoy55"
             ],
             "visible": [
-              "imp7hrq5d4v-sp-1"
+              "imp89sfoy4z-sp-1"
             ],
             "hidden": [
-              "imp7hrq5d4s-sp-1",
-              "imp7hrq5d4s-sp-2",
-              "imp7hrq5d4t-sp-1",
-              "imp7hrq5d4u-sp-1",
-              "imp7hrq5d4u-sp-2",
-              "imp7hrq5d4w-sp-1",
-              "imp7hrq5d4x-sp-1",
-              "imp7hrq5d4y-sp-1",
-              "imp7hrq5d4z-sp-1",
-              "imp7hrq5d50-sp-1",
-              "imp7hrq5d51-sp-1"
+              "imp89sfoy4w-sp-1",
+              "imp89sfoy4w-sp-2",
+              "imp89sfoy4x-sp-1",
+              "imp89sfoy4y-sp-1",
+              "imp89sfoy4y-sp-2",
+              "imp89sfoy50-sp-1",
+              "imp89sfoy51-sp-1",
+              "imp89sfoy52-sp-1",
+              "imp89sfoy53-sp-1",
+              "imp89sfoy54-sp-1",
+              "imp89sfoy55-sp-1"
             ]
           }
         },
@@ -622,34 +622,34 @@
           "time": 144,
           "state": {
             "focus": [
-              "imp7hrq5d4w"
+              "imp89sfoy50"
             ],
             "dim": [
-              "imp7hrq5d4s",
-              "imp7hrq5d4t",
-              "imp7hrq5d4u",
-              "imp7hrq5d4v",
-              "imp7hrq5d4x",
-              "imp7hrq5d4y",
-              "imp7hrq5d4z",
-              "imp7hrq5d50",
-              "imp7hrq5d51"
+              "imp89sfoy4w",
+              "imp89sfoy4x",
+              "imp89sfoy4y",
+              "imp89sfoy4z",
+              "imp89sfoy51",
+              "imp89sfoy52",
+              "imp89sfoy53",
+              "imp89sfoy54",
+              "imp89sfoy55"
             ],
             "visible": [
-              "imp7hrq5d4w-sp-1"
+              "imp89sfoy50-sp-1"
             ],
             "hidden": [
-              "imp7hrq5d4s-sp-1",
-              "imp7hrq5d4s-sp-2",
-              "imp7hrq5d4t-sp-1",
-              "imp7hrq5d4u-sp-1",
-              "imp7hrq5d4u-sp-2",
-              "imp7hrq5d4v-sp-1",
-              "imp7hrq5d4x-sp-1",
-              "imp7hrq5d4y-sp-1",
-              "imp7hrq5d4z-sp-1",
-              "imp7hrq5d50-sp-1",
-              "imp7hrq5d51-sp-1"
+              "imp89sfoy4w-sp-1",
+              "imp89sfoy4w-sp-2",
+              "imp89sfoy4x-sp-1",
+              "imp89sfoy4y-sp-1",
+              "imp89sfoy4y-sp-2",
+              "imp89sfoy4z-sp-1",
+              "imp89sfoy51-sp-1",
+              "imp89sfoy52-sp-1",
+              "imp89sfoy53-sp-1",
+              "imp89sfoy54-sp-1",
+              "imp89sfoy55-sp-1"
             ]
           }
         },
@@ -657,34 +657,34 @@
           "time": 145,
           "state": {
             "focus": [
-              "imp7hrq5d4x"
+              "imp89sfoy51"
             ],
             "dim": [
-              "imp7hrq5d4s",
-              "imp7hrq5d4t",
-              "imp7hrq5d4u",
-              "imp7hrq5d4v",
-              "imp7hrq5d4w",
-              "imp7hrq5d4y",
-              "imp7hrq5d4z",
-              "imp7hrq5d50",
-              "imp7hrq5d51"
+              "imp89sfoy4w",
+              "imp89sfoy4x",
+              "imp89sfoy4y",
+              "imp89sfoy4z",
+              "imp89sfoy50",
+              "imp89sfoy52",
+              "imp89sfoy53",
+              "imp89sfoy54",
+              "imp89sfoy55"
             ],
             "visible": [
-              "imp7hrq5d4x-sp-1"
+              "imp89sfoy51-sp-1"
             ],
             "hidden": [
-              "imp7hrq5d4s-sp-1",
-              "imp7hrq5d4s-sp-2",
-              "imp7hrq5d4t-sp-1",
-              "imp7hrq5d4u-sp-1",
-              "imp7hrq5d4u-sp-2",
-              "imp7hrq5d4v-sp-1",
-              "imp7hrq5d4w-sp-1",
-              "imp7hrq5d4y-sp-1",
-              "imp7hrq5d4z-sp-1",
-              "imp7hrq5d50-sp-1",
-              "imp7hrq5d51-sp-1"
+              "imp89sfoy4w-sp-1",
+              "imp89sfoy4w-sp-2",
+              "imp89sfoy4x-sp-1",
+              "imp89sfoy4y-sp-1",
+              "imp89sfoy4y-sp-2",
+              "imp89sfoy4z-sp-1",
+              "imp89sfoy50-sp-1",
+              "imp89sfoy52-sp-1",
+              "imp89sfoy53-sp-1",
+              "imp89sfoy54-sp-1",
+              "imp89sfoy55-sp-1"
             ]
           }
         },
@@ -692,34 +692,34 @@
           "time": 146,
           "state": {
             "focus": [
-              "imp7hrq5d4y"
+              "imp89sfoy52"
             ],
             "dim": [
-              "imp7hrq5d4s",
-              "imp7hrq5d4t",
-              "imp7hrq5d4u",
-              "imp7hrq5d4v",
-              "imp7hrq5d4w",
-              "imp7hrq5d4x",
-              "imp7hrq5d4z",
-              "imp7hrq5d50",
-              "imp7hrq5d51"
+              "imp89sfoy4w",
+              "imp89sfoy4x",
+              "imp89sfoy4y",
+              "imp89sfoy4z",
+              "imp89sfoy50",
+              "imp89sfoy51",
+              "imp89sfoy53",
+              "imp89sfoy54",
+              "imp89sfoy55"
             ],
             "visible": [
-              "imp7hrq5d4y-sp-1"
+              "imp89sfoy52-sp-1"
             ],
             "hidden": [
-              "imp7hrq5d4s-sp-1",
-              "imp7hrq5d4s-sp-2",
-              "imp7hrq5d4t-sp-1",
-              "imp7hrq5d4u-sp-1",
-              "imp7hrq5d4u-sp-2",
-              "imp7hrq5d4v-sp-1",
-              "imp7hrq5d4w-sp-1",
-              "imp7hrq5d4x-sp-1",
-              "imp7hrq5d4z-sp-1",
-              "imp7hrq5d50-sp-1",
-              "imp7hrq5d51-sp-1"
+              "imp89sfoy4w-sp-1",
+              "imp89sfoy4w-sp-2",
+              "imp89sfoy4x-sp-1",
+              "imp89sfoy4y-sp-1",
+              "imp89sfoy4y-sp-2",
+              "imp89sfoy4z-sp-1",
+              "imp89sfoy50-sp-1",
+              "imp89sfoy51-sp-1",
+              "imp89sfoy53-sp-1",
+              "imp89sfoy54-sp-1",
+              "imp89sfoy55-sp-1"
             ]
           }
         },
@@ -727,34 +727,34 @@
           "time": 147,
           "state": {
             "focus": [
-              "imp7hrq5d4z"
+              "imp89sfoy53"
             ],
             "dim": [
-              "imp7hrq5d4s",
-              "imp7hrq5d4t",
-              "imp7hrq5d4u",
-              "imp7hrq5d4v",
-              "imp7hrq5d4w",
-              "imp7hrq5d4x",
-              "imp7hrq5d4y",
-              "imp7hrq5d50",
-              "imp7hrq5d51"
+              "imp89sfoy4w",
+              "imp89sfoy4x",
+              "imp89sfoy4y",
+              "imp89sfoy4z",
+              "imp89sfoy50",
+              "imp89sfoy51",
+              "imp89sfoy52",
+              "imp89sfoy54",
+              "imp89sfoy55"
             ],
             "visible": [
-              "imp7hrq5d4z-sp-1"
+              "imp89sfoy53-sp-1"
             ],
             "hidden": [
-              "imp7hrq5d4s-sp-1",
-              "imp7hrq5d4s-sp-2",
-              "imp7hrq5d4t-sp-1",
-              "imp7hrq5d4u-sp-1",
-              "imp7hrq5d4u-sp-2",
-              "imp7hrq5d4v-sp-1",
-              "imp7hrq5d4w-sp-1",
-              "imp7hrq5d4x-sp-1",
-              "imp7hrq5d4y-sp-1",
-              "imp7hrq5d50-sp-1",
-              "imp7hrq5d51-sp-1"
+              "imp89sfoy4w-sp-1",
+              "imp89sfoy4w-sp-2",
+              "imp89sfoy4x-sp-1",
+              "imp89sfoy4y-sp-1",
+              "imp89sfoy4y-sp-2",
+              "imp89sfoy4z-sp-1",
+              "imp89sfoy50-sp-1",
+              "imp89sfoy51-sp-1",
+              "imp89sfoy52-sp-1",
+              "imp89sfoy54-sp-1",
+              "imp89sfoy55-sp-1"
             ]
           }
         },
@@ -762,34 +762,34 @@
           "time": 148,
           "state": {
             "focus": [
-              "imp7hrq5d50"
+              "imp89sfoy54"
             ],
             "dim": [
-              "imp7hrq5d4s",
-              "imp7hrq5d4t",
-              "imp7hrq5d4u",
-              "imp7hrq5d4v",
-              "imp7hrq5d4w",
-              "imp7hrq5d4x",
-              "imp7hrq5d4y",
-              "imp7hrq5d4z",
-              "imp7hrq5d51"
+              "imp89sfoy4w",
+              "imp89sfoy4x",
+              "imp89sfoy4y",
+              "imp89sfoy4z",
+              "imp89sfoy50",
+              "imp89sfoy51",
+              "imp89sfoy52",
+              "imp89sfoy53",
+              "imp89sfoy55"
             ],
             "visible": [
-              "imp7hrq5d50-sp-1"
+              "imp89sfoy54-sp-1"
             ],
             "hidden": [
-              "imp7hrq5d4s-sp-1",
-              "imp7hrq5d4s-sp-2",
-              "imp7hrq5d4t-sp-1",
-              "imp7hrq5d4u-sp-1",
-              "imp7hrq5d4u-sp-2",
-              "imp7hrq5d4v-sp-1",
-              "imp7hrq5d4w-sp-1",
-              "imp7hrq5d4x-sp-1",
-              "imp7hrq5d4y-sp-1",
-              "imp7hrq5d4z-sp-1",
-              "imp7hrq5d51-sp-1"
+              "imp89sfoy4w-sp-1",
+              "imp89sfoy4w-sp-2",
+              "imp89sfoy4x-sp-1",
+              "imp89sfoy4y-sp-1",
+              "imp89sfoy4y-sp-2",
+              "imp89sfoy4z-sp-1",
+              "imp89sfoy50-sp-1",
+              "imp89sfoy51-sp-1",
+              "imp89sfoy52-sp-1",
+              "imp89sfoy53-sp-1",
+              "imp89sfoy55-sp-1"
             ]
           }
         },
@@ -797,34 +797,34 @@
           "time": 149,
           "state": {
             "focus": [
-              "imp7hrq5d51"
+              "imp89sfoy55"
             ],
             "dim": [
-              "imp7hrq5d4s",
-              "imp7hrq5d4t",
-              "imp7hrq5d4u",
-              "imp7hrq5d4v",
-              "imp7hrq5d4w",
-              "imp7hrq5d4x",
-              "imp7hrq5d4y",
-              "imp7hrq5d4z",
-              "imp7hrq5d50"
+              "imp89sfoy4w",
+              "imp89sfoy4x",
+              "imp89sfoy4y",
+              "imp89sfoy4z",
+              "imp89sfoy50",
+              "imp89sfoy51",
+              "imp89sfoy52",
+              "imp89sfoy53",
+              "imp89sfoy54"
             ],
             "visible": [
-              "imp7hrq5d51-sp-1"
+              "imp89sfoy55-sp-1"
             ],
             "hidden": [
-              "imp7hrq5d4s-sp-1",
-              "imp7hrq5d4s-sp-2",
-              "imp7hrq5d4t-sp-1",
-              "imp7hrq5d4u-sp-1",
-              "imp7hrq5d4u-sp-2",
-              "imp7hrq5d4v-sp-1",
-              "imp7hrq5d4w-sp-1",
-              "imp7hrq5d4x-sp-1",
-              "imp7hrq5d4y-sp-1",
-              "imp7hrq5d4z-sp-1",
-              "imp7hrq5d50-sp-1"
+              "imp89sfoy4w-sp-1",
+              "imp89sfoy4w-sp-2",
+              "imp89sfoy4x-sp-1",
+              "imp89sfoy4y-sp-1",
+              "imp89sfoy4y-sp-2",
+              "imp89sfoy4z-sp-1",
+              "imp89sfoy50-sp-1",
+              "imp89sfoy51-sp-1",
+              "imp89sfoy52-sp-1",
+              "imp89sfoy53-sp-1",
+              "imp89sfoy54-sp-1"
             ]
           }
         }
@@ -834,7 +834,7 @@
       "type": "fillImage",
       "start": 155,
       "end": 160,
-      "html": "<section class=\"slide fillImage\"><img id=\"imp7hrq5e52\" class=\" hidden \" src=\"image.png\" /></section>",
+      "html": "<section class=\"slide fillImage\"><img id=\"imp89sfoy56\" class=\" hidden \" src=\"image.png\" /></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -853,7 +853,7 @@
       "type": "focusList",
       "start": 160,
       "end": 170,
-      "html": "<section class=\"slide focusList\"><h1 id=\"imp7hrq5e53\" class=\"\" > Step-by-step focus </h1><ul><li id=\"imp7hrq5e54\" class=\"\" > Understand the idea </li><li id=\"imp7hrq5e55\" class=\"\" > Break it into parts </li><li id=\"imp7hrq5e56\" class=\"\" > Verify the result </li></ul></section>",
+      "html": "<section class=\"slide focusList\"><h1 id=\"imp89sfoy57\" class=\"\" > Step-by-step focus </h1><ul><li id=\"imp89sfoy58\" class=\"\" > Understand the idea </li><li id=\"imp89sfoy59\" class=\"\" > Break it into parts </li><li id=\"imp89sfoy5a\" class=\"\" > Verify the result </li></ul></section>",
       "groups": {
         "focus": [],
         "dim": [
@@ -865,12 +865,12 @@
           "time": 160,
           "state": {
             "focus": [
-              "imp7hrq5e53"
+              "imp89sfoy57"
             ],
             "dim": [
-              "imp7hrq5e54",
-              "imp7hrq5e55",
-              "imp7hrq5e56"
+              "imp89sfoy58",
+              "imp89sfoy59",
+              "imp89sfoy5a"
             ]
           }
         },
@@ -878,12 +878,12 @@
           "time": 162,
           "state": {
             "focus": [
-              "imp7hrq5e54"
+              "imp89sfoy58"
             ],
             "dim": [
-              "imp7hrq5e53",
-              "imp7hrq5e55",
-              "imp7hrq5e56"
+              "imp89sfoy57",
+              "imp89sfoy59",
+              "imp89sfoy5a"
             ]
           }
         },
@@ -891,12 +891,12 @@
           "time": 164,
           "state": {
             "focus": [
-              "imp7hrq5e55"
+              "imp89sfoy59"
             ],
             "dim": [
-              "imp7hrq5e53",
-              "imp7hrq5e54",
-              "imp7hrq5e56"
+              "imp89sfoy57",
+              "imp89sfoy58",
+              "imp89sfoy5a"
             ]
           }
         },
@@ -904,12 +904,12 @@
           "time": 166,
           "state": {
             "focus": [
-              "imp7hrq5e56"
+              "imp89sfoy5a"
             ],
             "dim": [
-              "imp7hrq5e53",
-              "imp7hrq5e54",
-              "imp7hrq5e55"
+              "imp89sfoy57",
+              "imp89sfoy58",
+              "imp89sfoy59"
             ]
           }
         }
@@ -919,7 +919,7 @@
       "type": "imageStrip",
       "start": 170,
       "end": 180,
-      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"imp7hrq5e57\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-strip-item\"><img id=\"imp7hrq5e58\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-strip-item\"><img id=\"imp7hrq5e59\" class=\" hidden \" src=\"whatisforce.webp\" /></div></div></section>",
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"imp89sfoy5b\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-strip-item\"><img id=\"imp89sfoy5c\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-strip-item\"><img id=\"imp89sfoy5d\" class=\" hidden \" src=\"whatisforce.webp\" /></div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -930,8 +930,8 @@
           "time": 170,
           "state": {
             "hidden": [
-              "imp7hrq5e58",
-              "imp7hrq5e59"
+              "imp89sfoy5c",
+              "imp89sfoy5d"
             ]
           }
         },
@@ -939,7 +939,7 @@
           "time": 172,
           "state": {
             "hidden": [
-              "imp7hrq5e59"
+              "imp89sfoy5d"
             ]
           }
         },
@@ -955,7 +955,7 @@
       "type": "imageGrid",
       "start": 180,
       "end": 190,
-      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imp7hrq5e5a\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp7hrq5e5b\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-grid-item\"><img id=\"imp7hrq5e5c\" class=\" hidden \" src=\"whatisforce.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp7hrq5e5d\" class=\" hidden \" src=\"box.webp\" /></div></div></section>",
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imp89sfoy5e\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfoy5f\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfoy5g\" class=\" hidden \" src=\"whatisforce.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfoy5h\" class=\" hidden \" src=\"box.webp\" /></div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -966,9 +966,9 @@
           "time": 180,
           "state": {
             "hidden": [
-              "imp7hrq5e5b",
-              "imp7hrq5e5c",
-              "imp7hrq5e5d"
+              "imp89sfoy5f",
+              "imp89sfoy5g",
+              "imp89sfoy5h"
             ]
           }
         },
@@ -976,8 +976,8 @@
           "time": 182,
           "state": {
             "hidden": [
-              "imp7hrq5e5c",
-              "imp7hrq5e5d"
+              "imp89sfoy5g",
+              "imp89sfoy5h"
             ]
           }
         },
@@ -985,7 +985,7 @@
           "time": 184,
           "state": {
             "hidden": [
-              "imp7hrq5e5d"
+              "imp89sfoy5h"
             ]
           }
         },
@@ -1001,7 +1001,7 @@
       "type": "skeleton",
       "start": 190,
       "end": 200,
-      "html": "<section class=\"slide skeleton\"><div class=\"skeleton-body\"><h1 id=\"imp7hrq5e5e\" class=\"hidden \" > Understanding Force </h1><div id=\"imp7hrq5e5f\" class=\"skeleton-image hidden \" ><img src=\"whatisforce.webp\" /></div><p id=\"imp7hrq5e5g\" class=\"hidden \" > Force is a push or pull. </p></div></section>",
+      "html": "<section class=\"slide skeleton\"><div class=\"skeleton-body\"><h1 id=\"imp89sfoy5i\" class=\"hidden \" > Understanding Force </h1><div id=\"imp89sfoy5j\" class=\"skeleton-image hidden \" ><img src=\"whatisforce.webp\" /></div><p id=\"imp89sfoy5k\" class=\"hidden \" > Force is a push or pull. </p></div></section>",
       "groups": {
         "visible": [],
         "hidden": [
@@ -1013,11 +1013,11 @@
           "time": 190,
           "state": {
             "visible": [
-              "imp7hrq5e5e"
+              "imp89sfoy5i"
             ],
             "hidden": [
-              "imp7hrq5e5f",
-              "imp7hrq5e5g"
+              "imp89sfoy5j",
+              "imp89sfoy5k"
             ]
           }
         },
@@ -1025,11 +1025,11 @@
           "time": 192,
           "state": {
             "visible": [
-              "imp7hrq5e5f"
+              "imp89sfoy5j"
             ],
             "hidden": [
-              "imp7hrq5e5e",
-              "imp7hrq5e5g"
+              "imp89sfoy5i",
+              "imp89sfoy5k"
             ]
           }
         },
@@ -1037,11 +1037,11 @@
           "time": 194,
           "state": {
             "visible": [
-              "imp7hrq5e5g"
+              "imp89sfoy5k"
             ],
             "hidden": [
-              "imp7hrq5e5e",
-              "imp7hrq5e5f"
+              "imp89sfoy5i",
+              "imp89sfoy5j"
             ]
           }
         }
@@ -1051,7 +1051,7 @@
       "type": "textGrid",
       "start": 200,
       "end": 210,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imp7hrq5e5h\" class=\" text-grid-item hidden \" > Clear structure improves understanding </div><div id=\"imp7hrq5e5i\" class=\" text-grid-item hidden \" > Each idea should be isolated </div><div id=\"imp7hrq5e5j\" class=\" text-grid-item hidden \" > Visual layout reduces confusion </div><div id=\"imp7hrq5e5k\" class=\" text-grid-item hidden \" > Consistency improves learning </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imp89sfoy5l\" class=\" text-grid-item hidden \" > Clear structure improves understanding </div><div id=\"imp89sfoy5m\" class=\" text-grid-item hidden \" > Each idea should be isolated </div><div id=\"imp89sfoy5n\" class=\" text-grid-item hidden \" > Visual layout reduces confusion </div><div id=\"imp89sfoy5o\" class=\" text-grid-item hidden \" > Consistency improves learning </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -1062,9 +1062,9 @@
           "time": 200,
           "state": {
             "hidden": [
-              "imp7hrq5e5i",
-              "imp7hrq5e5j",
-              "imp7hrq5e5k"
+              "imp89sfoy5m",
+              "imp89sfoy5n",
+              "imp89sfoy5o"
             ]
           }
         },
@@ -1072,8 +1072,8 @@
           "time": 202,
           "state": {
             "hidden": [
-              "imp7hrq5e5j",
-              "imp7hrq5e5k"
+              "imp89sfoy5n",
+              "imp89sfoy5o"
             ]
           }
         },
@@ -1081,7 +1081,7 @@
           "time": 204,
           "state": {
             "hidden": [
-              "imp7hrq5e5k"
+              "imp89sfoy5o"
             ]
           }
         },
