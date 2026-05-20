@@ -1,6 +1,7 @@
 <!-- /src/lib/player/Player.svelte -->
 
 <script>
+
 	import { onMount, onDestroy } from "svelte";
 
 	import { runActions } from "taleem-action-runner";
@@ -276,13 +277,6 @@
 <!-- ================================= -->
 
 <style>
-
-	@import "./css/themes/dark.css";
-	@import "./css/index.css";
-	@import "./css/app/app.css";
-	@import "./css/bulletList.css";
-	@import "./css/skeleton.css";
-	@import "./css/eq.css";
 
 	:global(body) {
 

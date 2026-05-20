@@ -1,6 +1,10 @@
 <script>
 	import { page } from '$app/state';
 	import '../app.css';
+	import "$lib/player/css/themes/dark.css";
+	import "$lib/player/css/index.css";
+
+	
 	import Navbar from '$lib/components/Navbar.svelte';
 	import TopBar from '$lib/components/TopBar.svelte';
 
