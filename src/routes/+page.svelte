@@ -97,7 +97,7 @@ import Footer from "../lib/components/Footer.svelte";
 				)}
 		>
 			<img
-				src="/content/images/class8.png"
+				src="/content/images/fbise8math-poster.png"
 				alt="Class 8"
 			/>
 		</div>
@@ -111,7 +111,7 @@ import Footer from "../lib/components/Footer.svelte";
 				)}
 		>
 			<img
-				src="/content/images/class9.png"
+				src="/content/images/fbise9math-poster.png"
 				alt="Class 9"
 			/>
 		</div>
