@@ -8,10 +8,10 @@
 		"description": "Introduction to the Taleem Help platform."
 	},
 	{
-		"id": "physics-motion",
-		"title": "Physics Motion",
+		"id": "golden-dsl-8-may-26",
+		"title": "Golden Deck",
 		"chapter": 2,
-		"image": "/content/images/box.webp",
+		"image": "/content/images/taleem.webp",
 		"lessons": 18,
 		"description": "Basic concepts of motion and velocity."
 	},

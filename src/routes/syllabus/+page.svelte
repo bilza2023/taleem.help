@@ -1,5 +1,5 @@
 <script>
-    import syllabus from '/static/data/syllabus/fbise8math.json';
+    import syllabus from '/data/syllabus/fbise8math-syllabus.json';
     import { getByTag } from 'taleem-tag-engine';
   
     const items = syllabus.items;

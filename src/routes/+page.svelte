@@ -1,25 +1,25 @@
 <script>
 
 	import { onMount } from "svelte";
-import Footer from "../lib/components/Footer.svelte";
+
 	import HomeLinks
 		from "$lib/components/HomeLinks.svelte";
+
+	import Footer
+		from "$lib/components/Footer.svelte";
+
+	import {
+		fetchHomeLinks
+	}
+	from "$lib/fetch";
 
 	let homeLinks = $state([]);
 
 	onMount(async () => {
 
-		const res =
-			await fetch("/home-links.json");
-
 		homeLinks =
-			await res.json();
+			await fetchHomeLinks();
 	});
-
-	function goToSyllabus(path) {
-
-		window.location.href = path;
-	}
 
 </script>
 
@@ -28,14 +28,18 @@ import Footer from "../lib/components/Footer.svelte";
 	.container {
 
 		padding: 40px;
+
 		text-align: center;
 	}
 
 	.courses {
 
 		display: flex;
+
 		justify-content: center;
+
 		gap: 30px;
+
 		flex-wrap: wrap;
 
 		margin-bottom: 40px;
@@ -44,7 +48,6 @@ import Footer from "../lib/components/Footer.svelte";
 	.course-card {
 
 		width: 420px;
-		cursor: pointer;
 
 		border-radius: 14px;
 
@@ -53,68 +56,64 @@ import Footer from "../lib/components/Footer.svelte";
 		box-shadow:
 			0 4px 12px rgba(0,0,0,0.08);
 
-		transition:
-			transform 0.2s ease;
+		text-decoration: none;
+
+		display: block;
 	}
-
-
 
 	.course-card img {
 
 		width: 100%;
+
 		display: block;
 	}
-.line {
 
-	width: 100%;
+	.line {
 
-	max-width: 900px;
+		width: 100%;
 
-	height: 1px;
+		max-width: 900px;
 
-	margin: 40px auto;
+		height: 1px;
 
-	background:
-		linear-gradient(
-			to right,
-			transparent,
-			rgba(255,255,255,0.15),
-			transparent
-		);
-}
+		margin: 40px auto;
+
+		background:
+			linear-gradient(
+				to right,
+				transparent,
+				rgba(255,255,255,0.15),
+				transparent
+			);
+	}
+
 </style>
 
 <div class="container">
 
 	<div class="courses">
 
-		<div
+		<a
 			class="course-card"
 
-			onclick={() =>
-				goToSyllabus(
-					"/syllabus?course=fbise8math-syllabus"
-				)}
+			href="/syllabus?course=fbise8math-syllabus"
 		>
 			<img
-				src="/content/images/fbise8math-poster.png"
+				src="/content/images/class8.png"
 				alt="Class 8"
 			/>
-		</div>
+		</a>
 
-		<div
+		<a
 			class="course-card"
 
-			onclick={() =>
-				goToSyllabus(
-					"/syllabus?course=fbise9math-syllabus"
-				)}
+			href="/syllabus?course=fbise9math-syllabus"
 		>
 			<img
-				src="/content/images/fbise9math-poster.png"
+				src="/content/images/class9.png"
 				alt="Class 9"
 			/>
-		</div>
+		</a>
 
 	</div>
 
@@ -124,5 +123,6 @@ import Footer from "../lib/components/Footer.svelte";
 		{homeLinks}
 	/>
 
+	<Footer />
+
 </div>
-<Footer/>
