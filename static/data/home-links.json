@@ -1,82 +1,12 @@
+
+
+
 [
-	{
-		"id": "what-is-taleem-help",
-		"title": "What is Taleem Help",
-		"chapter": 1,
-		"image": "/content/images/box.webp",
-		"lessons": 12,
-		"description": "Introduction to the Taleem Help platform."
-	},
-	{
-		"id": "golden-dsl-8-may-26",
-		"title": "Golden Deck",
-		"chapter": 2,
-		"image": "/content/images/taleem.webp",
-		"lessons": 18,
-		"description": "Basic concepts of motion and velocity."
-	},
-	{
-		"id": "biology-cell-structure",
-		"title": "Biology Cell Structure",
-		"chapter": 3,
-		"image": "/content/images/box.webp",
-		"lessons": 15,
-		"description": "Understanding plant and animal cells."
-	},
-	{
-		"id": "chemistry-atoms",
-		"title": "Chemistry Atoms",
-		"chapter": 4,
-		"image": "/content/images/box.webp",
-		"lessons": 20,
-		"description": "Introduction to atoms and molecules."
-	},
-	{
-		"id": "math-algebra-basics",
-		"title": "Math Algebra Basics",
-		"chapter": 5,
-		"image": "/content/images/box.webp",
-		"lessons": 22,
-		"description": "Learn algebraic expressions and equations."
-	},
-	{
-		"id": "computer-binary-system",
-		"title": "Computer Binary System",
-		"chapter": 6,
-		"image": "/content/images/box.webp",
-		"lessons": 10,
-		"description": "Learn how computers use binary numbers."
-	},
-	{
-		"id": "english-grammar",
-		"title": "English Grammar",
-		"chapter": 7,
-		"image": "/content/images/box.webp",
-		"lessons": 16,
-		"description": "Basic English grammar and sentence structure."
-	},
-	{
-		"id": "pakistan-history",
-		"title": "Pakistan History",
-		"chapter": 8,
-		"image": "/content/images/box.webp",
-		"lessons": 14,
-		"description": "Major events in the history of Pakistan."
-	},
-	{
-		"id": "geography-earth",
-		"title": "Geography Earth",
-		"chapter": 9,
-		"image": "/content/images/box.webp",
-		"lessons": 13,
-		"description": "Introduction to Earth and natural systems."
-	},
-	{
-		"id": "science-energy",
-		"title": "Science Energy",
-		"chapter": 10,
-		"image": "/content/images/box.webp",
-		"lessons": 17,
-		"description": "Forms of energy and their applications."
-	}
-]
+    {
+      "anchor": "Prealg-01-why-pre-algebra",
+      "title": "Why Pre Algebra Course",
+      "id": "Prealg-01-why-pre-algebra",
+      "tag": "concept",
+      "image": "/content/images/eq.webp"
+    }
+  ]

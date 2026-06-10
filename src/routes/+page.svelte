@@ -8,10 +8,7 @@
 	import Footer
 		from "$lib/components/Footer.svelte";
 
-	import {
-		fetchHomeLinks
-	}
-	from "$lib/fetch";
+	import {fetchHomeLinks}from "$lib/fetch";
 
 	let homeLinks = $state([]);
 

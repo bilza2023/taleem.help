@@ -1,9 +1,7 @@
+
 export async function fetchHomeLinks() {
 
-	const res =
-		await fetch(
-			"/data/home-links.json"
-		);
+	const res =await fetch("/data/home-links.json");
 
 	if (!res.ok) {
 

@@ -1,0 +1,269 @@
+{
+  "name": "Pre Algebra Course",
+  "background": {
+    "backgroundColor": "#05070c",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.6
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 5,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"implyzvcc1i\" class=\" hidden taleem-heading-lg \" > Pre Algebra Course </h1><h2 id=\"implyzvcc1j\" class=\" hidden taleem-heading-md \" > یہ کورس الجبرا اور اعلیٰ ریاضی شروع ہونے سے پہلے بنیادی کمزوریاں دور کرنے کے لیے بنایا گیا ہے۔ </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "implyzvcc1j"
+            ]
+          }
+        },
+        {
+          "time": 2,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 5,
+      "end": 33,
+      "html": "<section class=\"slide titleAndPara\"><h1 id=\"implyzvcc1k\" class=\" hidden taleem-heading-md \" > یہ کورس کیوں ضروری ہے؟ </h1><p id=\"implyzvcc1l\" class=\" hidden taleem-para \" > بہت سے طلبہ آٹھویں اور نویں جماعت میں بنیادی ریاضی کی کمزوریوں کے ساتھ داخل ہوتے ہیں۔ ابتدا میں یہ کمزوریاں زیادہ نمایاں محسوس نہیں ہوتیں، لیکن جیسے ہی الجبرا، مساوات، منفی اعداد، تناسب اور فیصد جیسے موضوعات شروع ہوتے ہیں، سمجھنے میں مشکلات بڑھنے لگتی ہیں۔ اکثر طلبہ فارمولے یاد کرنے کی کوشش کرتے ہیں لیکن بنیادی تصورات واضح نہ ہونے کی وجہ سے اعتماد کمزور ہو جاتا ہے۔ یہ کورس انہی بنیادی کمزوریوں کو مضبوط کرنے اور ریاضی کی واضح سمجھ پیدا کرنے کے لیے تیار کیا گیا ہے۔ </p></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 5,
+          "state": {
+            "hidden": [
+              "implyzvcc1l"
+            ]
+          }
+        },
+        {
+          "time": 6,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 33,
+      "end": 67,
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"implyzvcd1m\" class=\" eq-item eq-title \" > اس کورس میں شامل بنیادی تصورات </li><li id=\"implyzvcd1n\" class=\" eq-item eq-line \" > Number Families اور Number Line </li><li id=\"implyzvcd1o\" class=\" eq-item eq-line \" > Factors ، Multiples ، HCF اور LCM </li><li id=\"implyzvcd1p\" class=\" eq-item eq-line \" > Fractions اور Decimal System </li><li id=\"implyzvcd1q\" class=\" eq-item eq-line \" > Algebraic Expressions اور Radicals </li></ul><div class=\"eq-side-panel\"><div id=\"implyzvcd1m-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"equation_balance_scale_labeled.webp\" /></div><div id=\"implyzvcd1m-sp-2\" class=\"eq-explain-item hidden\" > یہ تمام تصورات آٹھویں اور نویں جماعت کی ریاضی اور الجبرا کی بنیاد بناتے ہیں۔ </div><div id=\"implyzvcd1n-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"number-families.jpeg\" /></div><div id=\"implyzvcd1o-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"factors-and-mutiples.jpeg\" /></div><div id=\"implyzvcd1o-sp-2\" class=\"eq-explain-item hidden\" ><img src=\"hcf_vs_lcm.png\" /></div><div id=\"implyzvcd1o-sp-3\" class=\"eq-explain-item hidden\" > یہ تصورات fractions اور algebraic simplification میں مسلسل استعمال ہوتے ہیں۔ </div><div id=\"implyzvcd1o-sp-4\" class=\"eq-explain-item hidden\" > کمزور number sense بعد میں confusion پیدا کرتا ہے۔ </div><div id=\"implyzvcd1p-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"fractions-meaning-and-types.png\" /></div><div id=\"implyzvcd1p-sp-2\" class=\"eq-explain-item hidden\" ><img src=\"decimal-place-value.png\" /></div><div id=\"implyzvcd1p-sp-3\" class=\"eq-explain-item hidden\" ><img src=\"decimal-operations.png\" /></div><div id=\"implyzvcd1p-sp-4\" class=\"eq-explain-item hidden\" > Fractions اور decimals تقریباً ہر chapter میں دوبارہ آتے ہیں۔ </div><div id=\"implyzvcd1p-sp-5\" class=\"eq-explain-item hidden\" > بنیادی سمجھ مضبوط نہ ہو تو algebra مشکل محسوس ہونے لگتا ہے۔ </div><div id=\"implyzvcd1q-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"bridge-to-algebra.png\" /></div><div id=\"implyzvcd1q-sp-2\" class=\"eq-explain-item hidden\" > یہ کورس algebra کی طرف ایک مضبوط bridge فراہم کرے گا۔ </div></div></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ],
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 33,
+          "state": {
+            "focus": [
+              "implyzvcd1m"
+            ],
+            "dim": [
+              "implyzvcd1n",
+              "implyzvcd1o",
+              "implyzvcd1p",
+              "implyzvcd1q"
+            ],
+            "visible": [
+              "implyzvcd1m-sp-1",
+              "implyzvcd1m-sp-2"
+            ],
+            "hidden": [
+              "implyzvcd1n-sp-1",
+              "implyzvcd1o-sp-1",
+              "implyzvcd1o-sp-2",
+              "implyzvcd1o-sp-3",
+              "implyzvcd1o-sp-4",
+              "implyzvcd1p-sp-1",
+              "implyzvcd1p-sp-2",
+              "implyzvcd1p-sp-3",
+              "implyzvcd1p-sp-4",
+              "implyzvcd1p-sp-5",
+              "implyzvcd1q-sp-1",
+              "implyzvcd1q-sp-2"
+            ]
+          }
+        },
+        {
+          "time": 39,
+          "state": {
+            "focus": [
+              "implyzvcd1n"
+            ],
+            "dim": [
+              "implyzvcd1m",
+              "implyzvcd1o",
+              "implyzvcd1p",
+              "implyzvcd1q"
+            ],
+            "visible": [
+              "implyzvcd1n-sp-1"
+            ],
+            "hidden": [
+              "implyzvcd1m-sp-1",
+              "implyzvcd1m-sp-2",
+              "implyzvcd1o-sp-1",
+              "implyzvcd1o-sp-2",
+              "implyzvcd1o-sp-3",
+              "implyzvcd1o-sp-4",
+              "implyzvcd1p-sp-1",
+              "implyzvcd1p-sp-2",
+              "implyzvcd1p-sp-3",
+              "implyzvcd1p-sp-4",
+              "implyzvcd1p-sp-5",
+              "implyzvcd1q-sp-1",
+              "implyzvcd1q-sp-2"
+            ]
+          }
+        },
+        {
+          "time": 43,
+          "state": {
+            "focus": [
+              "implyzvcd1o"
+            ],
+            "dim": [
+              "implyzvcd1m",
+              "implyzvcd1n",
+              "implyzvcd1p",
+              "implyzvcd1q"
+            ],
+            "visible": [
+              "implyzvcd1o-sp-1",
+              "implyzvcd1o-sp-2",
+              "implyzvcd1o-sp-3",
+              "implyzvcd1o-sp-4"
+            ],
+            "hidden": [
+              "implyzvcd1m-sp-1",
+              "implyzvcd1m-sp-2",
+              "implyzvcd1n-sp-1",
+              "implyzvcd1p-sp-1",
+              "implyzvcd1p-sp-2",
+              "implyzvcd1p-sp-3",
+              "implyzvcd1p-sp-4",
+              "implyzvcd1p-sp-5",
+              "implyzvcd1q-sp-1",
+              "implyzvcd1q-sp-2"
+            ]
+          }
+        },
+        {
+          "time": 50,
+          "state": {
+            "focus": [
+              "implyzvcd1p"
+            ],
+            "dim": [
+              "implyzvcd1m",
+              "implyzvcd1n",
+              "implyzvcd1o",
+              "implyzvcd1q"
+            ],
+            "visible": [
+              "implyzvcd1p-sp-1",
+              "implyzvcd1p-sp-2",
+              "implyzvcd1p-sp-3",
+              "implyzvcd1p-sp-4",
+              "implyzvcd1p-sp-5"
+            ],
+            "hidden": [
+              "implyzvcd1m-sp-1",
+              "implyzvcd1m-sp-2",
+              "implyzvcd1n-sp-1",
+              "implyzvcd1o-sp-1",
+              "implyzvcd1o-sp-2",
+              "implyzvcd1o-sp-3",
+              "implyzvcd1o-sp-4",
+              "implyzvcd1q-sp-1",
+              "implyzvcd1q-sp-2"
+            ]
+          }
+        },
+        {
+          "time": 57,
+          "state": {
+            "focus": [
+              "implyzvcd1q"
+            ],
+            "dim": [
+              "implyzvcd1m",
+              "implyzvcd1n",
+              "implyzvcd1o",
+              "implyzvcd1p"
+            ],
+            "visible": [
+              "implyzvcd1q-sp-1",
+              "implyzvcd1q-sp-2"
+            ],
+            "hidden": [
+              "implyzvcd1m-sp-1",
+              "implyzvcd1m-sp-2",
+              "implyzvcd1n-sp-1",
+              "implyzvcd1o-sp-1",
+              "implyzvcd1o-sp-2",
+              "implyzvcd1o-sp-3",
+              "implyzvcd1o-sp-4",
+              "implyzvcd1p-sp-1",
+              "implyzvcd1p-sp-2",
+              "implyzvcd1p-sp-3",
+              "implyzvcd1p-sp-4",
+              "implyzvcd1p-sp-5"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 67,
+      "end": 75,
+      "html": "<section class=\"slide titleAndPara\"><h1 id=\"implyzvcd1r\" class=\" hidden taleem-heading-md \" > اس کورس کو کیسے پڑھیں؟ </h1><p id=\"implyzvcd1s\" class=\" hidden taleem-para \" > صرف answers یاد کرنے کی کوشش نہ کریں۔ ہر concept کو گہرائی سے سمجھیں اور یہ جاننے کی کوشش کریں کہ ہر mathematical step کیوں درست ہے۔ مضبوط ریاضیاتی سوچ آہستہ آہستہ واضح سمجھ اور مسلسل practice سے بنتی ہے۔ </p></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 30,
+          "state": {
+            "hidden": [
+              "implyzvcd1s"
+            ]
+          }
+        },
+        {
+          "time": 32,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    }
+  ]
+}

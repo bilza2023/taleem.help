@@ -10,7 +10,7 @@
       "type": "titleAndSubtitle",
       "start": 0,
       "end": 8,
-      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imp89sfpa8h\" class=\" hidden taleem-heading-lg \" > Text Grid Testing </h1><h2 id=\"imp89sfpa8i\" class=\" hidden taleem-heading-md \" > Chunking • clustering • visual scanning </h2></section>",
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"implyzvd5a9\" class=\" hidden taleem-heading-lg \" > Text Grid Testing </h1><h2 id=\"implyzvd5aa\" class=\" hidden taleem-heading-md \" > Chunking • clustering • visual scanning </h2></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -21,7 +21,7 @@
           "time": 0,
           "state": {
             "hidden": [
-              "imp89sfpa8i"
+              "implyzvd5aa"
             ]
           }
         },
@@ -37,7 +37,7 @@
       "type": "textGrid",
       "start": 8,
       "end": 26,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imp89sfpb8j\" class=\" text-grid-item hidden \" > Addition </div><div id=\"imp89sfpb8k\" class=\" text-grid-item hidden \" > Subtraction </div><div id=\"imp89sfpb8l\" class=\" text-grid-item hidden \" > Multiplication </div><div id=\"imp89sfpb8m\" class=\" text-grid-item hidden \" > Division </div><div id=\"imp89sfpb8n\" class=\" text-grid-item hidden \" > Fractions </div><div id=\"imp89sfpb8o\" class=\" text-grid-item hidden \" > Percentages </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"implyzvd5ab\" class=\" text-grid-item hidden \" > Addition </div><div id=\"implyzvd5ac\" class=\" text-grid-item hidden \" > Subtraction </div><div id=\"implyzvd5ad\" class=\" text-grid-item hidden \" > Multiplication </div><div id=\"implyzvd5ae\" class=\" text-grid-item hidden \" > Division </div><div id=\"implyzvd5af\" class=\" text-grid-item hidden \" > Fractions </div><div id=\"implyzvd5ag\" class=\" text-grid-item hidden \" > Percentages </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -48,11 +48,11 @@
           "time": 8,
           "state": {
             "hidden": [
-              "imp89sfpb8k",
-              "imp89sfpb8l",
-              "imp89sfpb8m",
-              "imp89sfpb8n",
-              "imp89sfpb8o"
+              "implyzvd5ac",
+              "implyzvd5ad",
+              "implyzvd5ae",
+              "implyzvd5af",
+              "implyzvd5ag"
             ]
           }
         },
@@ -60,10 +60,10 @@
           "time": 10,
           "state": {
             "hidden": [
-              "imp89sfpb8l",
-              "imp89sfpb8m",
-              "imp89sfpb8n",
-              "imp89sfpb8o"
+              "implyzvd5ad",
+              "implyzvd5ae",
+              "implyzvd5af",
+              "implyzvd5ag"
             ]
           }
         },
@@ -71,9 +71,9 @@
           "time": 12,
           "state": {
             "hidden": [
-              "imp89sfpb8m",
-              "imp89sfpb8n",
-              "imp89sfpb8o"
+              "implyzvd5ae",
+              "implyzvd5af",
+              "implyzvd5ag"
             ]
           }
         },
@@ -81,8 +81,8 @@
           "time": 14,
           "state": {
             "hidden": [
-              "imp89sfpb8n",
-              "imp89sfpb8o"
+              "implyzvd5af",
+              "implyzvd5ag"
             ]
           }
         },
@@ -90,7 +90,7 @@
           "time": 16,
           "state": {
             "hidden": [
-              "imp89sfpb8o"
+              "implyzvd5ag"
             ]
           }
         },
@@ -106,7 +106,7 @@
       "type": "textGrid",
       "start": 26,
       "end": 44,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imp89sfpb8p\" class=\" text-grid-item hidden \" > Photosynthesis </div><div id=\"imp89sfpb8q\" class=\" text-grid-item hidden \" > Respiration </div><div id=\"imp89sfpb8r\" class=\" text-grid-item hidden \" > Digestion </div><div id=\"imp89sfpb8s\" class=\" text-grid-item hidden \" > Circulation </div><div id=\"imp89sfpb8t\" class=\" text-grid-item hidden \" > Excretion </div><div id=\"imp89sfpb8u\" class=\" text-grid-item hidden \" > Reproduction </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"implyzvd5ah\" class=\" text-grid-item hidden \" > Photosynthesis </div><div id=\"implyzvd5ai\" class=\" text-grid-item hidden \" > Respiration </div><div id=\"implyzvd5aj\" class=\" text-grid-item hidden \" > Digestion </div><div id=\"implyzvd5ak\" class=\" text-grid-item hidden \" > Circulation </div><div id=\"implyzvd5al\" class=\" text-grid-item hidden \" > Excretion </div><div id=\"implyzvd5am\" class=\" text-grid-item hidden \" > Reproduction </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -117,11 +117,11 @@
           "time": 26,
           "state": {
             "hidden": [
-              "imp89sfpb8q",
-              "imp89sfpb8r",
-              "imp89sfpb8s",
-              "imp89sfpb8t",
-              "imp89sfpb8u"
+              "implyzvd5ai",
+              "implyzvd5aj",
+              "implyzvd5ak",
+              "implyzvd5al",
+              "implyzvd5am"
             ]
           }
         },
@@ -129,10 +129,10 @@
           "time": 28,
           "state": {
             "hidden": [
-              "imp89sfpb8r",
-              "imp89sfpb8s",
-              "imp89sfpb8t",
-              "imp89sfpb8u"
+              "implyzvd5aj",
+              "implyzvd5ak",
+              "implyzvd5al",
+              "implyzvd5am"
             ]
           }
         },
@@ -140,9 +140,9 @@
           "time": 30,
           "state": {
             "hidden": [
-              "imp89sfpb8s",
-              "imp89sfpb8t",
-              "imp89sfpb8u"
+              "implyzvd5ak",
+              "implyzvd5al",
+              "implyzvd5am"
             ]
           }
         },
@@ -150,8 +150,8 @@
           "time": 32,
           "state": {
             "hidden": [
-              "imp89sfpb8t",
-              "imp89sfpb8u"
+              "implyzvd5al",
+              "implyzvd5am"
             ]
           }
         },
@@ -159,7 +159,7 @@
           "time": 34,
           "state": {
             "hidden": [
-              "imp89sfpb8u"
+              "implyzvd5am"
             ]
           }
         },
@@ -175,7 +175,7 @@
       "type": "textGrid",
       "start": 44,
       "end": 62,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imp89sfpb8v\" class=\" text-grid-item hidden \" > Velocity </div><div id=\"imp89sfpb8w\" class=\" text-grid-item hidden \" > Acceleration </div><div id=\"imp89sfpb8x\" class=\" text-grid-item hidden \" > Momentum </div><div id=\"imp89sfpb8y\" class=\" text-grid-item hidden \" > Gravity </div><div id=\"imp89sfpb8z\" class=\" text-grid-item hidden \" > Force </div><div id=\"imp89sfpb90\" class=\" text-grid-item hidden \" > Energy </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"implyzvd5an\" class=\" text-grid-item hidden \" > Velocity </div><div id=\"implyzvd5ao\" class=\" text-grid-item hidden \" > Acceleration </div><div id=\"implyzvd5ap\" class=\" text-grid-item hidden \" > Momentum </div><div id=\"implyzvd5aq\" class=\" text-grid-item hidden \" > Gravity </div><div id=\"implyzvd5ar\" class=\" text-grid-item hidden \" > Force </div><div id=\"implyzvd5as\" class=\" text-grid-item hidden \" > Energy </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -186,11 +186,11 @@
           "time": 44,
           "state": {
             "hidden": [
-              "imp89sfpb8w",
-              "imp89sfpb8x",
-              "imp89sfpb8y",
-              "imp89sfpb8z",
-              "imp89sfpb90"
+              "implyzvd5ao",
+              "implyzvd5ap",
+              "implyzvd5aq",
+              "implyzvd5ar",
+              "implyzvd5as"
             ]
           }
         },
@@ -198,10 +198,10 @@
           "time": 46,
           "state": {
             "hidden": [
-              "imp89sfpb8x",
-              "imp89sfpb8y",
-              "imp89sfpb8z",
-              "imp89sfpb90"
+              "implyzvd5ap",
+              "implyzvd5aq",
+              "implyzvd5ar",
+              "implyzvd5as"
             ]
           }
         },
@@ -209,9 +209,9 @@
           "time": 48,
           "state": {
             "hidden": [
-              "imp89sfpb8y",
-              "imp89sfpb8z",
-              "imp89sfpb90"
+              "implyzvd5aq",
+              "implyzvd5ar",
+              "implyzvd5as"
             ]
           }
         },
@@ -219,8 +219,8 @@
           "time": 50,
           "state": {
             "hidden": [
-              "imp89sfpb8z",
-              "imp89sfpb90"
+              "implyzvd5ar",
+              "implyzvd5as"
             ]
           }
         },
@@ -228,7 +228,7 @@
           "time": 52,
           "state": {
             "hidden": [
-              "imp89sfpb90"
+              "implyzvd5as"
             ]
           }
         },
@@ -244,7 +244,7 @@
       "type": "textGrid",
       "start": 62,
       "end": 80,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imp89sfpb91\" class=\" text-grid-item hidden \" > Variables </div><div id=\"imp89sfpb92\" class=\" text-grid-item hidden \" > Functions </div><div id=\"imp89sfpb93\" class=\" text-grid-item hidden \" > Arrays </div><div id=\"imp89sfpb94\" class=\" text-grid-item hidden \" > Objects </div><div id=\"imp89sfpb95\" class=\" text-grid-item hidden \" > Loops </div><div id=\"imp89sfpb96\" class=\" text-grid-item hidden \" > Conditions </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"implyzvd5at\" class=\" text-grid-item hidden \" > Variables </div><div id=\"implyzvd5au\" class=\" text-grid-item hidden \" > Functions </div><div id=\"implyzvd5av\" class=\" text-grid-item hidden \" > Arrays </div><div id=\"implyzvd5aw\" class=\" text-grid-item hidden \" > Objects </div><div id=\"implyzvd5ax\" class=\" text-grid-item hidden \" > Loops </div><div id=\"implyzvd5ay\" class=\" text-grid-item hidden \" > Conditions </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -255,11 +255,11 @@
           "time": 62,
           "state": {
             "hidden": [
-              "imp89sfpb92",
-              "imp89sfpb93",
-              "imp89sfpb94",
-              "imp89sfpb95",
-              "imp89sfpb96"
+              "implyzvd5au",
+              "implyzvd5av",
+              "implyzvd5aw",
+              "implyzvd5ax",
+              "implyzvd5ay"
             ]
           }
         },
@@ -267,10 +267,10 @@
           "time": 64,
           "state": {
             "hidden": [
-              "imp89sfpb93",
-              "imp89sfpb94",
-              "imp89sfpb95",
-              "imp89sfpb96"
+              "implyzvd5av",
+              "implyzvd5aw",
+              "implyzvd5ax",
+              "implyzvd5ay"
             ]
           }
         },
@@ -278,9 +278,9 @@
           "time": 66,
           "state": {
             "hidden": [
-              "imp89sfpb94",
-              "imp89sfpb95",
-              "imp89sfpb96"
+              "implyzvd5aw",
+              "implyzvd5ax",
+              "implyzvd5ay"
             ]
           }
         },
@@ -288,8 +288,8 @@
           "time": 68,
           "state": {
             "hidden": [
-              "imp89sfpb95",
-              "imp89sfpb96"
+              "implyzvd5ax",
+              "implyzvd5ay"
             ]
           }
         },
@@ -297,7 +297,7 @@
           "time": 70,
           "state": {
             "hidden": [
-              "imp89sfpb96"
+              "implyzvd5ay"
             ]
           }
         },
@@ -313,7 +313,7 @@
       "type": "textGrid",
       "start": 80,
       "end": 98,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imp89sfpb97\" class=\" text-grid-item hidden \" > Observation </div><div id=\"imp89sfpb98\" class=\" text-grid-item hidden \" > Hypothesis </div><div id=\"imp89sfpb99\" class=\" text-grid-item hidden \" > Experiment </div><div id=\"imp89sfpb9a\" class=\" text-grid-item hidden \" > Analysis </div><div id=\"imp89sfpb9b\" class=\" text-grid-item hidden \" > Conclusion </div><div id=\"imp89sfpb9c\" class=\" text-grid-item hidden \" > Verification </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"implyzvd5az\" class=\" text-grid-item hidden \" > Observation </div><div id=\"implyzvd5b0\" class=\" text-grid-item hidden \" > Hypothesis </div><div id=\"implyzvd5b1\" class=\" text-grid-item hidden \" > Experiment </div><div id=\"implyzvd5b2\" class=\" text-grid-item hidden \" > Analysis </div><div id=\"implyzvd5b3\" class=\" text-grid-item hidden \" > Conclusion </div><div id=\"implyzvd5b4\" class=\" text-grid-item hidden \" > Verification </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -324,11 +324,11 @@
           "time": 80,
           "state": {
             "hidden": [
-              "imp89sfpb98",
-              "imp89sfpb99",
-              "imp89sfpb9a",
-              "imp89sfpb9b",
-              "imp89sfpb9c"
+              "implyzvd5b0",
+              "implyzvd5b1",
+              "implyzvd5b2",
+              "implyzvd5b3",
+              "implyzvd5b4"
             ]
           }
         },
@@ -336,10 +336,10 @@
           "time": 82,
           "state": {
             "hidden": [
-              "imp89sfpb99",
-              "imp89sfpb9a",
-              "imp89sfpb9b",
-              "imp89sfpb9c"
+              "implyzvd5b1",
+              "implyzvd5b2",
+              "implyzvd5b3",
+              "implyzvd5b4"
             ]
           }
         },
@@ -347,9 +347,9 @@
           "time": 84,
           "state": {
             "hidden": [
-              "imp89sfpb9a",
-              "imp89sfpb9b",
-              "imp89sfpb9c"
+              "implyzvd5b2",
+              "implyzvd5b3",
+              "implyzvd5b4"
             ]
           }
         },
@@ -357,8 +357,8 @@
           "time": 86,
           "state": {
             "hidden": [
-              "imp89sfpb9b",
-              "imp89sfpb9c"
+              "implyzvd5b3",
+              "implyzvd5b4"
             ]
           }
         },
@@ -366,7 +366,7 @@
           "time": 88,
           "state": {
             "hidden": [
-              "imp89sfpb9c"
+              "implyzvd5b4"
             ]
           }
         },
@@ -382,7 +382,7 @@
       "type": "textGrid",
       "start": 98,
       "end": 116,
-      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"imp89sfpb9d\" class=\" text-grid-item hidden \" > Focus </div><div id=\"imp89sfpb9e\" class=\" text-grid-item hidden \" > Clarity </div><div id=\"imp89sfpb9f\" class=\" text-grid-item hidden \" > Discipline </div><div id=\"imp89sfpb9g\" class=\" text-grid-item hidden \" > Patience </div><div id=\"imp89sfpb9h\" class=\" text-grid-item hidden \" > Reasoning </div><div id=\"imp89sfpb9i\" class=\" text-grid-item hidden \" > Consistency </div></div></section>",
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"implyzvd5b5\" class=\" text-grid-item hidden \" > Focus </div><div id=\"implyzvd5b6\" class=\" text-grid-item hidden \" > Clarity </div><div id=\"implyzvd5b7\" class=\" text-grid-item hidden \" > Discipline </div><div id=\"implyzvd5b8\" class=\" text-grid-item hidden \" > Patience </div><div id=\"implyzvd5b9\" class=\" text-grid-item hidden \" > Reasoning </div><div id=\"implyzvd5ba\" class=\" text-grid-item hidden \" > Consistency </div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -393,11 +393,11 @@
           "time": 98,
           "state": {
             "hidden": [
-              "imp89sfpb9e",
-              "imp89sfpb9f",
-              "imp89sfpb9g",
-              "imp89sfpb9h",
-              "imp89sfpb9i"
+              "implyzvd5b6",
+              "implyzvd5b7",
+              "implyzvd5b8",
+              "implyzvd5b9",
+              "implyzvd5ba"
             ]
           }
         },
@@ -405,10 +405,10 @@
           "time": 100,
           "state": {
             "hidden": [
-              "imp89sfpb9f",
-              "imp89sfpb9g",
-              "imp89sfpb9h",
-              "imp89sfpb9i"
+              "implyzvd5b7",
+              "implyzvd5b8",
+              "implyzvd5b9",
+              "implyzvd5ba"
             ]
           }
         },
@@ -416,9 +416,9 @@
           "time": 102,
           "state": {
             "hidden": [
-              "imp89sfpb9g",
-              "imp89sfpb9h",
-              "imp89sfpb9i"
+              "implyzvd5b8",
+              "implyzvd5b9",
+              "implyzvd5ba"
             ]
           }
         },
@@ -426,8 +426,8 @@
           "time": 104,
           "state": {
             "hidden": [
-              "imp89sfpb9h",
-              "imp89sfpb9i"
+              "implyzvd5b9",
+              "implyzvd5ba"
             ]
           }
         },
@@ -435,7 +435,7 @@
           "time": 106,
           "state": {
             "hidden": [
-              "imp89sfpb9i"
+              "implyzvd5ba"
             ]
           }
         },

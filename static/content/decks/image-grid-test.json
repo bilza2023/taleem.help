@@ -10,7 +10,7 @@
       "type": "titleAndSubtitle",
       "start": 0,
       "end": 8,
-      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"imp89sfp15p\" class=\" hidden taleem-heading-lg \" > Image Grid Testing </h1><h2 id=\"imp89sfp15q\" class=\" hidden taleem-heading-md \" > Grouping • repetition • visual organization </h2></section>",
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"implyzvcw7d\" class=\" hidden taleem-heading-lg \" > Image Grid Testing </h1><h2 id=\"implyzvcw7e\" class=\" hidden taleem-heading-md \" > Grouping • repetition • visual organization </h2></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -21,7 +21,7 @@
           "time": 0,
           "state": {
             "hidden": [
-              "imp89sfp15q"
+              "implyzvcw7e"
             ]
           }
         },
@@ -37,7 +37,7 @@
       "type": "imageGrid",
       "start": 8,
       "end": 22,
-      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imp89sfp15r\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp15s\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp15t\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp15u\" class=\" hidden \" src=\"force-intro.webp\" /></div></div></section>",
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"implyzvcw7f\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7g\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7h\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7i\" class=\" hidden \" src=\"force-intro.webp\" /></div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -48,9 +48,9 @@
           "time": 8,
           "state": {
             "hidden": [
-              "imp89sfp15s",
-              "imp89sfp15t",
-              "imp89sfp15u"
+              "implyzvcw7g",
+              "implyzvcw7h",
+              "implyzvcw7i"
             ]
           }
         },
@@ -58,8 +58,8 @@
           "time": 10,
           "state": {
             "hidden": [
-              "imp89sfp15t",
-              "imp89sfp15u"
+              "implyzvcw7h",
+              "implyzvcw7i"
             ]
           }
         },
@@ -67,7 +67,7 @@
           "time": 12,
           "state": {
             "hidden": [
-              "imp89sfp15u"
+              "implyzvcw7i"
             ]
           }
         },
@@ -83,7 +83,7 @@
       "type": "imageGrid",
       "start": 22,
       "end": 36,
-      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imp89sfp15v\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp15w\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp15x\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp15y\" class=\" hidden \" src=\"box.webp\" /></div></div></section>",
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"implyzvcw7j\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7k\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7l\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7m\" class=\" hidden \" src=\"box.webp\" /></div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -94,9 +94,9 @@
           "time": 22,
           "state": {
             "hidden": [
-              "imp89sfp15w",
-              "imp89sfp15x",
-              "imp89sfp15y"
+              "implyzvcw7k",
+              "implyzvcw7l",
+              "implyzvcw7m"
             ]
           }
         },
@@ -104,8 +104,8 @@
           "time": 24,
           "state": {
             "hidden": [
-              "imp89sfp15x",
-              "imp89sfp15y"
+              "implyzvcw7l",
+              "implyzvcw7m"
             ]
           }
         },
@@ -113,7 +113,7 @@
           "time": 26,
           "state": {
             "hidden": [
-              "imp89sfp15y"
+              "implyzvcw7m"
             ]
           }
         },
@@ -129,7 +129,7 @@
       "type": "imageGrid",
       "start": 36,
       "end": 50,
-      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imp89sfp15z\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp160\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp161\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp162\" class=\" hidden \" src=\"image.png\" /></div></div></section>",
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"implyzvcw7n\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7o\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7p\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7q\" class=\" hidden \" src=\"image.png\" /></div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -140,9 +140,9 @@
           "time": 36,
           "state": {
             "hidden": [
-              "imp89sfp160",
-              "imp89sfp161",
-              "imp89sfp162"
+              "implyzvcw7o",
+              "implyzvcw7p",
+              "implyzvcw7q"
             ]
           }
         },
@@ -150,8 +150,8 @@
           "time": 38,
           "state": {
             "hidden": [
-              "imp89sfp161",
-              "imp89sfp162"
+              "implyzvcw7p",
+              "implyzvcw7q"
             ]
           }
         },
@@ -159,7 +159,7 @@
           "time": 40,
           "state": {
             "hidden": [
-              "imp89sfp162"
+              "implyzvcw7q"
             ]
           }
         },
@@ -175,7 +175,7 @@
       "type": "imageGrid",
       "start": 50,
       "end": 64,
-      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imp89sfp263\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp264\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp265\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp266\" class=\" hidden \" src=\"box.webp\" /></div></div></section>",
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"implyzvcw7r\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7s\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7t\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7u\" class=\" hidden \" src=\"box.webp\" /></div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -186,9 +186,9 @@
           "time": 50,
           "state": {
             "hidden": [
-              "imp89sfp264",
-              "imp89sfp265",
-              "imp89sfp266"
+              "implyzvcw7s",
+              "implyzvcw7t",
+              "implyzvcw7u"
             ]
           }
         },
@@ -196,8 +196,8 @@
           "time": 52,
           "state": {
             "hidden": [
-              "imp89sfp265",
-              "imp89sfp266"
+              "implyzvcw7t",
+              "implyzvcw7u"
             ]
           }
         },
@@ -205,7 +205,7 @@
           "time": 54,
           "state": {
             "hidden": [
-              "imp89sfp266"
+              "implyzvcw7u"
             ]
           }
         },
@@ -221,7 +221,7 @@
       "type": "imageGrid",
       "start": 64,
       "end": 78,
-      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imp89sfp267\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp268\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp269\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp26a\" class=\" hidden \" src=\"eq.webp\" /></div></div></section>",
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"implyzvcw7v\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7w\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7x\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw7y\" class=\" hidden \" src=\"eq.webp\" /></div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -232,9 +232,9 @@
           "time": 64,
           "state": {
             "hidden": [
-              "imp89sfp268",
-              "imp89sfp269",
-              "imp89sfp26a"
+              "implyzvcw7w",
+              "implyzvcw7x",
+              "implyzvcw7y"
             ]
           }
         },
@@ -242,8 +242,8 @@
           "time": 66,
           "state": {
             "hidden": [
-              "imp89sfp269",
-              "imp89sfp26a"
+              "implyzvcw7x",
+              "implyzvcw7y"
             ]
           }
         },
@@ -251,7 +251,7 @@
           "time": 68,
           "state": {
             "hidden": [
-              "imp89sfp26a"
+              "implyzvcw7y"
             ]
           }
         },
@@ -267,7 +267,7 @@
       "type": "imageGrid",
       "start": 78,
       "end": 92,
-      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imp89sfp26b\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp26c\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp26d\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp26e\" class=\" hidden \" src=\"box.webp\" /></div></div></section>",
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"implyzvcw7z\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw80\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw81\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw82\" class=\" hidden \" src=\"box.webp\" /></div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -278,9 +278,9 @@
           "time": 78,
           "state": {
             "hidden": [
-              "imp89sfp26c",
-              "imp89sfp26d",
-              "imp89sfp26e"
+              "implyzvcw80",
+              "implyzvcw81",
+              "implyzvcw82"
             ]
           }
         },
@@ -288,8 +288,8 @@
           "time": 80,
           "state": {
             "hidden": [
-              "imp89sfp26d",
-              "imp89sfp26e"
+              "implyzvcw81",
+              "implyzvcw82"
             ]
           }
         },
@@ -297,7 +297,7 @@
           "time": 82,
           "state": {
             "hidden": [
-              "imp89sfp26e"
+              "implyzvcw82"
             ]
           }
         },
@@ -313,7 +313,7 @@
       "type": "imageGrid",
       "start": 92,
       "end": 106,
-      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"imp89sfp26f\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp26g\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp26h\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"imp89sfp26i\" class=\" hidden \" src=\"image.png\" /></div></div></section>",
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"implyzvcw83\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw84\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw85\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvcw86\" class=\" hidden \" src=\"image.png\" /></div></div></section>",
       "groups": {
         "hidden": [
           "hidden"
@@ -324,9 +324,9 @@
           "time": 92,
           "state": {
             "hidden": [
-              "imp89sfp26g",
-              "imp89sfp26h",
-              "imp89sfp26i"
+              "implyzvcw84",
+              "implyzvcw85",
+              "implyzvcw86"
             ]
           }
         },
@@ -334,8 +334,8 @@
           "time": 94,
           "state": {
             "hidden": [
-              "imp89sfp26h",
-              "imp89sfp26i"
+              "implyzvcw85",
+              "implyzvcw86"
             ]
           }
         },
@@ -343,7 +343,7 @@
           "time": 96,
           "state": {
             "hidden": [
-              "imp89sfp26i"
+              "implyzvcw86"
             ]
           }
         },

@@ -1,0 +1,652 @@
+{
+  "name": "Number Families",
+  "background": {
+    "backgroundColor": "#05070c",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.5
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 5,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"implyzvc61\" class=\" hidden taleem-heading-lg \" > Number Families </h1><h2 id=\"implyzvc62\" class=\" hidden taleem-heading-md \" > How the number system expanded step by step </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "implyzvc62"
+            ]
+          }
+        },
+        {
+          "time": 2,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageWithCaption",
+      "start": 5,
+      "end": 12,
+      "html": "<figure class=\"slide imageWithCaption\"><img id=\"implyzvc73\" class=\" hidden \" src=\"number-families.jpeg\" /><figcaption id=\"implyzvc74\" class=\" hidden \" > Smaller number families exist inside larger number families. </figcaption></figure>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 5,
+          "state": {
+            "hidden": [
+              "implyzvc74"
+            ]
+          }
+        },
+        {
+          "time": 7,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 12,
+      "end": 26,
+      "html": "<section class=\"slide imageRightBulletsLeft\"><ul><li id=\"implyzvc76\" class=\" hidden \" > Natural Numbers are inside Whole Numbers </li><li id=\"implyzvc77\" class=\" hidden \" > Whole Numbers are inside Integers </li><li id=\"implyzvc78\" class=\" hidden \" > Integers are inside Rational Numbers </li><li id=\"implyzvc79\" class=\" hidden \" > Real Numbers contain all major families </li></ul><img id=\"implyzvc75\" class=\" hidden \" src=\"number-families.jpeg\" /></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 12,
+          "state": {
+            "hidden": [
+              "implyzvc76",
+              "implyzvc77",
+              "implyzvc78",
+              "implyzvc79"
+            ]
+          }
+        },
+        {
+          "time": 14,
+          "state": {
+            "hidden": [
+              "implyzvc77",
+              "implyzvc78",
+              "implyzvc79"
+            ]
+          }
+        },
+        {
+          "time": 16,
+          "state": {
+            "hidden": [
+              "implyzvc78",
+              "implyzvc79"
+            ]
+          }
+        },
+        {
+          "time": 18,
+          "state": {
+            "hidden": [
+              "implyzvc79"
+            ]
+          }
+        },
+        {
+          "time": 20,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageWithCaption",
+      "start": 26,
+      "end": 33,
+      "html": "<figure class=\"slide imageWithCaption\"><img id=\"implyzvc7a\" class=\" hidden \" src=\"number-families-2.jpg\" /><figcaption id=\"implyzvc7b\" class=\" hidden \" > Natural Numbers are simple counting numbers. </figcaption></figure>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 26,
+          "state": {
+            "hidden": [
+              "implyzvc7b"
+            ]
+          }
+        },
+        {
+          "time": 28,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 33,
+      "end": 47,
+      "html": "<section class=\"slide imageLeftBulletsRight\"><img id=\"implyzvc7c\" class=\" hidden \" src=\"number-families-2.jpg\" /><ul><li id=\"implyzvc7d\" class=\" hidden \" > Humans first needed numbers for counting </li><li id=\"implyzvc7e\" class=\" hidden \" > These numbers are called Natural Numbers </li><li id=\"implyzvc7f\" class=\" hidden \" > Examples include 1, 2, 3 and 4 </li><li id=\"implyzvc7g\" class=\" hidden \" > Zero and negative numbers are not included </li></ul></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 33,
+          "state": {
+            "hidden": [
+              "implyzvc7d",
+              "implyzvc7e",
+              "implyzvc7f",
+              "implyzvc7g"
+            ]
+          }
+        },
+        {
+          "time": 35,
+          "state": {
+            "hidden": [
+              "implyzvc7e",
+              "implyzvc7f",
+              "implyzvc7g"
+            ]
+          }
+        },
+        {
+          "time": 37,
+          "state": {
+            "hidden": [
+              "implyzvc7f",
+              "implyzvc7g"
+            ]
+          }
+        },
+        {
+          "time": 39,
+          "state": {
+            "hidden": [
+              "implyzvc7g"
+            ]
+          }
+        },
+        {
+          "time": 41,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageWithCaption",
+      "start": 47,
+      "end": 54,
+      "html": "<figure class=\"slide imageWithCaption\"><img id=\"implyzvc7h\" class=\" hidden \" src=\"number-families.jpeg\" /><figcaption id=\"implyzvc7i\" class=\" hidden \" > Whole Numbers include zero together with Natural Numbers. </figcaption></figure>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 47,
+          "state": {
+            "hidden": [
+              "implyzvc7i"
+            ]
+          }
+        },
+        {
+          "time": 49,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 54,
+      "end": 68,
+      "html": "<section class=\"slide imageRightBulletsLeft\"><ul><li id=\"implyzvc7k\" class=\" hidden \" > Humans later needed zero </li><li id=\"implyzvc7l\" class=\" hidden \" > Zero represents no quantity </li><li id=\"implyzvc7m\" class=\" hidden \" > Natural Numbers together with zero form Whole Numbers </li><li id=\"implyzvc7n\" class=\" hidden \" > Examples include 0, 1, 2 and 3 </li></ul><img id=\"implyzvc7j\" class=\" hidden \" src=\"number-families.jpeg\" /></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 54,
+          "state": {
+            "hidden": [
+              "implyzvc7k",
+              "implyzvc7l",
+              "implyzvc7m",
+              "implyzvc7n"
+            ]
+          }
+        },
+        {
+          "time": 56,
+          "state": {
+            "hidden": [
+              "implyzvc7l",
+              "implyzvc7m",
+              "implyzvc7n"
+            ]
+          }
+        },
+        {
+          "time": 58,
+          "state": {
+            "hidden": [
+              "implyzvc7m",
+              "implyzvc7n"
+            ]
+          }
+        },
+        {
+          "time": 60,
+          "state": {
+            "hidden": [
+              "implyzvc7n"
+            ]
+          }
+        },
+        {
+          "time": 62,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageWithCaption",
+      "start": 68,
+      "end": 75,
+      "html": "<figure class=\"slide imageWithCaption\"><img id=\"implyzvc7o\" class=\" hidden \" src=\"number-families-2.jpg\" /><figcaption id=\"implyzvc7p\" class=\" hidden \" > Integers contain positive numbers, negative numbers and zero. </figcaption></figure>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 68,
+          "state": {
+            "hidden": [
+              "implyzvc7p"
+            ]
+          }
+        },
+        {
+          "time": 70,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 75,
+      "end": 89,
+      "html": "<section class=\"slide imageLeftBulletsRight\"><img id=\"implyzvc7q\" class=\" hidden \" src=\"number-families-2.jpg\" /><ul><li id=\"implyzvc7r\" class=\" hidden \" > Negative values became necessary </li><li id=\"implyzvc7s\" class=\" hidden \" > Temperature can go below zero </li><li id=\"implyzvc7t\" class=\" hidden \" > Debt can also be negative </li><li id=\"implyzvc7u\" class=\" hidden \" > Integers include -3, -2, -1, 0, 1 and 2 </li></ul></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 75,
+          "state": {
+            "hidden": [
+              "implyzvc7r",
+              "implyzvc7s",
+              "implyzvc7t",
+              "implyzvc7u"
+            ]
+          }
+        },
+        {
+          "time": 77,
+          "state": {
+            "hidden": [
+              "implyzvc7s",
+              "implyzvc7t",
+              "implyzvc7u"
+            ]
+          }
+        },
+        {
+          "time": 79,
+          "state": {
+            "hidden": [
+              "implyzvc7t",
+              "implyzvc7u"
+            ]
+          }
+        },
+        {
+          "time": 81,
+          "state": {
+            "hidden": [
+              "implyzvc7u"
+            ]
+          }
+        },
+        {
+          "time": 83,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "quoteSlide",
+      "start": 89,
+      "end": 97,
+      "html": "<blockquote class=\"slide quoteSlide\"><p id=\"implyzvc8v\" class=\" hidden \" > As human needs increased, the number system continued expanding. </p><footer id=\"implyzvc8w\" class=\" hidden \" > — Number Families </footer></blockquote>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 89,
+          "state": {
+            "hidden": [
+              "implyzvc8w"
+            ]
+          }
+        },
+        {
+          "time": 91,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageWithCaption",
+      "start": 97,
+      "end": 104,
+      "html": "<figure class=\"slide imageWithCaption\"><img id=\"implyzvc8x\" class=\" hidden \" src=\"number-families-2.jpg\" /><figcaption id=\"implyzvc8y\" class=\" hidden \" > Rational Numbers can be written as fractions. </figcaption></figure>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 97,
+          "state": {
+            "hidden": [
+              "implyzvc8y"
+            ]
+          }
+        },
+        {
+          "time": 99,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 104,
+      "end": 118,
+      "html": "<section class=\"slide imageRightBulletsLeft\"><ul><li id=\"implyzvc810\" class=\" hidden \" > Fractions became necessary </li><li id=\"implyzvc811\" class=\" hidden \" > Examples include 1/2 and 3/4 </li><li id=\"implyzvc812\" class=\" hidden \" > Terminating decimals are also rational </li><li id=\"implyzvc813\" class=\" hidden \" > 0.25 and 2.5 are Rational Numbers </li></ul><img id=\"implyzvc8z\" class=\" hidden \" src=\"number-families-2.jpg\" /></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 104,
+          "state": {
+            "hidden": [
+              "implyzvc810",
+              "implyzvc811",
+              "implyzvc812",
+              "implyzvc813"
+            ]
+          }
+        },
+        {
+          "time": 106,
+          "state": {
+            "hidden": [
+              "implyzvc811",
+              "implyzvc812",
+              "implyzvc813"
+            ]
+          }
+        },
+        {
+          "time": 108,
+          "state": {
+            "hidden": [
+              "implyzvc812",
+              "implyzvc813"
+            ]
+          }
+        },
+        {
+          "time": 110,
+          "state": {
+            "hidden": [
+              "implyzvc813"
+            ]
+          }
+        },
+        {
+          "time": 112,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageWithCaption",
+      "start": 118,
+      "end": 125,
+      "html": "<figure class=\"slide imageWithCaption\"><img id=\"implyzvc914\" class=\" hidden \" src=\"number-families-2.jpg\" /><figcaption id=\"implyzvc915\" class=\" hidden \" > Some numbers cannot be written as simple fractions. </figcaption></figure>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 118,
+          "state": {
+            "hidden": [
+              "implyzvc915"
+            ]
+          }
+        },
+        {
+          "time": 120,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 125,
+      "end": 139,
+      "html": "<section class=\"slide imageLeftBulletsRight\"><img id=\"implyzvc916\" class=\" hidden \" src=\"number-families.jpeg\" /><ul><li id=\"implyzvc917\" class=\" hidden \" > π and √2 are Irrational Numbers </li><li id=\"implyzvc918\" class=\" hidden \" > Their decimal forms never completely end </li><li id=\"implyzvc919\" class=\" hidden \" > They cannot be written as simple fractions </li><li id=\"implyzvc91a\" class=\" hidden \" > These numbers are also part of Real Numbers </li></ul></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 125,
+          "state": {
+            "hidden": [
+              "implyzvc917",
+              "implyzvc918",
+              "implyzvc919",
+              "implyzvc91a"
+            ]
+          }
+        },
+        {
+          "time": 127,
+          "state": {
+            "hidden": [
+              "implyzvc918",
+              "implyzvc919",
+              "implyzvc91a"
+            ]
+          }
+        },
+        {
+          "time": 129,
+          "state": {
+            "hidden": [
+              "implyzvc919",
+              "implyzvc91a"
+            ]
+          }
+        },
+        {
+          "time": 131,
+          "state": {
+            "hidden": [
+              "implyzvc91a"
+            ]
+          }
+        },
+        {
+          "time": 133,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageWithCaption",
+      "start": 139,
+      "end": 146,
+      "html": "<figure class=\"slide imageWithCaption\"><img id=\"implyzvc91b\" class=\" hidden \" src=\"number-families.jpeg\" /><figcaption id=\"implyzvc91c\" class=\" hidden \" > All Rational and Irrational Numbers together form Real Numbers. </figcaption></figure>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 139,
+          "state": {
+            "hidden": [
+              "implyzvc91c"
+            ]
+          }
+        },
+        {
+          "time": 141,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 146,
+      "end": 165,
+      "html": "<section class=\"slide imageRightBulletsLeft\"><ul><li id=\"implyzvc91e\" class=\" hidden \" > The number system expanded step by step </li><li id=\"implyzvc91f\" class=\" hidden \" > Each new family solved a new problem </li><li id=\"implyzvc91g\" class=\" hidden \" > Smaller families exist inside larger families </li><li id=\"implyzvc91h\" class=\" hidden \" > This hierarchy forms the Real Number system </li></ul><img id=\"implyzvc91d\" class=\" hidden \" src=\"number-families.jpeg\" /></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 146,
+          "state": {
+            "hidden": [
+              "implyzvc91e",
+              "implyzvc91f",
+              "implyzvc91g",
+              "implyzvc91h"
+            ]
+          }
+        },
+        {
+          "time": 148,
+          "state": {
+            "hidden": [
+              "implyzvc91f",
+              "implyzvc91g",
+              "implyzvc91h"
+            ]
+          }
+        },
+        {
+          "time": 150,
+          "state": {
+            "hidden": [
+              "implyzvc91g",
+              "implyzvc91h"
+            ]
+          }
+        },
+        {
+          "time": 152,
+          "state": {
+            "hidden": [
+              "implyzvc91h"
+            ]
+          }
+        },
+        {
+          "time": 154,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    }
+  ]
+}

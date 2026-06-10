@@ -1,0 +1,50 @@
+[
+  {
+    "id": "matrices-determinants",
+    "chapter": 1,
+    "title": "Matrices and Determinants",
+    "image": "/content/images/box.webp",
+    "lessons": 6,
+    "description": "Learn matrices, types of matrices, and how to evaluate determinants."
+  },
+  {
+    "id": "real-numbers",
+    "chapter": 2,
+    "title": "Real and Complex Numbers",
+    "image": "/content/images/box.webp",
+    "lessons": 5,
+    "description": "Understand real numbers, irrational numbers, and introduction to complex numbers."
+  },
+  {
+    "id": "logarithms",
+    "chapter": 3,
+    "title": "Logarithms",
+    "image": "/content/images/box.webp",
+    "lessons": 5,
+    "description": "Apply logarithmic laws to simplify and solve expressions."
+  },
+  {
+    "id": "algebraic-expressions",
+    "chapter": 4,
+    "title": "Algebraic Expressions and Formulas",
+    "image": "/content/images/box.webp",
+    "lessons": 6,
+    "description": "Use algebraic identities and formulas for simplification and expansion."
+  },
+  {
+    "id": "factorization",
+    "chapter": 5,
+    "title": "Factorization",
+    "image": "/content/images/box.webp",
+    "lessons": 5,
+    "description": "Factorize algebraic expressions using different techniques."
+  },
+  {
+    "id": "linear-equations",
+    "chapter": 6,
+    "title": "Linear Equations and Inequalities",
+    "image": "/content/images/box.webp",
+    "lessons": 5,
+    "description": "Solve equations and inequalities and understand their solutions."
+  }
+]
