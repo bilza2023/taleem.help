@@ -45,7 +45,7 @@
 	</div>
 
 	<div class="slogan">
-		Education for Every Pakistani
+		Education for Every Pakistani Student
 	</div>
 
 </footer>

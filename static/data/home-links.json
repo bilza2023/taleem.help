@@ -1,12 +1,42 @@
-
-
-
-[
+{
+  "tabs": [
     {
-      "anchor": "Prealg-01-why-pre-algebra",
-      "title": "Why Pre Algebra Course",
-      "id": "Prealg-01-why-pre-algebra",
-      "tag": "concept",
-      "image": "/content/images/eq.webp"
+      "id": "course",
+      "title": "Courses"
+    },
+    {
+      "id": "article",
+      "title": "Articles"
+    },
+    {
+      "id": "tool",
+      "title": "Tools"
+    }
+  ],
+
+  "items": [
+    {
+      "type": "course",
+      "contentId": "prealg-01",
+      "title": "Why Pre Algebra?",
+      "description": "A foundation course before Algebra.",
+      "image": "/content/images/image.png",
+      "url": "/player?course=prealg-01"
+    },
+    {
+      "type": "article",
+      "contentId": "test-article",
+      "title": "What is a Prime Number?",
+      "description": "An introduction to prime numbers.",
+      "image": "/content/images/image.png",
+      "url": "/articles?article=test-article"
+    },
+    {
+      "type": "tool",
+      "title": "Visual Quran",
+      "description": "Explore the Visual Quran project.",
+      "image": "/content/images/image.png",
+      "url": "/visual-quran"
     }
   ]
+}

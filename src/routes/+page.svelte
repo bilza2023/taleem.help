@@ -1,125 +1,40 @@
 <script>
-
 	import { onMount } from "svelte";
+	import HomeLinks from "$lib/components/HomeLinks.svelte";
 
-	import HomeLinks
-		from "$lib/components/HomeLinks.svelte";
+	const SERVER = "http://142.93.218.121:9000";
 
-	import Footer
-		from "$lib/components/Footer.svelte";
-
-	import {fetchHomeLinks}from "$lib/fetch";
-
-	let homeLinks = $state([]);
+	let home = $state(null);
+	let error = $state("");
 
 	onMount(async () => {
+		try {
+			const res = await fetch(`${SERVER}/home-links`);
 
-		homeLinks =
-			await fetchHomeLinks();
+			if (!res.ok) {
+				throw new Error("Failed to load home links");
+			}
+
+			home = await res.json();
+
+		} catch (err) {
+			error = err.message;
+		}
 	});
-
 </script>
 
-<style>
+<h1>Taleem</h1>
 
-	.container {
+{#if error}
 
-		padding: 40px;
+	<p>{error}</p>
 
-		text-align: center;
-	}
+{:else if !home}
 
-	.courses {
+	<p>Loading...</p>
 
-		display: flex;
+{:else}
 
-		justify-content: center;
+	<HomeLinks homeLinks={home.items} />
 
-		gap: 30px;
-
-		flex-wrap: wrap;
-
-		margin-bottom: 40px;
-	}
-
-	.course-card {
-
-		width: 420px;
-
-		border-radius: 14px;
-
-		overflow: hidden;
-
-		box-shadow:
-			0 4px 12px rgba(0,0,0,0.08);
-
-		text-decoration: none;
-
-		display: block;
-	}
-
-	.course-card img {
-
-		width: 100%;
-
-		display: block;
-	}
-
-	.line {
-
-		width: 100%;
-
-		max-width: 900px;
-
-		height: 1px;
-
-		margin: 40px auto;
-
-		background:
-			linear-gradient(
-				to right,
-				transparent,
-				rgba(255,255,255,0.15),
-				transparent
-			);
-	}
-
-</style>
-
-<div class="container">
-
-	<div class="courses">
-
-		<a
-			class="course-card"
-
-			href="/syllabus?course=fbise8math-syllabus"
-		>
-			<img
-				src="/content/images/class8.png"
-				alt="Class 8"
-			/>
-		</a>
-
-		<a
-			class="course-card"
-
-			href="/syllabus?course=fbise9math-syllabus"
-		>
-			<img
-				src="/content/images/class9.png"
-				alt="Class 9"
-			/>
-		</a>
-
-	</div>
-
-	<div class="line"></div>
-
-	<HomeLinks
-		{homeLinks}
-	/>
-
-	<Footer />
-
-</div>
+{/if}
