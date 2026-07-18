@@ -25,11 +25,11 @@
     },
     {
       "type": "article",
-      "contentId": "test-article",
-      "title": "What is a Prime Number?",
-      "description": "An introduction to prime numbers.",
-      "image": "/content/images/image.png",
-      "url": "/articles?article=test-article"
+      "contentId": "test",
+      "title": "This is a Test Article",
+      "description": "Test for an article",
+      "image": "/content/images/box.webp",
+      "url": "/articles?article=test"
     },
     {
       "type": "tool",
