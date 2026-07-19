@@ -1,39 +1,35 @@
+/* Light & Dark are built into Pico */
 
+/* ---------- Sepia ---------- */
 
-:root {
-	--bg: #0f172a;
-	--text: #e2e8f0;
+/* ---------- Sepia ---------- */
+
+html[data-theme="sepia"] {
+	--pico-background-color: #f5efe3;
+	--pico-color: #3f3528;
+
+	--pico-card-background-color: #fffaf0;
+	--pico-card-border-color: #d8cab4;
+
+	--pico-primary: #8a5a2b;
+	--pico-primary-hover: #6d451e;
+
+	--pico-muted-color: #7a6c5c;
 }
 
-/* HARD RESET (this is the key) */
-html, body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-}
+/* ---------- Forest ---------- */
 
-/* Reset */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+/* ---------- Forest ---------- */
 
-/* App base */
-body {
-	background: var(--bg);
-	color: var(--text);
-	font-family: system-ui, sans-serif;
-}
+html[data-theme="forest"] {
+	--pico-background-color: #0f1812;
+	--pico-color: #d8ead7;
 
-/* Remove spacing issues */
-img {
-	display: block;
-	max-width: 100%;
-}
+	--pico-card-background-color: #18231b;
+	--pico-card-border-color: #2e4a38;
 
-a {
-	color: var(--text);
-	text-decoration: none;
+	--pico-primary: #72c07b;
+	--pico-primary-hover: #56a55f;
+
+	--pico-muted-color: #a5b9a7;
 }

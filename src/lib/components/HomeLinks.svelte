@@ -18,46 +18,68 @@
 		display: block;
 		text-decoration: none;
 		color: inherit;
-		background: #fff;
-		border: 1px solid #e5e7eb;
+
+		border: 1px solid var(--pico-muted-border-color);
 		border-radius: 12px;
 		overflow: hidden;
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+		background: var(--pico-card-background-color);
+
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
 		transition:
 			transform 0.15s ease,
 			box-shadow 0.15s ease;
 	}
 
-	.card:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-	}
+.card {
+	transition:
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		box-shadow 0.2s ease;
+}
 
-	.card img {
-		display: block;
-		width: 100%;
-		height: 140px;
-		object-fit: cover;
-	}
+.card:hover {
+	background: var(--pico-card-sectioning-background-color);
+	border-color: var(--pico-primary);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
 
-	.content {
-		padding: 16px;
-	}
+.card img {
+	display: block;
+	width: calc(100% - 8px);
+	height: 140px;
+	object-fit: cover;
+	margin: 4px;
+	padding: 0;
+	border-radius: 8px;
+}
+.content h2 {
+	/* margin: 0 0 6px; */
+margin: 4px;
+padding:4px;
+	font-size: 0.95rem;
+	font-weight: 600;
+	line-height: 1.35;
 
-	.content h2 {
-		margin: 0 0 10px;
-		font-size: 1.15rem;
-		font-weight: 700;
-		line-height: 1.35;
-		color: #1f2937;
-	}
+	color: var(--pico-color);
 
-	.content p {
-		margin: 0;
-		font-size: 0.95rem;
-		line-height: 1.5;
-		color: #6b7280;
-	}
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.content p {
+	margin: 4px;
+padding:4px;
+font-size: 0.75rem;
+	font-weight: 400;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
 </style>
 
 <div class="grid">

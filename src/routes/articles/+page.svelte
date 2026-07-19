@@ -1,5 +1,6 @@
 <script>
 import "@picocss/pico/css/pico.classless.min.css";
+import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
 	import { onMount } from "svelte";
 	import { page } from "$app/state";
 
@@ -103,10 +104,9 @@ import "@picocss/pico/css/pico.classless.min.css";
 
 {:else}
 
+<ThemeSwitcher />
 <main class="container">
-	<!-- <article> -->
 		{@html article}
-	<!-- </article> -->
 </main>
 
 {/if}
