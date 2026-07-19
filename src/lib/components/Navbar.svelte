@@ -21,5 +21,6 @@
 
 <div class="navbar">
 	<a href="/"><div class="logo">Taleem.Help</div></a>
-	<div class="right">Guest | Logout</div>
+	<!-- <div class="right">Guest | Logout</div> -->
+	<div class="right">Welcome</div>
 </div>

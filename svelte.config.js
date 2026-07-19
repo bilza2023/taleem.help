@@ -1,17 +1,15 @@
-import adapter
-	from "@sveltejs/adapter-node";
 
 import { vitePreprocess }
 	from "@sveltejs/vite-plugin-svelte";
 
-export default {
+import adapter from "@sveltejs/adapter-static";
 
-	preprocess:
-		vitePreprocess(),
+export default {
+	preprocess: vitePreprocess(),
 
 	kit: {
-
-		adapter:
-			adapter()
+		adapter: adapter({
+			fallback: "index.html"
+		})
 	}
 };

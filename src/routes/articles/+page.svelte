@@ -3,8 +3,7 @@ import "@picocss/pico/css/pico.classless.min.css";
 	import { onMount } from "svelte";
 	import { page } from "$app/state";
 
-	const SERVER = "http://142.93.218.121:9000";
-
+	import { config } from "$lib/config";
 	let article = $state("");
 	let error = $state("");
 	let loading = $state(true);
@@ -19,7 +18,7 @@ import "@picocss/pico/css/pico.classless.min.css";
 		}
 
 		try {
-			const res = await fetch(`${SERVER}/article/${articleId}`);
+			const res = await fetch(`${config.apiUrl}/article/${articleId}`);
 
 			if (!res.ok) {
 				throw new Error("Article not found.");
@@ -37,21 +36,58 @@ import "@picocss/pico/css/pico.classless.min.css";
 
 <style>
 	.container {
-		padding: 0px;
-		margin: 10px 50px;
-		font-size: 1.4rem;
-		line-height: 2.4rem;
+	width: min(95vw, 1600px);
+	margin: 0 auto;
+	padding: 1rem 2rem;
+	box-sizing: border-box;
+
+	font-size: 1.2rem;
+	line-height: 1.8;
+}
+
+	:global(.container img) {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		margin: 1.5rem auto;
+		border-radius: 8px;
 	}
-:global(.container img) {
-    display: block;
-    width: 60%;
-    max-width: 60%;
-    height: auto;
-    margin: 1rem auto;
-}
-:global(.container ul) {
-   margin-left:40px;
-}
+
+	:global(.container ul) {
+		padding-left: 1.5rem;
+	}
+
+	:global(.container table) {
+		display: block;
+		overflow-x: auto;
+		width: 100%;
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			padding: 1rem;
+			font-size: 1rem;
+			line-height: 1.7;
+		}
+
+		:global(.container h1) {
+			font-size: 2rem;
+		}
+
+		:global(.container h2) {
+			font-size: 1.6rem;
+		}
+
+		:global(.container h3) {
+			font-size: 1.3rem;
+		}
+
+		:global(.container img) {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
 </style>
 {#if loading}
 
