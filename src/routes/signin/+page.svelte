@@ -31,7 +31,8 @@
 				error = data.message || "Invalid email or password.";
 				return;
 			}
-			//event for registering in 
+			//event for registering in
+			debugger; 
 localStorage.setItem("token", data.token);
 window.dispatchEvent(new Event("authchange"));
 goto("/");

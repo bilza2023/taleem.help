@@ -10,7 +10,8 @@ import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
 	let loading = $state(true);
 
 	onMount(async () => {
-		const articleId = page.url.searchParams.get("article");
+		// article changed to content
+		const articleId = page.url.searchParams.get("content");
 
 		if (!articleId) {
 			error = "No article specified.";
