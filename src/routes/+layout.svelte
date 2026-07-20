@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/state';
+	import "@picocss/pico/css/pico.classless.min.css";
 	import '../app.css';
 	import "$lib/player/css/themes/dark.css";
 	import "$lib/player/css/index.css";

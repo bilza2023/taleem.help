@@ -1,3 +1,20 @@
+<script>
+
+import Signin from "./Signin.svelte";
+</script>
+
+<nav class="navbar">
+	<a class="home" href="/">
+		<span class="icon">📘</span>
+		<span>Taleem.Help</span>
+	</a>
+	<div>
+		<Signin/>
+
+	</div>
+</nav>
+
+
 <style>
 	.navbar {
 		position: sticky;
@@ -47,10 +64,3 @@ color: var(--pico-color);
 		line-height: 1;
 	}
 </style>
-
-<nav class="navbar">
-	<a class="home" href="/">
-		<span class="icon">📘</span>
-		<span>Taleem.Help</span>
-	</a>
-</nav>
