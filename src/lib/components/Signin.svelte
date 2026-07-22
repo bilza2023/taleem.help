@@ -1,13 +1,15 @@
 <script>
 	import { onMount } from "svelte";
-
+import { goto } from "$app/navigation";
 	let loggedIn = false;
 
 	function checkToken() {
 		if (typeof localStorage === "undefined") return;
 		loggedIn = !!localStorage.getItem("token");
 	}
-
+function hub() {
+		goto("/hub");
+	}
 function logout() {
 	localStorage.removeItem("token");
 	window.dispatchEvent(new Event("authchange"));
@@ -28,9 +30,13 @@ function logout() {
 </script>
 <nav class="signin-nav">
 	{#if loggedIn}
-		<button class="icon-btn" on:click={logout} title="Logout">
+		<button class="icon-btn" on:click={hub} title="Hub">
+			💬
+		</button>
+	<button class="icon-btn" on:click={logout} title="Logout">
 			🚪
 		</button>
+	
 	{:else}
 		<a class="icon-btn" href="/signin" title="Sign In">
 			🔑

@@ -3,6 +3,10 @@
 	import { onMount } from "svelte";
 	import { page } from "$app/state";
 	import { config } from "$lib/config";
+import Discussion from "$lib/components/Discussion.svelte";
+	import Communication from "$lib/components/Communication.svelte";
+	let librarySlug = $state("");
+
 
 	let article = $state("");
 	let error = $state("");
@@ -40,6 +44,7 @@
 			}
 
 			article = await res.text();
+			librarySlug = articleId;
 		} catch (err) {
 			console.error(err);
 			error = err.message;
@@ -121,6 +126,8 @@
 
 <main class="container">
 	{@html article}
+	<Communication librarySlug={librarySlug} />
+	<Discussion librarySlug={librarySlug} />
 </main>
 
 {/if}
