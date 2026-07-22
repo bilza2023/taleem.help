@@ -1,17 +1,15 @@
 <script>
-// import "@picocss/pico/css/pico.classless.min.css";
-import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
+	import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
 	import { onMount } from "svelte";
 	import { page } from "$app/state";
-
 	import { config } from "$lib/config";
+
 	let article = $state("");
 	let error = $state("");
 	let loading = $state(true);
 
 	onMount(async () => {
-		// article changed to content
-		const articleId = page.url.searchParams.get("content");
+		const articleId = page.url.searchParams.get("article");
 
 		if (!articleId) {
 			error = "No article specified.";
@@ -19,11 +17,26 @@ import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
 			return;
 		}
 
+		const token = localStorage.getItem("token");
+
+		if (!token) {
+			error = "Please sign in first.";
+			loading = false;
+			return;
+		}
+
 		try {
-			const res = await fetch(`${config.apiUrl}/article/${articleId}`);
+			const url = `${config.apiUrl}/library/${articleId}`;
+			console.log("Fetching:", url);
+
+			const res = await fetch(url, {
+				headers: {
+					Authorization: `Bearer ${token}`
+				}
+			});
 
 			if (!res.ok) {
-				throw new Error("Article not found.");
+				throw new Error(`Article not found (${res.status})`);
 			}
 
 			article = await res.text();
@@ -35,17 +48,15 @@ import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
 		}
 	});
 </script>
-
 <style>
 	.container {
-	width: min(95vw, 1600px);
-	margin: 0 auto;
-	padding: 1rem 2rem;
-	box-sizing: border-box;
-
-	font-size: 1.2rem;
-	line-height: 1.8;
-}
+		width: min(95vw, 1600px);
+		margin: 0 auto;
+		padding: 1rem 2rem;
+		box-sizing: border-box;
+		font-size: 1.2rem;
+		line-height: 1.8;
+	}
 
 	:global(.container img) {
 		display: block;
@@ -91,6 +102,7 @@ import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
 		}
 	}
 </style>
+
 {#if loading}
 
 <main class="container">
@@ -106,8 +118,9 @@ import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
 {:else}
 
 <ThemeSwitcher />
+
 <main class="container">
-		{@html article}
+	{@html article}
 </main>
 
 {/if}
