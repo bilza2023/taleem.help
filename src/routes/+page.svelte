@@ -2,6 +2,7 @@
 	import { onMount } from "svelte";
 	import HomeLinks from "$lib/components/HomeLinks.svelte";
 	import { config } from "$lib/config";
+	import apiFetch from "$lib/utils/fetch";
 	// import Tabs from "$lib/components/Tabs.svelte";
 
 	let home = $state(null);
@@ -15,26 +16,28 @@
 		if (selectedTab === "All") {
 			return home.items;
 		}
-
+		
+		// console.log("items ==> " , home.items);
+		
 		return home.items.filter(
 			(item) => item.tag.toLowerCase() === selectedTab.toLowerCase()
 		);
 	});
+//onMount	
+onMount(async () => {
+	try {
+		const items = await apiFetch("GET", "/public/library?pageSize=50");
 
-	onMount(async () => {
-		try {
-			const res = await fetch(`${config.apiUrl}/home-links`);
-
-			if (!res.ok) {
-				throw new Error("Failed to load home links");
-			}
-
-			home = await res.json();
-
-		} catch (err) {
-			error = err.message;
-		}
-	});
+		home = {
+			items: items.map(item => ({
+				...item,
+				image: `/content/images/${item.thumbnail}`
+			}))
+		};
+	} catch (err) {
+		error = err.message;
+	}
+});
 </script>
 <style>
 	.container {

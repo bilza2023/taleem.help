@@ -1,32 +1,38 @@
 <script>
 	import { onMount } from "svelte";
-import { goto } from "$app/navigation";
+	import { goto } from "$app/navigation";
+
 	let loggedIn = false;
 
 	function checkToken() {
 		if (typeof localStorage === "undefined") return;
-		loggedIn = !!localStorage.getItem("token");
+		loggedIn = !!localStorage.getItem("taleem-token");
 	}
-function hub() {
+
+	function hub() {
 		goto("/hub");
 	}
-function logout() {
-	localStorage.removeItem("token");
-	window.dispatchEvent(new Event("authchange"));
-	loggedIn = false;
-}
+
+	function logout() {
+		localStorage.removeItem("taleem-token");
+		localStorage.removeItem("taleem-email");
+
+		window.dispatchEvent(new Event("authchange"));
+
+		loggedIn = false;
+	}
 
 	onMount(() => {
-	checkToken();
+		checkToken();
 
-	window.addEventListener("storage", checkToken);
-	window.addEventListener("authchange", checkToken);
+		window.addEventListener("storage", checkToken);
+		window.addEventListener("authchange", checkToken);
 
-	return () => {
-		window.removeEventListener("storage", checkToken);
-		window.removeEventListener("authchange", checkToken);
-	};
-});
+		return () => {
+			window.removeEventListener("storage", checkToken);
+			window.removeEventListener("authchange", checkToken);
+		};
+	});
 </script>
 <nav class="signin-nav">
 	{#if loggedIn}

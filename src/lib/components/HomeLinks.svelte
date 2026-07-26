@@ -1,3 +1,4 @@
+
 <script>
 	import { config } from "$lib/config";
 
@@ -88,7 +89,7 @@ font-size: 0.75rem;
 
 		<a
 			class="card"
-			href={card.url}
+			href={`/articles?article=${card.slug}`}
 		>
 
 			{#if card.image}

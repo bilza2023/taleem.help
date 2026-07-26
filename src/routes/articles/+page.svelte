@@ -1,58 +1,62 @@
 <script>
-	import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
 	import { onMount } from "svelte";
 	import { page } from "$app/state";
-	import { config } from "$lib/config";
-import Discussion from "$lib/components/Discussion.svelte";
+
+	import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
 	import Communication from "$lib/components/Communication.svelte";
+	import Discussion from "$lib/components/Discussion.svelte";
+	import apiFetch from "$lib/utils/fetch";
+
 	let librarySlug = $state("");
-
-
-	let article = $state("");
+	let libraryItem = $state(null);
 	let error = $state("");
 	let loading = $state(true);
 
 	onMount(async () => {
-		const articleId = page.url.searchParams.get("article");
+		librarySlug = page.url.searchParams.get("article");
 
-		if (!articleId) {
+		if (!librarySlug) {
 			error = "No article specified.";
 			loading = false;
 			return;
 		}
 
-		const token = localStorage.getItem("token");
-
-		if (!token) {
-			error = "Please sign in first.";
-			loading = false;
-			return;
-		}
-
 		try {
-			const url = `${config.apiUrl}/library/${articleId}`;
-			console.log("Fetching:", url);
-
-			const res = await fetch(url, {
-				headers: {
-					Authorization: `Bearer ${token}`
-				}
-			});
-
-			if (!res.ok) {
-				throw new Error(`Article not found (${res.status})`);
-			}
-
-			article = await res.text();
-			librarySlug = articleId;
+			libraryItem = await apiFetch("GET", `/library/${librarySlug}`);
+			console.log("libraryItem", libraryItem);
 		} catch (err) {
-			console.error(err);
 			error = err.message;
 		} finally {
 			loading = false;
 		}
 	});
 </script>
+
+{#if loading}
+
+<main class="container">
+	<p>Loading article…</p>
+</main>
+
+{:else if error}
+
+<main class="container">
+	<h2>{error}</h2>
+</main>
+
+{:else}
+
+<ThemeSwitcher />
+
+<main class="container">
+	{@html libraryItem.body}
+
+	<Communication referenceId={libraryItem.slug} type="user-comment" />
+	<Discussion librarySlug={libraryItem.slug} />
+</main>
+
+{/if}
+
 <style>
 	.container {
 		width: min(95vw, 1600px);
@@ -107,27 +111,3 @@ import Discussion from "$lib/components/Discussion.svelte";
 		}
 	}
 </style>
-
-{#if loading}
-
-<main class="container">
-	<p>Loading article…</p>
-</main>
-
-{:else if error}
-
-<main class="container">
-	<h2>{error}</h2>
-</main>
-
-{:else}
-
-<ThemeSwitcher />
-
-<main class="container">
-	{@html article}
-	<Communication librarySlug={librarySlug} />
-	<Discussion librarySlug={librarySlug} />
-</main>
-
-{/if}

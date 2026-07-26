@@ -1,6 +1,6 @@
 <script>
 	import { goto } from "$app/navigation";
-	import { config } from "$lib/config";
+	import apiFetch from "$lib/utils/fetch";
 
 	let email = "";
 	let password = "";
@@ -10,35 +10,22 @@
 
 	async function signin() {
 		error = "";
-
 		loading = true;
 
 		try {
-			const res = await fetch(`${config.apiUrl}/user/login`, {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json"
-				},
-				body: JSON.stringify({
-					email,
-					password
-				})
+			const data = await apiFetch("POST", "/user/login", {
+				email,
+				password
 			});
 
-			const data = await res.json();
+			localStorage.setItem("taleem-token", data.token);
+			localStorage.setItem("taleem-email", email);
 
-			if (!res.ok) {
-				error = data.message || "Invalid email or password.";
-				return;
-			}
-			//event for registering in
-			debugger; 
-localStorage.setItem("token", data.token);
-window.dispatchEvent(new Event("authchange"));
-goto("/");
-		
+			window.dispatchEvent(new Event("authchange"));
+
+			goto("/");
 		} catch (err) {
-			error = "Unable to connect to the server.";
+			error = err.message;
 		} finally {
 			loading = false;
 		}

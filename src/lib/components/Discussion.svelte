@@ -1,14 +1,13 @@
 <script>
 	import { config } from "$lib/config";
 
-	let {
-		librarySlug
-	} = $props();
+	let { librarySlug } = $props();
 
 	let loaded = $state(false);
 	let loading = $state(false);
 	let expanded = $state(false);
 	let discussions = $state([]);
+	let openIds = $state(new Set());
 
 	function formatDate(date) {
 		return new Date(date).toLocaleDateString();
@@ -37,7 +36,7 @@
 			);
 
 			if (!res.ok)
-				throw new Error("Unable to load discussion.");
+				throw new Error(`HTTP ${res.status}`);
 
 			discussions = await res.json();
 
@@ -54,11 +53,17 @@
 			loading = false;
 
 		}
-
 	}
 
-	function toggleCard(card) {
-		card.open = !card.open;
+	function toggleCard(id) {
+
+		if (openIds.has(id))
+			openIds.delete(id);
+		else
+			openIds.add(id);
+
+		openIds = new Set(openIds);
+
 	}
 </script>
 
@@ -82,84 +87,93 @@
 
 			<p>Loading discussion...</p>
 
+		{:else if discussions.length === 0}
+
+			<p class="empty">
+				No discussion yet.
+			</p>
+
 		{:else}
 
-			{#if discussions.length===0}
+			{#each discussions as d}
 
-				<p class="empty">
-					No discussion yet.
-				</p>
+				<div class="card">
 
-			{:else}
+					<div class="card-header">
 
-				{#each discussions as d}
+						<div class="question-preview">
 
-					<div class="card">
-
-						<div
-							class="card-header"
-							onclick={() => toggleCard(d)}>
-
-							<div>
-
-								<strong>
-									❓
-									{d.message}
-								</strong>
-
+							<div class="label">
+								❓ Question
 							</div>
 
-							<div class="date">
-
-								{formatDate(d.createdAt)}
-
+							<div class="preview">
+								{d.message}
 							</div>
 
 						</div>
 
-						{#if d.open}
-
-							<div class="body">
-
-								<div class="question">
-
-									{d.message}
-
-								</div>
-
-								{#if d.authorResponse}
-
-									<div class="answer">
-
-										<strong>
-											Author
-										</strong>
-
-										<p>
-											{d.authorResponse}
-										</p>
-
-									</div>
-
-								{:else}
-
-									<div class="waiting">
-
-										Waiting for reply...
-
-									</div>
-
-								{/if}
-
-							</div>
-
-						{/if}
+						<div class="date">
+							{formatDate(d.createdAt)}
+						</div>
 
 					</div>
 
-				{/each}
+					{#if openIds.has(d.id)}
 
-			{/if}
+						<div class="body">
+
+							<div class="question-box">
+								{d.message}
+							</div>
+
+							{#if d.authorResponse}
+
+								<div class="answer-box">
+
+									<div class="label">
+										✅ Author Reply
+									</div>
+
+									<div>
+										{d.authorResponse}
+									</div>
+
+								</div>
+
+							{:else}
+
+								<div class="waiting">
+									⏳ Waiting for reply...
+								</div>
+
+							{/if}
+
+							<button
+								class="link-btn"
+								onclick={() => toggleCard(d.id)}>
+
+								Show less
+
+							</button>
+
+						</div>
+
+					{:else}
+
+						<button
+							class="link-btn"
+							onclick={() => toggleCard(d.id)}>
+
+							Show answer →
+
+						</button>
+
+					{/if}
+
+				</div>
+
+			{/each}
 
 		{/if}
 
@@ -183,15 +197,23 @@
 
 .card{
 
+	background:var(--pico-card-background-color);
+
 	border:1px solid var(--pico-muted-border-color);
 
-	border-radius:12px;
+	border-radius:14px;
 
-	padding:.75rem;
+	padding:1rem;
 
-	margin-bottom:.75rem;
+	margin-bottom:1rem;
 
-	background:var(--pico-card-background-color);
+	transition:.2s ease;
+
+}
+
+.card:hover{
+
+	border-color:var(--pico-primary);
 
 }
 
@@ -201,15 +223,33 @@
 
 	justify-content:space-between;
 
+	align-items:flex-start;
+
 	gap:1rem;
-
-	cursor:pointer;
-
-	user-select:none;
 
 }
 
-.card-header strong{
+.question-preview{
+
+	flex:1;
+
+}
+
+.label{
+
+	font-size:.75rem;
+
+	text-transform:uppercase;
+
+	letter-spacing:.05em;
+
+	opacity:.65;
+
+	margin-bottom:.35rem;
+
+}
+
+.preview{
 
 	display:-webkit-box;
 
@@ -219,13 +259,17 @@
 
 	overflow:hidden;
 
+	font-weight:600;
+
+	line-height:1.5;
+
 }
 
 .date{
 
 	font-size:.8rem;
 
-	opacity:.7;
+	opacity:.65;
 
 	white-space:nowrap;
 
@@ -237,33 +281,69 @@
 
 }
 
-.question{
+.question-box{
+
+	background:rgba(255,255,255,.03);
+
+	border-radius:10px;
+
+	padding:1rem;
+
+	line-height:1.7;
 
 	margin-bottom:1rem;
 
-	line-height:1.6;
-
 }
 
-.answer{
+.answer-box{
+
+	background:rgba(0,140,255,.08);
 
 	border-left:4px solid var(--pico-primary);
 
-	padding-left:1rem;
+	border-radius:10px;
 
-}
+	padding:1rem;
 
-.answer p{
-
-	margin:.4rem 0 0;
+	line-height:1.7;
 
 }
 
 .waiting{
 
-	color:#b8860b;
+	background:rgba(255,180,0,.08);
+
+	border-left:4px solid orange;
+
+	border-radius:10px;
+
+	padding:1rem;
 
 	font-style:italic;
+
+}
+
+.link-btn{
+
+	margin-top:.75rem;
+
+	padding:0;
+
+	background:none;
+
+	border:none;
+
+	color:var(--pico-primary);
+
+	cursor:pointer;
+
+	font-size:.9rem;
+
+}
+
+.link-btn:hover{
+
+	text-decoration:underline;
 
 }
 
@@ -272,6 +352,24 @@
 	opacity:.7;
 
 	font-style:italic;
+
+}
+
+@media (max-width:768px){
+
+	.card-header{
+
+		flex-direction:column;
+
+		gap:.5rem;
+
+	}
+
+	.date{
+
+		font-size:.75rem;
+
+	}
 
 }
 
