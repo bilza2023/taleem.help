@@ -26,7 +26,7 @@
 //onMount	
 onMount(async () => {
 	try {
-		const items = await apiFetch("GET", "/public/library?pageSize=50");
+		const items = await apiFetch("GET", "/public/library");
 
 		home = {
 			items: items.map(item => ({
