@@ -6,20 +6,27 @@
 	let loading = $state(true);
 	let error = $state("");
 
-	onMount(async () => {
+	onMount(load);
 
-		const token = localStorage.getItem("token");
+	async function load() {
+
+		loading = true;
+		error = "";
+
+		const token = localStorage.getItem("taleem-token");
 
 		if (!token) {
-			error = "Please sign in.";
+
+			error = "Please sign in to view your Hub.";
 			loading = false;
 			return;
+
 		}
 
 		try {
 
 			const res = await fetch(
-				`${config.apiUrl}/communication/my`,
+				`${config.apiUrl}/communication/me`,
 				{
 					headers: {
 						Authorization: `Bearer ${token}`
@@ -30,13 +37,7 @@
 			if (!res.ok)
 				throw new Error(`HTTP ${res.status}`);
 
-			const data = await res.json();
-
-			communications = data.sort(
-				(a, b) =>
-					new Date(b.createdAt) -
-					new Date(a.createdAt)
-			);
+			communications = await res.json();
 
 		}
 		catch (err) {
@@ -51,125 +52,152 @@
 
 		}
 
-	});
+	}
 
 	function formatDate(date) {
+
 		return new Date(date).toLocaleString();
+
 	}
 </script>
 
 {#if loading}
 
-	<div class="feed">
+	<main class="feed">
+
+		<h1>My Hub</h1>
+
 		<p>Loading...</p>
-	</div>
+
+	</main>
 
 {:else if error}
 
-	<div class="feed">
+	<main class="feed">
+
+		<h1>My Hub</h1>
+
 		<p>{error}</p>
-	</div>
+
+	</main>
 
 {:else}
 
-<div class="feed">
+<main class="feed">
 
 	<h1>💬 My Hub</h1>
 
 	<p class="subtitle">
-		Your questions and replies across all lessons.
+
+		All of your questions, comments and author replies.
+
 	</p>
 
 	{#if communications.length === 0}
 
-		<div class="card">
-			<p>You haven't sent any communications yet.</p>
-		</div>
+		<article class="card">
+
+			You haven't sent any messages yet.
+
+		</article>
 
 	{:else}
 
 		{#each communications as c}
 
-		<article class="card">
+			<article class="card">
 
-			<div class="header">
+				<div class="header">
 
-				<div>
+					<div>
 
-					<div class="lesson">
-						📘 {c.library?.title ?? c.librarySlug}
+						<div class="lesson">
+
+							📘 {c.referenceId}
+
+						</div>
+
 					</div>
 
-					<div class="slug">
-						{c.librarySlug}
+					<div class="time">
+
+						{formatDate(c.createdAt)}
+
 					</div>
 
 				</div>
 
-				<div class="time">
-					{formatDate(c.createdAt)}
+				<div class="message">
+
+					{c.message}
+
 				</div>
 
-			</div>
+				{#if c.authorResponse}
 
-			<div class="message">
-				{c.message}
-			</div>
+					<div class="reply">
 
-			{#if c.authorResponse}
+						<div class="reply-title">
 
-				<div class="reply">
+							✅ Author Reply
 
-					<div class="reply-title">
-						✅ Author Reply
+						</div>
+
+						{c.authorResponse}
+
 					</div>
 
-					{c.authorResponse}
+				{:else}
 
-				</div>
+					<div class="waiting">
 
-			{:else}
+						🟡 Waiting for a reply
 
-				<div class="waiting">
-					🟡 Waiting for reply
-				</div>
+					</div>
 
-			{/if}
+				{/if}
 
-		</article>
+			</article>
 
 		{/each}
 
 	{/if}
 
-</div>
+</main>
 
 {/if}
 
 <style>
 
 .feed{
+
 	max-width:800px;
+
 	margin:2rem auto;
+
 	padding:0 1rem;
+
 }
 
 .subtitle{
-	color:var(--pico-muted-color);
+
 	margin-bottom:2rem;
+
+	color:var(--pico-muted-color);
+
 }
 
 .card{
 
-	background:var(--pico-card-background-color);
+	margin-bottom:1rem;
+
+	padding:1rem;
 
 	border:1px solid var(--pico-muted-border-color);
 
 	border-radius:14px;
 
-	padding:1rem;
-
-	margin-bottom:1rem;
+	background:var(--pico-card-background-color);
 
 	box-shadow:0 2px 8px rgba(0,0,0,.08);
 
@@ -183,33 +211,23 @@
 
 	align-items:flex-start;
 
-	margin-bottom:1rem;
-
 	gap:1rem;
+
+	margin-bottom:1rem;
 
 }
 
 .lesson{
 
-	font-weight:bold;
+	font-weight:700;
 
-	font-size:1.05rem;
-
-}
-
-.slug{
-
-	font-size:.85rem;
-
-	opacity:.65;
-
-	word-break:break-all;
+	word-break:break-word;
 
 }
 
 .time{
 
-	font-size:.8rem;
+	font-size:.85rem;
 
 	opacity:.7;
 
@@ -219,31 +237,31 @@
 
 .message{
 
-	font-size:1.05rem;
-
 	line-height:1.7;
 
 	margin-bottom:1rem;
+
+	white-space:pre-wrap;
 
 }
 
 .reply{
 
+	padding:1rem;
+
 	border-left:4px solid var(--pico-primary);
 
-	padding:.85rem 1rem;
+	border-radius:8px;
 
 	background:rgba(0,120,255,.05);
-
-	border-radius:8px;
 
 }
 
 .reply-title{
 
-	font-weight:bold;
-
 	margin-bottom:.5rem;
+
+	font-weight:700;
 
 }
 
@@ -251,15 +269,15 @@
 
 	display:inline-block;
 
-	padding:.35rem .75rem;
+	padding:.35rem .8rem;
 
 	border-radius:999px;
+
+	font-size:.9rem;
 
 	background:#f6c34422;
 
 	border:1px solid #f6c34466;
-
-	font-size:.9rem;
 
 }
 

@@ -1,4 +1,3 @@
-
 <script>
 	import { config } from "$lib/config";
 
@@ -24,63 +23,72 @@
 		border-radius: 12px;
 		overflow: hidden;
 
-		background: var(--pico-card-background-color);
-
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 
 		transition:
 			transform 0.15s ease,
-			box-shadow 0.15s ease;
+			background-color 0.2s ease,
+			border-color 0.2s ease,
+			box-shadow 0.2s ease;
 	}
 
-.card {
-	transition:
-		background-color 0.2s ease,
-		border-color 0.2s ease,
-		box-shadow 0.2s ease;
+	.card:hover {
+		transform: translateY(-2px);
+		border-color: var(--pico-primary);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+	}
+
+	/* Access colours */
+/* Open (green) */
+.card.open {
+    background: #9db6a4;
 }
 
-.card:hover {
-	background: var(--pico-card-sectioning-background-color);
-	border-color: var(--pico-primary);
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+/* Members (blue) */
+.card.members {
+    background: #737c8b;
 }
 
-.card img {
-	display: block;
-	width: calc(100% - 8px);
-	height: 140px;
-	object-fit: cover;
-	margin: 4px;
-	padding: 0;
-	border-radius: 8px;
-}
-.content h2 {
-	/* margin: 0 0 6px; */
-margin: 4px;
-padding:4px;
-	font-size: 0.95rem;
-	font-weight: 600;
-	line-height: 1.35;
-
-	color: var(--pico-color);
-
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
+/* Subscription (gold) */
+.card.subscription {
+    background: #b4a78f;
 }
 
-.content p {
-	margin: 4px;
-padding:4px;
-font-size: 0.75rem;
-	font-weight: 400;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
-}
+	.card img {
+		display: block;
+		width: calc(100% - 8px);
+		height: 140px;
+		object-fit: cover;
+		margin: 4px;
+		padding: 0;
+		border-radius: 8px;
+	}
+
+	.content h2 {
+		margin: 4px;
+		padding: 4px;
+		font-size: 0.95rem;
+		font-weight: 600;
+		line-height: 1.35;
+		color: var(--pico-color);
+
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	.content p {
+		margin: 4px;
+		padding: 4px;
+		font-size: 0.75rem;
+		font-weight: 400;
+
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
 </style>
 
 <div class="grid">
@@ -88,7 +96,7 @@ font-size: 0.75rem;
 	{#each homeLinks as card}
 
 		<a
-			class="card"
+			class={`card ${card.access?.toLowerCase()}`}
 			href={`/articles?article=${card.slug}`}
 		>
 

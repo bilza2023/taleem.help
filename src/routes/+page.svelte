@@ -34,9 +34,11 @@ onMount(async () => {
 				image: `/content/images/${item.thumbnail}`
 			}))
 		};
+		console.log("home-items" , home.items)
 	} catch (err) {
 		error = err.message;
 	}
+
 });
 </script>
 <style>
