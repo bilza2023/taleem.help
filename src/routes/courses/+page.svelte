@@ -1,16 +1,15 @@
 <script>
-///home/bilal-tariq/00--TALEEM/taleem.help/src/routes/+page.svelte
-
-	import HomeLinks from "$lib/components/HomeLinks.svelte";
-	import Subnav from "$lib/components/Subnav.svelte";
+	import { onMount } from "svelte";
+	import CourseLinks from "$lib/components/CourseLinks.svelte";
+	import CourseSubnav from "$lib/components/CourseSubnav.svelte";
 	import apiFetch from "$lib/utils/fetch";
-	import { page } from "$app/state";
 
 	let home = $state(null);
 	let error = $state("");
+
 	let active = $state("all");
 
-	async function loadLibrary(query = {}, id = "all") {
+	async function loadCourses(query = {}, id = "all") {
 
 		active = id;
 
@@ -20,7 +19,7 @@
 
 			const params = new URLSearchParams(query);
 
-			let url = "/public/library";
+			let url = "/public/course";
 
 			if (params.toString()) {
 
@@ -46,29 +45,9 @@
 
 	}
 
-	$effect(() => {
+	onMount(() => {
 
-		const course = page.url.searchParams.get("course");
-		const access = page.url.searchParams.get("access");
-
-		if (course) {
-
-			loadLibrary({ course }, course);
-
-		}
-		else if (access) {
-
-			loadLibrary(
-				{ access },
-				access === "OPEN" ? "free" : "premium"
-			);
-
-		}
-		else {
-
-			loadLibrary({}, "all");
-
-		}
+		loadCourses({}, "all");
 
 	});
 </script>
@@ -82,7 +61,10 @@
 
 </style>
 
-<Subnav active={active} />
+<CourseSubnav
+	active={active}
+	onQuery={loadCourses}
+/>
 
 {#if error}
 
@@ -96,7 +78,7 @@
 
 	<div class="container">
 
-		<HomeLinks homeLinks={home.items} />
+		<CourseLinks homeLinks={home.items} />
 
 	</div>
 
