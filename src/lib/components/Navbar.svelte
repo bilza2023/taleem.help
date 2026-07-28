@@ -1,17 +1,23 @@
 <script>
-
-import Signin from "./Signin.svelte";
+	import Signin from "./Signin.svelte";
+	import UserIDTag from "./UserIDTag.svelte";
 </script>
 
 <nav class="navbar">
+
 	<a class="home" href="/">
 		<span class="icon">📘</span>
 		<span>Taleem.Help</span>
 	</a>
-	<div>
-		<Signin/>
+
+	<div style="margin-left:auto; display:flex; align-items:center; gap:1rem;">
+
+		<UserIDTag />
+
+		<Signin />
 
 	</div>
+
 </nav>
 
 

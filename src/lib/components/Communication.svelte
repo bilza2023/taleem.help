@@ -1,4 +1,5 @@
 <script>
+///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/components/Communication.svelte
 	import apiFetch from "$lib/utils/fetch";
 
 	let { referenceId, type } = $props();

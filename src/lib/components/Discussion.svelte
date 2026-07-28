@@ -1,4 +1,5 @@
 <script>
+///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/components/Discussion.svelte
 	import { config } from "$lib/config";
 
 	let { librarySlug } = $props();
