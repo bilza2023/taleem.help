@@ -2,6 +2,7 @@
 	import { onMount } from "svelte";
 	import CourseLinks from "$lib/components/CourseLinks.svelte";
 	import CourseSubnav from "$lib/components/CourseSubnav.svelte";
+	import Footer from "$lib/components/Footer.svelte";
 	import apiFetch from "$lib/utils/fetch";
 
 	let home = $state(null);
@@ -57,6 +58,7 @@
 	.container {
 		padding: 10px;
 		margin: 10px;
+		min-height: 100vh;
 	}
 
 </style>
@@ -82,4 +84,7 @@
 
 	</div>
 
+	<br/>
+	<br/>
+<Footer />
 {/if}

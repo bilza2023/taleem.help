@@ -3,6 +3,7 @@
 
 	import HomeLinks from "$lib/components/HomeLinks.svelte";
 	import Subnav from "$lib/components/Subnav.svelte";
+	import Footer from "$lib/components/Footer.svelte";
 	import apiFetch from "$lib/utils/fetch";
 	import { page } from "$app/state";
 
@@ -77,15 +78,6 @@
 	});
 </script>
 
-<style>
-
-	.container {
-		padding: 10px;
-		margin: 10px;
-	}
-
-</style>
-
 <Subnav active={active} />
 
 {#if error}
@@ -104,4 +96,18 @@
 
 	</div>
 
+	<br/>
+	<br/>
+<Footer />
 {/if}
+
+
+<style>
+
+	.container {
+		padding: 10px;
+		margin: 10px;
+		min-height: 100vh;
+	}
+
+</style>
