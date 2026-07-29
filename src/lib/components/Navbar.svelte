@@ -1,6 +1,30 @@
 <script>
+	import { onMount } from "svelte";
+
 	import Signin from "./Signin.svelte";
 	import UserIDTag from "./UserIDTag.svelte";
+
+	let email = $state("");
+
+	function refresh() {
+		email = localStorage.getItem("taleem-email") || "";
+	}
+
+	function handleAuthChanged() {
+		refresh();
+	}
+
+	onMount(() => {
+
+		refresh();
+
+		window.addEventListener("authChanged", handleAuthChanged);
+
+		return () => {
+			window.removeEventListener("authChanged", handleAuthChanged);
+		};
+
+	});
 </script>
 
 <nav class="navbar">
@@ -12,14 +36,13 @@
 
 	<div style="margin-left:auto; display:flex; align-items:center; gap:1rem;">
 
-		<UserIDTag />
+		<UserIDTag {email} />
 
-		<Signin />
+		<Signin {email} />
 
 	</div>
 
 </nav>
-
 
 <style>
 	.navbar {
@@ -38,9 +61,8 @@
 			transparent
 		);
 
-
 		opacity: 0.75;
-color: var(--pico-color);
+		color: var(--pico-color);
 
 		backdrop-filter: blur(10px);
 
@@ -56,7 +78,6 @@ color: var(--pico-color);
 
 		font-size: 1.05rem;
 		font-weight: 600;
-
 
 		transition: color 0.2s ease;
 	}

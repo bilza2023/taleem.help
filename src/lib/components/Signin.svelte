@@ -1,13 +1,9 @@
 <script>
-	import { onMount } from "svelte";
 	import { goto } from "$app/navigation";
 
-	let loggedIn = false;
+	let { email = "" } = $props();
 
-	function checkToken() {
-		if (typeof localStorage === "undefined") return;
-		loggedIn = !!localStorage.getItem("taleem-token");
-	}
+	let loggedIn = $derived(!!email);
 
 	function hub() {
 		goto("/hub");
@@ -17,33 +13,24 @@
 		localStorage.removeItem("taleem-token");
 		localStorage.removeItem("taleem-email");
 
-		window.dispatchEvent(new Event("authchange"));
-
-		loggedIn = false;
+		window.dispatchEvent(new Event("authChanged"));
 	}
-
-	onMount(() => {
-		checkToken();
-
-		window.addEventListener("storage", checkToken);
-		window.addEventListener("authchange", checkToken);
-
-		return () => {
-			window.removeEventListener("storage", checkToken);
-			window.removeEventListener("authchange", checkToken);
-		};
-	});
 </script>
+
 <nav class="signin-nav">
+
 	{#if loggedIn}
-		<button class="icon-btn" on:click={hub} title="Hub">
+
+		<button class="icon-btn" onclick={hub} title="Hub">
 			💬
 		</button>
-	<button class="icon-btn" on:click={logout} title="Logout">
+
+		<button class="icon-btn" onclick={logout} title="Logout">
 			🚪
 		</button>
-	
+
 	{:else}
+
 		<a class="icon-btn" href="/signin" title="Sign In">
 			🔑
 		</a>
@@ -51,7 +38,9 @@
 		<a class="icon-btn" href="/signup" title="Create Account">
 			🔐
 		</a>
+
 	{/if}
+
 </nav>
 
 <style>

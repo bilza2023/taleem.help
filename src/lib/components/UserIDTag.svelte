@@ -1,13 +1,5 @@
 <script>
-	import { onMount } from "svelte";
-
-	let email = $state("");
-
-	onMount(() => {
-
-		email = localStorage.getItem("taleem-email") || "";
-
-	});
+	let { email = "" } = $props();
 
 	let username = $derived(
 		email

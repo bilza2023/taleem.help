@@ -21,7 +21,7 @@
 			localStorage.setItem("taleem-token", data.token);
 			localStorage.setItem("taleem-email", email);
 
-			window.dispatchEvent(new Event("authchange"));
+			window.dispatchEvent(new Event("authChanged"));
 
 			goto("/");
 		} catch (err) {
