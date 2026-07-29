@@ -11,41 +11,51 @@
 	let error = $state("");
 	let active = $state("all");
 
-	async function loadLibrary(query = {}, id = "all") {
+async function loadLibrary(query = {}, id = "all") {
 
-		active = id;
+	active = id;
 
-		try {
+	try {
 
-			error = "";
+		error = "";
 
-			const params = new URLSearchParams(query);
+		const params = new URLSearchParams(query);
 
-			let url = "/public/library";
+		let url = "/public/library";
 
-			if (params.toString()) {
+		if (params.toString()) {
 
-				url += `?${params.toString()}`;
-
-			}
-
-			const items = await apiFetch("GET", url);
-
-			home = {
-				items: items.map(item => ({
-					...item,
-					image: `/content/images/${item.thumbnail}`
-				}))
-			};
+			url += `?${params.toString()}`;
 
 		}
-		catch (err) {
 
-			error = err.message;
+		const items = await apiFetch("GET", url);
 
-		}
+		// --------------------------------------------------
+		// latest first.
+		// --------------------------------------------------
+		items.sort((a, b) =>
+			new Date(b.createdAt) - new Date(a.createdAt)
+		);
+		// oldest first
+		// items.sort((a, b) =>
+		// 	new Date(a.createdAt) - new Date(b.createdAt)
+		// );
+		home = {
+			items: items.map(item => ({
+				...item,
+				image: `/content/images/${item.thumbnail}`
+			}))
+		};
 
 	}
+	catch (err) {
+
+		error = err.message;
+
+	}
+
+}
 
 	$effect(() => {
 
