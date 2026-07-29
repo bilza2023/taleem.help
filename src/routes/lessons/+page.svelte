@@ -1,117 +1,92 @@
 <script>
-	// /src/routes/lessons/+page.svelte
+///home/bilal-tariq/00--TALEEM/taleem.help/src/routes/+page.svelte
 
 	import HomeLinks from "$lib/components/HomeLinks.svelte";
+	import CourseHero from "$lib/components/CourseHero.svelte";
+	import LessonsNav from "$lib/components/LessonsNav.svelte";
 	import Footer from "$lib/components/Footer.svelte";
-	import Subnav from "$lib/components/Subnav.svelte";
 	import apiFetch from "$lib/utils/fetch";
 	import { page } from "$app/state";
 
-	let course = $state(null);
-	let lessons = $state(null);
+	let home = $state(null);
+    let course = $state(null);
 	let error = $state("");
+	let active = $state("all");
 
-	async function loadCourse(courseSlug) {
+async function loadLibrary(courseSlug) {
 
-		try {
+	active = courseSlug;
 
-			error = "";
+	try {
 
-			// -----------------------------------------
-			// Course information
-			// -----------------------------------------
+		error = "";
 
-			course = await apiFetch(
-				"GET",
-				`/public/course/${courseSlug}`
-			);
+		// Load course (for the hero section later)
+		course = await apiFetch(
+			"GET",
+			`/public/course/${courseSlug}`
+		);
 
-			course.image = `/content/images/${course.thumbnail}`;
+		// Load lessons
+		const items = await apiFetch(
+			"GET",
+			`/public/course/${courseSlug}/list`
+		);
 
-			// -----------------------------------------
-			// Lessons
-			// -----------------------------------------
-
-			const items = await apiFetch(
-				"GET",
-				`/public/course/${courseSlug}/list`
-			);
-
-			lessons = items.map(item => ({
+		home = {
+			items: items.map(item => ({
 				...item,
 				image: `/content/images/${item.thumbnail}`
-			}));
+			}))
+		};
+console.log("home",home);
+	}
+	catch (err) {
 
-		}
-		catch (err) {
-
-			error = err.message;
-
-		}
+		error = err.message;
 
 	}
 
-	$effect(() => {
+}
+$effect(() => {
 
-		const courseSlug = page.url.searchParams.get("course");
+	const courseSlug = page.url.searchParams.get("course");
 
-		if (courseSlug) {
+	if (courseSlug) {
 
-			loadCourse(courseSlug);
+		loadLibrary(courseSlug);
 
-		}
+	}
 
-	});
+});
 </script>
 
-<Subnav active="courses" />
+<LessonsNav active={active} />
 
 {#if error}
 
 	<p>{error}</p>
 
-{:else if !course || !lessons}
+{:else if !home}
 
 	<p>Loading...</p>
 
 {:else}
 
 	<div class="container">
-
-		<section class="course">
-
-			<img
-				src={course.image}
-				alt={course.title}
-			/>
-
-			<div>
-
-				<h1>{course.title}</h1>
-
-				<p>{course.description}</p>
-
-				<p>
-					<strong>Access:</strong>
-					{course.access}
-				</p>
-
-				<p>
-					<strong>Lessons:</strong>
-					{lessons.length}
-				</p>
-
-			</div>
-
-		</section>
-
-		<HomeLinks homeLinks={lessons} />
+<CourseHero
+	course={course}
+	lessonCount={home.items.length}
+/>
+		<HomeLinks homeLinks={home.items} />
 
 	</div>
 
-	<Footer />
-
+	<br/>
+	<br/>
+<Footer />
 {/if}
+
 
 <style>
 
@@ -119,39 +94,6 @@
 		padding: 10px;
 		margin: 10px;
 		min-height: 100vh;
-	}
-
-	.course {
-		display: flex;
-		gap: 24px;
-		align-items: flex-start;
-		margin-bottom: 30px;
-	}
-
-	.course img {
-		width: 260px;
-		border-radius: 12px;
-	}
-
-	.course h1 {
-		margin-top: 0;
-	}
-
-	.course p {
-		line-height: 1.6;
-	}
-
-	@media (max-width: 700px) {
-
-		.course {
-			flex-direction: column;
-		}
-
-		.course img {
-			width: 100%;
-			max-width: 320px;
-		}
-
 	}
 
 </style>
