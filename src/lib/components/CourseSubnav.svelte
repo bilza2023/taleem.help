@@ -1,4 +1,5 @@
 <script>
+	///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/components/CourseSubnav.svelte
 
 	let {
 		onQuery = () => {},
@@ -6,6 +7,7 @@
 	} = $props();
 
 	const categories = [
+		{ id: "home", title: "Home", href: "/" },
 		{ id: "all", title: "All Courses", query: {} },
 		{ id: "free", title: "Free Courses", query: { access: "OPEN" } },
 		{ id: "premium", title: "Premium Courses", query: { access: "SUBSCRIPTION" } }
@@ -55,6 +57,8 @@
 		background: var(--pico-card-background-color);
 		color: var(--pico-color);
 
+		text-decoration: none;
+
 		transition:
 			background-color .15s,
 			transform .15s;
@@ -63,6 +67,10 @@
 	.pill:hover {
 		background: var(--pico-card-sectioning-background-color);
 		transform: translateY(-1px);
+	}
+
+	.pill:visited {
+		color: var(--pico-color);
 	}
 
 	.pill.active::after {
@@ -98,12 +106,26 @@
 
 		{#each categories as category}
 
-			<button
-				class="pill {active === category.id ? 'active' : ''}"
-				onclick={() => onQuery(category.query, category.id)}
-			>
-				{category.title}
-			</button>
+			{#if category.href}
+
+				<a
+					class="pill {active === category.id ? 'active' : ''}"
+					href={category.href}
+					data-sveltekit-preload-data
+				>
+					{category.title}
+				</a>
+
+			{:else}
+
+				<button
+					class="pill {active === category.id ? 'active' : ''}"
+					onclick={() => onQuery(category.query, category.id)}
+				>
+					{category.title}
+				</button>
+
+			{/if}
 
 		{/each}
 

@@ -1,44 +1,17 @@
 <script>
-	import { goto } from "$app/navigation";
+	///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/components/Subnav.svelte
 
 	let {
 		active = ""
 	} = $props();
 
 	const categories = [
-		{ id: "all", title: "All" },
-		{ id: "free", title: "Free Content", access: "OPEN" },
-		{ id: "premium", title: "Premium Content", access: "SUBSCRIPTION" },
-		{ id: "blog", title: "Blog", course: "blog" },
+		{ id: "all", title: "All", href: "/" },
+		{ id: "free", title: "Free Content", href: "/?access=OPEN" },
+		{ id: "premium", title: "Premium Content", href: "/?access=SUBSCRIPTION" },
+		{ id: "blog", title: "Blog", href: "/blog" },
 		{ id: "courses", title: "Courses", href: "/courses" }
 	];
-
-	function navigate(category) {
-
-		if (category.href) {
-
-			goto(category.href);
-			return;
-
-		}
-
-		const params = new URLSearchParams();
-
-		if (category.course) {
-			params.set("course", category.course);
-		}
-
-		if (category.access) {
-			params.set("access", category.access);
-		}
-
-		const url = params.toString()
-			? `/?${params.toString()}`
-			: "/";
-
-		goto(url);
-
-	}
 </script>
 
 <style>
@@ -114,26 +87,13 @@
 
 		{#each categories as category}
 
-			{#if category.href}
-
-				<a
-					class="pill {active === category.id ? 'active' : ''}"
-					href={category.href}
-					data-sveltekit-preload-data
-				>
-					{category.title}
-				</a>
-
-			{:else}
-
-				<button
-					class="pill {active === category.id ? 'active' : ''}"
-					onclick={() => navigate(category)}
-				>
-					{category.title}
-				</button>
-
-			{/if}
+			<a
+				class="pill {active === category.id ? 'active' : ''}"
+				href={category.href}
+				data-sveltekit-preload-data
+			>
+				{category.title}
+			</a>
 
 		{/each}
 

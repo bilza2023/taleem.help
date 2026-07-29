@@ -50,23 +50,27 @@
 
 		const course = page.url.searchParams.get("course");
 		const access = page.url.searchParams.get("access");
+		const sort = page.url.searchParams.get("sort");
 
 		if (course) {
 
-			loadLibrary({ course }, course);
+			loadLibrary({ course, sort }, course);
 
 		}
 		else if (access) {
 
 			loadLibrary(
-				{ access },
+				{ access, sort },
 				access === "OPEN" ? "free" : "premium"
 			);
 
 		}
 		else {
 
-			loadLibrary({}, "all");
+			loadLibrary(
+				sort ? { sort } : {},
+				"all"
+			);
 
 		}
 
