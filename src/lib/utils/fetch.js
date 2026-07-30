@@ -22,7 +22,7 @@ export default async function apiFetch(method, path, body = null) {
 	let response;
 
 	try {
-		response = await fetch(config.apiUrl + path, options);
+		response = await fetch(config.apiUrl  + path, options);
 	} catch {
 		throw new Error("Unable to contact Taleem Server.");
 	}

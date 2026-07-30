@@ -97,7 +97,7 @@
 
 		<a
 			class={`card ${card.access?.toLowerCase()}`}
-			href={`/?course=${card.slug}`}
+			href={`/lessons?course=${card.slug}`}
 		>
 
 			{#if card.image}
