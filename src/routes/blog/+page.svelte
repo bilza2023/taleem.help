@@ -108,9 +108,30 @@
 			href="/"
 			data-sveltekit-preload-data
 		>
-			Home
+			All
 		</a>
 
+		<a
+			class="pill"
+			href="/?access=OPEN"
+			data-sveltekit-preload-data
+		>
+			Free Content
+		</a>
+		<a
+			class="pill"
+			href="/?access=SUBSCRIPTION"
+			data-sveltekit-preload-data
+		>
+			Premiem Content
+		</a>
+		<a
+			class="pill"
+			href="/blog"
+			data-sveltekit-preload-data
+		>
+			Blog
+		</a>
 		<a
 			class="pill"
 			href="/courses"
