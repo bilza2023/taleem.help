@@ -6,7 +6,8 @@
 
 	import apiFetch from "$lib/utils/fetch";
 
-	const slug = page.params.librarySlug;
+	const courseSlug = page.params.courseSlug;
+	const librarySlug = page.params.librarySlug;
 
 	let loading = true;
 	let saving = false;
@@ -17,7 +18,7 @@
 		slug: "",
 		title: "",
 		description: "",
-		type: "HTML",
+		type: "ARTICLE",
 		body: "",
 		thumbnail: "",
 		courseSlug: ""
@@ -34,7 +35,7 @@
 
 				"GET",
 
-				`/admin/library/${slug}`
+				`/admin/library/${librarySlug}`
 
 			);
 
@@ -43,7 +44,7 @@
 				slug: item.slug,
 				title: item.title,
 				description: item.description ?? "",
-				type: item.type,
+				type: item.type ?? "ARTICLE",
 				body: item.body ?? "",
 				thumbnail: item.thumbnail ?? "",
 				courseSlug: item.course?.slug ?? ""
@@ -62,8 +63,6 @@
 
 		}
 
-console.log(courseSlug);
-console.log(librarySlug);
 	}
 
 	async function save() {
@@ -73,17 +72,28 @@ console.log(librarySlug);
 
 		try {
 
+			const data = {
+
+				slug: form.slug,
+				title: form.title,
+				description: form.description,
+				type: form.type,
+				body: form.body,
+				thumbnail: form.thumbnail
+
+			};
+
 			await apiFetch(
 
 				"PUT",
 
-				`admin/library/${slug}`,
+				`/admin/library/${librarySlug}`,
 
-				form
+				data
 
 			);
 
-			goto("/teacher/library");
+			goto(`/teacher/course/${courseSlug}/library`);
 
 		}
 		catch (err) {
@@ -124,7 +134,7 @@ console.log(librarySlug);
 	<button
 		type="button"
 		class="secondary"
-		onclick={() => goto("/teacher/library")}
+		onclick={() => goto(`/teacher/course/${courseSlug}/library`)}
 	>
 
 		Cancel
@@ -135,11 +145,7 @@ console.log(librarySlug);
 
 {#if loading}
 
-	<p>
-
-		Loading...
-
-	</p>
+	<p>Loading...</p>
 
 {:else}
 
@@ -172,7 +178,7 @@ console.log(librarySlug);
 
 			<input
 				bind:value={form.slug}
-				required
+				readonly
 			/>
 
 		</label>
@@ -190,11 +196,11 @@ console.log(librarySlug);
 
 		<label>
 
-			Course Slug
+			Course
 
 			<input
 				bind:value={form.courseSlug}
-				required
+				readonly
 			/>
 
 		</label>
@@ -205,10 +211,9 @@ console.log(librarySlug);
 
 			<select bind:value={form.type}>
 
-				<option value="HTML">HTML</option>
-				<option value="JSON">JSON</option>
-				<option value="TEXT">TEXT</option>
-				<option value="MARKDOWN">MARKDOWN</option>
+				<option value="ARTICLE">ARTICLE</option>
+				<option value="PLAYER">PLAYER</option>
+				<option value="MCQ">MCQ</option>
 
 			</select>
 
@@ -291,6 +296,13 @@ console.log(librarySlug);
 	textarea {
 
 		width: 100%;
+
+	}
+
+	input[readonly] {
+
+		background: var(--pico-muted-background-color);
+		cursor: default;
 
 	}
 
