@@ -21,16 +21,22 @@ async function loadLibrary(courseSlug) {
 
 		error = "";
 
-		// Load course (for the hero section later)
-		course = await apiFetch(
+		// Load course
+		const courses = await apiFetch(
 			"GET",
-			`/public/course/${courseSlug}`
+			"/public/course"
 		);
+
+		course = courses.find(c => c.slug === courseSlug);
+
+		if (!course) {
+			throw new Error(`Course "${courseSlug}" not found.`);
+		}
 
 		// Load lessons
 		const items = await apiFetch(
 			"GET",
-			`/public/course/${courseSlug}/list`
+			`/public/library?course=${courseSlug}`
 		);
 
 		home = {
@@ -39,7 +45,9 @@ async function loadLibrary(courseSlug) {
 				image: `/content/images/${item.thumbnail}`
 			}))
 		};
-console.log("home",home);
+
+		console.log("home", home);
+
 	}
 	catch (err) {
 
