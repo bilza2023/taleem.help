@@ -1,35 +1,47 @@
 <script>
 ///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/components/Communication.svelte
+
 	import apiFetch from "$lib/utils/fetch";
 
-	let { referenceId, type } = $props();
+	let { librarySlug, type } = $props();
 
 	let message = $state("");
 	let sending = $state(false);
 	let status = $state("");
 
 	async function sendMessage() {
+
 		if (!message.trim()) return;
 
 		sending = true;
 		status = "";
 
 		try {
+
 			await apiFetch("POST", "/communication", {
-				referenceId,
+				librarySlug,
 				type,
 				message
 			});
 
 			message = "";
 			status = "✓ Thank you. Your message has been sent.";
-		} catch (err) {
-			status = err.message;
-		} finally {
-			sending = false;
+
 		}
+		catch (err) {
+
+			status = err.message;
+
+		}
+		finally {
+
+			sending = false;
+
+		}
+
 	}
 </script>
+
 <section class="communication">
 	<h3>Questions / Feedback</h3>
 

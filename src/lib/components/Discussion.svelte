@@ -1,6 +1,7 @@
 <script>
-///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/components/Discussion.svelte
-	import { config } from "$lib/config";
+	///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/components/Discussion.svelte
+
+	import apiFetch from "$lib/utils/fetch";
 
 	let { librarySlug } = $props();
 
@@ -25,21 +26,10 @@
 
 		try {
 
-			const token = localStorage.getItem("token");
-
-			const res = await fetch(
-				`${config.apiUrl}/communication/library/${librarySlug}`,
-				{
-					headers: {
-						Authorization: `Bearer ${token}`
-					}
-				}
+			discussions = await apiFetch(
+				"GET",
+				`/library/discussion?article=${librarySlug}`
 			);
-
-			if (!res.ok)
-				throw new Error(`HTTP ${res.status}`);
-
-			discussions = await res.json();
 
 			loaded = true;
 
@@ -54,6 +44,7 @@
 			loading = false;
 
 		}
+
 	}
 
 	function toggleCard(id) {

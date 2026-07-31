@@ -51,7 +51,7 @@
 <main class="container">
 	{@html libraryItem.body}
 
-	<Communication referenceId={libraryItem.slug} type="user-comment" />
+	<Communication librarySlug={libraryItem.slug} type="user-comment" />
 	<Discussion librarySlug={libraryItem.slug} />
 </main>
 
