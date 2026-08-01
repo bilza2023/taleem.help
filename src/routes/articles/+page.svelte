@@ -1,7 +1,8 @@
 <script>
+///home/bilal-tariq/00--TALEEM/taleem.help/src/routes/articles/+page.svelte
 	import { onMount } from "svelte";
 	import { page } from "$app/state";
-
+import {config} from "$lib/config";
 	import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
 	import Communication from "$lib/components/Communication.svelte";
 	import Discussion from "$lib/components/Discussion.svelte";
@@ -12,6 +13,15 @@
 	let error = $state("");
 	let loading = $state(true);
 
+
+let articleBody = $derived.by(() => {
+	if (!libraryItem?.body) return "";
+
+	return libraryItem.body.replaceAll(
+		'src="',
+		`src="${config.apiUrl}/content/images/`
+	);
+});
 	onMount(async () => {
 		librarySlug = page.url.searchParams.get("article");
 
@@ -49,8 +59,8 @@
 <ThemeSwitcher />
 
 <main class="container">
-	{@html libraryItem.body}
-
+	<!-- {@html libraryItem.body} -->
+{@html articleBody}
 	<Communication librarySlug={libraryItem.slug} type="user-comment" />
 	<Discussion librarySlug={libraryItem.slug} />
 </main>

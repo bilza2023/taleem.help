@@ -63,6 +63,16 @@
 
 </svelte:head>
 
+
+<p>
+
+	<a href="/teacher/media/image">🖼️ Images</a>
+
+	&nbsp;&nbsp;|&nbsp;&nbsp;
+
+	<a href="/teacher/media/audio">🎵 Audio</a>
+
+</p>
 <h1>
 
 	My Courses
