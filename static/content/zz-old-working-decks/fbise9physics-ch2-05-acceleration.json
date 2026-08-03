@@ -1,0 +1,61 @@
+{
+    "version": "deck-v1",
+    "name": "Acceleration",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Acceleration", "showAt": 0 },
+          { "name": "image", "content": "acceleration.webp", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 5,
+        "end": 15,
+        "data": [
+          { "name": "title", "content": "What is Acceleration?", "showAt": 5 },
+          { "name": "para", "content": "Acceleration is the rate of change of velocity with respect to time.", "showAt": 8 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 15,
+        "end": 30,
+        "data": [
+          { "name": "image", "content": "acceleration.webp", "showAt": 15 },
+          { "name": "bullet", "content": "Acceleration occurs when speed changes.", "showAt": 17 },
+          { "name": "bullet", "content": "Acceleration also occurs when direction changes.", "showAt": 20 },
+          { "name": "bullet", "content": "It is a vector quantity.", "showAt": 23 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 30,
+        "end": 42,
+        "data": [
+          { "name": "title", "content": "Formula", "showAt": 30 },
+          { "name": "para", "content": "Acceleration = (Final Velocity − Initial Velocity) / Time.", "showAt": 33 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 42,
+        "end": 58,
+        "data": [
+          { "name": "image", "content": "acceleration.webp", "showAt": 42 },
+          { "name": "bullet", "content": "If velocity increases → positive acceleration.", "showAt": 44 },
+          { "name": "bullet", "content": "If velocity decreases → negative acceleration (retardation).", "showAt": 47 },
+          { "name": "bullet", "content": "SI unit of acceleration is m/s².", "showAt": 50 }
+        ]
+      }
+    ]
+  }
+  

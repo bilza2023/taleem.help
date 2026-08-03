@@ -1,0 +1,128 @@
+{
+  "version": "deck-v1",
+  "name": "EQ Mini Deck – Rich Side Panel (Fixed)",
+
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": null,
+    "backgroundImageOpacity": 0.3
+  },
+
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 5,
+      "data": [
+        { "name": "title", "content": "Expanding (a + b)²", "showAt": 0 },
+        { "name": "subtitle", "content": "EQ slides with deep explanations", "showAt": 1 }
+      ]
+    },
+
+    {
+      "type": "eq",
+      "start": 5,
+      "end": 22,
+      "data": [
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Given expression",
+          "showAt": 5,
+          "spItems": [
+            { "type": "spImage", "content": "given-expression.webp" }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$(a + b)^2$",
+          "showAt": 7,
+          "spItems": [
+            {
+              "type": "spText",
+              "content": "The exponent applies to the entire bracket and not to individual terms. This is a very common point of confusion for students. Misreading the square often leads to incorrect expansion. Writing the expression clearly helps avoid such mistakes. The square indicates repeated multiplication of the same bracket. This understanding is essential before moving forward. It prepares the expression for rewriting as a product."
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$(a + b)(a + b)$",
+          "showAt": 10,
+          "spItems": [
+            {
+              "type": "spText",
+              "content": "The squared expression is rewritten as a product of two identical brackets. This step converts exponent notation into multiplication. Writing the brackets explicitly makes the expansion process visible. Both brackets must be treated equally during multiplication. This form allows us to apply the distributive law systematically. No mental shortcuts should be taken at this stage. Clear rewriting reduces algebraic errors."
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Expansion strategy",
+          "showAt": 14,
+          "spItems": [
+            {
+              "type": "spText",
+              "content": "Each term in the first bracket multiplies every term in the second bracket. This is the core idea behind expansion. Missing any product leads to an incomplete result. Signs must be handled carefully throughout the process. Writing each multiplication step explicitly helps maintain clarity. This strategy ensures that all terms are accounted for. A structured approach prevents careless mistakes."
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "eq",
+      "start": 22,
+      "end": 44,
+      "data": [
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Multiply step by step",
+          "showAt": 22,
+          "spItems": [
+            { "type": "spImage", "content": "distribution.webp" }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$(a + b)(a + b)$",
+          "showAt": 24,
+          "spItems": [
+            {
+              "type": "spText",
+              "content": "The expression is rewritten again to keep the structure visible. Repetition helps maintain focus during longer calculations. Each multiplication should be performed deliberately. Avoid combining steps too early. Writing everything out reduces mental load. This habit improves accuracy. Clear visibility supports logical flow."
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$= a^2 + ab + ab + b^2$",
+          "showAt": 28,
+          "spItems": [
+            {
+              "type": "spText",
+              "content": "Each term from the first bracket multiplies each term from the second bracket. This produces four products in total. The term a multiplies both a and b. The term b also multiplies both a and b. All results must be written explicitly. Skipping steps often causes missing terms. This expanded form shows every multiplication clearly."
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$= a^2 + 2ab + b^2$",
+          "showAt": 34,
+          "spItems": [
+            {
+              "type": "spText",
+              "content": "Like terms are combined to simplify the expression. The two ab terms add together to form 2ab. This step reduces the expression to its standard form. No terms are lost during simplification. The structure becomes more compact and readable. This is the final expanded result. It represents the correct expansion of (a + b)²."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

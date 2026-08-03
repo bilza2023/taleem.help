@@ -1,0 +1,289 @@
+{
+  "name": "Image Strip Test",
+  "background": {
+    "backgroundColor": "#05070c",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.6
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 8,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"implyzvcy87\" class=\" hidden taleem-heading-lg \" > Image Strip Testing </h1><h2 id=\"implyzvcy88\" class=\" hidden taleem-heading-md \" > Sequences • comparison • visual rhythm </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "implyzvcy88"
+            ]
+          }
+        },
+        {
+          "time": 3,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 8,
+      "end": 20,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"implyzvcy89\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8a\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8b\" class=\" hidden \" src=\"image.png\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 8,
+          "state": {
+            "hidden": [
+              "implyzvcy8a",
+              "implyzvcy8b"
+            ]
+          }
+        },
+        {
+          "time": 10,
+          "state": {
+            "hidden": [
+              "implyzvcy8b"
+            ]
+          }
+        },
+        {
+          "time": 12,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 20,
+      "end": 32,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"implyzvcy8c\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8d\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8e\" class=\" hidden \" src=\"box.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 20,
+          "state": {
+            "hidden": [
+              "implyzvcy8d",
+              "implyzvcy8e"
+            ]
+          }
+        },
+        {
+          "time": 22,
+          "state": {
+            "hidden": [
+              "implyzvcy8e"
+            ]
+          }
+        },
+        {
+          "time": 24,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 32,
+      "end": 44,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"implyzvcy8f\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8g\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8h\" class=\" hidden \" src=\"image.png\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 32,
+          "state": {
+            "hidden": [
+              "implyzvcy8g",
+              "implyzvcy8h"
+            ]
+          }
+        },
+        {
+          "time": 34,
+          "state": {
+            "hidden": [
+              "implyzvcy8h"
+            ]
+          }
+        },
+        {
+          "time": 36,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 44,
+      "end": 56,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"implyzvcy8i\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8j\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8k\" class=\" hidden \" src=\"box.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 44,
+          "state": {
+            "hidden": [
+              "implyzvcy8j",
+              "implyzvcy8k"
+            ]
+          }
+        },
+        {
+          "time": 46,
+          "state": {
+            "hidden": [
+              "implyzvcy8k"
+            ]
+          }
+        },
+        {
+          "time": 48,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 56,
+      "end": 68,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"implyzvcy8l\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8m\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8n\" class=\" hidden \" src=\"force-intro.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 56,
+          "state": {
+            "hidden": [
+              "implyzvcy8m",
+              "implyzvcy8n"
+            ]
+          }
+        },
+        {
+          "time": 58,
+          "state": {
+            "hidden": [
+              "implyzvcy8n"
+            ]
+          }
+        },
+        {
+          "time": 60,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 68,
+      "end": 80,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"implyzvcy8o\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8p\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8q\" class=\" hidden \" src=\"box.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 68,
+          "state": {
+            "hidden": [
+              "implyzvcy8p",
+              "implyzvcy8q"
+            ]
+          }
+        },
+        {
+          "time": 70,
+          "state": {
+            "hidden": [
+              "implyzvcy8q"
+            ]
+          }
+        },
+        {
+          "time": 72,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 80,
+      "end": 92,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"implyzvcy8r\" class=\" hidden \" src=\"image.png\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8s\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcy8t\" class=\" hidden \" src=\"force-intro.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 80,
+          "state": {
+            "hidden": [
+              "implyzvcy8s",
+              "implyzvcy8t"
+            ]
+          }
+        },
+        {
+          "time": 82,
+          "state": {
+            "hidden": [
+              "implyzvcy8t"
+            ]
+          }
+        },
+        {
+          "time": 84,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    }
+  ]
+}

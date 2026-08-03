@@ -1,28 +1,39 @@
 <script>
-	import { page } from '$app/state';
+	import { page } from "$app/state";
+
 	import "@picocss/pico/css/pico.classless.min.css";
-	import '../app.css';
+	import "../app.css";
 	import "$lib/player/css/themes/dark.css";
 	import "$lib/player/css/index.css";
 
-	
-	import Navbar from '$lib/components/Navbar.svelte';
-	// import TopBar from '$lib/components/TopBar.svelte';
+	import Navbar from "$lib/components/Navbar.svelte";
+	import AdminNavbar from "$lib/components/AdminNavbar.svelte";
 
-	let { children } = $props();   // ✅ THIS LINE
-	const isPlayer = $derived(page.url.pathname.startsWith('/player'));
+	let { children } = $props();
 </script>
 
-{#if !isPlayer}
+{#if page.url.pathname.startsWith("/teacher")}
+
+	<AdminNavbar />
+
+{:else if !page.url.pathname.startsWith("/player") && !page.url.pathname.startsWith("/present") }
+
 	<Navbar />
-	<!-- <TopBar /> -->
+
 {/if}
+
 <main>
+
 	{@render children()}
+
 </main>
 
 <style>
+
 	main {
+
 		width: 100%;
+
 	}
+
 </style>

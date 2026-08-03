@@ -1,0 +1,133 @@
+
+{
+    "version": "deck-v1",
+    "name": "Fractions — Meaning and Types",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "/physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Fractions", "showAt": 0 },
+          { "name": "subtitle", "content": "Meaning and basic types", "showAt": 1 }
+        ]
+      },
+  
+      {
+        "type": "fillImage",
+        "start": 6,
+        "end": 14,
+        "data": [
+          { "name": "image", "content": "fractions-meaning-and-types.png", "showAt": 6 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 14,
+        "end": 26,
+        "data": [
+          {
+            "name": "title",
+            "content": "What a fraction means",
+            "showAt": 14
+          },
+          {
+            "name": "para",
+            "content": "A fraction represents equal parts of a whole. The whole is divided into equal parts, and some of those parts are taken. Fractions are about parts of something, not separate numbers.",
+            "showAt": 15
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 26,
+        "end": 38,
+        "data": [
+          { "name": "image", "content": "fractions-meaning-and-types.png", "showAt": 26 },
+          { "name": "bullet", "content": "A whole is divided into equal parts", "showAt": 27 },
+          { "name": "bullet", "content": "Some parts are selected or shaded", "showAt": 28 },
+          { "name": "bullet", "content": "Equal parts are the key idea", "showAt": 29 },
+          { "name": "bullet", "content": "Fractions always refer to a whole", "showAt": 30 }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 38,
+        "end": 50,
+        "data": [
+          { "name": "image", "content": "fractions-meaning-and-types.png", "showAt": 38 },
+          { "name": "bullet", "content": "Proper fraction means less than one whole", "showAt": 39 },
+          { "name": "bullet", "content": "Only part of the whole is taken", "showAt": 40 },
+          { "name": "bullet", "content": "The whole is not complete", "showAt": 41 },
+          { "name": "bullet", "content": "Most basic fraction type", "showAt": 42 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 50,
+        "end": 62,
+        "data": [
+          {
+            "name": "title",
+            "content": "When a fraction becomes more than one",
+            "showAt": 50
+          },
+          {
+            "name": "para",
+            "content": "If the shaded parts are more than one whole, the fraction is called an improper fraction. The same quantity can also be shown as a mixed number, which is a whole plus a fraction.",
+            "showAt": 51
+          }
+        ]
+      },
+  
+      {
+        "type": "imageWithTitle",
+        "start": 62,
+        "end": 72,
+        "data": [
+          { "name": "title", "content": "Proper, Improper, and Mixed Numbers", "showAt": 62 },
+          { "name": "image", "content": "fractions-meaning-and-types.png", "showAt": 63 }
+        ]
+      },
+  
+      {
+        "type": "keyIdeasSlide",
+        "start": 72,
+        "end": 82,
+        "data": [
+          { "name": "card", "icon": "🟦", "label": "Equal Parts", "showAt": 72 },
+          { "name": "card", "icon": "➗", "label": "Part of a Whole", "showAt": 73 },
+          { "name": "card", "icon": "⬇️", "label": "Less than One", "showAt": 74 },
+          { "name": "card", "icon": "⬆️", "label": "More than One", "showAt": 75 }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 82,
+        "end": 90,
+        "data": [
+          {
+            "name": "quote",
+            "content": "Fractions are not about symbols. They are about understanding parts of a whole.",
+            "showAt": 82
+          },
+          {
+            "name": "author",
+            "content": "— Taleem Concept Note",
+            "showAt": 83
+          }
+        ]
+      }
+    ]
+  }
+  

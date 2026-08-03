@@ -1,0 +1,131 @@
+{
+    "version": "deck-v1",
+    "name": "Number Families Overview",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": null,
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Number Families", "showAt": 0 },
+          { "name": "subtitle", "content": "Understanding numbers using one map", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "fillImage",
+        "start": 6,
+        "end": 14,
+        "data": [
+          { "name": "image", "content": "number-families.jpeg", "showAt": 6 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 14,
+        "end": 26,
+        "data": [
+          { "name": "image", "content": "number-families.jpeg", "showAt": 14 },
+          { "name": "bullet", "content": "The largest family is called Real Numbers", "showAt": 15 },
+          { "name": "bullet", "content": "It includes all usable numbers", "showAt": 17 },
+          { "name": "bullet", "content": "Everyday math lives here", "showAt": 19 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 26,
+        "end": 40,
+        "data": [
+          { "name": "image", "content": "number-families.jpeg", "showAt": 26 },
+          { "name": "bullet", "content": "Real Numbers split into two groups", "showAt": 27 },
+          { "name": "bullet", "content": "Rational Numbers", "showAt": 29 },
+          { "name": "bullet", "content": "Irrational Numbers", "showAt": 31 },
+          { "name": "bullet", "content": "Not all numbers can be fractions", "showAt": 33 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 40,
+        "end": 54,
+        "data": [
+          { "name": "image", "content": "number-families.jpeg", "showAt": 40 },
+          { "name": "bullet", "content": "Rational Numbers can be written as fractions", "showAt": 41 },
+          { "name": "bullet", "content": "Integers are part of this family", "showAt": 43 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 54,
+        "end": 70,
+        "data": [
+          { "name": "image", "content": "number-families.jpeg", "showAt": 54 },
+          { "name": "bullet", "content": "Counting numbers were not enough", "showAt": 55 },
+          { "name": "bullet", "content": "Integers were introduced", "showAt": 57 },
+          { "name": "bullet", "content": "They show values below zero", "showAt": 59 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 70,
+        "end": 88,
+        "data": [
+          { "name": "image", "content": "number-families.jpeg", "showAt": 70 },
+          { "name": "bullet", "content": "Zero acts as a boundary", "showAt": 71 },
+          { "name": "bullet", "content": "Positive Integers on one side", "showAt": 73 },
+          { "name": "bullet", "content": "Negative Integers on the other", "showAt": 75 },
+          { "name": "bullet", "content": "Helps with direction and comparison", "showAt": 77 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 88,
+        "end": 104,
+        "data": [
+          { "name": "image", "content": "number-families.jpeg", "showAt": 88 },
+          { "name": "bullet", "content": "Natural Numbers are the simplest family", "showAt": 89 },
+          { "name": "bullet", "content": "Used only for counting", "showAt": 91 },
+          { "name": "bullet", "content": "1, 2, 3 and so on", "showAt": 93 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 104,
+        "end": 122,
+        "data": [
+          { "name": "image", "content": "number-families.jpeg", "showAt": 104 },
+          { "name": "bullet", "content": "Number families were not made randomly", "showAt": 105 },
+          { "name": "bullet", "content": "Each new family solved a problem", "showAt": 107 },
+          { "name": "bullet", "content": "This map explains number structure", "showAt": 109 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 122,
+        "end": 138,
+        "data": [
+          { "name": "image", "content": "number-families.jpeg", "showAt": 122 },
+          { "name": "bullet", "content": "This map makes future topics easier", "showAt": 123 },
+          { "name": "bullet", "content": "Number line becomes clearer", "showAt": 125 },
+          { "name": "bullet", "content": "Algebra feels more logical", "showAt": 127 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 138,
+        "end": 150,
+        "data": [
+          { "name": "title", "content": "Quick Summary", "showAt": 138 },
+          {
+            "name": "para",
+            "content": "This single map shows how numbers grow step by step to solve real problems. Understanding these families builds a strong foundation for all future mathematics.",
+            "showAt": 139
+          }
+        ]
+      }
+    ]
+  }
+  

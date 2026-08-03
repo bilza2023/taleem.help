@@ -1,0 +1,87 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 24",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 24", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 140,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$2x^2 - 5xy - 3y^2$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Treat this as quadratic in x." },
+              { "type": "spText", "content": "Multiply 2 × (-3y²) = -6y²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$-6y^2 → -6y^2 \u0026 y^2$",
+            "showAt": 25,
+            "spItems": [
+              { "type": "spText", "content": "Find terms whose product is -6y² and sum is -5y." },
+              { "type": "spText", "content": "-6y + y = -5y." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$2x^2 - 6xy + xy - 3y^2$",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "Split the middle term." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$2x(x - 3y) + y(x - 3y)$",
+            "showAt": 65,
+            "spItems": [
+              { "type": "spText", "content": "Factor each group." },
+              { "type": "spText", "content": "Common binomial (x - 3y) appears." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(2x + y)(x - 3y)$",
+            "showAt": 85,
+            "spItems": [
+              { "type": "spText", "content": "Complete factorization." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: (2x + y)(x - 3y)",
+            "showAt": 105,
+            "spItems": [
+              { "type": "spText", "content": "Method Used: AC Method with variable coefficients." },
+              { "type": "spText", "content": "Always treat one variable as constant when factoring." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

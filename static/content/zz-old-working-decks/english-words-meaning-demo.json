@@ -1,0 +1,168 @@
+{
+    "version": "deck-v1",
+    "audio":"music.mp3",
+    "name": "Basic English Vocabulary – Demo",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "box.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Basic English Vocabulary", "showAt": 0 },
+          { "name": "subtitle", "content": "Word Meaning with Urdu Explanation", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 45,
+        "data": [
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Curious",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Meaning: Wanting to know or learn something new." },
+              { "type": "spText", "content": "Sentence: She is curious about how airplanes fly." },
+              { "type": "spText", "content": "Usage Tip: Often used with 'about'." },
+              { "type": "spText", "content": "Urdu Meaning: تجسس رکھنے والا، جاننے کا شوق رکھنے والا" },
+              { "type": "spText", "content": "Urdu Explanation: جو نئی چیزوں کے بارے میں جاننا چاہتا ہو۔" }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Honest",
+            "showAt": 12,
+            "spItems": [
+              { "type": "spText", "content": "Meaning: Always telling the truth." },
+              { "type": "spText", "content": "Sentence: He is honest in his work." },
+              { "type": "spText", "content": "Usage Tip: Used to describe a person’s character." },
+              { "type": "spText", "content": "Urdu Meaning: ایماندار، سچا" },
+              { "type": "spText", "content": "Urdu Explanation: جو جھوٹ نہ بولے اور دھوکہ نہ دے۔" }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Improve",
+            "showAt": 19,
+            "spItems": [
+              { "type": "spText", "content": "Meaning: To make something better than before." },
+              { "type": "spText", "content": "Sentence: She wants to improve her English." },
+              { "type": "spText", "content": "Usage Tip: Often followed by an object (improve skills, improve marks)." },
+              { "type": "spText", "content": "Urdu Meaning: بہتر بنانا، ترقی دینا" },
+              { "type": "spText", "content": "Urdu Explanation: کسی چیز کو پہلے سے بہتر کرنا۔" }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Effort",
+            "showAt": 26,
+            "spItems": [
+              { "type": "spText", "content": "Meaning: Hard work done to achieve something." },
+              { "type": "spText", "content": "Sentence: Success comes with effort." },
+              { "type": "spText", "content": "Usage Tip: Commonly used with words like make, put, and require." },
+              { "type": "spText", "content": "Urdu Meaning: کوشش، محنت" },
+              { "type": "spText", "content": "Urdu Explanation: کسی مقصد کو حاصل کرنے کے لیے کی جانے والی محنت۔" }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Respect",
+            "showAt": 33,
+            "spItems": [
+              { "type": "spText", "content": "Meaning: Showing value and honor to someone." },
+              { "type": "spText", "content": "Sentence: Students should respect their teachers." },
+              { "type": "spText", "content": "Usage Tip: Can be used as both noun and verb." },
+              { "type": "spText", "content": "Urdu Meaning: عزت، احترام" },
+              { "type": "spText", "content": "Urdu Explanation: کسی کو اہمیت دینا اور اس کی قدر کرنا۔" }
+            ]
+          }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 45,
+        "end": 85,
+        "data": [
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Confident",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "Meaning: Feeling sure about your abilities." },
+              { "type": "spText", "content": "Sentence: She feels confident before the exam." },
+              { "type": "spText", "content": "Usage Tip: Often used with 'about' or 'that'." },
+              { "type": "spText", "content": "Urdu Meaning: پُراعتماد، خود پر یقین رکھنے والا" },
+              { "type": "spText", "content": "Urdu Explanation: جو اپنی صلاحیتوں پر یقین رکھتا ہو۔" }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Decide",
+            "showAt": 52,
+            "spItems": [
+              { "type": "spText", "content": "Meaning: To make a choice after thinking." },
+              { "type": "spText", "content": "Sentence: He decided to study harder." },
+              { "type": "spText", "content": "Usage Tip: Often followed by 'to' + verb." },
+              { "type": "spText", "content": "Urdu Meaning: فیصلہ کرنا" },
+              { "type": "spText", "content": "Urdu Explanation: سوچ سمجھ کر کسی ایک بات کا انتخاب کرنا۔" }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Create",
+            "showAt": 59,
+            "spItems": [
+              { "type": "spText", "content": "Meaning: To make something new." },
+              { "type": "spText", "content": "Sentence: She created a new project." },
+              { "type": "spText", "content": "Usage Tip: Used in creative and business contexts." },
+              { "type": "spText", "content": "Urdu Meaning: تخلیق کرنا، بنانا" },
+              { "type": "spText", "content": "Urdu Explanation: کسی نئی چیز کو وجود میں لانا۔" }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Success",
+            "showAt": 66,
+            "spItems": [
+              { "type": "spText", "content": "Meaning: Achieving a goal or desired result." },
+              { "type": "spText", "content": "Sentence: Hard work leads to success." },
+              { "type": "spText", "content": "Usage Tip: Usually used as a noun." },
+              { "type": "spText", "content": "Urdu Meaning: کامیابی" },
+              { "type": "spText", "content": "Urdu Explanation: مقصد حاصل کر لینا یا کامیاب ہونا۔" }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Opportunity",
+            "showAt": 73,
+            "spItems": [
+              { "type": "spText", "content": "Meaning: A good chance to do something." },
+              { "type": "spText", "content": "Sentence: This internship is a great opportunity." },
+              { "type": "spText", "content": "Usage Tip: Often used with words like good, great, or golden." },
+              { "type": "spText", "content": "Urdu Meaning: موقع، سنہری موقع" },
+              { "type": "spText", "content": "Urdu Explanation: ایسا موقع جس سے فائدہ اٹھایا جا سکے۔" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

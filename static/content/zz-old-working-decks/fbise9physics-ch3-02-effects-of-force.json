@@ -1,0 +1,113 @@
+{
+    "version": "deck-v1",
+    "name": "Effects of Force",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "effects-of-force.webp",
+      "backgroundImageOpacity": 0.05
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 8,
+        "data": [
+          { "name": "title", "content": "What Can a Force Do?", "showAt": 0 },
+          { "name": "image", "content": "effects-of-force.webp", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 8,
+        "end": 18,
+        "data": [
+          { "name": "title", "content": "Three Main Effects of Force", "showAt": 8 },
+          { "name": "para", "content": "A force does not just push or pull. It produces measurable physical effects. These effects appear as changes in speed, changes in direction, or changes in shape.", "showAt": 10 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 18,
+        "end": 32,
+        "data": [
+          { "name": "image", "content": "effects-of-force.webp", "showAt": 18 },
+          { "name": "bullet", "content": "Change in speed (Acceleration)", "showAt": 20 },
+          { "name": "bullet", "content": "Change in direction", "showAt": 23 },
+          { "name": "bullet", "content": "Change in shape (Deformation)", "showAt": 26 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 32,
+        "end": 44,
+        "data": [
+          { "name": "title", "content": "Change in Speed (Acceleration)", "showAt": 32 },
+          { "name": "para", "content": "When a force acts on an object, it can increase its speed, decrease its speed, or bring it to rest. Any change in speed is called acceleration.", "showAt": 34 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 44,
+        "end": 56,
+        "data": [
+          { "name": "title", "content": "Acceleration and Force", "showAt": 44 },
+          { "name": "para", "content": "According to Newton’s Second Law, force causes acceleration. The acceleration produced depends on the magnitude of the force and the mass of the object.", "showAt": 46 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 56,
+        "end": 68,
+        "data": [
+          { "name": "title", "content": "Change in Direction", "showAt": 56 },
+          { "name": "para", "content": "A force can change the direction of motion even if the speed remains constant. When direction changes, velocity changes. This is also acceleration.", "showAt": 58 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 68,
+        "end": 80,
+        "data": [
+          { "name": "title", "content": "Example of Direction Change", "showAt": 68 },
+          { "name": "para", "content": "When a bat hits a moving ball, the ball’s direction changes. The applied force redirects the motion of the ball.", "showAt": 70 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 80,
+        "end": 92,
+        "data": [
+          { "name": "title", "content": "Change in Shape (Deformation)", "showAt": 80 },
+          { "name": "para", "content": "A force can also change the shape of an object. When an object is compressed, stretched, or bent, its shape changes due to applied force.", "showAt": 82 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 92,
+        "end": 104,
+        "data": [
+          { "name": "title", "content": "Elastic and Permanent Deformation", "showAt": 92 },
+          { "name": "para", "content": "If an object returns to its original shape after the force is removed, the deformation is elastic. If it does not return, the deformation is permanent.", "showAt": 94 }
+        ]
+      },
+      {
+        "type": "imageWithTitle",
+        "start": 104,
+        "end": 116,
+        "data": [
+          { "name": "title", "content": "Force Produces Physical Change", "showAt": 104 },
+          { "name": "image", "content": "effects-of-force.webp", "showAt": 105 }
+        ]
+      },
+      {
+        "type": "titleAndSubtitle",
+        "start": 116,
+        "end": 128,
+        "data": [
+          { "name": "title", "content": "Key Idea", "showAt": 116 },
+          { "name": "subtitle", "content": "A force can change speed, direction, or shape. These changes explain how motion and physical transformations occur in the world around us.", "showAt": 118 }
+        ]
+      }
+    ]
+  }
+  

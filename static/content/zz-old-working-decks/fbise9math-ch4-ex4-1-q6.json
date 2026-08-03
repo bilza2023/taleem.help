@@ -1,0 +1,88 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 6",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 6", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 85,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x^2 - 1)(y + 1) - (y + 3)(x^2 - 1)$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Notice the repeated factor (x² - 1)." },
+              { "type": "spText", "content": "This suggests factoring by common binomial." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x^2 - 1)[(y + 1) - (y + 3)]$",
+            "showAt": 18,
+            "spItems": [
+              { "type": "spText", "content": "Factor out (x² - 1) from both terms." },
+              { "type": "spText", "content": "Be careful with the negative sign." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x^2 - 1)(y + 1 - y - 3)$",
+            "showAt": 30,
+            "spItems": [
+              { "type": "spText", "content": "Now simplify inside the bracket." },
+              { "type": "spText", "content": "Combine like terms." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x^2 - 1)(-2)$",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "Because y - y = 0 and 1 - 3 = -2." },
+              { "type": "spText", "content": "So the bracket simplifies to -2." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$-2(x^2 - 1)$",
+            "showAt": 58,
+            "spItems": [
+              { "type": "spText", "content": "Final Answer: -2(x² - 1)." },
+              { "type": "spText", "content": "Common binomial factorization makes this very quick." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Method Used: Common Binomial Factor",
+            "showAt": 70,
+            "spItems": [
+              { "type": "spText", "content": "Whenever the same expression appears in multiple terms, factor it out first." },
+              { "type": "spText", "content": "Always simplify inside brackets before final answer." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,833 @@
+{
+  "name": "EQ Test 02",
+  "background": {
+    "backgroundColor": "#05070c",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.22
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 8,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"implyzvcj2e\" class=\" hidden taleem-heading-lg \" > EQ Deep Testing </h1><h2 id=\"implyzvcj2f\" class=\" hidden taleem-heading-md \" > Stress testing reasoning slides and side panels </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "implyzvcj2f"
+            ]
+          }
+        },
+        {
+          "time": 3,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 8,
+      "end": 28,
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"implyzvcj2g\" class=\" eq-item eq-title \" > Understanding the Square </li><li id=\"implyzvcj2h\" class=\" eq-item eq-math \" > $$ (a+b)^2 $$ </li><li id=\"implyzvcj2i\" class=\" eq-item eq-math \" > $$ = (a+b)(a+b) $$ </li><li id=\"implyzvcj2j\" class=\" eq-item eq-math \" > $$ = a(a+b) + b(a+b) $$ </li><li id=\"implyzvcj2k\" class=\" eq-item eq-math \" > $$ = a^2 + ab + ab + b^2 $$ </li><li id=\"implyzvcj2l\" class=\" eq-item eq-math \" > $$ = a^2 + 2ab + b^2 $$ </li></ul><div class=\"eq-side-panel\"><div id=\"implyzvcj2g-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"implyzvcj2g-sp-2\" class=\"eq-explain-item hidden\" > The exponent applies to the entire bracket. </div><div id=\"implyzvcj2g-sp-3\" class=\"eq-explain-item hidden\" > The bracket behaves like one unit. </div><div id=\"implyzvcj2g-sp-4\" class=\"eq-explain-item hidden\" > Students often square only one term. </div><div id=\"implyzvcj2g-sp-5\" class=\"eq-explain-item hidden\" > (a+b)^2 \\neq a^2+b^2 </div><div id=\"implyzvcj2g-sp-6\" class=\"eq-explain-item hidden\" > The whole bracket multiplies itself. </div><div id=\"implyzvcj2h-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"implyzvcj2h-sp-2\" class=\"eq-explain-item hidden\" > This expression represents repeated multiplication. </div><div id=\"implyzvcj2h-sp-3\" class=\"eq-explain-item hidden\" > The square means two identical brackets. </div><div id=\"implyzvcj2h-sp-4\" class=\"eq-explain-item hidden\" > (a+b)(a+b) </div><div id=\"implyzvcj2h-sp-5\" class=\"eq-explain-item hidden\" > Every term must eventually multiply. </div><div id=\"implyzvcj2i-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"image.png\" /></div><div id=\"implyzvcj2i-sp-2\" class=\"eq-explain-item hidden\" > Rewrite before expanding. </div><div id=\"implyzvcj2i-sp-3\" class=\"eq-explain-item hidden\" > This keeps the structure visible. </div><div id=\"implyzvcj2i-sp-4\" class=\"eq-explain-item hidden\" > Expansion becomes easier to track. </div><div id=\"implyzvcj2i-sp-5\" class=\"eq-explain-item hidden\" > a(a+b)+b(a+b) </div><div id=\"implyzvcj2j-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"force-intro.webp\" /></div><div id=\"implyzvcj2j-sp-2\" class=\"eq-explain-item hidden\" > Distribute carefully from left to right. </div><div id=\"implyzvcj2j-sp-3\" class=\"eq-explain-item hidden\" > Avoid skipping intermediate products. </div><div id=\"implyzvcj2j-sp-4\" class=\"eq-explain-item hidden\" > Every multiplication matters. </div><div id=\"implyzvcj2j-sp-5\" class=\"eq-explain-item hidden\" > a\\times a , a\\times b </div><div id=\"implyzvcj2j-sp-6\" class=\"eq-explain-item hidden\" > b\\times a , b\\times b </div><div id=\"implyzvcj2k-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"implyzvcj2k-sp-2\" class=\"eq-explain-item hidden\" > All four products are now visible. </div><div id=\"implyzvcj2k-sp-3\" class=\"eq-explain-item hidden\" > Nothing is hidden anymore. </div><div id=\"implyzvcj2k-sp-4\" class=\"eq-explain-item hidden\" > This is the expanded form before simplification. </div><div id=\"implyzvcj2k-sp-5\" class=\"eq-explain-item hidden\" > ab+ab </div><div id=\"implyzvcj2k-sp-6\" class=\"eq-explain-item hidden\" > The middle terms are identical. </div><div id=\"implyzvcj2l-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"implyzvcj2l-sp-2\" class=\"eq-explain-item hidden\" > Combine like terms carefully. </div><div id=\"implyzvcj2l-sp-3\" class=\"eq-explain-item hidden\" > Two copies of ab become 2ab. </div><div id=\"implyzvcj2l-sp-4\" class=\"eq-explain-item hidden\" > ab+ab=2ab </div><div id=\"implyzvcj2l-sp-5\" class=\"eq-explain-item hidden\" > This identity appears throughout algebra. </div></div></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ],
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 8,
+          "state": {
+            "focus": [
+              "implyzvcj2g"
+            ],
+            "dim": [
+              "implyzvcj2h",
+              "implyzvcj2i",
+              "implyzvcj2j",
+              "implyzvcj2k",
+              "implyzvcj2l"
+            ],
+            "visible": [
+              "implyzvcj2g-sp-1",
+              "implyzvcj2g-sp-2",
+              "implyzvcj2g-sp-3",
+              "implyzvcj2g-sp-4",
+              "implyzvcj2g-sp-5",
+              "implyzvcj2g-sp-6"
+            ],
+            "hidden": [
+              "implyzvcj2h-sp-1",
+              "implyzvcj2h-sp-2",
+              "implyzvcj2h-sp-3",
+              "implyzvcj2h-sp-4",
+              "implyzvcj2h-sp-5",
+              "implyzvcj2i-sp-1",
+              "implyzvcj2i-sp-2",
+              "implyzvcj2i-sp-3",
+              "implyzvcj2i-sp-4",
+              "implyzvcj2i-sp-5",
+              "implyzvcj2j-sp-1",
+              "implyzvcj2j-sp-2",
+              "implyzvcj2j-sp-3",
+              "implyzvcj2j-sp-4",
+              "implyzvcj2j-sp-5",
+              "implyzvcj2j-sp-6",
+              "implyzvcj2k-sp-1",
+              "implyzvcj2k-sp-2",
+              "implyzvcj2k-sp-3",
+              "implyzvcj2k-sp-4",
+              "implyzvcj2k-sp-5",
+              "implyzvcj2k-sp-6",
+              "implyzvcj2l-sp-1",
+              "implyzvcj2l-sp-2",
+              "implyzvcj2l-sp-3",
+              "implyzvcj2l-sp-4",
+              "implyzvcj2l-sp-5"
+            ]
+          }
+        },
+        {
+          "time": 10,
+          "state": {
+            "focus": [
+              "implyzvcj2h"
+            ],
+            "dim": [
+              "implyzvcj2g",
+              "implyzvcj2i",
+              "implyzvcj2j",
+              "implyzvcj2k",
+              "implyzvcj2l"
+            ],
+            "visible": [
+              "implyzvcj2h-sp-1",
+              "implyzvcj2h-sp-2",
+              "implyzvcj2h-sp-3",
+              "implyzvcj2h-sp-4",
+              "implyzvcj2h-sp-5"
+            ],
+            "hidden": [
+              "implyzvcj2g-sp-1",
+              "implyzvcj2g-sp-2",
+              "implyzvcj2g-sp-3",
+              "implyzvcj2g-sp-4",
+              "implyzvcj2g-sp-5",
+              "implyzvcj2g-sp-6",
+              "implyzvcj2i-sp-1",
+              "implyzvcj2i-sp-2",
+              "implyzvcj2i-sp-3",
+              "implyzvcj2i-sp-4",
+              "implyzvcj2i-sp-5",
+              "implyzvcj2j-sp-1",
+              "implyzvcj2j-sp-2",
+              "implyzvcj2j-sp-3",
+              "implyzvcj2j-sp-4",
+              "implyzvcj2j-sp-5",
+              "implyzvcj2j-sp-6",
+              "implyzvcj2k-sp-1",
+              "implyzvcj2k-sp-2",
+              "implyzvcj2k-sp-3",
+              "implyzvcj2k-sp-4",
+              "implyzvcj2k-sp-5",
+              "implyzvcj2k-sp-6",
+              "implyzvcj2l-sp-1",
+              "implyzvcj2l-sp-2",
+              "implyzvcj2l-sp-3",
+              "implyzvcj2l-sp-4",
+              "implyzvcj2l-sp-5"
+            ]
+          }
+        },
+        {
+          "time": 12,
+          "state": {
+            "focus": [
+              "implyzvcj2i"
+            ],
+            "dim": [
+              "implyzvcj2g",
+              "implyzvcj2h",
+              "implyzvcj2j",
+              "implyzvcj2k",
+              "implyzvcj2l"
+            ],
+            "visible": [
+              "implyzvcj2i-sp-1",
+              "implyzvcj2i-sp-2",
+              "implyzvcj2i-sp-3",
+              "implyzvcj2i-sp-4",
+              "implyzvcj2i-sp-5"
+            ],
+            "hidden": [
+              "implyzvcj2g-sp-1",
+              "implyzvcj2g-sp-2",
+              "implyzvcj2g-sp-3",
+              "implyzvcj2g-sp-4",
+              "implyzvcj2g-sp-5",
+              "implyzvcj2g-sp-6",
+              "implyzvcj2h-sp-1",
+              "implyzvcj2h-sp-2",
+              "implyzvcj2h-sp-3",
+              "implyzvcj2h-sp-4",
+              "implyzvcj2h-sp-5",
+              "implyzvcj2j-sp-1",
+              "implyzvcj2j-sp-2",
+              "implyzvcj2j-sp-3",
+              "implyzvcj2j-sp-4",
+              "implyzvcj2j-sp-5",
+              "implyzvcj2j-sp-6",
+              "implyzvcj2k-sp-1",
+              "implyzvcj2k-sp-2",
+              "implyzvcj2k-sp-3",
+              "implyzvcj2k-sp-4",
+              "implyzvcj2k-sp-5",
+              "implyzvcj2k-sp-6",
+              "implyzvcj2l-sp-1",
+              "implyzvcj2l-sp-2",
+              "implyzvcj2l-sp-3",
+              "implyzvcj2l-sp-4",
+              "implyzvcj2l-sp-5"
+            ]
+          }
+        },
+        {
+          "time": 14,
+          "state": {
+            "focus": [
+              "implyzvcj2j"
+            ],
+            "dim": [
+              "implyzvcj2g",
+              "implyzvcj2h",
+              "implyzvcj2i",
+              "implyzvcj2k",
+              "implyzvcj2l"
+            ],
+            "visible": [
+              "implyzvcj2j-sp-1",
+              "implyzvcj2j-sp-2",
+              "implyzvcj2j-sp-3",
+              "implyzvcj2j-sp-4",
+              "implyzvcj2j-sp-5",
+              "implyzvcj2j-sp-6"
+            ],
+            "hidden": [
+              "implyzvcj2g-sp-1",
+              "implyzvcj2g-sp-2",
+              "implyzvcj2g-sp-3",
+              "implyzvcj2g-sp-4",
+              "implyzvcj2g-sp-5",
+              "implyzvcj2g-sp-6",
+              "implyzvcj2h-sp-1",
+              "implyzvcj2h-sp-2",
+              "implyzvcj2h-sp-3",
+              "implyzvcj2h-sp-4",
+              "implyzvcj2h-sp-5",
+              "implyzvcj2i-sp-1",
+              "implyzvcj2i-sp-2",
+              "implyzvcj2i-sp-3",
+              "implyzvcj2i-sp-4",
+              "implyzvcj2i-sp-5",
+              "implyzvcj2k-sp-1",
+              "implyzvcj2k-sp-2",
+              "implyzvcj2k-sp-3",
+              "implyzvcj2k-sp-4",
+              "implyzvcj2k-sp-5",
+              "implyzvcj2k-sp-6",
+              "implyzvcj2l-sp-1",
+              "implyzvcj2l-sp-2",
+              "implyzvcj2l-sp-3",
+              "implyzvcj2l-sp-4",
+              "implyzvcj2l-sp-5"
+            ]
+          }
+        },
+        {
+          "time": 16,
+          "state": {
+            "focus": [
+              "implyzvcj2k"
+            ],
+            "dim": [
+              "implyzvcj2g",
+              "implyzvcj2h",
+              "implyzvcj2i",
+              "implyzvcj2j",
+              "implyzvcj2l"
+            ],
+            "visible": [
+              "implyzvcj2k-sp-1",
+              "implyzvcj2k-sp-2",
+              "implyzvcj2k-sp-3",
+              "implyzvcj2k-sp-4",
+              "implyzvcj2k-sp-5",
+              "implyzvcj2k-sp-6"
+            ],
+            "hidden": [
+              "implyzvcj2g-sp-1",
+              "implyzvcj2g-sp-2",
+              "implyzvcj2g-sp-3",
+              "implyzvcj2g-sp-4",
+              "implyzvcj2g-sp-5",
+              "implyzvcj2g-sp-6",
+              "implyzvcj2h-sp-1",
+              "implyzvcj2h-sp-2",
+              "implyzvcj2h-sp-3",
+              "implyzvcj2h-sp-4",
+              "implyzvcj2h-sp-5",
+              "implyzvcj2i-sp-1",
+              "implyzvcj2i-sp-2",
+              "implyzvcj2i-sp-3",
+              "implyzvcj2i-sp-4",
+              "implyzvcj2i-sp-5",
+              "implyzvcj2j-sp-1",
+              "implyzvcj2j-sp-2",
+              "implyzvcj2j-sp-3",
+              "implyzvcj2j-sp-4",
+              "implyzvcj2j-sp-5",
+              "implyzvcj2j-sp-6",
+              "implyzvcj2l-sp-1",
+              "implyzvcj2l-sp-2",
+              "implyzvcj2l-sp-3",
+              "implyzvcj2l-sp-4",
+              "implyzvcj2l-sp-5"
+            ]
+          }
+        },
+        {
+          "time": 18,
+          "state": {
+            "focus": [
+              "implyzvcj2l"
+            ],
+            "dim": [
+              "implyzvcj2g",
+              "implyzvcj2h",
+              "implyzvcj2i",
+              "implyzvcj2j",
+              "implyzvcj2k"
+            ],
+            "visible": [
+              "implyzvcj2l-sp-1",
+              "implyzvcj2l-sp-2",
+              "implyzvcj2l-sp-3",
+              "implyzvcj2l-sp-4",
+              "implyzvcj2l-sp-5"
+            ],
+            "hidden": [
+              "implyzvcj2g-sp-1",
+              "implyzvcj2g-sp-2",
+              "implyzvcj2g-sp-3",
+              "implyzvcj2g-sp-4",
+              "implyzvcj2g-sp-5",
+              "implyzvcj2g-sp-6",
+              "implyzvcj2h-sp-1",
+              "implyzvcj2h-sp-2",
+              "implyzvcj2h-sp-3",
+              "implyzvcj2h-sp-4",
+              "implyzvcj2h-sp-5",
+              "implyzvcj2i-sp-1",
+              "implyzvcj2i-sp-2",
+              "implyzvcj2i-sp-3",
+              "implyzvcj2i-sp-4",
+              "implyzvcj2i-sp-5",
+              "implyzvcj2j-sp-1",
+              "implyzvcj2j-sp-2",
+              "implyzvcj2j-sp-3",
+              "implyzvcj2j-sp-4",
+              "implyzvcj2j-sp-5",
+              "implyzvcj2j-sp-6",
+              "implyzvcj2k-sp-1",
+              "implyzvcj2k-sp-2",
+              "implyzvcj2k-sp-3",
+              "implyzvcj2k-sp-4",
+              "implyzvcj2k-sp-5",
+              "implyzvcj2k-sp-6"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 28,
+      "end": 46,
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"implyzvcj2m\" class=\" eq-item eq-title \" > Testing with Numbers </li><li id=\"implyzvcj2n\" class=\" eq-item eq-math \" > $$ (2+3)^2 $$ </li><li id=\"implyzvcj2o\" class=\" eq-item eq-math \" > $$ = 4 + 6 + 6 + 9 $$ </li><li id=\"implyzvcj2p\" class=\" eq-item eq-math \" > $$ = 25 $$ </li><li id=\"implyzvcj2q\" class=\" eq-item eq-line \" > Verification improves confidence. </li></ul><div class=\"eq-side-panel\"><div id=\"implyzvcj2m-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"image.png\" /></div><div id=\"implyzvcj2m-sp-2\" class=\"eq-explain-item hidden\" > The same structure works numerically. </div><div id=\"implyzvcj2m-sp-3\" class=\"eq-explain-item hidden\" > Substitute values into the identity. </div><div id=\"implyzvcj2m-sp-4\" class=\"eq-explain-item hidden\" > (2+3)^2 </div><div id=\"implyzvcj2m-sp-5\" class=\"eq-explain-item hidden\" > Now expand step by step. </div><div id=\"implyzvcj2n-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"implyzvcj2n-sp-2\" class=\"eq-explain-item hidden\" > The bracket multiplies itself. </div><div id=\"implyzvcj2n-sp-3\" class=\"eq-explain-item hidden\" > (2+3)(2+3) </div><div id=\"implyzvcj2n-sp-4\" class=\"eq-explain-item hidden\" > Repeated multiplication begins. </div><div id=\"implyzvcj2n-sp-5\" class=\"eq-explain-item hidden\" > Every term interacts. </div><div id=\"implyzvcj2o-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"implyzvcj2o-sp-2\" class=\"eq-explain-item hidden\" > 2\\times2=4 </div><div id=\"implyzvcj2o-sp-3\" class=\"eq-explain-item hidden\" > 2\\times3=6 </div><div id=\"implyzvcj2o-sp-4\" class=\"eq-explain-item hidden\" > 3\\times2=6 </div><div id=\"implyzvcj2o-sp-5\" class=\"eq-explain-item hidden\" > 3\\times3=9 </div><div id=\"implyzvcj2o-sp-6\" class=\"eq-explain-item hidden\" > All products are visible separately. </div><div id=\"implyzvcj2p-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"force-intro.webp\" /></div><div id=\"implyzvcj2p-sp-2\" class=\"eq-explain-item hidden\" > Add all values carefully. </div><div id=\"implyzvcj2p-sp-3\" class=\"eq-explain-item hidden\" > 4+6+6+9=25 </div><div id=\"implyzvcj2p-sp-4\" class=\"eq-explain-item hidden\" > The identity works correctly. </div><div id=\"implyzvcj2p-sp-5\" class=\"eq-explain-item hidden\" > Expansion and simplification agree. </div><div id=\"implyzvcj2q-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"image.png\" /></div><div id=\"implyzvcj2q-sp-2\" class=\"eq-explain-item hidden\" > Students trust identities more after testing. </div><div id=\"implyzvcj2q-sp-3\" class=\"eq-explain-item hidden\" > Concrete numbers reduce abstraction. </div><div id=\"implyzvcj2q-sp-4\" class=\"eq-explain-item hidden\" > Patterns become easier to recognize. </div></div></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ],
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 28,
+          "state": {
+            "focus": [
+              "implyzvcj2m"
+            ],
+            "dim": [
+              "implyzvcj2n",
+              "implyzvcj2o",
+              "implyzvcj2p",
+              "implyzvcj2q"
+            ],
+            "visible": [
+              "implyzvcj2m-sp-1",
+              "implyzvcj2m-sp-2",
+              "implyzvcj2m-sp-3",
+              "implyzvcj2m-sp-4",
+              "implyzvcj2m-sp-5"
+            ],
+            "hidden": [
+              "implyzvcj2n-sp-1",
+              "implyzvcj2n-sp-2",
+              "implyzvcj2n-sp-3",
+              "implyzvcj2n-sp-4",
+              "implyzvcj2n-sp-5",
+              "implyzvcj2o-sp-1",
+              "implyzvcj2o-sp-2",
+              "implyzvcj2o-sp-3",
+              "implyzvcj2o-sp-4",
+              "implyzvcj2o-sp-5",
+              "implyzvcj2o-sp-6",
+              "implyzvcj2p-sp-1",
+              "implyzvcj2p-sp-2",
+              "implyzvcj2p-sp-3",
+              "implyzvcj2p-sp-4",
+              "implyzvcj2p-sp-5",
+              "implyzvcj2q-sp-1",
+              "implyzvcj2q-sp-2",
+              "implyzvcj2q-sp-3",
+              "implyzvcj2q-sp-4"
+            ]
+          }
+        },
+        {
+          "time": 30,
+          "state": {
+            "focus": [
+              "implyzvcj2n"
+            ],
+            "dim": [
+              "implyzvcj2m",
+              "implyzvcj2o",
+              "implyzvcj2p",
+              "implyzvcj2q"
+            ],
+            "visible": [
+              "implyzvcj2n-sp-1",
+              "implyzvcj2n-sp-2",
+              "implyzvcj2n-sp-3",
+              "implyzvcj2n-sp-4",
+              "implyzvcj2n-sp-5"
+            ],
+            "hidden": [
+              "implyzvcj2m-sp-1",
+              "implyzvcj2m-sp-2",
+              "implyzvcj2m-sp-3",
+              "implyzvcj2m-sp-4",
+              "implyzvcj2m-sp-5",
+              "implyzvcj2o-sp-1",
+              "implyzvcj2o-sp-2",
+              "implyzvcj2o-sp-3",
+              "implyzvcj2o-sp-4",
+              "implyzvcj2o-sp-5",
+              "implyzvcj2o-sp-6",
+              "implyzvcj2p-sp-1",
+              "implyzvcj2p-sp-2",
+              "implyzvcj2p-sp-3",
+              "implyzvcj2p-sp-4",
+              "implyzvcj2p-sp-5",
+              "implyzvcj2q-sp-1",
+              "implyzvcj2q-sp-2",
+              "implyzvcj2q-sp-3",
+              "implyzvcj2q-sp-4"
+            ]
+          }
+        },
+        {
+          "time": 32,
+          "state": {
+            "focus": [
+              "implyzvcj2o"
+            ],
+            "dim": [
+              "implyzvcj2m",
+              "implyzvcj2n",
+              "implyzvcj2p",
+              "implyzvcj2q"
+            ],
+            "visible": [
+              "implyzvcj2o-sp-1",
+              "implyzvcj2o-sp-2",
+              "implyzvcj2o-sp-3",
+              "implyzvcj2o-sp-4",
+              "implyzvcj2o-sp-5",
+              "implyzvcj2o-sp-6"
+            ],
+            "hidden": [
+              "implyzvcj2m-sp-1",
+              "implyzvcj2m-sp-2",
+              "implyzvcj2m-sp-3",
+              "implyzvcj2m-sp-4",
+              "implyzvcj2m-sp-5",
+              "implyzvcj2n-sp-1",
+              "implyzvcj2n-sp-2",
+              "implyzvcj2n-sp-3",
+              "implyzvcj2n-sp-4",
+              "implyzvcj2n-sp-5",
+              "implyzvcj2p-sp-1",
+              "implyzvcj2p-sp-2",
+              "implyzvcj2p-sp-3",
+              "implyzvcj2p-sp-4",
+              "implyzvcj2p-sp-5",
+              "implyzvcj2q-sp-1",
+              "implyzvcj2q-sp-2",
+              "implyzvcj2q-sp-3",
+              "implyzvcj2q-sp-4"
+            ]
+          }
+        },
+        {
+          "time": 34,
+          "state": {
+            "focus": [
+              "implyzvcj2p"
+            ],
+            "dim": [
+              "implyzvcj2m",
+              "implyzvcj2n",
+              "implyzvcj2o",
+              "implyzvcj2q"
+            ],
+            "visible": [
+              "implyzvcj2p-sp-1",
+              "implyzvcj2p-sp-2",
+              "implyzvcj2p-sp-3",
+              "implyzvcj2p-sp-4",
+              "implyzvcj2p-sp-5"
+            ],
+            "hidden": [
+              "implyzvcj2m-sp-1",
+              "implyzvcj2m-sp-2",
+              "implyzvcj2m-sp-3",
+              "implyzvcj2m-sp-4",
+              "implyzvcj2m-sp-5",
+              "implyzvcj2n-sp-1",
+              "implyzvcj2n-sp-2",
+              "implyzvcj2n-sp-3",
+              "implyzvcj2n-sp-4",
+              "implyzvcj2n-sp-5",
+              "implyzvcj2o-sp-1",
+              "implyzvcj2o-sp-2",
+              "implyzvcj2o-sp-3",
+              "implyzvcj2o-sp-4",
+              "implyzvcj2o-sp-5",
+              "implyzvcj2o-sp-6",
+              "implyzvcj2q-sp-1",
+              "implyzvcj2q-sp-2",
+              "implyzvcj2q-sp-3",
+              "implyzvcj2q-sp-4"
+            ]
+          }
+        },
+        {
+          "time": 36,
+          "state": {
+            "focus": [
+              "implyzvcj2q"
+            ],
+            "dim": [
+              "implyzvcj2m",
+              "implyzvcj2n",
+              "implyzvcj2o",
+              "implyzvcj2p"
+            ],
+            "visible": [
+              "implyzvcj2q-sp-1",
+              "implyzvcj2q-sp-2",
+              "implyzvcj2q-sp-3",
+              "implyzvcj2q-sp-4"
+            ],
+            "hidden": [
+              "implyzvcj2m-sp-1",
+              "implyzvcj2m-sp-2",
+              "implyzvcj2m-sp-3",
+              "implyzvcj2m-sp-4",
+              "implyzvcj2m-sp-5",
+              "implyzvcj2n-sp-1",
+              "implyzvcj2n-sp-2",
+              "implyzvcj2n-sp-3",
+              "implyzvcj2n-sp-4",
+              "implyzvcj2n-sp-5",
+              "implyzvcj2o-sp-1",
+              "implyzvcj2o-sp-2",
+              "implyzvcj2o-sp-3",
+              "implyzvcj2o-sp-4",
+              "implyzvcj2o-sp-5",
+              "implyzvcj2o-sp-6",
+              "implyzvcj2p-sp-1",
+              "implyzvcj2p-sp-2",
+              "implyzvcj2p-sp-3",
+              "implyzvcj2p-sp-4",
+              "implyzvcj2p-sp-5"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 46,
+      "end": 62,
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"implyzvcj2r\" class=\" eq-item eq-title \" > General Identity Pattern </li><li id=\"implyzvcj2s\" class=\" eq-item eq-math \" > $$ (x+y)^2=x^2+2xy+y^2 $$ </li><li id=\"implyzvcj2t\" class=\" eq-item eq-line \" > The middle term always doubles. </li><li id=\"implyzvcj2u\" class=\" eq-item eq-line \" > Careless expansion causes mistakes. </li><li id=\"implyzvcj2v\" class=\" eq-item eq-line \" > Stepwise reasoning prevents confusion. </li></ul><div class=\"eq-side-panel\"><div id=\"implyzvcj2r-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"implyzvcj2r-sp-2\" class=\"eq-explain-item hidden\" > Variables can change without changing structure. </div><div id=\"implyzvcj2r-sp-3\" class=\"eq-explain-item hidden\" > Only the symbols are different. </div><div id=\"implyzvcj2r-sp-4\" class=\"eq-explain-item hidden\" > (x+y)^2 </div><div id=\"implyzvcj2r-sp-5\" class=\"eq-explain-item hidden\" > The reasoning process stays identical. </div><div id=\"implyzvcj2s-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"implyzvcj2s-sp-2\" class=\"eq-explain-item hidden\" > This is the standard algebraic identity. </div><div id=\"implyzvcj2s-sp-3\" class=\"eq-explain-item hidden\" > It appears repeatedly in mathematics. </div><div id=\"implyzvcj2s-sp-4\" class=\"eq-explain-item hidden\" > Students should memorize the structure. </div><div id=\"implyzvcj2s-sp-5\" class=\"eq-explain-item hidden\" > middle\\ term=2xy </div><div id=\"implyzvcj2t-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"image.png\" /></div><div id=\"implyzvcj2t-sp-2\" class=\"eq-explain-item hidden\" > Two identical cross products appear. </div><div id=\"implyzvcj2t-sp-3\" class=\"eq-explain-item hidden\" > xy+xy=2xy </div><div id=\"implyzvcj2t-sp-4\" class=\"eq-explain-item hidden\" > This pattern is consistent. </div><div id=\"implyzvcj2t-sp-5\" class=\"eq-explain-item hidden\" > The coefficient becomes 2. </div><div id=\"implyzvcj2u-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"force-intro.webp\" /></div><div id=\"implyzvcj2u-sp-2\" class=\"eq-explain-item hidden\" > Missing one product changes the answer. </div><div id=\"implyzvcj2u-sp-3\" class=\"eq-explain-item hidden\" > Students often forget the second middle term. </div><div id=\"implyzvcj2u-sp-4\" class=\"eq-explain-item hidden\" > xy\\neq2xy </div><div id=\"implyzvcj2u-sp-5\" class=\"eq-explain-item hidden\" > Write every multiplication explicitly. </div><div id=\"implyzvcj2v-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"implyzvcj2v-sp-2\" class=\"eq-explain-item hidden\" > Clear structure improves understanding. </div><div id=\"implyzvcj2v-sp-3\" class=\"eq-explain-item hidden\" > Each step preserves context. </div><div id=\"implyzvcj2v-sp-4\" class=\"eq-explain-item hidden\" > Visual pacing supports memory. </div><div id=\"implyzvcj2v-sp-5\" class=\"eq-explain-item hidden\" > Students can follow calmly. </div></div></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ],
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 46,
+          "state": {
+            "focus": [
+              "implyzvcj2r"
+            ],
+            "dim": [
+              "implyzvcj2s",
+              "implyzvcj2t",
+              "implyzvcj2u",
+              "implyzvcj2v"
+            ],
+            "visible": [
+              "implyzvcj2r-sp-1",
+              "implyzvcj2r-sp-2",
+              "implyzvcj2r-sp-3",
+              "implyzvcj2r-sp-4",
+              "implyzvcj2r-sp-5"
+            ],
+            "hidden": [
+              "implyzvcj2s-sp-1",
+              "implyzvcj2s-sp-2",
+              "implyzvcj2s-sp-3",
+              "implyzvcj2s-sp-4",
+              "implyzvcj2s-sp-5",
+              "implyzvcj2t-sp-1",
+              "implyzvcj2t-sp-2",
+              "implyzvcj2t-sp-3",
+              "implyzvcj2t-sp-4",
+              "implyzvcj2t-sp-5",
+              "implyzvcj2u-sp-1",
+              "implyzvcj2u-sp-2",
+              "implyzvcj2u-sp-3",
+              "implyzvcj2u-sp-4",
+              "implyzvcj2u-sp-5",
+              "implyzvcj2v-sp-1",
+              "implyzvcj2v-sp-2",
+              "implyzvcj2v-sp-3",
+              "implyzvcj2v-sp-4",
+              "implyzvcj2v-sp-5"
+            ]
+          }
+        },
+        {
+          "time": 48,
+          "state": {
+            "focus": [
+              "implyzvcj2s"
+            ],
+            "dim": [
+              "implyzvcj2r",
+              "implyzvcj2t",
+              "implyzvcj2u",
+              "implyzvcj2v"
+            ],
+            "visible": [
+              "implyzvcj2s-sp-1",
+              "implyzvcj2s-sp-2",
+              "implyzvcj2s-sp-3",
+              "implyzvcj2s-sp-4",
+              "implyzvcj2s-sp-5"
+            ],
+            "hidden": [
+              "implyzvcj2r-sp-1",
+              "implyzvcj2r-sp-2",
+              "implyzvcj2r-sp-3",
+              "implyzvcj2r-sp-4",
+              "implyzvcj2r-sp-5",
+              "implyzvcj2t-sp-1",
+              "implyzvcj2t-sp-2",
+              "implyzvcj2t-sp-3",
+              "implyzvcj2t-sp-4",
+              "implyzvcj2t-sp-5",
+              "implyzvcj2u-sp-1",
+              "implyzvcj2u-sp-2",
+              "implyzvcj2u-sp-3",
+              "implyzvcj2u-sp-4",
+              "implyzvcj2u-sp-5",
+              "implyzvcj2v-sp-1",
+              "implyzvcj2v-sp-2",
+              "implyzvcj2v-sp-3",
+              "implyzvcj2v-sp-4",
+              "implyzvcj2v-sp-5"
+            ]
+          }
+        },
+        {
+          "time": 50,
+          "state": {
+            "focus": [
+              "implyzvcj2t"
+            ],
+            "dim": [
+              "implyzvcj2r",
+              "implyzvcj2s",
+              "implyzvcj2u",
+              "implyzvcj2v"
+            ],
+            "visible": [
+              "implyzvcj2t-sp-1",
+              "implyzvcj2t-sp-2",
+              "implyzvcj2t-sp-3",
+              "implyzvcj2t-sp-4",
+              "implyzvcj2t-sp-5"
+            ],
+            "hidden": [
+              "implyzvcj2r-sp-1",
+              "implyzvcj2r-sp-2",
+              "implyzvcj2r-sp-3",
+              "implyzvcj2r-sp-4",
+              "implyzvcj2r-sp-5",
+              "implyzvcj2s-sp-1",
+              "implyzvcj2s-sp-2",
+              "implyzvcj2s-sp-3",
+              "implyzvcj2s-sp-4",
+              "implyzvcj2s-sp-5",
+              "implyzvcj2u-sp-1",
+              "implyzvcj2u-sp-2",
+              "implyzvcj2u-sp-3",
+              "implyzvcj2u-sp-4",
+              "implyzvcj2u-sp-5",
+              "implyzvcj2v-sp-1",
+              "implyzvcj2v-sp-2",
+              "implyzvcj2v-sp-3",
+              "implyzvcj2v-sp-4",
+              "implyzvcj2v-sp-5"
+            ]
+          }
+        },
+        {
+          "time": 52,
+          "state": {
+            "focus": [
+              "implyzvcj2u"
+            ],
+            "dim": [
+              "implyzvcj2r",
+              "implyzvcj2s",
+              "implyzvcj2t",
+              "implyzvcj2v"
+            ],
+            "visible": [
+              "implyzvcj2u-sp-1",
+              "implyzvcj2u-sp-2",
+              "implyzvcj2u-sp-3",
+              "implyzvcj2u-sp-4",
+              "implyzvcj2u-sp-5"
+            ],
+            "hidden": [
+              "implyzvcj2r-sp-1",
+              "implyzvcj2r-sp-2",
+              "implyzvcj2r-sp-3",
+              "implyzvcj2r-sp-4",
+              "implyzvcj2r-sp-5",
+              "implyzvcj2s-sp-1",
+              "implyzvcj2s-sp-2",
+              "implyzvcj2s-sp-3",
+              "implyzvcj2s-sp-4",
+              "implyzvcj2s-sp-5",
+              "implyzvcj2t-sp-1",
+              "implyzvcj2t-sp-2",
+              "implyzvcj2t-sp-3",
+              "implyzvcj2t-sp-4",
+              "implyzvcj2t-sp-5",
+              "implyzvcj2v-sp-1",
+              "implyzvcj2v-sp-2",
+              "implyzvcj2v-sp-3",
+              "implyzvcj2v-sp-4",
+              "implyzvcj2v-sp-5"
+            ]
+          }
+        },
+        {
+          "time": 54,
+          "state": {
+            "focus": [
+              "implyzvcj2v"
+            ],
+            "dim": [
+              "implyzvcj2r",
+              "implyzvcj2s",
+              "implyzvcj2t",
+              "implyzvcj2u"
+            ],
+            "visible": [
+              "implyzvcj2v-sp-1",
+              "implyzvcj2v-sp-2",
+              "implyzvcj2v-sp-3",
+              "implyzvcj2v-sp-4",
+              "implyzvcj2v-sp-5"
+            ],
+            "hidden": [
+              "implyzvcj2r-sp-1",
+              "implyzvcj2r-sp-2",
+              "implyzvcj2r-sp-3",
+              "implyzvcj2r-sp-4",
+              "implyzvcj2r-sp-5",
+              "implyzvcj2s-sp-1",
+              "implyzvcj2s-sp-2",
+              "implyzvcj2s-sp-3",
+              "implyzvcj2s-sp-4",
+              "implyzvcj2s-sp-5",
+              "implyzvcj2t-sp-1",
+              "implyzvcj2t-sp-2",
+              "implyzvcj2t-sp-3",
+              "implyzvcj2t-sp-4",
+              "implyzvcj2t-sp-5",
+              "implyzvcj2u-sp-1",
+              "implyzvcj2u-sp-2",
+              "implyzvcj2u-sp-3",
+              "implyzvcj2u-sp-4",
+              "implyzvcj2u-sp-5"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

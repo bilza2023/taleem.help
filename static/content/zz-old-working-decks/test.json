@@ -1,0 +1,27 @@
+{
+  "version": "deck-v1",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": null,
+    "backgroundImageOpacity": 0.3
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "data": [
+        {
+          "name": "title",
+          "content": "ttttttttttttttt",
+          "showAt": 0
+        },
+        {
+          "name": "subtitle",
+          "content": "sssssssssssssssssssssss",
+          "showAt": 0
+        }
+      ],
+      "start": 0,
+      "end": 5
+    }
+  ]
+}

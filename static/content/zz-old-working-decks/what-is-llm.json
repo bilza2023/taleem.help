@@ -1,0 +1,123 @@
+
+{
+    "version": "deck-v1",
+    "name": "What is an LLM?",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "what-is-llm.png",
+      "backgroundImageOpacity": 0.1
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "What is an LLM?", "showAt": 0 },
+          { "name": "subtitle", "content": "Text In → Text Out Engine", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "imageWithTitle",
+        "start": 5,
+        "end": 10,
+        "data": [
+          { "name": "title", "content": "LLM = Text Generator", "showAt": 5 },
+          { "name": "image", "content": "what-is-llm.png", "showAt": 6 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 10,
+        "end": 16,
+        "data": [
+          { "name": "bullet", "content": "LLM is a type of AI", "showAt": 10 },
+          { "name": "bullet", "content": "Works only on text", "showAt": 11 },
+          { "name": "bullet", "content": "Takes input, produces output", "showAt": 12 },
+          { "name": "bullet", "content": "It does not think", "showAt": 13 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 16,
+        "end": 23,
+        "data": [
+          { "name": "image", "content": "what-is-llm.png", "showAt": 16 },
+          { "name": "bullet", "content": "Text In", "showAt": 17 },
+          { "name": "bullet", "content": "LLM processes input", "showAt": 18 },
+          { "name": "bullet", "content": "Text Out", "showAt": 19 },
+          { "name": "bullet", "content": "Engine based system", "showAt": 20 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 23,
+        "end": 29,
+        "data": [
+          { "name": "title", "content": "The Real Magic", "showAt": 23 },
+          { "name": "para", "content": "LLM predicts the next word using probability and training data.", "showAt": 24 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 29,
+        "end": 36,
+        "data": [
+          { "name": "bullet", "content": "It predicts the next word", "showAt": 29 },
+          { "name": "bullet", "content": "Based on probability", "showAt": 30 },
+          { "name": "bullet", "content": "Learned from massive text data", "showAt": 31 },
+          { "name": "bullet", "content": "Better model = better prediction", "showAt": 32 }
+        ]
+      },
+      {
+        "type": "imageWithTitle",
+        "start": 36,
+        "end": 42,
+        "data": [
+          { "name": "title", "content": "Context Changes Prediction", "showAt": 36 },
+          { "name": "image", "content": "llm-context.png", "showAt": 37 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 42,
+        "end": 50,
+        "data": [
+          { "name": "image", "content": "llm-context.png", "showAt": 42 },
+          { "name": "bullet", "content": "Word: gross", "showAt": 43 },
+          { "name": "bullet", "content": "Without context → many options", "showAt": 44 },
+          { "name": "bullet", "content": "With context → GDP", "showAt": 45 },
+          { "name": "bullet", "content": "Prediction becomes clear", "showAt": 46 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 50,
+        "end": 57,
+        "data": [
+          { "name": "title", "content": "What LLM Is Not", "showAt": 50 },
+          { "name": "para", "content": "LLM is not conscious, not aware, not intentional. It matches patterns statistically.", "showAt": 51 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 57,
+        "end": 65,
+        "data": [
+          { "name": "bullet", "content": "Can make confident mistakes", "showAt": 57 },
+          { "name": "bullet", "content": "May generate incorrect facts", "showAt": 58 },
+          { "name": "bullet", "content": "Learns from biased data", "showAt": 59 },
+          { "name": "bullet", "content": "Still just a prediction engine", "showAt": 60 }
+        ]
+      },
+      {
+        "type": "imageSlide",
+        "start": 65,
+        "end": 72,
+        "data": [
+          { "name": "image", "content": "what-is-llm.png", "showAt": 65 }
+        ]
+      }
+    ]
+  }
+  

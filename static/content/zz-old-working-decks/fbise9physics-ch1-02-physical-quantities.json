@@ -1,0 +1,79 @@
+{
+    "version": "deck-v1",
+    "name": "Physical Quantities",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Physical Quantities", "showAt": 0 },
+          { "name": "image", "content": "atom.png", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 5,
+        "end": 14,
+        "data": [
+          { "name": "title", "content": "What is a Physical Quantity?", "showAt": 5 },
+          { "name": "para", "content": "A physical quantity is any property of a body that can be measured. If something can be measured and expressed using numbers, it is a physical quantity.", "showAt": 7 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 14,
+        "end": 24,
+        "data": [
+          { "name": "bullet", "content": "Length", "showAt": 14 },
+          { "name": "bullet", "content": "Mass", "showAt": 16 },
+          { "name": "bullet", "content": "Time", "showAt": 18 },
+          { "name": "bullet", "content": "Temperature", "showAt": 20 },
+          { "name": "bullet", "content": "Volume", "showAt": 22 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 24,
+        "end": 34,
+        "data": [
+          { "name": "title", "content": "Two Important Parts", "showAt": 24 },
+          { "name": "para", "content": "Every physical quantity has two parts: a numerical value and a unit. Both are necessary to fully describe a measurement.", "showAt": 27 }
+        ]
+      },
+      {
+        "type": "twoColumnText",
+        "start": 34,
+        "end": 44,
+        "data": [
+          { "name": "left", "content": "Number: tells how much", "showAt": 34 },
+          { "name": "right", "content": "Unit: tells what kind", "showAt": 36 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 44,
+        "end": 54,
+        "data": [
+          { "name": "title", "content": "Example", "showAt": 44 },
+          { "name": "para", "content": "If we say the length of a table is 2 meters, the number is 2 and the unit is meter. Writing only '2' is incomplete. Writing only 'meter' is also incomplete.", "showAt": 47 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 54,
+        "end": 64,
+        "data": [
+          { "name": "bullet", "content": "Physical quantities can be measured.", "showAt": 54 },
+          { "name": "bullet", "content": "They always have a number and a unit.", "showAt": 57 },
+          { "name": "bullet", "content": "Measurement is the foundation of physics.", "showAt": 60 }
+        ]
+      }
+    ]
+  }
+  

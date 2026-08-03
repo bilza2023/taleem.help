@@ -2,22 +2,22 @@
 	<div class="container">
 
 		<div class="brand">
-			<div class="name">Taleem.Help</div>
+			<h2>Taleem.Help</h2>
 
-			<div class="slogan">
-				Education for Every Pakistani Student
-			</div>
+			<p class="tagline">
+				Simple, structured learning for Pakistani students.
+			</p>
 		</div>
 
 		<nav class="links">
 			<a href="/">Home</a>
 			<a href="/hub">Hub</a>
-			<a href="/articles?article=about">About</a>
+			<a href="/present?deck=what-is-taleem-help">About</a>
 			<a href="/articles?article=privacy">Privacy</a>
 		</nav>
 
 		<div class="copyright">
-			© {new Date().getFullYear()} Taleem.Help. All rights reserved.
+			© {new Date().getFullYear()} Taleem.Help
 		</div>
 
 	</div>
@@ -25,10 +25,10 @@
 
 <style>
 	.footer {
-		margin-top: 60px;
-		padding: 36px 20px;
+		margin-top: 72px;
+		padding: 42px 20px;
 		background: #111827;
-		border-top: 1px solid rgba(255,255,255,0.06);
+		border-top: 1px solid rgba(255,255,255,.08);
 	}
 
 	.container {
@@ -37,44 +37,41 @@
 		text-align: center;
 	}
 
-	.name {
-		font-size: 24px;
-		font-weight: 700;
-		color: #f3f4f6;
-		letter-spacing: 0.5px;
-		margin-bottom: 8px;
+	.brand h2 {
+		margin: 0;
+		font-size: 1.6rem;
+		color: #fff;
 	}
 
-	.slogan {
-		font-size: 14px;
+	.tagline {
+		margin: 10px 0 32px;
 		color: #9ca3af;
-		font-style: italic;
-		margin-bottom: 28px;
+		font-size: .95rem;
 	}
 
 	.links {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 20px;
-		margin-bottom: 28px;
+		gap: 22px;
+		margin-bottom: 32px;
 	}
 
 	.links a {
 		color: #d1d5db;
 		text-decoration: none;
-		font-size: 15px;
-		transition: color 0.2s;
+		font-size: .95rem;
+		transition: color .2s;
 	}
 
 	.links a:hover {
-		color: white;
+		color: #fff;
 	}
 
 	.copyright {
-		font-size: 13px;
-		color: #6b7280;
-		border-top: 1px solid rgba(255,255,255,0.08);
 		padding-top: 18px;
+		border-top: 1px solid rgba(255,255,255,.08);
+		font-size: .82rem;
+		color: #6b7280;
 	}
 </style>

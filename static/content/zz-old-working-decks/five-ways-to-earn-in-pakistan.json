@@ -1,0 +1,142 @@
+{
+    "version": "deck-v1",
+    "name": "5 Ways to Earn with AI and IT in Pakistan",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "pakistani-kids-studying.jpg",
+      "backgroundImageOpacity": 0.1
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Do You Need to Go Abroad to Earn in Dollars?", "showAt": 0 },
+          { "name": "subtitle", "content": "5 Real Ways to Earn with AI & IT in Pakistan", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 6,
+        "end": 18,
+        "data": [
+          { "name": "bullet", "content": "You can earn online from Lahore, Karachi, Multan or any small town.", "showAt": 6 },
+          { "name": "bullet", "content": "AI and IT have changed the earning landscape.", "showAt": 9 },
+          { "name": "bullet", "content": "No scams. No shortcuts.", "showAt": 12 },
+          { "name": "bullet", "content": "Only skill and smart work.", "showAt": 14 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 18,
+        "end": 28,
+        "data": [
+          { "name": "title", "content": "1. Freelancing with AI Tools", "showAt": 18 },
+          { "name": "para", "content": "Platforms like Fiverr and Upwork are full of opportunities. Instead of working harder, work smarter using AI to increase your speed and productivity.", "showAt": 20 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 28,
+        "end": 42,
+        "data": [
+          { "name": "bullet", "content": "Write content using AI assistance.", "showAt": 28 },
+          { "name": "bullet", "content": "Create designs with AI tools.", "showAt": 31 },
+          { "name": "bullet", "content": "Edit videos faster.", "showAt": 34 },
+          { "name": "bullet", "content": "Build small websites.", "showAt": 37 },
+          { "name": "bullet", "content": "Translate content.", "showAt": 40 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 42,
+        "end": 52,
+        "data": [
+          { "name": "title", "content": "2. Content Creation (YouTube, Shorts, Reels)", "showAt": 42 },
+          { "name": "para", "content": "You don’t need a big studio. You need a phone, internet and consistency. AI helps with scripts, thumbnails, editing and voiceovers.", "showAt": 44 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 52,
+        "end": 64,
+        "data": [
+          { "name": "bullet", "content": "Educational videos, Islamic reminders, tech or AI tutorials.", "showAt": 52 },
+          { "name": "bullet", "content": "Motivational content.", "showAt": 55 },
+          { "name": "bullet", "content": "YouTube monetization in Pakistan is real.", "showAt": 58 },
+          { "name": "bullet", "content": "Consistency beats talent.", "showAt": 61 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 64,
+        "end": 74,
+        "data": [
+          { "name": "title", "content": "3. Skill-Based Remote Jobs", "showAt": 64 },
+          { "name": "para", "content": "Learn one strong IT skill and build proof of work. Companies abroad hire remotely based on results, not degrees.", "showAt": 66 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 74,
+        "end": 88,
+        "data": [
+          { "name": "bullet", "content": "Web development, Graphic design, UI/UX.", "showAt": 74 },
+          { "name": "bullet", "content": "Video editing, Social media management.", "showAt": 77 },
+          { "name": "bullet", "content": "AI automation skills.", "showAt": 80 },
+          { "name": "bullet", "content": "Build a portfolio. Show projects. Show results.", "showAt": 83 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 88,
+        "end": 98,
+        "data": [
+          { "name": "title", "content": "4. AI Automation for Local Businesses", "showAt": 88 },
+          { "name": "para", "content": "Many Pakistani businesses don’t understand AI. This is a hidden goldmine for students who can solve problems using simple automation.", "showAt": 90 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 98,
+        "end": 112,
+        "data": [
+          { "name": "bullet", "content": "Automate WhatsApp replies.", "showAt": 98 },
+          { "name": "bullet", "content": "Build simple websites and digital menus.", "showAt": 101 },
+          { "name": "bullet", "content": "Manage social media using AI tools.", "showAt": 104 },
+          { "name": "bullet", "content": "Run Facebook ads to increase sales.", "showAt": 107 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 112,
+        "end": 122,
+        "data": [
+          { "name": "title", "content": "5. Build a Digital Product", "showAt": 112 },
+          { "name": "para", "content": "Build once and earn many times. This is digital leverage. You create value once and sell it repeatedly.", "showAt": 114 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 122,
+        "end": 136,
+        "data": [
+          { "name": "bullet", "content": "Online courses and digital notes.", "showAt": 122 },
+          { "name": "bullet", "content": "Templates, resume designs, AI prompt packs.", "showAt": 125 },
+          { "name": "bullet", "content": "Small software tools.", "showAt": 128 },
+          { "name": "bullet", "content": "Sell via your website or social platforms.", "showAt": 131 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 136,
+        "end": 150,
+        "data": [
+          { "name": "title", "content": "Final Message", "showAt": 136 },
+          { "name": "para", "content": "Pakistan has talent. But talent without skill is wasted. Choose one path. Work daily for 6 months. Use AI wisely.", "showAt": 138 }
+        ]
+      }
+    ]
+  }
+  

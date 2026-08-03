@@ -1,0 +1,587 @@
+{
+  "name": "What Is Taleem.help",
+  "background": {
+    "backgroundColor": "#05070c",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.4
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 4,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"implyzvd6bb\" class=\" hidden taleem-heading-lg \" > What is Taleem.help? </h1><h2 id=\"implyzvd6bc\" class=\" hidden taleem-heading-md \" > Focused educational videos for Pakistani students </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "implyzvd6bc"
+            ]
+          }
+        },
+        {
+          "time": 1,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 4,
+      "end": 8,
+      "html": "<section class=\"slide titleAndPara\"><h1 id=\"implyzvd6bd\" class=\" hidden taleem-heading-md \" > An educational platform built around clarity </h1><p id=\"implyzvd6be\" class=\" hidden taleem-para \" > Taleem.help contains a large collection of narrated educational videos and presentations designed for focused learning. </p></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 4,
+          "state": {
+            "hidden": [
+              "implyzvd6be"
+            ]
+          }
+        },
+        {
+          "time": 5,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "start": 8,
+      "end": 15,
+      "html": "<section class=\"slide bulletList\"><ul><li id=\"implyzvd6bf\" class=\"hidden\" > Focused educational videos </li><li id=\"implyzvd6bg\" class=\"hidden\" > Narration with visual explanations </li><li id=\"implyzvd6bh\" class=\"hidden\" > Physics, mathematics, biology and more </li><li id=\"implyzvd6bi\" class=\"hidden\" > Built for Pakistani students </li></ul></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 8,
+          "state": {
+            "hidden": [
+              "implyzvd6bg",
+              "implyzvd6bh",
+              "implyzvd6bi"
+            ]
+          }
+        },
+        {
+          "time": 9,
+          "state": {
+            "hidden": [
+              "implyzvd6bh",
+              "implyzvd6bi"
+            ]
+          }
+        },
+        {
+          "time": 10,
+          "state": {
+            "hidden": [
+              "implyzvd6bi"
+            ]
+          }
+        },
+        {
+          "time": 11,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageWithTitle",
+      "start": 15,
+      "end": 20,
+      "html": "<section class=\"slide imageWithTitle\"><h1 id=\"implyzvd6bj\" class=\" hidden \" > Visual learning and guided explanation </h1><img id=\"implyzvd6bk\" class=\" hidden \" src=\"typesOfForce.webp\" /></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 15,
+          "state": {
+            "hidden": [
+              "implyzvd6bk"
+            ]
+          }
+        },
+        {
+          "time": 17,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "focusList",
+      "start": 20,
+      "end": 25,
+      "html": "<section class=\"slide focusList\"><h1 id=\"implyzvd6bl\" class=\"\" > Why are there so many videos? </h1><ul><li id=\"implyzvd6bm\" class=\"\" > Different students struggle at different points </li><li id=\"implyzvd6bn\" class=\"\" > Important questions may receive separate videos </li><li id=\"implyzvd6bo\" class=\"\" > Short focused lessons are easier to revise later </li></ul></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ]
+      },
+      "actions": [
+        {
+          "time": 20,
+          "state": {
+            "focus": [
+              "implyzvd6bl"
+            ],
+            "dim": [
+              "implyzvd6bm",
+              "implyzvd6bn",
+              "implyzvd6bo"
+            ]
+          }
+        },
+        {
+          "time": 21,
+          "state": {
+            "focus": [
+              "implyzvd6bm"
+            ],
+            "dim": [
+              "implyzvd6bl",
+              "implyzvd6bn",
+              "implyzvd6bo"
+            ]
+          }
+        },
+        {
+          "time": 22,
+          "state": {
+            "focus": [
+              "implyzvd6bn"
+            ],
+            "dim": [
+              "implyzvd6bl",
+              "implyzvd6bm",
+              "implyzvd6bo"
+            ]
+          }
+        },
+        {
+          "time": 23,
+          "state": {
+            "focus": [
+              "implyzvd6bo"
+            ],
+            "dim": [
+              "implyzvd6bl",
+              "implyzvd6bm",
+              "implyzvd6bn"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 25,
+      "end": 30,
+      "html": "<section class=\"slide imageLeftBulletsRight\"><img id=\"implyzvd6bp\" class=\" hidden \" src=\"banner.webp\" /><ul><li id=\"implyzvd6bq\" class=\" hidden \" > Topics are divided into smaller lessons </li><li id=\"implyzvd6br\" class=\" hidden \" > Students can revisit specific ideas quickly </li><li id=\"implyzvd6bs\" class=\" hidden \" > Lessons are designed for calm step-by-step learning </li></ul></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 25,
+          "state": {
+            "hidden": [
+              "implyzvd6bq",
+              "implyzvd6br",
+              "implyzvd6bs"
+            ]
+          }
+        },
+        {
+          "time": 26,
+          "state": {
+            "hidden": [
+              "implyzvd6br",
+              "implyzvd6bs"
+            ]
+          }
+        },
+        {
+          "time": 27,
+          "state": {
+            "hidden": [
+              "implyzvd6bs"
+            ]
+          }
+        },
+        {
+          "time": 28,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 30,
+      "end": 36,
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"implyzvd6bt\" class=\" eq-item eq-title \" > Step-by-step reasoning </li><li id=\"implyzvd6bu\" class=\" eq-item eq-math \" > $$ F = ma $$ </li><li id=\"implyzvd6bv\" class=\" eq-item eq-line \" > Students should understand why formulas work. </li><li id=\"implyzvd6bw\" class=\" eq-item eq-math \" > $$ a = \\frac{F}{m} $$ </li><li id=\"implyzvd6bx\" class=\" eq-item eq-line \" > The goal is understanding, not rushed learning. </li></ul><div class=\"eq-side-panel\"><div id=\"implyzvd6bt-sp-1\" class=\"eq-explain-item hidden\" > Complex ideas are explained carefully. </div><div id=\"implyzvd6bu-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"implyzvd6bu-sp-2\" class=\"eq-explain-item hidden\" > Force depends on mass and acceleration. </div><div id=\"implyzvd6bv-sp-1\" class=\"eq-explain-item hidden\" > Reasoning is more important than memorization. </div><div id=\"implyzvd6bw-sp-1\" class=\"eq-explain-item hidden\" > Ideas are explained through small logical steps. </div><div id=\"implyzvd6bx-sp-1\" class=\"eq-explain-item hidden\" > Lessons are continuously refined and improved. </div></div></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ],
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 30,
+          "state": {
+            "focus": [
+              "implyzvd6bt"
+            ],
+            "dim": [
+              "implyzvd6bu",
+              "implyzvd6bv",
+              "implyzvd6bw",
+              "implyzvd6bx"
+            ],
+            "visible": [
+              "implyzvd6bt-sp-1"
+            ],
+            "hidden": [
+              "implyzvd6bu-sp-1",
+              "implyzvd6bu-sp-2",
+              "implyzvd6bv-sp-1",
+              "implyzvd6bw-sp-1",
+              "implyzvd6bx-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 32,
+          "state": {
+            "focus": [
+              "implyzvd6bu"
+            ],
+            "dim": [
+              "implyzvd6bt",
+              "implyzvd6bv",
+              "implyzvd6bw",
+              "implyzvd6bx"
+            ],
+            "visible": [
+              "implyzvd6bu-sp-1",
+              "implyzvd6bu-sp-2"
+            ],
+            "hidden": [
+              "implyzvd6bt-sp-1",
+              "implyzvd6bv-sp-1",
+              "implyzvd6bw-sp-1",
+              "implyzvd6bx-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 33,
+          "state": {
+            "focus": [
+              "implyzvd6bv"
+            ],
+            "dim": [
+              "implyzvd6bt",
+              "implyzvd6bu",
+              "implyzvd6bw",
+              "implyzvd6bx"
+            ],
+            "visible": [
+              "implyzvd6bv-sp-1"
+            ],
+            "hidden": [
+              "implyzvd6bt-sp-1",
+              "implyzvd6bu-sp-1",
+              "implyzvd6bu-sp-2",
+              "implyzvd6bw-sp-1",
+              "implyzvd6bx-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 34,
+          "state": {
+            "focus": [
+              "implyzvd6bw"
+            ],
+            "dim": [
+              "implyzvd6bt",
+              "implyzvd6bu",
+              "implyzvd6bv",
+              "implyzvd6bx"
+            ],
+            "visible": [
+              "implyzvd6bw-sp-1"
+            ],
+            "hidden": [
+              "implyzvd6bt-sp-1",
+              "implyzvd6bu-sp-1",
+              "implyzvd6bu-sp-2",
+              "implyzvd6bv-sp-1",
+              "implyzvd6bx-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 35,
+          "state": {
+            "focus": [
+              "implyzvd6bx"
+            ],
+            "dim": [
+              "implyzvd6bt",
+              "implyzvd6bu",
+              "implyzvd6bv",
+              "implyzvd6bw"
+            ],
+            "visible": [
+              "implyzvd6bx-sp-1"
+            ],
+            "hidden": [
+              "implyzvd6bt-sp-1",
+              "implyzvd6bu-sp-1",
+              "implyzvd6bu-sp-2",
+              "implyzvd6bv-sp-1",
+              "implyzvd6bw-sp-1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageWithCaption",
+      "start": 36,
+      "end": 38,
+      "html": "<figure class=\"slide imageWithCaption\"><img id=\"implyzvd6by\" class=\" hidden \" src=\"parallelogram_properties_labeled.png\" /><figcaption id=\"implyzvd6bz\" class=\" hidden \" > Diagrams and geometry explained visually and carefully. </figcaption></figure>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 36,
+          "state": {
+            "hidden": [
+              "implyzvd6bz"
+            ]
+          }
+        },
+        {
+          "time": 38,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "start": 38,
+      "end": 43,
+      "html": "<section class=\"slide bulletList\"><ul><li id=\"implyzvd6c0\" class=\"hidden\" > Videos continue improving over time </li><li id=\"implyzvd6c1\" class=\"hidden\" > Errors and narration can be updated </li><li id=\"implyzvd6c2\" class=\"hidden\" > Slides can be refined continuously </li><li id=\"implyzvd6c3\" class=\"hidden\" > Educational content should evolve and improve </li></ul></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 38,
+          "state": {
+            "hidden": [
+              "implyzvd6c1",
+              "implyzvd6c2",
+              "implyzvd6c3"
+            ]
+          }
+        },
+        {
+          "time": 39,
+          "state": {
+            "hidden": [
+              "implyzvd6c2",
+              "implyzvd6c3"
+            ]
+          }
+        },
+        {
+          "time": 40,
+          "state": {
+            "hidden": [
+              "implyzvd6c3"
+            ]
+          }
+        },
+        {
+          "time": 41,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "quoteSlide",
+      "start": 43,
+      "end": 45,
+      "html": "<blockquote class=\"slide quoteSlide\"><p id=\"implyzvd7c4\" class=\" hidden \" > Focused learning becomes easier when explanations are calm, visual and structured. </p><footer id=\"implyzvd7c5\" class=\" hidden \" > — taleem.help </footer></blockquote>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 43,
+          "state": {
+            "hidden": [
+              "implyzvd7c5"
+            ]
+          }
+        },
+        {
+          "time": 44,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "twoColumnText",
+      "start": 45,
+      "end": 50,
+      "html": "<section class=\"slide twoColumnText\"><div class=\"col left\"><div id=\"implyzvd7c6\" class=\" hidden \" > Students can ask questions and request deeper explanations. </div></div><div class=\"col right\"><div id=\"implyzvd7c7\" class=\" hidden \" > The platform grows from real student confusion and feedback. </div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 45,
+          "state": {
+            "hidden": [
+              "implyzvd7c7"
+            ]
+          }
+        },
+        {
+          "time": 48,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageGrid",
+      "start": 50,
+      "end": 60,
+      "html": "<section class=\"slide imageGrid\"><div class=\"image-grid\"><div class=\"image-grid-item\"><img id=\"implyzvd7c8\" class=\" hidden \" src=\"eq.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvd7c9\" class=\" hidden \" src=\"typesOfForce.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvd7ca\" class=\" hidden \" src=\"banner.webp\" /></div><div class=\"image-grid-item\"><img id=\"implyzvd7cb\" class=\" hidden \" src=\"banner_brand.png\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 51,
+          "state": {
+            "hidden": [
+              "implyzvd7c9",
+              "implyzvd7ca",
+              "implyzvd7cb"
+            ]
+          }
+        },
+        {
+          "time": 53,
+          "state": {
+            "hidden": [
+              "implyzvd7ca",
+              "implyzvd7cb"
+            ]
+          }
+        },
+        {
+          "time": 55,
+          "state": {
+            "hidden": [
+              "implyzvd7cb"
+            ]
+          }
+        },
+        {
+          "time": 58,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 60,
+      "end": 70,
+      "html": "<section class=\"slide titleAndPara\"><h1 id=\"implyzvd7cc\" class=\" hidden taleem-heading-md \" > taleem.help </h1><p id=\"implyzvd7cd\" class=\" hidden taleem-para \" > Educational videos and narrated lessons designed for focused learning and continuous improvement. </p></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 61,
+          "state": {
+            "hidden": [
+              "implyzvd7cd"
+            ]
+          }
+        },
+        {
+          "time": 62,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    }
+  ]
+}

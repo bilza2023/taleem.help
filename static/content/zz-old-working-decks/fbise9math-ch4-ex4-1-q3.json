@@ -1,0 +1,71 @@
+
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 3",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 3", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 70,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 - 9$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Recognize the pattern." },
+              { "type": "spText", "content": "This expression has two terms." },
+              { "type": "spText", "content": "Both terms are perfect squares." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^2 - 3^2$",
+            "showAt": 15,
+            "spItems": [
+              { "type": "spText", "content": "Rewrite 9 as 3² to clearly see the structure." },
+              { "type": "spText", "content": "Now it matches the identity: a² - b²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x - 3)(x + 3)$",
+            "showAt": 28,
+            "spItems": [
+              { "type": "spText", "content": "Apply the identity: a² - b² = (a - b)(a + b)." },
+              { "type": "spText", "content": "Here, a = x and b = 3." },
+              { "type": "spText", "content": "Final Answer: (x - 3)(x + 3)." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Method Used: Difference of Squares",
+            "showAt": 55,
+            "spItems": [
+              { "type": "spText", "content": "Always check if a two-term expression is a difference of perfect squares." },
+              { "type": "spText", "content": "This method makes factorization immediate and clean." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,702 @@
+{
+  "name": "Full Lesson Flow Test",
+  "background": {
+    "backgroundColor": "#05070c",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.22
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 8,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"implyzvcr4e\" class=\" hidden taleem-heading-lg \" > Understanding Force </h1><h2 id=\"implyzvcr4f\" class=\" hidden taleem-heading-md \" > A complete lesson flow experiment </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "implyzvcr4f"
+            ]
+          }
+        },
+        {
+          "time": 3,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageWithTitle",
+      "start": 8,
+      "end": 18,
+      "html": "<section class=\"slide imageWithTitle\"><h1 id=\"implyzvcr4g\" class=\" hidden \" > Force changes motion </h1><img id=\"implyzvcr4h\" class=\" hidden \" src=\"force-intro.webp\" /></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 8,
+          "state": {
+            "hidden": [
+              "implyzvcr4h"
+            ]
+          }
+        },
+        {
+          "time": 10,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "focusList",
+      "start": 18,
+      "end": 34,
+      "html": "<section class=\"slide focusList\"><h1 id=\"implyzvcr4i\" class=\"\" > What We Will Learn </h1><ul><li id=\"implyzvcr4j\" class=\"\" > What force means </li><li id=\"implyzvcr4k\" class=\"\" > How force affects motion </li><li id=\"implyzvcr4l\" class=\"\" > Balanced and unbalanced forces </li><li id=\"implyzvcr4m\" class=\"\" > Force in everyday life </li></ul></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ]
+      },
+      "actions": [
+        {
+          "time": 18,
+          "state": {
+            "focus": [
+              "implyzvcr4i"
+            ],
+            "dim": [
+              "implyzvcr4j",
+              "implyzvcr4k",
+              "implyzvcr4l",
+              "implyzvcr4m"
+            ]
+          }
+        },
+        {
+          "time": 20,
+          "state": {
+            "focus": [
+              "implyzvcr4j"
+            ],
+            "dim": [
+              "implyzvcr4i",
+              "implyzvcr4k",
+              "implyzvcr4l",
+              "implyzvcr4m"
+            ]
+          }
+        },
+        {
+          "time": 22,
+          "state": {
+            "focus": [
+              "implyzvcr4k"
+            ],
+            "dim": [
+              "implyzvcr4i",
+              "implyzvcr4j",
+              "implyzvcr4l",
+              "implyzvcr4m"
+            ]
+          }
+        },
+        {
+          "time": 24,
+          "state": {
+            "focus": [
+              "implyzvcr4l"
+            ],
+            "dim": [
+              "implyzvcr4i",
+              "implyzvcr4j",
+              "implyzvcr4k",
+              "implyzvcr4m"
+            ]
+          }
+        },
+        {
+          "time": 26,
+          "state": {
+            "focus": [
+              "implyzvcr4m"
+            ],
+            "dim": [
+              "implyzvcr4i",
+              "implyzvcr4j",
+              "implyzvcr4k",
+              "implyzvcr4l"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 34,
+      "end": 46,
+      "html": "<section class=\"slide titleAndPara\"><h1 id=\"implyzvcr4n\" class=\" hidden taleem-heading-md \" > What is Force? </h1><p id=\"implyzvcr4o\" class=\" hidden taleem-para \" > Force is a push or pull that can change the motion, direction, or shape of an object. </p></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 34,
+          "state": {
+            "hidden": [
+              "implyzvcr4o"
+            ]
+          }
+        },
+        {
+          "time": 37,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 46,
+      "end": 62,
+      "html": "<section class=\"slide imageLeftBulletsRight\"><img id=\"implyzvcr4p\" class=\" hidden \" src=\"force-intro.webp\" /><ul><li id=\"implyzvcr4q\" class=\" hidden \" > Pushes move objects away </li><li id=\"implyzvcr4r\" class=\" hidden \" > Pulls bring objects closer </li><li id=\"implyzvcr4s\" class=\" hidden \" > Forces can change speed </li><li id=\"implyzvcr4t\" class=\" hidden \" > Forces can change direction </li></ul></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 46,
+          "state": {
+            "hidden": [
+              "implyzvcr4q",
+              "implyzvcr4r",
+              "implyzvcr4s",
+              "implyzvcr4t"
+            ]
+          }
+        },
+        {
+          "time": 48,
+          "state": {
+            "hidden": [
+              "implyzvcr4r",
+              "implyzvcr4s",
+              "implyzvcr4t"
+            ]
+          }
+        },
+        {
+          "time": 50,
+          "state": {
+            "hidden": [
+              "implyzvcr4s",
+              "implyzvcr4t"
+            ]
+          }
+        },
+        {
+          "time": 52,
+          "state": {
+            "hidden": [
+              "implyzvcr4t"
+            ]
+          }
+        },
+        {
+          "time": 54,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 62,
+      "end": 78,
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"implyzvcr4u\" class=\" eq-item eq-title \" > Newton's Second Law </li><li id=\"implyzvcr4v\" class=\" eq-item eq-math \" > $$ F = ma $$ </li><li id=\"implyzvcr4w\" class=\" eq-item eq-math \" > $$ F = 2 \\times 3 $$ </li><li id=\"implyzvcr4x\" class=\" eq-item eq-math \" > $$ F = 6 $$ </li></ul><div class=\"eq-side-panel\"><div id=\"implyzvcr4u-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"eq.webp\" /></div><div id=\"implyzvcr4u-sp-2\" class=\"eq-explain-item hidden\" > Force depends on mass and acceleration. </div><div id=\"implyzvcr4v-sp-1\" class=\"eq-explain-item hidden\" > F means force. </div><div id=\"implyzvcr4v-sp-2\" class=\"eq-explain-item hidden\" > m means mass. </div><div id=\"implyzvcr4v-sp-3\" class=\"eq-explain-item hidden\" > a means acceleration. </div><div id=\"implyzvcr4v-sp-4\" class=\"eq-explain-item hidden\" > This is one of the most important physics equations. </div><div id=\"implyzvcr4v-sp-5\" class=\"eq-explain-item hidden\" > Greater acceleration requires greater force. </div><div id=\"implyzvcr4v-sp-6\" class=\"eq-explain-item hidden\" > Heavy objects resist motion changes. </div><div id=\"implyzvcr4w-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"implyzvcr4w-sp-2\" class=\"eq-explain-item hidden\" > Substitute values into the formula. </div><div id=\"implyzvcr4x-sp-1\" class=\"eq-explain-item hidden\" > The resulting force equals 6 newtons. </div><div id=\"implyzvcr4x-sp-2\" class=\"eq-explain-item hidden\" > Units matter in physics. </div><div id=\"implyzvcr4x-sp-3\" class=\"eq-explain-item hidden\" > Always include measurement units. </div><div id=\"implyzvcr4x-sp-4\" class=\"eq-explain-item hidden\" > Physics combines math with reality. </div><div id=\"implyzvcr4x-sp-5\" class=\"eq-explain-item hidden\" > Equations describe natural behavior. </div><div id=\"implyzvcr4x-sp-6\" class=\"eq-explain-item hidden\" > Reasoning matters more than memorization. </div></div></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ],
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 62,
+          "state": {
+            "focus": [
+              "implyzvcr4u"
+            ],
+            "dim": [
+              "implyzvcr4v",
+              "implyzvcr4w",
+              "implyzvcr4x"
+            ],
+            "visible": [
+              "implyzvcr4u-sp-1",
+              "implyzvcr4u-sp-2"
+            ],
+            "hidden": [
+              "implyzvcr4v-sp-1",
+              "implyzvcr4v-sp-2",
+              "implyzvcr4v-sp-3",
+              "implyzvcr4v-sp-4",
+              "implyzvcr4v-sp-5",
+              "implyzvcr4v-sp-6",
+              "implyzvcr4w-sp-1",
+              "implyzvcr4w-sp-2",
+              "implyzvcr4x-sp-1",
+              "implyzvcr4x-sp-2",
+              "implyzvcr4x-sp-3",
+              "implyzvcr4x-sp-4",
+              "implyzvcr4x-sp-5",
+              "implyzvcr4x-sp-6"
+            ]
+          }
+        },
+        {
+          "time": 64,
+          "state": {
+            "focus": [
+              "implyzvcr4v"
+            ],
+            "dim": [
+              "implyzvcr4u",
+              "implyzvcr4w",
+              "implyzvcr4x"
+            ],
+            "visible": [
+              "implyzvcr4v-sp-1",
+              "implyzvcr4v-sp-2",
+              "implyzvcr4v-sp-3",
+              "implyzvcr4v-sp-4",
+              "implyzvcr4v-sp-5",
+              "implyzvcr4v-sp-6"
+            ],
+            "hidden": [
+              "implyzvcr4u-sp-1",
+              "implyzvcr4u-sp-2",
+              "implyzvcr4w-sp-1",
+              "implyzvcr4w-sp-2",
+              "implyzvcr4x-sp-1",
+              "implyzvcr4x-sp-2",
+              "implyzvcr4x-sp-3",
+              "implyzvcr4x-sp-4",
+              "implyzvcr4x-sp-5",
+              "implyzvcr4x-sp-6"
+            ]
+          }
+        },
+        {
+          "time": 66,
+          "state": {
+            "focus": [
+              "implyzvcr4w"
+            ],
+            "dim": [
+              "implyzvcr4u",
+              "implyzvcr4v",
+              "implyzvcr4x"
+            ],
+            "visible": [
+              "implyzvcr4w-sp-1",
+              "implyzvcr4w-sp-2"
+            ],
+            "hidden": [
+              "implyzvcr4u-sp-1",
+              "implyzvcr4u-sp-2",
+              "implyzvcr4v-sp-1",
+              "implyzvcr4v-sp-2",
+              "implyzvcr4v-sp-3",
+              "implyzvcr4v-sp-4",
+              "implyzvcr4v-sp-5",
+              "implyzvcr4v-sp-6",
+              "implyzvcr4x-sp-1",
+              "implyzvcr4x-sp-2",
+              "implyzvcr4x-sp-3",
+              "implyzvcr4x-sp-4",
+              "implyzvcr4x-sp-5",
+              "implyzvcr4x-sp-6"
+            ]
+          }
+        },
+        {
+          "time": 68,
+          "state": {
+            "focus": [
+              "implyzvcr4x"
+            ],
+            "dim": [
+              "implyzvcr4u",
+              "implyzvcr4v",
+              "implyzvcr4w"
+            ],
+            "visible": [
+              "implyzvcr4x-sp-1",
+              "implyzvcr4x-sp-2",
+              "implyzvcr4x-sp-3",
+              "implyzvcr4x-sp-4",
+              "implyzvcr4x-sp-5",
+              "implyzvcr4x-sp-6"
+            ],
+            "hidden": [
+              "implyzvcr4u-sp-1",
+              "implyzvcr4u-sp-2",
+              "implyzvcr4v-sp-1",
+              "implyzvcr4v-sp-2",
+              "implyzvcr4v-sp-3",
+              "implyzvcr4v-sp-4",
+              "implyzvcr4v-sp-5",
+              "implyzvcr4v-sp-6",
+              "implyzvcr4w-sp-1",
+              "implyzvcr4w-sp-2"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "textGrid",
+      "start": 78,
+      "end": 96,
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"implyzvcr4y\" class=\" text-grid-item hidden \" > Push </div><div id=\"implyzvcr4z\" class=\" text-grid-item hidden \" > Pull </div><div id=\"implyzvcr50\" class=\" text-grid-item hidden \" > Motion </div><div id=\"implyzvcr51\" class=\" text-grid-item hidden \" > Mass </div><div id=\"implyzvcr52\" class=\" text-grid-item hidden \" > Speed </div><div id=\"implyzvcr53\" class=\" text-grid-item hidden \" > Acceleration </div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 78,
+          "state": {
+            "hidden": [
+              "implyzvcr4z",
+              "implyzvcr50",
+              "implyzvcr51",
+              "implyzvcr52",
+              "implyzvcr53"
+            ]
+          }
+        },
+        {
+          "time": 80,
+          "state": {
+            "hidden": [
+              "implyzvcr50",
+              "implyzvcr51",
+              "implyzvcr52",
+              "implyzvcr53"
+            ]
+          }
+        },
+        {
+          "time": 82,
+          "state": {
+            "hidden": [
+              "implyzvcr51",
+              "implyzvcr52",
+              "implyzvcr53"
+            ]
+          }
+        },
+        {
+          "time": 84,
+          "state": {
+            "hidden": [
+              "implyzvcr52",
+              "implyzvcr53"
+            ]
+          }
+        },
+        {
+          "time": 86,
+          "state": {
+            "hidden": [
+              "implyzvcr53"
+            ]
+          }
+        },
+        {
+          "time": 88,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "imageStrip",
+      "start": 96,
+      "end": 108,
+      "html": "<section class=\"slide imageStrip\"><div class=\"image-strip\"><div class=\"image-strip-item\"><img id=\"implyzvcr54\" class=\" hidden \" src=\"force-intro.webp\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcr55\" class=\" hidden \" src=\"box.webp\" /></div><div class=\"image-strip-item\"><img id=\"implyzvcr56\" class=\" hidden \" src=\"eq.webp\" /></div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 96,
+          "state": {
+            "hidden": [
+              "implyzvcr55",
+              "implyzvcr56"
+            ]
+          }
+        },
+        {
+          "time": 98,
+          "state": {
+            "hidden": [
+              "implyzvcr56"
+            ]
+          }
+        },
+        {
+          "time": 100,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "skeleton",
+      "start": 108,
+      "end": 136,
+      "html": "<section class=\"slide skeleton\"><div class=\"skeleton-body\"><h1 id=\"implyzvcr57\" class=\"hidden \" > Every Motion Has a Cause </h1><div id=\"implyzvcr58\" class=\"skeleton-image hidden \" ><img src=\"force-intro.webp\" /></div><p id=\"implyzvcr59\" class=\"hidden \" > Physics searches for invisible rules. </p><h1 id=\"implyzvcr5a\" class=\"hidden \" > Force Explains Change </h1><div id=\"implyzvcr5b\" class=\"skeleton-image hidden \" ><img src=\"eq.webp\" /></div><p id=\"implyzvcr5c\" class=\"hidden \" > Equations compress understanding. </p></div></section>",
+      "groups": {
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 108,
+          "state": {
+            "visible": [
+              "implyzvcr57"
+            ],
+            "hidden": [
+              "implyzvcr58",
+              "implyzvcr59",
+              "implyzvcr5a",
+              "implyzvcr5b",
+              "implyzvcr5c"
+            ]
+          }
+        },
+        {
+          "time": 112,
+          "state": {
+            "visible": [
+              "implyzvcr58"
+            ],
+            "hidden": [
+              "implyzvcr57",
+              "implyzvcr59",
+              "implyzvcr5a",
+              "implyzvcr5b",
+              "implyzvcr5c"
+            ]
+          }
+        },
+        {
+          "time": 116,
+          "state": {
+            "visible": [
+              "implyzvcr59"
+            ],
+            "hidden": [
+              "implyzvcr57",
+              "implyzvcr58",
+              "implyzvcr5a",
+              "implyzvcr5b",
+              "implyzvcr5c"
+            ]
+          }
+        },
+        {
+          "time": 120,
+          "state": {
+            "visible": [
+              "implyzvcr5a"
+            ],
+            "hidden": [
+              "implyzvcr57",
+              "implyzvcr58",
+              "implyzvcr59",
+              "implyzvcr5b",
+              "implyzvcr5c"
+            ]
+          }
+        },
+        {
+          "time": 124,
+          "state": {
+            "visible": [
+              "implyzvcr5b"
+            ],
+            "hidden": [
+              "implyzvcr57",
+              "implyzvcr58",
+              "implyzvcr59",
+              "implyzvcr5a",
+              "implyzvcr5c"
+            ]
+          }
+        },
+        {
+          "time": 128,
+          "state": {
+            "visible": [
+              "implyzvcr5c"
+            ],
+            "hidden": [
+              "implyzvcr57",
+              "implyzvcr58",
+              "implyzvcr59",
+              "implyzvcr5a",
+              "implyzvcr5b"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "quoteSlide",
+      "start": 136,
+      "end": 146,
+      "html": "<blockquote class=\"slide quoteSlide\"><p id=\"implyzvcr5d\" class=\" hidden \" > The important thing is not to stop questioning. </p><footer id=\"implyzvcr5e\" class=\" hidden \" > — Albert Einstein </footer></blockquote>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 136,
+          "state": {
+            "hidden": [
+              "implyzvcr5e"
+            ]
+          }
+        },
+        {
+          "time": 139,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "focusList",
+      "start": 146,
+      "end": 162,
+      "html": "<section class=\"slide focusList\"><h1 id=\"implyzvcr5f\" class=\"\" > Lesson Recap </h1><ul><li id=\"implyzvcr5g\" class=\"\" > Force changes motion </li><li id=\"implyzvcr5h\" class=\"\" > Force depends on mass </li><li id=\"implyzvcr5i\" class=\"\" > Equations describe physics </li><li id=\"implyzvcr5j\" class=\"\" > Reasoning builds understanding </li></ul></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ]
+      },
+      "actions": [
+        {
+          "time": 146,
+          "state": {
+            "focus": [
+              "implyzvcr5f"
+            ],
+            "dim": [
+              "implyzvcr5g",
+              "implyzvcr5h",
+              "implyzvcr5i",
+              "implyzvcr5j"
+            ]
+          }
+        },
+        {
+          "time": 148,
+          "state": {
+            "focus": [
+              "implyzvcr5g"
+            ],
+            "dim": [
+              "implyzvcr5f",
+              "implyzvcr5h",
+              "implyzvcr5i",
+              "implyzvcr5j"
+            ]
+          }
+        },
+        {
+          "time": 150,
+          "state": {
+            "focus": [
+              "implyzvcr5h"
+            ],
+            "dim": [
+              "implyzvcr5f",
+              "implyzvcr5g",
+              "implyzvcr5i",
+              "implyzvcr5j"
+            ]
+          }
+        },
+        {
+          "time": 152,
+          "state": {
+            "focus": [
+              "implyzvcr5i"
+            ],
+            "dim": [
+              "implyzvcr5f",
+              "implyzvcr5g",
+              "implyzvcr5h",
+              "implyzvcr5j"
+            ]
+          }
+        },
+        {
+          "time": 154,
+          "state": {
+            "focus": [
+              "implyzvcr5j"
+            ],
+            "dim": [
+              "implyzvcr5f",
+              "implyzvcr5g",
+              "implyzvcr5h",
+              "implyzvcr5i"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

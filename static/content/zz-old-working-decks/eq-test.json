@@ -1,0 +1,136 @@
+{
+  "version": "deck-v1",
+  "name": "EQ Mini Deck – Rich Side Panel (Fixed + Timed)",
+
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": null,
+    "backgroundImageOpacity": 0.3
+  },
+
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 5,
+      "data": [
+        { "name": "title", "content": "Expanding (a + b)²", "showAt": 0 },
+        { "name": "subtitle", "content": "EQ slides with deep explanations", "showAt": 1 }
+      ]
+    },
+
+    {
+      "type": "eq",
+      "start": 5,
+      "end": 22,
+      "data": [
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Given expression",
+          "showAt": 5,
+          "spItems": [
+            { "type": "spImage", "content": "box.webp" },
+            { "type": "spText", "content": "The square applies to the entire bracket." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$(a + b)^2$",
+          "showAt": 7,
+          "spItems": [
+            { "type": "spText", "content": "The exponent applies to the whole bracket." },
+            { "type": "spText", "content": "It does not apply to just one term." },
+            { "type": "spText", "content": "This mistake is very common among students." },
+            { "type": "spText", "content": "Brackets must be treated as a single unit." },
+            { "type": "spText", "content": "The square means repeated multiplication." },
+            { "type": "spMath", "content": "$(a+b)^2 = (a+b)\\times(a+b)$" }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$(a + b)(a + b)$",
+          "showAt": 10,
+          "spItems": [
+            { "type": "spText", "content": "The square is rewritten as a product." },
+            { "type": "spText", "content": "Both brackets are identical." },
+            { "type": "spText", "content": "This makes expansion possible." },
+            { "type": "spText", "content": "Every term will be multiplied." },
+            { "type": "spText", "content": "No shortcut should be taken here." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Expansion strategy",
+          "showAt": 14,
+          "spItems": [
+            { "type": "spText", "content": "Each term multiplies every term in the other bracket." },
+            { "type": "spText", "content": "This is the distributive law in action." },
+            { "type": "spText", "content": "Missing any product gives a wrong result." },
+            { "type": "spText", "content": "Signs must be handled carefully." },
+            { "type": "spText", "content": "Writing steps keeps the logic clear." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "eq",
+      "start": 22,
+      "end": 44,
+      "data": [
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Multiply step by step",
+          "showAt": 22,
+          "spItems": [
+            { "type": "spImage", "content": "box.webp" },
+            { "type": "spText", "content": "Multiply one term at a time." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$(a + b)(a + b)$",
+          "showAt": 24,
+          "spItems": [
+            { "type": "spText", "content": "Rewrite the expression to keep context visible." },
+            { "type": "spText", "content": "This prevents mental expansion." },
+            { "type": "spText", "content": "Each multiplication is written explicitly." },
+            { "type": "spText", "content": "The structure remains clear." },
+            { "type": "spText", "content": "Accuracy improves when steps are shown." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$= a^2 + ab + ab + b^2$",
+          "showAt": 28,
+          "spItems": [
+            { "type": "spMath", "content": "$a\\times a = a^2$" },
+            { "type": "spMath", "content": "$a\\times b = ab$" },
+            { "type": "spMath", "content": "$b\\times a = ab$" },
+            { "type": "spMath", "content": "$b\\times b = b^2$" }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$= a^2 + 2ab + b^2$",
+          "showAt": 34,
+          "spItems": [
+            { "type": "spText", "content": "Like terms are combined." },
+            { "type": "spText", "content": "The two ab terms add together." },
+            { "type": "spMath", "content": "$ab + ab = 2ab$" },
+            { "type": "spText", "content": "The expression becomes compact." },
+            { "type": "spText", "content": "This is the standard expanded form." }
+          ]
+        }
+      ]
+    }
+  ]
+}

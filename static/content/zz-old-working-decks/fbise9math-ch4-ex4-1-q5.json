@@ -1,0 +1,90 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 5",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 5", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 85,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$9x^2 + 4 - 16y^2 - 12x$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Rearrange terms in standard order." },
+              { "type": "spText", "content": "Group x-terms together." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$9x^2 - 12x + 4 - 16y^2$",
+            "showAt": 15,
+            "spItems": [
+              { "type": "spText", "content": "Now focus on the first three terms." },
+              { "type": "spText", "content": "Check if 9x² - 12x + 4 is a perfect square." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$9x^2 - 12x + 4 = (3x - 2)^2$",
+            "showAt": 30,
+            "spItems": [
+              { "type": "spText", "content": "Because (3x)² = 9x² and 2² = 4." },
+              { "type": "spText", "content": "Middle term -12x equals -2×3x×2." },
+              { "type": "spText", "content": "So it matches a² - 2ab + b²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(3x - 2)^2 - (4y)^2$",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "Now the expression becomes a difference of squares." },
+              { "type": "spText", "content": "Since 16y² = (4y)²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(3x - 2 - 4y)(3x - 2 + 4y)$",
+            "showAt": 60,
+            "spItems": [
+              { "type": "spText", "content": "Apply identity: a² - b² = (a - b)(a + b)." },
+              { "type": "spText", "content": "Here a = (3x - 2) and b = 4y." },
+              { "type": "spText", "content": "Final Answer: (3x - 2 - 4y)(3x - 2 + 4y)." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Method Used: Perfect Square + Difference of Squares",
+            "showAt": 75,
+            "spItems": [
+              { "type": "spText", "content": "Always rearrange before factoring." },
+              { "type": "spText", "content": "Look for hidden perfect squares first." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

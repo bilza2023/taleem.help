@@ -34,11 +34,30 @@
 			alt = "";
 
 		}
-		catch (error) {
+	catch (error) {
 
-			alert(error.message);
+	const messages = {
 
-		}
+		filename_already_exists:
+			"An image with this filename already exists.\n\nRename the file before uploading.",
+
+		invalid_image_type:
+			"Please select a JPG, PNG, GIF, SVG or WEBP image.",
+
+		login_required:
+			"Your login has expired. Please sign in again.",
+
+		server_error:
+			"The server could not complete the upload."
+
+	};
+
+	alert(
+		messages[error.message] ??
+		`Upload failed.\n\n${error.message}`
+	);
+
+}
 
 	}
 </script>

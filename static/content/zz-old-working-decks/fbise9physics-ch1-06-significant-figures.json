@@ -1,0 +1,69 @@
+{
+    "version": "deck-v1",
+    "name": "Significant Figures",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndPara",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Significant Figures", "showAt": 0 },
+          { "name": "para", "content": "Significant figures are the digits in a number that carry meaningful information about its precision.", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 6,
+        "end": 14,
+        "data": [
+          { "name": "title", "content": "Why Are They Important?", "showAt": 6 },
+          { "name": "para", "content": "In measurements, not all digits are equally reliable. Significant figures help us show how precise a measurement is.", "showAt": 9 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 14,
+        "end": 26,
+        "data": [
+          { "name": "bullet", "content": "All non-zero digits are significant.", "showAt": 14 },
+          { "name": "bullet", "content": "Zeros between non-zero digits are significant.", "showAt": 17 },
+          { "name": "bullet", "content": "Leading zeros are NOT significant.", "showAt": 20 },
+          { "name": "bullet", "content": "Trailing zeros in decimals are significant.", "showAt": 23 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 26,
+        "end": 36,
+        "data": [
+          { "name": "title", "content": "Examples", "showAt": 26 },
+          { "name": "para", "content": "25.3 has 3 significant figures. 0.0045 has 2 significant figures. 2005 has 4 significant figures. 3.200 has 4 significant figures.", "showAt": 29 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 36,
+        "end": 46,
+        "data": [
+          { "name": "title", "content": "Rounding", "showAt": 36 },
+          { "name": "para", "content": "When rounding, look at the digit after the required place. If it is 5 or more, round up. If it is less than 5, keep the digit unchanged.", "showAt": 39 }
+        ]
+      },
+      {
+        "type": "bulletList",
+        "start": 46,
+        "end": 58,
+        "data": [
+          { "name": "bullet", "content": "Significant figures show measurement precision.", "showAt": 46 },
+          { "name": "bullet", "content": "They prevent false accuracy.", "showAt": 50 },
+          { "name": "bullet", "content": "Always match significant figures in final answers.", "showAt": 54 }
+        ]
+      }
+    ]
+  }
+  

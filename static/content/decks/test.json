@@ -1,0 +1,64 @@
+{
+  "name": "EQ Test 02",
+  "background": {
+    "backgroundColor": "#05070c",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.5
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 0,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"implyzvd3a5\" class=\" hidden taleem-heading-lg \" > Testing </h1><h2 id=\"implyzvd3a6\" class=\" hidden taleem-heading-md \" > Stress testing reasoning slides and side panels </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "implyzvd3a6"
+            ]
+          }
+        },
+        {
+          "time": 3,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 62,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"implyzvd3a7\" class=\" hidden taleem-heading-lg \" > Solving Linear Equations </h1><h2 id=\"implyzvd3a8\" class=\" hidden taleem-heading-md \" > Authoring-rule focused EQ testing </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "implyzvd3a8"
+            ]
+          }
+        },
+        {
+          "time": 3,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    }
+  ]
+}

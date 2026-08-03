@@ -1,0 +1,97 @@
+{
+  "version": "deck-v1",
+  "name": "Number Line and Ordering Numbers",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": null,
+    "backgroundImageOpacity": 0.3
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 6,
+      "data": [
+        { "name": "title", "content": "Number Line", "showAt": 0 },
+        { "name": "subtitle", "content": "Understanding and Ordering Numbers", "showAt": 1 }
+      ]
+    },
+    {
+      "type": "imageSlide",
+      "start": 6,
+      "end": 14,
+      "data": [
+        { "name": "image", "content": "number-line-example.jpeg", "showAt": 6 }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 14,
+      "end": 28,
+      "data": [
+        { "name": "image", "content": "number-line-example.jpeg", "showAt": 14 },
+        { "name": "bullet", "content": "A number line is a straight horizontal line", "showAt": 15 },
+        { "name": "bullet", "content": "Numbers are placed at equal distances", "showAt": 17 },
+        { "name": "bullet", "content": "Each mark represents a number", "showAt": 19 },
+        { "name": "bullet", "content": "It helps us see numbers clearly", "showAt": 21 }
+      ]
+    },
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 28,
+      "end": 44,
+      "data": [
+        { "name": "image", "content": "number-line-example.jpeg", "showAt": 28 },
+        { "name": "bullet", "content": "Zero is at the center of the number line", "showAt": 29 },
+        { "name": "bullet", "content": "Zero is a reference point", "showAt": 31 },
+        { "name": "bullet", "content": "All numbers are compared using zero", "showAt": 33 }
+      ]
+    },
+    {
+      "type": "imageLeftBulletsRight",
+      "start": 44,
+      "end": 62,
+      "data": [
+        { "name": "image", "content": "number-line-example2.jpeg", "showAt": 44 },
+        { "name": "bullet", "content": "Numbers to the right of zero are positive", "showAt": 45 },
+        { "name": "bullet", "content": "Values increase as we move right", "showAt": 47 },
+        { "name": "bullet", "content": "1, 2, 3, 4 are positive numbers", "showAt": 49 }
+      ]
+    },
+    {
+      "type": "imageRightBulletsLeft",
+      "start": 62,
+      "end": 80,
+      "data": [
+        { "name": "image", "content": "number-line-example2.jpeg", "showAt": 62 },
+        { "name": "bullet", "content": "Numbers to the left of zero are negative", "showAt": 63 },
+        { "name": "bullet", "content": "Values decrease as we move left", "showAt": 65 },
+        { "name": "bullet", "content": "−1, −2, −3 are negative numbers", "showAt": 67 }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "start": 80,
+      "end": 100,
+      "data": [
+        { "name": "bullet", "content": "A number on the right is always greater", "showAt": 80 },
+        { "name": "bullet", "content": "A number on the left is always smaller", "showAt": 83 },
+        { "name": "bullet", "content": "3 is greater than −2", "showAt": 86 },
+        { "name": "bullet", "content": "−1 is greater than −4", "showAt": 89 }
+      ]
+    },
+    {
+      "type": "titleAndPara",
+      "start": 100,
+      "end": 114,
+      "data": [
+        { "name": "title", "content": "Why Number Line Is Important", "showAt": 100 },
+        {
+          "name": "para",
+          "content": "The number line helps us compare numbers, arrange them in order, and understand positive and negative values. It builds a strong foundation for future topics in mathematics.",
+          "showAt": 101
+        }
+      ]
+    }
+  ]
+}

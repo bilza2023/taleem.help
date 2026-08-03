@@ -1,0 +1,451 @@
+{
+  "name": "Text Grid Test",
+  "background": {
+    "backgroundColor": "#05070c",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.22
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 8,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"implyzvd5a9\" class=\" hidden taleem-heading-lg \" > Text Grid Testing </h1><h2 id=\"implyzvd5aa\" class=\" hidden taleem-heading-md \" > Chunking • clustering • visual scanning </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "implyzvd5aa"
+            ]
+          }
+        },
+        {
+          "time": 3,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "textGrid",
+      "start": 8,
+      "end": 26,
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"implyzvd5ab\" class=\" text-grid-item hidden \" > Addition </div><div id=\"implyzvd5ac\" class=\" text-grid-item hidden \" > Subtraction </div><div id=\"implyzvd5ad\" class=\" text-grid-item hidden \" > Multiplication </div><div id=\"implyzvd5ae\" class=\" text-grid-item hidden \" > Division </div><div id=\"implyzvd5af\" class=\" text-grid-item hidden \" > Fractions </div><div id=\"implyzvd5ag\" class=\" text-grid-item hidden \" > Percentages </div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 8,
+          "state": {
+            "hidden": [
+              "implyzvd5ac",
+              "implyzvd5ad",
+              "implyzvd5ae",
+              "implyzvd5af",
+              "implyzvd5ag"
+            ]
+          }
+        },
+        {
+          "time": 10,
+          "state": {
+            "hidden": [
+              "implyzvd5ad",
+              "implyzvd5ae",
+              "implyzvd5af",
+              "implyzvd5ag"
+            ]
+          }
+        },
+        {
+          "time": 12,
+          "state": {
+            "hidden": [
+              "implyzvd5ae",
+              "implyzvd5af",
+              "implyzvd5ag"
+            ]
+          }
+        },
+        {
+          "time": 14,
+          "state": {
+            "hidden": [
+              "implyzvd5af",
+              "implyzvd5ag"
+            ]
+          }
+        },
+        {
+          "time": 16,
+          "state": {
+            "hidden": [
+              "implyzvd5ag"
+            ]
+          }
+        },
+        {
+          "time": 18,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "textGrid",
+      "start": 26,
+      "end": 44,
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"implyzvd5ah\" class=\" text-grid-item hidden \" > Photosynthesis </div><div id=\"implyzvd5ai\" class=\" text-grid-item hidden \" > Respiration </div><div id=\"implyzvd5aj\" class=\" text-grid-item hidden \" > Digestion </div><div id=\"implyzvd5ak\" class=\" text-grid-item hidden \" > Circulation </div><div id=\"implyzvd5al\" class=\" text-grid-item hidden \" > Excretion </div><div id=\"implyzvd5am\" class=\" text-grid-item hidden \" > Reproduction </div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 26,
+          "state": {
+            "hidden": [
+              "implyzvd5ai",
+              "implyzvd5aj",
+              "implyzvd5ak",
+              "implyzvd5al",
+              "implyzvd5am"
+            ]
+          }
+        },
+        {
+          "time": 28,
+          "state": {
+            "hidden": [
+              "implyzvd5aj",
+              "implyzvd5ak",
+              "implyzvd5al",
+              "implyzvd5am"
+            ]
+          }
+        },
+        {
+          "time": 30,
+          "state": {
+            "hidden": [
+              "implyzvd5ak",
+              "implyzvd5al",
+              "implyzvd5am"
+            ]
+          }
+        },
+        {
+          "time": 32,
+          "state": {
+            "hidden": [
+              "implyzvd5al",
+              "implyzvd5am"
+            ]
+          }
+        },
+        {
+          "time": 34,
+          "state": {
+            "hidden": [
+              "implyzvd5am"
+            ]
+          }
+        },
+        {
+          "time": 36,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "textGrid",
+      "start": 44,
+      "end": 62,
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"implyzvd5an\" class=\" text-grid-item hidden \" > Velocity </div><div id=\"implyzvd5ao\" class=\" text-grid-item hidden \" > Acceleration </div><div id=\"implyzvd5ap\" class=\" text-grid-item hidden \" > Momentum </div><div id=\"implyzvd5aq\" class=\" text-grid-item hidden \" > Gravity </div><div id=\"implyzvd5ar\" class=\" text-grid-item hidden \" > Force </div><div id=\"implyzvd5as\" class=\" text-grid-item hidden \" > Energy </div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 44,
+          "state": {
+            "hidden": [
+              "implyzvd5ao",
+              "implyzvd5ap",
+              "implyzvd5aq",
+              "implyzvd5ar",
+              "implyzvd5as"
+            ]
+          }
+        },
+        {
+          "time": 46,
+          "state": {
+            "hidden": [
+              "implyzvd5ap",
+              "implyzvd5aq",
+              "implyzvd5ar",
+              "implyzvd5as"
+            ]
+          }
+        },
+        {
+          "time": 48,
+          "state": {
+            "hidden": [
+              "implyzvd5aq",
+              "implyzvd5ar",
+              "implyzvd5as"
+            ]
+          }
+        },
+        {
+          "time": 50,
+          "state": {
+            "hidden": [
+              "implyzvd5ar",
+              "implyzvd5as"
+            ]
+          }
+        },
+        {
+          "time": 52,
+          "state": {
+            "hidden": [
+              "implyzvd5as"
+            ]
+          }
+        },
+        {
+          "time": 54,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "textGrid",
+      "start": 62,
+      "end": 80,
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"implyzvd5at\" class=\" text-grid-item hidden \" > Variables </div><div id=\"implyzvd5au\" class=\" text-grid-item hidden \" > Functions </div><div id=\"implyzvd5av\" class=\" text-grid-item hidden \" > Arrays </div><div id=\"implyzvd5aw\" class=\" text-grid-item hidden \" > Objects </div><div id=\"implyzvd5ax\" class=\" text-grid-item hidden \" > Loops </div><div id=\"implyzvd5ay\" class=\" text-grid-item hidden \" > Conditions </div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 62,
+          "state": {
+            "hidden": [
+              "implyzvd5au",
+              "implyzvd5av",
+              "implyzvd5aw",
+              "implyzvd5ax",
+              "implyzvd5ay"
+            ]
+          }
+        },
+        {
+          "time": 64,
+          "state": {
+            "hidden": [
+              "implyzvd5av",
+              "implyzvd5aw",
+              "implyzvd5ax",
+              "implyzvd5ay"
+            ]
+          }
+        },
+        {
+          "time": 66,
+          "state": {
+            "hidden": [
+              "implyzvd5aw",
+              "implyzvd5ax",
+              "implyzvd5ay"
+            ]
+          }
+        },
+        {
+          "time": 68,
+          "state": {
+            "hidden": [
+              "implyzvd5ax",
+              "implyzvd5ay"
+            ]
+          }
+        },
+        {
+          "time": 70,
+          "state": {
+            "hidden": [
+              "implyzvd5ay"
+            ]
+          }
+        },
+        {
+          "time": 72,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "textGrid",
+      "start": 80,
+      "end": 98,
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"implyzvd5az\" class=\" text-grid-item hidden \" > Observation </div><div id=\"implyzvd5b0\" class=\" text-grid-item hidden \" > Hypothesis </div><div id=\"implyzvd5b1\" class=\" text-grid-item hidden \" > Experiment </div><div id=\"implyzvd5b2\" class=\" text-grid-item hidden \" > Analysis </div><div id=\"implyzvd5b3\" class=\" text-grid-item hidden \" > Conclusion </div><div id=\"implyzvd5b4\" class=\" text-grid-item hidden \" > Verification </div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 80,
+          "state": {
+            "hidden": [
+              "implyzvd5b0",
+              "implyzvd5b1",
+              "implyzvd5b2",
+              "implyzvd5b3",
+              "implyzvd5b4"
+            ]
+          }
+        },
+        {
+          "time": 82,
+          "state": {
+            "hidden": [
+              "implyzvd5b1",
+              "implyzvd5b2",
+              "implyzvd5b3",
+              "implyzvd5b4"
+            ]
+          }
+        },
+        {
+          "time": 84,
+          "state": {
+            "hidden": [
+              "implyzvd5b2",
+              "implyzvd5b3",
+              "implyzvd5b4"
+            ]
+          }
+        },
+        {
+          "time": 86,
+          "state": {
+            "hidden": [
+              "implyzvd5b3",
+              "implyzvd5b4"
+            ]
+          }
+        },
+        {
+          "time": 88,
+          "state": {
+            "hidden": [
+              "implyzvd5b4"
+            ]
+          }
+        },
+        {
+          "time": 90,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "textGrid",
+      "start": 98,
+      "end": 116,
+      "html": "<section class=\"slide textGrid\"><div class=\"text-grid\"><div id=\"implyzvd5b5\" class=\" text-grid-item hidden \" > Focus </div><div id=\"implyzvd5b6\" class=\" text-grid-item hidden \" > Clarity </div><div id=\"implyzvd5b7\" class=\" text-grid-item hidden \" > Discipline </div><div id=\"implyzvd5b8\" class=\" text-grid-item hidden \" > Patience </div><div id=\"implyzvd5b9\" class=\" text-grid-item hidden \" > Reasoning </div><div id=\"implyzvd5ba\" class=\" text-grid-item hidden \" > Consistency </div></div></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 98,
+          "state": {
+            "hidden": [
+              "implyzvd5b6",
+              "implyzvd5b7",
+              "implyzvd5b8",
+              "implyzvd5b9",
+              "implyzvd5ba"
+            ]
+          }
+        },
+        {
+          "time": 100,
+          "state": {
+            "hidden": [
+              "implyzvd5b7",
+              "implyzvd5b8",
+              "implyzvd5b9",
+              "implyzvd5ba"
+            ]
+          }
+        },
+        {
+          "time": 102,
+          "state": {
+            "hidden": [
+              "implyzvd5b8",
+              "implyzvd5b9",
+              "implyzvd5ba"
+            ]
+          }
+        },
+        {
+          "time": 104,
+          "state": {
+            "hidden": [
+              "implyzvd5b9",
+              "implyzvd5ba"
+            ]
+          }
+        },
+        {
+          "time": 106,
+          "state": {
+            "hidden": [
+              "implyzvd5ba"
+            ]
+          }
+        },
+        {
+          "time": 108,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    }
+  ]
+}

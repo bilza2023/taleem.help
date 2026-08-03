@@ -1,0 +1,88 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 8",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 8", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 95,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$1 - x^2 - 2xy - y^2$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Rearrange the expression for clarity." },
+              { "type": "spText", "content": "Group the x and y terms together." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$1 - (x^2 + 2xy + y^2)$",
+            "showAt": 20,
+            "spItems": [
+              { "type": "spText", "content": "Notice that x² + 2xy + y² is a perfect square." },
+              { "type": "spText", "content": "It matches the identity a² + 2ab + b²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$1 - (x + y)^2$",
+            "showAt": 35,
+            "spItems": [
+              { "type": "spText", "content": "Because (x + y)² = x² + 2xy + y²." },
+              { "type": "spText", "content": "Now the expression becomes a difference of squares." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$1^2 - (x + y)^2$",
+            "showAt": 50,
+            "spItems": [
+              { "type": "spText", "content": "Rewrite 1 as 1² to apply the identity clearly." },
+              { "type": "spText", "content": "Use a² - b² = (a - b)(a + b)." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(1 - x - y)(1 + x + y)$",
+            "showAt": 65,
+            "spItems": [
+              { "type": "spText", "content": "Apply the difference of squares formula." },
+              { "type": "spText", "content": "Final Answer: (1 - x - y)(1 + x + y)." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Method Used: Perfect Square + Difference of Squares",
+            "showAt": 80,
+            "spItems": [
+              { "type": "spText", "content": "First identify perfect square trinomials." },
+              { "type": "spText", "content": "Then apply the difference of squares identity." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

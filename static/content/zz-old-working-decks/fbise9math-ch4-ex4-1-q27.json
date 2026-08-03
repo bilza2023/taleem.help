@@ -1,0 +1,88 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 27",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 27", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 140,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$2a^2 - 4a - 6$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Take out the common factor." },
+              { "type": "spText", "content": "All terms are divisible by 2." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$2(a^2 - 2a - 3)$",
+            "showAt": 25,
+            "spItems": [
+              { "type": "spText", "content": "Factor out 2." },
+              { "type": "spText", "content": "Now factor the quadratic inside." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$-3 → -3 and 1$",
+            "showAt": 45,
+            "spItems": [
+              { "type": "spText", "content": "Find numbers whose product is -3 and sum is -2." },
+              { "type": "spText", "content": "-3 + 1 = -2." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$a^2 - 3a + a - 3$",
+            "showAt": 65,
+            "spItems": [
+              { "type": "spText", "content": "Split the middle term." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$a(a - 3) + 1(a - 3)$",
+            "showAt": 80,
+            "spItems": [
+              { "type": "spText", "content": "Factor by grouping." },
+              { "type": "spText", "content": "Common binomial (a - 3) appears." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: 2(a - 3)(a + 1)",
+            "showAt": 105,
+            "spItems": [
+              { "type": "spText", "content": "Factor inside gives (a - 3)(a + 1)." },
+              { "type": "spText", "content": "Method Used: Common Factor + Splitting the Middle Term." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,576 @@
+{
+  "name": "EQ Test 01",
+  "background": {
+    "backgroundColor": "#05070c",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.22
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 8,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"implyzvcf1t\" class=\" hidden taleem-heading-lg \" > Expanding (a+b)^2 </h1><h2 id=\"implyzvcf1u\" class=\" hidden taleem-heading-md \" > Testing EQ slide pacing and reasoning flow </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "implyzvcf1u"
+            ]
+          }
+        },
+        {
+          "time": 3,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 8,
+      "end": 30,
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"implyzvcf1v\" class=\" eq-item eq-title \" > Understanding the Square </li><li id=\"implyzvcf1w\" class=\" eq-item eq-math \" > $$ (a+b)^2 $$ </li><li id=\"implyzvcf1x\" class=\" eq-item eq-math \" > $$ = (a+b)(a+b) $$ </li><li id=\"implyzvcf1y\" class=\" eq-item eq-line \" > Now every term must multiply. </li><li id=\"implyzvcf1z\" class=\" eq-item eq-math \" > $$ = a(a+b) + b(a+b) $$ </li><li id=\"implyzvcf20\" class=\" eq-item eq-math \" > $$ = a^2 + ab + ab + b^2 $$ </li><li id=\"implyzvcf21\" class=\" eq-item eq-line \" > The two middle terms are identical. </li><li id=\"implyzvcf22\" class=\" eq-item eq-math \" > $$ = a^2 + 2ab + b^2 $$ </li></ul><div class=\"eq-side-panel\"><div id=\"implyzvcf1v-sp-1\" class=\"eq-explain-item hidden\" > The exponent applies to the whole bracket. </div><div id=\"implyzvcf1v-sp-2\" class=\"eq-explain-item hidden\" > The bracket multiplies itself. </div><div id=\"implyzvcf1w-sp-1\" class=\"eq-explain-item hidden\" > This is not a^2 + b^2. </div><div id=\"implyzvcf1x-sp-1\" class=\"eq-explain-item hidden\" ><img src=\"box.webp\" /></div><div id=\"implyzvcf1x-sp-2\" class=\"eq-explain-item hidden\" > Rewrite the square as repeated multiplication. </div><div id=\"implyzvcf1y-sp-1\" class=\"eq-explain-item hidden\" > Each term interacts with every term. </div><div id=\"implyzvcf1z-sp-1\" class=\"eq-explain-item hidden\" > Distribute carefully. </div><div id=\"implyzvcf20-sp-1\" class=\"eq-explain-item hidden\" > All products are now visible. </div><div id=\"implyzvcf21-sp-1\" class=\"eq-explain-item hidden\" > Both terms contain ab. </div><div id=\"implyzvcf22-sp-1\" class=\"eq-explain-item hidden\" > Combine like terms. </div></div></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ],
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 8,
+          "state": {
+            "focus": [
+              "implyzvcf1v"
+            ],
+            "dim": [
+              "implyzvcf1w",
+              "implyzvcf1x",
+              "implyzvcf1y",
+              "implyzvcf1z",
+              "implyzvcf20",
+              "implyzvcf21",
+              "implyzvcf22"
+            ],
+            "visible": [
+              "implyzvcf1v-sp-1",
+              "implyzvcf1v-sp-2"
+            ],
+            "hidden": [
+              "implyzvcf1w-sp-1",
+              "implyzvcf1x-sp-1",
+              "implyzvcf1x-sp-2",
+              "implyzvcf1y-sp-1",
+              "implyzvcf1z-sp-1",
+              "implyzvcf20-sp-1",
+              "implyzvcf21-sp-1",
+              "implyzvcf22-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 10,
+          "state": {
+            "focus": [
+              "implyzvcf1w"
+            ],
+            "dim": [
+              "implyzvcf1v",
+              "implyzvcf1x",
+              "implyzvcf1y",
+              "implyzvcf1z",
+              "implyzvcf20",
+              "implyzvcf21",
+              "implyzvcf22"
+            ],
+            "visible": [
+              "implyzvcf1w-sp-1"
+            ],
+            "hidden": [
+              "implyzvcf1v-sp-1",
+              "implyzvcf1v-sp-2",
+              "implyzvcf1x-sp-1",
+              "implyzvcf1x-sp-2",
+              "implyzvcf1y-sp-1",
+              "implyzvcf1z-sp-1",
+              "implyzvcf20-sp-1",
+              "implyzvcf21-sp-1",
+              "implyzvcf22-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 12,
+          "state": {
+            "focus": [
+              "implyzvcf1x"
+            ],
+            "dim": [
+              "implyzvcf1v",
+              "implyzvcf1w",
+              "implyzvcf1y",
+              "implyzvcf1z",
+              "implyzvcf20",
+              "implyzvcf21",
+              "implyzvcf22"
+            ],
+            "visible": [
+              "implyzvcf1x-sp-1",
+              "implyzvcf1x-sp-2"
+            ],
+            "hidden": [
+              "implyzvcf1v-sp-1",
+              "implyzvcf1v-sp-2",
+              "implyzvcf1w-sp-1",
+              "implyzvcf1y-sp-1",
+              "implyzvcf1z-sp-1",
+              "implyzvcf20-sp-1",
+              "implyzvcf21-sp-1",
+              "implyzvcf22-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 14,
+          "state": {
+            "focus": [
+              "implyzvcf1y"
+            ],
+            "dim": [
+              "implyzvcf1v",
+              "implyzvcf1w",
+              "implyzvcf1x",
+              "implyzvcf1z",
+              "implyzvcf20",
+              "implyzvcf21",
+              "implyzvcf22"
+            ],
+            "visible": [
+              "implyzvcf1y-sp-1"
+            ],
+            "hidden": [
+              "implyzvcf1v-sp-1",
+              "implyzvcf1v-sp-2",
+              "implyzvcf1w-sp-1",
+              "implyzvcf1x-sp-1",
+              "implyzvcf1x-sp-2",
+              "implyzvcf1z-sp-1",
+              "implyzvcf20-sp-1",
+              "implyzvcf21-sp-1",
+              "implyzvcf22-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 16,
+          "state": {
+            "focus": [
+              "implyzvcf1z"
+            ],
+            "dim": [
+              "implyzvcf1v",
+              "implyzvcf1w",
+              "implyzvcf1x",
+              "implyzvcf1y",
+              "implyzvcf20",
+              "implyzvcf21",
+              "implyzvcf22"
+            ],
+            "visible": [
+              "implyzvcf1z-sp-1"
+            ],
+            "hidden": [
+              "implyzvcf1v-sp-1",
+              "implyzvcf1v-sp-2",
+              "implyzvcf1w-sp-1",
+              "implyzvcf1x-sp-1",
+              "implyzvcf1x-sp-2",
+              "implyzvcf1y-sp-1",
+              "implyzvcf20-sp-1",
+              "implyzvcf21-sp-1",
+              "implyzvcf22-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 18,
+          "state": {
+            "focus": [
+              "implyzvcf20"
+            ],
+            "dim": [
+              "implyzvcf1v",
+              "implyzvcf1w",
+              "implyzvcf1x",
+              "implyzvcf1y",
+              "implyzvcf1z",
+              "implyzvcf21",
+              "implyzvcf22"
+            ],
+            "visible": [
+              "implyzvcf20-sp-1"
+            ],
+            "hidden": [
+              "implyzvcf1v-sp-1",
+              "implyzvcf1v-sp-2",
+              "implyzvcf1w-sp-1",
+              "implyzvcf1x-sp-1",
+              "implyzvcf1x-sp-2",
+              "implyzvcf1y-sp-1",
+              "implyzvcf1z-sp-1",
+              "implyzvcf21-sp-1",
+              "implyzvcf22-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 20,
+          "state": {
+            "focus": [
+              "implyzvcf21"
+            ],
+            "dim": [
+              "implyzvcf1v",
+              "implyzvcf1w",
+              "implyzvcf1x",
+              "implyzvcf1y",
+              "implyzvcf1z",
+              "implyzvcf20",
+              "implyzvcf22"
+            ],
+            "visible": [
+              "implyzvcf21-sp-1"
+            ],
+            "hidden": [
+              "implyzvcf1v-sp-1",
+              "implyzvcf1v-sp-2",
+              "implyzvcf1w-sp-1",
+              "implyzvcf1x-sp-1",
+              "implyzvcf1x-sp-2",
+              "implyzvcf1y-sp-1",
+              "implyzvcf1z-sp-1",
+              "implyzvcf20-sp-1",
+              "implyzvcf22-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 22,
+          "state": {
+            "focus": [
+              "implyzvcf22"
+            ],
+            "dim": [
+              "implyzvcf1v",
+              "implyzvcf1w",
+              "implyzvcf1x",
+              "implyzvcf1y",
+              "implyzvcf1z",
+              "implyzvcf20",
+              "implyzvcf21"
+            ],
+            "visible": [
+              "implyzvcf22-sp-1"
+            ],
+            "hidden": [
+              "implyzvcf1v-sp-1",
+              "implyzvcf1v-sp-2",
+              "implyzvcf1w-sp-1",
+              "implyzvcf1x-sp-1",
+              "implyzvcf1x-sp-2",
+              "implyzvcf1y-sp-1",
+              "implyzvcf1z-sp-1",
+              "implyzvcf20-sp-1",
+              "implyzvcf21-sp-1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 30,
+      "end": 50,
+      "html": "<section class=\"slide eq\"><ul class=\"eq-lines\"><li id=\"implyzvcg23\" class=\" eq-item eq-title \" > Testing with Variables </li><li id=\"implyzvcg24\" class=\" eq-item eq-math \" > $$ (x+y)^2 $$ </li><li id=\"implyzvcg25\" class=\" eq-item eq-math \" > $$ = (x+y)(x+y) $$ </li><li id=\"implyzvcg26\" class=\" eq-item eq-math \" > $$ = x^2 + xy + xy + y^2 $$ </li><li id=\"implyzvcg27\" class=\" eq-item eq-math \" > $$ = x^2 + 2xy + y^2 $$ </li><li id=\"implyzvcg28\" class=\" eq-item eq-line \" > This pattern appears throughout algebra. </li><li id=\"implyzvcg29\" class=\" eq-item eq-line \" > Careless expansion causes most mistakes. </li></ul><div class=\"eq-side-panel\"><div id=\"implyzvcg23-sp-1\" class=\"eq-explain-item hidden\" > The identity works for all variables. </div><div id=\"implyzvcg24-sp-1\" class=\"eq-explain-item hidden\" > Replace a and b with x and y. </div><div id=\"implyzvcg25-sp-1\" class=\"eq-explain-item hidden\" > Again the bracket multiplies itself. </div><div id=\"implyzvcg26-sp-1\" class=\"eq-explain-item hidden\" > Write every multiplication step. </div><div id=\"implyzvcg27-sp-1\" class=\"eq-explain-item hidden\" > Combine the two xy terms. </div><div id=\"implyzvcg28-sp-1\" class=\"eq-explain-item hidden\" > Used in identities and factorization. </div><div id=\"implyzvcg29-sp-1\" class=\"eq-explain-item hidden\" > Always verify each multiplication. </div></div></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ],
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 30,
+          "state": {
+            "focus": [
+              "implyzvcg23"
+            ],
+            "dim": [
+              "implyzvcg24",
+              "implyzvcg25",
+              "implyzvcg26",
+              "implyzvcg27",
+              "implyzvcg28",
+              "implyzvcg29"
+            ],
+            "visible": [
+              "implyzvcg23-sp-1"
+            ],
+            "hidden": [
+              "implyzvcg24-sp-1",
+              "implyzvcg25-sp-1",
+              "implyzvcg26-sp-1",
+              "implyzvcg27-sp-1",
+              "implyzvcg28-sp-1",
+              "implyzvcg29-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 32,
+          "state": {
+            "focus": [
+              "implyzvcg24"
+            ],
+            "dim": [
+              "implyzvcg23",
+              "implyzvcg25",
+              "implyzvcg26",
+              "implyzvcg27",
+              "implyzvcg28",
+              "implyzvcg29"
+            ],
+            "visible": [
+              "implyzvcg24-sp-1"
+            ],
+            "hidden": [
+              "implyzvcg23-sp-1",
+              "implyzvcg25-sp-1",
+              "implyzvcg26-sp-1",
+              "implyzvcg27-sp-1",
+              "implyzvcg28-sp-1",
+              "implyzvcg29-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 34,
+          "state": {
+            "focus": [
+              "implyzvcg25"
+            ],
+            "dim": [
+              "implyzvcg23",
+              "implyzvcg24",
+              "implyzvcg26",
+              "implyzvcg27",
+              "implyzvcg28",
+              "implyzvcg29"
+            ],
+            "visible": [
+              "implyzvcg25-sp-1"
+            ],
+            "hidden": [
+              "implyzvcg23-sp-1",
+              "implyzvcg24-sp-1",
+              "implyzvcg26-sp-1",
+              "implyzvcg27-sp-1",
+              "implyzvcg28-sp-1",
+              "implyzvcg29-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 36,
+          "state": {
+            "focus": [
+              "implyzvcg26"
+            ],
+            "dim": [
+              "implyzvcg23",
+              "implyzvcg24",
+              "implyzvcg25",
+              "implyzvcg27",
+              "implyzvcg28",
+              "implyzvcg29"
+            ],
+            "visible": [
+              "implyzvcg26-sp-1"
+            ],
+            "hidden": [
+              "implyzvcg23-sp-1",
+              "implyzvcg24-sp-1",
+              "implyzvcg25-sp-1",
+              "implyzvcg27-sp-1",
+              "implyzvcg28-sp-1",
+              "implyzvcg29-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 38,
+          "state": {
+            "focus": [
+              "implyzvcg27"
+            ],
+            "dim": [
+              "implyzvcg23",
+              "implyzvcg24",
+              "implyzvcg25",
+              "implyzvcg26",
+              "implyzvcg28",
+              "implyzvcg29"
+            ],
+            "visible": [
+              "implyzvcg27-sp-1"
+            ],
+            "hidden": [
+              "implyzvcg23-sp-1",
+              "implyzvcg24-sp-1",
+              "implyzvcg25-sp-1",
+              "implyzvcg26-sp-1",
+              "implyzvcg28-sp-1",
+              "implyzvcg29-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 40,
+          "state": {
+            "focus": [
+              "implyzvcg28"
+            ],
+            "dim": [
+              "implyzvcg23",
+              "implyzvcg24",
+              "implyzvcg25",
+              "implyzvcg26",
+              "implyzvcg27",
+              "implyzvcg29"
+            ],
+            "visible": [
+              "implyzvcg28-sp-1"
+            ],
+            "hidden": [
+              "implyzvcg23-sp-1",
+              "implyzvcg24-sp-1",
+              "implyzvcg25-sp-1",
+              "implyzvcg26-sp-1",
+              "implyzvcg27-sp-1",
+              "implyzvcg29-sp-1"
+            ]
+          }
+        },
+        {
+          "time": 42,
+          "state": {
+            "focus": [
+              "implyzvcg29"
+            ],
+            "dim": [
+              "implyzvcg23",
+              "implyzvcg24",
+              "implyzvcg25",
+              "implyzvcg26",
+              "implyzvcg27",
+              "implyzvcg28"
+            ],
+            "visible": [
+              "implyzvcg29-sp-1"
+            ],
+            "hidden": [
+              "implyzvcg23-sp-1",
+              "implyzvcg24-sp-1",
+              "implyzvcg25-sp-1",
+              "implyzvcg26-sp-1",
+              "implyzvcg27-sp-1",
+              "implyzvcg28-sp-1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "skeleton",
+      "start": 50,
+      "end": 65,
+      "html": "<section class=\"slide skeleton\"><div class=\"skeleton-body\"><h1 id=\"implyzvcg2a\" class=\"hidden \" > One Idea </h1><h1 id=\"implyzvcg2b\" class=\"hidden \" > One Step </h1><h1 id=\"implyzvcg2c\" class=\"hidden \" > One Focus </h1><h1 id=\"implyzvcg2d\" class=\"hidden \" > Clear Reasoning </h1></div></section>",
+      "groups": {
+        "visible": [],
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 50,
+          "state": {
+            "visible": [
+              "implyzvcg2a"
+            ],
+            "hidden": [
+              "implyzvcg2b",
+              "implyzvcg2c",
+              "implyzvcg2d"
+            ]
+          }
+        },
+        {
+          "time": 53,
+          "state": {
+            "visible": [
+              "implyzvcg2b"
+            ],
+            "hidden": [
+              "implyzvcg2a",
+              "implyzvcg2c",
+              "implyzvcg2d"
+            ]
+          }
+        },
+        {
+          "time": 56,
+          "state": {
+            "visible": [
+              "implyzvcg2c"
+            ],
+            "hidden": [
+              "implyzvcg2a",
+              "implyzvcg2b",
+              "implyzvcg2d"
+            ]
+          }
+        },
+        {
+          "time": 59,
+          "state": {
+            "visible": [
+              "implyzvcg2d"
+            ],
+            "hidden": [
+              "implyzvcg2a",
+              "implyzvcg2b",
+              "implyzvcg2c"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "name": "Number Families — Big Picture",
+  "version": "deck-v1",
+  "background": {
+    "backgroundColor": "#0f172a",
+    "backgroundImage": "number-families-2.jpg",
+    "backgroundImageOpacity": 0.07
+  },
+  "deck": [
+    {
+      "start": 0,
+      "end": 5,
+      "type": "titleAndSubtitle",
+      "data": [
+        {
+          "name": "title",
+          "content": "Number Families",
+          "showAt": 0
+        },
+        {
+          "name": "subtitle",
+          "content": "How Number Families Evolved",
+          "showAt": 1
+        }
+      ]
+    },
+    {
+      "start": 5,
+      "end": 40,
+      "type": "eq",
+      "data": [
+        {
+          "name": "line",
+          "type": "heading",
+          "content": "Why Number Systems Expanded",
+          "showAt": 5,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "number-families.jpeg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Counting works for basic quantities",
+          "showAt": 7,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "number-families.jpeg"
+            },
+            {
+              "type": "spText",
+              "content": "Natural numbers are used for counting objects."
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Zero was introduced to represent nothing",
+          "showAt": 11,
+          "spItems": [
+            {
+              "type": "spText",
+              "content": "A missing quantity needed a clear symbol."
+            },
+            {
+              "type": "spImage",
+              "content": "number-families.jpeg"
+            },
+            {
+              "type": "spText",
+              "content": "This completed the whole number system."
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Negative numbers solved values below zero",
+          "showAt": 15,
+          "spItems": [
+            {
+              "type": "spText",
+              "content": "Real life includes loss and decrease."
+            },
+            {
+              "type": "spImage",
+              "content": "number-families-2.jpg"
+            },
+            {
+              "type": "spText",
+              "content": "Integers extend numbers in both directions."
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Fractions allowed representation of parts",
+          "showAt": 19,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "number-families-2.jpg"
+            },
+            {
+              "type": "spText",
+              "content": "Rational numbers include fractions and decimals."
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Some values could not be written as fractions",
+          "showAt": 23,
+          "spItems": [
+            {
+              "type": "spText",
+              "content": "Not all numbers follow fraction rules."
+            },
+            {
+              "type": "spImage",
+              "content": "number-families-2.jpg"
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "text",
+          "content": "Irrational numbers completed the system",
+          "showAt": 27,
+          "spItems": [
+            {
+              "type": "spImage",
+              "content": "number-families-2.jpg"
+            },
+            {
+              "type": "spText",
+              "content": "Together they form the complete real number system."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start": 40,
+      "end": 50,
+      "type": "bulletList",
+      "data": [
+        {
+          "name": "bullet",
+          "content": "Numbers evolved as needs grew",
+          "showAt": 40
+        },
+        {
+          "name": "bullet",
+          "content": "Natural → counting",
+          "showAt": 41
+        },
+        {
+          "name": "bullet",
+          "content": "Whole → includes zero",
+          "showAt": 42
+        },
+        {
+          "name": "bullet",
+          "content": "Integers → include negatives",
+          "showAt": 43
+        },
+        {
+          "name": "bullet",
+          "content": "Rational → fractions & decimals",
+          "showAt": 44
+        },
+        {
+          "name": "bullet",
+          "content": "Irrational → not fractions",
+          "showAt": 45
+        },
+        {
+          "name": "bullet",
+          "content": "Real → rational + irrational",
+          "showAt": 46
+        },
+        {
+          "name": "bullet",
+          "content": "Each family solves a limitation",
+          "showAt": 47
+        }
+      ]
+    }
+  ]
+}

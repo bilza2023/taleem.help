@@ -1,0 +1,122 @@
+{
+    "version": "deck-v1",
+    "name": "Equivalent Fractions and Simplification",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "/physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Equivalent Fractions", "showAt": 0 },
+          { "name": "subtitle", "content": "Same value, different look", "showAt": 1 }
+        ]
+      },
+  
+      {
+        "type": "fillImage",
+        "start": 6,
+        "end": 16,
+        "data": [
+          { "name": "image", "content": "equivalent-fractions.png", "showAt": 6 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 16,
+        "end": 30,
+        "data": [
+          {
+            "name": "title",
+            "content": "Same quantity, different representation",
+            "showAt": 16
+          },
+          {
+            "name": "para",
+            "content": "Equivalent fractions may look different, but they represent the same amount. Changing the number of parts does not change the total value if the shaded portion remains equal.",
+            "showAt": 17
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 30,
+        "end": 44,
+        "data": [
+          { "name": "image", "content": "equivalent-fractions.png", "showAt": 30 },
+          { "name": "bullet", "content": "Different divisions can show the same amount", "showAt": 31 },
+          { "name": "bullet", "content": "Value stays the same even if parts increase", "showAt": 32 },
+          { "name": "bullet", "content": "Fractions represent portions of a whole", "showAt": 33 },
+          { "name": "bullet", "content": "Appearance can change, value does not", "showAt": 34 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 44,
+        "end": 58,
+        "data": [
+          {
+            "name": "title",
+            "content": "Simplification",
+            "showAt": 44
+          },
+          {
+            "name": "para",
+            "content": "Simplification means writing a fraction in an easier form without changing its value. Smaller parts are combined to show the same quantity more clearly.",
+            "showAt": 45
+          }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 58,
+        "end": 72,
+        "data": [
+          { "name": "image", "content": "equivalent-fractions.png", "showAt": 58 },
+          { "name": "bullet", "content": "Simplifying does not change the value", "showAt": 59 },
+          { "name": "bullet", "content": "Only the form becomes simpler", "showAt": 60 },
+          { "name": "bullet", "content": "Equivalent fractions stay equivalent", "showAt": 61 },
+          { "name": "bullet", "content": "Clarity is the goal of simplification", "showAt": 62 }
+        ]
+      },
+  
+      {
+        "type": "keyIdeasSlide",
+        "start": 72,
+        "end": 82,
+        "data": [
+          { "name": "card", "icon": "🔁", "label": "Same Value", "showAt": 72 },
+          { "name": "card", "icon": "🧩", "label": "Different Forms", "showAt": 73 },
+          { "name": "card", "icon": "✨", "label": "Simplification", "showAt": 74 },
+          { "name": "card", "icon": "⚖️", "label": "Value Stays Same", "showAt": 75 }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 82,
+        "end": 90,
+        "data": [
+          {
+            "name": "quote",
+            "content": "Changing how a fraction looks does not change what it represents.",
+            "showAt": 82
+          },
+          {
+            "name": "author",
+            "content": "— Taleem Concept Note",
+            "showAt": 83
+          }
+        ]
+      }
+    ]
+  }
+  

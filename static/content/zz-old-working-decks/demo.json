@@ -1,0 +1,50 @@
+{
+  "name": "Demo Builder Deck",
+  "version": "deck-v1",
+  "background": {
+    "backgroundColor": "#0f172a",
+    "backgroundImage": "/images/taleem.webp",
+    "backgroundImageOpacity": 0.15
+  },
+  "deck": [
+    {
+      "start": 0,
+      "end": 10,
+      "type": "titleAndSubtitle",
+      "data": [
+        {
+          "name": "title",
+          "content": "This is the first Demo Deck",
+          "showAt": 0
+        },
+        {
+          "name": "subtitle",
+          "content": "We are using Builder",
+          "showAt": 1
+        }
+      ]
+    },
+    {
+      "start": 10,
+      "end": 15,
+      "type": "bulletList",
+      "data": [
+        {
+          "name": "bullet",
+          "content": "Builder scripts are very easy to write",
+          "showAt": 10
+        },
+        {
+          "name": "bullet",
+          "content": "Bullet no 2 Edited...!!!",
+          "showAt": 11
+        },
+        {
+          "name": "bullet",
+          "content": "Structure remains consistent",
+          "showAt": 12
+        }
+      ]
+    }
+  ]
+}

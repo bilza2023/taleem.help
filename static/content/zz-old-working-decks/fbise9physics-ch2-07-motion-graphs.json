@@ -1,0 +1,61 @@
+{
+    "version": "deck-v1",
+    "name": "Motion Graphs",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "imageWithTitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Motion Graphs", "showAt": 0 },
+          { "name": "image", "content": "motion-graphs.webp", "showAt": 1 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 6,
+        "end": 16,
+        "data": [
+          { "name": "title", "content": "Why Motion Graphs?", "showAt": 6 },
+          { "name": "para", "content": "Motion graphs help us understand how position, velocity and acceleration change with time.", "showAt": 9 }
+        ]
+      },
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 16,
+        "end": 32,
+        "data": [
+          { "name": "image", "content": "motion-graphs.webp", "showAt": 16 },
+          { "name": "bullet", "content": "Position–Time graph shows how position changes.", "showAt": 18 },
+          { "name": "bullet", "content": "Slope of position–time graph gives velocity.", "showAt": 21 },
+          { "name": "bullet", "content": "Curved line indicates acceleration.", "showAt": 24 }
+        ]
+      },
+      {
+        "type": "titleAndPara",
+        "start": 32,
+        "end": 44,
+        "data": [
+          { "name": "title", "content": "Velocity–Time Graph", "showAt": 32 },
+          { "name": "para", "content": "The slope of a velocity–time graph gives acceleration, while the area under the graph gives displacement.", "showAt": 35 }
+        ]
+      },
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 44,
+        "end": 60,
+        "data": [
+          { "name": "image", "content": "motion-graphs.webp", "showAt": 44 },
+          { "name": "bullet", "content": "Straight line in v–t graph indicates uniform acceleration.", "showAt": 46 },
+          { "name": "bullet", "content": "Horizontal line means constant velocity.", "showAt": 49 },
+          { "name": "bullet", "content": "Flat a–t graph indicates constant acceleration.", "showAt": 52 }
+        ]
+      }
+    ]
+  }
+  

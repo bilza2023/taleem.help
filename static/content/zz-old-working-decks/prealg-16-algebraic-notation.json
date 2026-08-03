@@ -1,0 +1,133 @@
+{
+    "version": "deck-v1",
+    "name": "Algebraic Notation",
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 6,
+        "data": [
+          { "name": "title", "content": "Algebraic Notation", "showAt": 0 },
+          { "name": "subtitle", "content": "Letters as numbers", "showAt": 1 }
+        ]
+      },
+  
+      {
+        "type": "fillImage",
+        "start": 6,
+        "end": 16,
+        "data": [
+          { "name": "image", "content": "algebraic-notation.png", "showAt": 6 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 16,
+        "end": 30,
+        "data": [
+          {
+            "name": "title",
+            "content": "Unknown quantity",
+            "showAt": 16
+          },
+          {
+            "name": "para",
+            "content": "In algebra, a letter is used to represent a number whose value is not yet known.",
+            "showAt": 17
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 30,
+        "end": 46,
+        "data": [
+          { "name": "image", "content": "algebraic-notation.png", "showAt": 30 },
+          { "name": "bullet", "content": "The same letter represents the same value", "showAt": 31 },
+          { "name": "bullet", "content": "Letters stand for quantities", "showAt": 32 },
+          { "name": "bullet", "content": "They are not fixed numbers", "showAt": 33 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 46,
+        "end": 60,
+        "data": [
+          {
+            "name": "title",
+            "content": "Replacement idea",
+            "showAt": 46
+          },
+          {
+            "name": "para",
+            "content": "When we place a number in place of a letter, we are replacing the unknown with a known value.",
+            "showAt": 47
+          }
+        ]
+      },
+  
+      {
+        "type": "imageRightBulletsLeft",
+        "start": 60,
+        "end": 76,
+        "data": [
+          { "name": "image", "content": "algebraic-notation.png", "showAt": 60 },
+          { "name": "bullet", "content": "Letters can be replaced by numbers", "showAt": 61 },
+          { "name": "bullet", "content": "The structure stays the same", "showAt": 62 },
+          { "name": "bullet", "content": "Only the value changes", "showAt": 63 }
+        ]
+      },
+  
+      {
+        "type": "titleAndPara",
+        "start": 76,
+        "end": 90,
+        "data": [
+          {
+            "name": "title",
+            "content": "Why letters are used",
+            "showAt": 76
+          },
+          {
+            "name": "para",
+            "content": "Letters allow us to talk about numbers in general and describe relationships that work for many values.",
+            "showAt": 77
+          }
+        ]
+      },
+  
+      {
+        "type": "imageLeftBulletsRight",
+        "start": 90,
+        "end": 104,
+        "data": [
+          { "name": "image", "content": "algebraic-notation.png", "showAt": 90 },
+          { "name": "bullet", "content": "Letters represent numbers", "showAt": 91 },
+          { "name": "bullet", "content": "They make patterns clear", "showAt": 92 },
+          { "name": "bullet", "content": "They help describe relationships", "showAt": 93 }
+        ]
+      },
+  
+      {
+        "type": "quoteSlide",
+        "start": 104,
+        "end": 114,
+        "data": [
+          {
+            "name": "quote",
+            "content": "Letters are placeholders for numbers, not mysteries.",
+            "showAt": 104
+          },
+          {
+            "name": "author",
+            "content": "— Taleem Concept Note",
+            "showAt": 105
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,174 +1,127 @@
 <script>
-
-	import { goto } from "$app/navigation";
 	import { page } from "$app/state";
 
-	const current = page.url.pathname;
+	const pathname = $derived(page.url.pathname);
 
 	function active(path) {
 
-		return current.startsWith(path);
+		return pathname.startsWith(path);
 
 	}
-
 </script>
 
-<nav class="admin-navbar">
+<nav>
 
-	<div class="brand">
+	<ul>
 
-		<button
-			class="logo"
-			onclick={() => goto("/teacher")}
-		>
+		<li>
 
-			🎓 Taleem Admin
+			<strong>
 
-		</button>
+				<a
+					href="/teacher"
+					aria-current={pathname === "/teacher" ? "page" : undefined}
+				>
 
-	</div>
+					🎓 Teacher
 
-	<div class="links">
+				</a>
 
-		<button
-			class:active={active("/teacher")}
-			onclick={() => goto("/teacher")}
-		>
+			</strong>
 
-			Dashboard
+		</li>
 
-		</button>
+	</ul>
 
-		<button
-			class:active={active("/teacher/course")}
-			onclick={() => goto("/teacher/course")}
-		>
+	<ul>
 
-			Courses
+		<li>
 
-		</button>
+			<a
+				href="/teacher/media/image"
+				aria-current={active("/teacher/media/image") ? "page" : undefined}
+			>
 
-		<button
-			class:active={active("/teacher/communication")}
-			onclick={() => goto("/teacher/communication")}
-		>
+				Upload Image
 
-			Communication
+			</a>
 
-		</button>
+		</li>
 
-		<button
-			class:active={active("/teacher/subscription")}
-			onclick={() => goto("/teacher/subscription")}
-		>
+		<li>
 
-			Subscriptions
+			<a
+				href="/teacher/media/images"
+				aria-current={active("/teacher/media/images") ? "page" : undefined}
+			>
 
-		</button>
+				Images
 
-		<button
-			class:active={active("/teacher/user")}
-			onclick={() => goto("/teacher/user")}
-		>
+			</a>
 
-			Users
+		</li>
 
-		</button>
+		<li>
 
-	</div>
+			<a
+				href="/teacher/media/audio"
+				aria-current={active("/teacher/media/audio") ? "page" : undefined}
+			>
 
-	<div class="actions">
+				Upload Audio
 
-		<button
-			class="secondary"
-			onclick={() => goto("/")}
-		>
+			</a>
 
-			View Site
+		</li>
 
-		</button>
+		<li>
 
-	</div>
+			<a
+				href="/teacher/media/audios"
+				aria-current={active("/teacher/media/audios") ? "page" : undefined}
+			>
+
+				Audio
+
+			</a>
+
+		</li>
+
+	</ul>
 
 </nav>
 
 <style>
 
-	.admin-navbar {
+	nav {
 
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 2rem;
+		background: #1d4d3e;
 
-		padding: 1rem 1.5rem;
-		margin-bottom: 2rem;
+		border-bottom: 1px solid #2b6a57;
 
-		border-bottom: 1px solid var(--pico-muted-border-color);
+		padding: .4rem 1rem;
 
 	}
 
-	.brand {
+	nav a {
 
-		flex-shrink: 0;
+		color: #ffffff;
 
-	}
-
-	.logo {
-
-		font-size: 1.2rem;
-		font-weight: bold;
-
-		background: none;
-		border: none;
-
-		cursor: pointer;
-
-		padding: 0;
+		text-decoration: none;
 
 	}
 
-	.links {
+	nav a:hover {
 
-		display: flex;
-		flex-wrap: wrap;
-		gap: .5rem;
-
-		flex: 1;
+		color: #c9f2d6;
 
 	}
 
-	.links button {
-
-		background: transparent;
-		border: none;
-
-		padding: .6rem 1rem;
-
-		cursor: pointer;
-
-		border-radius: .5rem;
-
-	}
-
-	.links button:hover {
-
-		background: var(--pico-muted-background-color);
-
-	}
-
-	.links button.active {
-
-		background: var(--pico-primary-background);
-		color: var(--pico-primary-inverse);
+	nav a[aria-current="page"] {
 
 		font-weight: bold;
 
-	}
-
-	.actions {
-
-		flex-shrink: 0;
+		text-decoration: underline;
 
 	}
 

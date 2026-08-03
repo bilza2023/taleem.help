@@ -1,0 +1,601 @@
+{
+  "name": "Focus List Test",
+  "background": {
+    "backgroundColor": "#05070c",
+    "backgroundImage": "bg.webp",
+    "backgroundImageOpacity": 0.22
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 8,
+      "html": "<section class=\"slide titleAndSubtitle\"><h1 id=\"implyzvcp3g\" class=\" hidden taleem-heading-lg \" > Focus List Testing </h1><h2 id=\"implyzvcp3h\" class=\" hidden taleem-heading-md \" > Procedures • sequences • guided thinking </h2></section>",
+      "groups": {
+        "hidden": [
+          "hidden"
+        ]
+      },
+      "actions": [
+        {
+          "time": 0,
+          "state": {
+            "hidden": [
+              "implyzvcp3h"
+            ]
+          }
+        },
+        {
+          "time": 3,
+          "state": {
+            "hidden": []
+          }
+        }
+      ]
+    },
+    {
+      "type": "focusList",
+      "start": 8,
+      "end": 26,
+      "html": "<section class=\"slide focusList\"><h1 id=\"implyzvcp3i\" class=\"\" > How to Solve an Equation </h1><ul><li id=\"implyzvcp3j\" class=\"\" > Simplify both sides first </li><li id=\"implyzvcp3k\" class=\"\" > Move variables carefully </li><li id=\"implyzvcp3l\" class=\"\" > Keep the equation balanced </li><li id=\"implyzvcp3m\" class=\"\" > Isolate the unknown </li><li id=\"implyzvcp3n\" class=\"\" > Verify the final answer </li></ul></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ]
+      },
+      "actions": [
+        {
+          "time": 8,
+          "state": {
+            "focus": [
+              "implyzvcp3i"
+            ],
+            "dim": [
+              "implyzvcp3j",
+              "implyzvcp3k",
+              "implyzvcp3l",
+              "implyzvcp3m",
+              "implyzvcp3n"
+            ]
+          }
+        },
+        {
+          "time": 10,
+          "state": {
+            "focus": [
+              "implyzvcp3j"
+            ],
+            "dim": [
+              "implyzvcp3i",
+              "implyzvcp3k",
+              "implyzvcp3l",
+              "implyzvcp3m",
+              "implyzvcp3n"
+            ]
+          }
+        },
+        {
+          "time": 12,
+          "state": {
+            "focus": [
+              "implyzvcp3k"
+            ],
+            "dim": [
+              "implyzvcp3i",
+              "implyzvcp3j",
+              "implyzvcp3l",
+              "implyzvcp3m",
+              "implyzvcp3n"
+            ]
+          }
+        },
+        {
+          "time": 14,
+          "state": {
+            "focus": [
+              "implyzvcp3l"
+            ],
+            "dim": [
+              "implyzvcp3i",
+              "implyzvcp3j",
+              "implyzvcp3k",
+              "implyzvcp3m",
+              "implyzvcp3n"
+            ]
+          }
+        },
+        {
+          "time": 16,
+          "state": {
+            "focus": [
+              "implyzvcp3m"
+            ],
+            "dim": [
+              "implyzvcp3i",
+              "implyzvcp3j",
+              "implyzvcp3k",
+              "implyzvcp3l",
+              "implyzvcp3n"
+            ]
+          }
+        },
+        {
+          "time": 18,
+          "state": {
+            "focus": [
+              "implyzvcp3n"
+            ],
+            "dim": [
+              "implyzvcp3i",
+              "implyzvcp3j",
+              "implyzvcp3k",
+              "implyzvcp3l",
+              "implyzvcp3m"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "focusList",
+      "start": 26,
+      "end": 46,
+      "html": "<section class=\"slide focusList\"><h1 id=\"implyzvcp3o\" class=\"\" > Scientific Method </h1><ul><li id=\"implyzvcp3p\" class=\"\" > Observe the phenomenon </li><li id=\"implyzvcp3q\" class=\"\" > Ask a precise question </li><li id=\"implyzvcp3r\" class=\"\" > Form a testable hypothesis </li><li id=\"implyzvcp3s\" class=\"\" > Perform controlled experiments </li><li id=\"implyzvcp3t\" class=\"\" > Analyze the collected data </li><li id=\"implyzvcp3u\" class=\"\" > Reach a logical conclusion </li></ul></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ]
+      },
+      "actions": [
+        {
+          "time": 26,
+          "state": {
+            "focus": [
+              "implyzvcp3o"
+            ],
+            "dim": [
+              "implyzvcp3p",
+              "implyzvcp3q",
+              "implyzvcp3r",
+              "implyzvcp3s",
+              "implyzvcp3t",
+              "implyzvcp3u"
+            ]
+          }
+        },
+        {
+          "time": 28,
+          "state": {
+            "focus": [
+              "implyzvcp3p"
+            ],
+            "dim": [
+              "implyzvcp3o",
+              "implyzvcp3q",
+              "implyzvcp3r",
+              "implyzvcp3s",
+              "implyzvcp3t",
+              "implyzvcp3u"
+            ]
+          }
+        },
+        {
+          "time": 30,
+          "state": {
+            "focus": [
+              "implyzvcp3q"
+            ],
+            "dim": [
+              "implyzvcp3o",
+              "implyzvcp3p",
+              "implyzvcp3r",
+              "implyzvcp3s",
+              "implyzvcp3t",
+              "implyzvcp3u"
+            ]
+          }
+        },
+        {
+          "time": 32,
+          "state": {
+            "focus": [
+              "implyzvcp3r"
+            ],
+            "dim": [
+              "implyzvcp3o",
+              "implyzvcp3p",
+              "implyzvcp3q",
+              "implyzvcp3s",
+              "implyzvcp3t",
+              "implyzvcp3u"
+            ]
+          }
+        },
+        {
+          "time": 34,
+          "state": {
+            "focus": [
+              "implyzvcp3s"
+            ],
+            "dim": [
+              "implyzvcp3o",
+              "implyzvcp3p",
+              "implyzvcp3q",
+              "implyzvcp3r",
+              "implyzvcp3t",
+              "implyzvcp3u"
+            ]
+          }
+        },
+        {
+          "time": 36,
+          "state": {
+            "focus": [
+              "implyzvcp3t"
+            ],
+            "dim": [
+              "implyzvcp3o",
+              "implyzvcp3p",
+              "implyzvcp3q",
+              "implyzvcp3r",
+              "implyzvcp3s",
+              "implyzvcp3u"
+            ]
+          }
+        },
+        {
+          "time": 38,
+          "state": {
+            "focus": [
+              "implyzvcp3u"
+            ],
+            "dim": [
+              "implyzvcp3o",
+              "implyzvcp3p",
+              "implyzvcp3q",
+              "implyzvcp3r",
+              "implyzvcp3s",
+              "implyzvcp3t"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "focusList",
+      "start": 46,
+      "end": 64,
+      "html": "<section class=\"slide focusList\"><h1 id=\"implyzvcp3v\" class=\"\" > Writing an Essay </h1><ul><li id=\"implyzvcp3w\" class=\"\" > Start with a clear thesis </li><li id=\"implyzvcp3x\" class=\"\" > Develop one idea per paragraph </li><li id=\"implyzvcp3y\" class=\"\" > Use evidence carefully </li><li id=\"implyzvcp3z\" class=\"\" > Maintain logical flow </li><li id=\"implyzvcp40\" class=\"\" > Conclude with clarity </li></ul></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ]
+      },
+      "actions": [
+        {
+          "time": 46,
+          "state": {
+            "focus": [
+              "implyzvcp3v"
+            ],
+            "dim": [
+              "implyzvcp3w",
+              "implyzvcp3x",
+              "implyzvcp3y",
+              "implyzvcp3z",
+              "implyzvcp40"
+            ]
+          }
+        },
+        {
+          "time": 48,
+          "state": {
+            "focus": [
+              "implyzvcp3w"
+            ],
+            "dim": [
+              "implyzvcp3v",
+              "implyzvcp3x",
+              "implyzvcp3y",
+              "implyzvcp3z",
+              "implyzvcp40"
+            ]
+          }
+        },
+        {
+          "time": 50,
+          "state": {
+            "focus": [
+              "implyzvcp3x"
+            ],
+            "dim": [
+              "implyzvcp3v",
+              "implyzvcp3w",
+              "implyzvcp3y",
+              "implyzvcp3z",
+              "implyzvcp40"
+            ]
+          }
+        },
+        {
+          "time": 52,
+          "state": {
+            "focus": [
+              "implyzvcp3y"
+            ],
+            "dim": [
+              "implyzvcp3v",
+              "implyzvcp3w",
+              "implyzvcp3x",
+              "implyzvcp3z",
+              "implyzvcp40"
+            ]
+          }
+        },
+        {
+          "time": 54,
+          "state": {
+            "focus": [
+              "implyzvcp3z"
+            ],
+            "dim": [
+              "implyzvcp3v",
+              "implyzvcp3w",
+              "implyzvcp3x",
+              "implyzvcp3y",
+              "implyzvcp40"
+            ]
+          }
+        },
+        {
+          "time": 56,
+          "state": {
+            "focus": [
+              "implyzvcp40"
+            ],
+            "dim": [
+              "implyzvcp3v",
+              "implyzvcp3w",
+              "implyzvcp3x",
+              "implyzvcp3y",
+              "implyzvcp3z"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "focusList",
+      "start": 64,
+      "end": 84,
+      "html": "<section class=\"slide focusList\"><h1 id=\"implyzvcp41\" class=\"\" > Exam Preparation Strategy </h1><ul><li id=\"implyzvcp42\" class=\"\" > Study difficult topics early </li><li id=\"implyzvcp43\" class=\"\" > Revise actively not passively </li><li id=\"implyzvcp44\" class=\"\" > Solve problems repeatedly </li><li id=\"implyzvcp45\" class=\"\" > Take timed practice tests </li><li id=\"implyzvcp46\" class=\"\" > Review mistakes honestly </li><li id=\"implyzvcp47\" class=\"\" > Sleep before the exam </li></ul></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ]
+      },
+      "actions": [
+        {
+          "time": 64,
+          "state": {
+            "focus": [
+              "implyzvcp41"
+            ],
+            "dim": [
+              "implyzvcp42",
+              "implyzvcp43",
+              "implyzvcp44",
+              "implyzvcp45",
+              "implyzvcp46",
+              "implyzvcp47"
+            ]
+          }
+        },
+        {
+          "time": 66,
+          "state": {
+            "focus": [
+              "implyzvcp42"
+            ],
+            "dim": [
+              "implyzvcp41",
+              "implyzvcp43",
+              "implyzvcp44",
+              "implyzvcp45",
+              "implyzvcp46",
+              "implyzvcp47"
+            ]
+          }
+        },
+        {
+          "time": 68,
+          "state": {
+            "focus": [
+              "implyzvcp43"
+            ],
+            "dim": [
+              "implyzvcp41",
+              "implyzvcp42",
+              "implyzvcp44",
+              "implyzvcp45",
+              "implyzvcp46",
+              "implyzvcp47"
+            ]
+          }
+        },
+        {
+          "time": 70,
+          "state": {
+            "focus": [
+              "implyzvcp44"
+            ],
+            "dim": [
+              "implyzvcp41",
+              "implyzvcp42",
+              "implyzvcp43",
+              "implyzvcp45",
+              "implyzvcp46",
+              "implyzvcp47"
+            ]
+          }
+        },
+        {
+          "time": 72,
+          "state": {
+            "focus": [
+              "implyzvcp45"
+            ],
+            "dim": [
+              "implyzvcp41",
+              "implyzvcp42",
+              "implyzvcp43",
+              "implyzvcp44",
+              "implyzvcp46",
+              "implyzvcp47"
+            ]
+          }
+        },
+        {
+          "time": 74,
+          "state": {
+            "focus": [
+              "implyzvcp46"
+            ],
+            "dim": [
+              "implyzvcp41",
+              "implyzvcp42",
+              "implyzvcp43",
+              "implyzvcp44",
+              "implyzvcp45",
+              "implyzvcp47"
+            ]
+          }
+        },
+        {
+          "time": 76,
+          "state": {
+            "focus": [
+              "implyzvcp47"
+            ],
+            "dim": [
+              "implyzvcp41",
+              "implyzvcp42",
+              "implyzvcp43",
+              "implyzvcp44",
+              "implyzvcp45",
+              "implyzvcp46"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "focusList",
+      "start": 84,
+      "end": 102,
+      "html": "<section class=\"slide focusList\"><h1 id=\"implyzvcp48\" class=\"\" > Programming Workflow </h1><ul><li id=\"implyzvcp49\" class=\"\" > Understand the problem first </li><li id=\"implyzvcp4a\" class=\"\" > Break logic into steps </li><li id=\"implyzvcp4b\" class=\"\" > Write small testable code </li><li id=\"implyzvcp4c\" class=\"\" > Debug systematically </li><li id=\"implyzvcp4d\" class=\"\" > Refactor after correctness </li></ul></section>",
+      "groups": {
+        "focus": [],
+        "dim": [
+          "dim"
+        ]
+      },
+      "actions": [
+        {
+          "time": 84,
+          "state": {
+            "focus": [
+              "implyzvcp48"
+            ],
+            "dim": [
+              "implyzvcp49",
+              "implyzvcp4a",
+              "implyzvcp4b",
+              "implyzvcp4c",
+              "implyzvcp4d"
+            ]
+          }
+        },
+        {
+          "time": 86,
+          "state": {
+            "focus": [
+              "implyzvcp49"
+            ],
+            "dim": [
+              "implyzvcp48",
+              "implyzvcp4a",
+              "implyzvcp4b",
+              "implyzvcp4c",
+              "implyzvcp4d"
+            ]
+          }
+        },
+        {
+          "time": 88,
+          "state": {
+            "focus": [
+              "implyzvcp4a"
+            ],
+            "dim": [
+              "implyzvcp48",
+              "implyzvcp49",
+              "implyzvcp4b",
+              "implyzvcp4c",
+              "implyzvcp4d"
+            ]
+          }
+        },
+        {
+          "time": 90,
+          "state": {
+            "focus": [
+              "implyzvcp4b"
+            ],
+            "dim": [
+              "implyzvcp48",
+              "implyzvcp49",
+              "implyzvcp4a",
+              "implyzvcp4c",
+              "implyzvcp4d"
+            ]
+          }
+        },
+        {
+          "time": 92,
+          "state": {
+            "focus": [
+              "implyzvcp4c"
+            ],
+            "dim": [
+              "implyzvcp48",
+              "implyzvcp49",
+              "implyzvcp4a",
+              "implyzvcp4b",
+              "implyzvcp4d"
+            ]
+          }
+        },
+        {
+          "time": 94,
+          "state": {
+            "focus": [
+              "implyzvcp4d"
+            ],
+            "dim": [
+              "implyzvcp48",
+              "implyzvcp49",
+              "implyzvcp4a",
+              "implyzvcp4b",
+              "implyzvcp4c"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

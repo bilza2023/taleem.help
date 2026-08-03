@@ -1,0 +1,90 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 12",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 12", "showAt": 2 }
+        ]
+      },
+  
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 130,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^4 + 4m^4$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Recognize the identity form." },
+              { "type": "spText", "content": "This matches a⁴ + 4b⁴." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$x^4 + 4m^4 = x^4 + 4x^2m^2 - 4x^2m^2 + 4m^4$",
+            "showAt": 25,
+            "spItems": [
+              { "type": "spText", "content": "Add and subtract 4x²m² to create structure." },
+              { "type": "spText", "content": "This allows grouping into squares." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x^2 + 2xm)^2 - (2xm)^2$",
+            "showAt": 50,
+            "spItems": [
+              { "type": "spText", "content": "Now it becomes a difference of two squares." },
+              { "type": "spText", "content": "First square: (x² + 2xm)²." },
+              { "type": "spText", "content": "Second square: (2xm)²." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x^2 + 2xm - 2xm)(x^2 + 2xm + 2xm)$",
+            "showAt": 75,
+            "spItems": [
+              { "type": "spText", "content": "Apply identity a² - b² = (a - b)(a + b)." },
+              { "type": "spText", "content": "Simplify inside each bracket." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(x^2 - 2xm + 2m^2)(x^2 + 2xm + 2m^2)$",
+            "showAt": 95,
+            "spItems": [
+              { "type": "spText", "content": "After simplification and rearrangement." },
+              { "type": "spText", "content": "Both factors are quadratic expressions." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Final Answer: (x^2 - 2xm + 2m^2)(x^2 + 2xm + 2m^2)",
+            "showAt": 115,
+            "spItems": [
+              { "type": "spText", "content": "Method Used: a⁴ + 4b⁴ Identity." },
+              { "type": "spText", "content": "This identity is derived using difference of squares." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

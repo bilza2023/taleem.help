@@ -1,0 +1,59 @@
+{
+  "version": "deck-v1",
+  "name": "Exercise 4.1 – Question 1",
+  "background": {
+    "backgroundColor": "#111111",
+    "backgroundImage": "physics_bg.webp",
+    "backgroundImageOpacity": 0.3
+  },
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "start": 0,
+      "end": 5,
+      "data": [
+        { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+        { "name": "subtitle", "content": "Question 1", "showAt": 2 }
+      ]
+    },
+    {
+      "type": "eq",
+      "start": 5,
+      "end": 60,
+      "data": [
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$2x^2y^3 - 6x^2y^2 + 2xy^3$",
+          "showAt": 5,
+          "spItems": [
+            { "type": "spText", "content": "Step 1: Look for a common factor in all terms." },
+            { "type": "spText", "content": "Each term contains the number 2." },
+            { "type": "spText", "content": "Each term contains at least one x." },
+            { "type": "spText", "content": "Each term contains at least y²." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$2xy^2$",
+          "showAt": 15,
+          "spItems": [
+            { "type": "spText", "content": "So the greatest common factor (GCF) is 2xy²." },
+            { "type": "spText", "content": "We now divide each term by 2xy²." }
+          ]
+        },
+        {
+          "name": "line",
+          "type": "math",
+          "content": "$2xy^2(xy - 3x + y)$",
+          "showAt": 28,
+          "spItems": [
+            { "type": "spText", "content": "After dividing each term, we write the remaining parts inside brackets." },
+            { "type": "spText", "content": "Final Answer: 2xy²(xy - 3x + y)." }
+          ]
+        }
+      ]
+    }
+  ]
+}

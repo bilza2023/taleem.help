@@ -1,0 +1,77 @@
+{
+    "version": "deck-v1",
+    "name": "Exercise 4.1 – Question 2",
+    "background": {
+      "backgroundColor": "#111111",
+      "backgroundImage": "physics_bg.webp",
+      "backgroundImageOpacity": 0.3
+    },
+    "deck": [
+      {
+        "type": "titleAndSubtitle",
+        "start": 0,
+        "end": 5,
+        "data": [
+          { "name": "title", "content": "Exercise 4.1", "showAt": 0 },
+          { "name": "subtitle", "content": "Question 2", "showAt": 2 }
+        ]
+      },
+      {
+        "type": "eq",
+        "start": 5,
+        "end": 65,
+        "data": [
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$3nx - 3x - 3ny + 3y$",
+            "showAt": 5,
+            "spItems": [
+              { "type": "spText", "content": "Step 1: Since there is no single common factor in all four terms, we try grouping." },
+              { "type": "spText", "content": "Grouping method works when terms can be paired to produce a common binomial." },
+              { "type": "spText", "content": "We group the first two terms and the last two terms." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$(3nx - 3x) - (3ny - 3y)$",
+            "showAt": 15,
+            "spItems": [
+              { "type": "spText", "content": "Step 2: Factor each group separately." },
+              { "type": "spText", "content": "From the first group, factor out 3x." },
+              { "type": "spText", "content": "From the second group, factor out 3y." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$3x(n - 1) - 3y(n - 1)$",
+            "showAt": 28,
+            "spItems": [
+              { "type": "spText", "content": "Both groups now contain the common binomial (n - 1)." },
+              { "type": "spText", "content": "This confirms grouping was the correct method." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "math",
+            "content": "$3(x - y)(n - 1)$",
+            "showAt": 40,
+            "spItems": [
+              { "type": "spText", "content": "Step 3: Factor out the common binomial (n - 1)." },
+              { "type": "spText", "content": "We also factor 3 from both terms to simplify completely." },
+              { "type": "spText", "content": "Final Answer: 3(x - y)(n - 1)." }
+            ]
+          },
+          {
+            "name": "line",
+            "type": "heading",
+            "content": "Method Used: Factorization by Grouping",
+            "showAt": 55
+          }
+        ]
+      }
+    ]
+  }
+  
