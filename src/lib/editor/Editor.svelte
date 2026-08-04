@@ -4,7 +4,8 @@
   import { slideFactory } from '../editor/js/slideFactory';
   import { finalizeDeck } from "../editor/js/finalizeDeck.js";
   import { assignMockTimings } from "../editor/js/assignMockTimings.js";
-  
+  import { TaleemCompiler } from "$lib/compiler/TaleemCompiler.js";
+
   import TitleAndSubtitle from "./slides/TitleAndSubtitle.svelte";
 import TitleAndParaEditor from "./slides/TitleAndParaEditor.svelte";
 import BulletListEditor from "./slides/BulletListEditor.svelte";
@@ -24,10 +25,8 @@ import EqEditor from "./slides/EqEditor.svelte";
 
   export let deck = { deck: [] };
   export let currentTime = 0;
-  
-  export let onExport = (deck) => {
-  console.log("EXPORT CALLED", deck);
-  };
+  export let onExport;
+
 
   $: slides = deck?.deck || [];
 
@@ -112,7 +111,9 @@ import EqEditor from "./slides/EqEditor.svelte";
 
     collapsed = newCollapsed;
   }
+
   function handleDownload() {
+
   const result = finalizeDeck(deck);
 
   if (!result.ok) {
@@ -121,10 +122,14 @@ import EqEditor from "./slides/EqEditor.svelte";
     return;
   }
 
-  const finalDeck = result.deck; // 🔥 THIS is the fix
+  // editable deck
+  const finalDeck = result.deck;
+
+  // compiled player deck
+  const compiledDeck = TaleemCompiler(finalDeck);
 
   const blob = new Blob(
-    [JSON.stringify(finalDeck, null, 2)],
+    [JSON.stringify(compiledDeck, null, 2)],
     { type: "application/json" }
   );
 
@@ -136,9 +141,11 @@ import EqEditor from "./slides/EqEditor.svelte";
   a.click();
 
   URL.revokeObjectURL(url);
+
 }
 
-function handleSave() {
+async function handleSave() {
+
   const result = finalizeDeck(deck);
 
   if (!result.ok) {
@@ -147,13 +154,31 @@ function handleSave() {
     return;
   }
 
-  const finalDeck = result.deck;
+  const body = result.deck;
+  const source = TaleemCompiler(body);
 
-  // 🔥 call parent
-  onExport(finalDeck);
+  try {
 
-  alert("Deck exported to parent");
+    await onExport({
+      body,
+      source
+    });
+
+    alert("Presentation saved");
+
+  }
+
+  catch (err) {
+
+    console.error(err);
+    alert(err.message);
+
+  }
+
 }
+
+
+
 function handleMockTiming() {
   try {
     // if(deck){

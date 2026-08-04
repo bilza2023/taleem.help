@@ -53,7 +53,7 @@ onMount(async () => {
 		);
 
 	presentation =
-		JSON.parse(item.body);
+		JSON.parse(item.source);
 
 	// --------------------------------------------------
 	// resolve image paths
@@ -95,7 +95,6 @@ onMount(async () => {
 			}
 
 		}, 200);
-
 });
 </script>
 

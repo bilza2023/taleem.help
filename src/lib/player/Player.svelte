@@ -113,7 +113,7 @@
 	let interval;
 
 	onMount(() => {
-
+  console.log("presentation" , presentation);
 		interval = setInterval(() => {
 
 			if (
