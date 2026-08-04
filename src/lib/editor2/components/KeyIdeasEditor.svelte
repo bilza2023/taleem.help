@@ -1,7 +1,7 @@
 <!-- src/editor/components/KeyIdeasEditor.svelte -->
 
 <script>
-  import Icons from "../js/Icons.js";
+  import Icons from "../../editor/js/Icons.js";
 
   export let slide;
 

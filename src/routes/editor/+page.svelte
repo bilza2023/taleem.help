@@ -2,7 +2,6 @@
 <!-- src/routes/editor/+page.svelte -->
 
 <script>
-	import "$lib/styles/editor.css";
 	import Editor from "$lib/editor/Editor.svelte";
 </script>
 
