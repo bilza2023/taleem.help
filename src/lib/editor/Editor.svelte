@@ -1,190 +1,354 @@
-
-<!-- src/lib/editor/Editor.svelte -->
-
 <script>
-  import Nav from "./Nav.svelte";
-  import { slideFactory } from "./js/slideFactory.js";
+	// import "$lib/styles/editor.css";
+  import Nav from './Nav.svelte';
+  import { slideFactory } from '../editor/js/slideFactory';
+  import { finalizeDeck } from "../editor/js/finalizeDeck.js";
+  import { assignMockTimings } from "../editor/js/assignMockTimings.js";
+  
   import TitleAndSubtitle from "./slides/TitleAndSubtitle.svelte";
+import TitleAndParaEditor from "./slides/TitleAndParaEditor.svelte";
+import BulletListEditor from "./slides/BulletListEditor.svelte";
+import TwoColumnTextEditor from "./slides/TwoColumnTextEditor.svelte";
+import ImageSlideEditor from "./slides/ImageSlideEditor.svelte";
+import FillImageEditor from "./slides/FillImageEditor.svelte";
+import ImageWithTitleEditor from "./slides/ImageWithTitleEditor.svelte";
+import ImageWithCaptionEditor from "./slides/ImageWithCaptionEditor.svelte";
+import ImageLeftBulletsRightEditor from "./slides/ImageLeftBulletsRightEditor.svelte";
+import ImageRightBulletsLeftEditor from "./slides/ImageRightBulletsLeftEditor.svelte";
+import TableEditor from "./slides/TableEditor.svelte";
+import BarChartEditor from "./slides/BarChartEditor.svelte";
+import ProgressbarEditor from "./slides/ProgressbarEditor.svelte";
+import QuoteEditor from "./slides/QuoteEditor.svelte";
+import KeyIdeasEditor from "./slides/KeyIdeasEditor.svelte";
+import EqEditor from "./slides/EqEditor.svelte";
 
-  let presentation = {
-    version: "deck-v1",
-    name: "",
-    audio: "",
-    background: {},
-    deck: []
+  export let deck = { deck: [] };
+  export let currentTime = 0;
+  
+  export let onExport = (deck) => {
+  console.log("EXPORT CALLED", deck);
   };
 
+  $: slides = deck?.deck || [];
+
+  ///////////////////////////////////////////
   function addSlide(type) {
-    presentation.deck = [
-      ...presentation.deck,
-      slideFactory[type]()
-    ];
+  const fn = slideFactory[type];
+  if (!fn) return;
+
+  const baseSlide = fn();
+
+  const arr = deck.deck;
+  const last = arr[arr.length - 1];
+
+  const start = last ? last.end : 0;
+  const duration = 5; // default seconds per slide
+  const end = start + duration;
+
+  const newSlide = {
+    ...baseSlide,
+    start,
+    end
+  };
+
+  deck.deck = [...arr, newSlide];
+}
+  ///////////////////////////////////////////
+  // ---- UI STATE ----
+  let collapsed = {};
+  let allCollapsed = false;
+
+  // ---- FOLD ----
+  function toggleSlide(i) {
+    collapsed[i] = !collapsed[i];
+    collapsed = { ...collapsed };
   }
 
-  function handleMockTiming() {}
-  function handleSave() {}
-  function handleDownload() {}
+  function toggleAll() {
+    allCollapsed = !allCollapsed;
+
+    const newState = {};
+    slides.forEach((_, i) => {
+      newState[i] = allCollapsed;
+    });
+
+    collapsed = newState;
+  }
+
+  // ---- MOVE ----
+  function moveUp(i) {
+    if (i === 0) return;
+
+    const arr = deck.deck;
+
+    [arr[i - 1], arr[i]] = [arr[i], arr[i - 1]];
+
+    deck.deck = [...arr]; // 🔥 trigger
+  }
+
+  function moveDown(i) {
+    const arr = deck.deck;
+
+    if (i === arr.length - 1) return;
+
+    [arr[i + 1], arr[i]] = [arr[i], arr[i + 1]];
+
+    deck.deck = [...arr]; // 🔥 trigger
+  }
+
+  // ---- DELETE ----
+  function deleteSlide(i) {
+    const arr = deck.deck;
+
+    arr.splice(i, 1);
+
+    deck.deck = [...arr]; // 🔥
+
+    // fix collapsed map
+    const newCollapsed = {};
+    arr.forEach((_, idx) => {
+      newCollapsed[idx] = collapsed[idx] || false;
+    });
+
+    collapsed = newCollapsed;
+  }
+  function handleDownload() {
+  const result = finalizeDeck(deck);
+
+  if (!result.ok) {
+    console.error(result);
+    alert("Deck invalid. Check console.");
+    return;
+  }
+
+  const finalDeck = result.deck; // 🔥 THIS is the fix
+
+  const blob = new Blob(
+    [JSON.stringify(finalDeck, null, 2)],
+    { type: "application/json" }
+  );
+
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "deck.json";
+  a.click();
+
+  URL.revokeObjectURL(url);
+}
+
+function handleSave() {
+  const result = finalizeDeck(deck);
+
+  if (!result.ok) {
+    console.error(result);
+    alert("Deck invalid. Check console.");
+    return;
+  }
+
+  const finalDeck = result.deck;
+
+  // 🔥 call parent
+  onExport(finalDeck);
+
+  alert("Deck exported to parent");
+}
+function handleMockTiming() {
+  try {
+    // if(deck){
+      deck = assignMockTimings(deck);
+    // }
+
+    // update editor state (same pattern as others)
+    // onExport(deck);
+
+    alert("Mock timings applied");
+  } catch (err) {
+    console.error(err);
+    alert("Failed to apply mock timings");
+  }
+}
 </script>
 
-<Nav
-  add={addSlide}
-  onDownload={handleDownload}
-  onSave={handleSave}
-  onMockTiming={handleMockTiming}
-/>
 
-<section class="presentation">
+<div class="editor">
 
-  <input
-    bind:value={presentation.name}
-    placeholder="Presentation name"
+  <Nav
+    add={addSlide}
+    onDownload={handleDownload}
+    onSave={handleSave}
+    onMockTiming={handleMockTiming}
   />
 
-  <input
-    bind:value={presentation.audio}
-    placeholder="Audio filename"
-  />
+  {#if slides.length === 0}
+    <p class="empty">No slides</p>
+  {/if}
 
-</section>
+  {#each slides as slide, i}
 
-{#each presentation.deck as slide}
+    <div class="slide">
 
-  <div class="slide">
+      <!-- Header -->
 
-    <header>
-      <strong>{slide.type}</strong>
-    </header>
+      <div class="slide-header">
 
-    {#if slide.type === "titleAndSubtitle"}
+        <div class="left">
 
-      <input
-        bind:value={slide.data[0].content}
-        placeholder="Title"
-      />
+          <button on:click={() => toggleSlide(i)}>
+            {collapsed[i] ? "▶" : "▼"}
+          </button>
 
-      <input
-        bind:value={slide.data[1].content}
-        placeholder="Subtitle"
-      />
+          <span>
+            #{i + 1} — {slide.type}
+            <small style="margin-left:10px;color:#888;">
+              [{slide.start ?? 0} → {slide.end ?? 0}]
+            </small>
+          </span>
 
-    {:else if slide.type === "titleAndPara"}
+        </div>
 
-      <input
-        bind:value={slide.data[0].content}
-        placeholder="Title"
-      />
+        <div class="right">
 
-      <textarea
-        bind:value={slide.data[1].content}
-        placeholder="Paragraph"
-      ></textarea>
+          <button on:click={() => moveUp(i)}>⬆</button>
+          <button on:click={() => moveDown(i)}>⬇</button>
+          <button on:click={() => deleteSlide(i)}>🗑</button>
 
-    {:else if slide.type === "bulletList"}
+        </div>
 
-      <div>Bullet List Editor</div>
+      </div>
 
-    {:else if slide.type === "twoColumnText"}
+      <!-- Body -->
 
-      <div>Two Column Text Editor</div>
+      {#if !collapsed[i]}
 
-    {:else if slide.type === "imageSlide"}
+        <div class="slide-body">
+          {#if slide.type === "titleAndSubtitle"}
 
-      <div>Image Slide Editor</div>
+            <TitleAndSubtitle {slide} />
 
-    {:else if slide.type === "fillImage"}
+          {:else if slide.type === "titleAndPara"}
 
-      <div>Fill Image Editor</div>
+            <TitleAndParaEditor {slide} />
 
-    {:else if slide.type === "imageWithTitle"}
+          {:else if slide.type === "bulletList"}
 
-      <div>Image With Title Editor</div>
+            <BulletListEditor {slide} />
 
-    {:else if slide.type === "imageWithCaption"}
+          {:else if slide.type === "twoColumnText"}
 
-      <div>Image With Caption Editor</div>
+            <TwoColumnTextEditor {slide} />
 
-    {:else if slide.type === "imageLeftBulletsRight"}
+          {:else if slide.type === "imageSlide"}
 
-      <div>Image Left Bullets Right Editor</div>
+            <ImageSlideEditor {slide} />
 
-    {:else if slide.type === "imageRightBulletsLeft"}
+          {:else if slide.type === "fillImage"}
 
-      <div>Image Right Bullets Left Editor</div>
+            <FillImageEditor {slide} />
 
-    {:else if slide.type === "table"}
+          {:else if slide.type === "imageWithTitle"}
 
-      <div>Table Editor</div>
+            <ImageWithTitleEditor {slide} />
 
-    {:else if slide.type === "barChart"}
+          {:else if slide.type === "imageWithCaption"}
 
-      <div>Bar Chart Editor</div>
+            <ImageWithCaptionEditor {slide} />
 
-    {:else if slide.type === "progressbar"}
+          {:else if slide.type === "imageLeftBulletsRight"}
 
-      <div>Progress Bar Editor</div>
+            <ImageLeftBulletsRightEditor {slide} />
 
-    {:else if slide.type === "quoteSlide"}
+          {:else if slide.type === "imageRightBulletsLeft"}
 
-      <div>Quote Editor</div>
+            <ImageRightBulletsLeftEditor {slide} />
 
-    {:else if slide.type === "keyIdeasSlide"}
+          {:else if slide.type === "table"}
 
-      <div>Key Ideas Editor</div>
+            <TableEditor {slide} />
 
-    {:else if slide.type === "eq"}
+          {:else if slide.type === "barChart"}
 
-      <div>EQ Editor</div>
+            <BarChartEditor {slide} />
 
-    {:else}
+          {:else if slide.type === "progressbar"}
 
-      <div>Unknown slide type: {slide.type}</div>
+            <ProgressbarEditor {slide} />
 
-    {/if}
+          {:else if slide.type === "quoteSlide"}
 
-  </div>
+            <QuoteEditor {slide} />
 
-{/each}
+          {:else if slide.type === "keyIdeasSlide"}
+
+            <KeyIdeasEditor {slide} />
+
+          {:else if slide.type === "eq"}
+
+            <EqEditor {slide} />
+
+          {:else}
+
+            <div class="fallback">
+              Editor not implemented yet: {slide.type}
+            </div>
+
+          {/if}
+
+
+        </div>
+
+      {/if}
+
+    </div>
+
+  {/each}
+
+</div>
 
 <style>
-  .presentation {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  .editor {
+    padding: 20px;
   }
 
-  .presentation input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    font-size: 16px;
+  .empty {
+    color: #777;
   }
 
   .slide {
-    margin: 16px;
-    padding: 16px;
     border: 1px solid #333;
-    border-radius: 8px;
+    margin-bottom: 14px;
+    border-radius: 6px;
+    overflow: hidden;
     background: #1a1a1a;
   }
 
-  .slide header {
-    margin-bottom: 12px;
-    font-size: 18px;
-    font-weight: bold;
+  .slide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f172a;
+    padding: 6px 10px;
+    border-bottom: 1px solid #333;
   }
 
-  .slide input,
-  .slide textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+  .slide-header .left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .slide-header .right {
+    display: flex;
+    gap: 6px;
+  }
+
+  .slide-body {
     padding: 10px;
-    box-sizing: border-box;
   }
 
-  .slide textarea {
-    min-height: 120px;
-    resize: vertical;
+  .fallback {
+    color: #777;
+    font-size: 13px;
   }
 </style>

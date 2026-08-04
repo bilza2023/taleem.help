@@ -1,6 +1,9 @@
 <!-- /src/routes/player/+page.svelte -->
 
 <script>
+	import "$lib/player/css/themes/dark.css";
+	import "$lib/player/css/index.css";
+
 	import { onMount } from "svelte";
 	import { page } from "$app/stores";
 	import { get } from "svelte/store";

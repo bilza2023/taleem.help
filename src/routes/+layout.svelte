@@ -3,8 +3,6 @@
 
 	import "@picocss/pico/css/pico.classless.min.css";
 	import "../app.css";
-	import "$lib/player/css/themes/dark.css";
-	import "$lib/player/css/index.css";
 
 	import Navbar from "$lib/components/Navbar.svelte";
 	import AdminNavbar from "$lib/components/AdminNavbar.svelte";

@@ -1,25 +1,25 @@
 
 // src/editor/js/editorRegistry.js
 
-import TitleAndSubtitleEditor from "../../editor2/components/TitleAndSubtitleEditor.svelte";
-import TitleAndParaEditor from "../../editor2/components/TitleAndParaEditor.svelte";
-import BulletListEditor from "../../editor2/components/BulletListEditor.svelte";
-import TwoColumnTextEditor from "../../editor2/components/TwoColumnTextEditor.svelte";
-import ImageSlideEditor from "../../editor2/components/ImageSlideEditor.svelte";
-import EqEditor from "../../editor2/components/EqEditor.svelte";
-import FillImageEditor from "../../editor2/components/FillImageEditor.svelte";
-import ImageWithTitleEditor from "../../editor2/components/ImageWithTitleEditor.svelte";
-import ImageWithCaptionEditor from "../../editor2/components/ImageWithCaptionEditor.svelte";
-import ImageLeftBulletsRightEditor from "../../editor2/components/ImageLeftBulletsRightEditor.svelte";
-import ImageRightBulletsLeftEditor from "../../editor2/components/ImageRightBulletsLeftEditor.svelte";
-import BarChartEditor from "../../editor2/components/BarChartEditor.svelte";
-import ProgressbarEditor from "../../editor2/components/ProgressbarEditor.svelte";
-import KeyIdeasEditor from "../../editor2/components/KeyIdeasEditor.svelte";
-import QuoteEditor from "../../editor2/components/QuoteEditor.svelte";
-import TableEditor from "../../editor2/components/TableEditor.svelte";
+import TitleAndSubtitleEditor from "../components/TitleAndSubtitleEditor.svelte";
+import TitleAndParaEditor from ../components/TitleAndParaEditor.sveltee";
+import BulletListEditor from../components/BulletListEditor.sveltete";
+import TwoColumnTextEditor fro../components/TwoColumnTextEditor.sveltelte";
+import ImageSlideEditor fr../components/ImageSlideEditor.svelteelte";
+import EqEditor f../components/EqEditor.sveltevelte";
+import FillImageEditor ../components/FillImageEditor.sveltesvelte";
+import ImageWithTitleEditor../components/ImageWithTitleEditor.svelte.svelte";
+import ImageWithCaptionEdito../components/ImageWithCaptionEditor.svelter.svelte";
+import ImageLeftBulletsRightEdit../components/ImageLeftBulletsRightEditor.svelteor.svelte";
+import ImageRightBulletsLeftEdi../components/ImageRightBulletsLeftEditor.sveltetor.svelte";
+import BarChartEd../components/BarChartEditor.svelteitor.svelte";
+import ProgressbarE../components/ProgressbarEditor.svelteditor.svelte";
+import KeyIdeas../components/KeyIdeasEditor.svelteEditor.svelte";
+import Quot../components/QuoteEditor.svelteeEditor.svelte";
+import Tab../components/TableEditor.svelteleEditor.svelte";
 
 // placeholders for now (until you build them)
-import Placeholder from "../../editor2/components/PlaceholderEditor.svelte";
+import Pl../components/PlaceholderEditor.sveltederEditor.svelte";
 
 export const EditorRegistry = {
   titleAndSubtitle: TitleAndSubtitleEditor,
