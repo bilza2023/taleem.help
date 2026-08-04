@@ -4,6 +4,7 @@
 <script>
   import Nav from "./Nav.svelte";
   import { slideFactory } from "./js/slideFactory.js";
+  import TitleAndSubtitle from "./slides/TitleAndSubtitle.svelte";
 
   let presentation = {
     version: "deck-v1",

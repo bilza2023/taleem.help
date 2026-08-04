@@ -164,58 +164,57 @@ function handleMockTiming() {
   onMockTiming={handleMockTiming}
 />
 
-  {#if slides.length === 0}
-    <p class="empty">No slides</p>
-  {/if}
-  {#each slides as slide, i}
-    <div class="slide">
+{#if slides.length === 0}
+  <p class="empty">No slides</p>
+{/if}
 
-      <!-- HEADER -->
-      <div class="slide-header">
+{#each slides as slide, i}
+  <div class="slide">
 
-        <div class="left">
-          <button on:click={() => toggleSlide(i)}>
-            {collapsed[i] ? '▶' : '▼'}
-          </button>
+    <!-- HEADER -->
+    <div class="slide-header">
 
-          <span>
-            #{i + 1} — {slide.type}
-            <small style="margin-left:10px; color:#888;">
-              [{slide.start ?? 0} → {slide.end ?? 0}]
-            </small>
-          </span>
-        </div>
-        <div class="right">
-          <button on:click={() => moveUp(i)}>⬆</button>
-          <button on:click={() => moveDown(i)}>⬇</button>
-          <button on:click={() => deleteSlide(i)}>🗑</button>
-        </div>
+      <div class="left">
+        <button on:click={() => toggleSlide(i)}>
+          {collapsed[i] ? "▶" : "▼"}
+        </button>
 
+        <span>
+          #{i + 1} — {slide.type}
+          <small style="margin-left:10px; color:#888;">
+            [{slide.start ?? 0} → {slide.end ?? 0}]
+          </small>
+        </span>
       </div>
 
-      <!-- BODY -->
-      {#if !collapsed[i]}
-        <div class="slide-body">
-
-          {#if EditorRegistry[slide.type]}
-            <svelte:component
-              this={EditorRegistry[slide.type]}
-              {slide}
-              {currentTime}
-            />
-          {:else}
-            <div class="fallback">
-              Unknown type: {slide.type}
-            </div>
-          {/if}
-
-        </div>
-      {/if}
+      <div class="right">
+        <button on:click={() => moveUp(i)}>⬆</button>
+        <button on:click={() => moveDown(i)}>⬇</button>
+        <button on:click={() => deleteSlide(i)}>🗑</button>
+      </div>
 
     </div>
-  {/each}
-</div>  
 
+    <!-- BODY -->
+    {#if !collapsed[i]}
+      <div class="slide-body">
+
+        {#if slide.type === "titleAndSubtitle"}
+          <TitleAndSubtitle {slide} />
+        {:else}
+
+          <div class="fallback">
+            Editor not implemented yet: {slide.type}
+          </div>
+
+        {/if}
+
+      </div>
+    {/if}
+
+  </div>
+{/each}
+</div>
 
 <style>
   .editor {
