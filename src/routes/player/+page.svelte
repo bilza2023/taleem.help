@@ -2,21 +2,22 @@
 
 <script>
 	import { onMount } from "svelte";
-	import { resolveAssetPaths }
-	from "./utils/resolveAssetPaths.js";
 	import { page } from "$app/stores";
 	import { get } from "svelte/store";
+	import apiFetch from "$lib/utils/fetch";
+	import {config} from "$lib/config.js";
+	import {getAudioFileName} from "./utils/getAudioFileName.js";
 
 	import Player from "$lib/player/Player.svelte";
+
+	import { resolveAssetPaths }
+		from "./utils/resolveAssetPaths.js";
 
 	import { getTimer }
 		from "./utils/getTimer.js";
 
 	import { Howl }
 		from "howler";
-
-	const CONTENT_FOLDER =
-		"/content";
 
 	// --------------------------------------------------
 	// state
@@ -30,82 +31,79 @@
 
 	// --------------------------------------------------
 
-	onMount(async () => {
+onMount(async () => {
+//  debugger;
+	const params =
+		get(page).url.searchParams;
 
-		const params =
-			get(page)
-			.url
-			.searchParams;
+	const lessonSlug =
+		params.get("lesson");
 
-		let deckSlug =
-			params.get("deck")
-			|| "main";
+	// --------------------------------------------------
+	// load presentation from library
+	// --------------------------------------------------
 
-		// --------------------------------------------------
-		// load presentation
-		// --------------------------------------------------
-
-		const res =
-			await fetch(
-				`${CONTENT_FOLDER}/decks/${deckSlug}.json`
-			);
-
-		presentation =
-			await res.json();
-
-		// 🔥 IMPORTANT
-		resolveAssetPaths(
-			presentation,
-			"/content/images/"
+	const item =
+		await apiFetch(
+			"GET",
+			`/library/${lessonSlug}`
 		);
 
-		// --------------------------------------------------
-		// timer
-		// --------------------------------------------------
+	presentation =
+		JSON.parse(item.body);
 
-		timer =
-			await getTimer({
+	// --------------------------------------------------
+	// resolve image paths
+	// --------------------------------------------------
 
-				slug:
-					deckSlug,
+	resolveAssetPaths(
+		presentation,
+		`${config.apiUrl}/content/images/`
+	);
 
-				deck:
-					presentation,
+	// --------------------------------------------------
+	// timer
+	// --------------------------------------------------
+	const audioFileName	= getAudioFileName(presentation);
 
-				Howl
-			});
+	timer = await getTimer(audioFileName,Howl);
 
-		// --------------------------------------------------
-		// auto stop
-		// --------------------------------------------------
+	// --------------------------------------------------
+	// auto stop
+	// --------------------------------------------------
 
-		const endTime =
-			presentation?.deck?.[
-				presentation
-				.deck.length - 1
-			]?.end || 0;
+	const endTime =
+		presentation?.deck?.[
+			presentation.deck.length - 1
+		]?.end || 0;
 
-		const stopWatcher =
-			setInterval(() => {
+	const stopWatcher =
+		setInterval(() => {
 
-				if (!timer) return;
+			if (!timer) return;
 
-				if (
-					timer.now()
-					>= endTime
-				) {
+			if (timer.now() >= endTime) {
 
-					timer.pause();
+				timer.pause();
 
-					clearInterval(
-						stopWatcher
-					);
-				}
+				clearInterval(
+					stopWatcher
+				);
+			}
 
-			}, 200);
+		}, 200);
 
-		});
-	</script>
+});
+</script>
+
+{#if presentation && timer}
+
+	<Player
+		{presentation}
+		{timer}
+	/>
+
+{/if}
 
 {#if presentation && timer}
 

@@ -4,6 +4,19 @@
 	let {
 		homeLinks = []
 	} = $props();
+
+	function getHref(card) {
+		switch (card.type) {
+			case "ARTICLE":
+				return `/articles?article=${card.slug}`;
+
+			case "PLAYER":
+				return `/player?lesson=${card.slug}`;
+
+			default:
+				return "#";
+		}
+	}
 </script>
 
 <style>
@@ -18,13 +31,10 @@
 		display: block;
 		text-decoration: none;
 		color: inherit;
-
 		border: 1px solid var(--pico-muted-border-color);
 		border-radius: 12px;
 		overflow: hidden;
-
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-
 		transition:
 			transform 0.15s ease,
 			background-color 0.2s ease,
@@ -38,21 +48,17 @@
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 	}
 
-	/* Access colours */
-/* Open (green) */
-.card.open {
-    background: #9db6a4;
-}
+	.card.open {
+		background: #9db6a4;
+	}
 
-/* Members (blue) */
-.card.members {
-    background: #737c8b;
-}
+	.card.members {
+		background: #737c8b;
+	}
 
-/* Subscription (gold) */
-.card.subscription {
-    background: #b4a78f;
-}
+	.card.subscription {
+		background: #b4a78f;
+	}
 
 	.card img {
 		display: block;
@@ -60,7 +66,6 @@
 		height: 140px;
 		object-fit: cover;
 		margin: 4px;
-		padding: 0;
 		border-radius: 8px;
 	}
 
@@ -83,7 +88,8 @@
 		padding: 4px;
 		font-size: 0.75rem;
 		font-weight: 400;
-  color: black;
+		color: black;
+
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
@@ -97,7 +103,7 @@
 
 		<a
 			class={`card ${card.access?.toLowerCase()}`}
-			href={`/articles?article=${card.slug}`}
+			href={getHref(card)}
 		>
 
 			{#if card.image}
