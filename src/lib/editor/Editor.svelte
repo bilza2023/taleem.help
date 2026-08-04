@@ -1,379 +1,139 @@
 <script>
-	// import "$lib/styles/editor.css";
-  import Nav from './Nav.svelte';
-  import { slideFactory } from '../editor/js/slideFactory';
-  import { finalizeDeck } from "../editor/js/finalizeDeck.js";
-  import { assignMockTimings } from "../editor/js/assignMockTimings.js";
-  import { TaleemCompiler } from "$lib/compiler/TaleemCompiler.js";
+	import Nav from "./Nav.svelte";
+	import AudioList from "./AudioList.svelte";
+	import AudioPlayer from "./AudioPlayer.svelte";
+	import Slides from "./Slides.svelte";
 
-  import TitleAndSubtitle from "./slides/TitleAndSubtitle.svelte";
-import TitleAndParaEditor from "./slides/TitleAndParaEditor.svelte";
-import BulletListEditor from "./slides/BulletListEditor.svelte";
-import TwoColumnTextEditor from "./slides/TwoColumnTextEditor.svelte";
-import ImageSlideEditor from "./slides/ImageSlideEditor.svelte";
-import FillImageEditor from "./slides/FillImageEditor.svelte";
-import ImageWithTitleEditor from "./slides/ImageWithTitleEditor.svelte";
-import ImageWithCaptionEditor from "./slides/ImageWithCaptionEditor.svelte";
-import ImageLeftBulletsRightEditor from "./slides/ImageLeftBulletsRightEditor.svelte";
-import ImageRightBulletsLeftEditor from "./slides/ImageRightBulletsLeftEditor.svelte";
-import TableEditor from "./slides/TableEditor.svelte";
-import BarChartEditor from "./slides/BarChartEditor.svelte";
-import ProgressbarEditor from "./slides/ProgressbarEditor.svelte";
-import QuoteEditor from "./slides/QuoteEditor.svelte";
-import KeyIdeasEditor from "./slides/KeyIdeasEditor.svelte";
-import EqEditor from "./slides/EqEditor.svelte";
+	import { slideFactory } from "./js/slideFactory.js";
+	import { finalizeDeck } from "./js/finalizeDeck.js";
+	import { assignMockTimings } from "./js/assignMockTimings.js";
+	import { TaleemCompiler } from "$lib/compiler/TaleemCompiler.js";
 
-  export let deck = { deck: [] };
-  export let currentTime = 0;
-  export let onExport;
+	export let deck = { deck: [] };
+	export let onExport;
 
+	let runningTime = 0;
 
-  $: slides = deck?.deck || [];
+	function addSlide(type) {
 
-  ///////////////////////////////////////////
-  function addSlide(type) {
-  const fn = slideFactory[type];
-  if (!fn) return;
+		const fn = slideFactory[type];
+		if (!fn) return;
 
-  const baseSlide = fn();
+		const last = deck.deck.at(-1);
 
-  const arr = deck.deck;
-  const last = arr[arr.length - 1];
+		deck.deck = [
+			...deck.deck,
+			{
+				...fn(),
+				start: last ? last.end : 0,
+				end: (last ? last.end : 0) + 5
+			}
+		];
 
-  const start = last ? last.end : 0;
-  const duration = 5; // default seconds per slide
-  const end = start + duration;
+	}
 
-  const newSlide = {
-    ...baseSlide,
-    start,
-    end
-  };
+	function preparePresentation() {
 
-  deck.deck = [...arr, newSlide];
-}
-  ///////////////////////////////////////////
-  // ---- UI STATE ----
-  let collapsed = {};
-  let allCollapsed = false;
+		const result = finalizeDeck(deck);
 
-  // ---- FOLD ----
-  function toggleSlide(i) {
-    collapsed[i] = !collapsed[i];
-    collapsed = { ...collapsed };
-  }
+		if (!result.ok) {
 
-  function toggleAll() {
-    allCollapsed = !allCollapsed;
+			console.error(result);
+			alert("Deck invalid. Check console.");
+			return null;
 
-    const newState = {};
-    slides.forEach((_, i) => {
-      newState[i] = allCollapsed;
-    });
+		}
 
-    collapsed = newState;
-  }
+		return {
 
-  // ---- MOVE ----
-  function moveUp(i) {
-    if (i === 0) return;
+			body: result.deck,
 
-    const arr = deck.deck;
+			source: TaleemCompiler(result.deck)
 
-    [arr[i - 1], arr[i]] = [arr[i], arr[i - 1]];
+		};
 
-    deck.deck = [...arr]; // 🔥 trigger
-  }
+	}
 
-  function moveDown(i) {
-    const arr = deck.deck;
+	function handleDownload() {
 
-    if (i === arr.length - 1) return;
+		const presentation = preparePresentation();
+		if (!presentation) return;
 
-    [arr[i + 1], arr[i]] = [arr[i], arr[i + 1]];
+		const blob = new Blob(
+			[JSON.stringify(presentation.source, null, 2)],
+			{ type: "application/json" }
+		);
 
-    deck.deck = [...arr]; // 🔥 trigger
-  }
+		const url = URL.createObjectURL(blob);
 
-  // ---- DELETE ----
-  function deleteSlide(i) {
-    const arr = deck.deck;
+		const a = document.createElement("a");
+		a.href = url;
+		a.download = "deck.json";
+		a.click();
 
-    arr.splice(i, 1);
+		URL.revokeObjectURL(url);
 
-    deck.deck = [...arr]; // 🔥
+	}
 
-    // fix collapsed map
-    const newCollapsed = {};
-    arr.forEach((_, idx) => {
-      newCollapsed[idx] = collapsed[idx] || false;
-    });
+	async function handleSave() {
 
-    collapsed = newCollapsed;
-  }
+		const presentation = preparePresentation();
+		if (!presentation) return;
 
-  function handleDownload() {
+		try {
 
-  const result = finalizeDeck(deck);
+			await onExport(presentation);
 
-  if (!result.ok) {
-    console.error(result);
-    alert("Deck invalid. Check console.");
-    return;
-  }
+			alert("Presentation saved");
 
-  // editable deck
-  const finalDeck = result.deck;
+		}
+		catch (err) {
 
-  // compiled player deck
-  const compiledDeck = TaleemCompiler(finalDeck);
+			console.error(err);
+			alert(err.message);
 
-  const blob = new Blob(
-    [JSON.stringify(compiledDeck, null, 2)],
-    { type: "application/json" }
-  );
+		}
 
-  const url = URL.createObjectURL(blob);
+	}
 
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "deck.json";
-  a.click();
+	function handleMockTiming() {
 
-  URL.revokeObjectURL(url);
+		try {
 
-}
+			deck = assignMockTimings(deck);
 
-async function handleSave() {
+			alert("Mock timings applied");
 
-  const result = finalizeDeck(deck);
+		}
+		catch (err) {
 
-  if (!result.ok) {
-    console.error(result);
-    alert("Deck invalid. Check console.");
-    return;
-  }
+			console.error(err);
+			alert("Failed to apply mock timings");
 
-  const body = result.deck;
-  const source = TaleemCompiler(body);
+		}
 
-  try {
+	}
 
-    await onExport({
-      body,
-      source
-    });
-
-    alert("Presentation saved");
-
-  }
-
-  catch (err) {
-
-    console.error(err);
-    alert(err.message);
-
-  }
-
-}
-
-
-
-function handleMockTiming() {
-  try {
-    // if(deck){
-      deck = assignMockTimings(deck);
-    // }
-
-    // update editor state (same pattern as others)
-    // onExport(deck);
-
-    alert("Mock timings applied");
-  } catch (err) {
-    console.error(err);
-    alert("Failed to apply mock timings");
-  }
-}
 </script>
-
 
 <div class="editor">
 
-  <Nav
-    add={addSlide}
-    onDownload={handleDownload}
-    onSave={handleSave}
-    onMockTiming={handleMockTiming}
-  />
+	<AudioList audio={deck.audio} onUse={(filename)=>deck.audio=filename} />
 
-  {#if slides.length === 0}
-    <p class="empty">No slides</p>
-  {/if}
+	<AudioPlayer audio={deck.audio} bind:runningTime />
 
-  {#each slides as slide, i}
+	<Nav add={addSlide} onDownload={handleDownload} onSave={handleSave} onMockTiming={handleMockTiming} />
 
-    <div class="slide">
-
-      <!-- Header -->
-
-      <div class="slide-header">
-
-        <div class="left">
-
-          <button on:click={() => toggleSlide(i)}>
-            {collapsed[i] ? "▶" : "▼"}
-          </button>
-
-          <span>
-            #{i + 1} — {slide.type}
-            <small style="margin-left:10px;color:#888;">
-              [{slide.start ?? 0} → {slide.end ?? 0}]
-            </small>
-          </span>
-
-        </div>
-
-        <div class="right">
-
-          <button on:click={() => moveUp(i)}>⬆</button>
-          <button on:click={() => moveDown(i)}>⬇</button>
-          <button on:click={() => deleteSlide(i)}>🗑</button>
-
-        </div>
-
-      </div>
-
-      <!-- Body -->
-
-      {#if !collapsed[i]}
-
-        <div class="slide-body">
-          {#if slide.type === "titleAndSubtitle"}
-
-            <TitleAndSubtitle {slide} />
-
-          {:else if slide.type === "titleAndPara"}
-
-            <TitleAndParaEditor {slide} />
-
-          {:else if slide.type === "bulletList"}
-
-            <BulletListEditor {slide} />
-
-          {:else if slide.type === "twoColumnText"}
-
-            <TwoColumnTextEditor {slide} />
-
-          {:else if slide.type === "imageSlide"}
-
-            <ImageSlideEditor {slide} />
-
-          {:else if slide.type === "fillImage"}
-
-            <FillImageEditor {slide} />
-
-          {:else if slide.type === "imageWithTitle"}
-
-            <ImageWithTitleEditor {slide} />
-
-          {:else if slide.type === "imageWithCaption"}
-
-            <ImageWithCaptionEditor {slide} />
-
-          {:else if slide.type === "imageLeftBulletsRight"}
-
-            <ImageLeftBulletsRightEditor {slide} />
-
-          {:else if slide.type === "imageRightBulletsLeft"}
-
-            <ImageRightBulletsLeftEditor {slide} />
-
-          {:else if slide.type === "table"}
-
-            <TableEditor {slide} />
-
-          {:else if slide.type === "barChart"}
-
-            <BarChartEditor {slide} />
-
-          {:else if slide.type === "progressbar"}
-
-            <ProgressbarEditor {slide} />
-
-          {:else if slide.type === "quoteSlide"}
-
-            <QuoteEditor {slide} />
-
-          {:else if slide.type === "keyIdeasSlide"}
-
-            <KeyIdeasEditor {slide} />
-
-          {:else if slide.type === "eq"}
-
-            <EqEditor {slide} />
-
-          {:else}
-
-            <div class="fallback">
-              Editor not implemented yet: {slide.type}
-            </div>
-
-          {/if}
-
-
-        </div>
-
-      {/if}
-
-    </div>
-
-  {/each}
+	<Slides {deck} {runningTime} />
 
 </div>
 
 <style>
-  .editor {
-    padding: 20px;
-  }
 
-  .empty {
-    color: #777;
-  }
+.editor{
 
-  .slide {
-    border: 1px solid #333;
-    margin-bottom: 14px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #1a1a1a;
-  }
+	padding:4px;
 
-  .slide-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #0f172a;
-    padding: 6px 10px;
-    border-bottom: 1px solid #333;
-  }
+}
 
-  .slide-header .left {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .slide-header .right {
-    display: flex;
-    gap: 6px;
-  }
-
-  .slide-body {
-    padding: 10px;
-  }
-
-  .fallback {
-    color: #777;
-    font-size: 13px;
-  }
 </style>

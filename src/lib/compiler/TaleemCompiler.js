@@ -1,5 +1,5 @@
 
-// /src/compiler/index.js
+// /home/bilal-tariq/00--TALEEM/taleem.help/src/lib/compiler/TaleemCompiler.js
 
 import { compileTimings } from "./utils/compileTimings.js";
 import { templates } from "./templates/index.js";
@@ -10,7 +10,7 @@ export function TaleemCompiler(presentation) {
 // --------------------------------------------------
 // determine presentation end
 // --------------------------------------------------
-
+debugger;
 let presentationEnd = presentation.presentationEnd;
 
 if (presentationEnd == null) {
