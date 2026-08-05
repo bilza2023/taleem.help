@@ -48,7 +48,11 @@
 		goto(`/teacher/course/${courseSlug}/library/${slug}/edit`);
 
 	}
+function editor(slug) {
 
+	goto(`/teacher/course/${courseSlug}/library/${slug}/editor`);
+
+}
 	function remove(slug) {
 
 		goto(`/teacher/course/${courseSlug}/library/${slug}/delete`);
@@ -121,13 +125,24 @@
 							Edit
 						</button>
 
-						<button
-							class="secondary"
-							onclick={() => remove(item.slug)}
-						>
-							Delete
-						</button>
+						
+{#if item.type === "PLAYER"}
 
+	<button
+	
+	class="warning"
+		onclick={() => editor(item.slug)}
+	>
+		Editor
+	</button>
+
+{/if}
+					<button
+	class="danger"
+	onclick={() => remove(item.slug)}
+>
+	🗑 Delete
+</button>
 					</td>
 
 				</tr>
@@ -141,6 +156,24 @@
 {/if}
 
 <style>
+.danger{
+	background:#dc2626;
+	border-color:#b91c1c;
+	color:white;
+}
+
+.danger:hover{
+	background:#b91c1c;
+}
+.warning{
+	background:#f59e0b;
+	border-color:#d97706;
+	color:white;
+}
+
+.warning:hover{
+	background:#d97706;
+}
 
 	header {
 		display: flex;
