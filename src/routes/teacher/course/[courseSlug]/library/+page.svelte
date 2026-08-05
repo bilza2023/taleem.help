@@ -19,9 +19,9 @@
 		try {
 
 			items = await apiFetch(
-				"GET",
-				`/public/library?course=${courseSlug}`
-			);
+	"GET",
+	`/admin/library?course=${courseSlug}`
+);
 
 		}
 		catch (err) {
@@ -94,77 +94,174 @@ function editor(slug) {
 
 {:else}
 
-	<table>
+<table>
 
-		<thead>
+	<thead>
+
+		<tr>
+
+			<th>Library Item</th>
+			<th>Type</th>
+			<th>Status</th>
+			<th style="text-align:center;">💬</th>
+			<th>Actions</th>
+
+		</tr>
+
+	</thead>
+
+	<tbody>
+
+		{#each items as item}
 
 			<tr>
 
-				<th>Title</th>
-				<th>Slug</th>
-				<th>Type</th>
-				<th>Actions</th>
+				<td class="library-item">
+
+					<div class="title">
+						{item.title}
+					</div>
+
+					<div class="slug">
+						{item.slug}
+					</div>
+
+				</td>
+
+				<td>
+
+					{#if item.type === "PLAYER"}
+
+						🎬 <small>Player</small>
+
+					{:else if item.type === "ARTICLE"}
+
+						📄 <small>Article</small>
+
+					{:else}
+
+						{item.type}
+
+					{/if}
+
+				</td>
+
+				<td>
+
+					{#if item.status === "PUBLISHED"}
+
+						🟢 <small>Published</small>
+
+					{:else if item.status === "DRAFT"}
+
+						🟡 <small>Draft</small>
+
+					{:else}
+
+						⚫ <small>Archived</small>
+
+					{/if}
+
+				</td>
+
+				<td class="comm">
+
+					{#if item.allowCommunication}
+						💬
+					{:else}
+						🔇
+					{/if}
+
+				</td>
+
+				<td>
+
+					<button onclick={() => edit(item.slug)}>
+						✏️ Edit
+					</button>
+
+					{#if item.type === "PLAYER"}
+
+						<button
+							class="warning"
+							onclick={() => editor(item.slug)}
+						>
+							📝 Editor
+						</button>
+
+					{/if}
+
+					<button
+						class="danger"
+						onclick={() => remove(item.slug)}
+					>
+						🗑 Delete
+					</button>
+
+				</td>
 
 			</tr>
 
-		</thead>
+		{/each}
 
-		<tbody>
+	</tbody>
 
-			{#each items as item}
-
-				<tr>
-
-					<td>{item.title}</td>
-					<td>{item.slug}</td>
-					<td>{item.type}</td>
-
-					<td>
-
-						<button onclick={() => edit(item.slug)}>
-							Edit
-						</button>
-
-						
-{#if item.type === "PLAYER"}
-
-	<button
-	
-	class="warning"
-		onclick={() => editor(item.slug)}
-	>
-		Editor
-	</button>
-
-{/if}
-					<button
-	class="danger"
-	onclick={() => remove(item.slug)}
->
-	🗑 Delete
-</button>
-					</td>
-
-				</tr>
-
-			{/each}
-
-		</tbody>
-
-	</table>
+</table>
 
 {/if}
 
 <style>
-.danger{
-	background:#dc2626;
-	border-color:#b91c1c;
-	color:white;
+	header{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin-bottom:2rem;
 }
 
-.danger:hover{
-	background:#b91c1c;
+header h1{
+	margin-bottom:.25rem;
 }
+
+table{
+	width:100%;
+}
+
+th{
+	text-align:left;
+}
+
+.library-item{
+	min-width:340px;
+}
+
+.library-item .title{
+	font-weight:600;
+	font-size:1rem;
+	margin-bottom:.2rem;
+}
+
+.library-item .slug{
+	font-family:monospace;
+	font-size:.8rem;
+	opacity:.65;
+	word-break:break-word;
+}
+
+.comm{
+	text-align:center;
+	font-size:1.2rem;
+}
+
+th:last-child,
+td:last-child{
+	width:1%;
+	white-space:nowrap;
+}
+
+td button{
+	margin-right:.5rem;
+}
+
 .warning{
 	background:#f59e0b;
 	border-color:#d97706;
@@ -175,33 +272,13 @@ function editor(slug) {
 	background:#d97706;
 }
 
-	header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 2rem;
-	}
+.danger{
+	background:#dc2626;
+	border-color:#b91c1c;
+	color:white;
+}
 
-	header h1 {
-		margin-bottom: .25rem;
-	}
-
-	table {
-		width: 100%;
-	}
-
-	th {
-		text-align: left;
-	}
-
-	th:last-child,
-	td:last-child {
-		width: 1%;
-		white-space: nowrap;
-	}
-
-	td button {
-		margin-right: .5rem;
-	}
-
+.danger:hover{
+	background:#b91c1c;
+}
 </style>

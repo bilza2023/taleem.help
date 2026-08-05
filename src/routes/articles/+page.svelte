@@ -40,6 +40,7 @@ let articleBody = $derived.by(() => {
 			loading = false;
 		}
 	});
+
 </script>
 
 {#if loading}
@@ -61,8 +62,26 @@ let articleBody = $derived.by(() => {
 <main class="container">
 	<!-- {@html libraryItem.body} -->
 {@html articleBody}
-	<Communication librarySlug={libraryItem.slug} type="user-comment" />
-	<Discussion librarySlug={libraryItem.slug} />
+	<!-- <Communication librarySlug={libraryItem.slug} type="user-comment" />
+	<Discussion librarySlug={libraryItem.slug} /> -->
+{#if libraryItem.allowCommunication}
+
+	<Communication
+		librarySlug={libraryItem.slug}
+		type="user-comment"
+	/>
+
+{:else}
+
+	<article class="secondary">
+		🔒 Questions and comments are disabled for this lesson.
+	</article>
+
+{/if}
+
+<Discussion
+	librarySlug={libraryItem.slug}
+/>
 </main>
 
 {/if}

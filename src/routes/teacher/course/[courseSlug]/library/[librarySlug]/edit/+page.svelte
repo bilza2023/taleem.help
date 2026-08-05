@@ -1,5 +1,5 @@
 <script>
-
+///home/bilal-tariq/00--TALEEM/taleem.help/src/routes/teacher/course/[courseSlug]/library/[librarySlug]/edit/+page.svelte
 	import { goto } from "$app/navigation";
 	import { page } from "$app/state";
 	import { onMount } from "svelte";
@@ -21,7 +21,10 @@
 		type: "ARTICLE",
 		body: "",
 		thumbnail: "",
-		courseSlug: ""
+		courseSlug: "",
+
+		allowCommunication: true,
+	status: "DRAFT"
 
 	};
 
@@ -38,7 +41,7 @@
 				`/admin/library/${librarySlug}`
 
 			);
-
+				console.log("libraryItem", item);
 			form = {
 
 				slug: item.slug,
@@ -47,8 +50,10 @@
 				type: item.type ?? "ARTICLE",
 				body: item.body ?? "",
 				thumbnail: item.thumbnail ?? "",
-				courseSlug: item.course?.slug ?? ""
+				courseSlug: item.course?.slug ?? "",
 
+allowCommunication: item.allowCommunication ?? true,
+status: item.status ?? "DRAFT"
 			};
 
 		}
@@ -79,7 +84,9 @@
 				description: form.description,
 				type: form.type,
 				body: form.body,
-				thumbnail: form.thumbnail
+				thumbnail: form.thumbnail,
+				allowCommunication: form.allowCommunication,
+				status: form.status
 
 			};
 
@@ -218,7 +225,32 @@
 			</select>
 
 		</label>
+<label>
 
+	Status
+
+	<select bind:value={form.status}>
+
+		<option value="DRAFT">DRAFT</option>
+		<option value="PUBLISHED">PUBLISHED</option>
+		<option value="ARCHIVED">ARCHIVED</option>
+  
+  
+  
+	</select>
+
+</label>
+
+<label>
+
+	<input
+		type="checkbox"
+		bind:checked={form.allowCommunication}
+	/>
+
+	Allow Communication
+
+</label>
 		<label>
 
 			Thumbnail
