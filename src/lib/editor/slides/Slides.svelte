@@ -1,29 +1,44 @@
 <!-- src/lib/editor/Slides.svelte -->
 
 <script>
-  import TitleAndSubtitle from "./slides/TitleAndSubtitle.svelte";
-  import TitleAndParaEditor from "./slides/TitleAndParaEditor.svelte";
-  import BulletListEditor from "./slides/BulletListEditor.svelte";
-  import TwoColumnTextEditor from "./slides/TwoColumnTextEditor.svelte";
-  import ImageSlideEditor from "./slides/ImageSlideEditor.svelte";
-  import FillImageEditor from "./slides/FillImageEditor.svelte";
-  import ImageWithTitleEditor from "./slides/ImageWithTitleEditor.svelte";
-  import ImageWithCaptionEditor from "./slides/ImageWithCaptionEditor.svelte";
-  import ImageLeftBulletsRightEditor from "./slides/ImageLeftBulletsRightEditor.svelte";
-  import ImageRightBulletsLeftEditor from "./slides/ImageRightBulletsLeftEditor.svelte";
-  import TableEditor from "./slides/TableEditor.svelte";
-  import BarChartEditor from "./slides/BarChartEditor.svelte";
-  import ProgressbarEditor from "./slides/ProgressbarEditor.svelte";
-  import QuoteEditor from "./slides/QuoteEditor.svelte";
-  import KeyIdeasEditor from "./slides/KeyIdeasEditor.svelte";
-  import EqEditor from "./slides/EqEditor.svelte";
+  import TitleAndSubtitle from "./templates/TitleAndSubtitle.svelte";
+  import TitleAndParaEditor from "./templates/TitleAndParaEditor.svelte";
+  import BulletListEditor from "./templates/BulletListEditor.svelte";
+  import TwoColumnTextEditor from "./templates/TwoColumnTextEditor.svelte";
+  import ImageSlideEditor from "./templates/ImageSlideEditor.svelte";
+  import FillImageEditor from "./templates/FillImageEditor.svelte";
+  import ImageWithTitleEditor from "./templates/ImageWithTitleEditor.svelte";
+  import ImageWithCaptionEditor from "./templates/ImageWithCaptionEditor.svelte";
+  import ImageLeftBulletsRightEditor from "./templates/ImageLeftBulletsRightEditor.svelte";
+  import ImageRightBulletsLeftEditor from "./templates/ImageRightBulletsLeftEditor.svelte";
+  import TableEditor from "./templates/TableEditor.svelte";
+  import BarChartEditor from "./templates/BarChartEditor.svelte";
+  import ProgressbarEditor from "./templates/ProgressbarEditor.svelte";
+  import QuoteEditor from "./templates/QuoteEditor.svelte";
+  import KeyIdeasEditor from "./templates/KeyIdeasEditor.svelte";
+  import EqEditor from "./templates/EqEditor.svelte";
 
+  import SlideHeader from "./components/SlideHeader.svelte";
   export let deck;
 
   $: slides = deck?.deck || [];
+  export let runningTime;
 
   let collapsed = {};
 
+  function setStart(i) {
+
+	deck.deck[i].start = runningTime;
+
+	if (i > 0) {
+
+		deck.deck[i - 1].end = runningTime;
+
+	}
+
+	deck.deck = [...deck.deck];
+
+}
   function toggleSlide(i) {
 
     collapsed[i] = !collapsed[i];
@@ -74,6 +89,8 @@
     collapsed = map;
 
   }
+
+  
 </script>
 
 
@@ -88,32 +105,23 @@
 
       <!-- Header -->
 
-      <div class="slide-header">
+<SlideHeader
 
-        <div class="left">
+	slide={slide}
+	index={i}
+	collapsed={collapsed[i]}
 
-          <button on:click={() => toggleSlide(i)}>
-            {collapsed[i] ? "▶" : "▼"}
-          </button>
+	isLast={i === slides.length - 1}
 
-          <span>
-            #{i + 1} — {slide.type}
-            <small style="margin-left:10px;color:#888;">
-              [{slide.start ?? 0} → {slide.end ?? 0}]
-            </small>
-          </span>
+	onToggle={() => toggleSlide(i)}
+	onMoveUp={() => moveUp(i)}
+	onMoveDown={() => moveDown(i)}
+	onDelete={() => deleteSlide(i)}
 
-        </div>
+	onSetStart={() => setStart(i)}
+	onSetEnd={() => slide.end = runningTime}
 
-        <div class="right">
-
-          <button on:click={() => moveUp(i)}>⬆</button>
-          <button on:click={() => moveDown(i)}>⬇</button>
-          <button on:click={() => deleteSlide(i)}>🗑</button>
-
-        </div>
-
-      </div>
+/>
 
       <!-- Body -->
 
@@ -122,67 +130,67 @@
         <div class="slide-body">
           {#if slide.type === "titleAndSubtitle"}
 
-            <TitleAndSubtitle {slide} />
+            <TitleAndSubtitle {slide} {runningTime} />
 
           {:else if slide.type === "titleAndPara"}
 
-            <TitleAndParaEditor {slide} />
+            <TitleAndParaEditor {slide} {runningTime} />
 
           {:else if slide.type === "bulletList"}
 
-            <BulletListEditor {slide} />
+            <BulletListEditor {slide} {runningTime} />
 
           {:else if slide.type === "twoColumnText"}
 
-            <TwoColumnTextEditor {slide} />
+            <TwoColumnTextEditor {slide} {runningTime} />
 
           {:else if slide.type === "imageSlide"}
 
-            <ImageSlideEditor {slide} />
+            <ImageSlideEditor {slide} {runningTime} />
 
           {:else if slide.type === "fillImage"}
 
-            <FillImageEditor {slide} />
+            <FillImageEditor {slide} {runningTime} />
 
           {:else if slide.type === "imageWithTitle"}
 
-            <ImageWithTitleEditor {slide} />
+            <ImageWithTitleEditor {slide} {runningTime} />
 
           {:else if slide.type === "imageWithCaption"}
 
-            <ImageWithCaptionEditor {slide} />
+            <ImageWithCaptionEditor {slide} {runningTime} />
 
           {:else if slide.type === "imageLeftBulletsRight"}
 
-            <ImageLeftBulletsRightEditor {slide} />
+            <ImageLeftBulletsRightEditor {slide} {runningTime} />
 
           {:else if slide.type === "imageRightBulletsLeft"}
 
-            <ImageRightBulletsLeftEditor {slide} />
+            <ImageRightBulletsLeftEditor {slide} {runningTime} />
 
           {:else if slide.type === "table"}
 
-            <TableEditor {slide} />
+            <TableEditor {slide} {runningTime} />
 
           {:else if slide.type === "barChart"}
 
-            <BarChartEditor {slide} />
+            <BarChartEditor {slide} {runningTime} />
 
           {:else if slide.type === "progressbar"}
 
-            <ProgressbarEditor {slide} />
+            <ProgressbarEditor {slide} {runningTime} />
 
           {:else if slide.type === "quoteSlide"}
 
-            <QuoteEditor {slide} />
+            <QuoteEditor {slide} {runningTime} />
 
           {:else if slide.type === "keyIdeasSlide"}
 
-            <KeyIdeasEditor {slide} />
+            <KeyIdeasEditor {slide} {runningTime} />
 
           {:else if slide.type === "eq"}
 
-            <EqEditor {slide} />
+            <EqEditor {slide} {runningTime} />
 
           {:else}
 

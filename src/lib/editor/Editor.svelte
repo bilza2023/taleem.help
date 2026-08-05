@@ -2,7 +2,7 @@
 	import Nav from "./Nav.svelte";
 	import AudioList from "./AudioList.svelte";
 	import AudioPlayer from "./AudioPlayer.svelte";
-	import Slides from "./Slides.svelte";
+	import Slides from "./slides/Slides.svelte";
 
 	import { slideFactory } from "./js/slideFactory.js";
 	import { finalizeDeck } from "./js/finalizeDeck.js";
