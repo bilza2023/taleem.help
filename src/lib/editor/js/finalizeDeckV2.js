@@ -1,0 +1,41 @@
+
+// /src/lib/editor/js/finalizeDeckV2.js
+
+import { patchDeckV2 } from "./patchDeckV2.js";
+import { validateDeckV2 } from "$lib/taleem-specs/validation/validateDeckV2.js";
+import { validatePlaybackV2 } from "$lib/taleem-specs/validation/validatePlaybackV2.js";
+
+export function finalizeDeckV2(presentation) {
+
+	const patched = patchDeckV2(presentation);
+
+	const schema = validateDeckV2(patched);
+
+	if (!schema.ok) {
+
+		return {
+			ok: false,
+			stage: "schema",
+			errors: schema.errors
+		};
+
+	}
+
+	const playback = validatePlaybackV2(patched);
+
+	if (!playback.ok) {
+
+		return {
+			ok: false,
+			stage: "playback",
+			errors: playback.errors
+		};
+
+	}
+
+	return {
+		ok: true,
+		presentation: patched
+	};
+
+}

@@ -1,4 +1,4 @@
-<!-- /src/lib/player/Player.svelte -->
+<!-- /home/bilal-tariq/00--TALEEM/taleem.help/src/lib/player/Player.svelte -->
 
 <script>
 
@@ -113,7 +113,8 @@
 	let interval;
 
 	onMount(() => {
-  console.log("presentation" , presentation);
+//  console.log(JSON.parse(JSON.stringify(presentation)));
+
 		interval = setInterval(() => {
 
 			if (
@@ -173,6 +174,7 @@
 			);
 
 		}, 100);
+		console.log(structuredClone(presentation));
 	});
 
 	onDestroy(() => {

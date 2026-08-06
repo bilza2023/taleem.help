@@ -1,7 +1,8 @@
 
-// /src/compiler/templates/compileBarChart.js
+// /home/bilal-tariq/00--TALEEM/taleem.help/src/lib/compiler/templates/compileBarChart.js
 
 import { addIdToItems } from "./helpers/addIdToItems.js";
+import { ContentType } from "$lib/taleem-specs/enums";
 
 export function compileBarChart(slide) {
   const rawItems = slide.data ?? [];
@@ -9,9 +10,10 @@ export function compileBarChart(slide) {
   const items =
     addIdToItems(rawItems);
 
+    
   const bars =
     items.filter(
-      d => d.name === "bar"
+      d => d.name === ContentType.BAR
     );
 
   const ids =

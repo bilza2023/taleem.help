@@ -1,0 +1,330 @@
+import { z } from "zod";
+import {DeckVersion,SlideType,ContentType,EqLineType,EqSidePanelType} from "$lib/taleem-specs/enums";
+
+/* ───────────── Shared Literals ───────────── */
+
+const title = z.literal(ContentType.TITLE);
+const subtitle = z.literal(ContentType.SUBTITLE);
+const para = z.literal(ContentType.PARA);
+const heading = z.literal(ContentType.HEADING);
+const bullet = z.literal(ContentType.BULLET);
+const left = z.literal(ContentType.LEFT);
+const right = z.literal(ContentType.RIGHT);
+const image = z.literal(ContentType.IMAGE);
+const caption = z.literal(ContentType.CAPTION);
+const quote = z.literal(ContentType.QUOTE);
+const author = z.literal(ContentType.AUTHOR);
+const card = z.literal(ContentType.CARD);
+const bar = z.literal(ContentType.BAR);
+const line = z.literal(ContentType.LINE);
+
+/* ───────────── Base ───────────── */
+
+const baseSlide = z.object({
+	start: z.number(),
+	end: z.number()
+});
+
+const showAt = z.number().optional();
+
+/* ───────────── Text Slides ───────────── */
+
+const titleAndSubtitle = baseSlide.extend({
+	type: z.literal(SlideType.TITLE_AND_SUBTITLE),
+	data: z.array(
+		z.union([
+			z.object({
+				name: title,
+				content: z.string(),
+				showAt
+			}),
+			z.object({
+				name: subtitle,
+				content: z.string(),
+				showAt
+			})
+		])
+	)
+});
+
+const titleAndPara = baseSlide.extend({
+	type: z.literal(SlideType.TITLE_AND_PARA),
+	data: z.array(
+		z.union([
+			z.object({
+				name: title,
+				content: z.string(),
+				showAt
+			}),
+			z.object({
+				name: para,
+				content: z.string(),
+				showAt
+			})
+		])
+	)
+});
+
+const bulletList = baseSlide.extend({
+	type: z.literal(SlideType.BULLET_LIST),
+	data: z.array(
+		z.object({
+			name: z.union([
+				heading,
+				bullet
+			]),
+			content: z.string(),
+			showAt
+		})
+	)
+});
+
+const twoColumnText = baseSlide.extend({
+	type: z.literal(SlideType.TWO_COLUMN_TEXT),
+	data: z.array(
+		z.union([
+			z.object({
+				name: title,
+				content: z.string(),
+				showAt
+			}),
+			z.object({
+				name: left,
+				content: z.string(),
+				showAt
+			}),
+			z.object({
+				name: right,
+				content: z.string(),
+				showAt
+			})
+		])
+	)
+});
+
+/* ───────────── Image Slides ───────────── */
+
+const imageSlide = baseSlide.extend({
+	type: z.literal(SlideType.IMAGE_SLIDE),
+	data: z.array(
+		z.object({
+			name: image,
+			content: z.string(),
+			showAt
+		})
+	)
+});
+
+const fillImage = baseSlide.extend({
+	type: z.literal(SlideType.FILL_IMAGE),
+	data: z.array(
+		z.object({
+			name: image,
+			content: z.string(),
+			showAt
+		})
+	)
+});
+
+const imageWithTitle = baseSlide.extend({
+	type: z.literal(SlideType.IMAGE_WITH_TITLE),
+	data: z.array(
+		z.union([
+			z.object({
+				name: image,
+				content: z.string(),
+				showAt
+			}),
+			z.object({
+				name: title,
+				content: z.string(),
+				showAt
+			})
+		])
+	)
+});
+
+const imageWithCaption = baseSlide.extend({
+	type: z.literal(SlideType.IMAGE_WITH_CAPTION),
+	data: z.array(
+		z.union([
+			z.object({
+				name: image,
+				content: z.string(),
+				showAt
+			}),
+			z.object({
+				name: caption,
+				content: z.string(),
+				showAt
+			})
+		])
+	)
+});
+
+const imageLeftBulletsRight = baseSlide.extend({
+	type: z.literal(SlideType.IMAGE_LEFT_BULLETS_RIGHT),
+	data: z.array(
+		z.object({
+			name: z.union([
+				image,
+				bullet
+			]),
+			content: z.string(),
+			showAt
+		})
+	)
+});
+
+const imageRightBulletsLeft = baseSlide.extend({
+	type: z.literal(SlideType.IMAGE_RIGHT_BULLETS_LEFT),
+	data: z.array(
+		z.object({
+			name: z.union([
+				image,
+				bullet
+			]),
+			content: z.string(),
+			showAt
+		})
+	)
+});
+
+/* ───────────── Data Slides ───────────── */
+
+const table = baseSlide.extend({
+	type: z.literal(SlideType.TABLE),
+	data: z.array(
+		z.array(z.string()).min(1)
+	).min(1)
+});
+
+const barChart = baseSlide.extend({
+	type: z.literal(SlideType.BAR_CHART),
+	data: z.array(
+		z.object({
+			name: bar,
+			label: z.string(),
+			value: z.number(),
+			showAt
+		})
+	)
+});
+
+const progressbar = baseSlide.extend({
+	type: z.literal(SlideType.PROGRESS_BAR),
+	data: z.array(
+		z.object({
+			name: bar,
+			label: z.string(),
+			value: z.number(),
+			showAt
+		})
+	)
+});
+
+/* ───────────── Quote / Ideas ───────────── */
+
+const quoteSlide = baseSlide.extend({
+	type: z.literal(SlideType.QUOTE),
+	data: z.array(
+		z.union([
+			z.object({
+				name: quote,
+				content: z.string(),
+				showAt
+			}),
+			z.object({
+				name: author,
+				content: z.string(),
+				showAt
+			})
+		])
+	)
+});
+
+const keyIdeasSlide = baseSlide.extend({
+	type: z.literal(SlideType.KEY_IDEAS),
+	data: z.array(
+		z.object({
+			name: card,
+			icon: z.string(),
+			label: z.string(),
+			showAt
+		})
+	)
+});
+
+/* ───────────── EQ ───────────── */
+
+const eq = baseSlide.extend({
+	type: z.literal(SlideType.EQ),
+	data: z.array(
+		z.object({
+			name: line,
+			type: z.enum(Object.values(EqLineType)),
+			content: z.string(),
+			showAt,
+			spItems: z.array(
+				z.object({
+					type: z.enum(
+						Object.values(EqSidePanelType)
+					),
+					content: z.string()
+				})
+			).optional()
+		})
+	)
+});
+
+/* ───────────── Deck ───────────── */
+
+export const zodDeckV2 = z.object({
+
+	version: z.literal(DeckVersion.V2),
+
+	name: z.string().optional(),
+
+	audio: z
+		.string()
+		.regex(/^[a-zA-Z0-9-_]+\.(opus|mp3|wav)$/)
+		.optional(),
+
+	background: z.object({
+
+		backgroundColor: z.string().optional(),
+
+		backgroundImage: z
+			.string()
+			.nullable()
+			.optional(),
+
+		backgroundImageOpacity: z
+			.number()
+			.optional()
+
+	}).optional(),
+
+	deck: z.array(
+		z.discriminatedUnion("type", [
+			titleAndSubtitle,
+			titleAndPara,
+			bulletList,
+			twoColumnText,
+			imageSlide,
+			fillImage,
+			imageWithTitle,
+			imageWithCaption,
+			imageLeftBulletsRight,
+			imageRightBulletsLeft,
+			table,
+			barChart,
+			progressbar,
+			quoteSlide,
+			keyIdeasSlide,
+			eq
+		])
+
+	)
+
+});

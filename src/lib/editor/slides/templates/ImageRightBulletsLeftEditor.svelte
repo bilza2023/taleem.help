@@ -3,6 +3,7 @@
 <script>
 
 	import EditableField from "../components/EditableField.svelte";
+	import {ContentType} from "$lib/taleem-specs/enums";
 
 	export let slide;
 	export let runningTime;
@@ -12,7 +13,7 @@
 		slide.data = [
 			...slide.data,
 			{
-				name: "bullet",
+				name: ContentType.BULLET,
 				content: "",
 				showAt: 0
 			}
@@ -22,13 +23,17 @@
 
 	function deleteBullet(index) {
 
-		const bullets = slide.data.filter(x => x.name === "bullet");
+		const bullets = slide.data.filter(
+			x => x.name === ContentType.BULLET
+		);
 
 		if (bullets.length <= 1) return;
 
 		const bullet = bullets[index];
 
-		slide.data = slide.data.filter(x => x !== bullet);
+		slide.data = slide.data.filter(
+			x => x !== bullet
+		);
 
 	}
 
@@ -42,7 +47,7 @@
 	{runningTime}
 />
 
-{#each slide.data.filter(x => x.name === "bullet") as bullet, i}
+{#each slide.data.filter(x => x.name === ContentType.BULLET) as bullet, i}
 
 	<div style="display:flex; gap:8px; align-items:flex-start; margin-bottom:8px;">
 

@@ -1,4 +1,5 @@
 import { addIdToItems } from "./helpers/addIdToItems.js";
+import {EqLineType,EqSidePanelType,ContentType,GroupType} from "$lib/taleem-specs/enums";
 
 export function compileEq(slide) {
 	const rawItems = slide.data ?? [];

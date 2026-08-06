@@ -1,11 +1,13 @@
 <script>
+///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/editor/Editor.svelte
 	import Nav from "./Nav.svelte";
 	import AudioList from "./AudioList.svelte";
 	import AudioPlayer from "./AudioPlayer.svelte";
+	import Background from "./Background.svelte";
 	import Slides from "./slides/Slides.svelte";
+	import { finalizeDeckV2 } from "./js/finalizeDeckV2.js";
 
 	import { slideFactory } from "./js/slideFactory.js";
-	import { finalizeDeck } from "./js/finalizeDeck.js";
 	import { assignMockTimings } from "./js/assignMockTimings.js";
 	import { TaleemCompiler } from "$lib/compiler/TaleemCompiler.js";
 
@@ -34,7 +36,7 @@
 
 	function preparePresentation() {
 
-		const result = finalizeDeck(deck);
+		const result = finalizeDeckV2(deck);
 
 		if (!result.ok) {
 
@@ -46,9 +48,8 @@
 
 		return {
 
-			body: result.deck,
-
-			source: TaleemCompiler(result.deck)
+		body: result.presentation,
+		source: TaleemCompiler(result.presentation)
 
 		};
 
@@ -118,6 +119,7 @@
 
 <div class="editor">
 
+	<Background bind:background={deck.background} />
 	<AudioList audio={deck.audio} onUse={(filename)=>deck.audio=filename} />
 
 	<AudioPlayer audio={deck.audio} bind:runningTime />

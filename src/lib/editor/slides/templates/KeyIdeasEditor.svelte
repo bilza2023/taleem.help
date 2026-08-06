@@ -4,6 +4,7 @@
 
 	import Icons from "../assets/Icons.js";
 	import EditableField from "../components/EditableField.svelte";
+	import {ContentType} from "$lib/taleem-specs/enums";
 
 	export let slide;
 	export let runningTime;
@@ -17,7 +18,7 @@
 		slide.data = [
 			...slide.data,
 			{
-				name: "card",
+				name: ContentType.CARD,
 				icon: iconList[0],
 				label: "",
 				showAt: 0

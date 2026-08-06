@@ -4,6 +4,7 @@
 
 	import EditableField from "../components/EditableField.svelte";
 	import EditableNumber from "../components/EditableNumber.svelte";
+	import {ContentType} from "$lib/taleem-specs/enums";
 
 	export let slide;
 	export let runningTime;
@@ -13,7 +14,7 @@
 		slide.data = [
 			...slide.data,
 			{
-				name: "bar",
+				name: ContentType.BAR,
 				label: "",
 				value: 0,
 				showAt: 0

@@ -3,6 +3,7 @@
 <script>
 
 	import EditableField from "../components/EditableField.svelte";
+	import {ContentType} from "$lib/taleem-specs/enums";
 
 	export let slide;
 	export let runningTime;
@@ -11,7 +12,7 @@
 		slide.data = [
 			...slide.data,
 			{
-				name: "left",
+				name: ContentType.LEFT,
 				content: "",
 				showAt: 0
 			}
@@ -22,7 +23,7 @@
 		slide.data = [
 			...slide.data,
 			{
-				name: "right",
+				name: ContentType.RIGHT,
 				content: "",
 				showAt: 0
 			}
@@ -30,19 +31,35 @@
 	}
 
 	function deleteLeft(index) {
-		const leftItems = slide.data.filter(x => x.name === "left");
+
+		const leftItems = slide.data.filter(
+			x => x.name === ContentType.LEFT
+		);
+
 		if (leftItems.length <= 1) return;
 
 		const item = leftItems[index];
-		slide.data = slide.data.filter(x => x !== item);
+
+		slide.data = slide.data.filter(
+			x => x !== item
+		);
+
 	}
 
 	function deleteRight(index) {
-		const rightItems = slide.data.filter(x => x.name === "right");
+
+		const rightItems = slide.data.filter(
+			x => x.name === ContentType.RIGHT
+		);
+
 		if (rightItems.length <= 1) return;
 
 		const item = rightItems[index];
-		slide.data = slide.data.filter(x => x !== item);
+
+		slide.data = slide.data.filter(
+			x => x !== item
+		);
+
 	}
 
 </script>
@@ -61,7 +78,7 @@
 
 		<h4>Left</h4>
 
-		{#each slide.data.filter(x => x.name === "left") as item, i}
+		{#each slide.data.filter(x => x.name === ContentType.LEFT) as item, i}
 
 			<div style="display:flex; gap:8px; align-items:flex-start; margin-bottom:8px;">
 
@@ -95,7 +112,7 @@
 
 		<h4>Right</h4>
 
-		{#each slide.data.filter(x => x.name === "right") as item, i}
+		{#each slide.data.filter(x => x.name === ContentType.RIGHT) as item, i}
 
 			<div style="display:flex; gap:8px; align-items:flex-start; margin-bottom:8px;">
 

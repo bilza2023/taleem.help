@@ -1,14 +1,14 @@
 <!-- src/lib/editor/slides/templates/EqEditor.svelte -->
 
 <script>
-
+import {ContentType,EqLineType,EqSidePanelType} from "$lib/taleem-specs/enums";
 	export let slide;
 	export let runningTime;
 
 	let active = 0;
 
-	const lineTypes = ["heading", "text", "math"];
-	const spTypes = ["spText", "spMath", "spImage"];
+	const lineTypes = Object.values(EqLineType);
+	const spTypes = Object.values(EqSidePanelType);
 
 function setShowAt(line) {
 
@@ -24,7 +24,7 @@ function setShowAt(line) {
 		slide.data = [
 			...slide.data,
 			{
-				name: "line",
+				name: ContentType.LINE,
 				type,
 				content: "",
 				showAt: 0,
@@ -73,6 +73,7 @@ function setShowAt(line) {
 	}
 
 </script>
+
 
 {#each slide.data as line, i}
 
@@ -159,21 +160,21 @@ function setShowAt(line) {
 
 				<button
 					style="background:#2563eb;color:white;font-size:12px;padding:4px 8px;"
-					on:click={() => addSpItem(line,"spText")}
+					on:click={() => addSpItem(line, EqSidePanelType.TEXT)}
 				>
 					📝 Text
 				</button>
 
 				<button
 					style="background:#059669;color:white;font-size:12px;padding:4px 8px;"
-					on:click={() => addSpItem(line,"spMath")}
+					on:click={() => addSpItem(line, EqSidePanelType.MATH)}
 				>
 					∑ Math
 				</button>
 
 				<button
 					style="background:#7c3aed;color:white;font-size:12px;padding:4px 8px;"
-					on:click={() => addSpItem(line,"spImage")}
+					on:click={() => addSpItem(line, EqSidePanelType.IMAGE)}
 				>
 					🖼 Image
 				</button>
@@ -197,15 +198,15 @@ function setShowAt(line) {
 
 <div style="display:flex;gap:8px;">
 
-	<button on:click={() => addLine("heading")}>
+	<button on:click={() => addLine(EqLineType.HEADING)}>
 		+ Heading
 	</button>
 
-	<button on:click={() => addLine("math")}>
+	<button on:click={() => addLine(EqLineType.MATH)}>
 		+ Math
 	</button>
 
-	<button on:click={() => addLine("text")}>
+	<button on:click={() => addLine(EqLineType.TEXT)}>
 		+ Text
 	</button>
 

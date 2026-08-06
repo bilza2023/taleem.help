@@ -4,13 +4,14 @@
 import { compileTimings } from "./utils/compileTimings.js";
 import { templates } from "./templates/index.js";
 import { runPrimitive } from "./animation-primtives/runPrimitive.js";
+import { DeckVersion } from "$lib/taleem-specs/enums";
 
 export function TaleemCompiler(presentation) {
 
 // --------------------------------------------------
 // determine presentation end
 // --------------------------------------------------
-debugger;
+// debugger;
 let presentationEnd = presentation.presentationEnd;
 
 if (presentationEnd == null) {
@@ -106,7 +107,7 @@ compileTimings(
 
   return {
 
-    version:"deck-v1",
+    version: DeckVersion.V2,
 
     name:
       presentation.name,

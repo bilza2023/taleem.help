@@ -1,12 +1,12 @@
 
 import { addIdToItems } from "./helpers/addIdToItems.js";
-
+import {ContentType,GroupType} from "$lib/taleem-specs/enums";
 export function compileBulletList(slide) {
   const rawItems = slide.data ?? [];
 
   const items = addIdToItems(rawItems);
 
-  const bullets = items.filter(d => d.name === "bullet");
+  const bullets = items.filter(d => d.name === ContentType.BULLET);
 
   const ids = items.map(i => i.id);
 
@@ -18,7 +18,7 @@ export function compileBulletList(slide) {
             b => `
               <li
                 id="${b.id}"
-                class="hidden"
+                class="${GroupType.HIDDEN}"
               >
                 ${b.content}
               </li>
