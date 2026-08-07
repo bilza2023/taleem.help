@@ -14,7 +14,7 @@
 
 	<AdminNavbar />
 
-{:else if !page.url.pathname.startsWith("/player") && !page.url.pathname.startsWith("/present") }
+{:else if !page.url.pathname.startsWith("/player") && !page.url.pathname.startsWith("/present") &&  !page.url.pathname.startsWith("/runner")}
 
 	<Navbar />
 
