@@ -8,7 +8,7 @@ import { validatePlaybackV2 } from "$lib/taleem-specs/validation/validatePlaybac
 export function finalizeDeckV2(presentation) {
 
 	const patched = patchDeckV2(presentation);
-
+console.log(JSON.stringify(patched, null, 2));
 	const schema = validateDeckV2(patched);
 
 	if (!schema.ok) {

@@ -5,7 +5,7 @@
 	import { onMount } from "svelte";
 	import { goto } from "$app/navigation";
 	import { page } from "$app/state";
-
+import { createPresentationV2 } from "$lib/taleem-specs/create/createPresentationV2.js";
 	import Editor from "$lib/editor/Editor.svelte";
 	import apiFetch from "$lib/utils/fetch";
 
@@ -19,43 +19,32 @@
 
 	onMount(load);
 
-	async function load() {
+async function load() {
 
-		try {
+	try {
 
-			const item = await apiFetch(
-				"GET",
-				`/admin/library/${librarySlug}`
-			);
+		const item = await apiFetch(
+			"GET",
+			`/admin/library/${librarySlug}`
+		);
 
-			deck = item.body
-				? JSON.parse(item.body)
-				: {
-						version: "deck-v1",
-						audio: "music.mp3",
-						background: {
-							backgroundColor: "#111111",
-							backgroundImage: null,
-							backgroundImageOpacity: 0.3
-						},
-						deck: []
-				  };
-
-		}
-
-		catch (err) {
-
-			error = err.message;
-
-		}
-
-		finally {
-
-			loading = false;
-
-		}
+		deck = item.body
+			? JSON.parse(item.body)
+			: createPresentationV2();
 
 	}
+	catch (err) {
+
+		error = err.message;
+
+	}
+	finally {
+
+		loading = false;
+
+	}
+
+}
 
 	async function save({ body, source }) {
 

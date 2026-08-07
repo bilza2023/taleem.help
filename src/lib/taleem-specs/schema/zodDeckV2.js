@@ -288,6 +288,7 @@ export const zodDeckV2 = z.object({
 	audio: z
 		.string()
 		.regex(/^[a-zA-Z0-9-_]+\.(opus|mp3|wav)$/)
+		.nullable()
 		.optional(),
 
 	background: z.object({

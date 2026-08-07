@@ -3,7 +3,7 @@ import {EqLineType,EqSidePanelType,ContentType,GroupType} from "$lib/taleem-spec
 
 export function compileEq(slide) {
 	const rawItems = slide.data ?? [];
-
+    console.log("rawItems" , rawItems);
 	if (!rawItems.length) {
 		throw new Error(
 			"eq: requires lines"
@@ -66,9 +66,8 @@ export function compileEq(slide) {
 					let content =
 						line.content;
 
-					if (
-						line.name === "math"
-					) {
+					if (line.type === EqLineType.MATH)
+					 {
 						content =
 							"$$ " +
 							line.content +
@@ -79,11 +78,10 @@ export function compileEq(slide) {
 						<li
 							id="${line.id}"
 
-							class="
-								eq-item
-								eq-${line.name}
-							"
-						>
+						class="
+    eq-item
+    eq-${line.type}
+">
 							${content}
 						</li>
 					`;
@@ -96,7 +94,7 @@ export function compileEq(slide) {
 				${lines.map(line =>
 					line.spItems.map(sp => {
 
-						if (sp.name === "image") {
+						if (sp.type === EqSidePanelType.IMAGE){
 							return `
 								<div
 									id="${sp.id}"

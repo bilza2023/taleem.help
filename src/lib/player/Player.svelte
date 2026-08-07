@@ -174,7 +174,7 @@
 			);
 
 		}, 100);
-		console.log(structuredClone(presentation));
+		// console.log(structuredClone(presentation));
 	});
 
 	onDestroy(() => {
