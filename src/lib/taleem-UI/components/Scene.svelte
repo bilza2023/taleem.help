@@ -1,6 +1,5 @@
 <script>
 </script>
-
 <div class="scene">
     <slot />
 </div>
@@ -12,9 +11,5 @@
 
     position:relative;
     overflow:hidden;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
 </style>

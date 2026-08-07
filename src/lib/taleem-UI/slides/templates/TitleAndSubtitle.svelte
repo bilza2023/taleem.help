@@ -2,58 +2,77 @@
     export let slide;
     export let width = 0;
     export let height = 0;
+    export let currentTime = 0;
+    export let theme;
 
-    const title = slide.data.find(x => x.name === "title");
-    const subtitle = slide.data.find(x => x.name === "subtitle");
+    import { getBaseFont } from "../../utils/layout.js";
 
-    $: console.log({
-        width,
-        height
-    });
+    $: title = slide.data.find(x => x.name === "title");
+    $: subtitle = slide.data.find(x => x.name === "subtitle");
+
+    $: baseFont = getBaseFont(width);
 </script>
 
 <section
-    class="slide titleAndSubtitle"
+    class="slide"
     style={`
-        --title-size:${Math.max(32, width * 0.04)}px;
-        --subtitle-size:${Math.max(18, width * 0.02)}px;
+        --base-font:${baseFont}px;
+        --text:${theme.text};
+        --panel:${theme.panel};
+        --border:${theme.border};
+        --accent:${theme.accent};
     `}
 >
-    <h1>{title?.content}</h1>
-    <h2>{subtitle?.content}</h2>
+
+    {#if title}
+        <div class="titleBox">
+            <h1>{title.content}</h1>
+        </div>
+    {/if}
+
+    {#if subtitle}
+        <div class="subtitleBox">
+            <h2>{subtitle.content}</h2>
+        </div>
+    {/if}
+
 </section>
 
 <style>
 .slide{
     width:100%;
     height:100%;
-
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    gap:calc(var(--base-font)*1.5);
+    padding:calc(var(--base-font)*2);
+    box-sizing:border-box;
+    color:var(--text);
+}
 
+.titleBox,
+.subtitleBox{
+    width:min(90%,1200px);
+    padding:calc(var(--base-font)*.9);
+    background:var(--panel);
+    border:2px solid var(--border);
+    border-radius:16px;
     text-align:center;
-    gap:2rem;
-
-    padding:5%;
     box-sizing:border-box;
 }
 
 h1{
     margin:0;
-
-    font-size:var(--title-size);
-    line-height:1.1;
+    font-size:calc(var(--base-font)*2.4);
+    line-height:1.2;
 }
 
 h2{
     margin:0;
-
-    font-size:var(--subtitle-size);
+    font-size:calc(var(--base-font)*1.3);
+    line-height:1.4;
     font-weight:400;
-    opacity:.8;
-
-    line-height:1.3;
 }
 </style>

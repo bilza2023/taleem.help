@@ -3,9 +3,13 @@
 
     let stage;
 
+     let width = 0;
+    let height = 0;
     onMount(() => {
 
         const observer = new ResizeObserver(() => {
+            width = stage.clientWidth;
+            height = stage.clientHeight;
 
             console.log({
                 width: stage.clientWidth,
@@ -21,11 +25,11 @@
     });
 </script>
 
-<div
-    class="stage"
-    bind:this={stage}
->
-    <slot />
+<div class="stage" bind:this={stage} >
+<!-- <div class="debug">
+    {width} × {height}
+</div> -->
+    <slot {width} {height} />
 </div>
 
 <style>
@@ -40,8 +44,7 @@
 
 .stage{
     width:100%;
-    height:100%;
-    overflow:hidden;
-    background:#111;
+    height:100vh;
+    outline:4px solid red;
 }
 </style>
