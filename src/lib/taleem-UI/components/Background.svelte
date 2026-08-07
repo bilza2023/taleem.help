@@ -7,15 +7,15 @@
 
 <style>
 .background {
-    position: absolute;
-    inset: 0;
-
-    overflow: hidden;
-
-    background: #111;
+    width: 100%;
+    height: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
+
+    background: #111;
 }
 </style>
