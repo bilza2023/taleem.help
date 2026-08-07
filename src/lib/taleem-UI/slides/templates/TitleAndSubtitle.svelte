@@ -1,16 +1,16 @@
 <script>
+import {getBaseFont} from "../../utils/layout.js";
     export let slide;
     export let width = 0;
     export let height = 0;
     export let currentTime = 0;
     export let theme;
 
-    import { getBaseFont } from "../../utils/layout.js";
 
     $: title = slide.data.find(x => x.name === "title");
     $: subtitle = slide.data.find(x => x.name === "subtitle");
 
-    $: baseFont = getBaseFont(width);
+     $: baseFont = getBaseFont(width, height);
 </script>
 
 <section
@@ -20,7 +20,6 @@
         --text:${theme.text};
         --panel:${theme.panel};
         --border:${theme.border};
-        --accent:${theme.accent};
     `}
 >
 
@@ -46,32 +45,33 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    gap:calc(var(--base-font)*1.5);
-    padding:calc(var(--base-font)*2);
+    gap:calc(var(--base-font)*2.5);
+    padding:calc(var(--base-font)*1.2);
     box-sizing:border-box;
     color:var(--text);
 }
 
 .titleBox,
 .subtitleBox{
-    width:min(90%,1200px);
-    padding:calc(var(--base-font)*.9);
+    width:min(90%,1100px);
+    padding:calc(var(--base-font)*.8);
     background:var(--panel);
     border:2px solid var(--border);
-    border-radius:16px;
-    text-align:center;
+    border-radius:calc(var(--base-font)*.45);
     box-sizing:border-box;
 }
 
 h1{
     margin:0;
-    font-size:calc(var(--base-font)*2.4);
-    line-height:1.2;
+    text-align:center;
+    font-size:calc(var(--base-font)*2.5);
+    line-height:1.15;
 }
 
 h2{
     margin:0;
-    font-size:calc(var(--base-font)*1.3);
+    text-align:center;
+    font-size:calc(var(--base-font)*1.8);
     line-height:1.4;
     font-weight:400;
 }

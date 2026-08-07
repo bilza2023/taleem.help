@@ -14,7 +14,18 @@
 <div class="debug">
     {currentTime}
 </div>
-<TaleemUI
-    {deck}
-    {currentTime}
-/>
+<div class="viewer">
+    <TaleemUI
+        {deck}
+        {currentTime}
+        width={844}
+        height={390}
+    />
+</div>
+
+<style>
+.viewer{
+    width:844px;
+    height:390px;
+}
+</style>

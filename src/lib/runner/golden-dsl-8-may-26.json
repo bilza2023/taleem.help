@@ -5,7 +5,7 @@
   "background": {
     "backgroundColor": "#111111",
     "backgroundImage": "/static-presentations/images/taleem.webp",
-    "backgroundImageOpacity": 0.1
+    "backgroundImageOpacity": 0.2
   },
   "deck": [
     {
@@ -38,29 +38,29 @@
         {
           "name": "bullet",
           "content": "The system only shows what is written",
-          "showAt": 13
-        },
-        {
-          "name": "bullet",
-          "content": "Nothing changes behind the scenes",
-          "showAt": 13
-        },
-        {
-          "name": "bullet",
-          "content": "The author controls when ideas appear",
           "showAt": 14
         },
         {
           "name": "bullet",
+          "content": "Nothing changes behind the scenes",
+          "showAt": 16
+        },
+        {
+          "name": "bullet",
+          "content": "The author controls when ideas appear",
+          "showAt": 18
+        },
+        {
+          "name": "bullet",
           "content": "The same lesson looks the same everywhere",
-          "showAt": 17
+          "showAt": 19
         }
       ]
     },
     {
       "type": "twoColumnText",
       "start": 20,
-      "end": 15,
+      "end": 30,
       "data": [
         {
           "name": "left",
@@ -76,118 +76,118 @@
     },
     {
       "type": "imageSlide",
-      "start": 15,
-      "end": 20,
+      "start": 30,
+      "end": 40,
       "data": [
         {
           "name": "image",
-          "content": "image.png",
-          "showAt": 15
+          "content": "/static-presentations/images/wood.jpg",
+          "showAt": 30
         }
       ]
     },
     {
       "type": "imageWithTitle",
-      "start": 20,
-      "end": 25,
+      "start": 40,
+      "end": 50,
       "data": [
         {
           "name": "title",
           "content": "Learning with Visual Support",
-          "showAt": 20
+          "showAt": 40
         },
         {
           "name": "image",
-          "content": "image.png",
-          "showAt": 21
+          "content": "/static-presentations/images/wood.jpg",
+          "showAt": 40
         }
       ]
     },
     {
       "type": "imageWithCaption",
-      "start": 25,
-      "end": 30,
+      "start": 50,
+      "end": 60,
       "data": [
         {
           "name": "image",
-          "content": "image.png",
-          "showAt": 25
+          "content": "/static-presentations/images/wood.jpg",
+          "showAt": 50
         },
         {
           "name": "caption",
           "content": "Caption as data",
-          "showAt": 26
+          "showAt": 50
         }
       ]
     },
     {
       "type": "imageLeftBulletsRight",
-      "start": 30,
-      "end": 35,
+      "start": 60,
+      "end": 70,
       "data": [
         {
           "name": "image",
-          "content": "image.png",
-          "showAt": 30
+          "content": "/static-presentations/images/wood.jpg",
+          "showAt": 60
         },
         {
           "name": "bullet",
           "content": "Each slide has a clear visual focus",
-          "showAt": 31
+          "showAt": 61
         },
         {
           "name": "bullet",
           "content": "Points are shown in a planned order",
-          "showAt": 32
+          "showAt": 62
         },
         {
           "name": "bullet",
           "content": "Nothing appears randomly",
-          "showAt": 33
+          "showAt": 63
         },
         {
           "name": "bullet",
           "content": "This helps students follow step by step",
-          "showAt": 34
+          "showAt": 64
         }
       ]
     },
     {
       "type": "imageRightBulletsLeft",
-      "start": 35,
-      "end": 40,
+      "start": 70,
+      "end": 80,
       "data": [
         {
           "name": "image",
-          "content": "image.png",
-          "showAt": 35
+          "content": "/static-presentations/images/wood.jpg",
+          "showAt": 70
         },
         {
           "name": "bullet",
           "content": "Slides do not change on their own",
-          "showAt": 36
+          "showAt": 71
         },
         {
           "name": "bullet",
           "content": "The teacher decides when to move forward",
-          "showAt": 37
+          "showAt": 72
         },
         {
           "name": "bullet",
           "content": "Students are never rushed",
-          "showAt": 38
+          "showAt": 73
         },
         {
           "name": "bullet",
           "content": "This keeps learning calm and focused",
-          "showAt": 39
+          "showAt": 74
         }
       ]
     },
     {
       "type": "table",
-      "start": 40,
-      "end": 45,
+      "start": 80,
+      "end": 90,
       "data": [
         [
           "Layer",
@@ -213,167 +213,177 @@
     },
     {
       "type": "barChart",
-      "start": 45,
-      "end": 50,
+      "start": 90,
+      "end": 100,
       "data": [
         {
           "name": "bar",
           "label": "Excellent",
           "value": 4,
-          "showAt": 45
+          "showAt": 90
         },
         {
           "name": "bar",
           "label": "Good",
           "value": 6,
-          "showAt": 46
+          "showAt": 91
         },
         {
           "name": "bar",
           "label": "Average",
           "value": 5,
-          "showAt": 47
+          "showAt": 92
         },
         {
           "name": "bar",
           "label": "Needs improvement",
           "value": 2,
-          "showAt": 48
+          "showAt": 93
         }
       ]
     },
     {
       "type": "progressbar",
-      "start": 50,
-      "end": 55,
+      "start": 100,
+      "end": 110,
       "data": [
         {
           "name": "bar",
           "label": "Lesson Coverage",
           "value": 60,
-          "showAt": 50
+          "showAt": 100
         }
       ]
     },
     {
       "type": "quoteSlide",
-      "start": 55,
-      "end": 60,
+      "start": 110,
+      "end": 120,
       "data": [
         {
           "name": "quote",
           "content": "Clarity makes learning easier for everyone.",
-          "showAt": 55
+          "showAt": 110
         },
         {
           "name": "author",
           "content": "— Taleem",
-          "showAt": 56
+          "showAt": 112
         }
       ]
     },
     {
       "type": "keyIdeasSlide",
-      "start": 60,
-      "end": 65,
+      "start": 120,
+      "end": 130,
       "data": [
         {
           "name": "card",
           "icon": "🧠",
           "label": "Focus",
-          "showAt": 60
+          "showAt": 120
         },
         {
           "name": "card",
           "icon": "📘",
           "label": "Clarity",
-          "showAt": 61
+          "showAt": 122
         },
         {
           "name": "card",
           "icon": "⏱️",
           "label": "Pace",
-          "showAt": 62
+          "showAt": 124
         },
         {
           "name": "card",
           "icon": "🎯",
           "label": "Understanding",
-          "showAt": 63
+          "showAt": 124
+        }
+      ]
+    },
+   {
+  "type": "eq",
+  "start": 130,
+  "end": 140,
+  "data": [
+    {
+      "name": "line",
+      "type": "heading",
+      "content": "Eq Slide - under construction",
+      "showAt": 130,
+       "spItems": [
+        {
+          "type": "text",
+          "content": "Text content for side panel."
+        },
+        {
+          "type": "image",
+          "content": "/static-presentations/images/wood.jpg"
         }
       ]
     },
     {
-      "type": "eq",
-      "start": 65,
-      "end": 75,
-      "data": [
+      "name": "line",
+      "type": "math",
+      "content": "$(a+b)(a+b)$",
+      "showAt": 132,
+      "spItems": [
         {
-          "name": "line",
-          "type": "heading",
-          "content": "Eq Slide - under construction",
-          "showAt": 65
+          "type": "text",
+          "content": "The square means the bracket is multiplied by itself."
         },
         {
-          "name": "line",
-          "type": "math",
-          "content": "$(a + b)(a + b)$",
-          "showAt": 66,
-          "spItems": [
-            {
-              "type": "spText",
-              "content": "The square means the bracket is multiplied by itself."
-            },
-            {
-              "type": "spImage",
-              "content": "box.webp"
-            }
-          ]
-        },
-        {
-          "name": "line",
-          "type": "math",
-          "content": "$(a + b)^2$",
-          "showAt": 67,
-          "spItems": [
-            {
-              "type": "spText",
-              "content": "The square means the bracket is multiplied by itself."
-            },
-            {
-              "type": "spImage",
-              "content": "image.webp"
-            }
-          ]
+          "type": "image",
+          "content": "/static-presentations/images/taleem.webp"
         }
       ]
     },
+    {
+      "name": "line",
+      "type": "math",
+      "content": "$(a+b)^2$",
+      "showAt": 134,
+      "spItems": [
+        {
+          "type": "text",
+          "content": "The square means the bracket is multiplied by itself."
+        },
+        {
+          "type": "image",
+          "content": "/static-presentations/images/typesOfForce.webp"
+        }
+      ]
+    }
+  ]
+},
     {
       "type": "fillImage",
-      "start": 75,
-      "end": 80,
+      "start": 140,
+      "end": 150,
       "data": [
         {
           "name": "image",
-          "content": "image.png",
-          "showAt": 75
+          "content": "/static-presentations/images/wood.jpg",
+          "showAt": 140
         }
       ]
     },
     {
       "type": "titleAndPara",
-      "start": 80,
-      "end": 85,
+      "start": 150,
+      "end": 160,
       "data": [
         {
           "name": "title",
           "content": "Final Slide and Message",
-          "showAt": 80
+          "showAt": 150
         },
         {
           "name": "para",
           "content": "All slide types in the system have now been rendered. This final slide uses a simple title and paragraph layout, which represents one of the most important formats in real teaching. While often overlooked in presentations, clear paragraph-based text forms the backbone of explanation and reflection. It is in these quiet moments of reading and thinking that ideas settle, connections form, and learning becomes lasting. This slide stands as a reminder that clarity and thoughtful pacing matter more than visual complexity.",
-          "showAt": 81
+          "showAt": 151
         }
       ]
     }
