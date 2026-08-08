@@ -3,7 +3,7 @@
 
 import { SlideType } from "../enums/index.js";
 
-export function validatePlaybackV2(deck) {
+export function validateTimelineV2(deck) {
 
 	const errors = [];
 

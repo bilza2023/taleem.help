@@ -3,10 +3,10 @@
 
 import { patchDeckV2 } from "./patchDeckV2.js";
 import { validateDeckV2 } from "$lib/taleem-specs/validation/validateDeckV2.js";
-import { validatePlaybackV2 } from "$lib/taleem-specs/validation/validatePlaybackV2.js";
+import { validateTimelineV2 } from "$lib/taleem-specs/validation/validateTimelineV2.js";
 
 export function finalizeDeckV2(presentation) {
-
+//  debugger;
 	const patched = patchDeckV2(presentation);
 console.log(JSON.stringify(patched, null, 2));
 	const schema = validateDeckV2(patched);
@@ -21,7 +21,7 @@ console.log(JSON.stringify(patched, null, 2));
 
 	}
 
-	const playback = validatePlaybackV2(patched);
+	const playback = validateTimelineV2(patched);
 
 	if (!playback.ok) {
 

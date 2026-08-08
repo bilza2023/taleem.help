@@ -1,3 +1,4 @@
+///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/taleem-specs/enums/SlideType.js
 export const SlideType = Object.freeze({
     TitleAndSubtitle: "titleAndSubtitle",
     TitleAndPara: "titleAndPara",

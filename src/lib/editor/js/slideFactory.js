@@ -1,128 +1,128 @@
-// src/editor/js/slideFactory.js
+import { SlideType } from "$lib/taleem-specs/enums";
 
 export const slideFactory = {
 
-    titleAndSubtitle: () => ({
-      type: "titleAndSubtitle",
-      data: [
-        { name: "title", content: "" },
-        { name: "subtitle", content: "" }
-      ]
-    }),
-  
-    titleAndPara: () => ({
-      type: "titleAndPara",
-      data: [
-        { name: "title", content: "" },
-        { name: "para", content: "" }
-      ]
-    }),
-  
-    bulletList: () => ({
-      type: "bulletList",
-      data: [
-        { name: "heading", content: "" }, // your future support
-        { name: "bullet", content: "" }
-      ]
-    }),
-  
-    twoColumnText: () => ({
-      type: "twoColumnText",
-      data: [
-        { name: "left", content: "" },
-        { name: "right", content: "" }
-      ]
-    }),
-  
-    imageSlide: () => ({
-      type: "imageSlide",
-      data: [
-        { name: "image", content: "" }
-      ]
-    }),
-  
-    fillImage: () => ({
-      type: "fillImage",
-      data: [
-        { name: "image", content: "" }
-      ]
-    }),
-  
-    imageWithTitle: () => ({
-      type: "imageWithTitle",
-      data: [
-        { name: "title", content: "" },
-        { name: "image", content: "" }
-      ]
-    }),
-  
-    imageWithCaption: () => ({
-      type: "imageWithCaption",
-      data: [
-        { name: "image", content: "" },
-        { name: "caption", content: "" }
-      ]
-    }),
-  
-    imageLeftBulletsRight: () => ({
-      type: "imageLeftBulletsRight",
-      data: [
-        { name: "image", content: "" },
-        { name: "bullet", content: "" }
-      ]
-    }),
-  
-    imageRightBulletsLeft: () => ({
-      type: "imageRightBulletsLeft",
-      data: [
-        { name: "image", content: "" },
-        { name: "bullet", content: "" }
-      ]
-    }),
-  
-    keyIdeasSlide: () => ({
-      type: "keyIdeasSlide",
-      data: [
-        { name: "card", icon: "🧠", label: "" },
-        { name: "card", icon: "📘", label: "" },
-        { name: "card", icon: "🧩", label: "" },
-        { name: "card", icon: "🎯", label: "" }
-      ]
-    }),
-  
-    quoteSlide: () => ({
-      type: "quoteSlide",
-      data: [
-        { name: "quote", content: "" },
-        { name: "author", content: "" }
-      ]
-    }),
-  
-    table: () => ({
-      type: "table",
-      data: [
-        ["Column A", "Column B"],
-        ["", ""]
-      ]
-    }),
-  
-    barChart: () => ({
-      type: "barChart",
-      data: [
-        { name: "bar", label: "A", value: 0 }
-      ]
-    }),
-  
-    progressbar: () => ({
-      type: "progressbar",
-      data: [
-        { name: "bar", label: "Progress", value: 0 }
-      ]
-    }),
-  
-    eq: () => ({
-      type: "eq",
-      data: []
-    })
-  
-  };
+	[SlideType.TitleAndSubtitle]: () => ({
+		type: SlideType.TitleAndSubtitle,
+		data: [
+			{ name: "title", content: "" },
+			{ name: "subtitle", content: "" }
+		]
+	}),
+
+	[SlideType.TitleAndPara]: () => ({
+		type: SlideType.TitleAndPara,
+		data: [
+			{ name: "title", content: "" },
+			{ name: "para", content: "" }
+		]
+	}),
+
+	[SlideType.BulletList]: () => ({
+		type: SlideType.BulletList,
+		data: [
+			{ name: "heading", content: "" },
+			{ name: "bullet", content: "" }
+		]
+	}),
+
+	[SlideType.TwoColumnText]: () => ({
+		type: SlideType.TwoColumnText,
+		data: [
+			{ name: "left", content: "" },
+			{ name: "right", content: "" }
+		]
+	}),
+
+	[SlideType.ImageSlide]: () => ({
+		type: SlideType.ImageSlide,
+		data: [
+			{ name: "image", content: "" }
+		]
+	}),
+
+	[SlideType.FillImage]: () => ({
+		type: SlideType.FillImage,
+		data: [
+			{ name: "image", content: "" }
+		]
+	}),
+
+	[SlideType.ImageWithTitle]: () => ({
+		type: SlideType.ImageWithTitle,
+		data: [
+			{ name: "title", content: "" },
+			{ name: "image", content: "" }
+		]
+	}),
+
+	[SlideType.ImageWithCaption]: () => ({
+		type: SlideType.ImageWithCaption,
+		data: [
+			{ name: "image", content: "" },
+			{ name: "caption", content: "" }
+		]
+	}),
+
+	[SlideType.ImageLeftBulletsRight]: () => ({
+		type: SlideType.ImageLeftBulletsRight,
+		data: [
+			{ name: "image", content: "" },
+			{ name: "bullet", content: "" }
+		]
+	}),
+
+	[SlideType.ImageRightBulletsLeft]: () => ({
+		type: SlideType.ImageRightBulletsLeft,
+		data: [
+			{ name: "image", content: "" },
+			{ name: "bullet", content: "" }
+		]
+	}),
+
+	[SlideType.KeyIdeas]: () => ({
+		type: SlideType.KeyIdeas,
+		data: [
+			{ name: "card", icon: "🧠", label: "" },
+			{ name: "card", icon: "📘", label: "" },
+			{ name: "card", icon: "🧩", label: "" },
+			{ name: "card", icon: "🎯", label: "" }
+		]
+	}),
+
+	[SlideType.Quote]: () => ({
+		type: SlideType.Quote,
+		data: [
+			{ name: "quote", content: "" },
+			{ name: "author", content: "" }
+		]
+	}),
+
+	[SlideType.Table]: () => ({
+		type: SlideType.Table,
+		data: [
+			["Column A", "Column B"],
+			["", ""]
+		]
+	}),
+
+	[SlideType.BarChart]: () => ({
+		type: SlideType.BarChart,
+		data: [
+			{ name: "bar", label: "A", value: 0 }
+		]
+	}),
+
+	[SlideType.ProgressBar]: () => ({
+		type: SlideType.ProgressBar,
+		data: [
+			{ name: "bar", label: "Progress", value: 0 }
+		]
+	}),
+
+	[SlideType.Eq]: () => ({
+		type: SlideType.Eq,
+		data: []
+	})
+
+};
