@@ -9,7 +9,6 @@
 
 	import { slideFactory } from "./js/slideFactory.js";
 	import { assignMockTimings } from "./js/assignMockTimings.js";
-	import { TaleemCompiler } from "$lib/compiler/TaleemCompiler.js";
 
 	export let deck = { deck: [] };
 	export let onExport;
@@ -34,47 +33,41 @@
 
 	}
 
-	function preparePresentation() {
+function preparePresentation() {
 
-		const result = finalizeDeckV2(deck);
+	const result = finalizeDeckV2(deck);
 
-		if (!result.ok) {
+	if (!result.ok) {
 
-			console.error(result);
-			alert("Deck invalid. Check console.");
-			return null;
-
-		}
-
-		return {
-
-		body: result.presentation,
-		source: TaleemCompiler(result.presentation)
-
-		};
+		console.error(result);
+		alert("Deck invalid. Check console.");
+		return null;
 
 	}
 
-	function handleDownload() {
+	return result.presentation;
 
-		const presentation = preparePresentation();
-		if (!presentation) return;
+}
+function handleDownload() {
 
-		const blob = new Blob(
-			[JSON.stringify(presentation.source, null, 2)],
-			{ type: "application/json" }
-		);
+	const presentation = preparePresentation();
+	if (!presentation) return;
 
-		const url = URL.createObjectURL(blob);
+	const blob = new Blob(
+		[JSON.stringify(presentation, null, 2)],
+		{ type: "application/json" }
+	);
 
-		const a = document.createElement("a");
-		a.href = url;
-		a.download = "deck.json";
-		a.click();
+	const url = URL.createObjectURL(blob);
 
-		URL.revokeObjectURL(url);
+	const a = document.createElement("a");
+	a.href = url;
+	a.download = "deck.json";
+	a.click();
 
-	}
+	URL.revokeObjectURL(url);
+
+}
 
 	async function handleSave() {
 
@@ -84,7 +77,7 @@
 		try {
 
 			await onExport(presentation);
-
+			console.log("final presentation:",presentation);
 			alert("Presentation saved");
 
 		}

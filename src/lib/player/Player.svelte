@@ -4,7 +4,8 @@
 
 	import { onMount, onDestroy } from "svelte";
 
-	import { runActions } from "taleem-action-runner";
+	// import { runActions } from "taleem-action-runner";
+import TaleemUI from "$lib/taleemUI/TaleemUI.svelte";
 
 	import { getDeckEndTime } from "./utils/getDeckEndTime.js";
 	import { getSlideAtTime } from "./utils/getSlideAtTime.js";
@@ -21,10 +22,9 @@
 
 	let root = $state(null);
 
-	let html = $state("");
 
-	let actions = $state([]);
-	let groups = $state({});
+	// let actions = $state([]);
+	// let groups = $state({});
 
 	let currentTime = $state(0);
 
@@ -161,17 +161,17 @@
 				}
 			}
 
-			const slideRoot =
-				root?.querySelector(
-					".slide"
-				);
+			// const slideRoot =
+			// 	root?.querySelector(
+			// 		".slide"
+			// 	);
 
-			runActions(
-				actions,
-				groups,
-				currentTime,
-				slideRoot
-			);
+			// runActions(
+			// 	actions,
+			// 	groups,
+			// 	currentTime,
+			// 	slideRoot
+			// );
 
 		}, 100);
 		// console.log(structuredClone(presentation));
@@ -210,12 +210,19 @@
 
 <div class="root">
 
-	<div
-		class="stage"
-		bind:this={root}
-	>
-		{@html html}
-	</div>
+<div
+	class="stage"
+	bind:this={root}
+>
+
+	<TaleemUI
+		deck={presentation}
+		currentTime={currentTime}
+		width={844}
+		height={390}
+	/>
+
+</div>
 
 	<div class="navbar">
 

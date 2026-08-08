@@ -1,8 +1,9 @@
 <script>
+///home/bilal-tariq/00--TALEEM/taleem.help/src/routes/runner/+page.svelte
     import { onMount } from "svelte";
 
-    import deck from "$lib/runner/golden-dsl-8-may-26.json";
-    import TaleemUI from "$lib/taleem-UI/TaleemUI.svelte";
+    import deck from "$lib/taleem-specs/samples/golden-deck-8aug26.json";
+    import TaleemUI from "$lib/taleemUI/TaleemUI.svelte";
 
     let currentTime = 0;
 
