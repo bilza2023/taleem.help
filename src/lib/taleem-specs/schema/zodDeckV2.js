@@ -30,7 +30,7 @@ const showAt = z.number().optional();
 /* ───────────── Text Slides ───────────── */
 
 const titleAndSubtitle = baseSlide.extend({
-	type: z.literal(SlideType.TITLE_AND_SUBTITLE),
+	type: z.literal(SlideType.TitleAndSubtitle),
 	data: z.array(
 		z.union([
 			z.object({
@@ -48,7 +48,7 @@ const titleAndSubtitle = baseSlide.extend({
 });
 
 const titleAndPara = baseSlide.extend({
-	type: z.literal(SlideType.TITLE_AND_PARA),
+	type: z.literal(SlideType.TitleAndPara),
 	data: z.array(
 		z.union([
 			z.object({
@@ -66,7 +66,7 @@ const titleAndPara = baseSlide.extend({
 });
 
 const bulletList = baseSlide.extend({
-	type: z.literal(SlideType.BULLET_LIST),
+	type: z.literal(SlideType.BulletList),
 	data: z.array(
 		z.object({
 			name: z.union([
@@ -80,7 +80,7 @@ const bulletList = baseSlide.extend({
 });
 
 const twoColumnText = baseSlide.extend({
-	type: z.literal(SlideType.TWO_COLUMN_TEXT),
+	type: z.literal(SlideType.TwoColumnText),
 	data: z.array(
 		z.union([
 			z.object({
@@ -101,11 +101,10 @@ const twoColumnText = baseSlide.extend({
 		])
 	)
 });
-
 /* ───────────── Image Slides ───────────── */
 
 const imageSlide = baseSlide.extend({
-	type: z.literal(SlideType.IMAGE_SLIDE),
+	type: z.literal(SlideType.ImageSlide),
 	data: z.array(
 		z.object({
 			name: image,
@@ -116,7 +115,7 @@ const imageSlide = baseSlide.extend({
 });
 
 const fillImage = baseSlide.extend({
-	type: z.literal(SlideType.FILL_IMAGE),
+	type: z.literal(SlideType.FillImage),
 	data: z.array(
 		z.object({
 			name: image,
@@ -127,7 +126,7 @@ const fillImage = baseSlide.extend({
 });
 
 const imageWithTitle = baseSlide.extend({
-	type: z.literal(SlideType.IMAGE_WITH_TITLE),
+	type: z.literal(SlideType.ImageWithTitle),
 	data: z.array(
 		z.union([
 			z.object({
@@ -145,7 +144,7 @@ const imageWithTitle = baseSlide.extend({
 });
 
 const imageWithCaption = baseSlide.extend({
-	type: z.literal(SlideType.IMAGE_WITH_CAPTION),
+	type: z.literal(SlideType.ImageWithCaption),
 	data: z.array(
 		z.union([
 			z.object({
@@ -163,7 +162,7 @@ const imageWithCaption = baseSlide.extend({
 });
 
 const imageLeftBulletsRight = baseSlide.extend({
-	type: z.literal(SlideType.IMAGE_LEFT_BULLETS_RIGHT),
+	type: z.literal(SlideType.ImageLeftBulletsRight),
 	data: z.array(
 		z.object({
 			name: z.union([
@@ -177,7 +176,7 @@ const imageLeftBulletsRight = baseSlide.extend({
 });
 
 const imageRightBulletsLeft = baseSlide.extend({
-	type: z.literal(SlideType.IMAGE_RIGHT_BULLETS_LEFT),
+	type: z.literal(SlideType.ImageRightBulletsLeft),
 	data: z.array(
 		z.object({
 			name: z.union([
@@ -193,14 +192,14 @@ const imageRightBulletsLeft = baseSlide.extend({
 /* ───────────── Data Slides ───────────── */
 
 const table = baseSlide.extend({
-	type: z.literal(SlideType.TABLE),
+	type: z.literal(SlideType.Table),
 	data: z.array(
 		z.array(z.string()).min(1)
 	).min(1)
 });
 
 const barChart = baseSlide.extend({
-	type: z.literal(SlideType.BAR_CHART),
+	type: z.literal(SlideType.BarChart),
 	data: z.array(
 		z.object({
 			name: bar,
@@ -212,7 +211,7 @@ const barChart = baseSlide.extend({
 });
 
 const progressbar = baseSlide.extend({
-	type: z.literal(SlideType.PROGRESS_BAR),
+	type: z.literal(SlideType.ProgressBar),
 	data: z.array(
 		z.object({
 			name: bar,
@@ -226,7 +225,7 @@ const progressbar = baseSlide.extend({
 /* ───────────── Quote / Ideas ───────────── */
 
 const quoteSlide = baseSlide.extend({
-	type: z.literal(SlideType.QUOTE),
+	type: z.literal(SlideType.Quote),
 	data: z.array(
 		z.union([
 			z.object({
@@ -244,7 +243,7 @@ const quoteSlide = baseSlide.extend({
 });
 
 const keyIdeasSlide = baseSlide.extend({
-	type: z.literal(SlideType.KEY_IDEAS),
+	type: z.literal(SlideType.KeyIdeas),
 	data: z.array(
 		z.object({
 			name: card,
@@ -258,7 +257,7 @@ const keyIdeasSlide = baseSlide.extend({
 /* ───────────── EQ ───────────── */
 
 const eq = baseSlide.extend({
-	type: z.literal(SlideType.EQ),
+	type: z.literal(SlideType.Eq),
 	data: z.array(
 		z.object({
 			name: line,
@@ -276,7 +275,6 @@ const eq = baseSlide.extend({
 		})
 	)
 });
-
 /* ───────────── Deck ───────────── */
 
 export const zodDeckV2 = z.object({
@@ -325,7 +323,6 @@ export const zodDeckV2 = z.object({
 			keyIdeasSlide,
 			eq
 		])
-
 	)
 
 });
