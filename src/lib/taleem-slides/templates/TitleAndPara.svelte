@@ -1,5 +1,5 @@
 <script>
-    import { getBaseFont } from "../../utils/layout.js";
+    import { getBaseFont } from "../utils/layout.js";
 
     export let slide;
     export let width = 0;

@@ -1,5 +1,5 @@
 <script>
-    import { getBaseFont } from "../../utils/layout.js";
+    import { getBaseFont } from "../utils/layout.js";
 
     export let slide;
     export let width = 0;
@@ -7,8 +7,8 @@
     export let currentTime = 0;
     export let theme;
 
+    $: title = slide.data.find(x => x.name === "title");
     $: image = slide.data.find(x => x.name === "image");
-    $: caption = slide.data.find(x => x.name === "caption");
     $: baseFont = getBaseFont(width, height);
 </script>
 
@@ -23,15 +23,15 @@
 >
     <div class="panel">
 
-        {#if image}
-            <div class="imageBox" class:visible={currentTime >= image.showAt}>
-                <img src={image.content} alt="" />
+        {#if title}
+            <div class="titleBox" class:visible={currentTime >= title.showAt}>
+                <h1>{title.content}</h1>
             </div>
         {/if}
 
-        {#if caption}
-            <div class="captionBox" class:visible={currentTime >= caption.showAt}>
-                <p>{caption.content}</p>
+        {#if image}
+            <div class="imageBox" class:visible={currentTime >= image.showAt}>
+                <img src={image.content} alt="" />
             </div>
         {/if}
 
@@ -57,6 +57,27 @@
     gap:calc(var(--base-font)*.7);
 }
 
+.titleBox{
+    flex:0 0 auto;
+    padding:calc(var(--base-font)*.6);
+    background:var(--panel);
+    border:2px solid var(--border);
+    border-radius:calc(var(--base-font)*.4);
+    color:var(--text);
+    opacity:.15;
+}
+
+.titleBox.visible{
+    opacity:1;
+}
+
+.titleBox h1{
+    margin:0;
+    text-align:center;
+    font-size:calc(var(--base-font)*1.6);
+    line-height:1.2;
+}
+
 .imageBox{
     flex:1;
     min-height:0;
@@ -75,26 +96,5 @@
     max-height:100%;
     object-fit:contain;
     display:block;
-}
-
-.captionBox{
-    flex:0 0 auto;
-    padding:calc(var(--base-font)*.6);
-    background:var(--panel);
-    border:2px solid var(--border);
-    border-radius:calc(var(--base-font)*.4);
-    color:var(--text);
-    opacity:.15;
-}
-
-.captionBox.visible{
-    opacity:1;
-}
-
-.captionBox p{
-    margin:0;
-    text-align:center;
-    font-size:calc(var(--base-font));
-    line-height:1.4;
 }
 </style>

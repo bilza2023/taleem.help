@@ -1,16 +1,18 @@
 <script>
-    import { getBaseFont } from "../../utils/layout.js";
-
+///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/taleem-UI/slides/templates/BulletList.svelte
+import {getBaseFont} from "../utils/layout.js";
     export let slide;
     export let width = 0;
     export let height = 0;
     export let currentTime = 0;
     export let theme;
 
-    $: image = slide.data.find(x => x.name === "image");
+
+    $: heading = slide.data.find(x => x.name === "heading");
     $: bullets = slide.data.filter(x => x.name === "bullet");
 
-    $: baseFont = getBaseFont(width, height);
+   $: baseFont = getBaseFont(width, height);
+     
 </script>
 
 <section
@@ -25,7 +27,11 @@
 >
     <div class="panel">
 
-        <div class="bulletColumn">
+        {#if heading}
+            <h1>{heading.content}</h1>
+        {/if}
+
+        <div class="bullets">
             {#each bullets as bullet}
                 <div class="bullet" class:visible={currentTime >= bullet.showAt}>
                     {bullet.content}
@@ -33,19 +39,9 @@
             {/each}
         </div>
 
-        <div class="imageColumn">
-            {#if image}
-                <img
-                    class="image"
-                    class:visible={currentTime >= image.showAt}
-                    src={image.content}
-                    alt=""
-                />
-            {/if}
-        </div>
-
     </div>
 </section>
+
 
 <style>
 .slide{
@@ -60,39 +56,23 @@
 }
 
 .panel{
-    width:min(94%,1200px);
-    height:100%;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:calc(var(--base-font));
-}
-
-.imageColumn{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-width:0;
-    min-height:0;
-}
-
-.image{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    display:block;
-    opacity:.15;
-}
-
-.image.visible{
-    opacity:1;
-}
-
-.bulletColumn{
+    width:min(90%,1100px);
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    gap:calc(var(--base-font)*.6);
-    min-width:0;
+    gap:calc(var(--base-font)*.7);
+}
+
+h1{
+    margin:0;
+    text-align:center;
+    font-size:calc(var(--base-font)*1.6);
+    line-height:1.2;
+}
+
+.bullets{
+    display:flex;
+    flex-direction:column;
+    gap:calc(var(--base-font)*.8);
 }
 
 .bullet{
@@ -100,7 +80,7 @@
     background:var(--panel);
     border:2px solid var(--border);
     border-radius:calc(var(--base-font)*.45);
-    font-size:calc(var(--base-font));
+    font-size:calc(var(--base-font)*1.8);
     line-height:1.4;
     box-sizing:border-box;
     opacity:.15;

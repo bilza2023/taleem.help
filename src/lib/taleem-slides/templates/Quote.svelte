@@ -1,5 +1,5 @@
 <script>
-    import { getBaseFont } from "../../utils/layout.js";
+    import { getBaseFont } from "../utils/layout.js";
 
     export let slide;
     export let width = 0;
@@ -7,7 +7,9 @@
     export let currentTime = 0;
     export let theme;
 
-    $: bar = slide.data[0];
+    $: quote = slide.data.find(x => x.name === "quote");
+    $: author = slide.data.find(x => x.name === "author");
+
     $: baseFont = getBaseFont(width, height);
 </script>
 
@@ -23,19 +25,17 @@
 >
     <div class="panel">
 
-        <h1>{bar.label}</h1>
+        {#if quote}
+            <blockquote class:visible={currentTime >= quote.showAt}>
+                “{quote.content}”
+            </blockquote>
+        {/if}
 
-        <div class="track">
-            <div
-                class="fill"
-                class:visible={currentTime >= bar.showAt}
-                style={`width:${bar.value}%`}
-            ></div>
-        </div>
-
-        <div class="percent">
-            {bar.value}%
-        </div>
+        {#if author}
+            <div class="author" class:visible={currentTime >= author.showAt}>
+                {author.content}
+            </div>
+        {/if}
 
     </div>
 </section>
@@ -53,47 +53,38 @@
 }
 
 .panel{
-    width:min(90%,900px);
+    width:min(90%,1000px);
     display:flex;
     flex-direction:column;
     gap:calc(var(--base-font));
-    padding:calc(var(--base-font));
+    padding:calc(var(--base-font)*1.5);
     background:var(--panel);
     border:2px solid var(--border);
     border-radius:calc(var(--base-font)*.45);
     box-sizing:border-box;
 }
 
-h1{
+blockquote{
     margin:0;
     text-align:center;
-    font-size:calc(var(--base-font)*1.4);
-}
-
-.track{
-    width:100%;
-    height:calc(var(--base-font)*1.5);
-    background:rgba(255,255,255,.08);
-    border:2px solid var(--border);
-    border-radius:999px;
-    overflow:hidden;
-}
-
-.fill{
-    height:100%;
-    width:0;
-    background:var(--accent);
+    font-size:calc(var(--base-font)*1.8);
+    line-height:1.4;
+    font-style:italic;
     opacity:.15;
-    transition:width .4s;
 }
 
-.fill.visible{
+blockquote.visible{
     opacity:1;
 }
 
-.percent{
-    text-align:center;
-    font-size:calc(var(--base-font)*1.2);
-    font-weight:bold;
+.author{
+    text-align:right;
+    font-size:calc(var(--base-font));
+    opacity:.15;
+}
+
+.author.visible{
+    opacity:1;
+    color:var(--accent);
 }
 </style>

@@ -1,15 +1,15 @@
 <script>
-    import Scene from "./components/Scene.svelte";
-    import Background from "./components/Background.svelte";
-    import Slide from "./slides/Slide.svelte";
-
-    import defaultTheme from "./themes/default.js";
+///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/taleem-UI/TaleemUI.svelte
+    import Scene from "./Scene.svelte";
+    import Background from "./Background.svelte";
+    import TaleemSlide from "../taleem-slides/TaleemSlide.svelte";
+  import { blueTheme } from "$lib/taleem-themes";
 
     export let deck;
     export let currentTime = 0;
     export let width;
     export let height;
-    export let theme = defaultTheme;
+    export let theme = blueTheme;
 
     $: currentSlide = deck.deck.find(
         slide =>
@@ -21,7 +21,7 @@
 <Scene>
     <Background background={deck.background}>
         {#if currentSlide}
-            <Slide
+            <TaleemSlide
                 slide={currentSlide}
                 {currentTime}
                 {width}
