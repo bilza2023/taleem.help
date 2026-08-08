@@ -1,5 +1,6 @@
 <script>
-	import { browser } from "$app/environment";
+	import { useMath } from "./js/useMath.js";
+	import { tick } from "svelte";
 	import { onMount } from "svelte";
 	import { page } from "$app/stores";
 	import { get } from "svelte/store";
@@ -12,6 +13,7 @@
 	import {defaultTheme,blueTheme,brownTheme} from "$lib/taleem-themes";
 	import { getPlayerSize } from "./js/getPlayerSize.js";
 	import { Howl }from "howler";
+	import {postRender} from "./js/postRender.js"
 
 //////////////////////////////////////////////////	
     let presentation = null;
@@ -20,10 +22,7 @@
 
 let PLAYER_WIDTH = 0;
 let PLAYER_HEIGHT = 0;
-// if (browser) {
-// 	PLAYER_WIDTH = window.innerWidth;
-// 	PLAYER_HEIGHT = window.innerHeight;
-// }
+
 ///////////////////////TICKER FUNCTION///////////////////////////////////
 	let deckEndTime = 0;
 	let ticker = null;
@@ -65,6 +64,14 @@ let PLAYER_HEIGHT = 0;
 		}, 50);
 
 	}    
+//////////////////////////////////////////////////////////    
+// setInterval(() => {
+
+// 	if (!presentation) return;
+
+// 	postRender();
+
+// }, 2000);
 //////////////////////////////////////////////////////////    
 onMount(async () => {
  
@@ -145,8 +152,7 @@ onMount(async () => {
 
 
 <style>
-html,
-body{
+html,body{
     margin:0;
     padding:0;
     overflow:hidden;
