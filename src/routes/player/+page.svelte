@@ -1,4 +1,5 @@
 <script>
+	import { browser } from "$app/environment";
 	import { onMount } from "svelte";
 	import { page } from "$app/stores";
 	import { get } from "svelte/store";
@@ -9,13 +10,20 @@
 	import {getTimer} from "./js/getTimer.js";
 	import TaleemUI from "$lib/taleemUI/TaleemUI.svelte";
 	import {defaultTheme,blueTheme,brownTheme} from "$lib/taleem-themes";
-
+	import { getPlayerSize } from "./js/getPlayerSize.js";
 	import { Howl }from "howler";
 
+//////////////////////////////////////////////////	
     let presentation = null;
     let timer = null;
     let currentTime = 0;
 
+let PLAYER_WIDTH = 0;
+let PLAYER_HEIGHT = 0;
+// if (browser) {
+// 	PLAYER_WIDTH = window.innerWidth;
+// 	PLAYER_HEIGHT = window.innerHeight;
+// }
 ///////////////////////TICKER FUNCTION///////////////////////////////////
 	let deckEndTime = 0;
 	let ticker = null;
@@ -81,63 +89,81 @@ onMount(async () => {
 	// --------------------------------------------------
 	deckEndTime = presentation?.deck?.[presentation.deck.length - 1]?.end || 0;
     startTicker();
-	// const stopWatcher =
-	// 	setInterval(() => {
-	// 		if (!timer) return;
-	// 		if (timer.now() >= endTime) {
-	// 			timer.pause();
-	// 			clearInterval(
-	// 				stopWatcher
-	// 			);
-	// 		}
-
-	// 	}, 200);
-        // console.log(presentation,deckEndTime,audioFileName)
+	// --------------------------------------------------
+	// Window size
+	// --------------------------------------------------
+	const playerSize = getPlayerSize();
+	console.log(getPlayerSize());
+	PLAYER_WIDTH = playerSize.width;
+	PLAYER_HEIGHT = playerSize.height;
 });
 </script>
 
 {#if presentation}
 
-<div class="viewer">
-    <TaleemUI
-        deck={presentation}
-        {currentTime}
-        width={844}
-        height={390}
-    />
-</div>
+<div
+	class="player"
+	style={`width:${PLAYER_WIDTH}px`}
+>
 
-<div class="controls">
+	<div class="viewer">
 
-	<button onclick={play}>▶</button>
-	<button onclick={pause}>⏸</button>
-	<button onclick={stop}>⏹</button>
+		<TaleemUI
+			deck={presentation}
+			{currentTime}
+			width={PLAYER_WIDTH}
+			height={PLAYER_HEIGHT}
+		/>
 
-	<span class="time">
-		{currentTime.toFixed(1)} / {deckEndTime}s
-	</span>
+	</div>
 
-	<input
-		type="range"
-		min="0"
-		max={deckEndTime}
-		step="0.1"
-		value={currentTime}
-		oninput={(e)=>seek(parseFloat(e.target.value))}
-	/>
+	<div class="controls">
+
+		<button onclick={play}>▶</button>
+		<button onclick={pause}>⏸</button>
+		<button onclick={stop}>⏹</button>
+
+		<span class="time">
+			{currentTime.toFixed(1)} / {deckEndTime}s
+		</span>
+
+		<input
+			type="range"
+			min="0"
+			max={deckEndTime}
+			step="0.1"
+			value={currentTime}
+			oninput={(e)=>seek(parseFloat(e.target.value))}
+		/>
+
+	</div>
 
 </div>
 
 {/if}
 
+
+
 <style>
+html,
+body{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+	.player{
+	width:fit-content;
+	margin:0 auto;
+}
+
 .viewer{
-	width:844px;
-	height:390px;
-	margin:auto;
+	width:100%;
+	height:auto;
 }
 
 .controls{
+	width:100%;
+	box-sizing:border-box;
 	display:flex;
 	align-items:center;
 	gap:10px;
@@ -161,6 +187,7 @@ onMount(async () => {
 	font-size:18px;
 	line-height:1;
 }
+
 .controls button:hover{
 	background:#555;
 }

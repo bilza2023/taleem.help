@@ -1,15 +1,18 @@
 <script>
+	export let width;
+	export let height;
 </script>
-<div class="scene">
-    <slot />
+
+<div
+	class="scene"
+	style={`width:${width}px;height:${height}px;`}
+>
+	<slot />
 </div>
 
 <style>
 .scene{
-    width:100%;
-    height:100%;
-
-    position:relative;
-    overflow:hidden;
+	position:relative;
+	overflow:hidden;
 }
 </style>

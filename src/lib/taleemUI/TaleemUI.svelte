@@ -18,7 +18,8 @@
     );
 </script>
 
-<Scene>
+<Scene {width} {height}>
+
     <Background background={deck.background}>
         {#if currentSlide}
             <TaleemSlide
