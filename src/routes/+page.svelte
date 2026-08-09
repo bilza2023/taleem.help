@@ -113,7 +113,11 @@ async function loadLibrary(query = {}, id = "all") {
 
 
 <style>
-
+:global(html),
+:global(body){
+    margin:0;
+    padding:0;
+}
 	.container {
 		padding: 0px;
 		margin: 0px;

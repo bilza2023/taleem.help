@@ -25,13 +25,16 @@
 	{@render children()}
 
 </main>
-<!-- 
+
 <style>
 
 	main {
 
+       padding: 0px;
+	   margin: 0px;
+	   background-color: rgb(13, 10, 22);
 		width: 100%;
 
 	}
 
-</style> -->
+</style>

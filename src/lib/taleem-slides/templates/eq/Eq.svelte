@@ -1,8 +1,8 @@
 <script>
-
-import Math from "../utils/Math.svelte";
-import { isMath } from "../utils/isMath.js";
-    import { getBaseFont } from "../utils/layout.js";
+///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/taleem-slides/templates/Eq.svelte
+import Math from "../../utils/Math.svelte";
+import { isMath } from "../../utils/isMath.js";
+    import { getBaseFont } from "../../utils/layout.js";
 
     export let slide;
     export let width = 0;

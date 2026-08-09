@@ -1,5 +1,5 @@
 <script>
-    // /src/lib/taleem-UI/slides/Slide.svelte
+    ///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/taleem-slides/TaleemSlide.svelte
 
     import { SlideType } from "$lib/taleem-specs/enums/SlideType.js";
   
@@ -17,7 +17,7 @@
     import ProgressBar from "./templates/ProgressBar.svelte";
     import Quote from "./templates/Quote.svelte";
     import KeyIdeas from "./templates/KeyIdeas.svelte";
-    import Eq from "./templates/Eq.svelte";
+    import Eq from "./templates/eq/Eq.svelte";
     import FillImage from "./templates/FillImage.svelte";
     import TitleAndPara from "./templates/TitleAndPara.svelte";
 
