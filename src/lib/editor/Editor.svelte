@@ -39,11 +39,19 @@ function preparePresentation() {
 
 	if (!result.ok) {
 
-		console.error(result);
-		alert("Deck invalid. Check console.");
-		return null;
+	console.error(result);
 
-	}
+	const error = result.errors?.[0];
+
+	alert(
+		`${result.stage.toUpperCase()}\n\n` +
+		(error?.path ? `${error.path}\n` : "") +
+		(error?.message ?? "Unknown error")
+	);
+
+	return null;
+
+}
 
 	return result.presentation;
 
