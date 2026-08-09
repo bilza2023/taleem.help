@@ -1,4 +1,5 @@
 <script>
+///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/components/AdminNavbar.svelte
 	import { page } from "$app/state";
 
 	const pathname = $derived(page.url.pathname);
@@ -92,37 +93,69 @@
 </nav>
 
 <style>
+	nav{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-wrap:wrap;
+	gap:16px;
+	padding:12px 20px;
+	margin: 0px;
+	background:#173f35;
+	border-bottom:1px solid #28584b;
+}
 
-	nav {
+nav ul{
+	display:flex;
+	align-items:center;
+	gap:10px;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
 
-		background: #1d4d3e;
+nav li{
+	margin:0;
+	padding:0;
+}
 
-		border-bottom: 1px solid #2b6a57;
+nav a{
+	display:block;
+	padding:8px 14px;
+	color:#e8f5f0;
+	text-decoration:none;
+	border-radius:8px;
+	font-size:15px;
+	font-weight:500;
+	transition:.15s;
+}
 
-		padding: .4rem 1rem;
+nav a:hover{
+	background:rgba(255,255,255,.08);
+}
 
+nav a[aria-current="page"]{
+	background:#1f6aa5;
+	color:#fff;
+}
+
+nav strong a{
+	font-size:18px;
+	font-weight:700;
+	padding-right:24px;
+	
+}
+
+@media (max-width:700px){
+
+	nav{
+		flex-direction:column;
+		align-items:flex-start;
 	}
 
-	nav a {
-
-		color: #ffffff;
-
-		text-decoration: none;
-
+	nav ul{
+		flex-wrap:wrap;
 	}
 
-	nav a:hover {
-
-		color: #c9f2d6;
-
-	}
-
-	nav a[aria-current="page"] {
-
-		font-weight: bold;
-
-		text-decoration: underline;
-
-	}
-
+}
 </style>

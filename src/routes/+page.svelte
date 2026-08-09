@@ -115,8 +115,8 @@ async function loadLibrary(query = {}, id = "all") {
 <style>
 
 	.container {
-		padding: 10px;
-		margin: 10px;
+		padding: 0px;
+		margin: 0px;
 		min-height: 100vh;
 	}
 

@@ -1,8 +1,8 @@
 <script>
 	import { page } from "$app/state";
 
-	import "@picocss/pico/css/pico.classless.min.css";
-	import "../app.css";
+	// import "@picocss/pico/css/pico.classless.min.css";
+	// import "../app.css";
 
 	import Navbar from "$lib/components/Navbar.svelte";
 	import AdminNavbar from "$lib/components/AdminNavbar.svelte";
@@ -14,7 +14,7 @@
 
 	<AdminNavbar />
 
-{:else if !page.url.pathname.startsWith("/player") && !page.url.pathname.startsWith("/present") &&  !page.url.pathname.startsWith("/runner")}
+{:else if !page.url.pathname.startsWith("/player") && !page.url.pathname.startsWith("/present") }
 
 	<Navbar />
 
@@ -25,7 +25,7 @@
 	{@render children()}
 
 </main>
-
+<!-- 
 <style>
 
 	main {
@@ -34,4 +34,4 @@
 
 	}
 
-</style>
+</style> -->

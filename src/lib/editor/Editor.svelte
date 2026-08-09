@@ -132,11 +132,13 @@ function handleDownload() {
 </div>
 
 <style>
-
 .editor{
-
-	padding:4px;
-
+		width:100%;
+	margin:0 auto;
+	padding:2px;
+	display:flex;
+	flex-direction:column;
+	gap:2px;
 }
 
 </style>

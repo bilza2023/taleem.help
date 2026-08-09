@@ -102,9 +102,66 @@ async function load() {
 
 {:else}
 
+<div class="editorPage">
+
 	<Editor
 		{deck}
 		onExport={save}
 	/>
 
+</div>
+
 {/if}
+<style>
+
+.editorPage{
+	width:100%;
+	min-height:100vh;
+	padding:20px;
+	box-sizing:border-box;
+	background:#111827;
+	color:#e5e7eb;
+}
+
+:global(body){
+	margin:0;
+	background:#0f172a;
+	color:#e5e7eb;
+	font-family:system-ui,sans-serif;
+}
+
+:global(input),
+:global(textarea),
+:global(select){
+	background:#1e293b;
+	color:#fff;
+	border:1px solid #334155;
+	border-radius:4px;
+	padding:6px 8px;
+	box-sizing:border-box;
+}
+
+:global(input:focus),
+:global(textarea:focus),
+:global(select:focus){
+	outline:none;
+	border-color:#60a5fa;
+}
+
+:global(input::placeholder),
+:global(textarea::placeholder){
+	color:#94a3b8;
+}
+
+:global(label),
+:global(article),
+:global(p),
+:global(h1),
+:global(h2),
+:global(h3),
+:global(h4),
+:global(strong){
+	color:#e5e7eb;
+}
+
+</style>

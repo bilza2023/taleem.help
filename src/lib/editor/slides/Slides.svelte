@@ -1,4 +1,4 @@
-<!-- src/lib/editor/Slides.svelte -->
+<!-- /home/bilal-tariq/00--TALEEM/taleem.help/src/lib/editor/slides/Slides.svelte-->
 
 <script>
   import TitleAndSubtitle from "./templates/TitleAndSubtitle.svelte";
