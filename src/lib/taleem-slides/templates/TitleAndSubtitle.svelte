@@ -1,4 +1,8 @@
 <script>
+
+import Math from "../utils/Math.svelte";
+import { isMath } from "../utils/isMath.js";
+
 import {getBaseFont} from "../utils/layout.js";
     export let slide;
     export let width = 0;
@@ -23,11 +27,15 @@ import {getBaseFont} from "../utils/layout.js";
     `}
 >
 
-    {#if title}
-        <div class="titleBox">
-            <h1>{title.content}</h1>
-        </div>
-    {/if}
+{#if title}
+	<div class="titleBox">
+		{#if isMath(title.content)}
+			<Math tex={title.content} displayMode={true}/>
+		{:else}
+			<h1>{title.content}</h1>
+		{/if}
+	</div>
+{/if}
 
     {#if subtitle}
         <div class="subtitleBox">

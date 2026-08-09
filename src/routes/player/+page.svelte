@@ -65,13 +65,13 @@ let PLAYER_HEIGHT = 0;
 
 	}    
 //////////////////////////////////////////////////////////    
-// setInterval(() => {
+setInterval(() => {
 
-// 	if (!presentation) return;
+	if (!presentation) return;
 
-// 	postRender();
+	postRender();
 
-// }, 2000);
+}, 2000);
 //////////////////////////////////////////////////////////    
 onMount(async () => {
  
