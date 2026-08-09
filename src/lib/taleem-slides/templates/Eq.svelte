@@ -1,4 +1,7 @@
 <script>
+
+import Math from "../utils/Math.svelte";
+import { isMath } from "../utils/isMath.js";
     import { getBaseFont } from "../utils/layout.js";
 
     export let slide;
@@ -32,37 +35,44 @@
 
     <div class="left">
 
-        {#each lines as line}
-            <div
-                class="line"
-                class:active={line===currentLine}
-                class:visible={currentTime>=line.showAt}
-            >
-                {line.content}
-            </div>
-        {/each}
+{#each lines as line}
+	<div
+		class="line"
+		class:active={line===currentLine}
+		class:visible={currentTime>=line.showAt}
+	>
+		{#if line.type==="math"}
+			<Math tex={line.content} displayMode={true}/>
+		{:else}
+			{line.content}
+		{/if}
+	</div>
+{/each}
 
     </div>
+<div class="right">
 
-    <div class="right">
+	{#if currentLine?.spItems}
 
-        {#if currentLine?.spItems}
+		{#each currentLine.spItems as item}
 
-            {#each currentLine.spItems as item}
+			{#if item.type==="text"}
+				<p>{item.content}</p>
+			{/if}
 
-                {#if item.type==="text"}
-                    <p>{item.content}</p>
-                {/if}
+			{#if item.type==="math"}
+				<Math tex={item.content} displayMode={true}/>
+			{/if}
 
-                {#if item.type==="image"}
-                    <img src={item.content} alt="" />
-                {/if}
+			{#if item.type==="image"}
+				<img src={item.content} alt="" />
+			{/if}
 
-            {/each}
+		{/each}
 
-        {/if}
+	{/if}
 
-    </div>
+</div>
 
 </div>
 
