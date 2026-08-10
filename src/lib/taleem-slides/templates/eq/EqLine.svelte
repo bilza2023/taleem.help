@@ -14,7 +14,7 @@
         {#if line.type === "math"}
             <Math tex={line.content} displayMode={true}/>
         {:else}
-            <span>{line.content}</span>
+            <span class="contentSpan">{line.content}</span>
         {/if}
     </div>
 </div>
@@ -23,7 +23,7 @@
 <style>
 
 .content :global(.katex){
-    font-size:1em;
+    font-size:max(1.2em, 24px);
 }
 
 
@@ -40,7 +40,7 @@
     border:2px solid var(--player-border);
     border-radius:calc(var(--base-font)*.4);
     color:var(--player-text);
-    font-size:calc(var(--base-font)*.8);
+    font-size:calc(var(--base-font)*1.2);
 
     transition:
         border-color .35s ease,
@@ -48,8 +48,11 @@
         background .35s ease,
         transform .35s ease;
 }
-
+.contentSpan{
+    font-size:calc(var(--base-font)*1.5);
+}
 .line.active{
+        background:color-mix(in srgb,var(--player-surface) 85%,var(--player-text) 15%);
     border-color:var(--player-primary);
     border-left:calc(var(--base-font)*.3) solid var(--player-primary);
     box-shadow:0 0 calc(var(--base-font)*.5)
@@ -57,6 +60,7 @@
     transform:scale(1.01);
 }
 .content{
+    
     width:100%;
     text-align:center;
     color:var(--player-text);

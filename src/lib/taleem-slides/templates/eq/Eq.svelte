@@ -6,7 +6,6 @@
     export let width = 0;
     export let currentTime = 0;
 
-
     $: lines = slide?.data ?? [];
 
     $: currentIndex = Math.max(
@@ -23,20 +22,10 @@
         [...lines].reverse().find(line => currentTime >= line.showAt)
         ?? lines[0];
 
-    // Mobile keeps 2 visible lines.
-    // Larger screens keep 3 visible lines.
-    $: contextSize = width < 700 ? 2 : 3;
+    $: startIndex = Math.max(0, currentIndex - 1);
 
-    // Keep the current line at the bottom of the context window.
-    // Until the window is full, start from line 1.
-    $: startIndex = Math.max(
-        0,
-        currentIndex - (contextSize - 1)
-    );
-
-    $: visibleLines = lines.slice(startIndex);
+    $: visibleLines = lines.slice(startIndex, currentIndex + 1);
 </script>
-
 <div class="slide eq">
     <div class="lines">
         {#each visibleLines as line, visibleIndex}
