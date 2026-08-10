@@ -94,7 +94,7 @@
 {/if}
 
 <style>
-    .slide{
+.slide{
     width:100%;
     height:100%;
     min-width:0;
@@ -102,6 +102,6 @@
     box-sizing:border-box;
     overflow:hidden;
     color:var(--player-text);
-    background:var(--player-background);
+    background:transparent;
 }
 </style>
