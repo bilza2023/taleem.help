@@ -378,6 +378,26 @@
           "content": "baloons.png"
         }
       ]
+    },
+    {
+      "name": "line",
+      "type": "math",
+      "content": "(a+b)^2 + (a-b)^34 = z^7",
+      "showAt": 138,
+      "spItems": [
+        {
+          "type": "text",
+          "content": "This content is a bit longer than others and we shd make it yellow"
+        },
+        {
+          "type": "math",
+          "content": "x^33+y^66=z^7"
+        },
+        {
+          "type": "image",
+          "content": "box.webp"
+        }
+      ]
     }
   ]
 },

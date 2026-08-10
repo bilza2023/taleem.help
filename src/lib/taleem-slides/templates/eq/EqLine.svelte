@@ -25,31 +25,37 @@
 .content :global(.katex){
     font-size:1em;
 }
-    .line{
+
+
+.line{
     width:100%;
     min-height:calc(var(--base-font)*3);
     padding:calc(var(--base-font)*.7) calc(var(--base-font)*1.2);
     margin-bottom:calc(var(--base-font)*.5);
     box-sizing:border-box;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     background:var(--player-surface);
     border:2px solid var(--player-border);
     border-radius:calc(var(--base-font)*.4);
     color:var(--player-text);
+    font-size:calc(var(--base-font)*.8);
 
-    font-size:calc(var(--base-font)*0.8);
+    transition:
+        border-color .35s ease,
+        box-shadow .35s ease,
+        background .35s ease,
+        transform .35s ease;
 }
 
 .line.active{
     border-color:var(--player-primary);
     border-left:calc(var(--base-font)*.3) solid var(--player-primary);
-    box-shadow:0 0 calc(var(--base-font)*.5) color-mix(in srgb,var(--player-primary) 25%,transparent);
+    box-shadow:0 0 calc(var(--base-font)*.5)
+        color-mix(in srgb,var(--player-primary) 25%,transparent);
+    transform:scale(1.01);
 }
-
 .content{
     width:100%;
     text-align:center;
