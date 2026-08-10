@@ -13,11 +13,10 @@
 	import {defaultTheme,blueTheme,brownTheme} from "$lib/taleem-themes";
 	import { getPlayerSize } from "./js/getPlayerSize.js";
 	import { Howl }from "howler";
-	import presentation from "$lib/taleem-specs/samples/golden-deck-8aug26.json";
-// presentation = presentation;
+// import presentation from "$lib/taleem-specs/samples/golden-deck-8aug26.json";
+// $: console.log("presentation",presentation);
 //////////////////////////////////////////////////	
-    // let presentation = null;
-	$: console.log("presentation",presentation);
+    let presentation = null;
     let timer = null;
     let currentTime = 0;
 
@@ -80,8 +79,8 @@ onMount(async () => {
 	// --------------------------------------------------
 	// load presentation from library
 	// --------------------------------------------------
-	// const item = await apiFetch("GET",`/library/${lessonSlug}`);
-	// presentation = JSON.parse(item.body);
+	const item = await apiFetch("GET",`/library/${lessonSlug}`);
+	presentation = JSON.parse(item.body);
 	// --------------------------------------------------
 	// resolve image paths
 	// --------------------------------------------------

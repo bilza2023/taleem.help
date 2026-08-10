@@ -55,7 +55,7 @@
 main{
 
 	max-width:1100px;
-
+color: antiquewhite;
 	margin:0 auto;
 
 	padding:2rem;

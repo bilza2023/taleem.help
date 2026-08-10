@@ -29,7 +29,7 @@
 <style>
 
 	main {
-
+color: antiquewhite;
        padding: 0px;
 	   margin: 0px;
 	   background-color: rgb(13, 10, 22);
