@@ -87,4 +87,13 @@ blockquote.visible{
     opacity:1;
     color:var(--accent);
 }
+
+@media (max-width:700px){
+    blockquote{
+         font-size:calc(var(--base-font)*3.5);
+    }
+    .author{
+         font-size:calc(var(--base-font)*2.5);
+    }
+}
 </style>

@@ -55,4 +55,9 @@
     opacity:1;
     border-color:var(--player-primary);
 }
+@media (max-width:700px){
+    .column{
+          font-size:calc(var(--base-font)*2);
+    }
+}
 </style>

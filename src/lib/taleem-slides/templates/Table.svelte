@@ -93,4 +93,9 @@ th{
 tbody tr:nth-child(even){
     background:rgba(255,255,255,.04);
 }
+@media (max-width:700px){
+    table{
+         font-size:calc(var(--base-font)*2);
+    }
+}
 </style>

@@ -84,4 +84,9 @@
     font-size:calc(var(--base-font));
     line-height:1.4;
 }
+@media (max-width:700px){
+    .captionBox p{
+         font-size:calc(var(--base-font)*2.2);
+    }
+}
 </style>

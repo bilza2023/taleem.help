@@ -96,4 +96,9 @@ h1{
     opacity:1;
     border-color:var(--player-primary);
 }
+@media (max-width:700px){
+    .bullet{
+         font-size:calc(var(--base-font)*1.8);
+    }
+}
 </style>

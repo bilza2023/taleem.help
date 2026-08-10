@@ -110,4 +110,10 @@
     opacity:1;
     border-color:var(--accent);
 }
+
+@media (max-width:700px){
+    .bullet{
+         font-size:calc(var(--base-font)*1.7);
+    }
+}
 </style>

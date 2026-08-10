@@ -83,4 +83,9 @@
     object-fit:contain;
     display:block;
 }
+@media (max-width:700px){
+    .titleBox h1{
+         font-size:calc(var(--base-font)*2.2);
+    }
+}
 </style>

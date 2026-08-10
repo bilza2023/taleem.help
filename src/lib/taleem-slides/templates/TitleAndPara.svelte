@@ -82,8 +82,14 @@ h1{
 
 p{
     margin:0;
-    font-size:calc(var(--base-font));
-    line-height:1.6;
+    font-size:calc(var(--base-font)*1);
+    line-height:1.5;
     text-align:justify;
+}
+
+@media (max-width:700px){
+    .paraBox p{
+        font-size:calc(var(--base-font)*1.85);
+    }
 }
 </style>
