@@ -40,6 +40,10 @@
           "content": "Text content for side panel."
         },
         {
+          "type": "math",
+          "content": "x^2+y^55=z^22"
+        },
+        {
           "type": "image",
           "content": "wood.jpg"
         }
@@ -56,6 +60,10 @@
           "content": "The square means the bracket is multiplied by itself."
         },
         {
+          "type": "math",
+          "content": "x^2+y^55=z^22"
+        },
+        {
           "type": "image",
           "content": "taleem.webp"
         }
@@ -70,6 +78,10 @@
         {
           "type": "text",
           "content": "The square means the bracket is multiplied by itself."
+        },
+        {
+          "type": "math",
+          "content": "x^2+y^55=z^22"
         },
         {
           "type": "image",

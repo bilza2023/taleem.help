@@ -1,5 +1,4 @@
 <script>
-    import { getBaseFont } from "../../utils/layout.js";
     import EqLine from "./EqLine.svelte";
     import EqSidePanel from "./EqSidePanel.svelte";
 
@@ -9,69 +8,88 @@
     export let currentTime = 0;
     export let theme;
 
-    $: lines = slide.data ?? [];
+    $: lines = slide?.data ?? [];
 
-    $: console.log("lines" , lines);
+    $: currentIndex = Math.max(
+        0,
+        lines.findIndex(
+            line =>
+                [...lines]
+                    .reverse()
+                    .find(l => currentTime >= l.showAt) === line
+        )
+    );
 
     $: currentLine =
-        [...lines]
-            .reverse()
-            .find(line => currentTime >= line.showAt)
+        [...lines].reverse().find(line => currentTime >= line.showAt)
         ?? lines[0];
+
+    // Mobile keeps 2 visible lines.
+    // Larger screens keep 3 visible lines.
+    $: contextSize = width < 700 ? 2 : 3;
+
+    // Keep the current line at the bottom of the context window.
+    // Until the window is full, start from line 1.
+    $: startIndex = Math.max(
+        0,
+        currentIndex - (contextSize - 1)
+    );
+
+    $: visibleLines = lines.slice(startIndex);
 </script>
 
 <div class="eq">
+    <div class="lines">
+        {#each visibleLines as line, visibleIndex}
+            <div class="lineBlock">
+                <EqLine
+                    {line}
+                    rowHeight={56}
+                    active={line === currentLine}
+                    lineNumber={startIndex + visibleIndex + 1}
+                />
 
-<div class="left">
-
-    {#each lines as line}
-        <EqLine
-            {line}
-            rowHeight={56}
-            active={line === currentLine}
-        />
-    {/each}
-
-</div>
-
-<div class="right">
-
-    <EqSidePanel
-        {currentLine}
-    />
-
-</div>
-
+                {#if line === currentLine}
+                    <EqSidePanel
+                        {currentLine}
+                        {width}
+                    />
+                {/if}
+            </div>
+        {/each}
+    </div>
 </div>
 
 <style>
-    .eq{
+.eq{
+    color:#fff;
+
     width:100%;
     height:100%;
-
-    display:flex;
-
+    min-width:0;
+    min-height:0;
     box-sizing:border-box;
-}
-
-.left{
-    flex:7;
-
+    overflow:hidden;
     display:flex;
     flex-direction:column;
-
-    background:rgba(15,23,42,.28);
-
 }
 
-.right{
-    flex:3;
-
+.lines{
+    width:100%;
+    height:100%;
+    min-width:0;
+    min-height:0;
+    box-sizing:border-box;
+    overflow:hidden;
     display:flex;
     flex-direction:column;
+    align-items:stretch;
+}
 
-    background:rgba(15,23,42,.28);
-
-
+.lineBlock{
+    width:100%;
+    min-width:0;
+    flex:0 0 auto;
+    box-sizing:border-box;
 }
 </style>

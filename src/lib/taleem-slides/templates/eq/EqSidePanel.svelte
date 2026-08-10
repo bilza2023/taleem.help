@@ -1,120 +1,102 @@
 <script>
-       import Math from "../../utils/Math.svelte";
+    import Math from "../../utils/Math.svelte";
 
     export let currentLine = null;
+
+    $: textItems = currentLine?.spItems?.filter(item => item.type === "text") ?? [];
+    $: mathItems = currentLine?.spItems?.filter(item => item.type === "math") ?? [];
+    $: imageItems = currentLine?.spItems?.filter(item => item.type === "image") ?? [];
 </script>
 
-<div class="sidePanel">
+{#if currentLine?.spItems?.length}
+    <div class="sidePanel">
+        <div class="left">
+            {#each textItems as item}
+                <div class="spCard spText">
+                    {item.content}
+                </div>
+            {/each}
 
-    {#if currentLine?.spItems}
-
-    {#each currentLine.spItems as item}
-
-    {#if item.type === "text"}
-        <p class="spText">
-            {item.content}
-        </p>
-    {/if}
-
-    {#if item.type === "math"}
-        <div class="spMath">
-            <Math tex={item.content} displayMode={true}/>
+            {#each mathItems as item}
+                <div class="spCard spMath">
+                    <Math tex={item.content} displayMode={true}/>
+                </div>
+            {/each}
         </div>
-    {/if}
 
-    {#if item.type === "image"}
-        <img
-            class="spImage"
-            src={item.content}
-            alt=""
-        />
-    {/if}
-
-{/each}
-
-    {/if}
-
-</div>
-
+        <div class="right">
+            {#each imageItems as item}
+                <img class="spImage" src={item.content} alt="" />
+            {/each}
+        </div>
+    </div>
+{/if}
 
 <style>
 .sidePanel{
     width:100%;
-    height:100%;
-
     box-sizing:border-box;
+    margin:0 0 14px;
+    padding:14px 24px 16px 58px;
 
+    display:grid;
+    grid-template-columns:minmax(0,58%) minmax(0,42%);
+    gap:20px;
+
+    background:rgba(15,23,42,.28);
+    border:2px solid rgba(147,197,253,.90);
+    border-top:0;
+    border-left:8px solid #60a5fa;
+    border-radius:0 0 12px 12px;
+
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,.04) inset,
+        0 8px 18px rgba(96,165,250,.12);
+
+    backdrop-filter:blur(6px);
+}
+
+.left{
+    min-width:0;
     display:flex;
     flex-direction:column;
-    align-items:center;
-    justify-content:flex-start;
-
-    gap:24px;
-
-    padding:24px;
-
-    background:rgba(15,23,42,.32);
-    border:1px solid rgba(255,255,255,.08);
-
-    backdrop-filter:blur(8px);
-}
-
-.sidePanel p{
-    width:100%;
-    margin:0;
-
-    text-align:left;
-    line-height:1.6;
-    font-size:1rem;
-}
-
-.math{
-    width:100%;
-    display:flex;
+    gap:10px;
     justify-content:center;
 }
 
-.math :global(.katex-display){
-    margin:0;
+.right{
+    min-width:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    overflow:hidden;
 }
 
-.math :global(.katex){
-    font-size:1.35em;
-}
-
-.sidePanel img{
+.spCard{
+    box-sizing:border-box;
     width:100%;
-    height:auto;
+    padding:12px 16px;
 
-    border-radius:6px;
-    object-fit:contain;
+    border-radius:9px;
+    background:rgba(15,23,42,.38);
+    border:1px solid rgba(255,255,255,.10);
 
-    display:block;
+    box-shadow:0 2px 8px rgba(0,0,0,.12);
 }
+
 .spText{
-    margin:0;
-
-    padding:10px 12px;
-
-    color:#f8fafc;
-
-    font-size:1.05rem;
-    line-height:1.55;
-
-    background:rgba(255,255,255,.08);
-
-    border-left:4px solid #60a5fa;
-    border-radius:8px;
-
-    text-align:left;
+    font-size:1.25rem;
+    line-height:1.45;
+    font-weight:500;
 }
 
 .spMath{
-    padding:10px;
-
-    background:rgba(255,255,255,.08);
-
-    border-radius:8px;
+    min-height:64px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
 }
 
 .spMath :global(.katex-display){
@@ -122,20 +104,88 @@
 }
 
 .spMath :global(.katex){
-    color:#fff;
-    font-size:1.35em;
+    font-size:1.25em;
 }
 
 .spImage{
     display:block;
-
     width:100%;
     max-width:100%;
-
-    flex:1;
-
+    max-height:300px;
+    height:auto;
     object-fit:contain;
-
     border-radius:10px;
+}
+
+/* Mobile */
+@media(max-width:700px){
+    .sidePanel{
+        padding:8px 10px 10px 30px;
+        grid-template-columns:1fr;
+        gap:8px;
+        border-left-width:5px;
+        border-radius:0 0 9px 9px;
+    }
+
+    .left{
+        gap:6px;
+    }
+
+    .spCard{
+        padding:8px 10px;
+    }
+
+    .spText{
+        font-size:1rem;
+        line-height:1.35;
+    }
+
+    .spMath{
+        min-height:48px;
+    }
+
+    .spMath :global(.katex){
+        font-size:1em;
+    }
+
+    .right{
+        max-height:150px;
+    }
+
+    .spImage{
+        max-height:145px;
+        width:auto;
+        max-width:100%;
+    }
+}
+
+/* Very short mobile screens */
+@media(max-width:700px) and (max-height:600px){
+    .sidePanel{
+        padding-top:5px;
+        padding-bottom:6px;
+        gap:5px;
+    }
+
+    .spText{
+        font-size:.9rem;
+        line-height:1.3;
+    }
+
+    .spMath{
+        min-height:40px;
+    }
+
+    .spMath :global(.katex){
+        font-size:.85em;
+    }
+
+    .right{
+        max-height:95px;
+    }
+
+    .spImage{
+        max-height:90px;
+    }
 }
 </style>
