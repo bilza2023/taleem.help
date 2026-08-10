@@ -8,3 +8,4 @@ export * from "./GroupType.js";
 
 export * from "./BackgroundDefaults.js";
 export * from "./AudioExtension.js";
+export * from "./TaleemPlayerThemes.js";

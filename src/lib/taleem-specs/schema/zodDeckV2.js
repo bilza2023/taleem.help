@@ -1,5 +1,5 @@
 import { z } from "zod";
-import {DeckVersion,SlideType,ContentType,EqLineType,EqSidePanelType} from "$lib/taleem-specs/enums";
+import {DeckVersion,SlideType,ContentType,EqLineType,EqSidePanelType,TaleemPlayerThemes} from "$lib/taleem-specs/enums";
 
 /* ───────────── Shared Literals ───────────── */
 
@@ -275,6 +275,7 @@ const eq = baseSlide.extend({
 		})
 	)
 });
+
 /* ───────────── Deck ───────────── */
 
 export const zodDeckV2 = z.object({
@@ -282,26 +283,15 @@ export const zodDeckV2 = z.object({
 	version: z.literal(DeckVersion.V2),
 
 	name: z.string().optional(),
+	
+	theme: z.enum(Object.values(TaleemPlayerThemes)).optional(),
 
-	audio: z
-		.string()
-		.regex(/^[a-zA-Z0-9-_]+\.(opus|mp3|wav)$/)
-		.nullable()
-		.optional(),
+	audio: z.string().regex(/^[a-zA-Z0-9-_]+\.(opus|mp3|wav)$/).nullable().optional(),
 
 	background: z.object({
-
 		backgroundColor: z.string().optional(),
-
-		backgroundImage: z
-			.string()
-			.nullable()
-			.optional(),
-
-		backgroundImageOpacity: z
-			.number()
-			.optional()
-
+		backgroundImage: z.string().nullable().optional(),
+		backgroundImageOpacity: z.number().optional()
 	}).optional(),
 
 	deck: z.array(
