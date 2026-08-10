@@ -1,6 +1,4 @@
 <script>
-	import { useMath } from "./js/useMath.js";
-	import { tick } from "svelte";
 	import { onMount } from "svelte";
 	import { page } from "$app/stores";
 	import { get } from "svelte/store";
@@ -10,7 +8,6 @@
 	import {resolveAssetPaths} from "./js/resolveAssetPaths.js";
 	import {getTimer} from "./js/getTimer.js";
 	import TaleemUI from "$lib/taleemUI/TaleemUI.svelte";
-	import {defaultTheme,blueTheme,brownTheme} from "$lib/taleem-themes";
 	import { getPlayerSize } from "./js/getPlayerSize.js";
 	import { Howl }from "howler";
 // import presentation from "$lib/taleem-specs/samples/golden-deck-8aug26.json";
@@ -67,6 +64,13 @@ let PLAYER_HEIGHT = 0;
 //////////////////////////////////////////////////////////    
 setInterval(() => {if (!presentation) return;}, 2000);
 //////////////////////////////////////////////////////////    
+async function toggleFullscreen() {
+    if (!document.fullscreenElement) {
+        await document.documentElement.requestFullscreen();
+    } else {
+        await document.exitFullscreen();
+    }
+}
 
 function resizePlayer() {
     const toolbarHeight = 54;
@@ -156,6 +160,7 @@ onMount(async () => {
 			oninput={(e)=>seek(parseFloat(e.target.value))}
 		/>
 
+    <button onclick={toggleFullscreen} title="Fullscreen">⛶</button>
 	</div>
 
 </div>
