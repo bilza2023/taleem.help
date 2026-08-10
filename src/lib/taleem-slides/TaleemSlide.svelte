@@ -3,6 +3,8 @@
 
     import { SlideType } from "$lib/taleem-specs/enums/SlideType.js";
     import { TaleemPlayerThemes } from "./themes/index.js";  
+    import { getBaseFont } from "./utils/layout.js";
+
 
     import TitleAndSubtitle from "./templates/TitleAndSubtitle.svelte";
     import BulletList from "./templates/BulletList.svelte";
@@ -28,15 +30,16 @@
     export let height = 390;
     
    $: resolvedTheme = TaleemPlayerThemes[theme] ?? TaleemPlayerThemes.default;
-
+    $: baseFont = getBaseFont(width, height);
 //    $: console.log("resolvedTheme",resolvedTheme) 
 </script>
 {#if slide}
 <div
     class="slide"
     style="
-        width:{width}px;
-        height:{height}px;
+        --slide-width:{width}px;
+        --slide-height:{height}px;
+        --base-font:{baseFont}px;
         --player-background:{resolvedTheme.background};
         --player-primary:{resolvedTheme.primary};
         --player-secondary:{resolvedTheme.secondary};

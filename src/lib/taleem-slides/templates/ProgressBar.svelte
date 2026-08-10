@@ -1,26 +1,10 @@
 <script>
-    import { getBaseFont } from "../utils/layout.js";
-
     export let slide;
-    export let width = 0;
-    export let height = 0;
     export let currentTime = 0;
-    export let theme;
-
     $: bar = slide.data[0];
-    $: baseFont = getBaseFont(width, height);
 </script>
 
-<section
-    class="slide"
-    style={`
-        --base-font:${baseFont}px;
-        --text:${theme.text};
-        --panel:${theme.panel};
-        --border:${theme.border};
-        --accent:${theme.accent};
-    `}
->
+<section class="slide" >
     <div class="panel">
 
         <h1>{bar.label}</h1>
@@ -47,44 +31,45 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:calc(var(--base-font));
+    padding:calc(var(--base-font)*1.2);
     box-sizing:border-box;
-    color:var(--text);
+    color:var(--player-text);
 }
 
 .panel{
-    width:min(90%,900px);
+    width:min(92%,1200px);
+    height:100%;
     display:flex;
     flex-direction:column;
-    gap:calc(var(--base-font));
-    padding:calc(var(--base-font));
-    background:var(--panel);
-    border:2px solid var(--border);
-    border-radius:calc(var(--base-font)*.45);
+    justify-content:center;
     box-sizing:border-box;
 }
 
 h1{
-    margin:0;
+    margin:0 0 calc(var(--base-font)*1);
     text-align:center;
-    font-size:calc(var(--base-font)*1.4);
+    font-size:calc(var(--base-font)*2);
+    line-height:1.2;
+    color:var(--player-text);
 }
 
 .track{
     width:100%;
-    height:calc(var(--base-font)*1.5);
-    background:rgba(255,255,255,.08);
-    border:2px solid var(--border);
-    border-radius:999px;
+    height:calc(var(--base-font)*1.2);
+    flex:0 0 auto;
     overflow:hidden;
+    background:var(--player-surface);
+    border:2px solid var(--player-border);
+    border-radius:999px;
+    box-sizing:border-box;
 }
 
 .fill{
-    height:100%;
     width:0;
-    background:var(--accent);
+    height:100%;
+    background:var(--player-primary);
+    border-radius:inherit;
     opacity:.15;
-    transition:width .4s;
 }
 
 .fill.visible{
@@ -92,8 +77,10 @@ h1{
 }
 
 .percent{
+    margin-top:calc(var(--base-font)*1);
     text-align:center;
-    font-size:calc(var(--base-font)*1.2);
-    font-weight:bold;
+    font-size:calc(var(--base-font)*2);
+    font-weight:600;
+    color:var(--player-text);
 }
 </style>

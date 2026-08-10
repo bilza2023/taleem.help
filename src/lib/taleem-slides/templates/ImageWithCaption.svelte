@@ -1,26 +1,13 @@
 <script>
-    import { getBaseFont } from "../utils/layout.js";
-
     export let slide;
-    export let width = 0;
-    export let height = 0;
     export let currentTime = 0;
-    export let theme;
 
     $: image = slide.data.find(x => x.name === "image");
     $: caption = slide.data.find(x => x.name === "caption");
-    $: baseFont = getBaseFont(width, height);
+
 </script>
 
-<section
-    class="slide"
-    style={`
-        --base-font:${baseFont}px;
-        --text:${theme.text};
-        --panel:${theme.panel};
-        --border:${theme.border};
-    `}
->
+<section class="slide" >
     <div class="panel">
 
         {#if image}
@@ -54,7 +41,7 @@
     height:100%;
     display:flex;
     flex-direction:column;
-    gap:calc(var(--base-font)*.7);
+    gap:calc(var(--base-font)*.5);
 }
 
 .imageBox{
@@ -82,7 +69,7 @@
     padding:calc(var(--base-font)*.6);
     background:var(--panel);
     border:2px solid var(--border);
-    border-radius:calc(var(--base-font)*.4);
+    border-radius:calc(var(--base-font)*.9);
     color:var(--text);
     opacity:.15;
 }

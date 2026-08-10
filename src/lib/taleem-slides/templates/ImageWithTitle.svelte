@@ -1,26 +1,12 @@
 <script>
-    import { getBaseFont } from "../utils/layout.js";
-
     export let slide;
-    export let width = 0;
-    export let height = 0;
     export let currentTime = 0;
-    export let theme;
 
     $: title = slide.data.find(x => x.name === "title");
     $: image = slide.data.find(x => x.name === "image");
-    $: baseFont = getBaseFont(width, height);
 </script>
 
-<section
-    class="slide"
-    style={`
-        --base-font:${baseFont}px;
-        --text:${theme.text};
-        --panel:${theme.panel};
-        --border:${theme.border};
-    `}
->
+<section class="slide" >
     <div class="panel">
 
         {#if title}

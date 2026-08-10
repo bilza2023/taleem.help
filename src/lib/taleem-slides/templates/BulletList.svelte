@@ -42,7 +42,6 @@ import {getBaseFont} from "../utils/layout.js";
     </div>
 </section>
 
-
 <style>
 .slide{
     width:100%;
@@ -52,42 +51,49 @@ import {getBaseFont} from "../utils/layout.js";
     align-items:center;
     padding:calc(var(--base-font)*1.2);
     box-sizing:border-box;
-    color:var(--text);
+    color:var(--player-text);
 }
 
 .panel{
     width:min(90%,1100px);
+    height:100%;
     display:flex;
     flex-direction:column;
-    gap:calc(var(--base-font)*.7);
+    box-sizing:border-box;
 }
 
 h1{
-    margin:0;
+    flex:0 0 auto;
+    margin:0 0 calc(var(--base-font)*.8);
     text-align:center;
     font-size:calc(var(--base-font)*1.6);
     line-height:1.2;
 }
 
 .bullets{
-    display:flex;
-    flex-direction:column;
-    gap:calc(var(--base-font)*.8);
+    flex:1;
+    min-height:0;
+    display:grid;
+    grid-auto-rows:1fr;
+    gap:calc(var(--base-font)*.5);
 }
 
 .bullet{
-    padding:calc(var(--base-font)*.7) calc(var(--base-font));
-    background:var(--panel);
-    border:2px solid var(--border);
+    min-height:0;
+    display:flex;
+    align-items:center;
+    padding:calc(var(--base-font)*.5) calc(var(--base-font));
+    background:var(--player-surface);
+    border:2px solid var(--player-border);
     border-radius:calc(var(--base-font)*.45);
-    font-size:calc(var(--base-font)*1.8);
-    line-height:1.4;
+    font-size:calc(var(--base-font)*1.5);
+    line-height:1.25;
     box-sizing:border-box;
     opacity:.15;
 }
 
 .bullet.visible{
     opacity:1;
-    border-color:var(--accent);
+    border-color:var(--player-primary);
 }
 </style>

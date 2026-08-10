@@ -1,27 +1,15 @@
 <script>
-    import { getBaseFont } from "../utils/layout.js";
-
+   
     export let slide;
-    export let width = 0;
-    export let height = 0;
     export let currentTime = 0;
-    export let theme;
+
 
     $: bars = slide.data;
     $: maxValue = Math.max(...bars.map(x => x.value));
-    $: baseFont = getBaseFont(width, height);
+  
 </script>
 
-<section
-    class="slide"
-    style={`
-        --base-font:${baseFont}px;
-        --text:${theme.text};
-        --panel:${theme.panel};
-        --border:${theme.border};
-        --accent:${theme.accent};
-    `}
->
+<section     class="slide" >
     <div class="panel">
 
         <div class="chart">
@@ -58,58 +46,62 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:calc(var(--base-font));
+    padding:calc(var(--base-font)*1.2);
     box-sizing:border-box;
-    color:var(--text);
+    color:var(--player-text);
 }
 
 .panel{
-    width:min(95%,1200px);
+    width:min(92%,1200px);
     height:100%;
-    background:var(--panel);
-    border:2px solid var(--border);
-    border-radius:calc(var(--base-font)*.45);
-    padding:calc(var(--base-font));
+    display:flex;
+    flex-direction:column;
     box-sizing:border-box;
 }
 
 .chart{
-    height:100%;
+    flex:1;
+    min-height:0;
+    width:100%;
     display:flex;
-    align-items:flex-end;
-    justify-content:space-evenly;
-    gap:calc(var(--base-font));
+    align-items:stretch;
+    justify-content:space-around;
+    gap:calc(var(--base-font)*.8);
 }
 
 .group{
     flex:1;
-    height:100%;
+    min-width:0;
+    min-height:0;
     display:flex;
     flex-direction:column;
     align-items:center;
 }
 
 .value{
-    height:2em;
-    display:flex;
-    align-items:center;
-    font-size:calc(var(--base-font)*.9);
+    flex:0 0 auto;
+    font-size:calc(var(--base-font)*1.2);
+    line-height:1.2;
+    color:var(--player-text);
+    margin-bottom:calc(var(--base-font)*.4);
 }
 
 .barArea{
     flex:1;
-    width:70%;
+    min-height:0;
+    width:min(70%,120px);
     display:flex;
     align-items:flex-end;
+    justify-content:center;
 }
 
 .bar{
     width:100%;
-    height:0;
-    background:var(--accent);
-    border-radius:calc(var(--base-font)*.35) calc(var(--base-font)*.35) 0 0;
+    min-height:0;
+    background:var(--player-primary);
+    border-radius:calc(var(--base-font)*.25) calc(var(--base-font)*.25) 0 0;
     opacity:.15;
-    transition:height .3s, opacity .3s;
+    transition:opacity .2s;
 }
 
 .bar.visible{
@@ -117,8 +109,12 @@
 }
 
 .label{
-    margin-top:.5em;
+    flex:0 0 auto;
+    width:100%;
+    margin-top:calc(var(--base-font)*.5);
     text-align:center;
-    font-size:calc(var(--base-font)*.8);
+    font-size:calc(var(--base-font)*1.2);
+    line-height:1.25;
+    color:var(--player-text);
 }
 </style>

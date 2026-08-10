@@ -1,17 +1,9 @@
-
 <script>
-    import { getBaseFont } from "../utils/layout.js";
-
     export let slide;
-    export let width = 0;
-    export let height = 0;
     export let currentTime = 0;
-    export let theme;
 
     $: left = slide.data.find(x => x.name === "left");
     $: right = slide.data.find(x => x.name === "right");
-
-    $: baseFont = getBaseFont(width, height);
 </script>
 
 <section class="slide">
@@ -27,13 +19,14 @@
 </section>
 
 <style>
-    .slide{
+.slide{
     width:100%;
     height:100%;
     display:flex;
     align-items:center;
     justify-content:center;
     box-sizing:border-box;
+    color:var(--player-text);
 }
 
 .columns{
@@ -41,21 +34,25 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:40px;
+    gap:calc(var(--base-font)*1);
 }
 
 .column{
     flex:1;
-    padding:40px;
+    padding:calc(var(--base-font)*1);
     box-sizing:border-box;
-    border:2px solid white;
-    border-radius:16px;
+    background:var(--player-surface);
+    border:2px solid var(--player-border);
+    border-radius:calc(var(--base-font)*.45);
     text-align:left;
-    font-size:48px;
-    line-height:1.5;
+    font-size:calc(var(--base-font)*1.4);
+    line-height:1.4;
+    color:var(--player-text);
+    opacity:.15;
 }
 
 .column.visible{
     opacity:1;
+    border-color:var(--player-primary);
 }
 </style>
