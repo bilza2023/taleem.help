@@ -2,9 +2,12 @@
 {
   "version": "deck-v1",
   "name": "Golden Deck V1 – Full Schema Coverage",
+  "audio": "music.mp3",
+  "theme": "brown",
+
   "background": {
     "backgroundColor": "#111111",
-    "backgroundImage": "/static-presentations/images/taleem.webp",
+    "backgroundImage": "taleem.webp",
     "backgroundImageOpacity": 0.2
   },
   "deck": [
@@ -81,7 +84,7 @@
       "data": [
         {
           "name": "image",
-          "content": "/static-presentations/images/wood.jpg",
+          "content": "wood.jpg",
           "showAt": 30
         }
       ]
@@ -98,7 +101,7 @@
         },
         {
           "name": "image",
-          "content": "/static-presentations/images/wood.jpg",
+          "content": "wood.jpg",
           "showAt": 40
         }
       ]
@@ -110,7 +113,7 @@
       "data": [
         {
           "name": "image",
-          "content": "/static-presentations/images/wood.jpg",
+          "content": "wood.jpg",
           "showAt": 50
         },
         {
@@ -127,7 +130,7 @@
       "data": [
         {
           "name": "image",
-          "content": "/static-presentations/images/wood.jpg",
+          "content": "wood.jpg",
           "showAt": 60
         },
         {
@@ -159,7 +162,7 @@
       "data": [
         {
           "name": "image",
-          "content": "/static-presentations/images/wood.jpg",
+          "content": "wood.jpg",
           "showAt": 70
         },
         {
@@ -320,7 +323,7 @@
         },
         {
           "type": "image",
-          "content": "/static-presentations/images/wood.jpg"
+          "content": "wood.jpg"
         }
       ]
     },
@@ -336,7 +339,7 @@
         },
         {
           "type": "image",
-          "content": "/static-presentations/images/taleem.webp"
+          "content": "taleem.webp"
         }
       ]
     },
@@ -352,7 +355,7 @@
         },
         {
           "type": "image",
-          "content": "/static-presentations/images/typesOfForce.webp"
+          "content": "typesOfForce.webp"
         }
       ]
     }
@@ -365,7 +368,7 @@
       "data": [
         {
           "name": "image",
-          "content": "/static-presentations/images/wood.jpg",
+          "content": "wood.jpg",
           "showAt": 140
         }
       ]

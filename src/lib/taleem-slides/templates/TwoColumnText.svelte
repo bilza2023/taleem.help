@@ -14,18 +14,8 @@
     $: baseFont = getBaseFont(width, height);
 </script>
 
-<section
-    class="slide"
-    style={`
-        --base-font:${baseFont}px;
-        --text:${theme.text};
-        --panel:${theme.panel};
-        --border:${theme.border};
-        --accent:${theme.accent};
-    `}
->
+<section class="slide">
     <div class="columns">
-
         <div class="column" class:visible={currentTime >= left?.showAt}>
             {left?.content}
         </div>
@@ -33,42 +23,39 @@
         <div class="column" class:visible={currentTime >= right?.showAt}>
             {right?.content}
         </div>
-
     </div>
 </section>
 
 <style>
-.slide{
+    .slide{
     width:100%;
     height:100%;
     display:flex;
-    justify-content:center;
     align-items:center;
-    padding:calc(var(--base-font)*1.2);
+    justify-content:center;
     box-sizing:border-box;
-    color:var(--text);
 }
 
 .columns{
     width:min(92%,1200px);
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:calc(var(--base-font));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
 }
 
 .column{
-    padding:calc(var(--base-font));
-    background:var(--panel);
-    border:2px solid var(--border);
-    border-radius:calc(var(--base-font)*.45);
-    font-size:calc(var(--base-font)*1.2);
-    line-height:1.5;
+    flex:1;
+    padding:40px;
     box-sizing:border-box;
-    opacity:.15;
+    border:2px solid white;
+    border-radius:16px;
+    text-align:left;
+    font-size:48px;
+    line-height:1.5;
 }
 
 .column.visible{
     opacity:1;
-    border-color:var(--accent);
 }
 </style>

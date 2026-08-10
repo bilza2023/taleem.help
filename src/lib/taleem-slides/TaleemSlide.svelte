@@ -33,8 +33,10 @@
 </script>
 {#if slide}
 <div
-    class="taleemSlide"
+    class="slide"
     style="
+        width:{width}px;
+        height:{height}px;
         --player-background:{resolvedTheme.background};
         --player-primary:{resolvedTheme.primary};
         --player-secondary:{resolvedTheme.secondary};
@@ -44,7 +46,6 @@
         --player-border:{resolvedTheme.border};
     "
 >
-
     {#if slide.type === SlideType.TitleAndSubtitle}
         <TitleAndSubtitle {slide} {currentTime} {width} {height} />
 
@@ -88,3 +89,16 @@
     {/if}
 </div>
 {/if}
+
+<style>
+    .slide{
+    width:100%;
+    height:100%;
+    min-width:0;
+    min-height:0;
+    box-sizing:border-box;
+    overflow:hidden;
+    color:var(--player-text);
+    background:var(--player-background);
+}
+</style>
