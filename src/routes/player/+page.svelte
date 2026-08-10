@@ -65,13 +65,20 @@ let PLAYER_HEIGHT = 0;
 
 	}    
 //////////////////////////////////////////////////////////    
-setInterval(() => {
-
-	if (!presentation) return;
-
-
-}, 2000);
+setInterval(() => {if (!presentation) return;}, 2000);
 //////////////////////////////////////////////////////////    
+
+function resizePlayer() {
+    const toolbarHeight = 54;
+    const maxWidth = window.innerWidth;
+    const maxHeight = window.innerHeight - toolbarHeight;
+
+    const widthFromHeight = maxHeight * 16 / 9;
+
+    PLAYER_WIDTH = Math.min(maxWidth, widthFromHeight);
+    PLAYER_HEIGHT = PLAYER_WIDTH * 9 / 16;
+}
+
 onMount(async () => {
 //  debugger;
 	const params = get(page).url.searchParams;
@@ -102,6 +109,10 @@ onMount(async () => {
 	console.log(getPlayerSize());
 	PLAYER_WIDTH = playerSize.width;
 	PLAYER_HEIGHT = playerSize.height;
+
+	 window.addEventListener("resize", resizePlayer);
+
+	return () => window.removeEventListener("resize", resizePlayer);
 });
 </script>
 
@@ -114,13 +125,15 @@ onMount(async () => {
 
 	<div class="viewer">
 
-		<TaleemUI
-			theme={presentation.theme || "default"}
-			deck={presentation}
-			{currentTime}
-			width={PLAYER_WIDTH}
-			height={PLAYER_HEIGHT}
-		/>
+	{#key `${PLAYER_WIDTH}x${PLAYER_HEIGHT}`}
+    <TaleemUI
+        theme={presentation.theme || "default"}
+        deck={presentation}
+        {currentTime}
+        width={PLAYER_WIDTH}
+        height={PLAYER_HEIGHT}
+    />
+	{/key}
 
 	</div>
 
