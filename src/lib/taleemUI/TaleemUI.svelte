@@ -3,13 +3,13 @@
     import Scene from "./Scene.svelte";
     import Background from "./Background.svelte";
     import TaleemSlide from "../taleem-slides/TaleemSlide.svelte";
-  import { blueTheme } from "$lib/taleem-themes";
+//   import { blueTheme } from "";
 
     export let deck;
     export let currentTime = 0;
     export let width;
     export let height;
-    export let theme = blueTheme;
+    export let theme;
 
     $: currentSlide = deck.deck.find(
         slide =>

@@ -6,7 +6,7 @@
     export let width = 0;
     export let height = 0;
     export let currentTime = 0;
-    export let theme;
+
 
     $: lines = slide?.data ?? [];
 
@@ -62,8 +62,7 @@
 
 <style>
 .eq{
-    color:#fff;
-
+    color:var(--player-text);
     width:100%;
     height:100%;
     min-width:0;

@@ -2,7 +2,7 @@
     ///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/taleem-slides/TaleemSlide.svelte
 
     import { SlideType } from "$lib/taleem-specs/enums/SlideType.js";
-  
+    import { TaleemPlayerThemes } from "./themes/index.js";  
 
     import TitleAndSubtitle from "./templates/TitleAndSubtitle.svelte";
     import BulletList from "./templates/BulletList.svelte";
@@ -27,51 +27,64 @@
     export let width = 844;
     export let height = 390;
     
-    // $: console.log("slide-current slide" , slide);
-// $: console.log("slide.type =", slide?.type);
-// $: console.log("SlideType.BulletList =", SlideType.BulletList);
+   $: resolvedTheme = TaleemPlayerThemes[theme] ?? TaleemPlayerThemes.default;
 
+//    $: console.log("resolvedTheme",resolvedTheme) 
 </script>
 {#if slide}
+<div
+    class="taleemSlide"
+    style="
+        --player-background:{resolvedTheme.background};
+        --player-primary:{resolvedTheme.primary};
+        --player-secondary:{resolvedTheme.secondary};
+        --player-surface:{resolvedTheme.surface};
+        --player-text:{resolvedTheme.text};
+        --player-muted:{resolvedTheme.muted};
+        --player-border:{resolvedTheme.border};
+    "
+>
 
     {#if slide.type === SlideType.TitleAndSubtitle}
-        <TitleAndSubtitle {slide} {currentTime} {width} {height} {theme}/>
+        <TitleAndSubtitle {slide} {currentTime} {width} {height} />
 
     {:else if slide.type === SlideType.BulletList}
-        <BulletList {slide} {currentTime} {width} {height} {theme}/>
+        <BulletList {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
 
     {:else if slide.type === SlideType.TwoColumnText}
-        <TwoColumnText {slide} {currentTime} {width} {height} {theme}/>
+        <TwoColumnText {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
  
         {:else if slide.type === SlideType.ImageSlide}
-        <ImageSlide {slide} {currentTime} {width} {height} {theme}/>
+        <ImageSlide {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
      
         {:else if slide.type === SlideType.ImageWithTitle}
-        <ImageWithTitle {slide} {currentTime} {width} {height} {theme}/>
+        <ImageWithTitle {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
         {:else if slide.type === SlideType.ImageWithCaption}
-        <ImageWithCaption {slide} {currentTime} {width} {height} {theme}/>
+        <ImageWithCaption {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
         {:else if slide.type === SlideType.ImageLeftBulletsRight}
-        <ImageLeftBulletsRight {slide} {currentTime} {width} {height} {theme}/>
+        <ImageLeftBulletsRight {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
         {:else if slide.type === SlideType.ImageRightBulletsLeft}
-        <ImageRightBulletsLeft {slide} {currentTime} {width} {height} {theme}/>
+        <ImageRightBulletsLeft {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
         {:else if slide.type === SlideType.Table}
-        <Table {slide} {currentTime} {width} {height} {theme}/>
+        <Table {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
         {:else if slide.type === SlideType.BarChart}
-        <BarChart {slide} {currentTime} {width} {height} {theme}/>
+        <BarChart {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
         {:else if slide.type === SlideType.ProgressBar}
-        <ProgressBar {slide} {currentTime} {width} {height} {theme}/>
+        <ProgressBar {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
         {:else if slide.type === SlideType.Quote}
-        <Quote {slide} {currentTime} {width} {height} {theme}/>
+        <Quote {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
         {:else if slide.type === SlideType.KeyIdeas}
-        <KeyIdeas {slide} {currentTime} {width} {height} {theme}/>
+        <KeyIdeas {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
+        
         {:else if slide.type === SlideType.Eq}
-        <Eq {slide} {currentTime} {width} {height} {theme}/>
+        <Eq {slide} {currentTime} {width} {height} />
+       
         {:else if slide.type === SlideType.FillImage}
-        <FillImage {slide} {currentTime} {width} {height} {theme}/>
+        <FillImage {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
       
         {:else if slide.type === SlideType.TitleAndPara}
-        <TitleAndPara {slide} {currentTime} {width} {height} {theme}/>
+        <TitleAndPara {slide} {currentTime} {width} {height} theme={resolvedTheme}/>
 
     {/if}
-
+</div>
 {/if}

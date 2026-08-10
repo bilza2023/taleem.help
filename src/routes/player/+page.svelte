@@ -116,6 +116,7 @@ onMount(async () => {
 	<div class="viewer">
 
 		<TaleemUI
+			theme={presentation.theme || "default"}
 			deck={presentation}
 			{currentTime}
 			width={PLAYER_WIDTH}

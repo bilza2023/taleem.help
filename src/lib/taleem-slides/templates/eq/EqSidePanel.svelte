@@ -38,22 +38,17 @@
     box-sizing:border-box;
     margin:0 0 14px;
     padding:14px 24px 16px 58px;
-
     display:grid;
     grid-template-columns:minmax(0,58%) minmax(0,42%);
     gap:20px;
-
-    background:rgba(15,23,42,.28);
-    border:2px solid rgba(147,197,253,.90);
+    background:var(--player-surface);
+    border:2px solid var(--player-border);
     border-top:0;
-    border-left:8px solid #60a5fa;
+    border-left:8px solid var(--player-primary);
     border-radius:0 0 12px 12px;
-
-    box-shadow:
-        0 0 0 1px rgba(255,255,255,.04) inset,
-        0 8px 18px rgba(96,165,250,.12);
-
+    box-shadow:0 0 0 1px rgba(255,255,255,.04) inset,0 8px 18px rgba(0,0,0,.12);
     backdrop-filter:blur(6px);
+    color:var(--player-text);
 }
 
 .left{
@@ -77,12 +72,11 @@
     box-sizing:border-box;
     width:100%;
     padding:12px 16px;
-
     border-radius:9px;
-    background:rgba(15,23,42,.38);
-    border:1px solid rgba(255,255,255,.10);
-
+    background:var(--player-surface);
+    border:1px solid var(--player-border);
     box-shadow:0 2px 8px rgba(0,0,0,.12);
+    color:var(--player-text);
 }
 
 .spText{
@@ -105,6 +99,7 @@
 
 .spMath :global(.katex){
     font-size:1.25em;
+    color:var(--player-text);
 }
 
 .spImage{
@@ -127,30 +122,22 @@
         border-radius:0 0 9px 9px;
     }
 
-    .left{
-        gap:6px;
-    }
+    .left{gap:6px;}
 
-    .spCard{
-        padding:8px 10px;
-    }
+    .spCard{padding:8px 10px;}
 
     .spText{
         font-size:1rem;
         line-height:1.35;
     }
 
-    .spMath{
-        min-height:48px;
-    }
+    .spMath{min-height:48px;}
 
     .spMath :global(.katex){
         font-size:1em;
     }
 
-    .right{
-        max-height:150px;
-    }
+    .right{max-height:150px;}
 
     .spImage{
         max-height:145px;
@@ -172,20 +159,14 @@
         line-height:1.3;
     }
 
-    .spMath{
-        min-height:40px;
-    }
+    .spMath{min-height:40px;}
 
     .spMath :global(.katex){
         font-size:.85em;
     }
 
-    .right{
-        max-height:95px;
-    }
+    .right{max-height:95px;}
 
-    .spImage{
-        max-height:90px;
-    }
+    .spImage{max-height:90px;}
 }
 </style>
