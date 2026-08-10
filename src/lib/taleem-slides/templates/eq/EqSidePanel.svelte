@@ -1,4 +1,5 @@
 <script>
+///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/taleem-slides/templates/eq/EqSidePanel.svelte
     import Math from "../../utils/Math.svelte";
 
     export let currentLine = null;
@@ -41,7 +42,7 @@
     display:grid;
     grid-template-columns:minmax(0,58%) minmax(0,42%);
     gap:20px;
-    background:var(--player-surface);
+    background:color-mix(in srgb,var(--player-surface) 85%,var(--player-text) 15%);
     border:2px solid var(--player-border);
     border-top:0;
     border-left:8px solid var(--player-primary);

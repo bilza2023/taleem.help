@@ -330,7 +330,7 @@
     {
       "name": "line",
       "type": "math",
-      "content": "$(a+b)(a+b)$",
+      "content": "(a+b)(a+b)",
       "showAt": 132,
       "spItems": [
         {
@@ -346,7 +346,7 @@
     {
       "name": "line",
       "type": "math",
-      "content": "$(a+b)^2$",
+      "content": "(a+b)^2",
       "showAt": 134,
       "spItems": [
         {
@@ -356,6 +356,26 @@
         {
           "type": "image",
           "content": "typesOfForce.webp"
+        }
+      ]
+    },
+    {
+      "name": "line",
+      "type": "math",
+      "content": "(a+b)^2",
+      "showAt": 136,
+      "spItems": [
+        {
+          "type": "text",
+          "content": "some other content"
+        },
+        {
+          "type": "math",
+          "content": "x^33+y^66=z^7"
+        },
+        {
+          "type": "image",
+          "content": "baloons.png"
         }
       ]
     }

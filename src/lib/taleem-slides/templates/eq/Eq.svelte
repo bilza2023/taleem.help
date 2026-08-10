@@ -4,7 +4,6 @@
 
     export let slide;
     export let width = 0;
-    export let height = 0;
     export let currentTime = 0;
 
 
@@ -38,7 +37,7 @@
     $: visibleLines = lines.slice(startIndex);
 </script>
 
-<div class="eq">
+<div class="slide eq">
     <div class="lines">
         {#each visibleLines as line, visibleIndex}
             <div class="lineBlock">

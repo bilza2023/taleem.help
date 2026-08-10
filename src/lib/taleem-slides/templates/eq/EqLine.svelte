@@ -19,121 +19,40 @@
     </div>
 </div>
 
+
 <style>
-.line{
-    box-sizing:border-box;
+
+.content :global(.katex){
+    font-size:1em;
+}
+    .line{
     width:100%;
-    margin:0 0 10px;
-    padding:8px 24px;
-    display:flex;
-    align-items:center;
-    border-radius:12px;
-    background:rgba(15,23,42,.32);
-    border:1px solid rgba(255,255,255,.08);
-    backdrop-filter:blur(6px);
-    transition:background .18s ease,border-color .18s ease;
-}
+    min-height:calc(var(--base-font)*3);
+    padding:calc(var(--base-font)*.7) calc(var(--base-font)*1.2);
+    margin-bottom:calc(var(--base-font)*.5);
+    box-sizing:border-box;
 
-.number{
-    flex:0 0 44px;
-    align-self:stretch;
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-right:12px;
-    font-size:.9rem;
-    opacity:.45;
-    font-weight:600;
-}
 
-.content{
-    flex:1;
-    min-width:0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    overflow:hidden;
-}
+    background:var(--player-surface);
+    border:2px solid var(--player-border);
+    border-radius:calc(var(--base-font)*.4);
+    color:var(--player-text);
 
-.line :global(.katex-display){
-    margin:0;
-}
-
-.line :global(.katex){
-    font-size:1.55em;
-}
-
-.line span{
-    font-size:1.45rem;
-    font-weight:500;
+    font-size:calc(var(--base-font)*0.8);
 }
 
 .line.active{
-    margin-bottom:0;
-    border-radius:12px 12px 0 0;
-    background:rgba(59,130,246,.20);
-    border:2px solid rgba(147,197,253,.90);
-    border-left:8px solid #60a5fa;
-    border-bottom:0;
-    box-shadow:
-        0 0 0 1px rgba(255,255,255,.06) inset,
-        0 0 18px rgba(96,165,250,.20);
+    border-color:var(--player-primary);
+    border-left:calc(var(--base-font)*.3) solid var(--player-primary);
+    box-shadow:0 0 calc(var(--base-font)*.5) color-mix(in srgb,var(--player-primary) 25%,transparent);
 }
 
-.line.active .number{
-    opacity:.9;
-    color:#93c5fd;
-}
-
-.line.active span{
-    font-weight:700;
-}
-
-@media(max-width:700px){
-    .line{
-        padding:5px 10px;
-        margin-bottom:6px;
-        border-radius:9px;
-    }
-
-    .number{
-        flex:0 0 26px;
-        margin-right:5px;
-        font-size:.7rem;
-    }
-
-    .line :global(.katex){
-        font-size:1.05em;
-    }
-
-    .line span{
-        font-size:.95rem;
-    }
-
-    .line.active{
-        margin-bottom:0;
-        border-radius:9px 9px 0 0;
-    }
-}
-
-@media(max-width:450px){
-    .line{
-        padding:4px 7px;
-    }
-
-    .number{
-        flex:0 0 22px;
-        margin-right:3px;
-        font-size:.65rem;
-    }
-
-    .line :global(.katex){
-        font-size:.92em;
-    }
-
-    .line span{
-        font-size:.85rem;
-    }
+.content{
+    width:100%;
+    text-align:center;
+    color:var(--player-text);
 }
 </style>
