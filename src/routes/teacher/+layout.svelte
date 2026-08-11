@@ -1,4 +1,5 @@
 <script>
+///home/bilal-tariq/00--TALEEM/taleem.help/src/routes/teacher/+layout.svelte
 	import { goto } from "$app/navigation";
 	import { page } from "$app/state";
 	import { onMount } from "svelte";
@@ -54,11 +55,11 @@
 
 main{
 
-	max-width:1100px;
+	max-width:2000px;
 color: antiquewhite;
 	margin:0 auto;
 
-	padding:2rem;
+	padding:0;
 
 	min-height:100vh;
 

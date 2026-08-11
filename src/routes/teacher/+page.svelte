@@ -178,44 +178,144 @@
 {/if}
 
 <style>
+    :global(body) {
+        margin: 0;
+        background: #0b1120;
+        color: #e5e7eb;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
 
-	h1{
+    h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 650;
+        letter-spacing: -.4px;
+        color: #f8fafc;
+    }
 
-		margin-bottom:.25rem;
+    p {
+        margin: 6px 0 0;
+        color: #94a3b8;
+        font-size: 14px;
+    }
 
-	}
+    table {
+        width: 100%;
+        margin-top: 28px;
+        border-collapse: separate;
+        border-spacing: 0;
+        background: #111827;
+        border: 1px solid #1f2937;
+        border-radius: 10px;
+        overflow: hidden;
+    }
 
-	table{
+    thead {
+        background: #151e2e;
+    }
 
-		width:100%;
-		margin-top:2rem;
+    th {
+        padding: 13px 16px;
+        text-align: left;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+        color: #64748b;
+        border-bottom: 1px solid #1f2937;
+    }
 
-	}
+    td {
+        padding: 16px;
+        vertical-align: middle;
+        border-bottom: 1px solid #1f2937;
+        font-size: 14px;
+    }
 
-	th{
+    tbody tr:last-child td {
+        border-bottom: 0;
+    }
 
-		text-align:left;
+    tbody tr {
+        transition: background .12s ease;
+    }
 
-	}
+    tbody tr:hover {
+        background: #172033;
+    }
 
-	td{
+    td:first-child {
+        min-width: 260px;
+    }
 
-		vertical-align:middle;
+    td:first-child strong {
+        display: block;
+        margin-bottom: 3px;
+        color: #f1f5f9;
+        font-size: 15px;
+        font-weight: 600;
+    }
 
-	}
+    small {
+        color: #64748b;
+        font-size: 12px;
+    }
 
-	td:not(:first-child){
+    td:not(:first-child) {
+        width: 1%;
+        white-space: nowrap;
+    }
 
-		width:1%;
+    button {
+        margin: 0;
+        min-width: 110px;
+        padding: 8px 13px;
+        border: 1px solid #334155;
+        border-radius: 6px;
+        background: #1e293b;
+        color: #dbeafe;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background .12s ease, border-color .12s ease, transform .08s ease;
+    }
 
-		white-space:nowrap;
+    button:hover {
+        background: #293548;
+        border-color: #475569;
+    }
 
-	}
+    button:active {
+        transform: translateY(1px);
+    }
 
-	button{
+    article {
+        margin-top: 24px;
+        padding: 18px 20px;
+        border: 1px solid #2a3547;
+        border-radius: 8px;
+        background: #111827;
+        color: #94a3b8;
+        font-size: 14px;
+    }
 
-		margin:0;
+    @media (max-width: 800px) {
+        table {
+            display: block;
+            overflow-x: auto;
+        }
 
-	}
+        td:first-child {
+            min-width: 200px;
+        }
 
+        th,
+        td {
+            padding: 12px;
+        }
+
+        button {
+            min-width: 100px;
+        }
+    }
 </style>

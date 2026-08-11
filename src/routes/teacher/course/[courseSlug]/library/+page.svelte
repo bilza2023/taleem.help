@@ -209,76 +209,206 @@ function editor(slug) {
 </table>
 
 {/if}
-
 <style>
-	header{
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	margin-bottom:2rem;
-}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 28px;
+        gap: 20px;
+    }
 
-header h1{
-	margin-bottom:.25rem;
-}
+    header h1 {
+        margin: 0;
+        color: #f8fafc;
+        font-size: 28px;
+        font-weight: 650;
+        letter-spacing: -.4px;
+    }
 
-table{
-	width:100%;
-}
+    header p {
+        margin: 6px 0 0;
+        color: #94a3b8;
+        font-size: 14px;
+    }
 
-th{
-	text-align:left;
-}
+    header > button {
+        margin: 0;
+        padding: 9px 16px;
+        border: 1px solid #334155;
+        border-radius: 6px;
+        background: #1e293b;
+        color: #e2e8f0;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+    }
 
-.library-item{
-	min-width:340px;
-}
+    header > button:hover {
+        background: #293548;
+        border-color: #475569;
+    }
 
-.library-item .title{
-	font-weight:600;
-	font-size:1rem;
-	margin-bottom:.2rem;
-}
+    table {
+        width: 100%;
+        margin: 0;
+        border-collapse: separate;
+        border-spacing: 0;
+        background: #111827;
+        border: 1px solid #1f2937;
+        border-radius: 10px;
+        overflow: hidden;
+    }
 
-.library-item .slug{
-	font-family:monospace;
-	font-size:.8rem;
-	opacity:.65;
-	word-break:break-word;
-}
+    thead {
+        background: #151e2e;
+    }
 
-.comm{
-	text-align:center;
-	font-size:1.2rem;
-}
+    th {
+        padding: 12px 15px;
+        text-align: left;
+        color: #64748b;
+        border-bottom: 1px solid #1f2937;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+    }
 
-th:last-child,
-td:last-child{
-	width:1%;
-	white-space:nowrap;
-}
+    td {
+        padding: 14px 15px;
+        color: #cbd5e1;
+        border-bottom: 1px solid #1f2937;
+        font-size: 13px;
+        vertical-align: middle;
+    }
 
-td button{
-	margin-right:.5rem;
-}
+    tbody tr:last-child td {
+        border-bottom: 0;
+    }
 
-.warning{
-	background:#f59e0b;
-	border-color:#d97706;
-	color:white;
-}
+    tbody tr {
+        transition: background .12s ease;
+    }
 
-.warning:hover{
-	background:#d97706;
-}
+    tbody tr:hover {
+        background: #172033;
+    }
 
-.danger{
-	background:#dc2626;
-	border-color:#b91c1c;
-	color:white;
-}
+    .library-item {
+        min-width: 340px;
+    }
 
-.danger:hover{
-	background:#b91c1c;
-}
+    .library-item .title {
+        margin-bottom: 4px;
+        color: #f1f5f9;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .library-item .slug {
+        color: #64748b;
+        font-family: monospace;
+        font-size: 11px;
+        word-break: break-word;
+    }
+
+    .comm {
+        width: 50px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    td small {
+        color: #94a3b8;
+        font-size: 12px;
+    }
+
+    th:last-child,
+    td:last-child {
+        width: 1%;
+        white-space: nowrap;
+    }
+
+    td:last-child {
+        padding-right: 12px;
+    }
+
+    td button {
+        margin: 0 5px 0 0;
+        padding: 7px 10px;
+        border: 1px solid #334155;
+        border-radius: 5px;
+        background: #1e293b;
+        color: #dbeafe;
+        font-size: 11px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background .12s ease, border-color .12s ease;
+    }
+
+    td button:last-child {
+        margin-right: 0;
+    }
+
+    td button:hover {
+        background: #293548;
+        border-color: #475569;
+    }
+
+    .warning {
+        background: #422006;
+        border-color: #92400e;
+        color: #fbbf24;
+    }
+
+    .warning:hover {
+        background: #713f12;
+        border-color: #b45309;
+    }
+
+    .danger {
+        background: #450a0a;
+        border-color: #991b1b;
+        color: #fca5a5;
+    }
+
+    .danger:hover {
+        background: #7f1d1d;
+        border-color: #b91c1c;
+    }
+
+    article {
+        margin: 0;
+        padding: 18px 20px;
+        border: 1px solid #1f2937;
+        border-radius: 8px;
+        background: #111827;
+        color: #94a3b8;
+        font-size: 14px;
+    }
+
+    @media (max-width: 850px) {
+        header {
+            align-items: flex-start;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+        }
+
+        .library-item {
+            min-width: 240px;
+        }
+
+        th,
+        td {
+            padding: 11px 12px;
+        }
+
+        td button {
+            margin-bottom: 4px;
+        }
+    }
 </style>
