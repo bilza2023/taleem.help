@@ -1,14 +1,15 @@
 
+
 {
   "version": "deck-v1",
   "name": "Golden Deck V1 – Full Schema Coverage",
   "audio": "music.mp3",
-  "theme": "brown",
+  "theme": "blue",
 
   "background": {
-    "backgroundColor": "#111111",
-    "backgroundImage": "taleem.webp",
-    "backgroundImageOpacity": 0.2
+    "backgroundColor": "#010214",
+    "backgroundImage": "banner.webp",
+    "backgroundImageOpacity": 0.09
   },
   "deck": [
     {

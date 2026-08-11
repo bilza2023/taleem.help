@@ -113,61 +113,87 @@
     border-radius:10px;
 }
 
+
+
 /* Mobile */
 @media(max-width:700px){
     .sidePanel{
-        padding:8px 10px 10px 30px;
+        padding:6px 8px 7px 24px;
         grid-template-columns:1fr;
-        gap:8px;
-        border-left-width:5px;
-        border-radius:0 0 9px 9px;
+        gap:6px;
+        border-left-width:4px;
+        border-radius:0 0 8px 8px;
     }
 
-    .left{gap:6px;}
+    .left{
+        gap:5px;
+    }
 
-    .spCard{padding:8px 10px;}
+    .spCard{
+        padding:6px 8px;
+        border-radius:7px;
+    }
 
     .spText{
-        font-size:1rem;
-        line-height:1.35;
+        font-size:.7rem;
+        line-height:1.15;
     }
 
-    .spMath{min-height:48px;}
+    .spMath{
+        min-height:38px;
+    }
 
     .spMath :global(.katex){
-        font-size:1em;
+        font-size:.7em;
     }
 
-    .right{max-height:150px;}
+    .right{
+        max-height:110px;
+    }
 
     .spImage{
-        max-height:145px;
+        max-height:105px;
         width:auto;
         max-width:100%;
     }
 }
 
+
 /* Very short mobile screens */
 @media(max-width:700px) and (max-height:600px){
     .sidePanel{
-        padding-top:5px;
-        padding-bottom:6px;
-        gap:5px;
+        padding:4px 7px 5px 22px;
+        gap:4px;
+    }
+
+    .left{
+        gap:4px;
+    }
+
+    .spCard{
+        padding:5px 7px;
     }
 
     .spText{
-        font-size:.9rem;
-        line-height:1.3;
+        font-size:.65rem;
+        line-height:1.1;
     }
 
-    .spMath{min-height:40px;}
+    .spMath{
+        min-height:32px;
+    }
 
     .spMath :global(.katex){
-        font-size:.85em;
+        font-size:.65em;
     }
 
-    .right{max-height:95px;}
+    .right{
+        max-height:80px;
+    }
 
-    .spImage{max-height:90px;}
+    .spImage{
+        max-height:76px;
+    }
 }
+
 </style>

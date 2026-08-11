@@ -1,7 +1,6 @@
-<!-- src/routes/teacher/course/[courseSlug]/library/[librarySlug]/editor/+page.svelte -->
 
 <script>
-
+///home/bilal-tariq/00--TALEEM/taleem.help/src/routes/teacher/course/[courseSlug]/library/[librarySlug]/editor/+page.svelte
 	import { onMount } from "svelte";
 	import { goto } from "$app/navigation";
 	import { page } from "$app/state";
@@ -46,44 +45,28 @@ async function load() {
 
 }
 
-	async function save({ body, source }) {
+async function save(presentation) {
+    saving = true;
+    error = "";
 
-		saving = true;
-		error = "";
+    try {
+        await apiFetch(
+            "PUT",
+            `/admin/library/${librarySlug}`,
+            {
+                body: JSON.stringify(presentation, null, 2)
+            }
+        );
 
-		try {
-
-			await apiFetch(
-
-				"PUT",
-
-				`/admin/library/${librarySlug}`,
-
-				{
-					body: JSON.stringify(body, null, 2),
-					source: JSON.stringify(source, null, 2)
-				}
-
-			);
-
-			goto(`/teacher/course/${courseSlug}/library`);
-
-		}
-
-		catch (err) {
-
-			error = err.message;
-
-		}
-
-		finally {
-
-			saving = false;
-
-		}
-
-	}
-
+        // goto(`/teacher/course/${courseSlug}/library`);
+    }
+    catch (err) {
+        error = err.message;
+    }
+    finally {
+        saving = false;
+    }
+}
 </script>
 
 <svelte:head>
