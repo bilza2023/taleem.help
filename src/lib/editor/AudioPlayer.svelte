@@ -189,3 +189,58 @@
 	/>
 
 </div>
+<style>
+    .player {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        min-height: 46px;
+        padding: 6px 10px;
+        box-sizing: border-box;
+        background: #151b27;
+        border: 1px solid #2f3a4d;
+        border-radius: 7px;
+        color: #dbe4ef;
+    }
+
+    .transport {
+        display: flex;
+        gap: 4px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        border: 1px solid #4b5568;
+        border-radius: 5px;
+        background: #202a3a;
+        color: #f3a64a;
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .icon:hover {
+        background: #2a3548;
+        border-color: #e59a3a;
+        color: #ffb45c;
+    }
+
+    .time {
+        min-width: 75px;
+        color: #cbd5e1;
+        font-size: 12px;
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+    }
+
+    .timeline {
+        flex: 1;
+        min-width: 100px;
+        height: 5px;
+        accent-color: #e99a3b;
+        cursor: pointer;
+    }
+</style>

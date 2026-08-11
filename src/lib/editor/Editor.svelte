@@ -1,144 +1,165 @@
 <script>
-///home/bilal-tariq/00--TALEEM/taleem.help/src/lib/editor/Editor.svelte
-	import Nav from "./Nav.svelte";
-	import AudioList from "./AudioList.svelte";
-	import AudioPlayer from "./AudioPlayer.svelte";
-	import Background from "./Background.svelte";
+    import Nav from "./Nav.svelte";
+    import AudioPlayer from "./AudioPlayer.svelte";
 	import Slides from "./slides/Slides.svelte";
-	import { finalizeDeckV2 } from "./js/finalizeDeckV2.js";
+    import { finalizeDeckV2 } from "./js/finalizeDeckV2.js";
+    import { slideFactory } from "./js/slideFactory.js";
+    import { assignMockTimings } from "./js/assignMockTimings.js";
+	import Settings from "./Settings.svelte";
 
-	import { slideFactory } from "./js/slideFactory.js";
-	import { assignMockTimings } from "./js/assignMockTimings.js";
+    export let deck = { deck: [] };
+    export let onExport;
 
-	export let deck = { deck: [] };
-	export let onExport;
+    let runningTime = 0;
+    let showTools = true;
 
-	let runningTime = 0;
+    function addSlide(type) {
+        const fn = slideFactory[type];
+        if (!fn) return;
 
-	function addSlide(type) {
+        const last = deck.deck.at(-1);
 
-		const fn = slideFactory[type];
-		if (!fn) return;
+        deck.deck = [
+            ...deck.deck,
+            {
+                ...fn(),
+                start: last ? last.end : 0,
+                end: (last ? last.end : 0) + 5
+            }
+        ];
+    }
 
-		const last = deck.deck.at(-1);
+    function preparePresentation() {
+        const result = finalizeDeckV2(deck);
 
-		deck.deck = [
-			...deck.deck,
-			{
-				...fn(),
-				start: last ? last.end : 0,
-				end: (last ? last.end : 0) + 5
-			}
-		];
+        if (!result.ok) {
+            console.error(result);
 
-	}
+            const error = result.errors?.[0];
 
-function preparePresentation() {
+            alert(
+                `${result.stage.toUpperCase()}\n\n` +
+                (error?.path ? `${error.path}\n` : "") +
+                (error?.message ?? "Unknown error")
+            );
 
-	const result = finalizeDeckV2(deck);
+            return null;
+        }
 
-	if (!result.ok) {
+        return result.presentation;
+    }
 
-	console.error(result);
+    function handleDownload() {
+        const presentation = preparePresentation();
+        if (!presentation) return;
 
-	const error = result.errors?.[0];
+        const blob = new Blob(
+            [JSON.stringify(presentation, null, 2)],
+            { type: "application/json" }
+        );
 
-	alert(
-		`${result.stage.toUpperCase()}\n\n` +
-		(error?.path ? `${error.path}\n` : "") +
-		(error?.message ?? "Unknown error")
-	);
+        const url = URL.createObjectURL(blob);
 
-	return null;
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "deck.json";
+        a.click();
 
-}
+        URL.revokeObjectURL(url);
+    }
 
-	return result.presentation;
+    async function handleSave() {
+        const presentation = preparePresentation();
+        if (!presentation) return;
 
-}
-function handleDownload() {
+        try {
+            await onExport(presentation);
+            console.log("final presentation:", presentation);
+            alert("Presentation saved");
+        }
+        catch (err) {
+            console.error(err);
+            alert(err.message);
+        }
+    }
 
-	const presentation = preparePresentation();
-	if (!presentation) return;
-
-	const blob = new Blob(
-		[JSON.stringify(presentation, null, 2)],
-		{ type: "application/json" }
-	);
-
-	const url = URL.createObjectURL(blob);
-
-	const a = document.createElement("a");
-	a.href = url;
-	a.download = "deck.json";
-	a.click();
-
-	URL.revokeObjectURL(url);
-
-}
-
-	async function handleSave() {
-		debugger;
-		const presentation = preparePresentation();
-		if (!presentation) return;
-
-		try {
-
-			await onExport(presentation);
-			console.log("final presentation:",presentation);
-			alert("Presentation saved");
-
-		}
-		catch (err) {
-
-			console.error(err);
-			alert(err.message);
-
-		}
-
-	}
-
-	function handleMockTiming() {
-
-		try {
-
-			deck = assignMockTimings(deck);
-
-			alert("Mock timings applied");
-
-		}
-		catch (err) {
-
-			console.error(err);
-			alert("Failed to apply mock timings");
-
-		}
-
-	}
-
+    function handleMockTiming() {
+        try {
+            deck = assignMockTimings(deck);
+            alert("Mock timings applied");
+        }
+        catch (err) {
+            console.error(err);
+            alert("Failed to apply mock timings");
+        }
+    }
 </script>
 
 <div class="editor">
 
-	<Background bind:background={deck.background} />
-	<AudioList audio={deck.audio} onUse={(filename)=>deck.audio=filename} />
+    <!-- NAVIGATION -->
+    <Nav
+        add={addSlide}
+        onDownload={handleDownload}
+        onSave={handleSave}
+        onMockTiming={handleMockTiming}
+        onToggleTools={() => showTools = !showTools}
+    />
 
-	<AudioPlayer audio={deck.audio} bind:runningTime />
+    {#if showTools}
 
-	<Nav add={addSlide} onDownload={handleDownload} onSave={handleSave} onMockTiming={handleMockTiming} />
+        <!-- SETTINGS -->
+        <div class="settings-bar">
 
-	<Slides {deck} {runningTime} />
+           <Settings
+			bind:background={deck.background}
+			audio={deck.audio}
+			onUse={(filename) => deck.audio = filename}
+		/>
+
+        </div>
+
+        <!-- AUDIO PLAYBACK -->
+        <div class="audio-bar">
+
+            <AudioPlayer
+                audio={deck.audio}
+                bind:runningTime
+            />
+
+        </div>
+
+    {/if}
+
+    <!-- SLIDES -->
+    <Slides {deck} {runningTime} />
 
 </div>
 
 <style>
-.editor{
-		width:100%;
-	margin:0 auto;
-	padding:2px;
-	display:flex;
-	flex-direction:column;
-	gap:2px;
-}
+    .editor {
+        width: 100%;
+        margin: 0 auto;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
 
+    .settings-bar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 0;
+    }
+
+    .audio-bar {
+        width: 100%;
+    }
+
+    @media (max-width: 900px) {
+        .settings-bar {
+            flex-wrap: wrap;
+        }
+    }
 </style>
