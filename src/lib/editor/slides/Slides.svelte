@@ -39,6 +39,15 @@
 	deck.deck = [...deck.deck];
 
 }
+function startChanged(i, value) {
+  deck.deck[i].start = Number(value);
+
+  if (i > 0) {
+    deck.deck[i - 1].end = Number(value);
+  }
+
+  deck.deck = [...deck.deck];
+}
   function toggleSlide(i) {
 
     collapsed[i] = !collapsed[i];
@@ -119,6 +128,7 @@
 	onDelete={() => deleteSlide(i)}
 
 	onSetStart={() => setStart(i)}
+  onStartChange={(value) => startChanged(i, value)}
 	onSetEnd={() => slide.end = runningTime}
 
 />

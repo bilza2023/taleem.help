@@ -1,4 +1,4 @@
-<!-- src/lib/editor/SlideHeader.svelte -->
+<!--/home/bilal-tariq/00--TALEEM/taleem.help/src/lib/editor/slides/components/SlideHeader.svelte-->
 
 <script>
 
@@ -14,6 +14,7 @@
 	export let onDelete = () => {};
 
 	export let onSetStart = () => {};
+	export let onStartChange = () => {};
 	export let onSetEnd = () => {};
 
 </script>
@@ -42,9 +43,10 @@
 
 			<input
 				type="number"
-				step="0.1"
+				step="1"
 				min="0"
 				bind:value={slide.start}
+				on:change={() => onStartChange(slide.start)}
 				disabled={index === 0}
 			/>
 
