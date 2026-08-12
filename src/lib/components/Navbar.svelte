@@ -45,49 +45,38 @@
 </nav>
 
 <style>
-	.navbar {
-		position: sticky;
-		top: 0;
-		z-index: 100;
+.navbar {
+	 margin: 0;
+    padding: .6rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+	
+    align-items: center;
+    background: var(--theme-panel);
+    color: var(--theme-text);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--theme-border);
+}
 
-		display: flex;
-		align-items: center;
+.home {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--theme-text);
+    transition: color 0.2s ease;
+}
 
-		padding: 0.75rem 1rem;
+.home:hover {
+    color: var(--theme-accent);
+}
 
-		background: color-mix(
-			in srgb,
-			var(--pico-background-color) 92%,
-			transparent
-		);
-
-		opacity: 0.75;
-		color: var(--pico-color);
-
-		backdrop-filter: blur(10px);
-
-		border-bottom: 1px solid var(--pico-muted-border-color);
-	}
-
-	.home {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.55rem;
-
-		text-decoration: none;
-
-		font-size: 1.05rem;
-		font-weight: 600;
-
-		transition: color 0.2s ease;
-	}
-
-	.home:hover {
-		color: var(--pico-color);
-	}
-
-	.icon {
-		font-size: 1.15rem;
-		line-height: 1;
-	}
+.icon {
+    font-size: 1.15rem;
+    line-height: 1;
+}
 </style>

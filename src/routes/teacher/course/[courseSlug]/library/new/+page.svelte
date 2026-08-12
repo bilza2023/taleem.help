@@ -1,264 +1,315 @@
 <script>
+    import { goto } from "$app/navigation";
+    import { page } from "$app/state";
+    import GroupingsDropDown from "$lib/components/GroupingsDropDown.svelte";
+    import apiFetch from "$lib/utils/fetch";
 
-	import { goto } from "$app/navigation";
-	import { page } from "$app/state";
+    const courseSlug = page.params.courseSlug;
 
-	import apiFetch from "$lib/utils/fetch";
+    let saving = false;
+    let error = "";
 
-	const courseSlug = page.params.courseSlug;
+    let form = {
+        slug: "",
+        title: "",
+        description: "",
+        type: "ARTICLE",
+        body: "",
+        thumbnail: "",
+        courseSlug,
+        groupingId: ""
+    };
 
-	let saving = false;
-	let error = "";
+    async function save() {
+        error = "";
+        saving = true;
 
-	let form = {
+        try {
+            await apiFetch(
+                "POST",
+                "/admin/library",
+                {
+                    ...form,
+                    groupingId: Number(form.groupingId)
+                }
+            );
 
-		slug: "",
-		title: "",
-		description: "",
-		type: "ARTICLE",
-		body: "",
-		thumbnail: "",
-		courseSlug
-
-	};
-
-	async function save() {
-
-		error = "";
-		saving = true;
-
-		try {
-
-			await apiFetch(
-
-				"POST",
-
-				"/admin/library",
-
-				form
-
-			);
-
-			goto(`/teacher/course/${courseSlug}/library`);
-
-		}
-		catch (err) {
-
-			error = err.message;
-
-		}
-		finally {
-
-			saving = false;
-
-		}
-
-	}
-
+            goto(`/teacher/course/${courseSlug}/library`);
+        }
+        catch (err) {
+            error = err.message;
+        }
+        finally {
+            saving = false;
+        }
+    }
 </script>
 
 <svelte:head>
-
-	<title>New Library Item</title>
-
+    <title>New Library Item</title>
 </svelte:head>
 
 <header>
+    <div>
+        <h1>New Library Item</h1>
+        <p>Create a new library resource.</p>
+    </div>
 
-	<div>
-
-		<h1>New Library Item</h1>
-
-		<p>
-
-			Create a new library resource.
-
-		</p>
-
-	</div>
-
-	<button
-
-		type="button"
-
-		class="secondary"
-
-		onclick={() => goto(`/teacher/course/${courseSlug}/library`)}
-
-	>
-
-		Cancel
-
-	</button>
-
+    <button
+        type="button"
+        class="secondary"
+        onclick={() => goto(`/teacher/course/${courseSlug}/library`)}
+    >
+        Cancel
+    </button>
 </header>
 
 <form
-
-	onsubmit={async (e) => {
-
-		e.preventDefault();
-
-		await save();
-
-	}}
-
+    onsubmit={async (e) => {
+        e.preventDefault();
+        await save();
+    }}
 >
+    <div class="grid">
 
-	<label>
+        <label>
+            Title
+            <input
+                bind:value={form.title}
+                placeholder="Resource title"
+                required
+            />
+        </label>
 
-		Title
+        <label>
+            Slug
+            <input
+                bind:value={form.slug}
+                placeholder="resource-slug"
+                required
+            />
+        </label>
 
-		<input
-			bind:value={form.title}
-			required
-		/>
+    </div>
 
-	</label>
+    <label>
+        Description
+        <textarea
+            rows="3"
+            bind:value={form.description}
+            placeholder="Short description..."
+        ></textarea>
+    </label>
 
-	<label>
+    <div class="grid">
 
-		Slug
+        <label>
+            Course
+            <input
+                bind:value={form.courseSlug}
+                readonly
+            />
+        </label>
 
-		<input
-			bind:value={form.slug}
-			required
-		/>
+        <label>
+            Grouping
+            <GroupingsDropDown
+                courseSlug={courseSlug}
+                value={form.groupingId}
+                onChange={(groupingId) => form.groupingId = groupingId}
+            />
+        </label>
 
-	</label>
+    </div>
 
-	<label>
+    <div class="grid">
 
-		Description
+        <label>
+            Type
+            <select bind:value={form.type}>
+                <option value="ARTICLE">ARTICLE</option>
+                <option value="PLAYER">PLAYER</option>
+                <option value="MCQ">MCQ</option>
+            </select>
+        </label>
 
-		<textarea
-			rows="3"
-			bind:value={form.description}
-		/>
+        <label>
+            Thumbnail
+            <input
+                bind:value={form.thumbnail}
+                placeholder="box.webp"
+            />
+        </label>
 
-	</label>
+    </div>
 
-	<label>
+    <label>
+        Body
+        <textarea
+            class="body"
+            rows="15"
+            bind:value={form.body}
+            placeholder="Content..."
+        ></textarea>
+    </label>
 
-		Course
+    {#if error}
+        <article class="error">
+            {error}
+        </article>
+    {/if}
 
-		<input
-			bind:value={form.courseSlug}
-			readonly
-		/>
-
-	</label>
-
-	<label>
-
-		Type
-
-		<select bind:value={form.type}>
-
-			<option value="ARTICLE">ARTICLE</option>
-			<option value="PLAYER">PLAYER</option>
-			<option value="MCQ">MCQ</option>
-
-		</select>
-
-	</label>
-
-	<label>
-
-		Thumbnail
-
-		<input
-			bind:value={form.thumbnail}
-		/>
-
-	</label>
-
-	<label>
-
-		Body
-
-		<textarea
-			rows="15"
-			bind:value={form.body}
-		/>
-
-	</label>
-
-	{#if error}
-
-		<article>
-
-			{error}
-
-		</article>
-
-	{/if}
-
-	<footer>
-
-		<button
-			type="submit"
-			disabled={saving}
-		>
-
-			{saving ? "Creating..." : "Create Library Item"}
-
-		</button>
-
-	</footer>
-
+    <footer>
+        <button
+            type="submit"
+            disabled={saving || !form.groupingId}
+        >
+            {saving ? "Creating..." : "Create Library Item"}
+        </button>
+    </footer>
 </form>
-
 <style>
+    header {
+        max-width: 900px;
+        margin: 0 auto 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+    }
 
-	header {
+    header h1 {
+        margin: 0 0 .35rem;
+    }
 
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 2rem;
+    header p {
+        margin: 0;
+        opacity: .6;
+    }
 
-	}
+    header button {
+        margin: 0;
+        flex-shrink: 0;
+    }
 
-	form {
+    form {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
 
-		max-width: 900px;
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+        margin-bottom: .25rem;
+    }
 
-	}
+    label {
+        display: block;
+        margin-bottom: 1.25rem;
+        font-weight: 600;
+    }
 
-	label {
+    input,
+    select,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: .45rem;
 
-		display: block;
-		margin-bottom: 1rem;
+        background: #171717;
+        color: #f2f2f2;
+        border: 1px solid #3a3a3a;
+        border-radius: 6px;
+    }
 
-	}
+    input,
+    select {
+        min-height: 2.7rem;
+    }
 
-	input,
-	select,
-	textarea {
+    input::placeholder,
+    textarea::placeholder {
+        color: #777;
+    }
 
-		width: 100%;
+    input:focus,
+    select:focus,
+    textarea:focus {
+        background: #1b1b1b;
+        border-color: #666;
+        box-shadow: 0 0 0 2px rgba(255,255,255,.06);
+    }
 
-	}
+    input[readonly] {
+        background: #111;
+        color: #999;
+        cursor: default;
+    }
 
-	input[readonly] {
+    textarea {
+        min-height: 8rem;
+        resize: vertical;
+        line-height: 1.5;
+    }
 
-		background: var(--pico-muted-background-color);
-		cursor: default;
+    .body {
+        min-height: 24rem;
+        font-family: monospace;
+    }
 
-	}
+    /* Grouping dropdown component */
+    :global(select) {
+        background-color: #171717;
+        color: #f2f2f2;
+    }
 
-	textarea {
+    :global(option) {
+        background: #171717;
+        color: #f2f2f2;
+    }
 
-		min-height: 8rem;
-		font-family: monospace;
+    .error {
+        margin: 1rem 0;
+        padding: .85rem 1rem;
+        border-left: 4px solid #ff6b6b;
+        background: rgba(255,107,107,.08);
+        color: #ff8f8f;
+        border-radius: 4px;
+    }
 
-	}
+    footer {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid rgba(255,255,255,.1);
+    }
 
-	footer {
+    footer button {
+        margin: 0;
+    }
 
-		margin-top: 2rem;
+    @media (max-width: 700px) {
+        header {
+            flex-direction: column;
+            gap: 1rem;
+        }
 
-	}
+        header button {
+            width: 100%;
+        }
 
+        .grid {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+
+        footer button {
+            width: 100%;
+        }
+    }
 </style>

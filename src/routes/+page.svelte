@@ -2,11 +2,11 @@
 ///home/bilal-tariq/00--TALEEM/taleem.help/src/routes/+page.svelte
 
 	import HomeLinks from "$lib/components/HomeLinks.svelte";
-	import Subnav from "$lib/components/Subnav.svelte";
+	import SubNav from "$lib/components/SubNav.svelte";
 	import Footer from "$lib/components/Footer.svelte";
 	import apiFetch from "$lib/utils/fetch";
 	import { page } from "$app/state";
-
+	
 	let home = $state(null);
 	let error = $state("");
 	let active = $state("all");
@@ -86,9 +86,11 @@ async function loadLibrary(query = {}, id = "all") {
 		}
 
 	});
+
 </script>
 
-<Subnav active={active} />
+
+<SubNav active={active} />
 
 {#if error}
 
@@ -111,17 +113,14 @@ async function loadLibrary(query = {}, id = "all") {
 <Footer />
 {/if}
 
-
 <style>
-:global(html),
-:global(body){
-    margin:0;
-    padding:0;
+
+.container {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: var(--theme-panel);
+    color: var(--theme-text);
 }
-	.container {
-		padding: 0px;
-		margin: 0px;
-		min-height: 100vh;
-	}
 
 </style>

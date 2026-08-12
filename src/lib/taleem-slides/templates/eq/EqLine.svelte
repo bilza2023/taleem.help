@@ -52,8 +52,12 @@
     font-size:calc(var(--base-font)*1.5);
 }
 .line.active{
+ border-top:2px solid #ef4444;
+border-left:2px solid #ef4444;
+border-right:2px solid #ef4444;
+
         background:color-mix(in srgb,var(--player-surface) 90%,var(--player-text) 15%);
-    border-color:var(--player-primary);
+   
     border-left:calc(var(--base-font)*.3) solid var(--player-primary);
     box-shadow:0 0 calc(var(--base-font)*.5)
         color-mix(in srgb,var(--player-primary) 25%,transparent);

@@ -43,7 +43,8 @@
     grid-template-columns:minmax(0,58%) minmax(0,42%);
     gap:20px;
     background:color-mix(in srgb,var(--player-surface) 85%,var(--player-text) 15%);
-    border:2px solid var(--player-border);
+    /* border:2px solid var(--player-border); */
+     border-bottom:3px solid #ef4444;
     border-top:0;
     border-left:8px solid var(--player-primary);
     border-radius:0 0 12px 12px;

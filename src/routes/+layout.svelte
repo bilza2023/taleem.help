@@ -1,40 +1,38 @@
 <script>
-	import { page } from "$app/state";
+    import { page } from "$app/state";
+    import Navbar from "$lib/components/Navbar.svelte";
+    import AdminNavbar from "$lib/components/AdminNavbar.svelte";
+    import TaleemTheme from "$lib/taleem-themes/TaleemTheme.svelte";
+    import { blueTheme } from "$lib/taleem-themes/index.js";
 
-	// import "@picocss/pico/css/pico.classless.min.css";
-	// import "../app.css";
-
-	import Navbar from "$lib/components/Navbar.svelte";
-	import AdminNavbar from "$lib/components/AdminNavbar.svelte";
-
-	let { children } = $props();
+    let { children } = $props();
 </script>
 
-{#if page.url.pathname.startsWith("/teacher")}
+<TaleemTheme theme={blueTheme}>
+    {#if page.url.pathname.startsWith("/teacher")}
+        <AdminNavbar />
+    {:else if !page.url.pathname.startsWith("/player") && !page.url.pathname.startsWith("/present")}
+        <Navbar />
+    {/if}
 
-	<AdminNavbar />
-
-{:else if !page.url.pathname.startsWith("/player") && !page.url.pathname.startsWith("/present") }
-
-	<Navbar />
-
-{/if}
-
-<main>
-
-	{@render children()}
-
-</main>
+    <main>
+        {@render children()}
+    </main>
+</TaleemTheme>
 
 <style>
-
-	main {
-color: antiquewhite;
-       padding: 0px;
-	   margin: 0px;
-	   background-color: rgb(13, 10, 22);
-		width: 100%;
-
-	}
-
+:global(html),
+:global(body) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    background: var(--theme-panel);
+}
+main {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: var(--theme-panel);
+}
 </style>

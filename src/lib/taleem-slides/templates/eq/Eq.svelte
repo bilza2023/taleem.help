@@ -22,9 +22,11 @@
         [...lines].reverse().find(line => currentTime >= line.showAt)
         ?? lines[0];
 
-    $: startIndex = Math.max(0, currentIndex - 1);
+    // $: startIndex = Math.max(0, currentIndex - 1);
+    // $: visibleLines = lines.slice(startIndex, currentIndex + 1);
+$: startIndex = Math.max(0, currentIndex - 1);
+$: visibleLines = lines.slice(startIndex);
 
-    $: visibleLines = lines.slice(startIndex, currentIndex + 1);
 </script>
 <div class="slide eq">
     <div class="lines">

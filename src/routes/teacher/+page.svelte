@@ -1,5 +1,5 @@
 <script>
-
+///home/bilal-tariq/00--TALEEM/taleem.help/src/routes/teacher/+page.svelte
 	import { onMount } from "svelte";
 	import { goto } from "$app/navigation";
 
@@ -48,7 +48,9 @@
 		goto(`/teacher/course/${slug}/communication`);
 
 	}
-
+function openGroupings(slug) {
+    goto(`/teacher/course/${slug}/groupings`);
+}
 	function openSubscriptions(slug) {
 
 		goto(`/teacher/course/${slug}/subscriptions`);
@@ -110,6 +112,7 @@
 
 				<th>Course</th>
 				<th>Library</th>
+				<th>Groupings</th>
 				<th>Communication</th>
 				<th>Subscriptions</th>
 
@@ -143,6 +146,11 @@
 
 					</td>
 
+                    <td>
+    <button onclick={() => openGroupings(course.slug)}>
+        Groupings
+    </button>
+</td>
 					<td>
 
 						<button

@@ -10,15 +10,15 @@
 	import TaleemUI from "$lib/taleemUI/TaleemUI.svelte";
 	import { getPlayerSize } from "./js/getPlayerSize.js";
 	import { Howl }from "howler";
+
 // import presentation from "$lib/taleem-specs/samples/golden-deck-8aug26.json";
 // $: console.log("presentation",presentation);
 //////////////////////////////////////////////////	
     let presentation = null;
     let timer = null;
     let currentTime = 0;
-
-let PLAYER_WIDTH = 0;
-let PLAYER_HEIGHT = 0;
+	let PLAYER_WIDTH = 0;
+	let PLAYER_HEIGHT = 0;
 
 ///////////////////////TICKER FUNCTION///////////////////////////////////
 	let deckEndTime = 0;
@@ -115,10 +115,11 @@ onMount(async () => {
 	PLAYER_HEIGHT = playerSize.height;
 
 	 window.addEventListener("resize", resizePlayer);
-
 	return () => window.removeEventListener("resize", resizePlayer);
 });
 </script>
+
+
 
 {#if presentation}
 
@@ -170,11 +171,7 @@ onMount(async () => {
 
 
 <style>
-html,body{
-    margin:0;
-    padding:0;
-    overflow:hidden;
-}
+
 	.player{
 	width:fit-content;
 	margin:0 auto;
