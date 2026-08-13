@@ -143,25 +143,97 @@
 	</table>
 
 {/if}
-
 <style>
+	:global(body) {
+		margin: 0;
+		background: var(--theme-panel);
+		color: var(--theme-text);
+	}
+
+	h1 {
+		width: min(92%, 1100px);
+		margin: 2rem auto 1rem;
+		color: var(--theme-text);
+		font-size: 1.8rem;
+	}
+
+	p {
+		width: min(92%, 1100px);
+		margin: 0 auto 1.25rem;
+	}
+
+	a {
+		color: var(--theme-accent);
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
 
 	table {
+		width: min(92%, 1100px);
+		margin: 1.5rem auto 2rem;
+		border-collapse: separate;
+		border-spacing: 0;
+		border: 1px solid var(--theme-border);
+		border-radius: 10px;
+		overflow: hidden;
+		background: var(--theme-panel);
+		color: var(--theme-text);
+	}
 
-		width: 100%;
-
+	th,
+	td {
+		padding: .8rem 1rem;
+		border-bottom: 1px solid var(--theme-border);
+		text-align: left;
 	}
 
 	th {
+		background: var(--theme-accent);
+		color: var(--theme-text);
+		font-weight: 700;
+	}
 
-		text-align: left;
+	tr:last-child td {
+		border-bottom: none;
+	}
 
+	tbody tr:hover {
+		background: rgba(96, 165, 250, .08);
 	}
 
 	code {
-
+		color: var(--theme-text);
 		white-space: nowrap;
-
+		font-family: monospace;
 	}
 
+	article {
+		width: min(92%, 1100px);
+		margin: 1.5rem auto;
+		padding: 1rem;
+		box-sizing: border-box;
+		border: 1px solid var(--theme-border);
+		border-radius: 10px;
+		background: var(--theme-panel);
+		color: var(--theme-text);
+	}
+
+	@media (max-width: 700px) {
+		table {
+			display: block;
+			overflow-x: auto;
+		}
+
+		th,
+		td {
+			white-space: nowrap;
+		}
+
+		h1 {
+			font-size: 1.5rem;
+		}
+	}
 </style>

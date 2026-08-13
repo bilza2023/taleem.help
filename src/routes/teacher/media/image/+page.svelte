@@ -113,3 +113,90 @@
 	</button>
 
 </p>
+
+<style>
+	:global(body) {
+		margin: 0 !important;
+		background: var(--theme-panel) !important;
+		color: var(--theme-text) !important;
+	}
+
+	h1 {
+		width: 90% !important;
+		max-width: 720px !important;
+		margin: 2rem auto 1rem !important;
+		color: var(--theme-text) !important;
+	}
+
+	p {
+		width: 90% !important;
+		max-width: 720px !important;
+		margin: 0 auto 1rem !important;
+		color: var(--theme-text) !important;
+	}
+
+	div {
+		width: 90% !important;
+		max-width: 720px !important;
+		margin: 0 auto 1rem !important;
+		padding: 1rem !important;
+		box-sizing: border-box !important;
+		background: var(--theme-panel) !important;
+		color: var(--theme-text) !important;
+		border: 1px solid var(--theme-border) !important;
+		border-radius: 10px !important;
+	}
+
+	label {
+		display: flex !important;
+		flex-direction: column !important;
+		gap: .5rem !important;
+		color: var(--theme-text) !important;
+	}
+
+	input,
+	textarea {
+		width: 100% !important;
+		box-sizing: border-box !important;
+		margin: 0 !important;
+		padding: .7rem !important;
+		background: var(--theme-panel) !important;
+		color: var(--theme-text) !important;
+		border: 1px solid var(--theme-border) !important;
+		border-radius: 7px !important;
+	}
+
+	input[type="file"] {
+		color: var(--theme-text) !important;
+		cursor: pointer;
+	}
+
+	textarea {
+		min-height: 100px !important;
+		resize: vertical;
+	}
+
+	input:focus,
+	textarea:focus {
+		border-color: var(--theme-accent) !important;
+		outline: none !important;
+	}
+
+	button {
+		display: block !important;
+		width: 90% !important;
+		max-width: 720px !important;
+		margin: 1.25rem auto 2rem !important;
+		padding: .75rem 1.25rem !important;
+		background: var(--theme-accent) !important;
+		color: var(--theme-text) !important;
+		border: 1px solid var(--theme-accent) !important;
+		border-radius: 8px !important;
+		font-weight: 700 !important;
+		cursor: pointer !important;
+	}
+
+	button:hover {
+		opacity: .85 !important;
+	}
+</style>
