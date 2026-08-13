@@ -1,16 +1,16 @@
 <script>
 	import { onMount } from "svelte";
 	import CourseLinks from "$lib/components/CourseLinks.svelte";
-	import CourseSubnav from "$lib/components/CourseSubnav.svelte";
 	import Footer from "$lib/components/Footer.svelte";
 	import apiFetch from "$lib/utils/fetch";
+import SubNav from "$lib/components/SubNav.svelte";
+	let active = $state("courses");
 
 	let home = $state(null);
 	let error = $state("");
 
-	let active = $state("all");
 
-	async function loadCourses(query = {}, id = "all") {
+	async function loadCourses(query = {}, id = "courses") {
 
 		active = id;
 
@@ -48,25 +48,12 @@
 
 	onMount(() => {
 
-		loadCourses({}, "all");
+		loadCourses({}, "courses");
 
 	});
 </script>
 
-<style>
-
-	.container {
-		padding: 10px;
-		margin: 10px;
-		min-height: 100vh;
-	}
-
-</style>
-
-<CourseSubnav
-	active={active}
-	onQuery={loadCourses}
-/>
+<SubNav active={active} />
 
 {#if error}
 
@@ -88,3 +75,13 @@
 	<br/>
 <Footer />
 {/if}
+
+<style>
+
+	.container {
+		padding: 10px;
+		margin: 10px;
+		min-height: 100vh;
+	}
+
+</style>

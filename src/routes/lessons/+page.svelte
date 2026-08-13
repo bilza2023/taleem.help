@@ -7,20 +7,30 @@
 	import Footer from "$lib/components/Footer.svelte";
 	import apiFetch from "$lib/utils/fetch";
 	import { page } from "$app/state";
-
+	import GroupingNav from "$lib/components/GroupingNav.svelte";
+	
 	let home = $state(null);
     let course = $state(null);
 	let error = $state("");
 	let active = $state("all");
 
+	let selectedGrouping = $state("");
+
+let visibleItems = $derived(
+	!selectedGrouping
+		? home?.items ?? []
+		: (home?.items ?? []).filter(
+			item => String(item.grouping?.id) === String(selectedGrouping)
+		)
+);
+
+function handleGroupingChange(id) {
+	selectedGrouping = id;
+}
 async function loadLibrary(courseSlug) {
-
 	active = courseSlug;
-
 	try {
-
 		error = "";
-
 		// Load course
 		const courses = await apiFetch(
 			"GET",
@@ -65,11 +75,10 @@ $effect(() => {
 		loadLibrary(courseSlug);
 
 	}
-
 });
+
 </script>
 
-<LessonsNav active={active} />
 
 {#if error}
 
@@ -86,7 +95,14 @@ $effect(() => {
 	course={course}
 	lessonCount={home.items.length}
 />
-		<HomeLinks homeLinks={home.items} />
+<GroupingNav
+	courseSlug={course.slug}
+	onChange={handleGroupingChange}
+/>
+<div class="links-container">
+	<HomeLinks homeLinks={visibleItems} />
+
+</div>
 
 	</div>
 
@@ -96,12 +112,18 @@ $effect(() => {
 {/if}
 
 
+
 <style>
 
-	.container {
-		padding: 0px;
-		margin: 0px;
-		min-height: 100vh;
-	}
+.links-container{
+	padding:.15rem;
+}
+.container {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: var(--theme-panel);
+    color: var(--theme-text);
+}
 
 </style>

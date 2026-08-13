@@ -1,94 +1,49 @@
 <script>
-///home/bilal-tariq/00--TALEEM/taleem.help/src/routes/+page.svelte
-
 	import HomeLinks from "$lib/components/HomeLinks.svelte";
 	import SubNav from "$lib/components/SubNav.svelte";
 	import Footer from "$lib/components/Footer.svelte";
 	import apiFetch from "$lib/utils/fetch";
-	import { page } from "$app/state";
-	
+
 	let home = $state(null);
 	let error = $state("");
-	let active = $state("all");
+	let active = "home";
 
-async function loadLibrary(query = {}, id = "all") {
+	async function loadLibrary() {
 
-	active = id;
+		try {
 
-	try {
+			error = "";
 
-		error = "";
+			const items = await apiFetch(
+				"GET",
+				"/public/library"
+			);
 
-		const params = new URLSearchParams(query);
+			items.sort((a, b) =>
+				new Date(b.createdAt) - new Date(a.createdAt)
+			);
 
-		let url = "/public/library";
+			home = {
+				items: items.map(item => ({
+					...item,
+					image: `/content/images/${item.thumbnail}`
+				}))
+			};
 
-		if (params.toString()) {
+		}
+		catch (err) {
 
-			url += `?${params.toString()}`;
+			error = err.message;
 
 		}
 
-		const items = await apiFetch("GET", url);
-
-		// --------------------------------------------------
-		// latest first.
-		// --------------------------------------------------
-		items.sort((a, b) =>
-			new Date(b.createdAt) - new Date(a.createdAt)
-		);
-		// oldest first
-		// items.sort((a, b) =>
-		// 	new Date(a.createdAt) - new Date(b.createdAt)
-		// );
-		home = {
-			items: items.map(item => ({
-				...item,
-				image: `/content/images/${item.thumbnail}`
-			}))
-		};
-
 	}
-	catch (err) {
-
-		error = err.message;
-
-	}
-
-}
 
 	$effect(() => {
-
-		const course = page.url.searchParams.get("course");
-		const access = page.url.searchParams.get("access");
-		const sort = page.url.searchParams.get("sort");
-
-		if (course) {
-
-			loadLibrary({ course, sort }, course);
-
-		}
-		else if (access) {
-
-			loadLibrary(
-				{ access, sort },
-				access === "OPEN" ? "free" : "premium"
-			);
-
-		}
-		else {
-
-			loadLibrary(
-				sort ? { sort } : {},
-				"all"
-			);
-
-		}
-
+		loadLibrary();
 	});
 
 </script>
-
 
 <SubNav active={active} />
 
@@ -110,17 +65,19 @@ async function loadLibrary(query = {}, id = "all") {
 
 	<br/>
 	<br/>
-<Footer />
+
+	<Footer />
+
 {/if}
 
 <style>
 
 .container {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background: var(--theme-panel);
-    color: var(--theme-text);
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: var(--theme-panel);
+	color: var(--theme-text);
 }
 
 </style>

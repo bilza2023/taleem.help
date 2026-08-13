@@ -6,11 +6,9 @@
 	} = $props();
 
 	const categories = [
-		{ id: "all", title: "All", href: "/" },
-		{ id: "free", title: "Free Content", href: "/?access=OPEN" },
-		{ id: "premium", title: "Premium Content", href: "/?access=SUBSCRIPTION" },
-		{ id: "blog", title: "Blog", href: "/blog" },
-		{ id: "courses", title: "Courses", href: "/courses" }
+		{ id: "home", title: "Home", href: "/" },
+		{ id: "courses", title: "Courses", href: "/courses" },
+		{ id: "blog", title: "Blog", href: "/blog" }
 	];
 </script>
 

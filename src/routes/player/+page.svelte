@@ -92,6 +92,7 @@ onMount(async () => {
 	// --------------------------------------------------
 	const item = await apiFetch("GET",`/library/${lessonSlug}`);
 	presentation = JSON.parse(item.body);
+	console.log("presentation",presentation);
 	// --------------------------------------------------
 	// resolve image paths
 	// --------------------------------------------------
