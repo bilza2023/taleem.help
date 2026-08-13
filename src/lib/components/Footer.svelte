@@ -11,9 +11,9 @@
 
 		<nav class="links">
 			<a href="/">Home</a>
-			<a href="/hub">Hub</a>
-			<a href="/present?deck=what-is-taleem-help">About</a>
-			<a href="/articles?article=privacy">Privacy</a>
+			<!-- <a href="/hub">Hub</a> -->
+			<!-- <a href="/present?deck=what-is-taleem-help">About</a> -->
+			<!-- <a href="/articles?article=privacy">Privacy</a> -->
 		</nav>
 
 		<div class="copyright">

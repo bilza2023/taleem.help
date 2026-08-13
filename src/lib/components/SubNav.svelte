@@ -8,7 +8,7 @@
 	const categories = [
 		{ id: "home", title: "Home", href: "/" },
 		{ id: "courses", title: "Courses", href: "/courses" },
-		{ id: "blog", title: "Blog", href: "/blog" }
+		{ id: "blog", title: "Blog", href: "/lessons?course=blog" }
 	];
 </script>
 
