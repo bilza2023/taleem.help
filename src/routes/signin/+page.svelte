@@ -79,62 +79,109 @@
 
 <style>
 	.page {
-		max-width: 420px;
-		margin: 3rem auto;
-		padding: 0 1rem;
+		min-height: 100vh;
+		box-sizing: border-box;
+		padding: 3rem 1rem;
+		background: var(--theme-panel);
+		color: var(--theme-text);
 	}
 
 	.card {
+		width: min(100%, 420px);
+		margin: 0 auto;
 		padding: 1.5rem;
-		border: 1px solid var(--pico-muted-border-color);
+		box-sizing: border-box;
+		border: 1px solid var(--theme-border);
 		border-radius: 10px;
-		background: var(--pico-card-background-color);
+		background: var(--theme-panel);
 		display: flex;
 		flex-direction: column;
-		gap: 0.75rem;
+		gap: .75rem;
 	}
 
 	h2 {
-		margin: 0 0 0.5rem;
+		margin: 0 0 .5rem;
 		text-align: center;
+		color: var(--theme-text);
 	}
 
 	label {
 		margin: 0;
-		font-size: 0.9rem;
+		font-size: .9rem;
 		font-weight: 600;
+		color: var(--theme-text);
 	}
 
 	input {
+		width: 100%;
 		margin: 0;
+		box-sizing: border-box;
+		padding: .65rem .75rem;
+		border: 1px solid var(--theme-border);
+		border-radius: 6px;
+		background: var(--theme-panel);
+		color: var(--theme-text);
+	}
+
+	input::placeholder {
+		color: var(--theme-text);
+		opacity: .55;
+	}
+
+	input:focus {
+		outline: none;
+		border-color: var(--theme-accent);
+		box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-accent) 25%, transparent);
 	}
 
 	button {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
+		width: 100%;
+		margin: .5rem 0 0;
+		padding: .65rem 1rem;
+		border: 1px solid var(--theme-accent);
+		border-radius: 6px;
+		background: var(--theme-accent);
+		color: var(--theme-text);
+		font-weight: 600;
+		cursor: pointer;
+	}
+
+	button:hover:not(:disabled) {
+		opacity: .9;
+	}
+
+	button:disabled {
+		opacity: .6;
+		cursor: default;
 	}
 
 	.error {
 		margin: 0;
-		color: var(--pico-del-color);
-		font-size: 0.9rem;
+		color: #ff8f8f;
+		font-size: .9rem;
 	}
 
 	.footer {
-		margin: 0.75rem 0 0;
+		margin: .75rem 0 0;
 		text-align: center;
-		font-size: 0.9rem;
-		color: var(--pico-muted-color);
+		font-size: .9rem;
+		color: var(--theme-text);
+		opacity: .75;
 	}
 
 	.footer a {
+		color: var(--theme-accent);
 		font-weight: 600;
 		text-decoration: none;
 	}
 
+	.footer a:hover {
+		text-decoration: underline;
+	}
+
 	@media (max-width: 576px) {
 		.page {
-			margin-top: 2rem;
+			padding-top: 2rem;
 		}
 
 		.card {

@@ -3,7 +3,7 @@
 	import CourseLinks from "$lib/components/CourseLinks.svelte";
 	import Footer from "$lib/components/Footer.svelte";
 	import apiFetch from "$lib/utils/fetch";
-import SubNav from "$lib/components/SubNav.svelte";
+	import SubNav from "$lib/components/SubNav.svelte";
 	let active = $state("courses");
 
 	let home = $state(null);

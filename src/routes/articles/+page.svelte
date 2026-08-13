@@ -3,7 +3,6 @@
 	import { onMount } from "svelte";
 	import { page } from "$app/state";
 import {config} from "$lib/config";
-	import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte";
 	import Communication from "$lib/components/Communication.svelte";
 	import Discussion from "$lib/components/Discussion.svelte";
 	import apiFetch from "$lib/utils/fetch";
@@ -57,8 +56,6 @@ let articleBody = $derived.by(() => {
 
 {:else}
 
-<ThemeSwitcher />
-
 <main class="container">
 	<!-- {@html libraryItem.body} -->
 {@html articleBody}
@@ -85,14 +82,16 @@ let articleBody = $derived.by(() => {
 </main>
 
 {/if}
-
 <style>
 	.container {
 		width: min(95vw, 1600px);
+		min-height: 100vh;
 		margin: 0 auto;
 		padding: 1rem 2rem;
 		box-sizing: border-box;
-		font-size: 1.2rem;
+		background: var(--theme-panel);
+		color: var(--theme-text);
+		font-size: 1.75rem;
 		line-height: 1.8;
 	}
 
@@ -113,6 +112,37 @@ let articleBody = $derived.by(() => {
 		display: block;
 		overflow-x: auto;
 		width: 100%;
+		border-color: var(--theme-border);
+	}
+
+	:global(.container a) {
+		color: var(--theme-accent);
+	}
+
+	:global(.container hr) {
+		border-color: var(--theme-border);
+	}
+
+	:global(.container blockquote) {
+		border-left: 4px solid var(--theme-accent);
+		padding-left: 1rem;
+	}
+
+	:global(.container code) {
+		background: var(--theme-panel);
+		border: 1px solid var(--theme-border);
+		color: var(--theme-text);
+		padding: .1rem .3rem;
+		border-radius: 4px;
+	}
+
+	.secondary {
+		padding: 1rem;
+		margin-top: 2rem;
+		border: 1px solid var(--theme-border);
+		border-radius: 8px;
+		color: var(--theme-text);
+		background: var(--theme-panel);
 	}
 
 	@media (max-width: 768px) {
