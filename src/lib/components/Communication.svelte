@@ -18,10 +18,8 @@
 
 		try {
 
-			await apiFetch("POST", "/communication", {
-				librarySlug,
-				type,
-				message
+			await apiFetch("POST", "/user/communication", {
+			librarySlug, type, message
 			});
 
 			message = "";

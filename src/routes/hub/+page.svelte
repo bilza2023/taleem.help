@@ -1,6 +1,7 @@
+
 <script>
 	import { onMount } from "svelte";
-	import { config } from "$lib/config";
+	import apiFetch from "$lib/utils/fetch";
 
 	let communications = $state([]);
 	let loading = $state(true);
@@ -9,58 +10,25 @@
 	onMount(load);
 
 	async function load() {
-
 		loading = true;
 		error = "";
 
-		const token = localStorage.getItem("taleem-token");
-
-		if (!token) {
-
-			error = "Please sign in to view your Hub.";
-			loading = false;
-			return;
-
-		}
-
 		try {
-
-			const res = await fetch(
-				`${config.apiUrl}/communication/me`,
-				{
-					headers: {
-						Authorization: `Bearer ${token}`
-					}
-				}
-			);
-
-			if (!res.ok)
-				throw new Error(`HTTP ${res.status}`);
-
-			communications = await res.json();
-
+		communications = await apiFetch("GET", "/user/me");
 		}
 		catch (err) {
-
 			console.error(err);
 			error = err.message;
-
 		}
 		finally {
-
 			loading = false;
-
 		}
-
 	}
 
 	function formatDate(date) {
-
 		return new Date(date).toLocaleString();
-
 	}
 </script>
-
 {#if loading}
 
 	<main class="feed">

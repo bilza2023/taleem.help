@@ -31,7 +31,8 @@ let articleBody = $derived.by(() => {
 		}
 
 		try {
-			libraryItem = await apiFetch("GET", `/library/${librarySlug}`);
+			// libraryItem = await apiFetch("GET", `/library/${librarySlug}`);
+			libraryItem = await apiFetch("GET", `/public/library/${librarySlug}`);
 			console.log("libraryItem", libraryItem);
 		} catch (err) {
 			error = err.message;

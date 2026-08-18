@@ -1,5 +1,5 @@
 <script>
-
+///home/bilal-tariq/00--TALEEM/taleem.help/src/routes/teacher/course/[courseSlug]/communication/+page.svelte
 	import { onMount } from "svelte";
 	import { page } from "$app/state";
 
@@ -22,13 +22,7 @@
 
 		try {
 
-			items = await apiFetch(
-
-				"GET",
-
-				`/admin/communication/course/${courseSlug}`
-
-			);
+			items = await apiFetch("GET",`/admin/course/${courseSlug}/communication`);
 
 		}
 		catch (err) {
@@ -239,39 +233,12 @@
 {/if}
 
 <style>
-
-	header {
-
-		margin-bottom: 2rem;
-
-	}
-
-	article {
-
-		margin-bottom: 2rem;
-
-	}
-
-	blockquote {
-
-		margin: 1rem 0;
-		white-space: pre-wrap;
-
-	}
-
-	textarea {
-
-		width: 100%;
-		min-height: 8rem;
-
-	}
-
-	footer {
-
-		display: flex;
-		gap: 1rem;
-		margin-top: 1rem;
-
-	}
-
+	header{margin-bottom:2rem}
+	article{margin-bottom:2rem;padding:1.25rem;border:1px solid var(--theme-border);border-radius:10px;background:var(--theme-panel)}
+	blockquote{margin:1rem 0;padding:1rem 1.25rem;border-left:4px solid var(--theme-accent);border-radius:6px;background:rgba(255,255,255,.04);white-space:pre-wrap}
+	textarea{width:100%;min-height:8rem;box-sizing:border-box}
+	footer{display:flex;gap:1rem;margin-top:1rem}
+	footer button{margin:0}
+	footer .secondary{opacity:.7}
+	footer button:not(.secondary){background:var(--theme-accent);color:var(--theme-text)}
 </style>

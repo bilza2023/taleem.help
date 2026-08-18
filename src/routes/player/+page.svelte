@@ -10,7 +10,8 @@
 	import TaleemUI from "$lib/taleemUI/TaleemUI.svelte";
 	import { getPlayerSize } from "./js/getPlayerSize.js";
 	import { Howl }from "howler";
-
+import Communication from "$lib/components/Communication.svelte";
+import Discussion from "$lib/components/Discussion.svelte";
 // import presentation from "$lib/taleem-specs/samples/golden-deck-8aug26.json";
 // $: console.log("presentation",presentation);
 //////////////////////////////////////////////////	
@@ -82,11 +83,11 @@ function resizePlayer() {
     PLAYER_WIDTH = Math.min(maxWidth, widthFromHeight);
     PLAYER_HEIGHT = PLAYER_WIDTH * 9 / 16;
 }
-
+const lessonSlug = get(page).url.searchParams.get("lesson");
 onMount(async () => {
-//  debugger;
+	//  debugger;
 	const params = get(page).url.searchParams;
-	const lessonSlug =params.get("lesson");
+	// const lessonSlug =params.get("lesson");
 	// --------------------------------------------------
 	// load presentation from library
 	// --------------------------------------------------
@@ -171,7 +172,20 @@ onMount(async () => {
 
 {/if}
 
+{#if presentation}
+<div class="lesson-interaction">
 
+	<Communication
+		librarySlug={lessonSlug}
+		type="user-comment"
+	/>
+
+	<Discussion
+		librarySlug={lessonSlug}
+	/>
+
+</div>
+{/if}
 
 <style>
 
@@ -223,5 +237,52 @@ onMount(async () => {
 
 .controls input[type="range"]{
 	flex:1;
+}
+/* ==================================================
+   IMPORTANT: allow player page to scroll below player
+   ================================================== */
+
+:global(html),
+:global(body) {
+	overflow-y: auto !important;
+	height: auto !important;
+}
+
+:global(main) {
+	overflow: visible !important;
+	height: auto !important;
+	min-height: 100vh;
+}
+
+:global(.player-layout) {
+	overflow: visible !important;
+	height: auto !important;
+	min-height: 100vh;
+}
+.lesson-interaction{
+	width:min(95%,900px);
+	margin:2rem auto 4rem;
+	padding:1.5rem;
+	box-sizing:border-box;
+	background:var(--theme-panel);
+	color:var(--theme-text);
+	border:1px solid var(--theme-border);
+	border-radius:14px;
+}
+
+.lesson-interaction :global(textarea){
+	width:100%;
+	box-sizing:border-box;
+}
+
+.lesson-interaction :global(.communication){
+	margin-top:0;
+}
+
+@media(max-width:600px){
+	.lesson-interaction{
+		width:95%;
+		padding:1rem;
+	}
 }
 </style>
