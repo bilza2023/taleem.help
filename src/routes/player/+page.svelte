@@ -90,7 +90,9 @@ onMount(async () => {
 	// --------------------------------------------------
 	// load presentation from library
 	// --------------------------------------------------
-	const item = await apiFetch("GET",`/library/${lessonSlug}`);
+	// const item = await apiFetch("GET",`/library/${lessonSlug}`);
+	const item = await apiFetch("GET",`/public/library/${lessonSlug}`
+);
 	presentation = JSON.parse(item.body);
 	console.log("presentation",presentation);
 	// --------------------------------------------------

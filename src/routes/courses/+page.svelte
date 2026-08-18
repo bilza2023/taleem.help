@@ -1,4 +1,5 @@
 <script>
+///home/bilal-tariq/00--TALEEM/taleem.help/src/routes/courses/+page.svelte
 	import { onMount } from "svelte";
 	import CourseLinks from "$lib/components/CourseLinks.svelte";
 	import Footer from "$lib/components/Footer.svelte";
@@ -10,42 +11,35 @@
 	let error = $state("");
 
 
-	async function loadCourses(query = {}, id = "courses") {
+async function loadCourses(query = {}, id = "courses") {
 
-		active = id;
+	active = id;
 
-		try {
+	try {
 
-			error = "";
+		error = "";
 
-			const params = new URLSearchParams(query);
+		const items = await apiFetch(
+			"GET",
+			"/public/course"
+		);
 
-			let url = "/public/course";
+		home = {
+			items: items.map(item => ({
+				...item,
+				image: `${item.thumbnail}`
+			}))
+		};
+		// home = {items: items};
 
-			if (params.toString()) {
+	}
+	catch (err) {
 
-				url += `?${params.toString()}`;
-
-			}
-
-			const items = await apiFetch("GET", url);
-
-			home = {
-				items: items.map(item => ({
-					...item,
-					image: `/content/images/${item.thumbnail}`
-				}))
-			};
-
-		}
-		catch (err) {
-
-			error = err.message;
-
-		}
+		error = err.message;
 
 	}
 
+}
 	onMount(() => {
 
 		loadCourses({}, "courses");

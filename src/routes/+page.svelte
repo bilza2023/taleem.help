@@ -8,36 +8,47 @@
 	let error = $state("");
 	let active = "home";
 
-	async function loadLibrary() {
+async function loadLibrary() {
 
-		try {
+	try {
 
-			error = "";
+		error = "";
 
-			const items = await apiFetch(
-				"GET",
-				"/public/library"
-			);
+		const courses = await apiFetch(
+			"GET",
+			"/public/course"
+		);
 
-			items.sort((a, b) =>
-				new Date(b.createdAt) - new Date(a.createdAt)
-			);
+		const lists = await Promise.all(
+			courses.map(course =>
+				apiFetch(
+					"GET",
+					`/public/course/${course.slug}/list`
+				)
+			)
+		);
 
-			home = {
-				items: items.map(item => ({
-					...item,
-					image: `/content/images/${item.thumbnail}`
-				}))
-			};
+		const items = lists.flat();
 
-		}
-		catch (err) {
+		items.sort((a, b) =>
+			new Date(b.createdAt) - new Date(a.createdAt)
+		);
 
-			error = err.message;
-
-		}
+		home = {
+			items: items.map(item => ({
+				...item,
+				image: `/content/images/${item.thumbnail}`
+			}))
+		};
 
 	}
+	catch (err) {
+
+		error = err.message;
+
+	}
+
+}
 
 	$effect(() => {
 		loadLibrary();

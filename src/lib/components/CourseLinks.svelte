@@ -102,7 +102,7 @@
 
 			{#if card.image}
 				<img
-					src={`${config.apiUrl}${card.image}`}
+					src={`${config.apiUrl}/content/images/${card.image}`}
 					alt={card.title}
 				/>
 			{/if}

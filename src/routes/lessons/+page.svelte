@@ -1,6 +1,4 @@
 <script>
-///home/bilal-tariq/00--TALEEM/taleem.help/src/routes/+page.svelte
-
 	import HomeLinks from "$lib/components/HomeLinks.svelte";
 	import CourseHero from "$lib/components/CourseHero.svelte";
 	import LessonsNav from "$lib/components/LessonsNav.svelte";
@@ -8,78 +6,82 @@
 	import apiFetch from "$lib/utils/fetch";
 	import { page } from "$app/state";
 	import GroupingNav from "$lib/components/GroupingNav.svelte";
-	
+
 	let home = $state(null);
-    let course = $state(null);
+	let course = $state(null);
 	let error = $state("");
 	let active = $state("all");
-
 	let selectedGrouping = $state("");
 
-let visibleItems = $derived(
-	!selectedGrouping
-		? home?.items ?? []
-		: (home?.items ?? []).filter(
-			item => String(item.grouping?.id) === String(selectedGrouping)
-		)
-);
+	let visibleItems = $derived(
+		!selectedGrouping
+			? home?.items ?? []
+			: (home?.items ?? []).filter(
+				item => item.groupSlug === selectedGrouping
+			)
+	);
 
-function handleGroupingChange(id) {
-	selectedGrouping = id;
-}
-async function loadLibrary(courseSlug) {
-	active = courseSlug;
-	try {
-		error = "";
-		// Load course
-		const courses = await apiFetch(
-			"GET",
-			"/public/course"
-		);
+	function handleGroupingChange(id) {
+		selectedGrouping = id;
+	}
 
-		course = courses.find(c => c.slug === courseSlug);
+	async function loadLibrary(courseSlug) {
 
-		if (!course) {
-			throw new Error(`Course "${courseSlug}" not found.`);
+		active = courseSlug;
+
+		try {
+
+			error = "";
+
+			const courses = await apiFetch(
+				"GET",
+				"/public/course"
+			);
+
+			course = courses.find(
+				c => c.slug === courseSlug
+			);
+
+			if (!course) {
+				throw new Error(
+					`Course "${courseSlug}" not found.`
+				);
+			}
+
+			const items = await apiFetch(
+				"GET",
+				`/public/course/${courseSlug}/list`
+			);
+
+			home = {
+				items: items.map(item => ({
+					...item,
+					image: `/content/images/${item.thumbnail}`
+				}))
+			};
+
+	console.log("course",course);
+		}
+		catch (err) {
+
+			error = err.message;
+
 		}
 
-		// Load lessons
-		const items = await apiFetch(
-			"GET",
-			`/public/library?course=${courseSlug}`
-		);
-
-		home = {
-			items: items.map(item => ({
-				...item,
-				image: `/content/images/${item.thumbnail}`
-			}))
-		};
-
-		console.log("home", home);
-
-	}
-	catch (err) {
-
-		error = err.message;
-
 	}
 
-}
-$effect(() => {
+	$effect(() => {
 
-	const courseSlug = page.url.searchParams.get("course");
+		const courseSlug =
+			page.url.searchParams.get("course");
 
-	if (courseSlug) {
+		if (courseSlug) {
+			loadLibrary(courseSlug);
+		}
 
-		loadLibrary(courseSlug);
-
-	}
-});
+	});
 
 </script>
-
-
 {#if error}
 
 	<p>{error}</p>
@@ -96,7 +98,8 @@ $effect(() => {
 	lessonCount={home.items.length}
 />
 <GroupingNav
-	courseSlug={course.slug}
+	groupings={course.groupings}
+	value={selectedGrouping}
 	onChange={handleGroupingChange}
 />
 <div class="links-container">
