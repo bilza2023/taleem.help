@@ -1,6 +1,7 @@
+
 <script>
 	import { goto } from "$app/navigation";
-	import { config } from "$lib/config";
+	import apiFetch from "$lib/utils/fetch";
 
 	let email = "";
 	let password = "";
@@ -18,37 +19,28 @@
 		}
 
 		loading = true;
-// debugger;
+
 		try {
-			const res = await fetch(`${config.apiUrl}/user/register`, {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json"
-				},
-				body: JSON.stringify({
-					email,
-					password
-				})
+			const data = await apiFetch("POST", "/user/register", {
+				email,
+				password
 			});
 
-			const data = await res.json();
+			localStorage.setItem("taleem-token", data.token);
+			localStorage.setItem("taleem-email", email);
 
-			if (!res.ok) {
-				error = data.message || "Registration failed.";
-				return;
-			}
-
-			localStorage.setItem("token", data.token);
+			window.dispatchEvent(new Event("authChanged"));
 
 			goto("/");
-		} catch (err) {
-			error = "Unable to connect to the server.";
-		} finally {
+		}
+		catch (err) {
+			error = err.message;
+		}
+		finally {
 			loading = false;
 		}
 	}
 </script>
-
 <svelte:head>
 	<title>Sign Up | Taleem.Help</title>
 </svelte:head>
