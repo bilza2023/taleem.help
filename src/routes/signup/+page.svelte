@@ -26,8 +26,8 @@
 				password
 			});
 
-			localStorage.setItem("taleem-token", data.token);
-			localStorage.setItem("taleem-email", email);
+			// localStorage.setItem("taleem-token", data.token);
+			// localStorage.setItem("taleem-email", email);
 
 			window.dispatchEvent(new Event("authChanged"));
 
