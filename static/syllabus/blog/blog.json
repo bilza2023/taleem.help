@@ -1,0 +1,26 @@
+{
+  "slug": "blog",
+  "title": "Taleem Blog",
+  "description": "Articles, explanations, ideas and useful resources for students and teachers.",
+  "thumbnail": "taleem.webp",
+  "groupings": [
+    {
+      "slug": "learning",
+      "title": "Learning",
+      "thumbnail": "taleem.webp",
+      "items": [
+        "what-is-an-llm",
+        "how-to-study-mathematics"
+      ]
+    },
+    {
+      "slug": "technology",
+      "title": "Technology",
+      "thumbnail": "taleem.webp",
+      "items": [
+        "what-is-artificial-intelligence",
+        "what-is-a-programming-language"
+      ]
+    }
+  ]
+}

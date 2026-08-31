@@ -1,0 +1,92 @@
+
+/* =========================================
+   TALEEM UTILS (ACTION-RUNNER SAFE)
+   ---------------------------------
+   - No layout
+   - No component styling
+   - No visual opinions
+   - Only state + micro control
+========================================= */
+
+  
+.taleem-heading-lg {
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+.taleem-heading-md {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+
+.taleem-li {
+  list-style: none;
+  font-size: 3rem;
+
+  border: 1px solid rgba(247, 243, 243, 0.2);
+  border-radius: 10px;
+
+  /* subtle depth */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin : 3rem;
+  /* internal breathing */
+  padding: 1em 1em;
+}
+
+.taleem-para {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+  padding: 1em 1.2em;
+
+  line-height: 1.6;
+}
+/* ////////////////////////////////////////////////////////////// */
+
+/* QUERIES */
+/* ////////////////////////////////////////////////////////////// */
+
+/* QUERIES */
+
+/* tablet */
+@media (max-width: 1024px) {
+
+  .taleem-heading-md {
+    font-size: 2rem;
+  }
+
+
+  .taleem-heading-lg {
+    font-size: 4rem;
+  }
+
+  .taleem-li {
+    font-size: 3rem;
+  }
+}
+
+
+/* mobile */
+@media (max-width: 600px) {
+
+  .taleem-heading-md {
+    font-size: 1.5rem;
+  }
+
+  .taleem-heading-lg {
+    font-size: 2.5rem;
+  }
+
+  .taleem-li {
+    font-size: 2.5rem;
+  }
+}

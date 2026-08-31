@@ -1,0 +1,120 @@
+
+/* src/lib/styles/editor.css */
+
+/* ---------- Base ---------- */
+
+.slide-editor {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  border-bottom: 1px solid #222;
+}
+
+.slide-editor *,
+.slide-editor *::before,
+.slide-editor *::after {
+  box-sizing: border-box;
+}
+
+/* ---------- Inputs ---------- */
+
+.slide-editor input,
+.slide-editor textarea,
+.slide-editor select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  background: #111;
+  color: #fff;
+
+  border: 1px solid #333;
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.slide-editor textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* ---------- Flex rows ---------- */
+
+.slide-editor .row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.slide-editor .row input,
+.slide-editor .row textarea,
+.slide-editor .row select {
+  flex: 1;
+  margin-bottom: 0;
+  min-width: 0;
+}
+
+/* ---------- Buttons ---------- */
+
+.slide-editor button {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: white;
+
+  padding: 6px 8px;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.slide-editor button:hover {
+  background: #334155;
+}
+
+/* ---------- Warnings ---------- */
+
+.slide-editor .warning {
+  color: #f87171;
+  font-size: 12px;
+}
+
+/* ---------- Preview ---------- */
+
+.slide-editor .preview {
+  margin-top: 12px;
+}
+
+.slide-editor .preview img {
+  display: block;
+  max-width: 100%;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+/* ---------- Tables ---------- */
+
+.slide-editor table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.slide-editor td,
+.slide-editor th {
+  border: 1px solid #444;
+}
+
+/* ---------- Utility ---------- */
+
+.slide-editor .add-btn {
+  margin-top: 6px;
+}
+
+.slide-editor .title {
+  color: #aaa;
+  font-size: 13px;
+  margin-bottom: 6px;
+}

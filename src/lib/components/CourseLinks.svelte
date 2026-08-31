@@ -1,0 +1,107 @@
+<script>
+
+	let { homeLinks = [] } = $props();
+import { config } from "$lib/config.js";
+</script>
+
+<div class="grid">
+	{#each homeLinks as card}
+		<a
+			class={`card ${card.access?.toLowerCase()}`}
+			href={`${config.basePath}/lessons?course=${encodeURIComponent(card.slug)}`}
+		>
+			{#if card.image}
+				<img
+				src={`${config.basePath}/content/images/${card.image}`}
+					alt={card.title}
+				/>
+			{/if}
+
+			<div class="content">
+				<h2>{card.title}</h2>
+
+				{#if card.description}
+					<p>{card.description}</p>
+				{/if}
+			</div>
+		</a>
+	{/each}
+</div>
+
+
+<style>
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+		gap: 20px;
+		margin-top: 24px;
+	}
+
+	.card {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+		border: 1px solid var(--pico-muted-border-color);
+		border-radius: 12px;
+		overflow: hidden;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+		transition:
+			transform 0.15s ease,
+			background-color 0.2s ease,
+			border-color 0.2s ease,
+			box-shadow 0.2s ease;
+	}
+
+	.card:hover {
+		transform: translateY(-2px);
+		border-color: var(--pico-primary);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+	}
+
+	.card.open {
+		background: #9db6a4;
+	}
+
+	.card.members {
+		background: #737c8b;
+	}
+
+	.card.subscription {
+		background: #b4a78f;
+	}
+
+	.card img {
+		display: block;
+		width: calc(100% - 8px);
+		height: 140px;
+		object-fit: cover;
+		margin: 4px;
+		padding: 0;
+		border-radius: 8px;
+	}
+
+	.content h2 {
+		margin: 4px;
+		padding: 4px;
+		font-size: 0.95rem;
+		font-weight: 600;
+		line-height: 1.35;
+		color: var(--pico-color);
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	.content p {
+		margin: 4px;
+		padding: 4px;
+		font-size: 0.75rem;
+		font-weight: 400;
+		color: black;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+</style>

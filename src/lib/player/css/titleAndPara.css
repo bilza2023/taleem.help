@@ -1,0 +1,122 @@
+/* ----------------------------------
+   Title And Paragraph Slide
+---------------------------------- */
+
+.slide.titleAndPara {
+   display: flex;
+   flex-direction: column;
+
+   justify-content: flex-start;
+   align-items: center;
+
+   padding-top: 3rem;
+   gap: 1rem;
+
+   text-align: center;
+}
+
+/* Title → NO animation (anchor) */
+
+/* .slide.titleAndPara h1 {
+   font-size: 3rem;
+   font-weight: 700;
+   line-height: 1.2;
+
+   max-width: 1100px;
+   margin: 0 auto;
+} */
+
+/* Paragraph → soft entry */
+
+/* .slide.titleAndPara p {
+   font-size: 2.2rem;
+   line-height: 1.7;
+
+   max-width: 1000px;
+   margin: 0 auto;
+
+   opacity: 0;
+   transform: translateY(8px);
+
+   animation: paraSoftIn 0.45s ease-out forwards;
+   animation-delay: 0.15s;
+} */
+
+/* animation */
+
+@keyframes paraSoftIn {
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+
+/* ==================================
+  LAPTOP (1024px – 1440px)
+================================== */
+
+@media (min-width: 1024px) {
+
+   .slide.titleAndPara {
+       padding-top: 5rem;
+       gap: 2rem;
+   }
+
+   .slide.titleAndPara h1 {
+       font-size: 2.8rem;
+       max-width: 900px;
+   }
+
+   .slide.titleAndPara p {
+       font-size: 1.6rem;
+       max-width: 750px;
+       line-height: 1.6;
+   }
+}
+
+
+/* ==================================
+  LANDSCAPE / PORTRAIT
+================================== */
+
+@media (orientation: landscape) {
+   .slide.titleAndPara p {
+      font-size: 1.5rem;
+      max-width: 1100px;
+      line-height: 1.5;
+  }
+}
+
+@media (orientation: portrait) {
+   .slide.titleAndPara p {
+      font-size: 2.75rem;
+      max-width: 1100px;
+      line-height: 2.2;
+      text-align: justify;
+  }
+}
+
+
+/* ==================================
+  LARGE DESKTOP / PROJECTOR
+================================== */
+
+@media (min-width: 1600px) {
+
+   .slide.titleAndPara {
+       padding-top: 6rem;
+       gap: 3rem;
+   }
+
+   .slide.titleAndPara h1 {
+       font-size: 4rem;
+       max-width: 1200px;
+   }
+
+   .slide.titleAndPara p {
+       font-size: 2.4rem;
+       max-width: 1100px;
+       line-height: 1.8;
+   }
+}

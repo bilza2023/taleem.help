@@ -1,0 +1,111 @@
+/* ----------------------------------
+   Text Grid Slide
+---------------------------------- */
+
+.slide.textGrid {
+  width: 100%;
+  padding: 3rem;
+}
+
+/* ----------------------------------
+   Grid
+---------------------------------- */
+
+.text-grid {
+  display: grid;
+
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  gap: 2rem;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ----------------------------------
+   Grid Item
+---------------------------------- */
+
+.text-grid-item {
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 18px;
+
+  padding: 2rem;
+
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.35;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background: rgba(255,255,255,0.03);
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+
+  opacity: 0;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+
+  transform: translateY(10px);
+}
+
+/* visible */
+.text-grid-item:not(.hidden) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ----------------------------------
+   Large Desktop / Projector
+---------------------------------- */
+
+@media (min-width: 1600px) {
+
+  .text-grid {
+    max-width: 1700px;
+    gap: 3rem;
+  }
+
+  .text-grid-item {
+    font-size: 3.2rem;
+
+    padding: 3rem;
+  }
+
+}
+
+/* ----------------------------------
+   Mobile
+---------------------------------- */
+
+@media (max-width: 768px) {
+
+  .slide.textGrid {
+    padding: 1rem;
+  }
+
+  .text-grid {
+    gap: 0.8rem;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .text-grid-item {
+    font-size: 1rem;
+
+    line-height: 1.25;
+
+    padding: 0.9rem;
+
+    border-radius: 12px;
+  }
+
+}

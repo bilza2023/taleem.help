@@ -1,0 +1,35 @@
+/* Light & Dark are built into Pico */
+
+/* ---------- Sepia ---------- */
+
+/* ---------- Sepia ---------- */
+
+html[data-theme="sepia"] {
+	--pico-background-color: #f5efe3;
+	--pico-color: #3f3528;
+
+	--pico-card-background-color: #fffaf0;
+	--pico-card-border-color: #d8cab4;
+
+	--pico-primary: #8a5a2b;
+	--pico-primary-hover: #6d451e;
+
+	--pico-muted-color: #7a6c5c;
+}
+
+/* ---------- Forest ---------- */
+
+/* ---------- Forest ---------- */
+
+html[data-theme="forest"] {
+	--pico-background-color: #0f1812;
+	--pico-color: #d8ead7;
+
+	--pico-card-background-color: #18231b;
+	--pico-card-border-color: #2e4a38;
+
+	--pico-primary: #72c07b;
+	--pico-primary-hover: #56a55f;
+
+	--pico-muted-color: #a5b9a7;
+}

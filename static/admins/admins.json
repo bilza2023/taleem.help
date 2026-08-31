@@ -1,0 +1,18 @@
+[
+  {
+    "email": "bilal@taleem.help",
+    "password": "12345678",
+    "role": "SUPER_ADMIN",
+    "courses": []
+  },
+  {
+    "email": "teacher@taleem.help",
+    "password": "12345678",
+    "role": "ADMIN",
+    "courses": [
+      "fbise9math",
+      "blog",
+      "fbise9mathQuickRef"
+    ]
+  }
+]

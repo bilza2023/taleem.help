@@ -1,0 +1,112 @@
+{
+  "version": "deck-v2",
+  "background": {
+    "backgroundColor": "#c061cb",
+    "backgroundImage": "taleem.webp",
+    "backgroundImageOpacity": 0.3
+  },
+  "audio": "music.mp3",
+  "deck": [
+    {
+      "type": "titleAndSubtitle",
+      "data": [
+        {
+          "name": "title",
+          "content": "This is the Title",
+          "showAt": 0
+        },
+        {
+          "name": "subtitle",
+          "content": "Test for player....",
+          "showAt": 1
+        }
+      ],
+      "start": 0,
+      "end": 10
+    },
+    {
+  "type": "eq",
+  "start": 10,
+  "end": 50,
+  "data": [
+    {
+      "name": "line",
+      "type": "heading",
+      "content": "Eq Slide - Demostration",
+      "showAt": 10,
+       "spItems": [
+        {
+          "type": "text",
+          "content": "Text content for side panel."
+        },
+        {
+          "type": "math",
+          "content": "x^2+y^55=z^22"
+        },
+        {
+          "type": "image",
+          "content": "wood.jpg"
+        }
+      ]
+    },
+    {
+      "name": "line",
+      "type": "math",
+      "content": "(a+b)(a+b)",
+      "showAt": 20,
+      "spItems": [
+        {
+          "type": "text",
+          "content": "The square means the bracket is multiplied by itself."
+        },
+        {
+          "type": "math",
+          "content": "x^2+y^55=z^22"
+        },
+        {
+          "type": "image",
+          "content": "taleem.webp"
+        }
+      ]
+    },
+    {
+      "name": "line",
+      "type": "math",
+      "content": "(a+b)^2",
+      "showAt": 30,
+      "spItems": [
+        {
+          "type": "text",
+          "content": "The square means the bracket is multiplied by itself."
+        },
+        {
+          "type": "math",
+          "content": "x^2+y^55=z^22"
+        },
+        {
+          "type": "image",
+          "content": "typesOfForce.webp"
+        }
+      ]
+
+    },
+    {
+      "name": "line",
+      "type": "math",
+      "content": "(a+b)^2+y^77+d^78",
+      "showAt": 40,
+      "spItems": [
+        {
+          "type": "text",
+          "content": "The square means the bracket is multiplied by itself."
+        },
+        {
+          "type": "image",
+          "content": "taleem.webp"
+        }
+      ]
+    }
+  ]
+}
+  ]
+}

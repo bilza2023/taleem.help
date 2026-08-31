@@ -1,0 +1,33 @@
+{
+  "slug": "fbise9mathQuickRef",
+  "title": "FBISE Class 9 Mathematics — Quick Reference",
+  "description": "Quick-reference cheat sheets for all chapters of FBISE Class 9 Mathematics.",
+  "thumbnail": "taleem.webp",
+  "groupings": [
+    {
+      "slug": "all",
+      "title": "All Chapters",
+      "thumbnail": "taleem.webp",
+      "items": [
+        "fbise9math-quickref-intro",
+        "fbise9math-ch1-quickref",
+        "fbise9math-ch2-quickref",
+        "fbise9math-ch3-quickref",
+        "fbise9math-ch4-quickref",
+        "fbise9math-ch5-quickref",
+        "fbise9math-ch6-quickref",
+        "fbise9math-ch7-quickref",
+        "fbise9math-ch8-quickref",
+        "fbise9math-ch9-quickref",
+        "fbise9math-ch10-quickref",
+        "fbise9math-ch11-quickref",
+        "fbise9math-ch12-quickref",
+        "fbise9math-ch13-quickref",
+        "fbise9math-ch14-quickref",
+        "fbise9math-ch15-quickref",
+        "fbise9math-ch16-quickref",
+        "fbise9math-ch17-quickref"
+      ]
+    }
+  ]
+}
